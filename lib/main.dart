@@ -159,10 +159,20 @@ class _MainScreenState extends State<MainScreen> {
             label: 'Recordatorios',
           ),
         ],
-        currentIndex: _selectedIndex,
+        currentIndex: _selectedIndex, // Índice seleccionado
         selectedItemColor: themeModel.buttonColor, // Color dinámico del ítem seleccionado
-        unselectedItemColor: const Color.fromARGB(255, 0, 0, 0), // Color para ítems no seleccionados
-        onTap: _onItemTapped,
+        unselectedItemColor: Colors.grey, // Color para ítems no seleccionados
+        
+        // Modifica el tamaño del texto de los labels
+        selectedLabelStyle: TextStyle(
+          fontSize: fontSizeModel.textSize, // Tamaño dinámico del texto seleccionado
+          color: themeModel.buttonColor, // Color del texto seleccionado
+        ),
+        unselectedLabelStyle: TextStyle(
+          fontSize: fontSizeModel.textSize - 2, // Tamaño dinámico del texto no seleccionado
+          color: Colors.grey, // Color del texto no seleccionado
+        ),
+        onTap: _onItemTapped, // Método que se llama cuando se selecciona un ítem
       ),
     );
   }

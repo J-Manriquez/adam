@@ -1,23 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'models/theme_model.dart'; // Importa el modelo de tema
+import 'models/font_size_model.dart'; // Importa el modelo de tamaños de fuente
 import 'screens/home_screen.dart'; // Importa la pantalla principal de inicio
 import 'screens/sos_screen.dart'; // Importa la pantalla de SOS
 import 'screens/reminder_screen.dart'; // Importa la pantalla de recordatorios
 import 'screens/settings_screen.dart'; // Importamos la pantalla de configuraciones
 
-// Punto de entrada de la aplicación
 void main() {
-  // runApp ejecuta la aplicación usando la clase MyApp como widget raíz
-  runApp(const MyApp());
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => ThemeModel()), // Proveedor de colores
+        ChangeNotifierProvider(create: (context) => FontSizeModel()), // Proveedor de tamaños de fuente
+      ],
+      child: const MyApp(),
+    ),
+  );
 }
 
-// Define el widget principal de la aplicación
 class MyApp extends StatelessWidget {
-  // Constructor de la clase MyApp que utiliza una clave opcional
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // MaterialApp es el contenedor principal que define la estructura básica de la app
     return MaterialApp(
       debugShowCheckedModeBanner: false, // Oculta el banner de depuración
       title: 'ADAM', // Define el título de la aplicación
@@ -29,29 +35,29 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// Clase que define la pantalla principal (MainScreen) como un StatefulWidget
 class MainScreen extends StatefulWidget {
-  // Constructor de MainScreen que también utiliza una clave opcional
   const MainScreen({super.key});
 
   @override
-  State<MainScreen> createState() => _MainScreenState(); // Crea el estado asociado
+  State<MainScreen> createState() => _MainScreenState();
 }
 
-// Clase que maneja el estado de MainScreen
 class _MainScreenState extends State<MainScreen> {
   int _selectedIndex = 1; // Índice seleccionado inicialmente (1 = HomeScreen)
+  final List<Widget> _pages = [];
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>(); // Clave global para controlar el Scaffold
 
-  // Lista de pantallas disponibles en la navegación principal
-  final List<Widget> _pages = [
-    const SosScreen(), // Pantalla de SOS
-    const HomeScreen(), // Pantalla de inicio
-    const ReminderScreen(), // Pantalla de recordatorios
-  ];
+  @override
+  void initState() {
+    super.initState();
+    _pages.addAll([
+      const SosScreen(),
+      const HomeScreen(),
+      const ReminderScreen(),
+    ]);
+  }
 
-  // Método que se ejecuta al seleccionar un ítem del BottomNavigationBar
   void _onItemTapped(int index) {
-    // Actualiza el índice seleccionado y refresca la UI
     setState(() {
       _selectedIndex = index;
     });
@@ -59,64 +65,104 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
-    // Scaffold proporciona la estructura visual básica (AppBar, Drawer, Body, BottomNavigationBar)
+    final themeModel = Provider.of<ThemeModel>(context); // Obtenemos el modelo de tema
+    final fontSizeModel = Provider.of<FontSizeModel>(context); // Obtenemos el modelo de tamaño de fuente
+
     return Scaffold(
+      key: _scaffoldKey, // Asigna el Scaffold al GlobalKey
       appBar: AppBar(
-        title: const Text('Asistente Digital'), // Título en la AppBar
+        backgroundColor: themeModel.buttonColor, // Color dinámico para el AppBar
+        // Personaliza el ícono de menú (drawer) con el tamaño que quieras
+        leading: IconButton(
+          icon: Icon(
+            Icons.menu,
+            size: fontSizeModel.iconSize, // Aplica el tamaño personalizado
+            color: themeModel.textColor, // Aplica el color dinámico
+          ),
+          onPressed: () {
+            // Abre el drawer utilizando el ScaffoldState a través del GlobalKey
+            _scaffoldKey.currentState?.openDrawer();
+          },
+        ),
+        title: Text(
+          'Asistente Digital',
+          style: TextStyle(
+            fontSize: fontSizeModel.titleSize, // Tamaño dinámico del texto del título
+            color: themeModel.textColor, // Color dinámico del texto
+          ),
+        ),
       ),
-      drawer: Drawer( // Define el menú lateral (drawer)
+      drawer: Drawer(
         child: ListView(
-          padding: EdgeInsets.zero, // Elimina el padding para alinear elementos
+          padding: EdgeInsets.zero,
           children: <Widget>[
-            const DrawerHeader(
+            DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.blue, // Fondo azul para el encabezado del Drawer
+                color: themeModel.buttonColor, // Color dinámico en el header del Drawer
               ),
               child: Text(
-                'Menú principal', // Texto del encabezado
-                style: TextStyle(color: Colors.white, fontSize: 24), // Estilo del texto
+                'Menú principal',
+                style: TextStyle(
+                  color: themeModel.textColor, // Color dinámico del texto
+                  fontSize: fontSizeModel.titleSize, // Tamaño dinámico del texto
+                ),
               ),
             ),
             ListTile(
-              leading: const Icon(Icons.settings), // Ícono de configuraciones
-              title: const Text('Configuraciones'), // Texto de la opción de menú
+              leading: Icon(Icons.settings, size: fontSizeModel.iconSize), // Ícono con tamaño dinámico
+              title: Text(
+                'Configuraciones',
+                style: TextStyle(
+                  color: themeModel.textColor, // Color dinámico del texto
+                  fontSize: fontSizeModel.textSize, // Tamaño dinámico del texto
+                ),
+              ),
               onTap: () {
-                // Navega a la pantalla de configuración
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const SettingsScreen()), // Carga SettingsScreen
+                  MaterialPageRoute(builder: (context) => const SettingsScreen()), // Navega a SettingsScreen
                 );
               },
             ),
             ListTile(
-              leading: const Icon(Icons.info), // Ícono de información
-              title: const Text('Acerca de'), // Texto de la opción "Acerca de"
+              leading: Icon(Icons.info, size: fontSizeModel.iconSize), // Ícono con tamaño dinámico
+              title: Text(
+                'Acerca de',
+                style: TextStyle(
+                  color: themeModel.textColor, // Color dinámico del texto
+                  fontSize: fontSizeModel.textSize, // Tamaño dinámico del texto
+                ),
+              ),
               onTap: () {
-                // Aquí se puede implementar la navegación a la pantalla de "Acerca de"
+                // Implementa la navegación a la pantalla "Acerca de"
               },
             ),
           ],
         ),
       ),
-      body: _pages[_selectedIndex], // Cuerpo de la pantalla que cambia según el índice seleccionado
-      bottomNavigationBar: BottomNavigationBar( // Barra de navegación inferior
-        items: const <BottomNavigationBarItem>[
+      body: Container(
+        color: themeModel.backgroundColor, // Color de fondo dinámico
+        child: _pages[_selectedIndex], // Cambia la página según el índice seleccionado
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.warning), // Ícono para SOS
-            label: 'SOS', // Etiqueta para el ítem SOS
+            icon: Icon(Icons.warning, size: fontSizeModel.iconSize), // Ícono con tamaño dinámico
+            label: 'SOS',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.home), // Ícono para Inicio
-            label: 'Inicio', // Etiqueta para el ítem de inicio
+            icon: Icon(Icons.home, size: fontSizeModel.iconSize), // Ícono con tamaño dinámico
+            label: 'Inicio',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.notifications), // Ícono para Recordatorios
-            label: 'Recordatorios', // Etiqueta para el ítem de recordatorios
+            icon: Icon(Icons.notifications, size: fontSizeModel.iconSize), // Ícono con tamaño dinámico
+            label: 'Recordatorios',
           ),
         ],
-        currentIndex: _selectedIndex, // Índice actual que define la página mostrada
-        selectedItemColor: Colors.blue, // Color del ítem seleccionado
-        onTap: _onItemTapped, // Llama al método _onItemTapped cuando se selecciona un ítem
+        currentIndex: _selectedIndex,
+        selectedItemColor: themeModel.buttonColor, // Color dinámico del ítem seleccionado
+        unselectedItemColor: const Color.fromARGB(255, 0, 0, 0), // Color para ítems no seleccionados
+        onTap: _onItemTapped,
       ),
     );
   }

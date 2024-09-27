@@ -71,13 +71,13 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       key: _scaffoldKey, // Asigna el Scaffold al GlobalKey
       appBar: AppBar(
-        backgroundColor: themeModel.buttonColor, // Color dinámico para el AppBar
+        backgroundColor: themeModel.primaryButtonColor, // Color dinámico para el AppBar
         // Personaliza el ícono de menú (drawer) con el tamaño que quieras
         leading: IconButton(
           icon: Icon(
             Icons.menu,
             size: fontSizeModel.iconSize, // Aplica el tamaño personalizado
-            color: themeModel.textColor, // Aplica el color dinámico
+            color: themeModel.primaryIconColor, // Aplica el color dinámico
           ),
           onPressed: () {
             // Abre el drawer utilizando el ScaffoldState a través del GlobalKey
@@ -88,32 +88,33 @@ class _MainScreenState extends State<MainScreen> {
           'Asistente Digital',
           style: TextStyle(
             fontSize: fontSizeModel.titleSize, // Tamaño dinámico del texto del título
-            color: themeModel.textColor, // Color dinámico del texto
+            color: themeModel.primaryTextColor, // Color dinámico del texto
           ),
         ),
       ),
       drawer: Drawer(
+        backgroundColor: themeModel.backgroundColor, // Color dinámico para el Drawer
         child: ListView(
           padding: EdgeInsets.zero,
           children: <Widget>[
             DrawerHeader(
               decoration: BoxDecoration(
-                color: themeModel.buttonColor, // Color dinámico en el header del Drawer
+                color: themeModel.primaryButtonColor, // Color dinámico en el header del Drawer
               ),
               child: Text(
                 'Menú principal',
                 style: TextStyle(
-                  color: themeModel.textColor, // Color dinámico del texto
+                  color: themeModel.primaryTextColor, // Color dinámico del texto
                   fontSize: fontSizeModel.titleSize, // Tamaño dinámico del texto
                 ),
               ),
             ),
             ListTile(
-              leading: Icon(Icons.settings, size: fontSizeModel.iconSize), // Ícono con tamaño dinámico
+              leading: Icon(Icons.settings, size: fontSizeModel.iconSize, color: themeModel.secondaryIconColor), // Ícono con tamaño dinámico
               title: Text(
                 'Configuraciones',
                 style: TextStyle(
-                  color: themeModel.textColor, // Color dinámico del texto
+                  color: themeModel.secondaryTextColor, // Color dinámico del texto
                   fontSize: fontSizeModel.textSize, // Tamaño dinámico del texto
                 ),
               ),
@@ -125,11 +126,11 @@ class _MainScreenState extends State<MainScreen> {
               },
             ),
             ListTile(
-              leading: Icon(Icons.info, size: fontSizeModel.iconSize), // Ícono con tamaño dinámico
+              leading: Icon(Icons.info, size: fontSizeModel.iconSize, color: themeModel.secondaryIconColor), // Ícono con tamaño dinámico
               title: Text(
                 'Acerca de',
                 style: TextStyle(
-                  color: themeModel.textColor, // Color dinámico del texto
+                  color: themeModel.secondaryTextColor, // Color dinámico del texto
                   fontSize: fontSizeModel.textSize, // Tamaño dinámico del texto
                 ),
               ),
@@ -160,17 +161,19 @@ class _MainScreenState extends State<MainScreen> {
           ),
         ],
         currentIndex: _selectedIndex, // Índice seleccionado
-        selectedItemColor: themeModel.buttonColor, // Color dinámico del ítem seleccionado
-        unselectedItemColor: Colors.grey, // Color para ítems no seleccionados
+        selectedItemColor: themeModel.secondaryButtonColor, // Color dinámico del ítem seleccionado
+        unselectedItemColor: themeModel.primaryIconColor, // Color para ítems no seleccionados
+        backgroundColor: themeModel.primaryButtonColor, // Color de fondo dinámico
+        showUnselectedLabels: true,
         
         // Modifica el tamaño del texto de los labels
         selectedLabelStyle: TextStyle(
           fontSize: fontSizeModel.textSize, // Tamaño dinámico del texto seleccionado
-          color: themeModel.buttonColor, // Color del texto seleccionado
+          color: themeModel.secondaryIconColor, // Color del texto seleccionado
         ),
         unselectedLabelStyle: TextStyle(
           fontSize: fontSizeModel.textSize - 2, // Tamaño dinámico del texto no seleccionado
-          color: Colors.grey, // Color del texto no seleccionado
+          color: themeModel.primaryIconColor, // Color del texto no seleccionado
         ),
         onTap: _onItemTapped, // Método que se llama cuando se selecciona un ítem
       ),

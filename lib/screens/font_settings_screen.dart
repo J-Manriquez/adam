@@ -18,7 +18,7 @@ class FontSettingsScreen extends StatelessWidget {
         leading:  Container(
           alignment: Alignment.center, // Centra el contenido en el contenedor
           child: IconButton(
-            icon: Icon(Icons.arrow_back), // Icono de flecha de regreso
+            icon: Icon(Icons.arrow_back, color: themeModel.primaryIconColor),
             iconSize: fontSizeModel.iconSize, // Tamaño dinámico del ícono
             onPressed: () {
               Navigator.of(context).pop(); // Volver a la pantalla anterior
@@ -33,14 +33,14 @@ class FontSettingsScreen extends StatelessWidget {
                 'Tamaño de Textos',
                 style: TextStyle(
                   fontSize: fontSizeModel.titleSize, // Tamaño dinámico del título
-                  color: themeModel.textColor,
+                  color: themeModel.primaryTextColor,
                 ),
                 textAlign: TextAlign.center,
               ),
             ),
           ],
         ),
-        backgroundColor: themeModel.buttonColor,
+        backgroundColor: themeModel.primaryButtonColor,
       ),
       body: Container(
         color: themeModel.backgroundColor, // Fondo dinámico
@@ -54,14 +54,14 @@ class FontSettingsScreen extends StatelessWidget {
                   fontSizeModel.resetFontSizes(); // Restablecer tamaños
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: themeModel.buttonColor, // Color del botón
+                  backgroundColor: themeModel.primaryButtonColor, // Color del botón
                   minimumSize: Size(double.infinity, 48), // Ancho completo del botón
                 ),
                 child: Text(
                   'Restablecer tamaños predeterminados',
                   style: TextStyle(
                     fontSize: fontSizeModel.textSize, // Tamaño dinámico
-                    color: themeModel.textColor, // Color del texto del botón
+                    color: themeModel.secondaryTextColor, // Color del texto del botón
                   ),
                   textAlign: TextAlign.center, // Centrar el texto
                 ),
@@ -73,7 +73,7 @@ class FontSettingsScreen extends StatelessWidget {
                 width: double.infinity, // Ancho completo
                 padding: const EdgeInsets.all(16.0),
                 decoration: BoxDecoration(
-                  color: themeModel.buttonColor.withOpacity(0.1), // Fondo del cuadro
+                  color: themeModel.secondaryButtonColor.withOpacity(0.7), // Fondo del cuadro
                   borderRadius: BorderRadius.circular(8.0),
                 ),
                 child: Column(
@@ -83,7 +83,7 @@ class FontSettingsScreen extends StatelessWidget {
                       'Título de Ejemplo',
                       style: TextStyle(
                         fontSize: fontSizeModel.titleSize, // Tamaño dinámico del título
-                        color: themeModel.textColor, // Color del texto dinámico
+                        color: themeModel.secondaryTextColor, // Color del texto dinámico
                       ),
                       textAlign: TextAlign.center, // Centrado horizontalmente
                     ),
@@ -92,7 +92,7 @@ class FontSettingsScreen extends StatelessWidget {
                       'Subtítulo de Ejemplo',
                       style: TextStyle(
                         fontSize: fontSizeModel.subtitleSize, // Tamaño dinámico del subtítulo
-                        color: themeModel.textColor, // Color del texto dinámico
+                        color: themeModel.secondaryTextColor, // Color del texto dinámico
                       ),
                       textAlign: TextAlign.center, // Centrado horizontalmente
                     ),
@@ -101,7 +101,7 @@ class FontSettingsScreen extends StatelessWidget {
                       'Este es un ejemplo de texto.',
                       style: TextStyle(
                         fontSize: fontSizeModel.textSize, // Tamaño dinámico del texto
-                        color: themeModel.textColor, // Color del texto dinámico
+                        color: themeModel.secondaryTextColor, // Color del texto dinámico
                       ),
                       textAlign: TextAlign.center, // Centrado horizontalmente
                     ),
@@ -110,11 +110,11 @@ class FontSettingsScreen extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center, // Centra los íconos
                       children: [
-                        Icon(Icons.home, size: fontSizeModel.iconSize, color: themeModel.textColor),
+                        Icon(Icons.home, size: fontSizeModel.iconSize, color: themeModel.secondaryIconColor),
                         const SizedBox(width: 20), // Espacio entre íconos
-                        Icon(Icons.favorite, size: fontSizeModel.iconSize, color: themeModel.textColor),
+                        Icon(Icons.favorite, size: fontSizeModel.iconSize, color: themeModel.secondaryIconColor),
                         const SizedBox(width: 20), // Espacio entre íconos
-                        Icon(Icons.settings, size: fontSizeModel.iconSize, color: themeModel.textColor),
+                        Icon(Icons.settings, size: fontSizeModel.iconSize, color: themeModel.secondaryIconColor),
                       ],
                     ),
                   ],
@@ -126,8 +126,8 @@ class FontSettingsScreen extends StatelessWidget {
               FontSizeSelector(
                 label: 'Tamaño del Título',
                 currentSize: fontSizeModel.titleSize,
-                min: 16.0, // Tamaño mínimo para título
-                max: 40.0, // Tamaño máximo para título
+                min: 20.0, // Tamaño mínimo para título
+                max: 35.0, // Tamaño máximo para título
                 onSizeChanged: (newSize) {
                   fontSizeModel.setTitleSize(newSize);
                 },
@@ -137,7 +137,7 @@ class FontSettingsScreen extends StatelessWidget {
               FontSizeSelector(
                 label: 'Tamaño del Subtítulo',
                 currentSize: fontSizeModel.subtitleSize,
-                min: 12.0, // Tamaño mínimo para subtítulo
+                min: 15.0, // Tamaño mínimo para subtítulo
                 max: 30.0, // Tamaño máximo para subtítulo
                 onSizeChanged: (newSize) {
                   fontSizeModel.setSubtitleSize(newSize);
@@ -149,7 +149,7 @@ class FontSettingsScreen extends StatelessWidget {
                 label: 'Tamaño del Texto',
                 currentSize: fontSizeModel.textSize,
                 min: 10.0, // Tamaño mínimo para texto
-                max: 24.0, // Tamaño máximo para texto
+                max: 25.0, // Tamaño máximo para texto
                 onSizeChanged: (newSize) {
                   fontSizeModel.setTextSize(newSize);
                 },
@@ -159,8 +159,8 @@ class FontSettingsScreen extends StatelessWidget {
               FontSizeSelector(
                 label: 'Tamaño de los Íconos',
                 currentSize: fontSizeModel.iconSize,
-                min: 10.0, // Tamaño mínimo para íconos
-                max: 48.0, // Tamaño máximo para íconos
+                min: 20.0, // Tamaño mínimo para íconos
+                max: 50.0, // Tamaño máximo para íconos
                 onSizeChanged: (newSize) {
                   fontSizeModel.setIconSize(newSize); // Asegúrate de que setIconSize esté definido
                 },

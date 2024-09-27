@@ -20,18 +20,18 @@ class HomeScreen extends StatelessWidget {
               'Pantalla Principal',
               style: TextStyle(
                 fontSize: 24,
-                color: themeModel.textColor, // Texto dinámico
+                color: themeModel.primaryTextColor, // Texto dinámico
               ),
             ),
             const SizedBox(height: 20),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                backgroundColor: themeModel.buttonColor, // Botón dinámico
+                backgroundColor: themeModel.primaryButtonColor, // Botón dinámico
               ),
               onPressed: () {},
               child: Text(
                 'Presiona aquí',
-                style: TextStyle(color: themeModel.textColor), // Texto del botón dinámico
+                style: TextStyle(color: themeModel.secondaryTextColor), // Texto del botón dinámico
               ),
             ),
           ],

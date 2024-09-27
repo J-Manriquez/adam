@@ -11,15 +11,17 @@ class SettingsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final fontSizeModel = Provider.of<FontSizeModel>(context); // Obtenemos el modelo de tamaño de fuente
-    final themeModel = Provider.of<ThemeModel>(context); // Obtenemos el modelo de tema
+    final fontSizeModel = Provider.of<FontSizeModel>(
+        context); // Obtenemos el modelo de tamaño de fuente
+    final themeModel =
+        Provider.of<ThemeModel>(context); // Obtenemos el modelo de tema
 
     return Scaffold(
       appBar: AppBar(
         leading: Container(
           alignment: Alignment.center,
           child: IconButton(
-            icon: Icon(Icons.arrow_back),
+            icon: Icon(Icons.arrow_back, color: themeModel.primaryIconColor),
             iconSize: fontSizeModel.iconSize, // Tamaño dinámico del ícono
             onPressed: () {
               Navigator.of(context).pop();
@@ -27,149 +29,165 @@ class SettingsScreen extends StatelessWidget {
           ),
         ),
         title: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Expanded(
               child: Text(
                 'Configuración',
                 style: TextStyle(
-                  fontSize: fontSizeModel.titleSize, // Tamaño dinámico para subtítulo
-                  color: themeModel.textColor, // Color dinámico del texto
+                  fontSize:
+                      fontSizeModel.titleSize, // Tamaño dinámico para subtítulo
+                  color:
+                      themeModel.primaryTextColor, // Color dinámico del texto
                 ),
-                textAlign: TextAlign.center,
+                textAlign: TextAlign.start,
               ),
             ),
           ],
         ),
-        backgroundColor: themeModel.buttonColor, // Color dinámico del AppBar
+        backgroundColor:
+            themeModel.primaryButtonColor, // Color dinámico del AppBar
       ),
-      body: SingleChildScrollView( // Permite hacer scroll si el contenido es grande
+      body: Container(
+        color: themeModel.backgroundColor, // Fondo dinámico
         padding: const EdgeInsets.all(16.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            // Subtítulo principal
-            Text(
-              'Pantalla de Configuración',
-              style: TextStyle(
-                fontSize: fontSizeModel.subtitleSize, // Subtítulo dinámico
-                color: themeModel.textColor, // Color dinámico del texto
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              // Subtítulo principal
+              Text(
+                'Usuario',
+                style: TextStyle(
+                  fontSize: fontSizeModel.subtitleSize, // Subtítulo dinámico
+                  color:
+                      themeModel.secondaryTextColor, // Color dinámico del texto
+                ),
+                textAlign: TextAlign.start,
               ),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 20),
-            // Rediseñando los primeros 4 botones en dos filas
-            GridView.count(
-              shrinkWrap: true, // Permite que el GridView se ajuste a su contenido
-              crossAxisCount: 2, // Dos columnas
-              childAspectRatio: 1, // Relación de aspecto cuadrado
-              crossAxisSpacing: 16.0, // Espaciado horizontal entre botones
-              mainAxisSpacing: 16.0, // Espaciado vertical entre botones
-              children: [
-                // Primer botón: Navega a user_data_screen.dart
-                _buildButton(
-                  context,
-                  label: 'Datos de Usuario',
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const UserDataScreen()),
-                    );
-                  },
-                ),
-                // Segundo botón: Vacío por ahora
-                _buildButton(
-                  context,
-                  label: 'Botón Vacío 1',
-                  onPressed: () {
-                    // No hace nada por ahora
-                  },
-                ),
-                // Tercer botón: Vacío por ahora
-                _buildButton(
-                  context,
-                  label: 'Botón Vacío 2',
-                  onPressed: () {
-                    // No hace nada por ahora
-                  },
-                ),
-                // Cuarto botón: Vacío por ahora
-                _buildButton(
-                  context,
-                  label: 'Botón Vacío 3',
-                  onPressed: () {
-                    // No hace nada por ahora
-                  },
-                ),
-              ],
-            ),
-            const SizedBox(height: 20),
-            // Subtítulo "Apariencia"
-            Text(
-              'Apariencia',
-              style: TextStyle(
-                fontSize: fontSizeModel.subtitleSize, // Tamaño dinámico para subtítulo
-                color: themeModel.textColor, // Color dinámico del texto
+              const SizedBox(height: 20),
+              // Rediseñando los primeros 4 botones en dos filas
+              GridView.count(
+                shrinkWrap:
+                    true, // Permite que el GridView se ajuste a su contenido
+                crossAxisCount: 2, // Dos columnas
+                childAspectRatio: 1, // Relación de aspecto cuadrado
+                crossAxisSpacing: 16.0, // Espaciado horizontal entre botones
+                mainAxisSpacing: 16.0, // Espaciado vertical entre botones
+                children: [
+                  // Primer botón: Navega a user_data_screen.dart
+                  _buildButton(
+                    context,
+                    label: 'Datos de Usuario',
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const UserDataScreen()),
+                      );
+                    },
+                  ),
+                  // Segundo botón: Vacío por ahora
+                  _buildButton(
+                    context,
+                    label: 'Botón Vacío 1',
+                    onPressed: () {
+                      // No hace nada por ahora
+                    },
+                  ),
+                  // Tercer botón: Vacío por ahora
+                  _buildButton(
+                    context,
+                    label: 'Botón Vacío 2',
+                    onPressed: () {
+                      // No hace nada por ahora
+                    },
+                  ),
+                  // Cuarto botón: Vacío por ahora
+                  _buildButton(
+                    context,
+                    label: 'Botón Vacío 3',
+                    onPressed: () {
+                      // No hace nada por ahora
+                    },
+                  ),
+                ],
               ),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 20),
-            // Dos botones adicionales relacionados con "Apariencia"
-            GridView.count(
-              shrinkWrap: true, // Ajuste automático del GridView
-              crossAxisCount: 2, // Dos columnas
-              childAspectRatio: 1, // Relación de aspecto cuadrado
-              crossAxisSpacing: 16.0, // Espaciado horizontal entre botones
-              mainAxisSpacing: 16.0, // Espaciado vertical entre botones
-              children: [
-                // Botón 1: Navega a themes_screen.dart
-                _buildButton(
-                  context,
-                  label: 'Cambiar Colores',
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const ThemesScreen()),
-                    );
-                  },
+              const SizedBox(height: 20),
+              // Subtítulo "Apariencia"
+              Text(
+                'Apariencia',
+                style: TextStyle(
+                  fontSize: fontSizeModel
+                      .subtitleSize, // Tamaño dinámico para subtítulo
+                  color:
+                      themeModel.secondaryTextColor, // Color dinámico del texto
                 ),
-                // Botón 2: Navega a font_settings_screen.dart
-                _buildButton(
-                  context,
-                  label: 'Cambiar Tamaños',
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const FontSettingsScreen()),
-                    );
-                  },
-                ),
-              ],
-            ),
-          ],
+                textAlign: TextAlign.start,
+              ),
+              const SizedBox(height: 20),
+              // Dos botones adicionales relacionados con "Apariencia"
+              GridView.count(
+                shrinkWrap: true, // Ajuste automático del GridView
+                crossAxisCount: 2, // Dos columnas
+                childAspectRatio: 1, // Relación de aspecto cuadrado
+                crossAxisSpacing: 16.0, // Espaciado horizontal entre botones
+                mainAxisSpacing: 16.0, // Espaciado vertical entre botones
+                children: [
+                  // Botón 1: Navega a themes_screen.dart
+                  _buildButton(
+                    context,
+                    label: 'Cambiar Colores',
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const ThemesScreen()),
+                      );
+                    },
+                  ),
+                  // Botón 2: Navega a font_settings_screen.dart
+                  _buildButton(
+                    context,
+                    label: 'Cambiar Tamaños',
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const FontSettingsScreen()),
+                      );
+                    },
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
   }
 
   // Método para construir los botones con el diseño cuadrado y esquinas redondeadas
-  Widget _buildButton(BuildContext context, {required String label, required VoidCallback onPressed}) {
+  Widget _buildButton(BuildContext context,
+      {required String label, required VoidCallback onPressed}) {
     final themeModel = Provider.of<ThemeModel>(context);
 
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
-        backgroundColor: themeModel.buttonColor, // Color dinámico del botón
+        backgroundColor:
+            themeModel.primaryButtonColor, // Color dinámico del botón
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12.0), // Esquinas redondeadas
+          borderRadius: BorderRadius.circular(8.0), // Esquinas redondeadas
         ),
       ),
       child: Text(
         label,
         style: TextStyle(
-          color: themeModel.textColor, // Color dinámico del texto
-          fontSize: Provider.of<FontSizeModel>(context).textSize, // Tamaño dinámico del texto
+          color: themeModel.secondaryTextColor, // Color dinámico del texto
+          fontSize: Provider.of<FontSizeModel>(context)
+              .textSize, // Tamaño dinámico del texto
         ),
         textAlign: TextAlign.center, // Centrar el texto en el botón
       ),

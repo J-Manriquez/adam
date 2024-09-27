@@ -1,4 +1,7 @@
+import 'package:ADAM/models/font_size_model.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import '../models/theme_model.dart';
 
 class FontSizeSelector extends StatelessWidget {
   final String label;
@@ -18,12 +21,17 @@ class FontSizeSelector extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Obtenemos los modelos de tamaño de fuente y tema (colores)
+    final themeModel = Provider.of<ThemeModel>(context);
+    final fontSizeModel = Provider.of<FontSizeModel>(context);
+
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           label,
-          style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
+          style: TextStyle(fontSize: fontSizeModel.textSize, fontWeight: FontWeight.bold),
         ),
         Slider(
           value: currentSize,
@@ -31,6 +39,7 @@ class FontSizeSelector extends StatelessWidget {
           max: max, // Utilizar el tamaño máximo proporcionado
           divisions: (max - min).toInt(), // Divisiones basadas en rango
           label: currentSize.toString(),
+          activeColor: themeModel.primaryButtonColor,
           onChanged: onSizeChanged,
         ),
       ],

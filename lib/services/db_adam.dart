@@ -2,13 +2,14 @@ import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import 'package:flutter/foundation.dart'; // Importar para kIsWeb
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
+import 'package:sqflite_common_ffi_web/sqflite_ffi_web.dart'; // Importar para el soporte web
 import '../models/db_model.dart'; // Importamos el modelo
 import '../utils/custom_logger.dart'; // Importamos logger
 
 class DatabaseHelper {
   // Variable estática para la instancia única de la base de datos
   static final DatabaseHelper _instance = DatabaseHelper._internal();
-  
+
   // Constructor privado para crear una única instancia
   factory DatabaseHelper() {
     return _instance;
@@ -22,26 +23,29 @@ class DatabaseHelper {
   Future<Database> get database async {
     // Si la base de datos ya ha sido creada, simplemente regresamos esa instancia
     if (_database != null) return _database!;
-    
+
     // Comprobamos si estamos en un entorno web
     if (kIsWeb) {
       // Inicializamos el databaseFactory para la web
+      databaseFactory = databaseFactoryFfiWeb; // Aquí está la corrección
+    } else {
+      // Para entornos no web (Android/iOS, etc.)
       databaseFactory = databaseFactoryFfi;
     }
-    
-    // Si no, la creamos
+
+    // Inicializamos la base de datos
     _database = await _initDB();
     return _database!;
   }
 
   // Método para inicializar la base de datos y crear las tablas
   Future<Database> _initDB() async {
-        try {
-          // Obtenemos la ruta del directorio donde se almacenará la base de datos
-          String path = join(await getDatabasesPath(), 'adam_database.db');
-          // Creamos la base de datos y definimos las tablas
-          return await openDatabase(
-            path,
+    try {
+      // Obtenemos la ruta del directorio donde se almacenará la base de datos
+      String path = join(await getDatabasesPath(), 'adam_database.db');
+      // Creamos la base de datos y definimos las tablas
+      return await databaseFactory.openDatabase(path,
+          options: OpenDatabaseOptions(
             version: 1,
             onCreate: (db, version) async {
               // Creación de tablas
@@ -69,7 +73,7 @@ class DatabaseHelper {
                     toma_medicamentos TEXT NOT NULL
                   );
                 ''');
-        // 2 -----------------------------------------------------------------------------
+                // 2 -----------------------------------------------------------------------------
                 // Creación de la tabla DolenciasSintomas
                 await db.execute('''
                   CREATE TABLE IF NOT EXISTS DolenciasSintomas (
@@ -84,7 +88,7 @@ class DatabaseHelper {
                     FOREIGN KEY(usuario_rut) REFERENCES Usuario(rut)
                   );
                 ''');
-        // 3 -----------------------------------------------------------------------------
+                // 3 -----------------------------------------------------------------------------
                 // Creación de la tabla DolenciasMedicamentos
                 await db.execute('''
                   CREATE TABLE IF NOT EXISTS DolenciasMedicamentos (
@@ -95,7 +99,7 @@ class DatabaseHelper {
                     FOREIGN KEY(dolencia_id) REFERENCES DolenciasSintomas(id_dolencia)
                   );
                 ''');
-        // 4 -----------------------------------------------------------------------------
+                // 4 -----------------------------------------------------------------------------
                 // Creación de la tabla Medicamentos
                 await db.execute('''
                   CREATE TABLE IF NOT EXISTS Medicamentos (
@@ -109,7 +113,7 @@ class DatabaseHelper {
                       FOREIGN KEY(usuario_rut) REFERENCES Usuario(rut)
                   );
                 ''');
-        // 5 -----------------------------------------------------------------------------
+                // 5 -----------------------------------------------------------------------------
                 // Creación de la tabla Alergias
                 await db.execute('''
                   CREATE TABLE IF NOT EXISTS Alergias (
@@ -120,7 +124,7 @@ class DatabaseHelper {
                       FOREIGN KEY(usuario_rut) REFERENCES Usuario(rut)
                   );
                 ''');
-        // 6 -----------------------------------------------------------------------------
+                // 6 -----------------------------------------------------------------------------
                 // Creación de la tabla PatologiasCronicas
                 await db.execute('''
                   CREATE TABLE IF NOT EXISTS PatologiasCronicas (
@@ -133,7 +137,7 @@ class DatabaseHelper {
                       FOREIGN KEY(usuario_rut) REFERENCES Usuario(rut)
                   );
                 ''');
-        // 7 -----------------------------------------------------------------------------
+                // 7 -----------------------------------------------------------------------------
                 // Creación de la tabla Limitaciones
                 await db.execute('''
                   CREATE TABLE IF NOT EXISTS Limitaciones(
@@ -146,7 +150,7 @@ class DatabaseHelper {
                     FOREIGN KEY(usuario_rut) REFERENCES Usuario(rut)
                   );
                 ''');
-        // 8 -----------------------------------------------------------------------------
+                // 8 -----------------------------------------------------------------------------
                 // Creación de la tabla HistorialChat
                 await db.execute('''
                   CREATE TABLE IF NOT EXISTS HistorialChat( 
@@ -159,7 +163,7 @@ class DatabaseHelper {
                     FOREIGN KEY(usuario_rut) REFERENCES Usuario(rut)
                   );
                 ''');
-        // 9 -----------------------------------------------------------------------------
+                // 9 -----------------------------------------------------------------------------
                 // Creación de la tabla Contacto
                 await db.execute('''
                   CREATE TABLE IF NOT EXISTS Contacto(
@@ -173,7 +177,7 @@ class DatabaseHelper {
                     FOREIGN KEY(usuario_rut) REFERENCES Usuario(rut)
                   );
                 ''');
-        // 10 -----------------------------------------------------------------------------
+                // 10 -----------------------------------------------------------------------------
                 // Creación de la tabla centrosMedicos
                 await db.execute('''
                   CREATE TABLE IF NOT EXISTS centrosMedicos(
@@ -186,32 +190,31 @@ class DatabaseHelper {
                     Actualizado_al TEXT NOT NULL
                   );
                 ''');
-                
-        // 11 -----------------------------------------------------------------------------
-        // 12 -----------------------------------------------------------------------------
-        // 13 -----------------------------------------------------------------------------
-        // 14 -----------------------------------------------------------------------------
-        // 15 -----------------------------------------------------------------------------
+
+                // 11 -----------------------------------------------------------------------------
+                // 12 -----------------------------------------------------------------------------
+                // 13 -----------------------------------------------------------------------------
+                // 14 -----------------------------------------------------------------------------
+                // 15 -----------------------------------------------------------------------------
 
                 // Agrega el resto de las tablas aquí, similar al anterior
               } catch (e) {
                 CustomLogger().logError('Error al crear las tablas: $e');
               }
             },
-          );
-        } catch (e) {
-          CustomLogger().logError('Error al inicializar la base de datos: $e');
-          rethrow; // Re-lanzamos la excepción para manejarla más arriba si es necesario
-        }
-      }
+          ));
+    } catch (e) {
+      CustomLogger().logError('Error al inicializar la base de datos: $e');
+      rethrow; // Re-lanzamos la excepción para manejarla más arriba si es necesario
+    }
+  }
 
   // Método para cerrar la base de datos
-
 
   Future<void> closeDB() async {
     try {
       final db = await database;
-      db.close();  
+      db.close();
     } catch (e) {
       CustomLogger().logError('Error al cerrar la base de datos: $e');
     }
@@ -230,7 +233,7 @@ class DatabaseHelper {
     } catch (e) {
       CustomLogger().logError('Error al insertar el usuario: $e');
     }
-  } 
+  }
 
   // Método para obtener un usuario
   Future<Usuario?> getUsuario(String rut) async {
@@ -244,7 +247,8 @@ class DatabaseHelper {
       );
       // Si no encontramos el usuario, regresamos null
       if (maps.isNotEmpty) {
-        return Usuario.fromMap(maps.first); // Convertimos el mapa a un objeto Usuario
+        return Usuario.fromMap(
+            maps.first); // Convertimos el mapa a un objeto Usuario
       }
       return null; // Regresamos null si no se encuentra el usuario
     } catch (e) {
@@ -270,19 +274,19 @@ class DatabaseHelper {
 // 2 -----------------------------------------------------------------------------
   // Métodos CRUD para DolenciasSintomas
   Future<void> insertDolencia(DolenciaSintoma dolencia) async {
-    try{
+    try {
       final db = await database;
       await db.insert(
         'DolenciasSintomas',
         dolencia.toMap(),
       );
     } catch (e) {
-        CustomLogger().logError('Error al insertar la dolencia: $e');
+      CustomLogger().logError('Error al insertar la dolencia: $e');
     }
   }
 
   Future<List<DolenciaSintoma>> getDolencia(String usuarioRut) async {
-    try{
+    try {
       final db = await database;
       final List<Map<String, dynamic>> maps = await db.query(
         'DolenciasSintomas',
@@ -294,13 +298,13 @@ class DatabaseHelper {
         return DolenciaSintoma.fromMap(maps[i]);
       });
     } catch (e) {
-        CustomLogger().logError('Error al obtener las dolencias: $e');
-        return [];
+      CustomLogger().logError('Error al obtener las dolencias: $e');
+      return [];
     }
   }
 
   Future<void> deleteDolencia(int idDolencia) async {
-    try{
+    try {
       final db = await database;
       await db.delete(
         'DolenciasSintomas',
@@ -308,14 +312,15 @@ class DatabaseHelper {
         whereArgs: [idDolencia],
       );
     } catch (e) {
-          CustomLogger().logError('Error al eliminar la dolencia: $e');
+      CustomLogger().logError('Error al eliminar la dolencia: $e');
     }
   }
 
 // 3 -----------------------------------------------------------------------------
   // Métodos CRUD para DolenciasMedicamentos
-  Future<void> insertDolenciaMedicamento(DolenciaMedicamento medicamento) async {
-    try{
+  Future<void> insertDolenciaMedicamento(
+      DolenciaMedicamento medicamento) async {
+    try {
       final db = await database;
       await db.insert(
         'DolenciasMedicamentos',
@@ -326,8 +331,9 @@ class DatabaseHelper {
     }
   }
 
-  Future<List<DolenciaMedicamento>> getDolenciaMedicamento(int dolenciaId) async {
-    try{
+  Future<List<DolenciaMedicamento>> getDolenciaMedicamento(
+      int dolenciaId) async {
+    try {
       final db = await database;
       final List<Map<String, dynamic>> maps = await db.query(
         'DolenciasMedicamentos',
@@ -345,7 +351,7 @@ class DatabaseHelper {
   }
 
   Future<void> deleteDolenciaMedicamento(int id) async {
-    try{
+    try {
       final db = await database;
       await db.delete(
         'DolenciasMedicamentos',
@@ -360,19 +366,16 @@ class DatabaseHelper {
 // 4 -----------------------------------------------------------------------------
   // Métodos CRUD para Medicamentos
   Future<void> insertMedicamento(Medicamento medicamento) async {
-    try{
-    final db = await database;
-    await db.insert(
-      'Medicamentos', 
-      medicamento.toMap()
-    );
-  } catch (e) {
-    CustomLogger().logError('Error al insertar el medicamento: $e');
+    try {
+      final db = await database;
+      await db.insert('Medicamentos', medicamento.toMap());
+    } catch (e) {
+      CustomLogger().logError('Error al insertar el medicamento: $e');
+    }
   }
-}
 
   Future<List<Medicamento>> getMedicamentos(String usuarioRut) async {
-    try{
+    try {
       final db = await database;
       final List<Map<String, dynamic>> maps = await db.query(
         'Medicamentos',
@@ -390,7 +393,7 @@ class DatabaseHelper {
   }
 
   Future<void> deleteMedicamento(int id) async {
-    try{
+    try {
       final db = await database;
       await db.delete(
         'Medicamentos',
@@ -405,19 +408,16 @@ class DatabaseHelper {
 // 5 -----------------------------------------------------------------------------
   // Métodos CRUD para Alergias
   Future<void> insertAlergia(Alergia alergia) async {
-    try{
+    try {
       final db = await database;
-      await db.insert(
-        'Alergias', 
-        alergia.toMap()
-      );
+      await db.insert('Alergias', alergia.toMap());
     } catch (e) {
       CustomLogger().logError('Error al insertar la alergia: $e');
     }
   }
 
   Future<List<Alergia>> getAlergias(String usuarioRut) async {
-    try{
+    try {
       final db = await database;
       final List<Map<String, dynamic>> maps = await db.query(
         'Alergias',
@@ -435,7 +435,7 @@ class DatabaseHelper {
   }
 
   Future<void> deleteAlergia(int id) async {
-    try{
+    try {
       final db = await database;
       await db.delete(
         'Alergias',
@@ -450,19 +450,17 @@ class DatabaseHelper {
 // 6 -----------------------------------------------------------------------------
   // Métodos CRUD para PatologiasCronicas
   Future<void> insertPatologiaCronica(PatologiaCronica patologia) async {
-    try{
+    try {
       final db = await database;
-      await db.insert(
-        'PatologiasCronicas', 
-        patologia.toMap()
-      );
+      await db.insert('PatologiasCronicas', patologia.toMap());
     } catch (e) {
       CustomLogger().logError('Error al insertar la patología crónica: $e');
     }
   }
 
-  Future<List<PatologiaCronica>> getPatologiasCronicas(String usuarioRut) async {
-    try{
+  Future<List<PatologiaCronica>> getPatologiasCronicas(
+      String usuarioRut) async {
+    try {
       final db = await database;
       final List<Map<String, dynamic>> maps = await db.query(
         'PatologiasCronicas',
@@ -480,7 +478,7 @@ class DatabaseHelper {
   }
 
   Future<void> deletePatologiaCronica(int id) async {
-    try{
+    try {
       final db = await database;
       await db.delete(
         'PatologiasCronicas',
@@ -495,19 +493,16 @@ class DatabaseHelper {
 // 7 -----------------------------------------------------------------------------
   // Métodos CRUD para Limitaciones
   Future<void> insertLimitacion(Limitacion limitacion) async {
-    try{
+    try {
       final db = await database;
-      await db.insert(
-        'Limitaciones', 
-        limitacion.toMap()
-      );
+      await db.insert('Limitaciones', limitacion.toMap());
     } catch (e) {
       CustomLogger().logError('Error al insertar la limitación: $e');
     }
   }
 
   Future<List<Limitacion>> getLimitaciones(String usuarioRut) async {
-    try{
+    try {
       final db = await database;
       final List<Map<String, dynamic>> maps = await db.query(
         'Limitaciones',
@@ -519,13 +514,13 @@ class DatabaseHelper {
         return Limitacion.fromMap(maps[i]);
       });
     } catch (e) {
-        CustomLogger().logError('Error al obtener las limitaciones: $e');
-        return [];
-      }
+      CustomLogger().logError('Error al obtener las limitaciones: $e');
+      return [];
+    }
   }
 
   Future<void> deleteLimitacion(int id) async {
-    try{
+    try {
       final db = await database;
       await db.delete(
         'Limitaciones',
@@ -540,19 +535,16 @@ class DatabaseHelper {
 // 8 -----------------------------------------------------------------------------
   // Métodos CRUD para HistorialChat
   Future<void> insertHistorialChat(HistorialChat historial) async {
-    try{
+    try {
       final db = await database;
-      await db.insert(
-        'HistorialChat', 
-        historial.toMap()
-      );
+      await db.insert('HistorialChat', historial.toMap());
     } catch (e) {
       CustomLogger().logError('Error al insertar el historial: $e');
     }
   }
 
   Future<List<HistorialChat>> getHistorialChats(String usuarioRut) async {
-    try{
+    try {
       final db = await database;
       final List<Map<String, dynamic>> maps = await db.query(
         'HistorialChat',
@@ -570,7 +562,7 @@ class DatabaseHelper {
   }
 
   Future<void> deleteHistorialChat(String id) async {
-    try{
+    try {
       final db = await database;
       await db.delete(
         'HistorialChat',
@@ -585,19 +577,16 @@ class DatabaseHelper {
 // 9 -----------------------------------------------------------------------------
   // Métodos CRUD para Contacto
   Future<void> insertContacto(Contacto contacto) async {
-    try{
+    try {
       final db = await database;
-      await db.insert(
-        'Contacto', 
-        contacto.toMap()
-      );
+      await db.insert('Contacto', contacto.toMap());
     } catch (e) {
       CustomLogger().logError('Error al insertar el contacto: $e');
     }
   }
 
   Future<List<Contacto>> getContactos(String usuarioRut) async {
-    try{
+    try {
       final db = await database;
       final List<Map<String, dynamic>> maps = await db.query(
         'Contacto',
@@ -615,7 +604,7 @@ class DatabaseHelper {
   }
 
   Future<void> deleteContacto(int id) async {
-    try{
+    try {
       final db = await database;
       await db.delete(
         'Contacto',
@@ -630,7 +619,7 @@ class DatabaseHelper {
 // 10 -----------------------------------------------------------------------------
   // Método para insertar un nuevo centro médico
   Future<void> insertCentroMedico(CentroMedico centroMedico) async {
-    try{
+    try {
       final db = await database;
       await db.insert(
         'centrosMedicos',
@@ -644,7 +633,7 @@ class DatabaseHelper {
 
   // Método para obtener todos los centros médicos de un usuario específico
   Future<List<CentroMedico>> getCentrosMedicos() async {
-    try{
+    try {
       final db = await database;
       final List<Map<String, dynamic>> maps = await db.query('centrosMedicos');
 
@@ -659,19 +648,18 @@ class DatabaseHelper {
 
   // Método para eliminar un centro médico por ID
   Future<void> deleteCentroMedico(String id) async {
-    try{
-    final db = await database;
+    try {
+      final db = await database;
 
-    await db.delete(
-      'centrosMedicos',
-      where: 'id = ?',
-      whereArgs: [id],
-    );
-  } catch (e) {
-    CustomLogger().logError('Error al eliminar el centro médico: $e');
+      await db.delete(
+        'centrosMedicos',
+        where: 'id = ?',
+        whereArgs: [id],
+      );
+    } catch (e) {
+      CustomLogger().logError('Error al eliminar el centro médico: $e');
+    }
   }
-}
-
 
 // 11 -----------------------------------------------------------------------------
 // 12 -----------------------------------------------------------------------------

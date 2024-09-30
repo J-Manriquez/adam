@@ -1,40 +1,28 @@
+import 'package:ADAM/screens/reminder_screen.dart';
+import 'package:ADAM/screens/settings_screen.dart';
+import 'package:ADAM/screens/sos_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'models/theme_model.dart';
-import 'models/font_size_model.dart';
-import 'screens/home_screen.dart';
-import 'screens/sos_screen.dart';
-import 'screens/reminder_screen.dart';
-import 'screens/settings_screen.dart';
+import 'models/theme_model.dart'; // Importa el modelo de tema
+import 'models/font_size_model.dart'; // Importa el modelo de tamaños de fuente
+import 'services/db_adam.dart'; // Importa DatabaseHelper
+import 'screens/home_screen.dart'; // Importa la pantalla principal de inicio
 import 'utils/custom_logger.dart';
-import 'services/db_adam.dart';
-import 'package:sqflite/sqflite.dart'; // Importar sqflite
-import 'package:sqflite_common_ffi/sqflite_ffi.dart'; // Para escritorio
-import 'package:flutter/foundation.dart'; // Para detectar si es web
-import 'package:sqflite_common_ffi_web/sqflite_ffi_web.dart'; // Para soporte web
-
 void main() async {
-  // Asegúrate de que WidgetsBinding esté inicializado antes de usar async
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Verificamos si estamos en un entorno web
-  if (kIsWeb) {
-    // Cambia la fábrica de bases de datos a la de web
-    databaseFactory = databaseFactoryFfiWeb;
-  } else {
-    // Usa la fábrica FFI normal para plataformas móviles o escritorio
-    sqfliteFfiInit(); // Inicializa ffi
-    databaseFactory = databaseFactoryFfi;
-  }
-
-  // Inicializa la base de datos
-  await DatabaseHelper().database; // Esto llamará al método que crea la base de datos y las tablas
+  // Inicializamos la base de datos
+  await DatabaseHelper().database; // Aquí se llama a la base de datos que se inicializa de acuerdo al entorno
 
   runApp(
     MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (context) => ThemeModel()), // Proveedor de colores
-        ChangeNotifierProvider(create: (context) => FontSizeModel()), // Proveedor de tamaños de fuente
+        ChangeNotifierProvider(
+          create: (context) => ThemeModel(), // Proveedor de colores
+        ),
+        ChangeNotifierProvider(
+          create: (context) => FontSizeModel(), // Proveedor de tamaños de fuente
+        ),
       ],
       child: MyApp(),
     ),

@@ -8,11 +8,18 @@ import 'screens/reminder_screen.dart'; // Importa la pantalla de recordatorios
 import 'screens/settings_screen.dart'; // Importamos la pantalla de configuraciones
 import 'utils/custom_logger.dart';
 import 'services/db_adam.dart'; 
+import 'package:sqflite_common_ffi/sqflite_ffi.dart'; 
+import 'package:flutter/foundation.dart'; // Importar para kIsWeb
+
 
 void main() async {
   // Asegúrate de que WidgetsBinding esté inicializado antes de usar async
   WidgetsFlutterBinding.ensureInitialized();
 
+  // Inicializa sqflite_common_ffi para el entorno web si es necesario
+  if (kIsWeb) {
+    databaseFactory = databaseFactoryFfi;
+  }
   // Inicializa la base de datos
   await DatabaseHelper().database; // Esto llamará al método que crea la base de datos y las tablas
 

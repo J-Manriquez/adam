@@ -1,8 +1,9 @@
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
+import 'package:flutter/foundation.dart'; // Importar para kIsWeb
+import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import '../models/db_model.dart'; // Importamos el modelo
 import '../utils/custom_logger.dart'; // Importamos logger
-
 
 class DatabaseHelper {
   // Variable estática para la instancia única de la base de datos
@@ -21,6 +22,13 @@ class DatabaseHelper {
   Future<Database> get database async {
     // Si la base de datos ya ha sido creada, simplemente regresamos esa instancia
     if (_database != null) return _database!;
+    
+    // Comprobamos si estamos en un entorno web
+    if (kIsWeb) {
+      // Inicializamos el databaseFactory para la web
+      databaseFactory = databaseFactoryFfi;
+    }
+    
     // Si no, la creamos
     _database = await _initDB();
     return _database!;

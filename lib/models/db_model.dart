@@ -85,6 +85,7 @@ class Usuario {
     );
   }
 }
+
 // 2 -----------------------------------------------------------------------------
 class DolenciaSintoma {
   final int idDolencia; // ID de la dolencia
@@ -92,7 +93,8 @@ class DolenciaSintoma {
   final String fechaHoraActual; // Fecha y hora de la consulta
   final String descripcion; // Descripción del síntoma
   final String parteCuerpoAfectada; // Parte del cuerpo afectada
-  final String? tiempoDesdeAparicion; // Tiempo desde que apareció el síntoma (opcional)
+  final String?
+      tiempoDesdeAparicion; // Tiempo desde que apareció el síntoma (opcional)
   final String nivelDolor; // Nivel de dolor
   final String usuarioRut; // RUT del usuario que presenta la dolencia
 
@@ -136,6 +138,7 @@ class DolenciaSintoma {
     );
   }
 }
+
 // 3 -----------------------------------------------------------------------------
 class DolenciaMedicamento {
   final int id; // ID del medicamento
@@ -171,6 +174,7 @@ class DolenciaMedicamento {
     );
   }
 }
+
 // 4 -----------------------------------------------------------------------------
 class Medicamento {
   final int id;
@@ -252,6 +256,7 @@ class Alergia {
     };
   }
 }
+
 // 6 -----------------------------------------------------------------------------
 class PatologiaCronica {
   final int id;
@@ -435,9 +440,8 @@ class CentroMedico {
   final String nombreOficial;
   final String comuna;
   final String direccion;
-  final String? telefono;  // Telefono es opcional (nullable)
+  final String? telefono; // Telefono es opcional (nullable)
   final String actualizadoAl;
-  final String usuarioRut;
 
   CentroMedico({
     required this.id,
@@ -445,9 +449,8 @@ class CentroMedico {
     required this.nombreOficial,
     required this.comuna,
     required this.direccion,
-    this.telefono,  // Es nullable
+    this.telefono, // Es nullable
     required this.actualizadoAl,
-    required this.usuarioRut,
   });
 
   // Conversión de un mapa a un objeto CentroMedico
@@ -460,7 +463,6 @@ class CentroMedico {
       direccion: map['Direccion'],
       telefono: map['Telefono'],
       actualizadoAl: map['Actualizado_al'],
-      usuarioRut: map['usuario_rut'],
     );
   }
 
@@ -474,7 +476,6 @@ class CentroMedico {
       'Direccion': direccion,
       'Telefono': telefono,
       'Actualizado_al': actualizadoAl,
-      'usuario_rut': usuarioRut,
     };
   }
 }

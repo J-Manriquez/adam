@@ -6,6 +6,7 @@ import 'screens/home_screen.dart'; // Importa la pantalla principal de inicio
 import 'screens/sos_screen.dart'; // Importa la pantalla de SOS
 import 'screens/reminder_screen.dart'; // Importa la pantalla de recordatorios
 import 'screens/settings_screen.dart'; // Importamos la pantalla de configuraciones
+import 'utils/custom_logger.dart';
 
 void main() {
   runApp(
@@ -14,13 +15,16 @@ void main() {
         ChangeNotifierProvider(create: (context) => ThemeModel()), // Proveedor de colores
         ChangeNotifierProvider(create: (context) => FontSizeModel()), // Proveedor de tamaños de fuente
       ],
-      child: const MyApp(),
+      child: MyApp(),
     ),
   );
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  // Instancia del logger
+  final CustomLogger customLogger = CustomLogger();
+  
+
 
   @override
   Widget build(BuildContext context) {
@@ -30,13 +34,15 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue, // Establece el tema principal de la app (colores)
       ),
-      home: const MainScreen(), // Establece la pantalla principal de la app
+      home: MainScreen(customLogger: customLogger), // Pasar customLogger
     );
   }
 }
 
 class MainScreen extends StatefulWidget {
-  const MainScreen({super.key});
+  final CustomLogger customLogger; // Agregar este campo
+  const MainScreen({super.key, required this.customLogger}); // Asegúrate de requerir el parámetro
+
 
   @override
   State<MainScreen> createState() => _MainScreenState();

@@ -26,11 +26,15 @@ class DatabaseHelper {
 
     // Comprobamos si estamos en un entorno web
     if (kIsWeb) {
-      // Inicializamos el databaseFactory para la web
-      databaseFactory = databaseFactoryFfiWeb; // Aquí está la corrección
-    } else {
-      // Para entornos no web (Android/iOS, etc.)
+      // En la web, usa `databaseFactoryFfiWeb`
+      databaseFactory = databaseFactoryFfiWeb;
+    } else if (!kIsWeb && (defaultTargetPlatform == TargetPlatform.windows || defaultTargetPlatform == TargetPlatform.linux)) {
+      // En entornos de escritorio (Windows/Linux), usa `databaseFactoryFfi`
+      sqfliteFfiInit();
       databaseFactory = databaseFactoryFfi;
+    } else {
+      // En móviles (Android/iOS), usa el `sqflite` regular
+      databaseFactory = databaseFactory; // Aquí no hacemos nada especial para móviles
     }
 
     // Inicializamos la base de datos

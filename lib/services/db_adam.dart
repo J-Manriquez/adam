@@ -21,26 +21,41 @@ class DatabaseHelper {
   Database? _database;
 
   Future<Database> get database async {
+  try {
     // Si la base de datos ya ha sido creada, simplemente regresamos esa instancia
-    if (_database != null) return _database!;
+    if (_database != null) {
+      CustomLogger().logError('Base de datos ya inicializada.'); // Log de que la base de datos ya está creada
+      return _database!;
+    } else {
+      CustomLogger().logError('Base de datos no inicializada.'); // Log de que la base de datos no está creada
+    }
 
     // Comprobamos si estamos en un entorno web
     if (kIsWeb) {
-      // En la web, usa `databaseFactoryFfiWeb`
+      CustomLogger().logError('Entorno detectado: Web'); // Log de entorno web
       databaseFactory = databaseFactoryFfiWeb;
     } else if (!kIsWeb && (defaultTargetPlatform == TargetPlatform.windows || defaultTargetPlatform == TargetPlatform.linux)) {
-      // En entornos de escritorio (Windows/Linux), usa `databaseFactoryFfi`
+      CustomLogger().logError('Entorno detectado: Escritorio (Windows o Linux)'); // Log de entorno escritorio
       sqfliteFfiInit();
       databaseFactory = databaseFactoryFfi;
     } else {
-      // En móviles (Android/iOS), usa el `sqflite` regular
-      databaseFactory = databaseFactory; // Aquí no hacemos nada especial para móviles
+      CustomLogger().logError('Entorno detectado: Móvil (Android o iOS)'); // Log de entorno móvil
+      databaseFactory = databaseFactory; // En móviles no se hace nada especial
     }
 
     // Inicializamos la base de datos
+    CustomLogger().logError('Inicializando la base de datos...'); // Log de inicio de la creación de la base de datos
     _database = await _initDB();
+    CustomLogger().logError('Base de datos inicializada correctamente.'); // Log de que la base de datos fue creada exitosamente
     return _database!;
+  } catch (e, stackTrace) {
+    // Captura de cualquier error y log detallado
+    CustomLogger().logError('Error al inicializar la base de datos: $e');
+    CustomLogger().logError('Stack trace: $stackTrace'); // Log del stack trace para mayor detalle del error
+    rethrow; // Vuelve a lanzar el error si deseas manejarlo más adelante en el código
   }
+}
+
 
   // Método para inicializar la base de datos y crear las tablas
   Future<Database> _initDB() async {

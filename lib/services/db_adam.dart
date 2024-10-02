@@ -651,7 +651,7 @@ class DatabaseHelper {
   }
 
   // Método para obtener todos los centros médicos de un usuario específico
-  Future<List<CentroMedico>> getCentrosMedicos() async {
+  Future<List<CentroMedico>> getAllCentrosMedicos() async {
     try {
       final db = await database;
       final List<Map<String, dynamic>> maps = await db.query('centrosMedicos');
@@ -679,6 +679,60 @@ class DatabaseHelper {
       CustomLogger().logError('Error al eliminar el centro médico: $e');
     }
   }
+
+  // Obtener lista de regiones
+  Future<List<String>> getRegiones() async {
+    try{
+      final db = await database;
+      final result = await db.rawQuery('SELECT DISTINCT region FROM centrosMedicos');
+      return result.map((row) => row['region'] as String).toList();
+    } catch (e) {
+      CustomLogger().logError('Error al obtener las regiones: $e');
+      return [];
+    }
+  }
+
+  // Obtener lista de comunas por región
+  Future<List<String>> getComunasByRegion(String region) async {
+    try{
+      final db = await database;
+      final result = await db.rawQuery('SELECT DISTINCT comuna FROM centrosMedicos WHERE region = ?', [region]);
+      return result.map((row) => row['comuna'] as String).toList();
+    } catch (e) {
+        CustomLogger().logError('Error al obtener las comunas por región: $e');
+        return [];
+    }
+  }
+
+  // Buscar centros médicos según región y comuna
+  Future<List<Map<String, dynamic>>> getCentrosMedicos(String? region, String? comuna) async {
+    try{
+      if (region == null && comuna == null) {
+        return [];
+      }
+      final db = await database;
+      String whereClause = '';
+      List<String> whereArgs = [];
+      
+      if (region != null) {
+        whereClause += 'region = ?';
+        whereArgs.add(region);
+      }
+      
+      if (comuna != null) {
+        if (whereClause.isNotEmpty) whereClause += ' AND ';
+        whereClause += 'comuna = ?';
+        whereArgs.add(comuna);
+      }
+      
+      final result = await db.query('centrosMedicos', where: whereClause.isNotEmpty ? whereClause : null, whereArgs: whereArgs.isNotEmpty ? whereArgs : null);
+      return result;
+    } catch (e) {
+      CustomLogger().logError('Error al obtener los centros médicos: $e');
+      return [];
+    }
+  }
+
 
 // 11 -----------------------------------------------------------------------------
 // 12 -----------------------------------------------------------------------------

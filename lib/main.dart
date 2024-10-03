@@ -1,29 +1,28 @@
+import 'package:ADAM/screens/reminder_screen.dart';
+import 'package:ADAM/screens/settings_screen.dart';
+import 'package:ADAM/screens/sos_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'models/theme_model.dart'; // Importa el modelo de tema
 import 'models/font_size_model.dart'; // Importa el modelo de tamaños de fuente
+import 'services/db_adam.dart'; // Importa DatabaseHelper
 import 'screens/home_screen.dart'; // Importa la pantalla principal de inicio
-import 'screens/sos_screen.dart'; // Importa la pantalla de SOS
-import 'screens/reminder_screen.dart'; // Importa la pantalla de recordatorios
-import 'screens/settings_screen.dart'; // Importamos la pantalla de configuraciones
 import 'utils/custom_logger.dart';
-import 'services/db_adam.dart'; 
-
 void main() async {
-  // Asegúrate de que WidgetsBinding esté inicializado antes de usar async
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Inicializa la base de datos
-  await DatabaseHelper().database; // Esto llamará al método que crea la base de datos y las tablas
+  // Inicializamos la base de datos
+  await DatabaseHelper().database; // Aquí se llama a la base de datos que se inicializa de acuerdo al entorno
 
   runApp(
     MultiProvider(
       providers: [
         ChangeNotifierProvider(
-            create: (context) => ThemeModel()), // Proveedor de colores
+          create: (context) => ThemeModel(), // Proveedor de colores
+        ),
         ChangeNotifierProvider(
-            create: (context) =>
-                FontSizeModel()), // Proveedor de tamaños de fuente
+          create: (context) => FontSizeModel(), // Proveedor de tamaños de fuente
+        ),
       ],
       child: MyApp(),
     ),

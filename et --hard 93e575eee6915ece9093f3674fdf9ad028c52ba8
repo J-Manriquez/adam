@@ -1,0 +1,35 @@
+[33mcommit bc5c2566b14c20588de119e80fbac35a6f7c68e2[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: jorge.anttoonio <jorge.anttoonio@gmail.com>
+Date:   Thu Oct 3 02:50:48 2024 +0000
+
+    entorno web eliminado
+
+[33mcommit 1adb68da71d33770b883aa3d0ad799535ae58ee8[m
+Author: jorge.anttoonio <jorge.anttoonio@gmail.com>
+Date:   Wed Oct 2 01:54:34 2024 +0000
+
+    int 1 mostrar centros medicos
+
+[33mcommit f38dba8dc96878085ebb3d457be8b36cb5997e5e[m
+Author: jorge.anttoonio <jorge.anttoonio@gmail.com>
+Date:   Mon Sep 30 12:32:49 2024 +0000
+
+    try/catch en observador de entorno
+
+[33mcommit 5bb6d0525b87bbed33cc24652b409b1c2b2702a5[m[33m ([m[1;31morigin/db_emulador[m[33m, [m[1;32mdb_emulador[m[33m)[m
+Author: jorge.anttoonio <jorge.anttoonio@gmail.com>
+Date:   Mon Sep 30 09:41:18 2024 +0000
+
+    sqflite funcionando en web y android:)
+
+[33mcommit efbc1bb0297a96e8f32a965850561177f144a518[m
+Author: jorge.anttoonio <jorge.anttoonio@gmail.com>
+Date:   Mon Sep 30 09:02:38 2024 +0000
+
+    intento 3
+
+[33mcommit 8adc48fa66af7a1c41d6e3ebdfa0139a8a77464c[m
+Author: jorge.anttoonio <jorge.anttoonio@gmail.com>
+Date:   Mon Sep 30 08:44:04 2024 +0000
+
+    intento 2

@@ -1,3 +1,4 @@
+import 'package:ADAM/screens/centros_medicos_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../models/font_size_model.dart'; // Importamos el modelo de tamaño de fuente
@@ -157,6 +158,53 @@ class SettingsScreen extends StatelessWidget {
                         MaterialPageRoute(
                             builder: (context) => const FontSettingsScreen()),
                       );
+                    },
+                  ),
+                ],
+              ),
+              const SizedBox(height: 20),
+              // Subtítulo "Apariencia"
+              Text(
+                'Extra',
+                style: TextStyle(
+                  fontSize: fontSizeModel
+                      .subtitleSize, // Tamaño dinámico para subtítulo
+                  color:
+                      themeModel.secondaryTextColor, // Color dinámico del texto
+                ),
+                textAlign: TextAlign.start,
+              ),
+              const SizedBox(height: 20),
+              // Dos botones adicionales relacionados con "Apariencia"
+              GridView.count(
+                shrinkWrap: true, // Ajuste automático del GridView
+                crossAxisCount: 2, // Dos columnas
+                childAspectRatio: 1, // Relación de aspecto cuadrado
+                crossAxisSpacing: 16.0, // Espaciado horizontal entre botones
+                mainAxisSpacing: 16.0, // Espaciado vertical entre botones
+                children: [
+                  // Botón 1: Navega a themes_screen.dart
+                  _buildButton(
+                    context,
+                    label: 'Centros Medicos',
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => CentrosMedicosScreen()),
+                      );
+                    },
+                  ),
+                  // Botón 2: Navega a font_settings_screen.dart
+                  _buildButton(
+                    context,
+                    label: 'otro',
+                    onPressed: () {
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(
+                      //       builder: (context) => const FontSettingsScreen()),
+                      // );
                     },
                   ),
                 ],

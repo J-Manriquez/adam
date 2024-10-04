@@ -5,6 +5,7 @@ import '../models/theme_model.dart'; // Importamos el modelo de tema
 import 'themes_screen.dart'; // Importamos la pantalla de temas
 import 'font_settings_screen.dart'; // Importamos la pantalla de configuración de fuentes
 import 'user_data_screen.dart'; // Asegúrate de importar la pantalla de datos del usuario
+import 'centros_medicos_screen.dart'; // Asegúrate de importar la pantalla de centros médicos
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -91,9 +92,14 @@ class SettingsScreen extends StatelessWidget {
                   // Segundo botón: Vacío por ahora
                   _buildButton(
                     context,
-                    label: 'Botón Vacío 1',
+                    label: 'Centros Medicos',
                     onPressed: () {
                       // No hace nada por ahora
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => CentrosMedicosScreen()),
+                      );
                     },
                   ),
                   // Tercer botón: Vacío por ahora

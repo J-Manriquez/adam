@@ -4,7 +4,7 @@ class FontSizeModel with ChangeNotifier {
   // Tamaños predeterminados
   double _titleSize = 24.0;
   double _subtitleSize = 20.0;
-  double _textSize = 18.0;
+  double _textSize = 16.0;
   double _iconSize = 26.0;
 
   // Getters para obtener los tamaños

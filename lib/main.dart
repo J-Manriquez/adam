@@ -17,16 +17,14 @@ void main() async {
   // Inicializamos el logger si es necesario (opcional)
   CustomLogger().logInfo('Inicializando la aplicación...');
 
-  try {
+   try {
     // Inicializamos la base de datos antes de lanzar la app
     await DatabaseHelper().database;
     CustomLogger().logInfo('Base de datos inicializada correctamente.');
-    try {
-      // inserta los centros medicos en la tabla
-      await initializeCentrosMedicos();
-    } catch (e) {
-      CustomLogger().logError('Error al inicializar los centros médicos: $e');
-    }
+
+    // Inicia la inserción de centros médicos en segundo plano
+    insertCentrosMedicosInBackground();
+
   } catch (e) {
     // Capturamos posibles errores en la inicialización
     CustomLogger().logError('Error al inicializar la base de datos: $e');
@@ -45,6 +43,19 @@ void main() async {
       child: MyApp(),
     ),
   );
+}
+
+/// Función que inserta los centros médicos en segundo plano
+void insertCentrosMedicosInBackground() {
+  Future.delayed(Duration.zero, () async {
+    try {
+      // Inserta los centros médicos sin retrasar el inicio de la app
+      await initializeCentrosMedicos();
+      CustomLogger().logInfo('Centros médicos inicializados correctamente.');
+    } catch (e) {
+      CustomLogger().logError('Error al inicializar los centros médicos: $e');
+    }
+  });
 }
 
 class MyApp extends StatelessWidget {

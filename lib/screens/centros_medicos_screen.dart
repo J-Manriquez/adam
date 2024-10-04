@@ -293,8 +293,8 @@ class _CentrosMedicosScreenState extends State<CentrosMedicosScreen> {
             Expanded(
               child: Container(
                 decoration: BoxDecoration(
-                  color: themeModel.secondaryButtonColor
-                      .withOpacity(0.4), // Fondo del cuadro
+                  color: themeModel.primaryButtonColor
+                      .withOpacity(0.7), // Fondo del cuadro
                   borderRadius: BorderRadius.circular(8.0),
                 ),
                 child: ListView.builder(
@@ -308,12 +308,12 @@ class _CentrosMedicosScreenState extends State<CentrosMedicosScreen> {
                           title: Text(
                             centro.nombreOficial,
                             style:
-                                TextStyle(color: themeModel.primaryTextColor),
+                                TextStyle(color: themeModel.secondaryTextColor),
                           ),
                           subtitle: Text(
                             '${centro.direccion}, ${centro.comuna}', // Dirección y comuna en la misma línea
                             style:
-                                TextStyle(color: themeModel.primaryTextColor),
+                                TextStyle(color: themeModel.secondaryTextColor),
                           ),
                           onTap: () => _showCentroMedicoDetails(
                               centro), // Mostrar detalles al tocar

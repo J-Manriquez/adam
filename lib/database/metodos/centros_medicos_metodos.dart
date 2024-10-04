@@ -1,4 +1,3 @@
-import 'package:sqflite/sqflite.dart';
 import 'package:ADAM/models/db_model.dart'; // Importa tu modelo CentroMedico
 import 'package:ADAM/utils/custom_logger.dart';
 import 'package:ADAM/database/db_adam.dart';

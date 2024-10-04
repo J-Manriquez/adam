@@ -60,7 +60,7 @@ class ThemeModel with ChangeNotifier {
     _backgroundColor = Color.fromRGBO(255, 255, 194, 1); // amarillo pastel claro
     _primaryButtonColor = Color.fromRGBO(226, 107, 105, 1); // Botón café pastel
     _secondaryButtonColor = Color.fromRGBO(255, 255, 102, 1); // Botón rojo brillante
-    _primaryTextColor = Color.fromRGBO(255, 255, 194, 1); // Texto pastel claro
+    _primaryTextColor = Color.fromRGBO(243, 255, 194, 1); // Texto pastel claro
     _secondaryTextColor = Color.fromRGBO(30, 30, 30, 1); // Texto oscuro
     _primaryIconColor = Color.fromRGBO(255, 255, 194, 1); // Icono pastel claro
     _secondaryIconColor = Color.fromRGBO(30, 30, 30, 1);  // Icono azul brillante

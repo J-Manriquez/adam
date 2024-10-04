@@ -73,7 +73,7 @@ class FontSettingsScreen extends StatelessWidget {
                 width: double.infinity, // Ancho completo
                 padding: const EdgeInsets.all(16.0),
                 decoration: BoxDecoration(
-                  color: themeModel.secondaryButtonColor.withOpacity(0.4), // Fondo del cuadro
+                  color: themeModel.primaryButtonColor.withOpacity(0.7), // Fondo del cuadro
                   borderRadius: BorderRadius.circular(8.0),
                 ),
                 child: Column(
@@ -83,7 +83,7 @@ class FontSettingsScreen extends StatelessWidget {
                       'Título de Ejemplo',
                       style: TextStyle(
                         fontSize: fontSizeModel.titleSize, // Tamaño dinámico del título
-                        color: themeModel.primaryTextColor, // Color del texto dinámico
+                        color: themeModel.secondaryTextColor, // Color del texto dinámico
                       ),
                       textAlign: TextAlign.center, // Centrado horizontalmente
                     ),
@@ -92,7 +92,7 @@ class FontSettingsScreen extends StatelessWidget {
                       'Subtítulo de Ejemplo',
                       style: TextStyle(
                         fontSize: fontSizeModel.subtitleSize, // Tamaño dinámico del subtítulo
-                        color: themeModel.primaryTextColor, // Color del texto dinámico
+                        color: themeModel.secondaryTextColor, // Color del texto dinámico
                       ),
                       textAlign: TextAlign.center, // Centrado horizontalmente
                     ),
@@ -101,7 +101,7 @@ class FontSettingsScreen extends StatelessWidget {
                       'Este es un ejemplo de texto.',
                       style: TextStyle(
                         fontSize: fontSizeModel.textSize, // Tamaño dinámico del texto
-                        color: themeModel.primaryTextColor, // Color del texto dinámico
+                        color: themeModel.secondaryTextColor, // Color del texto dinámico
                       ),
                       textAlign: TextAlign.center, // Centrado horizontalmente
                     ),
@@ -110,11 +110,11 @@ class FontSettingsScreen extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center, // Centra los íconos
                       children: [
-                        Icon(Icons.home, size: fontSizeModel.iconSize, color: themeModel.primaryIconColor),
+                        Icon(Icons.home, size: fontSizeModel.iconSize, color: themeModel.secondaryTextColor),
                         const SizedBox(width: 20), // Espacio entre íconos
-                        Icon(Icons.favorite, size: fontSizeModel.iconSize, color: themeModel.primaryIconColor),
+                        Icon(Icons.favorite, size: fontSizeModel.iconSize, color: themeModel.secondaryTextColor),
                         const SizedBox(width: 20), // Espacio entre íconos
-                        Icon(Icons.settings, size: fontSizeModel.iconSize, color: themeModel.primaryIconColor),
+                        Icon(Icons.settings, size: fontSizeModel.iconSize, color: themeModel.secondaryTextColor),
                       ],
                     ),
                   ],

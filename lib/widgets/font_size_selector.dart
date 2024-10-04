@@ -31,7 +31,7 @@ class FontSizeSelector extends StatelessWidget {
       children: [
         Text(
           label,
-          style: TextStyle(fontSize: fontSizeModel.textSize, fontWeight: FontWeight.bold),
+          style: TextStyle(color: themeModel.secondaryTextColor, fontSize: fontSizeModel.textSize, fontWeight: FontWeight.bold),
         ),
         Slider(
           value: currentSize,

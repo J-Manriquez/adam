@@ -1,9 +1,9 @@
-import 'package:ADAM/services/db_adam.dart';
 import 'package:ADAM/models/db_model.dart';
+import 'package:ADAM/database/metodos/metodos_generales.dart';
 
-void main() async {
-  // Inicializa la base de datos utilizando la clase DatabaseHelper
-  final dbHelper = DatabaseHelper(); // Instancia de DatabaseHelper
+Future<void> initializeCentrosMedicos() async {
+  // Obtenemos el metodo insert
+  DatabaseCRUD dbCRUD = DatabaseCRUD();
   // Usa try/catch para manejar posibles errores
   try {
 
@@ -19,7 +19,7 @@ void main() async {
     );
 
     // Inserta centro 1 en la base de datos
-    await dbHelper.insertCentroMedico(centro1);
+    await dbCRUD.insertCentroMedico(centro1);
     print("CENTRO 1 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2
@@ -34,7 +34,7 @@ void main() async {
     );
 
     // Inserta centro 2 en la base de datos
-    await dbHelper.insertCentroMedico(centro2);
+    await dbCRUD.insertCentroMedico(centro2);
     print("CENTRO 2 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 3
@@ -49,7 +49,7 @@ void main() async {
     );
 
     // Inserta centro 3 en la base de datos
-    await dbHelper.insertCentroMedico(centro3);
+    await dbCRUD.insertCentroMedico(centro3);
     print("CENTRO 3 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 4
@@ -64,7 +64,7 @@ void main() async {
     );
 
     // Inserta centro 4 en la base de datos
-    await dbHelper.insertCentroMedico(centro4);
+    await dbCRUD.insertCentroMedico(centro4);
     print("CENTRO 4 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 5
@@ -79,7 +79,7 @@ void main() async {
     );
 
     // Inserta centro 5 en la base de datos
-    await dbHelper.insertCentroMedico(centro5);
+    await dbCRUD.insertCentroMedico(centro5);
     print("CENTRO 5 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 6
@@ -94,7 +94,7 @@ void main() async {
     );
 
     // Inserta centro 6 en la base de datos
-    await dbHelper.insertCentroMedico(centro6);
+    await dbCRUD.insertCentroMedico(centro6);
     print("CENTRO 6 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 7
@@ -109,7 +109,7 @@ void main() async {
     );
 
     // Inserta centro 7 en la base de datos
-    await dbHelper.insertCentroMedico(centro7);
+    await dbCRUD.insertCentroMedico(centro7);
     print("CENTRO 7 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 8
@@ -124,7 +124,7 @@ void main() async {
     );
 
     // Inserta centro 8 en la base de datos
-    await dbHelper.insertCentroMedico(centro8);
+    await dbCRUD.insertCentroMedico(centro8);
     print("CENTRO 8 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 9
@@ -139,7 +139,7 @@ void main() async {
     );
 
     // Inserta centro 9 en la base de datos
-    await dbHelper.insertCentroMedico(centro9);
+    await dbCRUD.insertCentroMedico(centro9);
     print("CENTRO 9 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 10
@@ -154,7 +154,7 @@ void main() async {
     );
 
     // Inserta centro 10 en la base de datos
-    await dbHelper.insertCentroMedico(centro10);
+    await dbCRUD.insertCentroMedico(centro10);
     print("CENTRO 10 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 11
@@ -169,7 +169,7 @@ void main() async {
     );
 
     // Inserta centro 11 en la base de datos
-    await dbHelper.insertCentroMedico(centro11);
+    await dbCRUD.insertCentroMedico(centro11);
     print("CENTRO 11 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 12
@@ -184,7 +184,7 @@ void main() async {
     );
 
     // Inserta centro 12 en la base de datos
-    await dbHelper.insertCentroMedico(centro12);
+    await dbCRUD.insertCentroMedico(centro12);
     print("CENTRO 12 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 13
@@ -199,7 +199,7 @@ void main() async {
     );
 
     // Inserta centro 13 en la base de datos
-    await dbHelper.insertCentroMedico(centro13);
+    await dbCRUD.insertCentroMedico(centro13);
     print("CENTRO 13 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 14
@@ -214,7 +214,7 @@ void main() async {
     );
 
     // Inserta centro 14 en la base de datos
-    await dbHelper.insertCentroMedico(centro14);
+    await dbCRUD.insertCentroMedico(centro14);
     print("CENTRO 14 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 15
@@ -229,7 +229,7 @@ void main() async {
     );
 
     // Inserta centro 15 en la base de datos
-    await dbHelper.insertCentroMedico(centro15);
+    await dbCRUD.insertCentroMedico(centro15);
     print("CENTRO 15 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 16
@@ -244,7 +244,7 @@ void main() async {
     );
 
     // Inserta centro 16 en la base de datos
-    await dbHelper.insertCentroMedico(centro16);
+    await dbCRUD.insertCentroMedico(centro16);
     print("CENTRO 16 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 17
@@ -259,7 +259,7 @@ void main() async {
     );
 
     // Inserta centro 17 en la base de datos
-    await dbHelper.insertCentroMedico(centro17);
+    await dbCRUD.insertCentroMedico(centro17);
     print("CENTRO 17 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 18
@@ -274,7 +274,7 @@ void main() async {
     );
 
     // Inserta centro 18 en la base de datos
-    await dbHelper.insertCentroMedico(centro18);
+    await dbCRUD.insertCentroMedico(centro18);
     print("CENTRO 18 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 19
@@ -289,7 +289,7 @@ void main() async {
     );
 
     // Inserta centro 19 en la base de datos
-    await dbHelper.insertCentroMedico(centro19);
+    await dbCRUD.insertCentroMedico(centro19);
     print("CENTRO 19 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 20
@@ -304,7 +304,7 @@ void main() async {
     );
 
     // Inserta centro 20 en la base de datos
-    await dbHelper.insertCentroMedico(centro20);
+    await dbCRUD.insertCentroMedico(centro20);
     print("CENTRO 20 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 21
@@ -319,7 +319,7 @@ void main() async {
     );
 
     // Inserta centro 21 en la base de datos
-    await dbHelper.insertCentroMedico(centro21);
+    await dbCRUD.insertCentroMedico(centro21);
     print("CENTRO 21 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 22
@@ -334,7 +334,7 @@ void main() async {
     );
 
     // Inserta centro 22 en la base de datos
-    await dbHelper.insertCentroMedico(centro22);
+    await dbCRUD.insertCentroMedico(centro22);
     print("CENTRO 22 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 23
@@ -349,7 +349,7 @@ void main() async {
     );
 
     // Inserta centro 23 en la base de datos
-    await dbHelper.insertCentroMedico(centro23);
+    await dbCRUD.insertCentroMedico(centro23);
     print("CENTRO 23 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 24
@@ -364,7 +364,7 @@ void main() async {
     );
 
     // Inserta centro 24 en la base de datos
-    await dbHelper.insertCentroMedico(centro24);
+    await dbCRUD.insertCentroMedico(centro24);
     print("CENTRO 24 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 25
@@ -379,7 +379,7 @@ void main() async {
     );
 
     // Inserta centro 25 en la base de datos
-    await dbHelper.insertCentroMedico(centro25);
+    await dbCRUD.insertCentroMedico(centro25);
     print("CENTRO 25 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 26
@@ -394,7 +394,7 @@ void main() async {
     );
 
     // Inserta centro 26 en la base de datos
-    await dbHelper.insertCentroMedico(centro26);
+    await dbCRUD.insertCentroMedico(centro26);
     print("CENTRO 26 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 27
@@ -409,7 +409,7 @@ void main() async {
     );
 
     // Inserta centro 27 en la base de datos
-    await dbHelper.insertCentroMedico(centro27);
+    await dbCRUD.insertCentroMedico(centro27);
     print("CENTRO 27 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 28
@@ -424,7 +424,7 @@ void main() async {
     );
 
     // Inserta centro 28 en la base de datos
-    await dbHelper.insertCentroMedico(centro28);
+    await dbCRUD.insertCentroMedico(centro28);
     print("CENTRO 28 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 29
@@ -439,7 +439,7 @@ void main() async {
     );
 
     // Inserta centro 29 en la base de datos
-    await dbHelper.insertCentroMedico(centro29);
+    await dbCRUD.insertCentroMedico(centro29);
     print("CENTRO 29 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 30
@@ -454,7 +454,7 @@ void main() async {
     );
 
     // Inserta centro 30 en la base de datos
-    await dbHelper.insertCentroMedico(centro30);
+    await dbCRUD.insertCentroMedico(centro30);
     print("CENTRO 30 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 31
@@ -469,7 +469,7 @@ void main() async {
     );
 
     // Inserta centro 31 en la base de datos
-    await dbHelper.insertCentroMedico(centro31);
+    await dbCRUD.insertCentroMedico(centro31);
     print("CENTRO 31 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 32
@@ -484,7 +484,7 @@ void main() async {
     );
 
     // Inserta centro 32 en la base de datos
-    await dbHelper.insertCentroMedico(centro32);
+    await dbCRUD.insertCentroMedico(centro32);
     print("CENTRO 32 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 33
@@ -499,7 +499,7 @@ void main() async {
     );
 
     // Inserta centro 33 en la base de datos
-    await dbHelper.insertCentroMedico(centro33);
+    await dbCRUD.insertCentroMedico(centro33);
     print("CENTRO 33 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 34
@@ -514,7 +514,7 @@ void main() async {
     );
 
     // Inserta centro 34 en la base de datos
-    await dbHelper.insertCentroMedico(centro34);
+    await dbCRUD.insertCentroMedico(centro34);
     print("CENTRO 34 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 35
@@ -529,7 +529,7 @@ void main() async {
     );
 
     // Inserta centro 35 en la base de datos
-    await dbHelper.insertCentroMedico(centro35);
+    await dbCRUD.insertCentroMedico(centro35);
     print("CENTRO 35 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 36
@@ -544,7 +544,7 @@ void main() async {
     );
 
     // Inserta centro 36 en la base de datos
-    await dbHelper.insertCentroMedico(centro36);
+    await dbCRUD.insertCentroMedico(centro36);
     print("CENTRO 36 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 37
@@ -559,7 +559,7 @@ void main() async {
     );
 
     // Inserta centro 37 en la base de datos
-    await dbHelper.insertCentroMedico(centro37);
+    await dbCRUD.insertCentroMedico(centro37);
     print("CENTRO 37 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 38
@@ -574,7 +574,7 @@ void main() async {
     );
 
     // Inserta centro 38 en la base de datos
-    await dbHelper.insertCentroMedico(centro38);
+    await dbCRUD.insertCentroMedico(centro38);
     print("CENTRO 38 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 39
@@ -589,7 +589,7 @@ void main() async {
     );
 
     // Inserta centro 39 en la base de datos
-    await dbHelper.insertCentroMedico(centro39);
+    await dbCRUD.insertCentroMedico(centro39);
     print("CENTRO 39 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 40
@@ -604,7 +604,7 @@ void main() async {
     );
 
     // Inserta centro 40 en la base de datos
-    await dbHelper.insertCentroMedico(centro40);
+    await dbCRUD.insertCentroMedico(centro40);
     print("CENTRO 40 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 41
@@ -619,7 +619,7 @@ void main() async {
     );
 
     // Inserta centro 41 en la base de datos
-    await dbHelper.insertCentroMedico(centro41);
+    await dbCRUD.insertCentroMedico(centro41);
     print("CENTRO 41 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 42
@@ -634,7 +634,7 @@ void main() async {
     );
 
     // Inserta centro 42 en la base de datos
-    await dbHelper.insertCentroMedico(centro42);
+    await dbCRUD.insertCentroMedico(centro42);
     print("CENTRO 42 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 43
@@ -649,7 +649,7 @@ void main() async {
     );
 
     // Inserta centro 43 en la base de datos
-    await dbHelper.insertCentroMedico(centro43);
+    await dbCRUD.insertCentroMedico(centro43);
     print("CENTRO 43 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 44
@@ -664,7 +664,7 @@ void main() async {
     );
 
     // Inserta centro 44 en la base de datos
-    await dbHelper.insertCentroMedico(centro44);
+    await dbCRUD.insertCentroMedico(centro44);
     print("CENTRO 44 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 45
@@ -679,7 +679,7 @@ void main() async {
     );
 
     // Inserta centro 45 en la base de datos
-    await dbHelper.insertCentroMedico(centro45);
+    await dbCRUD.insertCentroMedico(centro45);
     print("CENTRO 45 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 46
@@ -694,7 +694,7 @@ void main() async {
     );
 
     // Inserta centro 46 en la base de datos
-    await dbHelper.insertCentroMedico(centro46);
+    await dbCRUD.insertCentroMedico(centro46);
     print("CENTRO 46 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 47
@@ -709,7 +709,7 @@ void main() async {
     );
 
     // Inserta centro 47 en la base de datos
-    await dbHelper.insertCentroMedico(centro47);
+    await dbCRUD.insertCentroMedico(centro47);
     print("CENTRO 47 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 48
@@ -724,7 +724,7 @@ void main() async {
     );
 
     // Inserta centro 48 en la base de datos
-    await dbHelper.insertCentroMedico(centro48);
+    await dbCRUD.insertCentroMedico(centro48);
     print("CENTRO 48 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 49
@@ -739,7 +739,7 @@ void main() async {
     );
 
     // Inserta centro 49 en la base de datos
-    await dbHelper.insertCentroMedico(centro49);
+    await dbCRUD.insertCentroMedico(centro49);
     print("CENTRO 49 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 50
@@ -754,7 +754,7 @@ void main() async {
     );
 
     // Inserta centro 50 en la base de datos
-    await dbHelper.insertCentroMedico(centro50);
+    await dbCRUD.insertCentroMedico(centro50);
     print("CENTRO 50 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 51
@@ -769,7 +769,7 @@ void main() async {
     );
 
     // Inserta centro 51 en la base de datos
-    await dbHelper.insertCentroMedico(centro51);
+    await dbCRUD.insertCentroMedico(centro51);
     print("CENTRO 51 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 52
@@ -784,7 +784,7 @@ void main() async {
     );
 
     // Inserta centro 52 en la base de datos
-    await dbHelper.insertCentroMedico(centro52);
+    await dbCRUD.insertCentroMedico(centro52);
     print("CENTRO 52 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 53
@@ -799,7 +799,7 @@ void main() async {
     );
 
     // Inserta centro 53 en la base de datos
-    await dbHelper.insertCentroMedico(centro53);
+    await dbCRUD.insertCentroMedico(centro53);
     print("CENTRO 53 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 54
@@ -814,7 +814,7 @@ void main() async {
     );
 
     // Inserta centro 54 en la base de datos
-    await dbHelper.insertCentroMedico(centro54);
+    await dbCRUD.insertCentroMedico(centro54);
     print("CENTRO 54 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 55
@@ -829,7 +829,7 @@ void main() async {
     );
 
     // Inserta centro 55 en la base de datos
-    await dbHelper.insertCentroMedico(centro55);
+    await dbCRUD.insertCentroMedico(centro55);
     print("CENTRO 55 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 56
@@ -844,7 +844,7 @@ void main() async {
     );
 
     // Inserta centro 56 en la base de datos
-    await dbHelper.insertCentroMedico(centro56);
+    await dbCRUD.insertCentroMedico(centro56);
     print("CENTRO 56 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 57
@@ -859,7 +859,7 @@ void main() async {
     );
 
     // Inserta centro 57 en la base de datos
-    await dbHelper.insertCentroMedico(centro57);
+    await dbCRUD.insertCentroMedico(centro57);
     print("CENTRO 57 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 58
@@ -874,7 +874,7 @@ void main() async {
     );
 
     // Inserta centro 58 en la base de datos
-    await dbHelper.insertCentroMedico(centro58);
+    await dbCRUD.insertCentroMedico(centro58);
     print("CENTRO 58 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 59
@@ -889,7 +889,7 @@ void main() async {
     );
 
     // Inserta centro 59 en la base de datos
-    await dbHelper.insertCentroMedico(centro59);
+    await dbCRUD.insertCentroMedico(centro59);
     print("CENTRO 59 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 60
@@ -904,7 +904,7 @@ void main() async {
     );
 
     // Inserta centro 60 en la base de datos
-    await dbHelper.insertCentroMedico(centro60);
+    await dbCRUD.insertCentroMedico(centro60);
     print("CENTRO 60 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 61
@@ -919,7 +919,7 @@ void main() async {
     );
 
     // Inserta centro 61 en la base de datos
-    await dbHelper.insertCentroMedico(centro61);
+    await dbCRUD.insertCentroMedico(centro61);
     print("CENTRO 61 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 62
@@ -934,7 +934,7 @@ void main() async {
     );
 
     // Inserta centro 62 en la base de datos
-    await dbHelper.insertCentroMedico(centro62);
+    await dbCRUD.insertCentroMedico(centro62);
     print("CENTRO 62 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 63
@@ -949,7 +949,7 @@ void main() async {
     );
 
     // Inserta centro 63 en la base de datos
-    await dbHelper.insertCentroMedico(centro63);
+    await dbCRUD.insertCentroMedico(centro63);
     print("CENTRO 63 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 64
@@ -964,7 +964,7 @@ void main() async {
     );
 
     // Inserta centro 64 en la base de datos
-    await dbHelper.insertCentroMedico(centro64);
+    await dbCRUD.insertCentroMedico(centro64);
     print("CENTRO 64 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 65
@@ -979,7 +979,7 @@ void main() async {
     );
 
     // Inserta centro 65 en la base de datos
-    await dbHelper.insertCentroMedico(centro65);
+    await dbCRUD.insertCentroMedico(centro65);
     print("CENTRO 65 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 66
@@ -994,7 +994,7 @@ void main() async {
     );
 
     // Inserta centro 66 en la base de datos
-    await dbHelper.insertCentroMedico(centro66);
+    await dbCRUD.insertCentroMedico(centro66);
     print("CENTRO 66 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 67
@@ -1009,7 +1009,7 @@ void main() async {
     );
 
     // Inserta centro 67 en la base de datos
-    await dbHelper.insertCentroMedico(centro67);
+    await dbCRUD.insertCentroMedico(centro67);
     print("CENTRO 67 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 68
@@ -1024,7 +1024,7 @@ void main() async {
     );
 
     // Inserta centro 68 en la base de datos
-    await dbHelper.insertCentroMedico(centro68);
+    await dbCRUD.insertCentroMedico(centro68);
     print("CENTRO 68 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 69
@@ -1039,7 +1039,7 @@ void main() async {
     );
 
     // Inserta centro 69 en la base de datos
-    await dbHelper.insertCentroMedico(centro69);
+    await dbCRUD.insertCentroMedico(centro69);
     print("CENTRO 69 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 70
@@ -1054,7 +1054,7 @@ void main() async {
     );
 
     // Inserta centro 70 en la base de datos
-    await dbHelper.insertCentroMedico(centro70);
+    await dbCRUD.insertCentroMedico(centro70);
     print("CENTRO 70 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 71
@@ -1069,7 +1069,7 @@ void main() async {
     );
 
     // Inserta centro 71 en la base de datos
-    await dbHelper.insertCentroMedico(centro71);
+    await dbCRUD.insertCentroMedico(centro71);
     print("CENTRO 71 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 72
@@ -1084,7 +1084,7 @@ void main() async {
     );
 
     // Inserta centro 72 en la base de datos
-    await dbHelper.insertCentroMedico(centro72);
+    await dbCRUD.insertCentroMedico(centro72);
     print("CENTRO 72 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 73
@@ -1099,7 +1099,7 @@ void main() async {
     );
 
     // Inserta centro 73 en la base de datos
-    await dbHelper.insertCentroMedico(centro73);
+    await dbCRUD.insertCentroMedico(centro73);
     print("CENTRO 73 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 74
@@ -1114,7 +1114,7 @@ void main() async {
     );
 
     // Inserta centro 74 en la base de datos
-    await dbHelper.insertCentroMedico(centro74);
+    await dbCRUD.insertCentroMedico(centro74);
     print("CENTRO 74 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 75
@@ -1129,7 +1129,7 @@ void main() async {
     );
 
     // Inserta centro 75 en la base de datos
-    await dbHelper.insertCentroMedico(centro75);
+    await dbCRUD.insertCentroMedico(centro75);
     print("CENTRO 75 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 76
@@ -1144,7 +1144,7 @@ void main() async {
     );
 
     // Inserta centro 76 en la base de datos
-    await dbHelper.insertCentroMedico(centro76);
+    await dbCRUD.insertCentroMedico(centro76);
     print("CENTRO 76 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 77
@@ -1159,7 +1159,7 @@ void main() async {
     );
 
     // Inserta centro 77 en la base de datos
-    await dbHelper.insertCentroMedico(centro77);
+    await dbCRUD.insertCentroMedico(centro77);
     print("CENTRO 77 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 78
@@ -1174,7 +1174,7 @@ void main() async {
     );
 
     // Inserta centro 78 en la base de datos
-    await dbHelper.insertCentroMedico(centro78);
+    await dbCRUD.insertCentroMedico(centro78);
     print("CENTRO 78 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 79
@@ -1189,7 +1189,7 @@ void main() async {
     );
 
     // Inserta centro 79 en la base de datos
-    await dbHelper.insertCentroMedico(centro79);
+    await dbCRUD.insertCentroMedico(centro79);
     print("CENTRO 79 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 80
@@ -1204,7 +1204,7 @@ void main() async {
     );
 
     // Inserta centro 80 en la base de datos
-    await dbHelper.insertCentroMedico(centro80);
+    await dbCRUD.insertCentroMedico(centro80);
     print("CENTRO 80 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 81
@@ -1219,7 +1219,7 @@ void main() async {
     );
 
     // Inserta centro 81 en la base de datos
-    await dbHelper.insertCentroMedico(centro81);
+    await dbCRUD.insertCentroMedico(centro81);
     print("CENTRO 81 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 82
@@ -1234,7 +1234,7 @@ void main() async {
     );
 
     // Inserta centro 82 en la base de datos
-    await dbHelper.insertCentroMedico(centro82);
+    await dbCRUD.insertCentroMedico(centro82);
     print("CENTRO 82 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 83
@@ -1249,7 +1249,7 @@ void main() async {
     );
 
     // Inserta centro 83 en la base de datos
-    await dbHelper.insertCentroMedico(centro83);
+    await dbCRUD.insertCentroMedico(centro83);
     print("CENTRO 83 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 84
@@ -1264,7 +1264,7 @@ void main() async {
     );
 
     // Inserta centro 84 en la base de datos
-    await dbHelper.insertCentroMedico(centro84);
+    await dbCRUD.insertCentroMedico(centro84);
     print("CENTRO 84 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 85
@@ -1279,7 +1279,7 @@ void main() async {
     );
 
     // Inserta centro 85 en la base de datos
-    await dbHelper.insertCentroMedico(centro85);
+    await dbCRUD.insertCentroMedico(centro85);
     print("CENTRO 85 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 86
@@ -1294,7 +1294,7 @@ void main() async {
     );
 
     // Inserta centro 86 en la base de datos
-    await dbHelper.insertCentroMedico(centro86);
+    await dbCRUD.insertCentroMedico(centro86);
     print("CENTRO 86 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 87
@@ -1309,7 +1309,7 @@ void main() async {
     );
 
     // Inserta centro 87 en la base de datos
-    await dbHelper.insertCentroMedico(centro87);
+    await dbCRUD.insertCentroMedico(centro87);
     print("CENTRO 87 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 88
@@ -1324,7 +1324,7 @@ void main() async {
     );
 
     // Inserta centro 88 en la base de datos
-    await dbHelper.insertCentroMedico(centro88);
+    await dbCRUD.insertCentroMedico(centro88);
     print("CENTRO 88 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 89
@@ -1339,7 +1339,7 @@ void main() async {
     );
 
     // Inserta centro 89 en la base de datos
-    await dbHelper.insertCentroMedico(centro89);
+    await dbCRUD.insertCentroMedico(centro89);
     print("CENTRO 89 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 90
@@ -1354,7 +1354,7 @@ void main() async {
     );
 
     // Inserta centro 90 en la base de datos
-    await dbHelper.insertCentroMedico(centro90);
+    await dbCRUD.insertCentroMedico(centro90);
     print("CENTRO 90 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 91
@@ -1369,7 +1369,7 @@ void main() async {
     );
 
     // Inserta centro 91 en la base de datos
-    await dbHelper.insertCentroMedico(centro91);
+    await dbCRUD.insertCentroMedico(centro91);
     print("CENTRO 91 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 92
@@ -1384,7 +1384,7 @@ void main() async {
     );
 
     // Inserta centro 92 en la base de datos
-    await dbHelper.insertCentroMedico(centro92);
+    await dbCRUD.insertCentroMedico(centro92);
     print("CENTRO 92 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 93
@@ -1399,7 +1399,7 @@ void main() async {
     );
 
     // Inserta centro 93 en la base de datos
-    await dbHelper.insertCentroMedico(centro93);
+    await dbCRUD.insertCentroMedico(centro93);
     print("CENTRO 93 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 94
@@ -1414,7 +1414,7 @@ void main() async {
     );
 
     // Inserta centro 94 en la base de datos
-    await dbHelper.insertCentroMedico(centro94);
+    await dbCRUD.insertCentroMedico(centro94);
     print("CENTRO 94 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 95
@@ -1429,7 +1429,7 @@ void main() async {
     );
 
     // Inserta centro 95 en la base de datos
-    await dbHelper.insertCentroMedico(centro95);
+    await dbCRUD.insertCentroMedico(centro95);
     print("CENTRO 95 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 96
@@ -1444,7 +1444,7 @@ void main() async {
     );
 
     // Inserta centro 96 en la base de datos
-    await dbHelper.insertCentroMedico(centro96);
+    await dbCRUD.insertCentroMedico(centro96);
     print("CENTRO 96 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 97
@@ -1459,7 +1459,7 @@ void main() async {
     );
 
     // Inserta centro 97 en la base de datos
-    await dbHelper.insertCentroMedico(centro97);
+    await dbCRUD.insertCentroMedico(centro97);
     print("CENTRO 97 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 98
@@ -1474,7 +1474,7 @@ void main() async {
     );
 
     // Inserta centro 98 en la base de datos
-    await dbHelper.insertCentroMedico(centro98);
+    await dbCRUD.insertCentroMedico(centro98);
     print("CENTRO 98 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 99
@@ -1489,7 +1489,7 @@ void main() async {
     );
 
     // Inserta centro 99 en la base de datos
-    await dbHelper.insertCentroMedico(centro99);
+    await dbCRUD.insertCentroMedico(centro99);
     print("CENTRO 99 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 100
@@ -1504,7 +1504,7 @@ void main() async {
     );
 
     // Inserta centro 100 en la base de datos
-    await dbHelper.insertCentroMedico(centro100);
+    await dbCRUD.insertCentroMedico(centro100);
     print("CENTRO 100 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 101
@@ -1519,7 +1519,7 @@ void main() async {
     );
 
     // Inserta centro 101 en la base de datos
-    await dbHelper.insertCentroMedico(centro101);
+    await dbCRUD.insertCentroMedico(centro101);
     print("CENTRO 101 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 102
@@ -1534,7 +1534,7 @@ void main() async {
     );
 
     // Inserta centro 102 en la base de datos
-    await dbHelper.insertCentroMedico(centro102);
+    await dbCRUD.insertCentroMedico(centro102);
     print("CENTRO 102 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 103
@@ -1549,7 +1549,7 @@ void main() async {
     );
 
     // Inserta centro 103 en la base de datos
-    await dbHelper.insertCentroMedico(centro103);
+    await dbCRUD.insertCentroMedico(centro103);
     print("CENTRO 103 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 104
@@ -1564,7 +1564,7 @@ void main() async {
     );
 
     // Inserta centro 104 en la base de datos
-    await dbHelper.insertCentroMedico(centro104);
+    await dbCRUD.insertCentroMedico(centro104);
     print("CENTRO 104 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 105
@@ -1579,7 +1579,7 @@ void main() async {
     );
 
     // Inserta centro 105 en la base de datos
-    await dbHelper.insertCentroMedico(centro105);
+    await dbCRUD.insertCentroMedico(centro105);
     print("CENTRO 105 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 106
@@ -1594,7 +1594,7 @@ void main() async {
     );
 
     // Inserta centro 106 en la base de datos
-    await dbHelper.insertCentroMedico(centro106);
+    await dbCRUD.insertCentroMedico(centro106);
     print("CENTRO 106 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 107
@@ -1609,7 +1609,7 @@ void main() async {
     );
 
     // Inserta centro 107 en la base de datos
-    await dbHelper.insertCentroMedico(centro107);
+    await dbCRUD.insertCentroMedico(centro107);
     print("CENTRO 107 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 108
@@ -1624,7 +1624,7 @@ void main() async {
     );
 
     // Inserta centro 108 en la base de datos
-    await dbHelper.insertCentroMedico(centro108);
+    await dbCRUD.insertCentroMedico(centro108);
     print("CENTRO 108 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 109
@@ -1639,7 +1639,7 @@ void main() async {
     );
 
     // Inserta centro 109 en la base de datos
-    await dbHelper.insertCentroMedico(centro109);
+    await dbCRUD.insertCentroMedico(centro109);
     print("CENTRO 109 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 110
@@ -1654,7 +1654,7 @@ void main() async {
     );
 
     // Inserta centro 110 en la base de datos
-    await dbHelper.insertCentroMedico(centro110);
+    await dbCRUD.insertCentroMedico(centro110);
     print("CENTRO 110 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 111
@@ -1669,7 +1669,7 @@ void main() async {
     );
 
     // Inserta centro 111 en la base de datos
-    await dbHelper.insertCentroMedico(centro111);
+    await dbCRUD.insertCentroMedico(centro111);
     print("CENTRO 111 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 112
@@ -1684,7 +1684,7 @@ void main() async {
     );
 
     // Inserta centro 112 en la base de datos
-    await dbHelper.insertCentroMedico(centro112);
+    await dbCRUD.insertCentroMedico(centro112);
     print("CENTRO 112 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 113
@@ -1699,7 +1699,7 @@ void main() async {
     );
 
     // Inserta centro 113 en la base de datos
-    await dbHelper.insertCentroMedico(centro113);
+    await dbCRUD.insertCentroMedico(centro113);
     print("CENTRO 113 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 114
@@ -1714,7 +1714,7 @@ void main() async {
     );
 
     // Inserta centro 114 en la base de datos
-    await dbHelper.insertCentroMedico(centro114);
+    await dbCRUD.insertCentroMedico(centro114);
     print("CENTRO 114 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 115
@@ -1729,7 +1729,7 @@ void main() async {
     );
 
     // Inserta centro 115 en la base de datos
-    await dbHelper.insertCentroMedico(centro115);
+    await dbCRUD.insertCentroMedico(centro115);
     print("CENTRO 115 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 116
@@ -1744,7 +1744,7 @@ void main() async {
     );
 
     // Inserta centro 116 en la base de datos
-    await dbHelper.insertCentroMedico(centro116);
+    await dbCRUD.insertCentroMedico(centro116);
     print("CENTRO 116 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 117
@@ -1759,7 +1759,7 @@ void main() async {
     );
 
     // Inserta centro 117 en la base de datos
-    await dbHelper.insertCentroMedico(centro117);
+    await dbCRUD.insertCentroMedico(centro117);
     print("CENTRO 117 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 118
@@ -1774,7 +1774,7 @@ void main() async {
     );
 
     // Inserta centro 118 en la base de datos
-    await dbHelper.insertCentroMedico(centro118);
+    await dbCRUD.insertCentroMedico(centro118);
     print("CENTRO 118 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 119
@@ -1789,7 +1789,7 @@ void main() async {
     );
 
     // Inserta centro 119 en la base de datos
-    await dbHelper.insertCentroMedico(centro119);
+    await dbCRUD.insertCentroMedico(centro119);
     print("CENTRO 119 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 120
@@ -1804,7 +1804,7 @@ void main() async {
     );
 
     // Inserta centro 120 en la base de datos
-    await dbHelper.insertCentroMedico(centro120);
+    await dbCRUD.insertCentroMedico(centro120);
     print("CENTRO 120 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 121
@@ -1819,7 +1819,7 @@ void main() async {
     );
 
     // Inserta centro 121 en la base de datos
-    await dbHelper.insertCentroMedico(centro121);
+    await dbCRUD.insertCentroMedico(centro121);
     print("CENTRO 121 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 122
@@ -1834,7 +1834,7 @@ void main() async {
     );
 
     // Inserta centro 122 en la base de datos
-    await dbHelper.insertCentroMedico(centro122);
+    await dbCRUD.insertCentroMedico(centro122);
     print("CENTRO 122 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 123
@@ -1849,7 +1849,7 @@ void main() async {
     );
 
     // Inserta centro 123 en la base de datos
-    await dbHelper.insertCentroMedico(centro123);
+    await dbCRUD.insertCentroMedico(centro123);
     print("CENTRO 123 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 124
@@ -1864,7 +1864,7 @@ void main() async {
     );
 
     // Inserta centro 124 en la base de datos
-    await dbHelper.insertCentroMedico(centro124);
+    await dbCRUD.insertCentroMedico(centro124);
     print("CENTRO 124 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 125
@@ -1879,7 +1879,7 @@ void main() async {
     );
 
     // Inserta centro 125 en la base de datos
-    await dbHelper.insertCentroMedico(centro125);
+    await dbCRUD.insertCentroMedico(centro125);
     print("CENTRO 125 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 126
@@ -1894,7 +1894,7 @@ void main() async {
     );
 
     // Inserta centro 126 en la base de datos
-    await dbHelper.insertCentroMedico(centro126);
+    await dbCRUD.insertCentroMedico(centro126);
     print("CENTRO 126 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 127
@@ -1909,7 +1909,7 @@ void main() async {
     );
 
     // Inserta centro 127 en la base de datos
-    await dbHelper.insertCentroMedico(centro127);
+    await dbCRUD.insertCentroMedico(centro127);
     print("CENTRO 127 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 128
@@ -1924,7 +1924,7 @@ void main() async {
     );
 
     // Inserta centro 128 en la base de datos
-    await dbHelper.insertCentroMedico(centro128);
+    await dbCRUD.insertCentroMedico(centro128);
     print("CENTRO 128 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 129
@@ -1939,7 +1939,7 @@ void main() async {
     );
 
     // Inserta centro 129 en la base de datos
-    await dbHelper.insertCentroMedico(centro129);
+    await dbCRUD.insertCentroMedico(centro129);
     print("CENTRO 129 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 130
@@ -1954,7 +1954,7 @@ void main() async {
     );
 
     // Inserta centro 130 en la base de datos
-    await dbHelper.insertCentroMedico(centro130);
+    await dbCRUD.insertCentroMedico(centro130);
     print("CENTRO 130 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 131
@@ -1969,7 +1969,7 @@ void main() async {
     );
 
     // Inserta centro 131 en la base de datos
-    await dbHelper.insertCentroMedico(centro131);
+    await dbCRUD.insertCentroMedico(centro131);
     print("CENTRO 131 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 132
@@ -1984,7 +1984,7 @@ void main() async {
     );
 
     // Inserta centro 132 en la base de datos
-    await dbHelper.insertCentroMedico(centro132);
+    await dbCRUD.insertCentroMedico(centro132);
     print("CENTRO 132 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 133
@@ -1999,7 +1999,7 @@ void main() async {
     );
 
     // Inserta centro 133 en la base de datos
-    await dbHelper.insertCentroMedico(centro133);
+    await dbCRUD.insertCentroMedico(centro133);
     print("CENTRO 133 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 134
@@ -2014,7 +2014,7 @@ void main() async {
     );
 
     // Inserta centro 134 en la base de datos
-    await dbHelper.insertCentroMedico(centro134);
+    await dbCRUD.insertCentroMedico(centro134);
     print("CENTRO 134 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 135
@@ -2029,7 +2029,7 @@ void main() async {
     );
 
     // Inserta centro 135 en la base de datos
-    await dbHelper.insertCentroMedico(centro135);
+    await dbCRUD.insertCentroMedico(centro135);
     print("CENTRO 135 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 136
@@ -2044,7 +2044,7 @@ void main() async {
     );
 
     // Inserta centro 136 en la base de datos
-    await dbHelper.insertCentroMedico(centro136);
+    await dbCRUD.insertCentroMedico(centro136);
     print("CENTRO 136 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 137
@@ -2059,7 +2059,7 @@ void main() async {
     );
 
     // Inserta centro 137 en la base de datos
-    await dbHelper.insertCentroMedico(centro137);
+    await dbCRUD.insertCentroMedico(centro137);
     print("CENTRO 137 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 138
@@ -2074,7 +2074,7 @@ void main() async {
     );
 
     // Inserta centro 138 en la base de datos
-    await dbHelper.insertCentroMedico(centro138);
+    await dbCRUD.insertCentroMedico(centro138);
     print("CENTRO 138 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 139
@@ -2089,7 +2089,7 @@ void main() async {
     );
 
     // Inserta centro 139 en la base de datos
-    await dbHelper.insertCentroMedico(centro139);
+    await dbCRUD.insertCentroMedico(centro139);
     print("CENTRO 139 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 140
@@ -2104,7 +2104,7 @@ void main() async {
     );
 
     // Inserta centro 140 en la base de datos
-    await dbHelper.insertCentroMedico(centro140);
+    await dbCRUD.insertCentroMedico(centro140);
     print("CENTRO 140 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 141
@@ -2119,7 +2119,7 @@ void main() async {
     );
 
     // Inserta centro 141 en la base de datos
-    await dbHelper.insertCentroMedico(centro141);
+    await dbCRUD.insertCentroMedico(centro141);
     print("CENTRO 141 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 142
@@ -2134,7 +2134,7 @@ void main() async {
     );
 
     // Inserta centro 142 en la base de datos
-    await dbHelper.insertCentroMedico(centro142);
+    await dbCRUD.insertCentroMedico(centro142);
     print("CENTRO 142 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 143
@@ -2149,7 +2149,7 @@ void main() async {
     );
 
     // Inserta centro 143 en la base de datos
-    await dbHelper.insertCentroMedico(centro143);
+    await dbCRUD.insertCentroMedico(centro143);
     print("CENTRO 143 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 144
@@ -2164,7 +2164,7 @@ void main() async {
     );
 
     // Inserta centro 144 en la base de datos
-    await dbHelper.insertCentroMedico(centro144);
+    await dbCRUD.insertCentroMedico(centro144);
     print("CENTRO 144 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 145
@@ -2179,7 +2179,7 @@ void main() async {
     );
 
     // Inserta centro 145 en la base de datos
-    await dbHelper.insertCentroMedico(centro145);
+    await dbCRUD.insertCentroMedico(centro145);
     print("CENTRO 145 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 146
@@ -2194,7 +2194,7 @@ void main() async {
     );
 
     // Inserta centro 146 en la base de datos
-    await dbHelper.insertCentroMedico(centro146);
+    await dbCRUD.insertCentroMedico(centro146);
     print("CENTRO 146 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 147
@@ -2209,7 +2209,7 @@ void main() async {
     );
 
     // Inserta centro 147 en la base de datos
-    await dbHelper.insertCentroMedico(centro147);
+    await dbCRUD.insertCentroMedico(centro147);
     print("CENTRO 147 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 148
@@ -2224,7 +2224,7 @@ void main() async {
     );
 
     // Inserta centro 148 en la base de datos
-    await dbHelper.insertCentroMedico(centro148);
+    await dbCRUD.insertCentroMedico(centro148);
     print("CENTRO 148 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 149
@@ -2239,7 +2239,7 @@ void main() async {
     );
 
     // Inserta centro 149 en la base de datos
-    await dbHelper.insertCentroMedico(centro149);
+    await dbCRUD.insertCentroMedico(centro149);
     print("CENTRO 149 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 150
@@ -2254,7 +2254,7 @@ void main() async {
     );
 
     // Inserta centro 150 en la base de datos
-    await dbHelper.insertCentroMedico(centro150);
+    await dbCRUD.insertCentroMedico(centro150);
     print("CENTRO 150 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 151
@@ -2269,7 +2269,7 @@ void main() async {
     );
 
     // Inserta centro 151 en la base de datos
-    await dbHelper.insertCentroMedico(centro151);
+    await dbCRUD.insertCentroMedico(centro151);
     print("CENTRO 151 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 152
@@ -2284,7 +2284,7 @@ void main() async {
     );
 
     // Inserta centro 152 en la base de datos
-    await dbHelper.insertCentroMedico(centro152);
+    await dbCRUD.insertCentroMedico(centro152);
     print("CENTRO 152 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 153
@@ -2299,7 +2299,7 @@ void main() async {
     );
 
     // Inserta centro 153 en la base de datos
-    await dbHelper.insertCentroMedico(centro153);
+    await dbCRUD.insertCentroMedico(centro153);
     print("CENTRO 153 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 154
@@ -2314,7 +2314,7 @@ void main() async {
     );
 
     // Inserta centro 154 en la base de datos
-    await dbHelper.insertCentroMedico(centro154);
+    await dbCRUD.insertCentroMedico(centro154);
     print("CENTRO 154 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 155
@@ -2329,7 +2329,7 @@ void main() async {
     );
 
     // Inserta centro 155 en la base de datos
-    await dbHelper.insertCentroMedico(centro155);
+    await dbCRUD.insertCentroMedico(centro155);
     print("CENTRO 155 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 156
@@ -2344,7 +2344,7 @@ void main() async {
     );
 
     // Inserta centro 156 en la base de datos
-    await dbHelper.insertCentroMedico(centro156);
+    await dbCRUD.insertCentroMedico(centro156);
     print("CENTRO 156 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 157
@@ -2359,7 +2359,7 @@ void main() async {
     );
 
     // Inserta centro 157 en la base de datos
-    await dbHelper.insertCentroMedico(centro157);
+    await dbCRUD.insertCentroMedico(centro157);
     print("CENTRO 157 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 158
@@ -2374,7 +2374,7 @@ void main() async {
     );
 
     // Inserta centro 158 en la base de datos
-    await dbHelper.insertCentroMedico(centro158);
+    await dbCRUD.insertCentroMedico(centro158);
     print("CENTRO 158 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 159
@@ -2389,7 +2389,7 @@ void main() async {
     );
 
     // Inserta centro 159 en la base de datos
-    await dbHelper.insertCentroMedico(centro159);
+    await dbCRUD.insertCentroMedico(centro159);
     print("CENTRO 159 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 160
@@ -2404,7 +2404,7 @@ void main() async {
     );
 
     // Inserta centro 160 en la base de datos
-    await dbHelper.insertCentroMedico(centro160);
+    await dbCRUD.insertCentroMedico(centro160);
     print("CENTRO 160 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 161
@@ -2419,7 +2419,7 @@ void main() async {
     );
 
     // Inserta centro 161 en la base de datos
-    await dbHelper.insertCentroMedico(centro161);
+    await dbCRUD.insertCentroMedico(centro161);
     print("CENTRO 161 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 162
@@ -2434,7 +2434,7 @@ void main() async {
     );
 
     // Inserta centro 162 en la base de datos
-    await dbHelper.insertCentroMedico(centro162);
+    await dbCRUD.insertCentroMedico(centro162);
     print("CENTRO 162 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 163
@@ -2449,7 +2449,7 @@ void main() async {
     );
 
     // Inserta centro 163 en la base de datos
-    await dbHelper.insertCentroMedico(centro163);
+    await dbCRUD.insertCentroMedico(centro163);
     print("CENTRO 163 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 164
@@ -2464,7 +2464,7 @@ void main() async {
     );
 
     // Inserta centro 164 en la base de datos
-    await dbHelper.insertCentroMedico(centro164);
+    await dbCRUD.insertCentroMedico(centro164);
     print("CENTRO 164 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 165
@@ -2479,7 +2479,7 @@ void main() async {
     );
 
     // Inserta centro 165 en la base de datos
-    await dbHelper.insertCentroMedico(centro165);
+    await dbCRUD.insertCentroMedico(centro165);
     print("CENTRO 165 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 166
@@ -2494,7 +2494,7 @@ void main() async {
     );
 
     // Inserta centro 166 en la base de datos
-    await dbHelper.insertCentroMedico(centro166);
+    await dbCRUD.insertCentroMedico(centro166);
     print("CENTRO 166 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 167
@@ -2509,7 +2509,7 @@ void main() async {
     );
 
     // Inserta centro 167 en la base de datos
-    await dbHelper.insertCentroMedico(centro167);
+    await dbCRUD.insertCentroMedico(centro167);
     print("CENTRO 167 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 168
@@ -2524,7 +2524,7 @@ void main() async {
     );
 
     // Inserta centro 168 en la base de datos
-    await dbHelper.insertCentroMedico(centro168);
+    await dbCRUD.insertCentroMedico(centro168);
     print("CENTRO 168 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 169
@@ -2539,7 +2539,7 @@ void main() async {
     );
 
     // Inserta centro 169 en la base de datos
-    await dbHelper.insertCentroMedico(centro169);
+    await dbCRUD.insertCentroMedico(centro169);
     print("CENTRO 169 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 170
@@ -2554,7 +2554,7 @@ void main() async {
     );
 
     // Inserta centro 170 en la base de datos
-    await dbHelper.insertCentroMedico(centro170);
+    await dbCRUD.insertCentroMedico(centro170);
     print("CENTRO 170 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 171
@@ -2569,7 +2569,7 @@ void main() async {
     );
 
     // Inserta centro 171 en la base de datos
-    await dbHelper.insertCentroMedico(centro171);
+    await dbCRUD.insertCentroMedico(centro171);
     print("CENTRO 171 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 172
@@ -2584,7 +2584,7 @@ void main() async {
     );
 
     // Inserta centro 172 en la base de datos
-    await dbHelper.insertCentroMedico(centro172);
+    await dbCRUD.insertCentroMedico(centro172);
     print("CENTRO 172 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 173
@@ -2599,7 +2599,7 @@ void main() async {
     );
 
     // Inserta centro 173 en la base de datos
-    await dbHelper.insertCentroMedico(centro173);
+    await dbCRUD.insertCentroMedico(centro173);
     print("CENTRO 173 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 174
@@ -2614,7 +2614,7 @@ void main() async {
     );
 
     // Inserta centro 174 en la base de datos
-    await dbHelper.insertCentroMedico(centro174);
+    await dbCRUD.insertCentroMedico(centro174);
     print("CENTRO 174 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 175
@@ -2629,7 +2629,7 @@ void main() async {
     );
 
     // Inserta centro 175 en la base de datos
-    await dbHelper.insertCentroMedico(centro175);
+    await dbCRUD.insertCentroMedico(centro175);
     print("CENTRO 175 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 176
@@ -2644,7 +2644,7 @@ void main() async {
     );
 
     // Inserta centro 176 en la base de datos
-    await dbHelper.insertCentroMedico(centro176);
+    await dbCRUD.insertCentroMedico(centro176);
     print("CENTRO 176 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 177
@@ -2659,7 +2659,7 @@ void main() async {
     );
 
     // Inserta centro 177 en la base de datos
-    await dbHelper.insertCentroMedico(centro177);
+    await dbCRUD.insertCentroMedico(centro177);
     print("CENTRO 177 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 178
@@ -2674,7 +2674,7 @@ void main() async {
     );
 
     // Inserta centro 178 en la base de datos
-    await dbHelper.insertCentroMedico(centro178);
+    await dbCRUD.insertCentroMedico(centro178);
     print("CENTRO 178 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 179
@@ -2689,7 +2689,7 @@ void main() async {
     );
 
     // Inserta centro 179 en la base de datos
-    await dbHelper.insertCentroMedico(centro179);
+    await dbCRUD.insertCentroMedico(centro179);
     print("CENTRO 179 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 180
@@ -2704,7 +2704,7 @@ void main() async {
     );
 
     // Inserta centro 180 en la base de datos
-    await dbHelper.insertCentroMedico(centro180);
+    await dbCRUD.insertCentroMedico(centro180);
     print("CENTRO 180 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 181
@@ -2719,7 +2719,7 @@ void main() async {
     );
 
     // Inserta centro 181 en la base de datos
-    await dbHelper.insertCentroMedico(centro181);
+    await dbCRUD.insertCentroMedico(centro181);
     print("CENTRO 181 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 182
@@ -2734,7 +2734,7 @@ void main() async {
     );
 
     // Inserta centro 182 en la base de datos
-    await dbHelper.insertCentroMedico(centro182);
+    await dbCRUD.insertCentroMedico(centro182);
     print("CENTRO 182 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 183
@@ -2749,7 +2749,7 @@ void main() async {
     );
 
     // Inserta centro 183 en la base de datos
-    await dbHelper.insertCentroMedico(centro183);
+    await dbCRUD.insertCentroMedico(centro183);
     print("CENTRO 183 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 184
@@ -2764,7 +2764,7 @@ void main() async {
     );
 
     // Inserta centro 184 en la base de datos
-    await dbHelper.insertCentroMedico(centro184);
+    await dbCRUD.insertCentroMedico(centro184);
     print("CENTRO 184 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 185
@@ -2779,7 +2779,7 @@ void main() async {
     );
 
     // Inserta centro 185 en la base de datos
-    await dbHelper.insertCentroMedico(centro185);
+    await dbCRUD.insertCentroMedico(centro185);
     print("CENTRO 185 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 186
@@ -2794,7 +2794,7 @@ void main() async {
     );
 
     // Inserta centro 186 en la base de datos
-    await dbHelper.insertCentroMedico(centro186);
+    await dbCRUD.insertCentroMedico(centro186);
     print("CENTRO 186 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 187
@@ -2809,7 +2809,7 @@ void main() async {
     );
 
     // Inserta centro 187 en la base de datos
-    await dbHelper.insertCentroMedico(centro187);
+    await dbCRUD.insertCentroMedico(centro187);
     print("CENTRO 187 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 188
@@ -2824,7 +2824,7 @@ void main() async {
     );
 
     // Inserta centro 188 en la base de datos
-    await dbHelper.insertCentroMedico(centro188);
+    await dbCRUD.insertCentroMedico(centro188);
     print("CENTRO 188 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 189
@@ -2839,7 +2839,7 @@ void main() async {
     );
 
     // Inserta centro 189 en la base de datos
-    await dbHelper.insertCentroMedico(centro189);
+    await dbCRUD.insertCentroMedico(centro189);
     print("CENTRO 189 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 190
@@ -2854,7 +2854,7 @@ void main() async {
     );
 
     // Inserta centro 190 en la base de datos
-    await dbHelper.insertCentroMedico(centro190);
+    await dbCRUD.insertCentroMedico(centro190);
     print("CENTRO 190 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 191
@@ -2869,7 +2869,7 @@ void main() async {
     );
 
     // Inserta centro 191 en la base de datos
-    await dbHelper.insertCentroMedico(centro191);
+    await dbCRUD.insertCentroMedico(centro191);
     print("CENTRO 191 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 192
@@ -2884,7 +2884,7 @@ void main() async {
     );
 
     // Inserta centro 192 en la base de datos
-    await dbHelper.insertCentroMedico(centro192);
+    await dbCRUD.insertCentroMedico(centro192);
     print("CENTRO 192 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 193
@@ -2899,7 +2899,7 @@ void main() async {
     );
 
     // Inserta centro 193 en la base de datos
-    await dbHelper.insertCentroMedico(centro193);
+    await dbCRUD.insertCentroMedico(centro193);
     print("CENTRO 193 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 194
@@ -2914,7 +2914,7 @@ void main() async {
     );
 
     // Inserta centro 194 en la base de datos
-    await dbHelper.insertCentroMedico(centro194);
+    await dbCRUD.insertCentroMedico(centro194);
     print("CENTRO 194 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 195
@@ -2929,7 +2929,7 @@ void main() async {
     );
 
     // Inserta centro 195 en la base de datos
-    await dbHelper.insertCentroMedico(centro195);
+    await dbCRUD.insertCentroMedico(centro195);
     print("CENTRO 195 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 196
@@ -2944,7 +2944,7 @@ void main() async {
     );
 
     // Inserta centro 196 en la base de datos
-    await dbHelper.insertCentroMedico(centro196);
+    await dbCRUD.insertCentroMedico(centro196);
     print("CENTRO 196 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 197
@@ -2959,7 +2959,7 @@ void main() async {
     );
 
     // Inserta centro 197 en la base de datos
-    await dbHelper.insertCentroMedico(centro197);
+    await dbCRUD.insertCentroMedico(centro197);
     print("CENTRO 197 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 198
@@ -2974,7 +2974,7 @@ void main() async {
     );
 
     // Inserta centro 198 en la base de datos
-    await dbHelper.insertCentroMedico(centro198);
+    await dbCRUD.insertCentroMedico(centro198);
     print("CENTRO 198 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 199
@@ -2989,7 +2989,7 @@ void main() async {
     );
 
     // Inserta centro 199 en la base de datos
-    await dbHelper.insertCentroMedico(centro199);
+    await dbCRUD.insertCentroMedico(centro199);
     print("CENTRO 199 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 200
@@ -3004,7 +3004,7 @@ void main() async {
     );
 
     // Inserta centro 200 en la base de datos
-    await dbHelper.insertCentroMedico(centro200);
+    await dbCRUD.insertCentroMedico(centro200);
     print("CENTRO 200 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 201
@@ -3019,7 +3019,7 @@ void main() async {
     );
 
     // Inserta centro 201 en la base de datos
-    await dbHelper.insertCentroMedico(centro201);
+    await dbCRUD.insertCentroMedico(centro201);
     print("CENTRO 201 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 202
@@ -3034,7 +3034,7 @@ void main() async {
     );
 
     // Inserta centro 202 en la base de datos
-    await dbHelper.insertCentroMedico(centro202);
+    await dbCRUD.insertCentroMedico(centro202);
     print("CENTRO 202 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 203
@@ -3049,7 +3049,7 @@ void main() async {
     );
 
     // Inserta centro 203 en la base de datos
-    await dbHelper.insertCentroMedico(centro203);
+    await dbCRUD.insertCentroMedico(centro203);
     print("CENTRO 203 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 204
@@ -3064,7 +3064,7 @@ void main() async {
     );
 
     // Inserta centro 204 en la base de datos
-    await dbHelper.insertCentroMedico(centro204);
+    await dbCRUD.insertCentroMedico(centro204);
     print("CENTRO 204 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 205
@@ -3079,7 +3079,7 @@ void main() async {
     );
 
     // Inserta centro 205 en la base de datos
-    await dbHelper.insertCentroMedico(centro205);
+    await dbCRUD.insertCentroMedico(centro205);
     print("CENTRO 205 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 206
@@ -3094,7 +3094,7 @@ void main() async {
     );
 
     // Inserta centro 206 en la base de datos
-    await dbHelper.insertCentroMedico(centro206);
+    await dbCRUD.insertCentroMedico(centro206);
     print("CENTRO 206 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 207
@@ -3109,7 +3109,7 @@ void main() async {
     );
 
     // Inserta centro 207 en la base de datos
-    await dbHelper.insertCentroMedico(centro207);
+    await dbCRUD.insertCentroMedico(centro207);
     print("CENTRO 207 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 208
@@ -3124,7 +3124,7 @@ void main() async {
     );
 
     // Inserta centro 208 en la base de datos
-    await dbHelper.insertCentroMedico(centro208);
+    await dbCRUD.insertCentroMedico(centro208);
     print("CENTRO 208 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 209
@@ -3139,7 +3139,7 @@ void main() async {
     );
 
     // Inserta centro 209 en la base de datos
-    await dbHelper.insertCentroMedico(centro209);
+    await dbCRUD.insertCentroMedico(centro209);
     print("CENTRO 209 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 210
@@ -3154,7 +3154,7 @@ void main() async {
     );
 
     // Inserta centro 210 en la base de datos
-    await dbHelper.insertCentroMedico(centro210);
+    await dbCRUD.insertCentroMedico(centro210);
     print("CENTRO 210 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 211
@@ -3169,7 +3169,7 @@ void main() async {
     );
 
     // Inserta centro 211 en la base de datos
-    await dbHelper.insertCentroMedico(centro211);
+    await dbCRUD.insertCentroMedico(centro211);
     print("CENTRO 211 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 212
@@ -3184,7 +3184,7 @@ void main() async {
     );
 
     // Inserta centro 212 en la base de datos
-    await dbHelper.insertCentroMedico(centro212);
+    await dbCRUD.insertCentroMedico(centro212);
     print("CENTRO 212 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 213
@@ -3199,7 +3199,7 @@ void main() async {
     );
 
     // Inserta centro 213 en la base de datos
-    await dbHelper.insertCentroMedico(centro213);
+    await dbCRUD.insertCentroMedico(centro213);
     print("CENTRO 213 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 214
@@ -3214,7 +3214,7 @@ void main() async {
     );
 
     // Inserta centro 214 en la base de datos
-    await dbHelper.insertCentroMedico(centro214);
+    await dbCRUD.insertCentroMedico(centro214);
     print("CENTRO 214 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 215
@@ -3229,7 +3229,7 @@ void main() async {
     );
 
     // Inserta centro 215 en la base de datos
-    await dbHelper.insertCentroMedico(centro215);
+    await dbCRUD.insertCentroMedico(centro215);
     print("CENTRO 215 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 216
@@ -3244,7 +3244,7 @@ void main() async {
     );
 
     // Inserta centro 216 en la base de datos
-    await dbHelper.insertCentroMedico(centro216);
+    await dbCRUD.insertCentroMedico(centro216);
     print("CENTRO 216 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 217
@@ -3259,7 +3259,7 @@ void main() async {
     );
 
     // Inserta centro 217 en la base de datos
-    await dbHelper.insertCentroMedico(centro217);
+    await dbCRUD.insertCentroMedico(centro217);
     print("CENTRO 217 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 218
@@ -3274,7 +3274,7 @@ void main() async {
     );
 
     // Inserta centro 218 en la base de datos
-    await dbHelper.insertCentroMedico(centro218);
+    await dbCRUD.insertCentroMedico(centro218);
     print("CENTRO 218 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 219
@@ -3289,7 +3289,7 @@ void main() async {
     );
 
     // Inserta centro 219 en la base de datos
-    await dbHelper.insertCentroMedico(centro219);
+    await dbCRUD.insertCentroMedico(centro219);
     print("CENTRO 219 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 220
@@ -3304,7 +3304,7 @@ void main() async {
     );
 
     // Inserta centro 220 en la base de datos
-    await dbHelper.insertCentroMedico(centro220);
+    await dbCRUD.insertCentroMedico(centro220);
     print("CENTRO 220 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 221
@@ -3319,7 +3319,7 @@ void main() async {
     );
 
     // Inserta centro 221 en la base de datos
-    await dbHelper.insertCentroMedico(centro221);
+    await dbCRUD.insertCentroMedico(centro221);
     print("CENTRO 221 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 222
@@ -3334,7 +3334,7 @@ void main() async {
     );
 
     // Inserta centro 222 en la base de datos
-    await dbHelper.insertCentroMedico(centro222);
+    await dbCRUD.insertCentroMedico(centro222);
     print("CENTRO 222 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 223
@@ -3349,7 +3349,7 @@ void main() async {
     );
 
     // Inserta centro 223 en la base de datos
-    await dbHelper.insertCentroMedico(centro223);
+    await dbCRUD.insertCentroMedico(centro223);
     print("CENTRO 223 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 224
@@ -3364,7 +3364,7 @@ void main() async {
     );
 
     // Inserta centro 224 en la base de datos
-    await dbHelper.insertCentroMedico(centro224);
+    await dbCRUD.insertCentroMedico(centro224);
     print("CENTRO 224 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 225
@@ -3379,7 +3379,7 @@ void main() async {
     );
 
     // Inserta centro 225 en la base de datos
-    await dbHelper.insertCentroMedico(centro225);
+    await dbCRUD.insertCentroMedico(centro225);
     print("CENTRO 225 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 226
@@ -3394,7 +3394,7 @@ void main() async {
     );
 
     // Inserta centro 226 en la base de datos
-    await dbHelper.insertCentroMedico(centro226);
+    await dbCRUD.insertCentroMedico(centro226);
     print("CENTRO 226 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 227
@@ -3409,7 +3409,7 @@ void main() async {
     );
 
     // Inserta centro 227 en la base de datos
-    await dbHelper.insertCentroMedico(centro227);
+    await dbCRUD.insertCentroMedico(centro227);
     print("CENTRO 227 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 228
@@ -3424,7 +3424,7 @@ void main() async {
     );
 
     // Inserta centro 228 en la base de datos
-    await dbHelper.insertCentroMedico(centro228);
+    await dbCRUD.insertCentroMedico(centro228);
     print("CENTRO 228 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 229
@@ -3439,7 +3439,7 @@ void main() async {
     );
 
     // Inserta centro 229 en la base de datos
-    await dbHelper.insertCentroMedico(centro229);
+    await dbCRUD.insertCentroMedico(centro229);
     print("CENTRO 229 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 230
@@ -3454,7 +3454,7 @@ void main() async {
     );
 
     // Inserta centro 230 en la base de datos
-    await dbHelper.insertCentroMedico(centro230);
+    await dbCRUD.insertCentroMedico(centro230);
     print("CENTRO 230 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 231
@@ -3469,7 +3469,7 @@ void main() async {
     );
 
     // Inserta centro 231 en la base de datos
-    await dbHelper.insertCentroMedico(centro231);
+    await dbCRUD.insertCentroMedico(centro231);
     print("CENTRO 231 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 232
@@ -3484,7 +3484,7 @@ void main() async {
     );
 
     // Inserta centro 232 en la base de datos
-    await dbHelper.insertCentroMedico(centro232);
+    await dbCRUD.insertCentroMedico(centro232);
     print("CENTRO 232 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 233
@@ -3499,7 +3499,7 @@ void main() async {
     );
 
     // Inserta centro 233 en la base de datos
-    await dbHelper.insertCentroMedico(centro233);
+    await dbCRUD.insertCentroMedico(centro233);
     print("CENTRO 233 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 234
@@ -3514,7 +3514,7 @@ void main() async {
     );
 
     // Inserta centro 234 en la base de datos
-    await dbHelper.insertCentroMedico(centro234);
+    await dbCRUD.insertCentroMedico(centro234);
     print("CENTRO 234 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 235
@@ -3529,7 +3529,7 @@ void main() async {
     );
 
     // Inserta centro 235 en la base de datos
-    await dbHelper.insertCentroMedico(centro235);
+    await dbCRUD.insertCentroMedico(centro235);
     print("CENTRO 235 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 236
@@ -3544,7 +3544,7 @@ void main() async {
     );
 
     // Inserta centro 236 en la base de datos
-    await dbHelper.insertCentroMedico(centro236);
+    await dbCRUD.insertCentroMedico(centro236);
     print("CENTRO 236 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 237
@@ -3559,7 +3559,7 @@ void main() async {
     );
 
     // Inserta centro 237 en la base de datos
-    await dbHelper.insertCentroMedico(centro237);
+    await dbCRUD.insertCentroMedico(centro237);
     print("CENTRO 237 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 238
@@ -3574,7 +3574,7 @@ void main() async {
     );
 
     // Inserta centro 238 en la base de datos
-    await dbHelper.insertCentroMedico(centro238);
+    await dbCRUD.insertCentroMedico(centro238);
     print("CENTRO 238 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 239
@@ -3589,7 +3589,7 @@ void main() async {
     );
 
     // Inserta centro 239 en la base de datos
-    await dbHelper.insertCentroMedico(centro239);
+    await dbCRUD.insertCentroMedico(centro239);
     print("CENTRO 239 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 240
@@ -3604,7 +3604,7 @@ void main() async {
     );
 
     // Inserta centro 240 en la base de datos
-    await dbHelper.insertCentroMedico(centro240);
+    await dbCRUD.insertCentroMedico(centro240);
     print("CENTRO 240 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 241
@@ -3619,7 +3619,7 @@ void main() async {
     );
 
     // Inserta centro 241 en la base de datos
-    await dbHelper.insertCentroMedico(centro241);
+    await dbCRUD.insertCentroMedico(centro241);
     print("CENTRO 241 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 242
@@ -3634,7 +3634,7 @@ void main() async {
     );
 
     // Inserta centro 242 en la base de datos
-    await dbHelper.insertCentroMedico(centro242);
+    await dbCRUD.insertCentroMedico(centro242);
     print("CENTRO 242 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 243
@@ -3649,7 +3649,7 @@ void main() async {
     );
 
     // Inserta centro 243 en la base de datos
-    await dbHelper.insertCentroMedico(centro243);
+    await dbCRUD.insertCentroMedico(centro243);
     print("CENTRO 243 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 244
@@ -3664,7 +3664,7 @@ void main() async {
     );
 
     // Inserta centro 244 en la base de datos
-    await dbHelper.insertCentroMedico(centro244);
+    await dbCRUD.insertCentroMedico(centro244);
     print("CENTRO 244 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 245
@@ -3679,7 +3679,7 @@ void main() async {
     );
 
     // Inserta centro 245 en la base de datos
-    await dbHelper.insertCentroMedico(centro245);
+    await dbCRUD.insertCentroMedico(centro245);
     print("CENTRO 245 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 246
@@ -3694,7 +3694,7 @@ void main() async {
     );
 
     // Inserta centro 246 en la base de datos
-    await dbHelper.insertCentroMedico(centro246);
+    await dbCRUD.insertCentroMedico(centro246);
     print("CENTRO 246 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 247
@@ -3709,7 +3709,7 @@ void main() async {
     );
 
     // Inserta centro 247 en la base de datos
-    await dbHelper.insertCentroMedico(centro247);
+    await dbCRUD.insertCentroMedico(centro247);
     print("CENTRO 247 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 248
@@ -3724,7 +3724,7 @@ void main() async {
     );
 
     // Inserta centro 248 en la base de datos
-    await dbHelper.insertCentroMedico(centro248);
+    await dbCRUD.insertCentroMedico(centro248);
     print("CENTRO 248 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 249
@@ -3739,7 +3739,7 @@ void main() async {
     );
 
     // Inserta centro 249 en la base de datos
-    await dbHelper.insertCentroMedico(centro249);
+    await dbCRUD.insertCentroMedico(centro249);
     print("CENTRO 249 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 250
@@ -3754,7 +3754,7 @@ void main() async {
     );
 
     // Inserta centro 250 en la base de datos
-    await dbHelper.insertCentroMedico(centro250);
+    await dbCRUD.insertCentroMedico(centro250);
     print("CENTRO 250 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 251
@@ -3769,7 +3769,7 @@ void main() async {
     );
 
     // Inserta centro 251 en la base de datos
-    await dbHelper.insertCentroMedico(centro251);
+    await dbCRUD.insertCentroMedico(centro251);
     print("CENTRO 251 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 252
@@ -3784,7 +3784,7 @@ void main() async {
     );
 
     // Inserta centro 252 en la base de datos
-    await dbHelper.insertCentroMedico(centro252);
+    await dbCRUD.insertCentroMedico(centro252);
     print("CENTRO 252 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 253
@@ -3799,7 +3799,7 @@ void main() async {
     );
 
     // Inserta centro 253 en la base de datos
-    await dbHelper.insertCentroMedico(centro253);
+    await dbCRUD.insertCentroMedico(centro253);
     print("CENTRO 253 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 254
@@ -3814,7 +3814,7 @@ void main() async {
     );
 
     // Inserta centro 254 en la base de datos
-    await dbHelper.insertCentroMedico(centro254);
+    await dbCRUD.insertCentroMedico(centro254);
     print("CENTRO 254 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 255
@@ -3829,7 +3829,7 @@ void main() async {
     );
 
     // Inserta centro 255 en la base de datos
-    await dbHelper.insertCentroMedico(centro255);
+    await dbCRUD.insertCentroMedico(centro255);
     print("CENTRO 255 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 256
@@ -3844,7 +3844,7 @@ void main() async {
     );
 
     // Inserta centro 256 en la base de datos
-    await dbHelper.insertCentroMedico(centro256);
+    await dbCRUD.insertCentroMedico(centro256);
     print("CENTRO 256 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 257
@@ -3859,7 +3859,7 @@ void main() async {
     );
 
     // Inserta centro 257 en la base de datos
-    await dbHelper.insertCentroMedico(centro257);
+    await dbCRUD.insertCentroMedico(centro257);
     print("CENTRO 257 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 258
@@ -3874,7 +3874,7 @@ void main() async {
     );
 
     // Inserta centro 258 en la base de datos
-    await dbHelper.insertCentroMedico(centro258);
+    await dbCRUD.insertCentroMedico(centro258);
     print("CENTRO 258 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 259
@@ -3889,7 +3889,7 @@ void main() async {
     );
 
     // Inserta centro 259 en la base de datos
-    await dbHelper.insertCentroMedico(centro259);
+    await dbCRUD.insertCentroMedico(centro259);
     print("CENTRO 259 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 260
@@ -3904,7 +3904,7 @@ void main() async {
     );
 
     // Inserta centro 260 en la base de datos
-    await dbHelper.insertCentroMedico(centro260);
+    await dbCRUD.insertCentroMedico(centro260);
     print("CENTRO 260 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 261
@@ -3919,7 +3919,7 @@ void main() async {
     );
 
     // Inserta centro 261 en la base de datos
-    await dbHelper.insertCentroMedico(centro261);
+    await dbCRUD.insertCentroMedico(centro261);
     print("CENTRO 261 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 262
@@ -3934,7 +3934,7 @@ void main() async {
     );
 
     // Inserta centro 262 en la base de datos
-    await dbHelper.insertCentroMedico(centro262);
+    await dbCRUD.insertCentroMedico(centro262);
     print("CENTRO 262 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 263
@@ -3949,7 +3949,7 @@ void main() async {
     );
 
     // Inserta centro 263 en la base de datos
-    await dbHelper.insertCentroMedico(centro263);
+    await dbCRUD.insertCentroMedico(centro263);
     print("CENTRO 263 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 264
@@ -3964,7 +3964,7 @@ void main() async {
     );
 
     // Inserta centro 264 en la base de datos
-    await dbHelper.insertCentroMedico(centro264);
+    await dbCRUD.insertCentroMedico(centro264);
     print("CENTRO 264 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 265
@@ -3979,7 +3979,7 @@ void main() async {
     );
 
     // Inserta centro 265 en la base de datos
-    await dbHelper.insertCentroMedico(centro265);
+    await dbCRUD.insertCentroMedico(centro265);
     print("CENTRO 265 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 266
@@ -3994,7 +3994,7 @@ void main() async {
     );
 
     // Inserta centro 266 en la base de datos
-    await dbHelper.insertCentroMedico(centro266);
+    await dbCRUD.insertCentroMedico(centro266);
     print("CENTRO 266 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 267
@@ -4009,7 +4009,7 @@ void main() async {
     );
 
     // Inserta centro 267 en la base de datos
-    await dbHelper.insertCentroMedico(centro267);
+    await dbCRUD.insertCentroMedico(centro267);
     print("CENTRO 267 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 268
@@ -4024,7 +4024,7 @@ void main() async {
     );
 
     // Inserta centro 268 en la base de datos
-    await dbHelper.insertCentroMedico(centro268);
+    await dbCRUD.insertCentroMedico(centro268);
     print("CENTRO 268 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 269
@@ -4039,7 +4039,7 @@ void main() async {
     );
 
     // Inserta centro 269 en la base de datos
-    await dbHelper.insertCentroMedico(centro269);
+    await dbCRUD.insertCentroMedico(centro269);
     print("CENTRO 269 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 270
@@ -4054,7 +4054,7 @@ void main() async {
     );
 
     // Inserta centro 270 en la base de datos
-    await dbHelper.insertCentroMedico(centro270);
+    await dbCRUD.insertCentroMedico(centro270);
     print("CENTRO 270 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 271
@@ -4069,7 +4069,7 @@ void main() async {
     );
 
     // Inserta centro 271 en la base de datos
-    await dbHelper.insertCentroMedico(centro271);
+    await dbCRUD.insertCentroMedico(centro271);
     print("CENTRO 271 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 272
@@ -4084,7 +4084,7 @@ void main() async {
     );
 
     // Inserta centro 272 en la base de datos
-    await dbHelper.insertCentroMedico(centro272);
+    await dbCRUD.insertCentroMedico(centro272);
     print("CENTRO 272 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 273
@@ -4099,7 +4099,7 @@ void main() async {
     );
 
     // Inserta centro 273 en la base de datos
-    await dbHelper.insertCentroMedico(centro273);
+    await dbCRUD.insertCentroMedico(centro273);
     print("CENTRO 273 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 274
@@ -4114,7 +4114,7 @@ void main() async {
     );
 
     // Inserta centro 274 en la base de datos
-    await dbHelper.insertCentroMedico(centro274);
+    await dbCRUD.insertCentroMedico(centro274);
     print("CENTRO 274 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 275
@@ -4129,7 +4129,7 @@ void main() async {
     );
 
     // Inserta centro 275 en la base de datos
-    await dbHelper.insertCentroMedico(centro275);
+    await dbCRUD.insertCentroMedico(centro275);
     print("CENTRO 275 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 276
@@ -4144,7 +4144,7 @@ void main() async {
     );
 
     // Inserta centro 276 en la base de datos
-    await dbHelper.insertCentroMedico(centro276);
+    await dbCRUD.insertCentroMedico(centro276);
     print("CENTRO 276 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 277
@@ -4159,7 +4159,7 @@ void main() async {
     );
 
     // Inserta centro 277 en la base de datos
-    await dbHelper.insertCentroMedico(centro277);
+    await dbCRUD.insertCentroMedico(centro277);
     print("CENTRO 277 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 278
@@ -4174,7 +4174,7 @@ void main() async {
     );
 
     // Inserta centro 278 en la base de datos
-    await dbHelper.insertCentroMedico(centro278);
+    await dbCRUD.insertCentroMedico(centro278);
     print("CENTRO 278 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 279
@@ -4189,7 +4189,7 @@ void main() async {
     );
 
     // Inserta centro 279 en la base de datos
-    await dbHelper.insertCentroMedico(centro279);
+    await dbCRUD.insertCentroMedico(centro279);
     print("CENTRO 279 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 280
@@ -4204,7 +4204,7 @@ void main() async {
     );
 
     // Inserta centro 280 en la base de datos
-    await dbHelper.insertCentroMedico(centro280);
+    await dbCRUD.insertCentroMedico(centro280);
     print("CENTRO 280 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 281
@@ -4219,7 +4219,7 @@ void main() async {
     );
 
     // Inserta centro 281 en la base de datos
-    await dbHelper.insertCentroMedico(centro281);
+    await dbCRUD.insertCentroMedico(centro281);
     print("CENTRO 281 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 282
@@ -4234,7 +4234,7 @@ void main() async {
     );
 
     // Inserta centro 282 en la base de datos
-    await dbHelper.insertCentroMedico(centro282);
+    await dbCRUD.insertCentroMedico(centro282);
     print("CENTRO 282 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 283
@@ -4249,7 +4249,7 @@ void main() async {
     );
 
     // Inserta centro 283 en la base de datos
-    await dbHelper.insertCentroMedico(centro283);
+    await dbCRUD.insertCentroMedico(centro283);
     print("CENTRO 283 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 284
@@ -4264,7 +4264,7 @@ void main() async {
     );
 
     // Inserta centro 284 en la base de datos
-    await dbHelper.insertCentroMedico(centro284);
+    await dbCRUD.insertCentroMedico(centro284);
     print("CENTRO 284 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 285
@@ -4279,7 +4279,7 @@ void main() async {
     );
 
     // Inserta centro 285 en la base de datos
-    await dbHelper.insertCentroMedico(centro285);
+    await dbCRUD.insertCentroMedico(centro285);
     print("CENTRO 285 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 286
@@ -4294,7 +4294,7 @@ void main() async {
     );
 
     // Inserta centro 286 en la base de datos
-    await dbHelper.insertCentroMedico(centro286);
+    await dbCRUD.insertCentroMedico(centro286);
     print("CENTRO 286 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 287
@@ -4309,7 +4309,7 @@ void main() async {
     );
 
     // Inserta centro 287 en la base de datos
-    await dbHelper.insertCentroMedico(centro287);
+    await dbCRUD.insertCentroMedico(centro287);
     print("CENTRO 287 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 288
@@ -4324,7 +4324,7 @@ void main() async {
     );
 
     // Inserta centro 288 en la base de datos
-    await dbHelper.insertCentroMedico(centro288);
+    await dbCRUD.insertCentroMedico(centro288);
     print("CENTRO 288 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 289
@@ -4339,7 +4339,7 @@ void main() async {
     );
 
     // Inserta centro 289 en la base de datos
-    await dbHelper.insertCentroMedico(centro289);
+    await dbCRUD.insertCentroMedico(centro289);
     print("CENTRO 289 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 290
@@ -4354,7 +4354,7 @@ void main() async {
     );
 
     // Inserta centro 290 en la base de datos
-    await dbHelper.insertCentroMedico(centro290);
+    await dbCRUD.insertCentroMedico(centro290);
     print("CENTRO 290 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 291
@@ -4369,7 +4369,7 @@ void main() async {
     );
 
     // Inserta centro 291 en la base de datos
-    await dbHelper.insertCentroMedico(centro291);
+    await dbCRUD.insertCentroMedico(centro291);
     print("CENTRO 291 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 292
@@ -4384,7 +4384,7 @@ void main() async {
     );
 
     // Inserta centro 292 en la base de datos
-    await dbHelper.insertCentroMedico(centro292);
+    await dbCRUD.insertCentroMedico(centro292);
     print("CENTRO 292 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 293
@@ -4399,7 +4399,7 @@ void main() async {
     );
 
     // Inserta centro 293 en la base de datos
-    await dbHelper.insertCentroMedico(centro293);
+    await dbCRUD.insertCentroMedico(centro293);
     print("CENTRO 293 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 294
@@ -4414,7 +4414,7 @@ void main() async {
     );
 
     // Inserta centro 294 en la base de datos
-    await dbHelper.insertCentroMedico(centro294);
+    await dbCRUD.insertCentroMedico(centro294);
     print("CENTRO 294 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 295
@@ -4429,7 +4429,7 @@ void main() async {
     );
 
     // Inserta centro 295 en la base de datos
-    await dbHelper.insertCentroMedico(centro295);
+    await dbCRUD.insertCentroMedico(centro295);
     print("CENTRO 295 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 296
@@ -4444,7 +4444,7 @@ void main() async {
     );
 
     // Inserta centro 296 en la base de datos
-    await dbHelper.insertCentroMedico(centro296);
+    await dbCRUD.insertCentroMedico(centro296);
     print("CENTRO 296 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 297
@@ -4459,7 +4459,7 @@ void main() async {
     );
 
     // Inserta centro 297 en la base de datos
-    await dbHelper.insertCentroMedico(centro297);
+    await dbCRUD.insertCentroMedico(centro297);
     print("CENTRO 297 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 298
@@ -4474,7 +4474,7 @@ void main() async {
     );
 
     // Inserta centro 298 en la base de datos
-    await dbHelper.insertCentroMedico(centro298);
+    await dbCRUD.insertCentroMedico(centro298);
     print("CENTRO 298 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 299
@@ -4489,7 +4489,7 @@ void main() async {
     );
 
     // Inserta centro 299 en la base de datos
-    await dbHelper.insertCentroMedico(centro299);
+    await dbCRUD.insertCentroMedico(centro299);
     print("CENTRO 299 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 300
@@ -4504,7 +4504,7 @@ void main() async {
     );
 
     // Inserta centro 300 en la base de datos
-    await dbHelper.insertCentroMedico(centro300);
+    await dbCRUD.insertCentroMedico(centro300);
     print("CENTRO 300 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 301
@@ -4519,7 +4519,7 @@ void main() async {
     );
 
     // Inserta centro 301 en la base de datos
-    await dbHelper.insertCentroMedico(centro301);
+    await dbCRUD.insertCentroMedico(centro301);
     print("CENTRO 301 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 302
@@ -4534,7 +4534,7 @@ void main() async {
     );
 
     // Inserta centro 302 en la base de datos
-    await dbHelper.insertCentroMedico(centro302);
+    await dbCRUD.insertCentroMedico(centro302);
     print("CENTRO 302 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 303
@@ -4549,7 +4549,7 @@ void main() async {
     );
 
     // Inserta centro 303 en la base de datos
-    await dbHelper.insertCentroMedico(centro303);
+    await dbCRUD.insertCentroMedico(centro303);
     print("CENTRO 303 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 304
@@ -4564,7 +4564,7 @@ void main() async {
     );
 
     // Inserta centro 304 en la base de datos
-    await dbHelper.insertCentroMedico(centro304);
+    await dbCRUD.insertCentroMedico(centro304);
     print("CENTRO 304 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 305
@@ -4579,7 +4579,7 @@ void main() async {
     );
 
     // Inserta centro 305 en la base de datos
-    await dbHelper.insertCentroMedico(centro305);
+    await dbCRUD.insertCentroMedico(centro305);
     print("CENTRO 305 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 306
@@ -4594,7 +4594,7 @@ void main() async {
     );
 
     // Inserta centro 306 en la base de datos
-    await dbHelper.insertCentroMedico(centro306);
+    await dbCRUD.insertCentroMedico(centro306);
     print("CENTRO 306 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 307
@@ -4609,7 +4609,7 @@ void main() async {
     );
 
     // Inserta centro 307 en la base de datos
-    await dbHelper.insertCentroMedico(centro307);
+    await dbCRUD.insertCentroMedico(centro307);
     print("CENTRO 307 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 308
@@ -4624,7 +4624,7 @@ void main() async {
     );
 
     // Inserta centro 308 en la base de datos
-    await dbHelper.insertCentroMedico(centro308);
+    await dbCRUD.insertCentroMedico(centro308);
     print("CENTRO 308 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 309
@@ -4639,7 +4639,7 @@ void main() async {
     );
 
     // Inserta centro 309 en la base de datos
-    await dbHelper.insertCentroMedico(centro309);
+    await dbCRUD.insertCentroMedico(centro309);
     print("CENTRO 309 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 310
@@ -4654,7 +4654,7 @@ void main() async {
     );
 
     // Inserta centro 310 en la base de datos
-    await dbHelper.insertCentroMedico(centro310);
+    await dbCRUD.insertCentroMedico(centro310);
     print("CENTRO 310 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 311
@@ -4669,7 +4669,7 @@ void main() async {
     );
 
     // Inserta centro 311 en la base de datos
-    await dbHelper.insertCentroMedico(centro311);
+    await dbCRUD.insertCentroMedico(centro311);
     print("CENTRO 311 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 312
@@ -4684,7 +4684,7 @@ void main() async {
     );
 
     // Inserta centro 312 en la base de datos
-    await dbHelper.insertCentroMedico(centro312);
+    await dbCRUD.insertCentroMedico(centro312);
     print("CENTRO 312 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 313
@@ -4699,7 +4699,7 @@ void main() async {
     );
 
     // Inserta centro 313 en la base de datos
-    await dbHelper.insertCentroMedico(centro313);
+    await dbCRUD.insertCentroMedico(centro313);
     print("CENTRO 313 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 314
@@ -4714,7 +4714,7 @@ void main() async {
     );
 
     // Inserta centro 314 en la base de datos
-    await dbHelper.insertCentroMedico(centro314);
+    await dbCRUD.insertCentroMedico(centro314);
     print("CENTRO 314 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 315
@@ -4729,7 +4729,7 @@ void main() async {
     );
 
     // Inserta centro 315 en la base de datos
-    await dbHelper.insertCentroMedico(centro315);
+    await dbCRUD.insertCentroMedico(centro315);
     print("CENTRO 315 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 316
@@ -4744,7 +4744,7 @@ void main() async {
     );
 
     // Inserta centro 316 en la base de datos
-    await dbHelper.insertCentroMedico(centro316);
+    await dbCRUD.insertCentroMedico(centro316);
     print("CENTRO 316 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 317
@@ -4759,7 +4759,7 @@ void main() async {
     );
 
     // Inserta centro 317 en la base de datos
-    await dbHelper.insertCentroMedico(centro317);
+    await dbCRUD.insertCentroMedico(centro317);
     print("CENTRO 317 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 318
@@ -4774,7 +4774,7 @@ void main() async {
     );
 
     // Inserta centro 318 en la base de datos
-    await dbHelper.insertCentroMedico(centro318);
+    await dbCRUD.insertCentroMedico(centro318);
     print("CENTRO 318 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 319
@@ -4789,7 +4789,7 @@ void main() async {
     );
 
     // Inserta centro 319 en la base de datos
-    await dbHelper.insertCentroMedico(centro319);
+    await dbCRUD.insertCentroMedico(centro319);
     print("CENTRO 319 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 320
@@ -4804,7 +4804,7 @@ void main() async {
     );
 
     // Inserta centro 320 en la base de datos
-    await dbHelper.insertCentroMedico(centro320);
+    await dbCRUD.insertCentroMedico(centro320);
     print("CENTRO 320 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 321
@@ -4819,7 +4819,7 @@ void main() async {
     );
 
     // Inserta centro 321 en la base de datos
-    await dbHelper.insertCentroMedico(centro321);
+    await dbCRUD.insertCentroMedico(centro321);
     print("CENTRO 321 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 322
@@ -4834,7 +4834,7 @@ void main() async {
     );
 
     // Inserta centro 322 en la base de datos
-    await dbHelper.insertCentroMedico(centro322);
+    await dbCRUD.insertCentroMedico(centro322);
     print("CENTRO 322 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 323
@@ -4849,7 +4849,7 @@ void main() async {
     );
 
     // Inserta centro 323 en la base de datos
-    await dbHelper.insertCentroMedico(centro323);
+    await dbCRUD.insertCentroMedico(centro323);
     print("CENTRO 323 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 324
@@ -4864,7 +4864,7 @@ void main() async {
     );
 
     // Inserta centro 324 en la base de datos
-    await dbHelper.insertCentroMedico(centro324);
+    await dbCRUD.insertCentroMedico(centro324);
     print("CENTRO 324 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 325
@@ -4879,7 +4879,7 @@ void main() async {
     );
 
     // Inserta centro 325 en la base de datos
-    await dbHelper.insertCentroMedico(centro325);
+    await dbCRUD.insertCentroMedico(centro325);
     print("CENTRO 325 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 326
@@ -4894,7 +4894,7 @@ void main() async {
     );
 
     // Inserta centro 326 en la base de datos
-    await dbHelper.insertCentroMedico(centro326);
+    await dbCRUD.insertCentroMedico(centro326);
     print("CENTRO 326 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 327
@@ -4909,7 +4909,7 @@ void main() async {
     );
 
     // Inserta centro 327 en la base de datos
-    await dbHelper.insertCentroMedico(centro327);
+    await dbCRUD.insertCentroMedico(centro327);
     print("CENTRO 327 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 328
@@ -4924,7 +4924,7 @@ void main() async {
     );
 
     // Inserta centro 328 en la base de datos
-    await dbHelper.insertCentroMedico(centro328);
+    await dbCRUD.insertCentroMedico(centro328);
     print("CENTRO 328 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 329
@@ -4939,7 +4939,7 @@ void main() async {
     );
 
     // Inserta centro 329 en la base de datos
-    await dbHelper.insertCentroMedico(centro329);
+    await dbCRUD.insertCentroMedico(centro329);
     print("CENTRO 329 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 330
@@ -4954,7 +4954,7 @@ void main() async {
     );
 
     // Inserta centro 330 en la base de datos
-    await dbHelper.insertCentroMedico(centro330);
+    await dbCRUD.insertCentroMedico(centro330);
     print("CENTRO 330 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 331
@@ -4969,7 +4969,7 @@ void main() async {
     );
 
     // Inserta centro 331 en la base de datos
-    await dbHelper.insertCentroMedico(centro331);
+    await dbCRUD.insertCentroMedico(centro331);
     print("CENTRO 331 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 332
@@ -4984,7 +4984,7 @@ void main() async {
     );
 
     // Inserta centro 332 en la base de datos
-    await dbHelper.insertCentroMedico(centro332);
+    await dbCRUD.insertCentroMedico(centro332);
     print("CENTRO 332 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 333
@@ -4999,7 +4999,7 @@ void main() async {
     );
 
     // Inserta centro 333 en la base de datos
-    await dbHelper.insertCentroMedico(centro333);
+    await dbCRUD.insertCentroMedico(centro333);
     print("CENTRO 333 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 334
@@ -5014,7 +5014,7 @@ void main() async {
     );
 
     // Inserta centro 334 en la base de datos
-    await dbHelper.insertCentroMedico(centro334);
+    await dbCRUD.insertCentroMedico(centro334);
     print("CENTRO 334 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 335
@@ -5029,7 +5029,7 @@ void main() async {
     );
 
     // Inserta centro 335 en la base de datos
-    await dbHelper.insertCentroMedico(centro335);
+    await dbCRUD.insertCentroMedico(centro335);
     print("CENTRO 335 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 336
@@ -5044,7 +5044,7 @@ void main() async {
     );
 
     // Inserta centro 336 en la base de datos
-    await dbHelper.insertCentroMedico(centro336);
+    await dbCRUD.insertCentroMedico(centro336);
     print("CENTRO 336 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 337
@@ -5059,7 +5059,7 @@ void main() async {
     );
 
     // Inserta centro 337 en la base de datos
-    await dbHelper.insertCentroMedico(centro337);
+    await dbCRUD.insertCentroMedico(centro337);
     print("CENTRO 337 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 338
@@ -5074,7 +5074,7 @@ void main() async {
     );
 
     // Inserta centro 338 en la base de datos
-    await dbHelper.insertCentroMedico(centro338);
+    await dbCRUD.insertCentroMedico(centro338);
     print("CENTRO 338 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 339
@@ -5089,7 +5089,7 @@ void main() async {
     );
 
     // Inserta centro 339 en la base de datos
-    await dbHelper.insertCentroMedico(centro339);
+    await dbCRUD.insertCentroMedico(centro339);
     print("CENTRO 339 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 340
@@ -5104,7 +5104,7 @@ void main() async {
     );
 
     // Inserta centro 340 en la base de datos
-    await dbHelper.insertCentroMedico(centro340);
+    await dbCRUD.insertCentroMedico(centro340);
     print("CENTRO 340 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 341
@@ -5119,7 +5119,7 @@ void main() async {
     );
 
     // Inserta centro 341 en la base de datos
-    await dbHelper.insertCentroMedico(centro341);
+    await dbCRUD.insertCentroMedico(centro341);
     print("CENTRO 341 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 342
@@ -5134,7 +5134,7 @@ void main() async {
     );
 
     // Inserta centro 342 en la base de datos
-    await dbHelper.insertCentroMedico(centro342);
+    await dbCRUD.insertCentroMedico(centro342);
     print("CENTRO 342 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 343
@@ -5149,7 +5149,7 @@ void main() async {
     );
 
     // Inserta centro 343 en la base de datos
-    await dbHelper.insertCentroMedico(centro343);
+    await dbCRUD.insertCentroMedico(centro343);
     print("CENTRO 343 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 344
@@ -5164,7 +5164,7 @@ void main() async {
     );
 
     // Inserta centro 344 en la base de datos
-    await dbHelper.insertCentroMedico(centro344);
+    await dbCRUD.insertCentroMedico(centro344);
     print("CENTRO 344 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 345
@@ -5179,7 +5179,7 @@ void main() async {
     );
 
     // Inserta centro 345 en la base de datos
-    await dbHelper.insertCentroMedico(centro345);
+    await dbCRUD.insertCentroMedico(centro345);
     print("CENTRO 345 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 346
@@ -5194,7 +5194,7 @@ void main() async {
     );
 
     // Inserta centro 346 en la base de datos
-    await dbHelper.insertCentroMedico(centro346);
+    await dbCRUD.insertCentroMedico(centro346);
     print("CENTRO 346 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 347
@@ -5209,7 +5209,7 @@ void main() async {
     );
 
     // Inserta centro 347 en la base de datos
-    await dbHelper.insertCentroMedico(centro347);
+    await dbCRUD.insertCentroMedico(centro347);
     print("CENTRO 347 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 348
@@ -5224,7 +5224,7 @@ void main() async {
     );
 
     // Inserta centro 348 en la base de datos
-    await dbHelper.insertCentroMedico(centro348);
+    await dbCRUD.insertCentroMedico(centro348);
     print("CENTRO 348 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 349
@@ -5239,7 +5239,7 @@ void main() async {
     );
 
     // Inserta centro 349 en la base de datos
-    await dbHelper.insertCentroMedico(centro349);
+    await dbCRUD.insertCentroMedico(centro349);
     print("CENTRO 349 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 350
@@ -5254,7 +5254,7 @@ void main() async {
     );
 
     // Inserta centro 350 en la base de datos
-    await dbHelper.insertCentroMedico(centro350);
+    await dbCRUD.insertCentroMedico(centro350);
     print("CENTRO 350 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 351
@@ -5269,7 +5269,7 @@ void main() async {
     );
 
     // Inserta centro 351 en la base de datos
-    await dbHelper.insertCentroMedico(centro351);
+    await dbCRUD.insertCentroMedico(centro351);
     print("CENTRO 351 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 352
@@ -5284,7 +5284,7 @@ void main() async {
     );
 
     // Inserta centro 352 en la base de datos
-    await dbHelper.insertCentroMedico(centro352);
+    await dbCRUD.insertCentroMedico(centro352);
     print("CENTRO 352 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 353
@@ -5299,7 +5299,7 @@ void main() async {
     );
 
     // Inserta centro 353 en la base de datos
-    await dbHelper.insertCentroMedico(centro353);
+    await dbCRUD.insertCentroMedico(centro353);
     print("CENTRO 353 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 354
@@ -5314,7 +5314,7 @@ void main() async {
     );
 
     // Inserta centro 354 en la base de datos
-    await dbHelper.insertCentroMedico(centro354);
+    await dbCRUD.insertCentroMedico(centro354);
     print("CENTRO 354 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 355
@@ -5329,7 +5329,7 @@ void main() async {
     );
 
     // Inserta centro 355 en la base de datos
-    await dbHelper.insertCentroMedico(centro355);
+    await dbCRUD.insertCentroMedico(centro355);
     print("CENTRO 355 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 356
@@ -5344,7 +5344,7 @@ void main() async {
     );
 
     // Inserta centro 356 en la base de datos
-    await dbHelper.insertCentroMedico(centro356);
+    await dbCRUD.insertCentroMedico(centro356);
     print("CENTRO 356 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 357
@@ -5359,7 +5359,7 @@ void main() async {
     );
 
     // Inserta centro 357 en la base de datos
-    await dbHelper.insertCentroMedico(centro357);
+    await dbCRUD.insertCentroMedico(centro357);
     print("CENTRO 357 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 358
@@ -5374,7 +5374,7 @@ void main() async {
     );
 
     // Inserta centro 358 en la base de datos
-    await dbHelper.insertCentroMedico(centro358);
+    await dbCRUD.insertCentroMedico(centro358);
     print("CENTRO 358 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 359
@@ -5389,7 +5389,7 @@ void main() async {
     );
 
     // Inserta centro 359 en la base de datos
-    await dbHelper.insertCentroMedico(centro359);
+    await dbCRUD.insertCentroMedico(centro359);
     print("CENTRO 359 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 360
@@ -5404,7 +5404,7 @@ void main() async {
     );
 
     // Inserta centro 360 en la base de datos
-    await dbHelper.insertCentroMedico(centro360);
+    await dbCRUD.insertCentroMedico(centro360);
     print("CENTRO 360 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 361
@@ -5419,7 +5419,7 @@ void main() async {
     );
 
     // Inserta centro 361 en la base de datos
-    await dbHelper.insertCentroMedico(centro361);
+    await dbCRUD.insertCentroMedico(centro361);
     print("CENTRO 361 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 362
@@ -5434,7 +5434,7 @@ void main() async {
     );
 
     // Inserta centro 362 en la base de datos
-    await dbHelper.insertCentroMedico(centro362);
+    await dbCRUD.insertCentroMedico(centro362);
     print("CENTRO 362 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 363
@@ -5449,7 +5449,7 @@ void main() async {
     );
 
     // Inserta centro 363 en la base de datos
-    await dbHelper.insertCentroMedico(centro363);
+    await dbCRUD.insertCentroMedico(centro363);
     print("CENTRO 363 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 364
@@ -5464,7 +5464,7 @@ void main() async {
     );
 
     // Inserta centro 364 en la base de datos
-    await dbHelper.insertCentroMedico(centro364);
+    await dbCRUD.insertCentroMedico(centro364);
     print("CENTRO 364 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 365
@@ -5479,7 +5479,7 @@ void main() async {
     );
 
     // Inserta centro 365 en la base de datos
-    await dbHelper.insertCentroMedico(centro365);
+    await dbCRUD.insertCentroMedico(centro365);
     print("CENTRO 365 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 366
@@ -5494,7 +5494,7 @@ void main() async {
     );
 
     // Inserta centro 366 en la base de datos
-    await dbHelper.insertCentroMedico(centro366);
+    await dbCRUD.insertCentroMedico(centro366);
     print("CENTRO 366 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 367
@@ -5509,7 +5509,7 @@ void main() async {
     );
 
     // Inserta centro 367 en la base de datos
-    await dbHelper.insertCentroMedico(centro367);
+    await dbCRUD.insertCentroMedico(centro367);
     print("CENTRO 367 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 368
@@ -5524,7 +5524,7 @@ void main() async {
     );
 
     // Inserta centro 368 en la base de datos
-    await dbHelper.insertCentroMedico(centro368);
+    await dbCRUD.insertCentroMedico(centro368);
     print("CENTRO 368 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 369
@@ -5539,7 +5539,7 @@ void main() async {
     );
 
     // Inserta centro 369 en la base de datos
-    await dbHelper.insertCentroMedico(centro369);
+    await dbCRUD.insertCentroMedico(centro369);
     print("CENTRO 369 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 370
@@ -5554,7 +5554,7 @@ void main() async {
     );
 
     // Inserta centro 370 en la base de datos
-    await dbHelper.insertCentroMedico(centro370);
+    await dbCRUD.insertCentroMedico(centro370);
     print("CENTRO 370 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 371
@@ -5569,7 +5569,7 @@ void main() async {
     );
 
     // Inserta centro 371 en la base de datos
-    await dbHelper.insertCentroMedico(centro371);
+    await dbCRUD.insertCentroMedico(centro371);
     print("CENTRO 371 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 372
@@ -5584,7 +5584,7 @@ void main() async {
     );
 
     // Inserta centro 372 en la base de datos
-    await dbHelper.insertCentroMedico(centro372);
+    await dbCRUD.insertCentroMedico(centro372);
     print("CENTRO 372 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 373
@@ -5599,7 +5599,7 @@ void main() async {
     );
 
     // Inserta centro 373 en la base de datos
-    await dbHelper.insertCentroMedico(centro373);
+    await dbCRUD.insertCentroMedico(centro373);
     print("CENTRO 373 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 374
@@ -5614,7 +5614,7 @@ void main() async {
     );
 
     // Inserta centro 374 en la base de datos
-    await dbHelper.insertCentroMedico(centro374);
+    await dbCRUD.insertCentroMedico(centro374);
     print("CENTRO 374 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 375
@@ -5629,7 +5629,7 @@ void main() async {
     );
 
     // Inserta centro 375 en la base de datos
-    await dbHelper.insertCentroMedico(centro375);
+    await dbCRUD.insertCentroMedico(centro375);
     print("CENTRO 375 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 376
@@ -5644,7 +5644,7 @@ void main() async {
     );
 
     // Inserta centro 376 en la base de datos
-    await dbHelper.insertCentroMedico(centro376);
+    await dbCRUD.insertCentroMedico(centro376);
     print("CENTRO 376 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 377
@@ -5659,7 +5659,7 @@ void main() async {
     );
 
     // Inserta centro 377 en la base de datos
-    await dbHelper.insertCentroMedico(centro377);
+    await dbCRUD.insertCentroMedico(centro377);
     print("CENTRO 377 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 378
@@ -5674,7 +5674,7 @@ void main() async {
     );
 
     // Inserta centro 378 en la base de datos
-    await dbHelper.insertCentroMedico(centro378);
+    await dbCRUD.insertCentroMedico(centro378);
     print("CENTRO 378 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 379
@@ -5689,7 +5689,7 @@ void main() async {
     );
 
     // Inserta centro 379 en la base de datos
-    await dbHelper.insertCentroMedico(centro379);
+    await dbCRUD.insertCentroMedico(centro379);
     print("CENTRO 379 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 380
@@ -5704,7 +5704,7 @@ void main() async {
     );
 
     // Inserta centro 380 en la base de datos
-    await dbHelper.insertCentroMedico(centro380);
+    await dbCRUD.insertCentroMedico(centro380);
     print("CENTRO 380 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 381
@@ -5719,7 +5719,7 @@ void main() async {
     );
 
     // Inserta centro 381 en la base de datos
-    await dbHelper.insertCentroMedico(centro381);
+    await dbCRUD.insertCentroMedico(centro381);
     print("CENTRO 381 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 382
@@ -5734,7 +5734,7 @@ void main() async {
     );
 
     // Inserta centro 382 en la base de datos
-    await dbHelper.insertCentroMedico(centro382);
+    await dbCRUD.insertCentroMedico(centro382);
     print("CENTRO 382 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 383
@@ -5749,7 +5749,7 @@ void main() async {
     );
 
     // Inserta centro 383 en la base de datos
-    await dbHelper.insertCentroMedico(centro383);
+    await dbCRUD.insertCentroMedico(centro383);
     print("CENTRO 383 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 384
@@ -5764,7 +5764,7 @@ void main() async {
     );
 
     // Inserta centro 384 en la base de datos
-    await dbHelper.insertCentroMedico(centro384);
+    await dbCRUD.insertCentroMedico(centro384);
     print("CENTRO 384 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 385
@@ -5779,7 +5779,7 @@ void main() async {
     );
 
     // Inserta centro 385 en la base de datos
-    await dbHelper.insertCentroMedico(centro385);
+    await dbCRUD.insertCentroMedico(centro385);
     print("CENTRO 385 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 386
@@ -5794,7 +5794,7 @@ void main() async {
     );
 
     // Inserta centro 386 en la base de datos
-    await dbHelper.insertCentroMedico(centro386);
+    await dbCRUD.insertCentroMedico(centro386);
     print("CENTRO 386 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 387
@@ -5809,7 +5809,7 @@ void main() async {
     );
 
     // Inserta centro 387 en la base de datos
-    await dbHelper.insertCentroMedico(centro387);
+    await dbCRUD.insertCentroMedico(centro387);
     print("CENTRO 387 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 388
@@ -5824,7 +5824,7 @@ void main() async {
     );
 
     // Inserta centro 388 en la base de datos
-    await dbHelper.insertCentroMedico(centro388);
+    await dbCRUD.insertCentroMedico(centro388);
     print("CENTRO 388 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 389
@@ -5839,7 +5839,7 @@ void main() async {
     );
 
     // Inserta centro 389 en la base de datos
-    await dbHelper.insertCentroMedico(centro389);
+    await dbCRUD.insertCentroMedico(centro389);
     print("CENTRO 389 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 390
@@ -5854,7 +5854,7 @@ void main() async {
     );
 
     // Inserta centro 390 en la base de datos
-    await dbHelper.insertCentroMedico(centro390);
+    await dbCRUD.insertCentroMedico(centro390);
     print("CENTRO 390 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 391
@@ -5869,7 +5869,7 @@ void main() async {
     );
 
     // Inserta centro 391 en la base de datos
-    await dbHelper.insertCentroMedico(centro391);
+    await dbCRUD.insertCentroMedico(centro391);
     print("CENTRO 391 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 392
@@ -5884,7 +5884,7 @@ void main() async {
     );
 
     // Inserta centro 392 en la base de datos
-    await dbHelper.insertCentroMedico(centro392);
+    await dbCRUD.insertCentroMedico(centro392);
     print("CENTRO 392 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 393
@@ -5899,7 +5899,7 @@ void main() async {
     );
 
     // Inserta centro 393 en la base de datos
-    await dbHelper.insertCentroMedico(centro393);
+    await dbCRUD.insertCentroMedico(centro393);
     print("CENTRO 393 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 394
@@ -5914,7 +5914,7 @@ void main() async {
     );
 
     // Inserta centro 394 en la base de datos
-    await dbHelper.insertCentroMedico(centro394);
+    await dbCRUD.insertCentroMedico(centro394);
     print("CENTRO 394 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 395
@@ -5929,7 +5929,7 @@ void main() async {
     );
 
     // Inserta centro 395 en la base de datos
-    await dbHelper.insertCentroMedico(centro395);
+    await dbCRUD.insertCentroMedico(centro395);
     print("CENTRO 395 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 396
@@ -5944,7 +5944,7 @@ void main() async {
     );
 
     // Inserta centro 396 en la base de datos
-    await dbHelper.insertCentroMedico(centro396);
+    await dbCRUD.insertCentroMedico(centro396);
     print("CENTRO 396 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 397
@@ -5959,7 +5959,7 @@ void main() async {
     );
 
     // Inserta centro 397 en la base de datos
-    await dbHelper.insertCentroMedico(centro397);
+    await dbCRUD.insertCentroMedico(centro397);
     print("CENTRO 397 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 398
@@ -5974,7 +5974,7 @@ void main() async {
     );
 
     // Inserta centro 398 en la base de datos
-    await dbHelper.insertCentroMedico(centro398);
+    await dbCRUD.insertCentroMedico(centro398);
     print("CENTRO 398 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 399
@@ -5989,7 +5989,7 @@ void main() async {
     );
 
     // Inserta centro 399 en la base de datos
-    await dbHelper.insertCentroMedico(centro399);
+    await dbCRUD.insertCentroMedico(centro399);
     print("CENTRO 399 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 400
@@ -6004,7 +6004,7 @@ void main() async {
     );
 
     // Inserta centro 400 en la base de datos
-    await dbHelper.insertCentroMedico(centro400);
+    await dbCRUD.insertCentroMedico(centro400);
     print("CENTRO 400 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 401
@@ -6019,7 +6019,7 @@ void main() async {
     );
 
     // Inserta centro 401 en la base de datos
-    await dbHelper.insertCentroMedico(centro401);
+    await dbCRUD.insertCentroMedico(centro401);
     print("CENTRO 401 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 402
@@ -6034,7 +6034,7 @@ void main() async {
     );
 
     // Inserta centro 402 en la base de datos
-    await dbHelper.insertCentroMedico(centro402);
+    await dbCRUD.insertCentroMedico(centro402);
     print("CENTRO 402 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 403
@@ -6049,7 +6049,7 @@ void main() async {
     );
 
     // Inserta centro 403 en la base de datos
-    await dbHelper.insertCentroMedico(centro403);
+    await dbCRUD.insertCentroMedico(centro403);
     print("CENTRO 403 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 404
@@ -6064,7 +6064,7 @@ void main() async {
     );
 
     // Inserta centro 404 en la base de datos
-    await dbHelper.insertCentroMedico(centro404);
+    await dbCRUD.insertCentroMedico(centro404);
     print("CENTRO 404 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 405
@@ -6079,7 +6079,7 @@ void main() async {
     );
 
     // Inserta centro 405 en la base de datos
-    await dbHelper.insertCentroMedico(centro405);
+    await dbCRUD.insertCentroMedico(centro405);
     print("CENTRO 405 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 406
@@ -6094,7 +6094,7 @@ void main() async {
     );
 
     // Inserta centro 406 en la base de datos
-    await dbHelper.insertCentroMedico(centro406);
+    await dbCRUD.insertCentroMedico(centro406);
     print("CENTRO 406 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 407
@@ -6109,7 +6109,7 @@ void main() async {
     );
 
     // Inserta centro 407 en la base de datos
-    await dbHelper.insertCentroMedico(centro407);
+    await dbCRUD.insertCentroMedico(centro407);
     print("CENTRO 407 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 408
@@ -6124,7 +6124,7 @@ void main() async {
     );
 
     // Inserta centro 408 en la base de datos
-    await dbHelper.insertCentroMedico(centro408);
+    await dbCRUD.insertCentroMedico(centro408);
     print("CENTRO 408 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 409
@@ -6139,7 +6139,7 @@ void main() async {
     );
 
     // Inserta centro 409 en la base de datos
-    await dbHelper.insertCentroMedico(centro409);
+    await dbCRUD.insertCentroMedico(centro409);
     print("CENTRO 409 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 410
@@ -6154,7 +6154,7 @@ void main() async {
     );
 
     // Inserta centro 410 en la base de datos
-    await dbHelper.insertCentroMedico(centro410);
+    await dbCRUD.insertCentroMedico(centro410);
     print("CENTRO 410 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 411
@@ -6169,7 +6169,7 @@ void main() async {
     );
 
     // Inserta centro 411 en la base de datos
-    await dbHelper.insertCentroMedico(centro411);
+    await dbCRUD.insertCentroMedico(centro411);
     print("CENTRO 411 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 412
@@ -6184,7 +6184,7 @@ void main() async {
     );
 
     // Inserta centro 412 en la base de datos
-    await dbHelper.insertCentroMedico(centro412);
+    await dbCRUD.insertCentroMedico(centro412);
     print("CENTRO 412 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 413
@@ -6199,7 +6199,7 @@ void main() async {
     );
 
     // Inserta centro 413 en la base de datos
-    await dbHelper.insertCentroMedico(centro413);
+    await dbCRUD.insertCentroMedico(centro413);
     print("CENTRO 413 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 414
@@ -6214,7 +6214,7 @@ void main() async {
     );
 
     // Inserta centro 414 en la base de datos
-    await dbHelper.insertCentroMedico(centro414);
+    await dbCRUD.insertCentroMedico(centro414);
     print("CENTRO 414 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 415
@@ -6229,7 +6229,7 @@ void main() async {
     );
 
     // Inserta centro 415 en la base de datos
-    await dbHelper.insertCentroMedico(centro415);
+    await dbCRUD.insertCentroMedico(centro415);
     print("CENTRO 415 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 416
@@ -6244,7 +6244,7 @@ void main() async {
     );
 
     // Inserta centro 416 en la base de datos
-    await dbHelper.insertCentroMedico(centro416);
+    await dbCRUD.insertCentroMedico(centro416);
     print("CENTRO 416 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 417
@@ -6259,7 +6259,7 @@ void main() async {
     );
 
     // Inserta centro 417 en la base de datos
-    await dbHelper.insertCentroMedico(centro417);
+    await dbCRUD.insertCentroMedico(centro417);
     print("CENTRO 417 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 418
@@ -6274,7 +6274,7 @@ void main() async {
     );
 
     // Inserta centro 418 en la base de datos
-    await dbHelper.insertCentroMedico(centro418);
+    await dbCRUD.insertCentroMedico(centro418);
     print("CENTRO 418 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 419
@@ -6289,7 +6289,7 @@ void main() async {
     );
 
     // Inserta centro 419 en la base de datos
-    await dbHelper.insertCentroMedico(centro419);
+    await dbCRUD.insertCentroMedico(centro419);
     print("CENTRO 419 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 420
@@ -6304,7 +6304,7 @@ void main() async {
     );
 
     // Inserta centro 420 en la base de datos
-    await dbHelper.insertCentroMedico(centro420);
+    await dbCRUD.insertCentroMedico(centro420);
     print("CENTRO 420 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 421
@@ -6319,7 +6319,7 @@ void main() async {
     );
 
     // Inserta centro 421 en la base de datos
-    await dbHelper.insertCentroMedico(centro421);
+    await dbCRUD.insertCentroMedico(centro421);
     print("CENTRO 421 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 422
@@ -6334,7 +6334,7 @@ void main() async {
     );
 
     // Inserta centro 422 en la base de datos
-    await dbHelper.insertCentroMedico(centro422);
+    await dbCRUD.insertCentroMedico(centro422);
     print("CENTRO 422 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 423
@@ -6349,7 +6349,7 @@ void main() async {
     );
 
     // Inserta centro 423 en la base de datos
-    await dbHelper.insertCentroMedico(centro423);
+    await dbCRUD.insertCentroMedico(centro423);
     print("CENTRO 423 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 424
@@ -6364,7 +6364,7 @@ void main() async {
     );
 
     // Inserta centro 424 en la base de datos
-    await dbHelper.insertCentroMedico(centro424);
+    await dbCRUD.insertCentroMedico(centro424);
     print("CENTRO 424 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 425
@@ -6379,7 +6379,7 @@ void main() async {
     );
 
     // Inserta centro 425 en la base de datos
-    await dbHelper.insertCentroMedico(centro425);
+    await dbCRUD.insertCentroMedico(centro425);
     print("CENTRO 425 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 426
@@ -6394,7 +6394,7 @@ void main() async {
     );
 
     // Inserta centro 426 en la base de datos
-    await dbHelper.insertCentroMedico(centro426);
+    await dbCRUD.insertCentroMedico(centro426);
     print("CENTRO 426 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 427
@@ -6409,7 +6409,7 @@ void main() async {
     );
 
     // Inserta centro 427 en la base de datos
-    await dbHelper.insertCentroMedico(centro427);
+    await dbCRUD.insertCentroMedico(centro427);
     print("CENTRO 427 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 428
@@ -6424,7 +6424,7 @@ void main() async {
     );
 
     // Inserta centro 428 en la base de datos
-    await dbHelper.insertCentroMedico(centro428);
+    await dbCRUD.insertCentroMedico(centro428);
     print("CENTRO 428 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 429
@@ -6439,7 +6439,7 @@ void main() async {
     );
 
     // Inserta centro 429 en la base de datos
-    await dbHelper.insertCentroMedico(centro429);
+    await dbCRUD.insertCentroMedico(centro429);
     print("CENTRO 429 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 430
@@ -6454,7 +6454,7 @@ void main() async {
     );
 
     // Inserta centro 430 en la base de datos
-    await dbHelper.insertCentroMedico(centro430);
+    await dbCRUD.insertCentroMedico(centro430);
     print("CENTRO 430 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 431
@@ -6469,7 +6469,7 @@ void main() async {
     );
 
     // Inserta centro 431 en la base de datos
-    await dbHelper.insertCentroMedico(centro431);
+    await dbCRUD.insertCentroMedico(centro431);
     print("CENTRO 431 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 432
@@ -6484,7 +6484,7 @@ void main() async {
     );
 
     // Inserta centro 432 en la base de datos
-    await dbHelper.insertCentroMedico(centro432);
+    await dbCRUD.insertCentroMedico(centro432);
     print("CENTRO 432 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 433
@@ -6499,7 +6499,7 @@ void main() async {
     );
 
     // Inserta centro 433 en la base de datos
-    await dbHelper.insertCentroMedico(centro433);
+    await dbCRUD.insertCentroMedico(centro433);
     print("CENTRO 433 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 434
@@ -6514,7 +6514,7 @@ void main() async {
     );
 
     // Inserta centro 434 en la base de datos
-    await dbHelper.insertCentroMedico(centro434);
+    await dbCRUD.insertCentroMedico(centro434);
     print("CENTRO 434 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 435
@@ -6529,7 +6529,7 @@ void main() async {
     );
 
     // Inserta centro 435 en la base de datos
-    await dbHelper.insertCentroMedico(centro435);
+    await dbCRUD.insertCentroMedico(centro435);
     print("CENTRO 435 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 436
@@ -6544,7 +6544,7 @@ void main() async {
     );
 
     // Inserta centro 436 en la base de datos
-    await dbHelper.insertCentroMedico(centro436);
+    await dbCRUD.insertCentroMedico(centro436);
     print("CENTRO 436 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 437
@@ -6559,7 +6559,7 @@ void main() async {
     );
 
     // Inserta centro 437 en la base de datos
-    await dbHelper.insertCentroMedico(centro437);
+    await dbCRUD.insertCentroMedico(centro437);
     print("CENTRO 437 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 438
@@ -6574,7 +6574,7 @@ void main() async {
     );
 
     // Inserta centro 438 en la base de datos
-    await dbHelper.insertCentroMedico(centro438);
+    await dbCRUD.insertCentroMedico(centro438);
     print("CENTRO 438 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 439
@@ -6589,7 +6589,7 @@ void main() async {
     );
 
     // Inserta centro 439 en la base de datos
-    await dbHelper.insertCentroMedico(centro439);
+    await dbCRUD.insertCentroMedico(centro439);
     print("CENTRO 439 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 440
@@ -6604,7 +6604,7 @@ void main() async {
     );
 
     // Inserta centro 440 en la base de datos
-    await dbHelper.insertCentroMedico(centro440);
+    await dbCRUD.insertCentroMedico(centro440);
     print("CENTRO 440 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 441
@@ -6619,7 +6619,7 @@ void main() async {
     );
 
     // Inserta centro 441 en la base de datos
-    await dbHelper.insertCentroMedico(centro441);
+    await dbCRUD.insertCentroMedico(centro441);
     print("CENTRO 441 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 442
@@ -6634,7 +6634,7 @@ void main() async {
     );
 
     // Inserta centro 442 en la base de datos
-    await dbHelper.insertCentroMedico(centro442);
+    await dbCRUD.insertCentroMedico(centro442);
     print("CENTRO 442 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 443
@@ -6649,7 +6649,7 @@ void main() async {
     );
 
     // Inserta centro 443 en la base de datos
-    await dbHelper.insertCentroMedico(centro443);
+    await dbCRUD.insertCentroMedico(centro443);
     print("CENTRO 443 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 444
@@ -6664,7 +6664,7 @@ void main() async {
     );
 
     // Inserta centro 444 en la base de datos
-    await dbHelper.insertCentroMedico(centro444);
+    await dbCRUD.insertCentroMedico(centro444);
     print("CENTRO 444 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 445
@@ -6679,7 +6679,7 @@ void main() async {
     );
 
     // Inserta centro 445 en la base de datos
-    await dbHelper.insertCentroMedico(centro445);
+    await dbCRUD.insertCentroMedico(centro445);
     print("CENTRO 445 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 446
@@ -6694,7 +6694,7 @@ void main() async {
     );
 
     // Inserta centro 446 en la base de datos
-    await dbHelper.insertCentroMedico(centro446);
+    await dbCRUD.insertCentroMedico(centro446);
     print("CENTRO 446 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 447
@@ -6709,7 +6709,7 @@ void main() async {
     );
 
     // Inserta centro 447 en la base de datos
-    await dbHelper.insertCentroMedico(centro447);
+    await dbCRUD.insertCentroMedico(centro447);
     print("CENTRO 447 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 448
@@ -6724,7 +6724,7 @@ void main() async {
     );
 
     // Inserta centro 448 en la base de datos
-    await dbHelper.insertCentroMedico(centro448);
+    await dbCRUD.insertCentroMedico(centro448);
     print("CENTRO 448 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 449
@@ -6739,7 +6739,7 @@ void main() async {
     );
 
     // Inserta centro 449 en la base de datos
-    await dbHelper.insertCentroMedico(centro449);
+    await dbCRUD.insertCentroMedico(centro449);
     print("CENTRO 449 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 450
@@ -6754,7 +6754,7 @@ void main() async {
     );
 
     // Inserta centro 450 en la base de datos
-    await dbHelper.insertCentroMedico(centro450);
+    await dbCRUD.insertCentroMedico(centro450);
     print("CENTRO 450 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 451
@@ -6769,7 +6769,7 @@ void main() async {
     );
 
     // Inserta centro 451 en la base de datos
-    await dbHelper.insertCentroMedico(centro451);
+    await dbCRUD.insertCentroMedico(centro451);
     print("CENTRO 451 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 452
@@ -6784,7 +6784,7 @@ void main() async {
     );
 
     // Inserta centro 452 en la base de datos
-    await dbHelper.insertCentroMedico(centro452);
+    await dbCRUD.insertCentroMedico(centro452);
     print("CENTRO 452 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 453
@@ -6799,7 +6799,7 @@ void main() async {
     );
 
     // Inserta centro 453 en la base de datos
-    await dbHelper.insertCentroMedico(centro453);
+    await dbCRUD.insertCentroMedico(centro453);
     print("CENTRO 453 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 454
@@ -6814,7 +6814,7 @@ void main() async {
     );
 
     // Inserta centro 454 en la base de datos
-    await dbHelper.insertCentroMedico(centro454);
+    await dbCRUD.insertCentroMedico(centro454);
     print("CENTRO 454 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 455
@@ -6829,7 +6829,7 @@ void main() async {
     );
 
     // Inserta centro 455 en la base de datos
-    await dbHelper.insertCentroMedico(centro455);
+    await dbCRUD.insertCentroMedico(centro455);
     print("CENTRO 455 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 456
@@ -6844,7 +6844,7 @@ void main() async {
     );
 
     // Inserta centro 456 en la base de datos
-    await dbHelper.insertCentroMedico(centro456);
+    await dbCRUD.insertCentroMedico(centro456);
     print("CENTRO 456 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 457
@@ -6859,7 +6859,7 @@ void main() async {
     );
 
     // Inserta centro 457 en la base de datos
-    await dbHelper.insertCentroMedico(centro457);
+    await dbCRUD.insertCentroMedico(centro457);
     print("CENTRO 457 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 458
@@ -6874,7 +6874,7 @@ void main() async {
     );
 
     // Inserta centro 458 en la base de datos
-    await dbHelper.insertCentroMedico(centro458);
+    await dbCRUD.insertCentroMedico(centro458);
     print("CENTRO 458 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 459
@@ -6889,7 +6889,7 @@ void main() async {
     );
 
     // Inserta centro 459 en la base de datos
-    await dbHelper.insertCentroMedico(centro459);
+    await dbCRUD.insertCentroMedico(centro459);
     print("CENTRO 459 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 460
@@ -6904,7 +6904,7 @@ void main() async {
     );
 
     // Inserta centro 460 en la base de datos
-    await dbHelper.insertCentroMedico(centro460);
+    await dbCRUD.insertCentroMedico(centro460);
     print("CENTRO 460 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 461
@@ -6919,7 +6919,7 @@ void main() async {
     );
 
     // Inserta centro 461 en la base de datos
-    await dbHelper.insertCentroMedico(centro461);
+    await dbCRUD.insertCentroMedico(centro461);
     print("CENTRO 461 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 462
@@ -6934,7 +6934,7 @@ void main() async {
     );
 
     // Inserta centro 462 en la base de datos
-    await dbHelper.insertCentroMedico(centro462);
+    await dbCRUD.insertCentroMedico(centro462);
     print("CENTRO 462 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 463
@@ -6949,7 +6949,7 @@ void main() async {
     );
 
     // Inserta centro 463 en la base de datos
-    await dbHelper.insertCentroMedico(centro463);
+    await dbCRUD.insertCentroMedico(centro463);
     print("CENTRO 463 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 464
@@ -6964,7 +6964,7 @@ void main() async {
     );
 
     // Inserta centro 464 en la base de datos
-    await dbHelper.insertCentroMedico(centro464);
+    await dbCRUD.insertCentroMedico(centro464);
     print("CENTRO 464 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 465
@@ -6979,7 +6979,7 @@ void main() async {
     );
 
     // Inserta centro 465 en la base de datos
-    await dbHelper.insertCentroMedico(centro465);
+    await dbCRUD.insertCentroMedico(centro465);
     print("CENTRO 465 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 466
@@ -6994,7 +6994,7 @@ void main() async {
     );
 
     // Inserta centro 466 en la base de datos
-    await dbHelper.insertCentroMedico(centro466);
+    await dbCRUD.insertCentroMedico(centro466);
     print("CENTRO 466 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 467
@@ -7009,7 +7009,7 @@ void main() async {
     );
 
     // Inserta centro 467 en la base de datos
-    await dbHelper.insertCentroMedico(centro467);
+    await dbCRUD.insertCentroMedico(centro467);
     print("CENTRO 467 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 468
@@ -7024,7 +7024,7 @@ void main() async {
     );
 
     // Inserta centro 468 en la base de datos
-    await dbHelper.insertCentroMedico(centro468);
+    await dbCRUD.insertCentroMedico(centro468);
     print("CENTRO 468 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 469
@@ -7039,7 +7039,7 @@ void main() async {
     );
 
     // Inserta centro 469 en la base de datos
-    await dbHelper.insertCentroMedico(centro469);
+    await dbCRUD.insertCentroMedico(centro469);
     print("CENTRO 469 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 470
@@ -7054,7 +7054,7 @@ void main() async {
     );
 
     // Inserta centro 470 en la base de datos
-    await dbHelper.insertCentroMedico(centro470);
+    await dbCRUD.insertCentroMedico(centro470);
     print("CENTRO 470 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 471
@@ -7069,7 +7069,7 @@ void main() async {
     );
 
     // Inserta centro 471 en la base de datos
-    await dbHelper.insertCentroMedico(centro471);
+    await dbCRUD.insertCentroMedico(centro471);
     print("CENTRO 471 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 472
@@ -7084,7 +7084,7 @@ void main() async {
     );
 
     // Inserta centro 472 en la base de datos
-    await dbHelper.insertCentroMedico(centro472);
+    await dbCRUD.insertCentroMedico(centro472);
     print("CENTRO 472 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 473
@@ -7099,7 +7099,7 @@ void main() async {
     );
 
     // Inserta centro 473 en la base de datos
-    await dbHelper.insertCentroMedico(centro473);
+    await dbCRUD.insertCentroMedico(centro473);
     print("CENTRO 473 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 474
@@ -7114,7 +7114,7 @@ void main() async {
     );
 
     // Inserta centro 474 en la base de datos
-    await dbHelper.insertCentroMedico(centro474);
+    await dbCRUD.insertCentroMedico(centro474);
     print("CENTRO 474 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 475
@@ -7129,7 +7129,7 @@ void main() async {
     );
 
     // Inserta centro 475 en la base de datos
-    await dbHelper.insertCentroMedico(centro475);
+    await dbCRUD.insertCentroMedico(centro475);
     print("CENTRO 475 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 476
@@ -7144,7 +7144,7 @@ void main() async {
     );
 
     // Inserta centro 476 en la base de datos
-    await dbHelper.insertCentroMedico(centro476);
+    await dbCRUD.insertCentroMedico(centro476);
     print("CENTRO 476 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 477
@@ -7159,7 +7159,7 @@ void main() async {
     );
 
     // Inserta centro 477 en la base de datos
-    await dbHelper.insertCentroMedico(centro477);
+    await dbCRUD.insertCentroMedico(centro477);
     print("CENTRO 477 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 478
@@ -7174,7 +7174,7 @@ void main() async {
     );
 
     // Inserta centro 478 en la base de datos
-    await dbHelper.insertCentroMedico(centro478);
+    await dbCRUD.insertCentroMedico(centro478);
     print("CENTRO 478 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 479
@@ -7189,7 +7189,7 @@ void main() async {
     );
 
     // Inserta centro 479 en la base de datos
-    await dbHelper.insertCentroMedico(centro479);
+    await dbCRUD.insertCentroMedico(centro479);
     print("CENTRO 479 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 480
@@ -7204,7 +7204,7 @@ void main() async {
     );
 
     // Inserta centro 480 en la base de datos
-    await dbHelper.insertCentroMedico(centro480);
+    await dbCRUD.insertCentroMedico(centro480);
     print("CENTRO 480 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 481
@@ -7219,7 +7219,7 @@ void main() async {
     );
 
     // Inserta centro 481 en la base de datos
-    await dbHelper.insertCentroMedico(centro481);
+    await dbCRUD.insertCentroMedico(centro481);
     print("CENTRO 481 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 482
@@ -7234,7 +7234,7 @@ void main() async {
     );
 
     // Inserta centro 482 en la base de datos
-    await dbHelper.insertCentroMedico(centro482);
+    await dbCRUD.insertCentroMedico(centro482);
     print("CENTRO 482 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 483
@@ -7249,7 +7249,7 @@ void main() async {
     );
 
     // Inserta centro 483 en la base de datos
-    await dbHelper.insertCentroMedico(centro483);
+    await dbCRUD.insertCentroMedico(centro483);
     print("CENTRO 483 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 484
@@ -7264,7 +7264,7 @@ void main() async {
     );
 
     // Inserta centro 484 en la base de datos
-    await dbHelper.insertCentroMedico(centro484);
+    await dbCRUD.insertCentroMedico(centro484);
     print("CENTRO 484 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 485
@@ -7279,7 +7279,7 @@ void main() async {
     );
 
     // Inserta centro 485 en la base de datos
-    await dbHelper.insertCentroMedico(centro485);
+    await dbCRUD.insertCentroMedico(centro485);
     print("CENTRO 485 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 486
@@ -7294,7 +7294,7 @@ void main() async {
     );
 
     // Inserta centro 486 en la base de datos
-    await dbHelper.insertCentroMedico(centro486);
+    await dbCRUD.insertCentroMedico(centro486);
     print("CENTRO 486 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 487
@@ -7309,7 +7309,7 @@ void main() async {
     );
 
     // Inserta centro 487 en la base de datos
-    await dbHelper.insertCentroMedico(centro487);
+    await dbCRUD.insertCentroMedico(centro487);
     print("CENTRO 487 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 488
@@ -7324,7 +7324,7 @@ void main() async {
     );
 
     // Inserta centro 488 en la base de datos
-    await dbHelper.insertCentroMedico(centro488);
+    await dbCRUD.insertCentroMedico(centro488);
     print("CENTRO 488 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 489
@@ -7339,7 +7339,7 @@ void main() async {
     );
 
     // Inserta centro 489 en la base de datos
-    await dbHelper.insertCentroMedico(centro489);
+    await dbCRUD.insertCentroMedico(centro489);
     print("CENTRO 489 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 490
@@ -7354,7 +7354,7 @@ void main() async {
     );
 
     // Inserta centro 490 en la base de datos
-    await dbHelper.insertCentroMedico(centro490);
+    await dbCRUD.insertCentroMedico(centro490);
     print("CENTRO 490 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 491
@@ -7369,7 +7369,7 @@ void main() async {
     );
 
     // Inserta centro 491 en la base de datos
-    await dbHelper.insertCentroMedico(centro491);
+    await dbCRUD.insertCentroMedico(centro491);
     print("CENTRO 491 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 492
@@ -7384,7 +7384,7 @@ void main() async {
     );
 
     // Inserta centro 492 en la base de datos
-    await dbHelper.insertCentroMedico(centro492);
+    await dbCRUD.insertCentroMedico(centro492);
     print("CENTRO 492 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 493
@@ -7399,7 +7399,7 @@ void main() async {
     );
 
     // Inserta centro 493 en la base de datos
-    await dbHelper.insertCentroMedico(centro493);
+    await dbCRUD.insertCentroMedico(centro493);
     print("CENTRO 493 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 494
@@ -7414,7 +7414,7 @@ void main() async {
     );
 
     // Inserta centro 494 en la base de datos
-    await dbHelper.insertCentroMedico(centro494);
+    await dbCRUD.insertCentroMedico(centro494);
     print("CENTRO 494 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 495
@@ -7429,7 +7429,7 @@ void main() async {
     );
 
     // Inserta centro 495 en la base de datos
-    await dbHelper.insertCentroMedico(centro495);
+    await dbCRUD.insertCentroMedico(centro495);
     print("CENTRO 495 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 496
@@ -7444,7 +7444,7 @@ void main() async {
     );
 
     // Inserta centro 496 en la base de datos
-    await dbHelper.insertCentroMedico(centro496);
+    await dbCRUD.insertCentroMedico(centro496);
     print("CENTRO 496 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 497
@@ -7459,7 +7459,7 @@ void main() async {
     );
 
     // Inserta centro 497 en la base de datos
-    await dbHelper.insertCentroMedico(centro497);
+    await dbCRUD.insertCentroMedico(centro497);
     print("CENTRO 497 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 498
@@ -7474,7 +7474,7 @@ void main() async {
     );
 
     // Inserta centro 498 en la base de datos
-    await dbHelper.insertCentroMedico(centro498);
+    await dbCRUD.insertCentroMedico(centro498);
     print("CENTRO 498 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 499
@@ -7489,7 +7489,7 @@ void main() async {
     );
 
     // Inserta centro 499 en la base de datos
-    await dbHelper.insertCentroMedico(centro499);
+    await dbCRUD.insertCentroMedico(centro499);
     print("CENTRO 499 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 500
@@ -7504,7 +7504,7 @@ void main() async {
     );
 
     // Inserta centro 500 en la base de datos
-    await dbHelper.insertCentroMedico(centro500);
+    await dbCRUD.insertCentroMedico(centro500);
     print("CENTRO 500 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 501
@@ -7519,7 +7519,7 @@ void main() async {
     );
 
     // Inserta centro 501 en la base de datos
-    await dbHelper.insertCentroMedico(centro501);
+    await dbCRUD.insertCentroMedico(centro501);
     print("CENTRO 501 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 502
@@ -7534,7 +7534,7 @@ void main() async {
     );
 
     // Inserta centro 502 en la base de datos
-    await dbHelper.insertCentroMedico(centro502);
+    await dbCRUD.insertCentroMedico(centro502);
     print("CENTRO 502 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 503
@@ -7549,7 +7549,7 @@ void main() async {
     );
 
     // Inserta centro 503 en la base de datos
-    await dbHelper.insertCentroMedico(centro503);
+    await dbCRUD.insertCentroMedico(centro503);
     print("CENTRO 503 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 504
@@ -7564,7 +7564,7 @@ void main() async {
     );
 
     // Inserta centro 504 en la base de datos
-    await dbHelper.insertCentroMedico(centro504);
+    await dbCRUD.insertCentroMedico(centro504);
     print("CENTRO 504 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 505
@@ -7579,7 +7579,7 @@ void main() async {
     );
 
     // Inserta centro 505 en la base de datos
-    await dbHelper.insertCentroMedico(centro505);
+    await dbCRUD.insertCentroMedico(centro505);
     print("CENTRO 505 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 506
@@ -7594,7 +7594,7 @@ void main() async {
     );
 
     // Inserta centro 506 en la base de datos
-    await dbHelper.insertCentroMedico(centro506);
+    await dbCRUD.insertCentroMedico(centro506);
     print("CENTRO 506 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 507
@@ -7609,7 +7609,7 @@ void main() async {
     );
 
     // Inserta centro 507 en la base de datos
-    await dbHelper.insertCentroMedico(centro507);
+    await dbCRUD.insertCentroMedico(centro507);
     print("CENTRO 507 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 508
@@ -7624,7 +7624,7 @@ void main() async {
     );
 
     // Inserta centro 508 en la base de datos
-    await dbHelper.insertCentroMedico(centro508);
+    await dbCRUD.insertCentroMedico(centro508);
     print("CENTRO 508 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 509
@@ -7639,7 +7639,7 @@ void main() async {
     );
 
     // Inserta centro 509 en la base de datos
-    await dbHelper.insertCentroMedico(centro509);
+    await dbCRUD.insertCentroMedico(centro509);
     print("CENTRO 509 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 510
@@ -7654,7 +7654,7 @@ void main() async {
     );
 
     // Inserta centro 510 en la base de datos
-    await dbHelper.insertCentroMedico(centro510);
+    await dbCRUD.insertCentroMedico(centro510);
     print("CENTRO 510 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 511
@@ -7669,7 +7669,7 @@ void main() async {
     );
 
     // Inserta centro 511 en la base de datos
-    await dbHelper.insertCentroMedico(centro511);
+    await dbCRUD.insertCentroMedico(centro511);
     print("CENTRO 511 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 512
@@ -7684,7 +7684,7 @@ void main() async {
     );
 
     // Inserta centro 512 en la base de datos
-    await dbHelper.insertCentroMedico(centro512);
+    await dbCRUD.insertCentroMedico(centro512);
     print("CENTRO 512 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 513
@@ -7699,7 +7699,7 @@ void main() async {
     );
 
     // Inserta centro 513 en la base de datos
-    await dbHelper.insertCentroMedico(centro513);
+    await dbCRUD.insertCentroMedico(centro513);
     print("CENTRO 513 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 514
@@ -7714,7 +7714,7 @@ void main() async {
     );
 
     // Inserta centro 514 en la base de datos
-    await dbHelper.insertCentroMedico(centro514);
+    await dbCRUD.insertCentroMedico(centro514);
     print("CENTRO 514 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 515
@@ -7729,7 +7729,7 @@ void main() async {
     );
 
     // Inserta centro 515 en la base de datos
-    await dbHelper.insertCentroMedico(centro515);
+    await dbCRUD.insertCentroMedico(centro515);
     print("CENTRO 515 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 516
@@ -7744,7 +7744,7 @@ void main() async {
     );
 
     // Inserta centro 516 en la base de datos
-    await dbHelper.insertCentroMedico(centro516);
+    await dbCRUD.insertCentroMedico(centro516);
     print("CENTRO 516 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 517
@@ -7759,7 +7759,7 @@ void main() async {
     );
 
     // Inserta centro 517 en la base de datos
-    await dbHelper.insertCentroMedico(centro517);
+    await dbCRUD.insertCentroMedico(centro517);
     print("CENTRO 517 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 518
@@ -7774,7 +7774,7 @@ void main() async {
     );
 
     // Inserta centro 518 en la base de datos
-    await dbHelper.insertCentroMedico(centro518);
+    await dbCRUD.insertCentroMedico(centro518);
     print("CENTRO 518 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 519
@@ -7789,7 +7789,7 @@ void main() async {
     );
 
     // Inserta centro 519 en la base de datos
-    await dbHelper.insertCentroMedico(centro519);
+    await dbCRUD.insertCentroMedico(centro519);
     print("CENTRO 519 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 520
@@ -7804,7 +7804,7 @@ void main() async {
     );
 
     // Inserta centro 520 en la base de datos
-    await dbHelper.insertCentroMedico(centro520);
+    await dbCRUD.insertCentroMedico(centro520);
     print("CENTRO 520 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 521
@@ -7819,7 +7819,7 @@ void main() async {
     );
 
     // Inserta centro 521 en la base de datos
-    await dbHelper.insertCentroMedico(centro521);
+    await dbCRUD.insertCentroMedico(centro521);
     print("CENTRO 521 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 522
@@ -7834,7 +7834,7 @@ void main() async {
     );
 
     // Inserta centro 522 en la base de datos
-    await dbHelper.insertCentroMedico(centro522);
+    await dbCRUD.insertCentroMedico(centro522);
     print("CENTRO 522 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 523
@@ -7849,7 +7849,7 @@ void main() async {
     );
 
     // Inserta centro 523 en la base de datos
-    await dbHelper.insertCentroMedico(centro523);
+    await dbCRUD.insertCentroMedico(centro523);
     print("CENTRO 523 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 524
@@ -7864,7 +7864,7 @@ void main() async {
     );
 
     // Inserta centro 524 en la base de datos
-    await dbHelper.insertCentroMedico(centro524);
+    await dbCRUD.insertCentroMedico(centro524);
     print("CENTRO 524 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 525
@@ -7879,7 +7879,7 @@ void main() async {
     );
 
     // Inserta centro 525 en la base de datos
-    await dbHelper.insertCentroMedico(centro525);
+    await dbCRUD.insertCentroMedico(centro525);
     print("CENTRO 525 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 526
@@ -7894,7 +7894,7 @@ void main() async {
     );
 
     // Inserta centro 526 en la base de datos
-    await dbHelper.insertCentroMedico(centro526);
+    await dbCRUD.insertCentroMedico(centro526);
     print("CENTRO 526 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 527
@@ -7909,7 +7909,7 @@ void main() async {
     );
 
     // Inserta centro 527 en la base de datos
-    await dbHelper.insertCentroMedico(centro527);
+    await dbCRUD.insertCentroMedico(centro527);
     print("CENTRO 527 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 528
@@ -7924,7 +7924,7 @@ void main() async {
     );
 
     // Inserta centro 528 en la base de datos
-    await dbHelper.insertCentroMedico(centro528);
+    await dbCRUD.insertCentroMedico(centro528);
     print("CENTRO 528 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 529
@@ -7939,7 +7939,7 @@ void main() async {
     );
 
     // Inserta centro 529 en la base de datos
-    await dbHelper.insertCentroMedico(centro529);
+    await dbCRUD.insertCentroMedico(centro529);
     print("CENTRO 529 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 530
@@ -7954,7 +7954,7 @@ void main() async {
     );
 
     // Inserta centro 530 en la base de datos
-    await dbHelper.insertCentroMedico(centro530);
+    await dbCRUD.insertCentroMedico(centro530);
     print("CENTRO 530 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 531
@@ -7969,7 +7969,7 @@ void main() async {
     );
 
     // Inserta centro 531 en la base de datos
-    await dbHelper.insertCentroMedico(centro531);
+    await dbCRUD.insertCentroMedico(centro531);
     print("CENTRO 531 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 532
@@ -7984,7 +7984,7 @@ void main() async {
     );
 
     // Inserta centro 532 en la base de datos
-    await dbHelper.insertCentroMedico(centro532);
+    await dbCRUD.insertCentroMedico(centro532);
     print("CENTRO 532 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 533
@@ -7999,7 +7999,7 @@ void main() async {
     );
 
     // Inserta centro 533 en la base de datos
-    await dbHelper.insertCentroMedico(centro533);
+    await dbCRUD.insertCentroMedico(centro533);
     print("CENTRO 533 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 534
@@ -8014,7 +8014,7 @@ void main() async {
     );
 
     // Inserta centro 534 en la base de datos
-    await dbHelper.insertCentroMedico(centro534);
+    await dbCRUD.insertCentroMedico(centro534);
     print("CENTRO 534 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 535
@@ -8029,7 +8029,7 @@ void main() async {
     );
 
     // Inserta centro 535 en la base de datos
-    await dbHelper.insertCentroMedico(centro535);
+    await dbCRUD.insertCentroMedico(centro535);
     print("CENTRO 535 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 536
@@ -8044,7 +8044,7 @@ void main() async {
     );
 
     // Inserta centro 536 en la base de datos
-    await dbHelper.insertCentroMedico(centro536);
+    await dbCRUD.insertCentroMedico(centro536);
     print("CENTRO 536 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 537
@@ -8059,7 +8059,7 @@ void main() async {
     );
 
     // Inserta centro 537 en la base de datos
-    await dbHelper.insertCentroMedico(centro537);
+    await dbCRUD.insertCentroMedico(centro537);
     print("CENTRO 537 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 538
@@ -8074,7 +8074,7 @@ void main() async {
     );
 
     // Inserta centro 538 en la base de datos
-    await dbHelper.insertCentroMedico(centro538);
+    await dbCRUD.insertCentroMedico(centro538);
     print("CENTRO 538 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 539
@@ -8089,7 +8089,7 @@ void main() async {
     );
 
     // Inserta centro 539 en la base de datos
-    await dbHelper.insertCentroMedico(centro539);
+    await dbCRUD.insertCentroMedico(centro539);
     print("CENTRO 539 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 540
@@ -8104,7 +8104,7 @@ void main() async {
     );
 
     // Inserta centro 540 en la base de datos
-    await dbHelper.insertCentroMedico(centro540);
+    await dbCRUD.insertCentroMedico(centro540);
     print("CENTRO 540 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 541
@@ -8119,7 +8119,7 @@ void main() async {
     );
 
     // Inserta centro 541 en la base de datos
-    await dbHelper.insertCentroMedico(centro541);
+    await dbCRUD.insertCentroMedico(centro541);
     print("CENTRO 541 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 542
@@ -8134,7 +8134,7 @@ void main() async {
     );
 
     // Inserta centro 542 en la base de datos
-    await dbHelper.insertCentroMedico(centro542);
+    await dbCRUD.insertCentroMedico(centro542);
     print("CENTRO 542 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 543
@@ -8149,7 +8149,7 @@ void main() async {
     );
 
     // Inserta centro 543 en la base de datos
-    await dbHelper.insertCentroMedico(centro543);
+    await dbCRUD.insertCentroMedico(centro543);
     print("CENTRO 543 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 544
@@ -8164,7 +8164,7 @@ void main() async {
     );
 
     // Inserta centro 544 en la base de datos
-    await dbHelper.insertCentroMedico(centro544);
+    await dbCRUD.insertCentroMedico(centro544);
     print("CENTRO 544 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 545
@@ -8179,7 +8179,7 @@ void main() async {
     );
 
     // Inserta centro 545 en la base de datos
-    await dbHelper.insertCentroMedico(centro545);
+    await dbCRUD.insertCentroMedico(centro545);
     print("CENTRO 545 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 546
@@ -8194,7 +8194,7 @@ void main() async {
     );
 
     // Inserta centro 546 en la base de datos
-    await dbHelper.insertCentroMedico(centro546);
+    await dbCRUD.insertCentroMedico(centro546);
     print("CENTRO 546 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 547
@@ -8209,7 +8209,7 @@ void main() async {
     );
 
     // Inserta centro 547 en la base de datos
-    await dbHelper.insertCentroMedico(centro547);
+    await dbCRUD.insertCentroMedico(centro547);
     print("CENTRO 547 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 548
@@ -8224,7 +8224,7 @@ void main() async {
     );
 
     // Inserta centro 548 en la base de datos
-    await dbHelper.insertCentroMedico(centro548);
+    await dbCRUD.insertCentroMedico(centro548);
     print("CENTRO 548 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 549
@@ -8239,7 +8239,7 @@ void main() async {
     );
 
     // Inserta centro 549 en la base de datos
-    await dbHelper.insertCentroMedico(centro549);
+    await dbCRUD.insertCentroMedico(centro549);
     print("CENTRO 549 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 550
@@ -8254,7 +8254,7 @@ void main() async {
     );
 
     // Inserta centro 550 en la base de datos
-    await dbHelper.insertCentroMedico(centro550);
+    await dbCRUD.insertCentroMedico(centro550);
     print("CENTRO 550 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 551
@@ -8269,7 +8269,7 @@ void main() async {
     );
 
     // Inserta centro 551 en la base de datos
-    await dbHelper.insertCentroMedico(centro551);
+    await dbCRUD.insertCentroMedico(centro551);
     print("CENTRO 551 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 552
@@ -8284,7 +8284,7 @@ void main() async {
     );
 
     // Inserta centro 552 en la base de datos
-    await dbHelper.insertCentroMedico(centro552);
+    await dbCRUD.insertCentroMedico(centro552);
     print("CENTRO 552 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 553
@@ -8299,7 +8299,7 @@ void main() async {
     );
 
     // Inserta centro 553 en la base de datos
-    await dbHelper.insertCentroMedico(centro553);
+    await dbCRUD.insertCentroMedico(centro553);
     print("CENTRO 553 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 554
@@ -8314,7 +8314,7 @@ void main() async {
     );
 
     // Inserta centro 554 en la base de datos
-    await dbHelper.insertCentroMedico(centro554);
+    await dbCRUD.insertCentroMedico(centro554);
     print("CENTRO 554 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 555
@@ -8329,7 +8329,7 @@ void main() async {
     );
 
     // Inserta centro 555 en la base de datos
-    await dbHelper.insertCentroMedico(centro555);
+    await dbCRUD.insertCentroMedico(centro555);
     print("CENTRO 555 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 556
@@ -8344,7 +8344,7 @@ void main() async {
     );
 
     // Inserta centro 556 en la base de datos
-    await dbHelper.insertCentroMedico(centro556);
+    await dbCRUD.insertCentroMedico(centro556);
     print("CENTRO 556 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 557
@@ -8359,7 +8359,7 @@ void main() async {
     );
 
     // Inserta centro 557 en la base de datos
-    await dbHelper.insertCentroMedico(centro557);
+    await dbCRUD.insertCentroMedico(centro557);
     print("CENTRO 557 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 558
@@ -8374,7 +8374,7 @@ void main() async {
     );
 
     // Inserta centro 558 en la base de datos
-    await dbHelper.insertCentroMedico(centro558);
+    await dbCRUD.insertCentroMedico(centro558);
     print("CENTRO 558 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 559
@@ -8389,7 +8389,7 @@ void main() async {
     );
 
     // Inserta centro 559 en la base de datos
-    await dbHelper.insertCentroMedico(centro559);
+    await dbCRUD.insertCentroMedico(centro559);
     print("CENTRO 559 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 560
@@ -8404,7 +8404,7 @@ void main() async {
     );
 
     // Inserta centro 560 en la base de datos
-    await dbHelper.insertCentroMedico(centro560);
+    await dbCRUD.insertCentroMedico(centro560);
     print("CENTRO 560 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 561
@@ -8419,7 +8419,7 @@ void main() async {
     );
 
     // Inserta centro 561 en la base de datos
-    await dbHelper.insertCentroMedico(centro561);
+    await dbCRUD.insertCentroMedico(centro561);
     print("CENTRO 561 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 562
@@ -8434,7 +8434,7 @@ void main() async {
     );
 
     // Inserta centro 562 en la base de datos
-    await dbHelper.insertCentroMedico(centro562);
+    await dbCRUD.insertCentroMedico(centro562);
     print("CENTRO 562 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 563
@@ -8449,7 +8449,7 @@ void main() async {
     );
 
     // Inserta centro 563 en la base de datos
-    await dbHelper.insertCentroMedico(centro563);
+    await dbCRUD.insertCentroMedico(centro563);
     print("CENTRO 563 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 564
@@ -8464,7 +8464,7 @@ void main() async {
     );
 
     // Inserta centro 564 en la base de datos
-    await dbHelper.insertCentroMedico(centro564);
+    await dbCRUD.insertCentroMedico(centro564);
     print("CENTRO 564 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 565
@@ -8479,7 +8479,7 @@ void main() async {
     );
 
     // Inserta centro 565 en la base de datos
-    await dbHelper.insertCentroMedico(centro565);
+    await dbCRUD.insertCentroMedico(centro565);
     print("CENTRO 565 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 566
@@ -8494,7 +8494,7 @@ void main() async {
     );
 
     // Inserta centro 566 en la base de datos
-    await dbHelper.insertCentroMedico(centro566);
+    await dbCRUD.insertCentroMedico(centro566);
     print("CENTRO 566 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 567
@@ -8509,7 +8509,7 @@ void main() async {
     );
 
     // Inserta centro 567 en la base de datos
-    await dbHelper.insertCentroMedico(centro567);
+    await dbCRUD.insertCentroMedico(centro567);
     print("CENTRO 567 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 568
@@ -8524,7 +8524,7 @@ void main() async {
     );
 
     // Inserta centro 568 en la base de datos
-    await dbHelper.insertCentroMedico(centro568);
+    await dbCRUD.insertCentroMedico(centro568);
     print("CENTRO 568 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 569
@@ -8539,7 +8539,7 @@ void main() async {
     );
 
     // Inserta centro 569 en la base de datos
-    await dbHelper.insertCentroMedico(centro569);
+    await dbCRUD.insertCentroMedico(centro569);
     print("CENTRO 569 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 570
@@ -8554,7 +8554,7 @@ void main() async {
     );
 
     // Inserta centro 570 en la base de datos
-    await dbHelper.insertCentroMedico(centro570);
+    await dbCRUD.insertCentroMedico(centro570);
     print("CENTRO 570 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 571
@@ -8569,7 +8569,7 @@ void main() async {
     );
 
     // Inserta centro 571 en la base de datos
-    await dbHelper.insertCentroMedico(centro571);
+    await dbCRUD.insertCentroMedico(centro571);
     print("CENTRO 571 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 572
@@ -8584,7 +8584,7 @@ void main() async {
     );
 
     // Inserta centro 572 en la base de datos
-    await dbHelper.insertCentroMedico(centro572);
+    await dbCRUD.insertCentroMedico(centro572);
     print("CENTRO 572 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 573
@@ -8599,7 +8599,7 @@ void main() async {
     );
 
     // Inserta centro 573 en la base de datos
-    await dbHelper.insertCentroMedico(centro573);
+    await dbCRUD.insertCentroMedico(centro573);
     print("CENTRO 573 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 574
@@ -8614,7 +8614,7 @@ void main() async {
     );
 
     // Inserta centro 574 en la base de datos
-    await dbHelper.insertCentroMedico(centro574);
+    await dbCRUD.insertCentroMedico(centro574);
     print("CENTRO 574 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 575
@@ -8629,7 +8629,7 @@ void main() async {
     );
 
     // Inserta centro 575 en la base de datos
-    await dbHelper.insertCentroMedico(centro575);
+    await dbCRUD.insertCentroMedico(centro575);
     print("CENTRO 575 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 576
@@ -8644,7 +8644,7 @@ void main() async {
     );
 
     // Inserta centro 576 en la base de datos
-    await dbHelper.insertCentroMedico(centro576);
+    await dbCRUD.insertCentroMedico(centro576);
     print("CENTRO 576 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 577
@@ -8659,7 +8659,7 @@ void main() async {
     );
 
     // Inserta centro 577 en la base de datos
-    await dbHelper.insertCentroMedico(centro577);
+    await dbCRUD.insertCentroMedico(centro577);
     print("CENTRO 577 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 578
@@ -8674,7 +8674,7 @@ void main() async {
     );
 
     // Inserta centro 578 en la base de datos
-    await dbHelper.insertCentroMedico(centro578);
+    await dbCRUD.insertCentroMedico(centro578);
     print("CENTRO 578 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 579
@@ -8689,7 +8689,7 @@ void main() async {
     );
 
     // Inserta centro 579 en la base de datos
-    await dbHelper.insertCentroMedico(centro579);
+    await dbCRUD.insertCentroMedico(centro579);
     print("CENTRO 579 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 580
@@ -8704,7 +8704,7 @@ void main() async {
     );
 
     // Inserta centro 580 en la base de datos
-    await dbHelper.insertCentroMedico(centro580);
+    await dbCRUD.insertCentroMedico(centro580);
     print("CENTRO 580 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 581
@@ -8719,7 +8719,7 @@ void main() async {
     );
 
     // Inserta centro 581 en la base de datos
-    await dbHelper.insertCentroMedico(centro581);
+    await dbCRUD.insertCentroMedico(centro581);
     print("CENTRO 581 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 582
@@ -8734,7 +8734,7 @@ void main() async {
     );
 
     // Inserta centro 582 en la base de datos
-    await dbHelper.insertCentroMedico(centro582);
+    await dbCRUD.insertCentroMedico(centro582);
     print("CENTRO 582 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 583
@@ -8749,7 +8749,7 @@ void main() async {
     );
 
     // Inserta centro 583 en la base de datos
-    await dbHelper.insertCentroMedico(centro583);
+    await dbCRUD.insertCentroMedico(centro583);
     print("CENTRO 583 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 584
@@ -8764,7 +8764,7 @@ void main() async {
     );
 
     // Inserta centro 584 en la base de datos
-    await dbHelper.insertCentroMedico(centro584);
+    await dbCRUD.insertCentroMedico(centro584);
     print("CENTRO 584 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 585
@@ -8779,7 +8779,7 @@ void main() async {
     );
 
     // Inserta centro 585 en la base de datos
-    await dbHelper.insertCentroMedico(centro585);
+    await dbCRUD.insertCentroMedico(centro585);
     print("CENTRO 585 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 586
@@ -8794,7 +8794,7 @@ void main() async {
     );
 
     // Inserta centro 586 en la base de datos
-    await dbHelper.insertCentroMedico(centro586);
+    await dbCRUD.insertCentroMedico(centro586);
     print("CENTRO 586 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 587
@@ -8809,7 +8809,7 @@ void main() async {
     );
 
     // Inserta centro 587 en la base de datos
-    await dbHelper.insertCentroMedico(centro587);
+    await dbCRUD.insertCentroMedico(centro587);
     print("CENTRO 587 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 588
@@ -8824,7 +8824,7 @@ void main() async {
     );
 
     // Inserta centro 588 en la base de datos
-    await dbHelper.insertCentroMedico(centro588);
+    await dbCRUD.insertCentroMedico(centro588);
     print("CENTRO 588 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 589
@@ -8839,7 +8839,7 @@ void main() async {
     );
 
     // Inserta centro 589 en la base de datos
-    await dbHelper.insertCentroMedico(centro589);
+    await dbCRUD.insertCentroMedico(centro589);
     print("CENTRO 589 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 590
@@ -8854,7 +8854,7 @@ void main() async {
     );
 
     // Inserta centro 590 en la base de datos
-    await dbHelper.insertCentroMedico(centro590);
+    await dbCRUD.insertCentroMedico(centro590);
     print("CENTRO 590 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 591
@@ -8869,7 +8869,7 @@ void main() async {
     );
 
     // Inserta centro 591 en la base de datos
-    await dbHelper.insertCentroMedico(centro591);
+    await dbCRUD.insertCentroMedico(centro591);
     print("CENTRO 591 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 592
@@ -8884,7 +8884,7 @@ void main() async {
     );
 
     // Inserta centro 592 en la base de datos
-    await dbHelper.insertCentroMedico(centro592);
+    await dbCRUD.insertCentroMedico(centro592);
     print("CENTRO 592 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 593
@@ -8899,7 +8899,7 @@ void main() async {
     );
 
     // Inserta centro 593 en la base de datos
-    await dbHelper.insertCentroMedico(centro593);
+    await dbCRUD.insertCentroMedico(centro593);
     print("CENTRO 593 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 594
@@ -8914,7 +8914,7 @@ void main() async {
     );
 
     // Inserta centro 594 en la base de datos
-    await dbHelper.insertCentroMedico(centro594);
+    await dbCRUD.insertCentroMedico(centro594);
     print("CENTRO 594 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 595
@@ -8929,7 +8929,7 @@ void main() async {
     );
 
     // Inserta centro 595 en la base de datos
-    await dbHelper.insertCentroMedico(centro595);
+    await dbCRUD.insertCentroMedico(centro595);
     print("CENTRO 595 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 596
@@ -8944,7 +8944,7 @@ void main() async {
     );
 
     // Inserta centro 596 en la base de datos
-    await dbHelper.insertCentroMedico(centro596);
+    await dbCRUD.insertCentroMedico(centro596);
     print("CENTRO 596 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 597
@@ -8959,7 +8959,7 @@ void main() async {
     );
 
     // Inserta centro 597 en la base de datos
-    await dbHelper.insertCentroMedico(centro597);
+    await dbCRUD.insertCentroMedico(centro597);
     print("CENTRO 597 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 598
@@ -8974,7 +8974,7 @@ void main() async {
     );
 
     // Inserta centro 598 en la base de datos
-    await dbHelper.insertCentroMedico(centro598);
+    await dbCRUD.insertCentroMedico(centro598);
     print("CENTRO 598 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 599
@@ -8989,7 +8989,7 @@ void main() async {
     );
 
     // Inserta centro 599 en la base de datos
-    await dbHelper.insertCentroMedico(centro599);
+    await dbCRUD.insertCentroMedico(centro599);
     print("CENTRO 599 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 600
@@ -9004,7 +9004,7 @@ void main() async {
     );
 
     // Inserta centro 600 en la base de datos
-    await dbHelper.insertCentroMedico(centro600);
+    await dbCRUD.insertCentroMedico(centro600);
     print("CENTRO 600 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 601
@@ -9019,7 +9019,7 @@ void main() async {
     );
 
     // Inserta centro 601 en la base de datos
-    await dbHelper.insertCentroMedico(centro601);
+    await dbCRUD.insertCentroMedico(centro601);
     print("CENTRO 601 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 602
@@ -9034,7 +9034,7 @@ void main() async {
     );
 
     // Inserta centro 602 en la base de datos
-    await dbHelper.insertCentroMedico(centro602);
+    await dbCRUD.insertCentroMedico(centro602);
     print("CENTRO 602 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 603
@@ -9049,7 +9049,7 @@ void main() async {
     );
 
     // Inserta centro 603 en la base de datos
-    await dbHelper.insertCentroMedico(centro603);
+    await dbCRUD.insertCentroMedico(centro603);
     print("CENTRO 603 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 604
@@ -9064,7 +9064,7 @@ void main() async {
     );
 
     // Inserta centro 604 en la base de datos
-    await dbHelper.insertCentroMedico(centro604);
+    await dbCRUD.insertCentroMedico(centro604);
     print("CENTRO 604 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 605
@@ -9079,7 +9079,7 @@ void main() async {
     );
 
     // Inserta centro 605 en la base de datos
-    await dbHelper.insertCentroMedico(centro605);
+    await dbCRUD.insertCentroMedico(centro605);
     print("CENTRO 605 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 606
@@ -9094,7 +9094,7 @@ void main() async {
     );
 
     // Inserta centro 606 en la base de datos
-    await dbHelper.insertCentroMedico(centro606);
+    await dbCRUD.insertCentroMedico(centro606);
     print("CENTRO 606 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 607
@@ -9109,7 +9109,7 @@ void main() async {
     );
 
     // Inserta centro 607 en la base de datos
-    await dbHelper.insertCentroMedico(centro607);
+    await dbCRUD.insertCentroMedico(centro607);
     print("CENTRO 607 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 608
@@ -9124,7 +9124,7 @@ void main() async {
     );
 
     // Inserta centro 608 en la base de datos
-    await dbHelper.insertCentroMedico(centro608);
+    await dbCRUD.insertCentroMedico(centro608);
     print("CENTRO 608 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 609
@@ -9139,7 +9139,7 @@ void main() async {
     );
 
     // Inserta centro 609 en la base de datos
-    await dbHelper.insertCentroMedico(centro609);
+    await dbCRUD.insertCentroMedico(centro609);
     print("CENTRO 609 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 610
@@ -9154,7 +9154,7 @@ void main() async {
     );
 
     // Inserta centro 610 en la base de datos
-    await dbHelper.insertCentroMedico(centro610);
+    await dbCRUD.insertCentroMedico(centro610);
     print("CENTRO 610 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 611
@@ -9169,7 +9169,7 @@ void main() async {
     );
 
     // Inserta centro 611 en la base de datos
-    await dbHelper.insertCentroMedico(centro611);
+    await dbCRUD.insertCentroMedico(centro611);
     print("CENTRO 611 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 612
@@ -9184,7 +9184,7 @@ void main() async {
     );
 
     // Inserta centro 612 en la base de datos
-    await dbHelper.insertCentroMedico(centro612);
+    await dbCRUD.insertCentroMedico(centro612);
     print("CENTRO 612 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 613
@@ -9199,7 +9199,7 @@ void main() async {
     );
 
     // Inserta centro 613 en la base de datos
-    await dbHelper.insertCentroMedico(centro613);
+    await dbCRUD.insertCentroMedico(centro613);
     print("CENTRO 613 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 614
@@ -9214,7 +9214,7 @@ void main() async {
     );
 
     // Inserta centro 614 en la base de datos
-    await dbHelper.insertCentroMedico(centro614);
+    await dbCRUD.insertCentroMedico(centro614);
     print("CENTRO 614 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 615
@@ -9229,7 +9229,7 @@ void main() async {
     );
 
     // Inserta centro 615 en la base de datos
-    await dbHelper.insertCentroMedico(centro615);
+    await dbCRUD.insertCentroMedico(centro615);
     print("CENTRO 615 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 616
@@ -9244,7 +9244,7 @@ void main() async {
     );
 
     // Inserta centro 616 en la base de datos
-    await dbHelper.insertCentroMedico(centro616);
+    await dbCRUD.insertCentroMedico(centro616);
     print("CENTRO 616 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 617
@@ -9259,7 +9259,7 @@ void main() async {
     );
 
     // Inserta centro 617 en la base de datos
-    await dbHelper.insertCentroMedico(centro617);
+    await dbCRUD.insertCentroMedico(centro617);
     print("CENTRO 617 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 618
@@ -9274,7 +9274,7 @@ void main() async {
     );
 
     // Inserta centro 618 en la base de datos
-    await dbHelper.insertCentroMedico(centro618);
+    await dbCRUD.insertCentroMedico(centro618);
     print("CENTRO 618 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 619
@@ -9289,7 +9289,7 @@ void main() async {
     );
 
     // Inserta centro 619 en la base de datos
-    await dbHelper.insertCentroMedico(centro619);
+    await dbCRUD.insertCentroMedico(centro619);
     print("CENTRO 619 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 620
@@ -9304,7 +9304,7 @@ void main() async {
     );
 
     // Inserta centro 620 en la base de datos
-    await dbHelper.insertCentroMedico(centro620);
+    await dbCRUD.insertCentroMedico(centro620);
     print("CENTRO 620 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 621
@@ -9319,7 +9319,7 @@ void main() async {
     );
 
     // Inserta centro 621 en la base de datos
-    await dbHelper.insertCentroMedico(centro621);
+    await dbCRUD.insertCentroMedico(centro621);
     print("CENTRO 621 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 622
@@ -9334,7 +9334,7 @@ void main() async {
     );
 
     // Inserta centro 622 en la base de datos
-    await dbHelper.insertCentroMedico(centro622);
+    await dbCRUD.insertCentroMedico(centro622);
     print("CENTRO 622 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 623
@@ -9349,7 +9349,7 @@ void main() async {
     );
 
     // Inserta centro 623 en la base de datos
-    await dbHelper.insertCentroMedico(centro623);
+    await dbCRUD.insertCentroMedico(centro623);
     print("CENTRO 623 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 624
@@ -9364,7 +9364,7 @@ void main() async {
     );
 
     // Inserta centro 624 en la base de datos
-    await dbHelper.insertCentroMedico(centro624);
+    await dbCRUD.insertCentroMedico(centro624);
     print("CENTRO 624 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 625
@@ -9379,7 +9379,7 @@ void main() async {
     );
 
     // Inserta centro 625 en la base de datos
-    await dbHelper.insertCentroMedico(centro625);
+    await dbCRUD.insertCentroMedico(centro625);
     print("CENTRO 625 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 626
@@ -9394,7 +9394,7 @@ void main() async {
     );
 
     // Inserta centro 626 en la base de datos
-    await dbHelper.insertCentroMedico(centro626);
+    await dbCRUD.insertCentroMedico(centro626);
     print("CENTRO 626 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 627
@@ -9409,7 +9409,7 @@ void main() async {
     );
 
     // Inserta centro 627 en la base de datos
-    await dbHelper.insertCentroMedico(centro627);
+    await dbCRUD.insertCentroMedico(centro627);
     print("CENTRO 627 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 628
@@ -9424,7 +9424,7 @@ void main() async {
     );
 
     // Inserta centro 628 en la base de datos
-    await dbHelper.insertCentroMedico(centro628);
+    await dbCRUD.insertCentroMedico(centro628);
     print("CENTRO 628 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 629
@@ -9439,7 +9439,7 @@ void main() async {
     );
 
     // Inserta centro 629 en la base de datos
-    await dbHelper.insertCentroMedico(centro629);
+    await dbCRUD.insertCentroMedico(centro629);
     print("CENTRO 629 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 630
@@ -9454,7 +9454,7 @@ void main() async {
     );
 
     // Inserta centro 630 en la base de datos
-    await dbHelper.insertCentroMedico(centro630);
+    await dbCRUD.insertCentroMedico(centro630);
     print("CENTRO 630 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 631
@@ -9469,7 +9469,7 @@ void main() async {
     );
 
     // Inserta centro 631 en la base de datos
-    await dbHelper.insertCentroMedico(centro631);
+    await dbCRUD.insertCentroMedico(centro631);
     print("CENTRO 631 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 632
@@ -9484,7 +9484,7 @@ void main() async {
     );
 
     // Inserta centro 632 en la base de datos
-    await dbHelper.insertCentroMedico(centro632);
+    await dbCRUD.insertCentroMedico(centro632);
     print("CENTRO 632 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 633
@@ -9499,7 +9499,7 @@ void main() async {
     );
 
     // Inserta centro 633 en la base de datos
-    await dbHelper.insertCentroMedico(centro633);
+    await dbCRUD.insertCentroMedico(centro633);
     print("CENTRO 633 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 634
@@ -9514,7 +9514,7 @@ void main() async {
     );
 
     // Inserta centro 634 en la base de datos
-    await dbHelper.insertCentroMedico(centro634);
+    await dbCRUD.insertCentroMedico(centro634);
     print("CENTRO 634 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 635
@@ -9529,7 +9529,7 @@ void main() async {
     );
 
     // Inserta centro 635 en la base de datos
-    await dbHelper.insertCentroMedico(centro635);
+    await dbCRUD.insertCentroMedico(centro635);
     print("CENTRO 635 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 636
@@ -9544,7 +9544,7 @@ void main() async {
     );
 
     // Inserta centro 636 en la base de datos
-    await dbHelper.insertCentroMedico(centro636);
+    await dbCRUD.insertCentroMedico(centro636);
     print("CENTRO 636 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 637
@@ -9559,7 +9559,7 @@ void main() async {
     );
 
     // Inserta centro 637 en la base de datos
-    await dbHelper.insertCentroMedico(centro637);
+    await dbCRUD.insertCentroMedico(centro637);
     print("CENTRO 637 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 638
@@ -9574,7 +9574,7 @@ void main() async {
     );
 
     // Inserta centro 638 en la base de datos
-    await dbHelper.insertCentroMedico(centro638);
+    await dbCRUD.insertCentroMedico(centro638);
     print("CENTRO 638 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 639
@@ -9589,7 +9589,7 @@ void main() async {
     );
 
     // Inserta centro 639 en la base de datos
-    await dbHelper.insertCentroMedico(centro639);
+    await dbCRUD.insertCentroMedico(centro639);
     print("CENTRO 639 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 640
@@ -9604,7 +9604,7 @@ void main() async {
     );
 
     // Inserta centro 640 en la base de datos
-    await dbHelper.insertCentroMedico(centro640);
+    await dbCRUD.insertCentroMedico(centro640);
     print("CENTRO 640 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 641
@@ -9619,7 +9619,7 @@ void main() async {
     );
 
     // Inserta centro 641 en la base de datos
-    await dbHelper.insertCentroMedico(centro641);
+    await dbCRUD.insertCentroMedico(centro641);
     print("CENTRO 641 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 642
@@ -9634,7 +9634,7 @@ void main() async {
     );
 
     // Inserta centro 642 en la base de datos
-    await dbHelper.insertCentroMedico(centro642);
+    await dbCRUD.insertCentroMedico(centro642);
     print("CENTRO 642 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 643
@@ -9649,7 +9649,7 @@ void main() async {
     );
 
     // Inserta centro 643 en la base de datos
-    await dbHelper.insertCentroMedico(centro643);
+    await dbCRUD.insertCentroMedico(centro643);
     print("CENTRO 643 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 644
@@ -9664,7 +9664,7 @@ void main() async {
     );
 
     // Inserta centro 644 en la base de datos
-    await dbHelper.insertCentroMedico(centro644);
+    await dbCRUD.insertCentroMedico(centro644);
     print("CENTRO 644 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 645
@@ -9679,7 +9679,7 @@ void main() async {
     );
 
     // Inserta centro 645 en la base de datos
-    await dbHelper.insertCentroMedico(centro645);
+    await dbCRUD.insertCentroMedico(centro645);
     print("CENTRO 645 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 646
@@ -9694,7 +9694,7 @@ void main() async {
     );
 
     // Inserta centro 646 en la base de datos
-    await dbHelper.insertCentroMedico(centro646);
+    await dbCRUD.insertCentroMedico(centro646);
     print("CENTRO 646 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 647
@@ -9709,7 +9709,7 @@ void main() async {
     );
 
     // Inserta centro 647 en la base de datos
-    await dbHelper.insertCentroMedico(centro647);
+    await dbCRUD.insertCentroMedico(centro647);
     print("CENTRO 647 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 648
@@ -9724,7 +9724,7 @@ void main() async {
     );
 
     // Inserta centro 648 en la base de datos
-    await dbHelper.insertCentroMedico(centro648);
+    await dbCRUD.insertCentroMedico(centro648);
     print("CENTRO 648 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 649
@@ -9739,7 +9739,7 @@ void main() async {
     );
 
     // Inserta centro 649 en la base de datos
-    await dbHelper.insertCentroMedico(centro649);
+    await dbCRUD.insertCentroMedico(centro649);
     print("CENTRO 649 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 650
@@ -9754,7 +9754,7 @@ void main() async {
     );
 
     // Inserta centro 650 en la base de datos
-    await dbHelper.insertCentroMedico(centro650);
+    await dbCRUD.insertCentroMedico(centro650);
     print("CENTRO 650 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 651
@@ -9769,7 +9769,7 @@ void main() async {
     );
 
     // Inserta centro 651 en la base de datos
-    await dbHelper.insertCentroMedico(centro651);
+    await dbCRUD.insertCentroMedico(centro651);
     print("CENTRO 651 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 652
@@ -9784,7 +9784,7 @@ void main() async {
     );
 
     // Inserta centro 652 en la base de datos
-    await dbHelper.insertCentroMedico(centro652);
+    await dbCRUD.insertCentroMedico(centro652);
     print("CENTRO 652 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 653
@@ -9799,7 +9799,7 @@ void main() async {
     );
 
     // Inserta centro 653 en la base de datos
-    await dbHelper.insertCentroMedico(centro653);
+    await dbCRUD.insertCentroMedico(centro653);
     print("CENTRO 653 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 654
@@ -9814,7 +9814,7 @@ void main() async {
     );
 
     // Inserta centro 654 en la base de datos
-    await dbHelper.insertCentroMedico(centro654);
+    await dbCRUD.insertCentroMedico(centro654);
     print("CENTRO 654 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 655
@@ -9829,7 +9829,7 @@ void main() async {
     );
 
     // Inserta centro 655 en la base de datos
-    await dbHelper.insertCentroMedico(centro655);
+    await dbCRUD.insertCentroMedico(centro655);
     print("CENTRO 655 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 656
@@ -9844,7 +9844,7 @@ void main() async {
     );
 
     // Inserta centro 656 en la base de datos
-    await dbHelper.insertCentroMedico(centro656);
+    await dbCRUD.insertCentroMedico(centro656);
     print("CENTRO 656 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 657
@@ -9859,7 +9859,7 @@ void main() async {
     );
 
     // Inserta centro 657 en la base de datos
-    await dbHelper.insertCentroMedico(centro657);
+    await dbCRUD.insertCentroMedico(centro657);
     print("CENTRO 657 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 658
@@ -9874,7 +9874,7 @@ void main() async {
     );
 
     // Inserta centro 658 en la base de datos
-    await dbHelper.insertCentroMedico(centro658);
+    await dbCRUD.insertCentroMedico(centro658);
     print("CENTRO 658 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 659
@@ -9889,7 +9889,7 @@ void main() async {
     );
 
     // Inserta centro 659 en la base de datos
-    await dbHelper.insertCentroMedico(centro659);
+    await dbCRUD.insertCentroMedico(centro659);
     print("CENTRO 659 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 660
@@ -9904,7 +9904,7 @@ void main() async {
     );
 
     // Inserta centro 660 en la base de datos
-    await dbHelper.insertCentroMedico(centro660);
+    await dbCRUD.insertCentroMedico(centro660);
     print("CENTRO 660 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 661
@@ -9919,7 +9919,7 @@ void main() async {
     );
 
     // Inserta centro 661 en la base de datos
-    await dbHelper.insertCentroMedico(centro661);
+    await dbCRUD.insertCentroMedico(centro661);
     print("CENTRO 661 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 662
@@ -9934,7 +9934,7 @@ void main() async {
     );
 
     // Inserta centro 662 en la base de datos
-    await dbHelper.insertCentroMedico(centro662);
+    await dbCRUD.insertCentroMedico(centro662);
     print("CENTRO 662 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 663
@@ -9949,7 +9949,7 @@ void main() async {
     );
 
     // Inserta centro 663 en la base de datos
-    await dbHelper.insertCentroMedico(centro663);
+    await dbCRUD.insertCentroMedico(centro663);
     print("CENTRO 663 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 664
@@ -9964,7 +9964,7 @@ void main() async {
     );
 
     // Inserta centro 664 en la base de datos
-    await dbHelper.insertCentroMedico(centro664);
+    await dbCRUD.insertCentroMedico(centro664);
     print("CENTRO 664 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 665
@@ -9979,7 +9979,7 @@ void main() async {
     );
 
     // Inserta centro 665 en la base de datos
-    await dbHelper.insertCentroMedico(centro665);
+    await dbCRUD.insertCentroMedico(centro665);
     print("CENTRO 665 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 666
@@ -9994,7 +9994,7 @@ void main() async {
     );
 
     // Inserta centro 666 en la base de datos
-    await dbHelper.insertCentroMedico(centro666);
+    await dbCRUD.insertCentroMedico(centro666);
     print("CENTRO 666 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 667
@@ -10009,7 +10009,7 @@ void main() async {
     );
 
     // Inserta centro 667 en la base de datos
-    await dbHelper.insertCentroMedico(centro667);
+    await dbCRUD.insertCentroMedico(centro667);
     print("CENTRO 667 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 668
@@ -10024,7 +10024,7 @@ void main() async {
     );
 
     // Inserta centro 668 en la base de datos
-    await dbHelper.insertCentroMedico(centro668);
+    await dbCRUD.insertCentroMedico(centro668);
     print("CENTRO 668 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 669
@@ -10039,7 +10039,7 @@ void main() async {
     );
 
     // Inserta centro 669 en la base de datos
-    await dbHelper.insertCentroMedico(centro669);
+    await dbCRUD.insertCentroMedico(centro669);
     print("CENTRO 669 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 670
@@ -10054,7 +10054,7 @@ void main() async {
     );
 
     // Inserta centro 670 en la base de datos
-    await dbHelper.insertCentroMedico(centro670);
+    await dbCRUD.insertCentroMedico(centro670);
     print("CENTRO 670 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 671
@@ -10069,7 +10069,7 @@ void main() async {
     );
 
     // Inserta centro 671 en la base de datos
-    await dbHelper.insertCentroMedico(centro671);
+    await dbCRUD.insertCentroMedico(centro671);
     print("CENTRO 671 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 672
@@ -10084,7 +10084,7 @@ void main() async {
     );
 
     // Inserta centro 672 en la base de datos
-    await dbHelper.insertCentroMedico(centro672);
+    await dbCRUD.insertCentroMedico(centro672);
     print("CENTRO 672 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 673
@@ -10099,7 +10099,7 @@ void main() async {
     );
 
     // Inserta centro 673 en la base de datos
-    await dbHelper.insertCentroMedico(centro673);
+    await dbCRUD.insertCentroMedico(centro673);
     print("CENTRO 673 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 674
@@ -10114,7 +10114,7 @@ void main() async {
     );
 
     // Inserta centro 674 en la base de datos
-    await dbHelper.insertCentroMedico(centro674);
+    await dbCRUD.insertCentroMedico(centro674);
     print("CENTRO 674 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 675
@@ -10129,7 +10129,7 @@ void main() async {
     );
 
     // Inserta centro 675 en la base de datos
-    await dbHelper.insertCentroMedico(centro675);
+    await dbCRUD.insertCentroMedico(centro675);
     print("CENTRO 675 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 676
@@ -10144,7 +10144,7 @@ void main() async {
     );
 
     // Inserta centro 676 en la base de datos
-    await dbHelper.insertCentroMedico(centro676);
+    await dbCRUD.insertCentroMedico(centro676);
     print("CENTRO 676 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 677
@@ -10159,7 +10159,7 @@ void main() async {
     );
 
     // Inserta centro 677 en la base de datos
-    await dbHelper.insertCentroMedico(centro677);
+    await dbCRUD.insertCentroMedico(centro677);
     print("CENTRO 677 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 678
@@ -10174,7 +10174,7 @@ void main() async {
     );
 
     // Inserta centro 678 en la base de datos
-    await dbHelper.insertCentroMedico(centro678);
+    await dbCRUD.insertCentroMedico(centro678);
     print("CENTRO 678 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 679
@@ -10189,7 +10189,7 @@ void main() async {
     );
 
     // Inserta centro 679 en la base de datos
-    await dbHelper.insertCentroMedico(centro679);
+    await dbCRUD.insertCentroMedico(centro679);
     print("CENTRO 679 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 680
@@ -10204,7 +10204,7 @@ void main() async {
     );
 
     // Inserta centro 680 en la base de datos
-    await dbHelper.insertCentroMedico(centro680);
+    await dbCRUD.insertCentroMedico(centro680);
     print("CENTRO 680 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 681
@@ -10219,7 +10219,7 @@ void main() async {
     );
 
     // Inserta centro 681 en la base de datos
-    await dbHelper.insertCentroMedico(centro681);
+    await dbCRUD.insertCentroMedico(centro681);
     print("CENTRO 681 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 682
@@ -10234,7 +10234,7 @@ void main() async {
     );
 
     // Inserta centro 682 en la base de datos
-    await dbHelper.insertCentroMedico(centro682);
+    await dbCRUD.insertCentroMedico(centro682);
     print("CENTRO 682 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 683
@@ -10249,7 +10249,7 @@ void main() async {
     );
 
     // Inserta centro 683 en la base de datos
-    await dbHelper.insertCentroMedico(centro683);
+    await dbCRUD.insertCentroMedico(centro683);
     print("CENTRO 683 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 684
@@ -10264,7 +10264,7 @@ void main() async {
     );
 
     // Inserta centro 684 en la base de datos
-    await dbHelper.insertCentroMedico(centro684);
+    await dbCRUD.insertCentroMedico(centro684);
     print("CENTRO 684 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 685
@@ -10279,7 +10279,7 @@ void main() async {
     );
 
     // Inserta centro 685 en la base de datos
-    await dbHelper.insertCentroMedico(centro685);
+    await dbCRUD.insertCentroMedico(centro685);
     print("CENTRO 685 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 686
@@ -10294,7 +10294,7 @@ void main() async {
     );
 
     // Inserta centro 686 en la base de datos
-    await dbHelper.insertCentroMedico(centro686);
+    await dbCRUD.insertCentroMedico(centro686);
     print("CENTRO 686 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 687
@@ -10309,7 +10309,7 @@ void main() async {
     );
 
     // Inserta centro 687 en la base de datos
-    await dbHelper.insertCentroMedico(centro687);
+    await dbCRUD.insertCentroMedico(centro687);
     print("CENTRO 687 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 688
@@ -10324,7 +10324,7 @@ void main() async {
     );
 
     // Inserta centro 688 en la base de datos
-    await dbHelper.insertCentroMedico(centro688);
+    await dbCRUD.insertCentroMedico(centro688);
     print("CENTRO 688 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 689
@@ -10339,7 +10339,7 @@ void main() async {
     );
 
     // Inserta centro 689 en la base de datos
-    await dbHelper.insertCentroMedico(centro689);
+    await dbCRUD.insertCentroMedico(centro689);
     print("CENTRO 689 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 690
@@ -10354,7 +10354,7 @@ void main() async {
     );
 
     // Inserta centro 690 en la base de datos
-    await dbHelper.insertCentroMedico(centro690);
+    await dbCRUD.insertCentroMedico(centro690);
     print("CENTRO 690 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 691
@@ -10369,7 +10369,7 @@ void main() async {
     );
 
     // Inserta centro 691 en la base de datos
-    await dbHelper.insertCentroMedico(centro691);
+    await dbCRUD.insertCentroMedico(centro691);
     print("CENTRO 691 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 692
@@ -10384,7 +10384,7 @@ void main() async {
     );
 
     // Inserta centro 692 en la base de datos
-    await dbHelper.insertCentroMedico(centro692);
+    await dbCRUD.insertCentroMedico(centro692);
     print("CENTRO 692 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 693
@@ -10399,7 +10399,7 @@ void main() async {
     );
 
     // Inserta centro 693 en la base de datos
-    await dbHelper.insertCentroMedico(centro693);
+    await dbCRUD.insertCentroMedico(centro693);
     print("CENTRO 693 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 694
@@ -10414,7 +10414,7 @@ void main() async {
     );
 
     // Inserta centro 694 en la base de datos
-    await dbHelper.insertCentroMedico(centro694);
+    await dbCRUD.insertCentroMedico(centro694);
     print("CENTRO 694 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 695
@@ -10429,7 +10429,7 @@ void main() async {
     );
 
     // Inserta centro 695 en la base de datos
-    await dbHelper.insertCentroMedico(centro695);
+    await dbCRUD.insertCentroMedico(centro695);
     print("CENTRO 695 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 696
@@ -10444,7 +10444,7 @@ void main() async {
     );
 
     // Inserta centro 696 en la base de datos
-    await dbHelper.insertCentroMedico(centro696);
+    await dbCRUD.insertCentroMedico(centro696);
     print("CENTRO 696 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 697
@@ -10459,7 +10459,7 @@ void main() async {
     );
 
     // Inserta centro 697 en la base de datos
-    await dbHelper.insertCentroMedico(centro697);
+    await dbCRUD.insertCentroMedico(centro697);
     print("CENTRO 697 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 698
@@ -10474,7 +10474,7 @@ void main() async {
     );
 
     // Inserta centro 698 en la base de datos
-    await dbHelper.insertCentroMedico(centro698);
+    await dbCRUD.insertCentroMedico(centro698);
     print("CENTRO 698 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 699
@@ -10489,7 +10489,7 @@ void main() async {
     );
 
     // Inserta centro 699 en la base de datos
-    await dbHelper.insertCentroMedico(centro699);
+    await dbCRUD.insertCentroMedico(centro699);
     print("CENTRO 699 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 700
@@ -10504,7 +10504,7 @@ void main() async {
     );
 
     // Inserta centro 700 en la base de datos
-    await dbHelper.insertCentroMedico(centro700);
+    await dbCRUD.insertCentroMedico(centro700);
     print("CENTRO 700 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 701
@@ -10519,7 +10519,7 @@ void main() async {
     );
 
     // Inserta centro 701 en la base de datos
-    await dbHelper.insertCentroMedico(centro701);
+    await dbCRUD.insertCentroMedico(centro701);
     print("CENTRO 701 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 702
@@ -10534,7 +10534,7 @@ void main() async {
     );
 
     // Inserta centro 702 en la base de datos
-    await dbHelper.insertCentroMedico(centro702);
+    await dbCRUD.insertCentroMedico(centro702);
     print("CENTRO 702 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 703
@@ -10549,7 +10549,7 @@ void main() async {
     );
 
     // Inserta centro 703 en la base de datos
-    await dbHelper.insertCentroMedico(centro703);
+    await dbCRUD.insertCentroMedico(centro703);
     print("CENTRO 703 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 704
@@ -10564,7 +10564,7 @@ void main() async {
     );
 
     // Inserta centro 704 en la base de datos
-    await dbHelper.insertCentroMedico(centro704);
+    await dbCRUD.insertCentroMedico(centro704);
     print("CENTRO 704 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 705
@@ -10579,7 +10579,7 @@ void main() async {
     );
 
     // Inserta centro 705 en la base de datos
-    await dbHelper.insertCentroMedico(centro705);
+    await dbCRUD.insertCentroMedico(centro705);
     print("CENTRO 705 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 706
@@ -10594,7 +10594,7 @@ void main() async {
     );
 
     // Inserta centro 706 en la base de datos
-    await dbHelper.insertCentroMedico(centro706);
+    await dbCRUD.insertCentroMedico(centro706);
     print("CENTRO 706 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 707
@@ -10609,7 +10609,7 @@ void main() async {
     );
 
     // Inserta centro 707 en la base de datos
-    await dbHelper.insertCentroMedico(centro707);
+    await dbCRUD.insertCentroMedico(centro707);
     print("CENTRO 707 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 708
@@ -10624,7 +10624,7 @@ void main() async {
     );
 
     // Inserta centro 708 en la base de datos
-    await dbHelper.insertCentroMedico(centro708);
+    await dbCRUD.insertCentroMedico(centro708);
     print("CENTRO 708 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 709
@@ -10639,7 +10639,7 @@ void main() async {
     );
 
     // Inserta centro 709 en la base de datos
-    await dbHelper.insertCentroMedico(centro709);
+    await dbCRUD.insertCentroMedico(centro709);
     print("CENTRO 709 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 710
@@ -10654,7 +10654,7 @@ void main() async {
     );
 
     // Inserta centro 710 en la base de datos
-    await dbHelper.insertCentroMedico(centro710);
+    await dbCRUD.insertCentroMedico(centro710);
     print("CENTRO 710 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 711
@@ -10669,7 +10669,7 @@ void main() async {
     );
 
     // Inserta centro 711 en la base de datos
-    await dbHelper.insertCentroMedico(centro711);
+    await dbCRUD.insertCentroMedico(centro711);
     print("CENTRO 711 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 712
@@ -10684,7 +10684,7 @@ void main() async {
     );
 
     // Inserta centro 712 en la base de datos
-    await dbHelper.insertCentroMedico(centro712);
+    await dbCRUD.insertCentroMedico(centro712);
     print("CENTRO 712 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 713
@@ -10699,7 +10699,7 @@ void main() async {
     );
 
     // Inserta centro 713 en la base de datos
-    await dbHelper.insertCentroMedico(centro713);
+    await dbCRUD.insertCentroMedico(centro713);
     print("CENTRO 713 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 714
@@ -10714,7 +10714,7 @@ void main() async {
     );
 
     // Inserta centro 714 en la base de datos
-    await dbHelper.insertCentroMedico(centro714);
+    await dbCRUD.insertCentroMedico(centro714);
     print("CENTRO 714 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 715
@@ -10729,7 +10729,7 @@ void main() async {
     );
 
     // Inserta centro 715 en la base de datos
-    await dbHelper.insertCentroMedico(centro715);
+    await dbCRUD.insertCentroMedico(centro715);
     print("CENTRO 715 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 716
@@ -10744,7 +10744,7 @@ void main() async {
     );
 
     // Inserta centro 716 en la base de datos
-    await dbHelper.insertCentroMedico(centro716);
+    await dbCRUD.insertCentroMedico(centro716);
     print("CENTRO 716 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 717
@@ -10759,7 +10759,7 @@ void main() async {
     );
 
     // Inserta centro 717 en la base de datos
-    await dbHelper.insertCentroMedico(centro717);
+    await dbCRUD.insertCentroMedico(centro717);
     print("CENTRO 717 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 718
@@ -10774,7 +10774,7 @@ void main() async {
     );
 
     // Inserta centro 718 en la base de datos
-    await dbHelper.insertCentroMedico(centro718);
+    await dbCRUD.insertCentroMedico(centro718);
     print("CENTRO 718 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 719
@@ -10789,7 +10789,7 @@ void main() async {
     );
 
     // Inserta centro 719 en la base de datos
-    await dbHelper.insertCentroMedico(centro719);
+    await dbCRUD.insertCentroMedico(centro719);
     print("CENTRO 719 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 720
@@ -10804,7 +10804,7 @@ void main() async {
     );
 
     // Inserta centro 720 en la base de datos
-    await dbHelper.insertCentroMedico(centro720);
+    await dbCRUD.insertCentroMedico(centro720);
     print("CENTRO 720 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 721
@@ -10819,7 +10819,7 @@ void main() async {
     );
 
     // Inserta centro 721 en la base de datos
-    await dbHelper.insertCentroMedico(centro721);
+    await dbCRUD.insertCentroMedico(centro721);
     print("CENTRO 721 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 722
@@ -10834,7 +10834,7 @@ void main() async {
     );
 
     // Inserta centro 722 en la base de datos
-    await dbHelper.insertCentroMedico(centro722);
+    await dbCRUD.insertCentroMedico(centro722);
     print("CENTRO 722 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 723
@@ -10849,7 +10849,7 @@ void main() async {
     );
 
     // Inserta centro 723 en la base de datos
-    await dbHelper.insertCentroMedico(centro723);
+    await dbCRUD.insertCentroMedico(centro723);
     print("CENTRO 723 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 724
@@ -10864,7 +10864,7 @@ void main() async {
     );
 
     // Inserta centro 724 en la base de datos
-    await dbHelper.insertCentroMedico(centro724);
+    await dbCRUD.insertCentroMedico(centro724);
     print("CENTRO 724 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 725
@@ -10879,7 +10879,7 @@ void main() async {
     );
 
     // Inserta centro 725 en la base de datos
-    await dbHelper.insertCentroMedico(centro725);
+    await dbCRUD.insertCentroMedico(centro725);
     print("CENTRO 725 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 726
@@ -10894,7 +10894,7 @@ void main() async {
     );
 
     // Inserta centro 726 en la base de datos
-    await dbHelper.insertCentroMedico(centro726);
+    await dbCRUD.insertCentroMedico(centro726);
     print("CENTRO 726 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 727
@@ -10909,7 +10909,7 @@ void main() async {
     );
 
     // Inserta centro 727 en la base de datos
-    await dbHelper.insertCentroMedico(centro727);
+    await dbCRUD.insertCentroMedico(centro727);
     print("CENTRO 727 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 728
@@ -10924,7 +10924,7 @@ void main() async {
     );
 
     // Inserta centro 728 en la base de datos
-    await dbHelper.insertCentroMedico(centro728);
+    await dbCRUD.insertCentroMedico(centro728);
     print("CENTRO 728 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 729
@@ -10939,7 +10939,7 @@ void main() async {
     );
 
     // Inserta centro 729 en la base de datos
-    await dbHelper.insertCentroMedico(centro729);
+    await dbCRUD.insertCentroMedico(centro729);
     print("CENTRO 729 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 730
@@ -10954,7 +10954,7 @@ void main() async {
     );
 
     // Inserta centro 730 en la base de datos
-    await dbHelper.insertCentroMedico(centro730);
+    await dbCRUD.insertCentroMedico(centro730);
     print("CENTRO 730 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 731
@@ -10969,7 +10969,7 @@ void main() async {
     );
 
     // Inserta centro 731 en la base de datos
-    await dbHelper.insertCentroMedico(centro731);
+    await dbCRUD.insertCentroMedico(centro731);
     print("CENTRO 731 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 732
@@ -10984,7 +10984,7 @@ void main() async {
     );
 
     // Inserta centro 732 en la base de datos
-    await dbHelper.insertCentroMedico(centro732);
+    await dbCRUD.insertCentroMedico(centro732);
     print("CENTRO 732 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 733
@@ -10999,7 +10999,7 @@ void main() async {
     );
 
     // Inserta centro 733 en la base de datos
-    await dbHelper.insertCentroMedico(centro733);
+    await dbCRUD.insertCentroMedico(centro733);
     print("CENTRO 733 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 734
@@ -11014,7 +11014,7 @@ void main() async {
     );
 
     // Inserta centro 734 en la base de datos
-    await dbHelper.insertCentroMedico(centro734);
+    await dbCRUD.insertCentroMedico(centro734);
     print("CENTRO 734 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 735
@@ -11029,7 +11029,7 @@ void main() async {
     );
 
     // Inserta centro 735 en la base de datos
-    await dbHelper.insertCentroMedico(centro735);
+    await dbCRUD.insertCentroMedico(centro735);
     print("CENTRO 735 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 736
@@ -11044,7 +11044,7 @@ void main() async {
     );
 
     // Inserta centro 736 en la base de datos
-    await dbHelper.insertCentroMedico(centro736);
+    await dbCRUD.insertCentroMedico(centro736);
     print("CENTRO 736 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 737
@@ -11059,7 +11059,7 @@ void main() async {
     );
 
     // Inserta centro 737 en la base de datos
-    await dbHelper.insertCentroMedico(centro737);
+    await dbCRUD.insertCentroMedico(centro737);
     print("CENTRO 737 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 738
@@ -11074,7 +11074,7 @@ void main() async {
     );
 
     // Inserta centro 738 en la base de datos
-    await dbHelper.insertCentroMedico(centro738);
+    await dbCRUD.insertCentroMedico(centro738);
     print("CENTRO 738 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 739
@@ -11089,7 +11089,7 @@ void main() async {
     );
 
     // Inserta centro 739 en la base de datos
-    await dbHelper.insertCentroMedico(centro739);
+    await dbCRUD.insertCentroMedico(centro739);
     print("CENTRO 739 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 740
@@ -11104,7 +11104,7 @@ void main() async {
     );
 
     // Inserta centro 740 en la base de datos
-    await dbHelper.insertCentroMedico(centro740);
+    await dbCRUD.insertCentroMedico(centro740);
     print("CENTRO 740 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 741
@@ -11119,7 +11119,7 @@ void main() async {
     );
 
     // Inserta centro 741 en la base de datos
-    await dbHelper.insertCentroMedico(centro741);
+    await dbCRUD.insertCentroMedico(centro741);
     print("CENTRO 741 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 742
@@ -11134,7 +11134,7 @@ void main() async {
     );
 
     // Inserta centro 742 en la base de datos
-    await dbHelper.insertCentroMedico(centro742);
+    await dbCRUD.insertCentroMedico(centro742);
     print("CENTRO 742 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 743
@@ -11149,7 +11149,7 @@ void main() async {
     );
 
     // Inserta centro 743 en la base de datos
-    await dbHelper.insertCentroMedico(centro743);
+    await dbCRUD.insertCentroMedico(centro743);
     print("CENTRO 743 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 744
@@ -11164,7 +11164,7 @@ void main() async {
     );
 
     // Inserta centro 744 en la base de datos
-    await dbHelper.insertCentroMedico(centro744);
+    await dbCRUD.insertCentroMedico(centro744);
     print("CENTRO 744 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 745
@@ -11179,7 +11179,7 @@ void main() async {
     );
 
     // Inserta centro 745 en la base de datos
-    await dbHelper.insertCentroMedico(centro745);
+    await dbCRUD.insertCentroMedico(centro745);
     print("CENTRO 745 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 746
@@ -11194,7 +11194,7 @@ void main() async {
     );
 
     // Inserta centro 746 en la base de datos
-    await dbHelper.insertCentroMedico(centro746);
+    await dbCRUD.insertCentroMedico(centro746);
     print("CENTRO 746 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 747
@@ -11209,7 +11209,7 @@ void main() async {
     );
 
     // Inserta centro 747 en la base de datos
-    await dbHelper.insertCentroMedico(centro747);
+    await dbCRUD.insertCentroMedico(centro747);
     print("CENTRO 747 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 748
@@ -11224,7 +11224,7 @@ void main() async {
     );
 
     // Inserta centro 748 en la base de datos
-    await dbHelper.insertCentroMedico(centro748);
+    await dbCRUD.insertCentroMedico(centro748);
     print("CENTRO 748 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 749
@@ -11239,7 +11239,7 @@ void main() async {
     );
 
     // Inserta centro 749 en la base de datos
-    await dbHelper.insertCentroMedico(centro749);
+    await dbCRUD.insertCentroMedico(centro749);
     print("CENTRO 749 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 750
@@ -11254,7 +11254,7 @@ void main() async {
     );
 
     // Inserta centro 750 en la base de datos
-    await dbHelper.insertCentroMedico(centro750);
+    await dbCRUD.insertCentroMedico(centro750);
     print("CENTRO 750 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 751
@@ -11269,7 +11269,7 @@ void main() async {
     );
 
     // Inserta centro 751 en la base de datos
-    await dbHelper.insertCentroMedico(centro751);
+    await dbCRUD.insertCentroMedico(centro751);
     print("CENTRO 751 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 752
@@ -11284,7 +11284,7 @@ void main() async {
     );
 
     // Inserta centro 752 en la base de datos
-    await dbHelper.insertCentroMedico(centro752);
+    await dbCRUD.insertCentroMedico(centro752);
     print("CENTRO 752 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 753
@@ -11299,7 +11299,7 @@ void main() async {
     );
 
     // Inserta centro 753 en la base de datos
-    await dbHelper.insertCentroMedico(centro753);
+    await dbCRUD.insertCentroMedico(centro753);
     print("CENTRO 753 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 754
@@ -11314,7 +11314,7 @@ void main() async {
     );
 
     // Inserta centro 754 en la base de datos
-    await dbHelper.insertCentroMedico(centro754);
+    await dbCRUD.insertCentroMedico(centro754);
     print("CENTRO 754 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 755
@@ -11329,7 +11329,7 @@ void main() async {
     );
 
     // Inserta centro 755 en la base de datos
-    await dbHelper.insertCentroMedico(centro755);
+    await dbCRUD.insertCentroMedico(centro755);
     print("CENTRO 755 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 756
@@ -11344,7 +11344,7 @@ void main() async {
     );
 
     // Inserta centro 756 en la base de datos
-    await dbHelper.insertCentroMedico(centro756);
+    await dbCRUD.insertCentroMedico(centro756);
     print("CENTRO 756 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 757
@@ -11359,7 +11359,7 @@ void main() async {
     );
 
     // Inserta centro 757 en la base de datos
-    await dbHelper.insertCentroMedico(centro757);
+    await dbCRUD.insertCentroMedico(centro757);
     print("CENTRO 757 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 758
@@ -11374,7 +11374,7 @@ void main() async {
     );
 
     // Inserta centro 758 en la base de datos
-    await dbHelper.insertCentroMedico(centro758);
+    await dbCRUD.insertCentroMedico(centro758);
     print("CENTRO 758 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 759
@@ -11389,7 +11389,7 @@ void main() async {
     );
 
     // Inserta centro 759 en la base de datos
-    await dbHelper.insertCentroMedico(centro759);
+    await dbCRUD.insertCentroMedico(centro759);
     print("CENTRO 759 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 760
@@ -11404,7 +11404,7 @@ void main() async {
     );
 
     // Inserta centro 760 en la base de datos
-    await dbHelper.insertCentroMedico(centro760);
+    await dbCRUD.insertCentroMedico(centro760);
     print("CENTRO 760 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 761
@@ -11419,7 +11419,7 @@ void main() async {
     );
 
     // Inserta centro 761 en la base de datos
-    await dbHelper.insertCentroMedico(centro761);
+    await dbCRUD.insertCentroMedico(centro761);
     print("CENTRO 761 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 762
@@ -11434,7 +11434,7 @@ void main() async {
     );
 
     // Inserta centro 762 en la base de datos
-    await dbHelper.insertCentroMedico(centro762);
+    await dbCRUD.insertCentroMedico(centro762);
     print("CENTRO 762 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 763
@@ -11449,7 +11449,7 @@ void main() async {
     );
 
     // Inserta centro 763 en la base de datos
-    await dbHelper.insertCentroMedico(centro763);
+    await dbCRUD.insertCentroMedico(centro763);
     print("CENTRO 763 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 764
@@ -11464,7 +11464,7 @@ void main() async {
     );
 
     // Inserta centro 764 en la base de datos
-    await dbHelper.insertCentroMedico(centro764);
+    await dbCRUD.insertCentroMedico(centro764);
     print("CENTRO 764 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 765
@@ -11479,7 +11479,7 @@ void main() async {
     );
 
     // Inserta centro 765 en la base de datos
-    await dbHelper.insertCentroMedico(centro765);
+    await dbCRUD.insertCentroMedico(centro765);
     print("CENTRO 765 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 766
@@ -11494,7 +11494,7 @@ void main() async {
     );
 
     // Inserta centro 766 en la base de datos
-    await dbHelper.insertCentroMedico(centro766);
+    await dbCRUD.insertCentroMedico(centro766);
     print("CENTRO 766 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 767
@@ -11509,7 +11509,7 @@ void main() async {
     );
 
     // Inserta centro 767 en la base de datos
-    await dbHelper.insertCentroMedico(centro767);
+    await dbCRUD.insertCentroMedico(centro767);
     print("CENTRO 767 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 768
@@ -11524,7 +11524,7 @@ void main() async {
     );
 
     // Inserta centro 768 en la base de datos
-    await dbHelper.insertCentroMedico(centro768);
+    await dbCRUD.insertCentroMedico(centro768);
     print("CENTRO 768 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 769
@@ -11539,7 +11539,7 @@ void main() async {
     );
 
     // Inserta centro 769 en la base de datos
-    await dbHelper.insertCentroMedico(centro769);
+    await dbCRUD.insertCentroMedico(centro769);
     print("CENTRO 769 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 770
@@ -11554,7 +11554,7 @@ void main() async {
     );
 
     // Inserta centro 770 en la base de datos
-    await dbHelper.insertCentroMedico(centro770);
+    await dbCRUD.insertCentroMedico(centro770);
     print("CENTRO 770 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 771
@@ -11569,7 +11569,7 @@ void main() async {
     );
 
     // Inserta centro 771 en la base de datos
-    await dbHelper.insertCentroMedico(centro771);
+    await dbCRUD.insertCentroMedico(centro771);
     print("CENTRO 771 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 772
@@ -11584,7 +11584,7 @@ void main() async {
     );
 
     // Inserta centro 772 en la base de datos
-    await dbHelper.insertCentroMedico(centro772);
+    await dbCRUD.insertCentroMedico(centro772);
     print("CENTRO 772 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 773
@@ -11599,7 +11599,7 @@ void main() async {
     );
 
     // Inserta centro 773 en la base de datos
-    await dbHelper.insertCentroMedico(centro773);
+    await dbCRUD.insertCentroMedico(centro773);
     print("CENTRO 773 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 774
@@ -11614,7 +11614,7 @@ void main() async {
     );
 
     // Inserta centro 774 en la base de datos
-    await dbHelper.insertCentroMedico(centro774);
+    await dbCRUD.insertCentroMedico(centro774);
     print("CENTRO 774 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 775
@@ -11629,7 +11629,7 @@ void main() async {
     );
 
     // Inserta centro 775 en la base de datos
-    await dbHelper.insertCentroMedico(centro775);
+    await dbCRUD.insertCentroMedico(centro775);
     print("CENTRO 775 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 776
@@ -11644,7 +11644,7 @@ void main() async {
     );
 
     // Inserta centro 776 en la base de datos
-    await dbHelper.insertCentroMedico(centro776);
+    await dbCRUD.insertCentroMedico(centro776);
     print("CENTRO 776 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 777
@@ -11659,7 +11659,7 @@ void main() async {
     );
 
     // Inserta centro 777 en la base de datos
-    await dbHelper.insertCentroMedico(centro777);
+    await dbCRUD.insertCentroMedico(centro777);
     print("CENTRO 777 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 778
@@ -11674,7 +11674,7 @@ void main() async {
     );
 
     // Inserta centro 778 en la base de datos
-    await dbHelper.insertCentroMedico(centro778);
+    await dbCRUD.insertCentroMedico(centro778);
     print("CENTRO 778 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 779
@@ -11689,7 +11689,7 @@ void main() async {
     );
 
     // Inserta centro 779 en la base de datos
-    await dbHelper.insertCentroMedico(centro779);
+    await dbCRUD.insertCentroMedico(centro779);
     print("CENTRO 779 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 780
@@ -11704,7 +11704,7 @@ void main() async {
     );
 
     // Inserta centro 780 en la base de datos
-    await dbHelper.insertCentroMedico(centro780);
+    await dbCRUD.insertCentroMedico(centro780);
     print("CENTRO 780 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 781
@@ -11719,7 +11719,7 @@ void main() async {
     );
 
     // Inserta centro 781 en la base de datos
-    await dbHelper.insertCentroMedico(centro781);
+    await dbCRUD.insertCentroMedico(centro781);
     print("CENTRO 781 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 782
@@ -11734,7 +11734,7 @@ void main() async {
     );
 
     // Inserta centro 782 en la base de datos
-    await dbHelper.insertCentroMedico(centro782);
+    await dbCRUD.insertCentroMedico(centro782);
     print("CENTRO 782 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 783
@@ -11749,7 +11749,7 @@ void main() async {
     );
 
     // Inserta centro 783 en la base de datos
-    await dbHelper.insertCentroMedico(centro783);
+    await dbCRUD.insertCentroMedico(centro783);
     print("CENTRO 783 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 784
@@ -11764,7 +11764,7 @@ void main() async {
     );
 
     // Inserta centro 784 en la base de datos
-    await dbHelper.insertCentroMedico(centro784);
+    await dbCRUD.insertCentroMedico(centro784);
     print("CENTRO 784 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 785
@@ -11779,7 +11779,7 @@ void main() async {
     );
 
     // Inserta centro 785 en la base de datos
-    await dbHelper.insertCentroMedico(centro785);
+    await dbCRUD.insertCentroMedico(centro785);
     print("CENTRO 785 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 786
@@ -11794,7 +11794,7 @@ void main() async {
     );
 
     // Inserta centro 786 en la base de datos
-    await dbHelper.insertCentroMedico(centro786);
+    await dbCRUD.insertCentroMedico(centro786);
     print("CENTRO 786 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 787
@@ -11809,7 +11809,7 @@ void main() async {
     );
 
     // Inserta centro 787 en la base de datos
-    await dbHelper.insertCentroMedico(centro787);
+    await dbCRUD.insertCentroMedico(centro787);
     print("CENTRO 787 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 788
@@ -11824,7 +11824,7 @@ void main() async {
     );
 
     // Inserta centro 788 en la base de datos
-    await dbHelper.insertCentroMedico(centro788);
+    await dbCRUD.insertCentroMedico(centro788);
     print("CENTRO 788 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 789
@@ -11839,7 +11839,7 @@ void main() async {
     );
 
     // Inserta centro 789 en la base de datos
-    await dbHelper.insertCentroMedico(centro789);
+    await dbCRUD.insertCentroMedico(centro789);
     print("CENTRO 789 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 790
@@ -11854,7 +11854,7 @@ void main() async {
     );
 
     // Inserta centro 790 en la base de datos
-    await dbHelper.insertCentroMedico(centro790);
+    await dbCRUD.insertCentroMedico(centro790);
     print("CENTRO 790 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 791
@@ -11869,7 +11869,7 @@ void main() async {
     );
 
     // Inserta centro 791 en la base de datos
-    await dbHelper.insertCentroMedico(centro791);
+    await dbCRUD.insertCentroMedico(centro791);
     print("CENTRO 791 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 792
@@ -11884,7 +11884,7 @@ void main() async {
     );
 
     // Inserta centro 792 en la base de datos
-    await dbHelper.insertCentroMedico(centro792);
+    await dbCRUD.insertCentroMedico(centro792);
     print("CENTRO 792 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 793
@@ -11899,7 +11899,7 @@ void main() async {
     );
 
     // Inserta centro 793 en la base de datos
-    await dbHelper.insertCentroMedico(centro793);
+    await dbCRUD.insertCentroMedico(centro793);
     print("CENTRO 793 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 794
@@ -11914,7 +11914,7 @@ void main() async {
     );
 
     // Inserta centro 794 en la base de datos
-    await dbHelper.insertCentroMedico(centro794);
+    await dbCRUD.insertCentroMedico(centro794);
     print("CENTRO 794 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 795
@@ -11929,7 +11929,7 @@ void main() async {
     );
 
     // Inserta centro 795 en la base de datos
-    await dbHelper.insertCentroMedico(centro795);
+    await dbCRUD.insertCentroMedico(centro795);
     print("CENTRO 795 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 796
@@ -11944,7 +11944,7 @@ void main() async {
     );
 
     // Inserta centro 796 en la base de datos
-    await dbHelper.insertCentroMedico(centro796);
+    await dbCRUD.insertCentroMedico(centro796);
     print("CENTRO 796 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 797
@@ -11959,7 +11959,7 @@ void main() async {
     );
 
     // Inserta centro 797 en la base de datos
-    await dbHelper.insertCentroMedico(centro797);
+    await dbCRUD.insertCentroMedico(centro797);
     print("CENTRO 797 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 798
@@ -11974,7 +11974,7 @@ void main() async {
     );
 
     // Inserta centro 798 en la base de datos
-    await dbHelper.insertCentroMedico(centro798);
+    await dbCRUD.insertCentroMedico(centro798);
     print("CENTRO 798 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 799
@@ -11989,7 +11989,7 @@ void main() async {
     );
 
     // Inserta centro 799 en la base de datos
-    await dbHelper.insertCentroMedico(centro799);
+    await dbCRUD.insertCentroMedico(centro799);
     print("CENTRO 799 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 800
@@ -12004,7 +12004,7 @@ void main() async {
     );
 
     // Inserta centro 800 en la base de datos
-    await dbHelper.insertCentroMedico(centro800);
+    await dbCRUD.insertCentroMedico(centro800);
     print("CENTRO 800 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 801
@@ -12019,7 +12019,7 @@ void main() async {
     );
 
     // Inserta centro 801 en la base de datos
-    await dbHelper.insertCentroMedico(centro801);
+    await dbCRUD.insertCentroMedico(centro801);
     print("CENTRO 801 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 802
@@ -12034,7 +12034,7 @@ void main() async {
     );
 
     // Inserta centro 802 en la base de datos
-    await dbHelper.insertCentroMedico(centro802);
+    await dbCRUD.insertCentroMedico(centro802);
     print("CENTRO 802 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 803
@@ -12049,7 +12049,7 @@ void main() async {
     );
 
     // Inserta centro 803 en la base de datos
-    await dbHelper.insertCentroMedico(centro803);
+    await dbCRUD.insertCentroMedico(centro803);
     print("CENTRO 803 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 804
@@ -12064,7 +12064,7 @@ void main() async {
     );
 
     // Inserta centro 804 en la base de datos
-    await dbHelper.insertCentroMedico(centro804);
+    await dbCRUD.insertCentroMedico(centro804);
     print("CENTRO 804 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 805
@@ -12079,7 +12079,7 @@ void main() async {
     );
 
     // Inserta centro 805 en la base de datos
-    await dbHelper.insertCentroMedico(centro805);
+    await dbCRUD.insertCentroMedico(centro805);
     print("CENTRO 805 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 806
@@ -12094,7 +12094,7 @@ void main() async {
     );
 
     // Inserta centro 806 en la base de datos
-    await dbHelper.insertCentroMedico(centro806);
+    await dbCRUD.insertCentroMedico(centro806);
     print("CENTRO 806 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 807
@@ -12109,7 +12109,7 @@ void main() async {
     );
 
     // Inserta centro 807 en la base de datos
-    await dbHelper.insertCentroMedico(centro807);
+    await dbCRUD.insertCentroMedico(centro807);
     print("CENTRO 807 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 808
@@ -12124,7 +12124,7 @@ void main() async {
     );
 
     // Inserta centro 808 en la base de datos
-    await dbHelper.insertCentroMedico(centro808);
+    await dbCRUD.insertCentroMedico(centro808);
     print("CENTRO 808 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 809
@@ -12139,7 +12139,7 @@ void main() async {
     );
 
     // Inserta centro 809 en la base de datos
-    await dbHelper.insertCentroMedico(centro809);
+    await dbCRUD.insertCentroMedico(centro809);
     print("CENTRO 809 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 810
@@ -12154,7 +12154,7 @@ void main() async {
     );
 
     // Inserta centro 810 en la base de datos
-    await dbHelper.insertCentroMedico(centro810);
+    await dbCRUD.insertCentroMedico(centro810);
     print("CENTRO 810 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 811
@@ -12169,7 +12169,7 @@ void main() async {
     );
 
     // Inserta centro 811 en la base de datos
-    await dbHelper.insertCentroMedico(centro811);
+    await dbCRUD.insertCentroMedico(centro811);
     print("CENTRO 811 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 812
@@ -12184,7 +12184,7 @@ void main() async {
     );
 
     // Inserta centro 812 en la base de datos
-    await dbHelper.insertCentroMedico(centro812);
+    await dbCRUD.insertCentroMedico(centro812);
     print("CENTRO 812 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 813
@@ -12199,7 +12199,7 @@ void main() async {
     );
 
     // Inserta centro 813 en la base de datos
-    await dbHelper.insertCentroMedico(centro813);
+    await dbCRUD.insertCentroMedico(centro813);
     print("CENTRO 813 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 814
@@ -12214,7 +12214,7 @@ void main() async {
     );
 
     // Inserta centro 814 en la base de datos
-    await dbHelper.insertCentroMedico(centro814);
+    await dbCRUD.insertCentroMedico(centro814);
     print("CENTRO 814 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 815
@@ -12229,7 +12229,7 @@ void main() async {
     );
 
     // Inserta centro 815 en la base de datos
-    await dbHelper.insertCentroMedico(centro815);
+    await dbCRUD.insertCentroMedico(centro815);
     print("CENTRO 815 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 816
@@ -12244,7 +12244,7 @@ void main() async {
     );
 
     // Inserta centro 816 en la base de datos
-    await dbHelper.insertCentroMedico(centro816);
+    await dbCRUD.insertCentroMedico(centro816);
     print("CENTRO 816 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 817
@@ -12259,7 +12259,7 @@ void main() async {
     );
 
     // Inserta centro 817 en la base de datos
-    await dbHelper.insertCentroMedico(centro817);
+    await dbCRUD.insertCentroMedico(centro817);
     print("CENTRO 817 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 818
@@ -12274,7 +12274,7 @@ void main() async {
     );
 
     // Inserta centro 818 en la base de datos
-    await dbHelper.insertCentroMedico(centro818);
+    await dbCRUD.insertCentroMedico(centro818);
     print("CENTRO 818 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 819
@@ -12289,7 +12289,7 @@ void main() async {
     );
 
     // Inserta centro 819 en la base de datos
-    await dbHelper.insertCentroMedico(centro819);
+    await dbCRUD.insertCentroMedico(centro819);
     print("CENTRO 819 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 820
@@ -12304,7 +12304,7 @@ void main() async {
     );
 
     // Inserta centro 820 en la base de datos
-    await dbHelper.insertCentroMedico(centro820);
+    await dbCRUD.insertCentroMedico(centro820);
     print("CENTRO 820 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 821
@@ -12319,7 +12319,7 @@ void main() async {
     );
 
     // Inserta centro 821 en la base de datos
-    await dbHelper.insertCentroMedico(centro821);
+    await dbCRUD.insertCentroMedico(centro821);
     print("CENTRO 821 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 822
@@ -12334,7 +12334,7 @@ void main() async {
     );
 
     // Inserta centro 822 en la base de datos
-    await dbHelper.insertCentroMedico(centro822);
+    await dbCRUD.insertCentroMedico(centro822);
     print("CENTRO 822 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 823
@@ -12349,7 +12349,7 @@ void main() async {
     );
 
     // Inserta centro 823 en la base de datos
-    await dbHelper.insertCentroMedico(centro823);
+    await dbCRUD.insertCentroMedico(centro823);
     print("CENTRO 823 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 824
@@ -12364,7 +12364,7 @@ void main() async {
     );
 
     // Inserta centro 824 en la base de datos
-    await dbHelper.insertCentroMedico(centro824);
+    await dbCRUD.insertCentroMedico(centro824);
     print("CENTRO 824 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 825
@@ -12379,7 +12379,7 @@ void main() async {
     );
 
     // Inserta centro 825 en la base de datos
-    await dbHelper.insertCentroMedico(centro825);
+    await dbCRUD.insertCentroMedico(centro825);
     print("CENTRO 825 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 826
@@ -12394,7 +12394,7 @@ void main() async {
     );
 
     // Inserta centro 826 en la base de datos
-    await dbHelper.insertCentroMedico(centro826);
+    await dbCRUD.insertCentroMedico(centro826);
     print("CENTRO 826 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 827
@@ -12409,7 +12409,7 @@ void main() async {
     );
 
     // Inserta centro 827 en la base de datos
-    await dbHelper.insertCentroMedico(centro827);
+    await dbCRUD.insertCentroMedico(centro827);
     print("CENTRO 827 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 828
@@ -12424,7 +12424,7 @@ void main() async {
     );
 
     // Inserta centro 828 en la base de datos
-    await dbHelper.insertCentroMedico(centro828);
+    await dbCRUD.insertCentroMedico(centro828);
     print("CENTRO 828 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 829
@@ -12439,7 +12439,7 @@ void main() async {
     );
 
     // Inserta centro 829 en la base de datos
-    await dbHelper.insertCentroMedico(centro829);
+    await dbCRUD.insertCentroMedico(centro829);
     print("CENTRO 829 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 830
@@ -12454,7 +12454,7 @@ void main() async {
     );
 
     // Inserta centro 830 en la base de datos
-    await dbHelper.insertCentroMedico(centro830);
+    await dbCRUD.insertCentroMedico(centro830);
     print("CENTRO 830 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 831
@@ -12469,7 +12469,7 @@ void main() async {
     );
 
     // Inserta centro 831 en la base de datos
-    await dbHelper.insertCentroMedico(centro831);
+    await dbCRUD.insertCentroMedico(centro831);
     print("CENTRO 831 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 832
@@ -12484,7 +12484,7 @@ void main() async {
     );
 
     // Inserta centro 832 en la base de datos
-    await dbHelper.insertCentroMedico(centro832);
+    await dbCRUD.insertCentroMedico(centro832);
     print("CENTRO 832 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 833
@@ -12499,7 +12499,7 @@ void main() async {
     );
 
     // Inserta centro 833 en la base de datos
-    await dbHelper.insertCentroMedico(centro833);
+    await dbCRUD.insertCentroMedico(centro833);
     print("CENTRO 833 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 834
@@ -12514,7 +12514,7 @@ void main() async {
     );
 
     // Inserta centro 834 en la base de datos
-    await dbHelper.insertCentroMedico(centro834);
+    await dbCRUD.insertCentroMedico(centro834);
     print("CENTRO 834 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 835
@@ -12529,7 +12529,7 @@ void main() async {
     );
 
     // Inserta centro 835 en la base de datos
-    await dbHelper.insertCentroMedico(centro835);
+    await dbCRUD.insertCentroMedico(centro835);
     print("CENTRO 835 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 836
@@ -12544,7 +12544,7 @@ void main() async {
     );
 
     // Inserta centro 836 en la base de datos
-    await dbHelper.insertCentroMedico(centro836);
+    await dbCRUD.insertCentroMedico(centro836);
     print("CENTRO 836 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 837
@@ -12559,7 +12559,7 @@ void main() async {
     );
 
     // Inserta centro 837 en la base de datos
-    await dbHelper.insertCentroMedico(centro837);
+    await dbCRUD.insertCentroMedico(centro837);
     print("CENTRO 837 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 838
@@ -12574,7 +12574,7 @@ void main() async {
     );
 
     // Inserta centro 838 en la base de datos
-    await dbHelper.insertCentroMedico(centro838);
+    await dbCRUD.insertCentroMedico(centro838);
     print("CENTRO 838 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 839
@@ -12589,7 +12589,7 @@ void main() async {
     );
 
     // Inserta centro 839 en la base de datos
-    await dbHelper.insertCentroMedico(centro839);
+    await dbCRUD.insertCentroMedico(centro839);
     print("CENTRO 839 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 840
@@ -12604,7 +12604,7 @@ void main() async {
     );
 
     // Inserta centro 840 en la base de datos
-    await dbHelper.insertCentroMedico(centro840);
+    await dbCRUD.insertCentroMedico(centro840);
     print("CENTRO 840 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 841
@@ -12619,7 +12619,7 @@ void main() async {
     );
 
     // Inserta centro 841 en la base de datos
-    await dbHelper.insertCentroMedico(centro841);
+    await dbCRUD.insertCentroMedico(centro841);
     print("CENTRO 841 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 842
@@ -12634,7 +12634,7 @@ void main() async {
     );
 
     // Inserta centro 842 en la base de datos
-    await dbHelper.insertCentroMedico(centro842);
+    await dbCRUD.insertCentroMedico(centro842);
     print("CENTRO 842 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 843
@@ -12649,7 +12649,7 @@ void main() async {
     );
 
     // Inserta centro 843 en la base de datos
-    await dbHelper.insertCentroMedico(centro843);
+    await dbCRUD.insertCentroMedico(centro843);
     print("CENTRO 843 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 844
@@ -12664,7 +12664,7 @@ void main() async {
     );
 
     // Inserta centro 844 en la base de datos
-    await dbHelper.insertCentroMedico(centro844);
+    await dbCRUD.insertCentroMedico(centro844);
     print("CENTRO 844 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 845
@@ -12679,7 +12679,7 @@ void main() async {
     );
 
     // Inserta centro 845 en la base de datos
-    await dbHelper.insertCentroMedico(centro845);
+    await dbCRUD.insertCentroMedico(centro845);
     print("CENTRO 845 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 846
@@ -12694,7 +12694,7 @@ void main() async {
     );
 
     // Inserta centro 846 en la base de datos
-    await dbHelper.insertCentroMedico(centro846);
+    await dbCRUD.insertCentroMedico(centro846);
     print("CENTRO 846 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 847
@@ -12709,7 +12709,7 @@ void main() async {
     );
 
     // Inserta centro 847 en la base de datos
-    await dbHelper.insertCentroMedico(centro847);
+    await dbCRUD.insertCentroMedico(centro847);
     print("CENTRO 847 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 848
@@ -12724,7 +12724,7 @@ void main() async {
     );
 
     // Inserta centro 848 en la base de datos
-    await dbHelper.insertCentroMedico(centro848);
+    await dbCRUD.insertCentroMedico(centro848);
     print("CENTRO 848 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 849
@@ -12739,7 +12739,7 @@ void main() async {
     );
 
     // Inserta centro 849 en la base de datos
-    await dbHelper.insertCentroMedico(centro849);
+    await dbCRUD.insertCentroMedico(centro849);
     print("CENTRO 849 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 850
@@ -12754,7 +12754,7 @@ void main() async {
     );
 
     // Inserta centro 850 en la base de datos
-    await dbHelper.insertCentroMedico(centro850);
+    await dbCRUD.insertCentroMedico(centro850);
     print("CENTRO 850 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 851
@@ -12769,7 +12769,7 @@ void main() async {
     );
 
     // Inserta centro 851 en la base de datos
-    await dbHelper.insertCentroMedico(centro851);
+    await dbCRUD.insertCentroMedico(centro851);
     print("CENTRO 851 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 852
@@ -12784,7 +12784,7 @@ void main() async {
     );
 
     // Inserta centro 852 en la base de datos
-    await dbHelper.insertCentroMedico(centro852);
+    await dbCRUD.insertCentroMedico(centro852);
     print("CENTRO 852 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 853
@@ -12799,7 +12799,7 @@ void main() async {
     );
 
     // Inserta centro 853 en la base de datos
-    await dbHelper.insertCentroMedico(centro853);
+    await dbCRUD.insertCentroMedico(centro853);
     print("CENTRO 853 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 854
@@ -12814,7 +12814,7 @@ void main() async {
     );
 
     // Inserta centro 854 en la base de datos
-    await dbHelper.insertCentroMedico(centro854);
+    await dbCRUD.insertCentroMedico(centro854);
     print("CENTRO 854 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 855
@@ -12829,7 +12829,7 @@ void main() async {
     );
 
     // Inserta centro 855 en la base de datos
-    await dbHelper.insertCentroMedico(centro855);
+    await dbCRUD.insertCentroMedico(centro855);
     print("CENTRO 855 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 856
@@ -12844,7 +12844,7 @@ void main() async {
     );
 
     // Inserta centro 856 en la base de datos
-    await dbHelper.insertCentroMedico(centro856);
+    await dbCRUD.insertCentroMedico(centro856);
     print("CENTRO 856 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 857
@@ -12859,7 +12859,7 @@ void main() async {
     );
 
     // Inserta centro 857 en la base de datos
-    await dbHelper.insertCentroMedico(centro857);
+    await dbCRUD.insertCentroMedico(centro857);
     print("CENTRO 857 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 858
@@ -12874,7 +12874,7 @@ void main() async {
     );
 
     // Inserta centro 858 en la base de datos
-    await dbHelper.insertCentroMedico(centro858);
+    await dbCRUD.insertCentroMedico(centro858);
     print("CENTRO 858 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 859
@@ -12889,7 +12889,7 @@ void main() async {
     );
 
     // Inserta centro 859 en la base de datos
-    await dbHelper.insertCentroMedico(centro859);
+    await dbCRUD.insertCentroMedico(centro859);
     print("CENTRO 859 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 860
@@ -12904,7 +12904,7 @@ void main() async {
     );
 
     // Inserta centro 860 en la base de datos
-    await dbHelper.insertCentroMedico(centro860);
+    await dbCRUD.insertCentroMedico(centro860);
     print("CENTRO 860 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 861
@@ -12919,7 +12919,7 @@ void main() async {
     );
 
     // Inserta centro 861 en la base de datos
-    await dbHelper.insertCentroMedico(centro861);
+    await dbCRUD.insertCentroMedico(centro861);
     print("CENTRO 861 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 862
@@ -12934,7 +12934,7 @@ void main() async {
     );
 
     // Inserta centro 862 en la base de datos
-    await dbHelper.insertCentroMedico(centro862);
+    await dbCRUD.insertCentroMedico(centro862);
     print("CENTRO 862 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 863
@@ -12949,7 +12949,7 @@ void main() async {
     );
 
     // Inserta centro 863 en la base de datos
-    await dbHelper.insertCentroMedico(centro863);
+    await dbCRUD.insertCentroMedico(centro863);
     print("CENTRO 863 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 864
@@ -12964,7 +12964,7 @@ void main() async {
     );
 
     // Inserta centro 864 en la base de datos
-    await dbHelper.insertCentroMedico(centro864);
+    await dbCRUD.insertCentroMedico(centro864);
     print("CENTRO 864 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 865
@@ -12979,7 +12979,7 @@ void main() async {
     );
 
     // Inserta centro 865 en la base de datos
-    await dbHelper.insertCentroMedico(centro865);
+    await dbCRUD.insertCentroMedico(centro865);
     print("CENTRO 865 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 866
@@ -12994,7 +12994,7 @@ void main() async {
     );
 
     // Inserta centro 866 en la base de datos
-    await dbHelper.insertCentroMedico(centro866);
+    await dbCRUD.insertCentroMedico(centro866);
     print("CENTRO 866 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 867
@@ -13009,7 +13009,7 @@ void main() async {
     );
 
     // Inserta centro 867 en la base de datos
-    await dbHelper.insertCentroMedico(centro867);
+    await dbCRUD.insertCentroMedico(centro867);
     print("CENTRO 867 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 868
@@ -13024,7 +13024,7 @@ void main() async {
     );
 
     // Inserta centro 868 en la base de datos
-    await dbHelper.insertCentroMedico(centro868);
+    await dbCRUD.insertCentroMedico(centro868);
     print("CENTRO 868 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 869
@@ -13039,7 +13039,7 @@ void main() async {
     );
 
     // Inserta centro 869 en la base de datos
-    await dbHelper.insertCentroMedico(centro869);
+    await dbCRUD.insertCentroMedico(centro869);
     print("CENTRO 869 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 870
@@ -13054,7 +13054,7 @@ void main() async {
     );
 
     // Inserta centro 870 en la base de datos
-    await dbHelper.insertCentroMedico(centro870);
+    await dbCRUD.insertCentroMedico(centro870);
     print("CENTRO 870 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 871
@@ -13069,7 +13069,7 @@ void main() async {
     );
 
     // Inserta centro 871 en la base de datos
-    await dbHelper.insertCentroMedico(centro871);
+    await dbCRUD.insertCentroMedico(centro871);
     print("CENTRO 871 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 872
@@ -13084,7 +13084,7 @@ void main() async {
     );
 
     // Inserta centro 872 en la base de datos
-    await dbHelper.insertCentroMedico(centro872);
+    await dbCRUD.insertCentroMedico(centro872);
     print("CENTRO 872 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 873
@@ -13099,7 +13099,7 @@ void main() async {
     );
 
     // Inserta centro 873 en la base de datos
-    await dbHelper.insertCentroMedico(centro873);
+    await dbCRUD.insertCentroMedico(centro873);
     print("CENTRO 873 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 874
@@ -13114,7 +13114,7 @@ void main() async {
     );
 
     // Inserta centro 874 en la base de datos
-    await dbHelper.insertCentroMedico(centro874);
+    await dbCRUD.insertCentroMedico(centro874);
     print("CENTRO 874 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 875
@@ -13129,7 +13129,7 @@ void main() async {
     );
 
     // Inserta centro 875 en la base de datos
-    await dbHelper.insertCentroMedico(centro875);
+    await dbCRUD.insertCentroMedico(centro875);
     print("CENTRO 875 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 876
@@ -13144,7 +13144,7 @@ void main() async {
     );
 
     // Inserta centro 876 en la base de datos
-    await dbHelper.insertCentroMedico(centro876);
+    await dbCRUD.insertCentroMedico(centro876);
     print("CENTRO 876 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 877
@@ -13159,7 +13159,7 @@ void main() async {
     );
 
     // Inserta centro 877 en la base de datos
-    await dbHelper.insertCentroMedico(centro877);
+    await dbCRUD.insertCentroMedico(centro877);
     print("CENTRO 877 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 878
@@ -13174,7 +13174,7 @@ void main() async {
     );
 
     // Inserta centro 878 en la base de datos
-    await dbHelper.insertCentroMedico(centro878);
+    await dbCRUD.insertCentroMedico(centro878);
     print("CENTRO 878 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 879
@@ -13189,7 +13189,7 @@ void main() async {
     );
 
     // Inserta centro 879 en la base de datos
-    await dbHelper.insertCentroMedico(centro879);
+    await dbCRUD.insertCentroMedico(centro879);
     print("CENTRO 879 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 880
@@ -13204,7 +13204,7 @@ void main() async {
     );
 
     // Inserta centro 880 en la base de datos
-    await dbHelper.insertCentroMedico(centro880);
+    await dbCRUD.insertCentroMedico(centro880);
     print("CENTRO 880 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 881
@@ -13219,7 +13219,7 @@ void main() async {
     );
 
     // Inserta centro 881 en la base de datos
-    await dbHelper.insertCentroMedico(centro881);
+    await dbCRUD.insertCentroMedico(centro881);
     print("CENTRO 881 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 882
@@ -13234,7 +13234,7 @@ void main() async {
     );
 
     // Inserta centro 882 en la base de datos
-    await dbHelper.insertCentroMedico(centro882);
+    await dbCRUD.insertCentroMedico(centro882);
     print("CENTRO 882 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 883
@@ -13249,7 +13249,7 @@ void main() async {
     );
 
     // Inserta centro 883 en la base de datos
-    await dbHelper.insertCentroMedico(centro883);
+    await dbCRUD.insertCentroMedico(centro883);
     print("CENTRO 883 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 884
@@ -13264,7 +13264,7 @@ void main() async {
     );
 
     // Inserta centro 884 en la base de datos
-    await dbHelper.insertCentroMedico(centro884);
+    await dbCRUD.insertCentroMedico(centro884);
     print("CENTRO 884 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 885
@@ -13279,7 +13279,7 @@ void main() async {
     );
 
     // Inserta centro 885 en la base de datos
-    await dbHelper.insertCentroMedico(centro885);
+    await dbCRUD.insertCentroMedico(centro885);
     print("CENTRO 885 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 886
@@ -13294,7 +13294,7 @@ void main() async {
     );
 
     // Inserta centro 886 en la base de datos
-    await dbHelper.insertCentroMedico(centro886);
+    await dbCRUD.insertCentroMedico(centro886);
     print("CENTRO 886 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 887
@@ -13309,7 +13309,7 @@ void main() async {
     );
 
     // Inserta centro 887 en la base de datos
-    await dbHelper.insertCentroMedico(centro887);
+    await dbCRUD.insertCentroMedico(centro887);
     print("CENTRO 887 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 888
@@ -13324,7 +13324,7 @@ void main() async {
     );
 
     // Inserta centro 888 en la base de datos
-    await dbHelper.insertCentroMedico(centro888);
+    await dbCRUD.insertCentroMedico(centro888);
     print("CENTRO 888 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 889
@@ -13339,7 +13339,7 @@ void main() async {
     );
 
     // Inserta centro 889 en la base de datos
-    await dbHelper.insertCentroMedico(centro889);
+    await dbCRUD.insertCentroMedico(centro889);
     print("CENTRO 889 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 890
@@ -13354,7 +13354,7 @@ void main() async {
     );
 
     // Inserta centro 890 en la base de datos
-    await dbHelper.insertCentroMedico(centro890);
+    await dbCRUD.insertCentroMedico(centro890);
     print("CENTRO 890 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 891
@@ -13369,7 +13369,7 @@ void main() async {
     );
 
     // Inserta centro 891 en la base de datos
-    await dbHelper.insertCentroMedico(centro891);
+    await dbCRUD.insertCentroMedico(centro891);
     print("CENTRO 891 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 892
@@ -13384,7 +13384,7 @@ void main() async {
     );
 
     // Inserta centro 892 en la base de datos
-    await dbHelper.insertCentroMedico(centro892);
+    await dbCRUD.insertCentroMedico(centro892);
     print("CENTRO 892 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 893
@@ -13399,7 +13399,7 @@ void main() async {
     );
 
     // Inserta centro 893 en la base de datos
-    await dbHelper.insertCentroMedico(centro893);
+    await dbCRUD.insertCentroMedico(centro893);
     print("CENTRO 893 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 894
@@ -13414,7 +13414,7 @@ void main() async {
     );
 
     // Inserta centro 894 en la base de datos
-    await dbHelper.insertCentroMedico(centro894);
+    await dbCRUD.insertCentroMedico(centro894);
     print("CENTRO 894 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 895
@@ -13429,7 +13429,7 @@ void main() async {
     );
 
     // Inserta centro 895 en la base de datos
-    await dbHelper.insertCentroMedico(centro895);
+    await dbCRUD.insertCentroMedico(centro895);
     print("CENTRO 895 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 896
@@ -13444,7 +13444,7 @@ void main() async {
     );
 
     // Inserta centro 896 en la base de datos
-    await dbHelper.insertCentroMedico(centro896);
+    await dbCRUD.insertCentroMedico(centro896);
     print("CENTRO 896 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 897
@@ -13459,7 +13459,7 @@ void main() async {
     );
 
     // Inserta centro 897 en la base de datos
-    await dbHelper.insertCentroMedico(centro897);
+    await dbCRUD.insertCentroMedico(centro897);
     print("CENTRO 897 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 898
@@ -13474,7 +13474,7 @@ void main() async {
     );
 
     // Inserta centro 898 en la base de datos
-    await dbHelper.insertCentroMedico(centro898);
+    await dbCRUD.insertCentroMedico(centro898);
     print("CENTRO 898 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 899
@@ -13489,7 +13489,7 @@ void main() async {
     );
 
     // Inserta centro 899 en la base de datos
-    await dbHelper.insertCentroMedico(centro899);
+    await dbCRUD.insertCentroMedico(centro899);
     print("CENTRO 899 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 900
@@ -13504,7 +13504,7 @@ void main() async {
     );
 
     // Inserta centro 900 en la base de datos
-    await dbHelper.insertCentroMedico(centro900);
+    await dbCRUD.insertCentroMedico(centro900);
     print("CENTRO 900 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 901
@@ -13519,7 +13519,7 @@ void main() async {
     );
 
     // Inserta centro 901 en la base de datos
-    await dbHelper.insertCentroMedico(centro901);
+    await dbCRUD.insertCentroMedico(centro901);
     print("CENTRO 901 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 902
@@ -13534,7 +13534,7 @@ void main() async {
     );
 
     // Inserta centro 902 en la base de datos
-    await dbHelper.insertCentroMedico(centro902);
+    await dbCRUD.insertCentroMedico(centro902);
     print("CENTRO 902 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 903
@@ -13549,7 +13549,7 @@ void main() async {
     );
 
     // Inserta centro 903 en la base de datos
-    await dbHelper.insertCentroMedico(centro903);
+    await dbCRUD.insertCentroMedico(centro903);
     print("CENTRO 903 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 904
@@ -13564,7 +13564,7 @@ void main() async {
     );
 
     // Inserta centro 904 en la base de datos
-    await dbHelper.insertCentroMedico(centro904);
+    await dbCRUD.insertCentroMedico(centro904);
     print("CENTRO 904 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 905
@@ -13579,7 +13579,7 @@ void main() async {
     );
 
     // Inserta centro 905 en la base de datos
-    await dbHelper.insertCentroMedico(centro905);
+    await dbCRUD.insertCentroMedico(centro905);
     print("CENTRO 905 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 906
@@ -13594,7 +13594,7 @@ void main() async {
     );
 
     // Inserta centro 906 en la base de datos
-    await dbHelper.insertCentroMedico(centro906);
+    await dbCRUD.insertCentroMedico(centro906);
     print("CENTRO 906 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 907
@@ -13609,7 +13609,7 @@ void main() async {
     );
 
     // Inserta centro 907 en la base de datos
-    await dbHelper.insertCentroMedico(centro907);
+    await dbCRUD.insertCentroMedico(centro907);
     print("CENTRO 907 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 908
@@ -13624,7 +13624,7 @@ void main() async {
     );
 
     // Inserta centro 908 en la base de datos
-    await dbHelper.insertCentroMedico(centro908);
+    await dbCRUD.insertCentroMedico(centro908);
     print("CENTRO 908 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 909
@@ -13639,7 +13639,7 @@ void main() async {
     );
 
     // Inserta centro 909 en la base de datos
-    await dbHelper.insertCentroMedico(centro909);
+    await dbCRUD.insertCentroMedico(centro909);
     print("CENTRO 909 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 910
@@ -13654,7 +13654,7 @@ void main() async {
     );
 
     // Inserta centro 910 en la base de datos
-    await dbHelper.insertCentroMedico(centro910);
+    await dbCRUD.insertCentroMedico(centro910);
     print("CENTRO 910 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 911
@@ -13669,7 +13669,7 @@ void main() async {
     );
 
     // Inserta centro 911 en la base de datos
-    await dbHelper.insertCentroMedico(centro911);
+    await dbCRUD.insertCentroMedico(centro911);
     print("CENTRO 911 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 912
@@ -13684,7 +13684,7 @@ void main() async {
     );
 
     // Inserta centro 912 en la base de datos
-    await dbHelper.insertCentroMedico(centro912);
+    await dbCRUD.insertCentroMedico(centro912);
     print("CENTRO 912 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 913
@@ -13699,7 +13699,7 @@ void main() async {
     );
 
     // Inserta centro 913 en la base de datos
-    await dbHelper.insertCentroMedico(centro913);
+    await dbCRUD.insertCentroMedico(centro913);
     print("CENTRO 913 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 914
@@ -13714,7 +13714,7 @@ void main() async {
     );
 
     // Inserta centro 914 en la base de datos
-    await dbHelper.insertCentroMedico(centro914);
+    await dbCRUD.insertCentroMedico(centro914);
     print("CENTRO 914 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 915
@@ -13729,7 +13729,7 @@ void main() async {
     );
 
     // Inserta centro 915 en la base de datos
-    await dbHelper.insertCentroMedico(centro915);
+    await dbCRUD.insertCentroMedico(centro915);
     print("CENTRO 915 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 916
@@ -13744,7 +13744,7 @@ void main() async {
     );
 
     // Inserta centro 916 en la base de datos
-    await dbHelper.insertCentroMedico(centro916);
+    await dbCRUD.insertCentroMedico(centro916);
     print("CENTRO 916 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 917
@@ -13759,7 +13759,7 @@ void main() async {
     );
 
     // Inserta centro 917 en la base de datos
-    await dbHelper.insertCentroMedico(centro917);
+    await dbCRUD.insertCentroMedico(centro917);
     print("CENTRO 917 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 918
@@ -13774,7 +13774,7 @@ void main() async {
     );
 
     // Inserta centro 918 en la base de datos
-    await dbHelper.insertCentroMedico(centro918);
+    await dbCRUD.insertCentroMedico(centro918);
     print("CENTRO 918 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 919
@@ -13789,7 +13789,7 @@ void main() async {
     );
 
     // Inserta centro 919 en la base de datos
-    await dbHelper.insertCentroMedico(centro919);
+    await dbCRUD.insertCentroMedico(centro919);
     print("CENTRO 919 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 920
@@ -13804,7 +13804,7 @@ void main() async {
     );
 
     // Inserta centro 920 en la base de datos
-    await dbHelper.insertCentroMedico(centro920);
+    await dbCRUD.insertCentroMedico(centro920);
     print("CENTRO 920 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 921
@@ -13819,7 +13819,7 @@ void main() async {
     );
 
     // Inserta centro 921 en la base de datos
-    await dbHelper.insertCentroMedico(centro921);
+    await dbCRUD.insertCentroMedico(centro921);
     print("CENTRO 921 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 922
@@ -13834,7 +13834,7 @@ void main() async {
     );
 
     // Inserta centro 922 en la base de datos
-    await dbHelper.insertCentroMedico(centro922);
+    await dbCRUD.insertCentroMedico(centro922);
     print("CENTRO 922 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 923
@@ -13849,7 +13849,7 @@ void main() async {
     );
 
     // Inserta centro 923 en la base de datos
-    await dbHelper.insertCentroMedico(centro923);
+    await dbCRUD.insertCentroMedico(centro923);
     print("CENTRO 923 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 924
@@ -13864,7 +13864,7 @@ void main() async {
     );
 
     // Inserta centro 924 en la base de datos
-    await dbHelper.insertCentroMedico(centro924);
+    await dbCRUD.insertCentroMedico(centro924);
     print("CENTRO 924 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 925
@@ -13879,7 +13879,7 @@ void main() async {
     );
 
     // Inserta centro 925 en la base de datos
-    await dbHelper.insertCentroMedico(centro925);
+    await dbCRUD.insertCentroMedico(centro925);
     print("CENTRO 925 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 926
@@ -13894,7 +13894,7 @@ void main() async {
     );
 
     // Inserta centro 926 en la base de datos
-    await dbHelper.insertCentroMedico(centro926);
+    await dbCRUD.insertCentroMedico(centro926);
     print("CENTRO 926 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 927
@@ -13909,7 +13909,7 @@ void main() async {
     );
 
     // Inserta centro 927 en la base de datos
-    await dbHelper.insertCentroMedico(centro927);
+    await dbCRUD.insertCentroMedico(centro927);
     print("CENTRO 927 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 928
@@ -13924,7 +13924,7 @@ void main() async {
     );
 
     // Inserta centro 928 en la base de datos
-    await dbHelper.insertCentroMedico(centro928);
+    await dbCRUD.insertCentroMedico(centro928);
     print("CENTRO 928 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 929
@@ -13939,7 +13939,7 @@ void main() async {
     );
 
     // Inserta centro 929 en la base de datos
-    await dbHelper.insertCentroMedico(centro929);
+    await dbCRUD.insertCentroMedico(centro929);
     print("CENTRO 929 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 930
@@ -13954,7 +13954,7 @@ void main() async {
     );
 
     // Inserta centro 930 en la base de datos
-    await dbHelper.insertCentroMedico(centro930);
+    await dbCRUD.insertCentroMedico(centro930);
     print("CENTRO 930 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 931
@@ -13969,7 +13969,7 @@ void main() async {
     );
 
     // Inserta centro 931 en la base de datos
-    await dbHelper.insertCentroMedico(centro931);
+    await dbCRUD.insertCentroMedico(centro931);
     print("CENTRO 931 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 932
@@ -13984,7 +13984,7 @@ void main() async {
     );
 
     // Inserta centro 932 en la base de datos
-    await dbHelper.insertCentroMedico(centro932);
+    await dbCRUD.insertCentroMedico(centro932);
     print("CENTRO 932 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 933
@@ -13999,7 +13999,7 @@ void main() async {
     );
 
     // Inserta centro 933 en la base de datos
-    await dbHelper.insertCentroMedico(centro933);
+    await dbCRUD.insertCentroMedico(centro933);
     print("CENTRO 933 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 934
@@ -14014,7 +14014,7 @@ void main() async {
     );
 
     // Inserta centro 934 en la base de datos
-    await dbHelper.insertCentroMedico(centro934);
+    await dbCRUD.insertCentroMedico(centro934);
     print("CENTRO 934 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 935
@@ -14029,7 +14029,7 @@ void main() async {
     );
 
     // Inserta centro 935 en la base de datos
-    await dbHelper.insertCentroMedico(centro935);
+    await dbCRUD.insertCentroMedico(centro935);
     print("CENTRO 935 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 936
@@ -14044,7 +14044,7 @@ void main() async {
     );
 
     // Inserta centro 936 en la base de datos
-    await dbHelper.insertCentroMedico(centro936);
+    await dbCRUD.insertCentroMedico(centro936);
     print("CENTRO 936 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 937
@@ -14059,7 +14059,7 @@ void main() async {
     );
 
     // Inserta centro 937 en la base de datos
-    await dbHelper.insertCentroMedico(centro937);
+    await dbCRUD.insertCentroMedico(centro937);
     print("CENTRO 937 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 938
@@ -14074,7 +14074,7 @@ void main() async {
     );
 
     // Inserta centro 938 en la base de datos
-    await dbHelper.insertCentroMedico(centro938);
+    await dbCRUD.insertCentroMedico(centro938);
     print("CENTRO 938 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 939
@@ -14089,7 +14089,7 @@ void main() async {
     );
 
     // Inserta centro 939 en la base de datos
-    await dbHelper.insertCentroMedico(centro939);
+    await dbCRUD.insertCentroMedico(centro939);
     print("CENTRO 939 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 940
@@ -14104,7 +14104,7 @@ void main() async {
     );
 
     // Inserta centro 940 en la base de datos
-    await dbHelper.insertCentroMedico(centro940);
+    await dbCRUD.insertCentroMedico(centro940);
     print("CENTRO 940 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 941
@@ -14119,7 +14119,7 @@ void main() async {
     );
 
     // Inserta centro 941 en la base de datos
-    await dbHelper.insertCentroMedico(centro941);
+    await dbCRUD.insertCentroMedico(centro941);
     print("CENTRO 941 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 942
@@ -14134,7 +14134,7 @@ void main() async {
     );
 
     // Inserta centro 942 en la base de datos
-    await dbHelper.insertCentroMedico(centro942);
+    await dbCRUD.insertCentroMedico(centro942);
     print("CENTRO 942 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 943
@@ -14149,7 +14149,7 @@ void main() async {
     );
 
     // Inserta centro 943 en la base de datos
-    await dbHelper.insertCentroMedico(centro943);
+    await dbCRUD.insertCentroMedico(centro943);
     print("CENTRO 943 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 944
@@ -14164,7 +14164,7 @@ void main() async {
     );
 
     // Inserta centro 944 en la base de datos
-    await dbHelper.insertCentroMedico(centro944);
+    await dbCRUD.insertCentroMedico(centro944);
     print("CENTRO 944 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 945
@@ -14179,7 +14179,7 @@ void main() async {
     );
 
     // Inserta centro 945 en la base de datos
-    await dbHelper.insertCentroMedico(centro945);
+    await dbCRUD.insertCentroMedico(centro945);
     print("CENTRO 945 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 946
@@ -14194,7 +14194,7 @@ void main() async {
     );
 
     // Inserta centro 946 en la base de datos
-    await dbHelper.insertCentroMedico(centro946);
+    await dbCRUD.insertCentroMedico(centro946);
     print("CENTRO 946 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 947
@@ -14209,7 +14209,7 @@ void main() async {
     );
 
     // Inserta centro 947 en la base de datos
-    await dbHelper.insertCentroMedico(centro947);
+    await dbCRUD.insertCentroMedico(centro947);
     print("CENTRO 947 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 948
@@ -14224,7 +14224,7 @@ void main() async {
     );
 
     // Inserta centro 948 en la base de datos
-    await dbHelper.insertCentroMedico(centro948);
+    await dbCRUD.insertCentroMedico(centro948);
     print("CENTRO 948 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 949
@@ -14239,7 +14239,7 @@ void main() async {
     );
 
     // Inserta centro 949 en la base de datos
-    await dbHelper.insertCentroMedico(centro949);
+    await dbCRUD.insertCentroMedico(centro949);
     print("CENTRO 949 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 950
@@ -14254,7 +14254,7 @@ void main() async {
     );
 
     // Inserta centro 950 en la base de datos
-    await dbHelper.insertCentroMedico(centro950);
+    await dbCRUD.insertCentroMedico(centro950);
     print("CENTRO 950 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 951
@@ -14269,7 +14269,7 @@ void main() async {
     );
 
     // Inserta centro 951 en la base de datos
-    await dbHelper.insertCentroMedico(centro951);
+    await dbCRUD.insertCentroMedico(centro951);
     print("CENTRO 951 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 952
@@ -14284,7 +14284,7 @@ void main() async {
     );
 
     // Inserta centro 952 en la base de datos
-    await dbHelper.insertCentroMedico(centro952);
+    await dbCRUD.insertCentroMedico(centro952);
     print("CENTRO 952 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 953
@@ -14299,7 +14299,7 @@ void main() async {
     );
 
     // Inserta centro 953 en la base de datos
-    await dbHelper.insertCentroMedico(centro953);
+    await dbCRUD.insertCentroMedico(centro953);
     print("CENTRO 953 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 954
@@ -14314,7 +14314,7 @@ void main() async {
     );
 
     // Inserta centro 954 en la base de datos
-    await dbHelper.insertCentroMedico(centro954);
+    await dbCRUD.insertCentroMedico(centro954);
     print("CENTRO 954 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 955
@@ -14329,7 +14329,7 @@ void main() async {
     );
 
     // Inserta centro 955 en la base de datos
-    await dbHelper.insertCentroMedico(centro955);
+    await dbCRUD.insertCentroMedico(centro955);
     print("CENTRO 955 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 956
@@ -14344,7 +14344,7 @@ void main() async {
     );
 
     // Inserta centro 956 en la base de datos
-    await dbHelper.insertCentroMedico(centro956);
+    await dbCRUD.insertCentroMedico(centro956);
     print("CENTRO 956 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 957
@@ -14359,7 +14359,7 @@ void main() async {
     );
 
     // Inserta centro 957 en la base de datos
-    await dbHelper.insertCentroMedico(centro957);
+    await dbCRUD.insertCentroMedico(centro957);
     print("CENTRO 957 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 958
@@ -14374,7 +14374,7 @@ void main() async {
     );
 
     // Inserta centro 958 en la base de datos
-    await dbHelper.insertCentroMedico(centro958);
+    await dbCRUD.insertCentroMedico(centro958);
     print("CENTRO 958 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 959
@@ -14389,7 +14389,7 @@ void main() async {
     );
 
     // Inserta centro 959 en la base de datos
-    await dbHelper.insertCentroMedico(centro959);
+    await dbCRUD.insertCentroMedico(centro959);
     print("CENTRO 959 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 960
@@ -14404,7 +14404,7 @@ void main() async {
     );
 
     // Inserta centro 960 en la base de datos
-    await dbHelper.insertCentroMedico(centro960);
+    await dbCRUD.insertCentroMedico(centro960);
     print("CENTRO 960 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 961
@@ -14419,7 +14419,7 @@ void main() async {
     );
 
     // Inserta centro 961 en la base de datos
-    await dbHelper.insertCentroMedico(centro961);
+    await dbCRUD.insertCentroMedico(centro961);
     print("CENTRO 961 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 962
@@ -14434,7 +14434,7 @@ void main() async {
     );
 
     // Inserta centro 962 en la base de datos
-    await dbHelper.insertCentroMedico(centro962);
+    await dbCRUD.insertCentroMedico(centro962);
     print("CENTRO 962 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 963
@@ -14449,7 +14449,7 @@ void main() async {
     );
 
     // Inserta centro 963 en la base de datos
-    await dbHelper.insertCentroMedico(centro963);
+    await dbCRUD.insertCentroMedico(centro963);
     print("CENTRO 963 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 964
@@ -14464,7 +14464,7 @@ void main() async {
     );
 
     // Inserta centro 964 en la base de datos
-    await dbHelper.insertCentroMedico(centro964);
+    await dbCRUD.insertCentroMedico(centro964);
     print("CENTRO 964 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 965
@@ -14479,7 +14479,7 @@ void main() async {
     );
 
     // Inserta centro 965 en la base de datos
-    await dbHelper.insertCentroMedico(centro965);
+    await dbCRUD.insertCentroMedico(centro965);
     print("CENTRO 965 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 966
@@ -14494,7 +14494,7 @@ void main() async {
     );
 
     // Inserta centro 966 en la base de datos
-    await dbHelper.insertCentroMedico(centro966);
+    await dbCRUD.insertCentroMedico(centro966);
     print("CENTRO 966 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 967
@@ -14509,7 +14509,7 @@ void main() async {
     );
 
     // Inserta centro 967 en la base de datos
-    await dbHelper.insertCentroMedico(centro967);
+    await dbCRUD.insertCentroMedico(centro967);
     print("CENTRO 967 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 968
@@ -14524,7 +14524,7 @@ void main() async {
     );
 
     // Inserta centro 968 en la base de datos
-    await dbHelper.insertCentroMedico(centro968);
+    await dbCRUD.insertCentroMedico(centro968);
     print("CENTRO 968 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 969
@@ -14539,7 +14539,7 @@ void main() async {
     );
 
     // Inserta centro 969 en la base de datos
-    await dbHelper.insertCentroMedico(centro969);
+    await dbCRUD.insertCentroMedico(centro969);
     print("CENTRO 969 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 970
@@ -14554,7 +14554,7 @@ void main() async {
     );
 
     // Inserta centro 970 en la base de datos
-    await dbHelper.insertCentroMedico(centro970);
+    await dbCRUD.insertCentroMedico(centro970);
     print("CENTRO 970 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 971
@@ -14569,7 +14569,7 @@ void main() async {
     );
 
     // Inserta centro 971 en la base de datos
-    await dbHelper.insertCentroMedico(centro971);
+    await dbCRUD.insertCentroMedico(centro971);
     print("CENTRO 971 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 972
@@ -14584,7 +14584,7 @@ void main() async {
     );
 
     // Inserta centro 972 en la base de datos
-    await dbHelper.insertCentroMedico(centro972);
+    await dbCRUD.insertCentroMedico(centro972);
     print("CENTRO 972 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 973
@@ -14599,7 +14599,7 @@ void main() async {
     );
 
     // Inserta centro 973 en la base de datos
-    await dbHelper.insertCentroMedico(centro973);
+    await dbCRUD.insertCentroMedico(centro973);
     print("CENTRO 973 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 974
@@ -14614,7 +14614,7 @@ void main() async {
     );
 
     // Inserta centro 974 en la base de datos
-    await dbHelper.insertCentroMedico(centro974);
+    await dbCRUD.insertCentroMedico(centro974);
     print("CENTRO 974 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 975
@@ -14629,7 +14629,7 @@ void main() async {
     );
 
     // Inserta centro 975 en la base de datos
-    await dbHelper.insertCentroMedico(centro975);
+    await dbCRUD.insertCentroMedico(centro975);
     print("CENTRO 975 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 976
@@ -14644,7 +14644,7 @@ void main() async {
     );
 
     // Inserta centro 976 en la base de datos
-    await dbHelper.insertCentroMedico(centro976);
+    await dbCRUD.insertCentroMedico(centro976);
     print("CENTRO 976 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 977
@@ -14659,7 +14659,7 @@ void main() async {
     );
 
     // Inserta centro 977 en la base de datos
-    await dbHelper.insertCentroMedico(centro977);
+    await dbCRUD.insertCentroMedico(centro977);
     print("CENTRO 977 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 978
@@ -14674,7 +14674,7 @@ void main() async {
     );
 
     // Inserta centro 978 en la base de datos
-    await dbHelper.insertCentroMedico(centro978);
+    await dbCRUD.insertCentroMedico(centro978);
     print("CENTRO 978 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 979
@@ -14689,7 +14689,7 @@ void main() async {
     );
 
     // Inserta centro 979 en la base de datos
-    await dbHelper.insertCentroMedico(centro979);
+    await dbCRUD.insertCentroMedico(centro979);
     print("CENTRO 979 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 980
@@ -14704,7 +14704,7 @@ void main() async {
     );
 
     // Inserta centro 980 en la base de datos
-    await dbHelper.insertCentroMedico(centro980);
+    await dbCRUD.insertCentroMedico(centro980);
     print("CENTRO 980 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 981
@@ -14719,7 +14719,7 @@ void main() async {
     );
 
     // Inserta centro 981 en la base de datos
-    await dbHelper.insertCentroMedico(centro981);
+    await dbCRUD.insertCentroMedico(centro981);
     print("CENTRO 981 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 982
@@ -14734,7 +14734,7 @@ void main() async {
     );
 
     // Inserta centro 982 en la base de datos
-    await dbHelper.insertCentroMedico(centro982);
+    await dbCRUD.insertCentroMedico(centro982);
     print("CENTRO 982 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 983
@@ -14749,7 +14749,7 @@ void main() async {
     );
 
     // Inserta centro 983 en la base de datos
-    await dbHelper.insertCentroMedico(centro983);
+    await dbCRUD.insertCentroMedico(centro983);
     print("CENTRO 983 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 984
@@ -14764,7 +14764,7 @@ void main() async {
     );
 
     // Inserta centro 984 en la base de datos
-    await dbHelper.insertCentroMedico(centro984);
+    await dbCRUD.insertCentroMedico(centro984);
     print("CENTRO 984 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 985
@@ -14779,7 +14779,7 @@ void main() async {
     );
 
     // Inserta centro 985 en la base de datos
-    await dbHelper.insertCentroMedico(centro985);
+    await dbCRUD.insertCentroMedico(centro985);
     print("CENTRO 985 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 986
@@ -14794,7 +14794,7 @@ void main() async {
     );
 
     // Inserta centro 986 en la base de datos
-    await dbHelper.insertCentroMedico(centro986);
+    await dbCRUD.insertCentroMedico(centro986);
     print("CENTRO 986 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 987
@@ -14809,7 +14809,7 @@ void main() async {
     );
 
     // Inserta centro 987 en la base de datos
-    await dbHelper.insertCentroMedico(centro987);
+    await dbCRUD.insertCentroMedico(centro987);
     print("CENTRO 987 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 988
@@ -14824,7 +14824,7 @@ void main() async {
     );
 
     // Inserta centro 988 en la base de datos
-    await dbHelper.insertCentroMedico(centro988);
+    await dbCRUD.insertCentroMedico(centro988);
     print("CENTRO 988 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 989
@@ -14839,7 +14839,7 @@ void main() async {
     );
 
     // Inserta centro 989 en la base de datos
-    await dbHelper.insertCentroMedico(centro989);
+    await dbCRUD.insertCentroMedico(centro989);
     print("CENTRO 989 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 990
@@ -14854,7 +14854,7 @@ void main() async {
     );
 
     // Inserta centro 990 en la base de datos
-    await dbHelper.insertCentroMedico(centro990);
+    await dbCRUD.insertCentroMedico(centro990);
     print("CENTRO 990 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 991
@@ -14869,7 +14869,7 @@ void main() async {
     );
 
     // Inserta centro 991 en la base de datos
-    await dbHelper.insertCentroMedico(centro991);
+    await dbCRUD.insertCentroMedico(centro991);
     print("CENTRO 991 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 992
@@ -14884,7 +14884,7 @@ void main() async {
     );
 
     // Inserta centro 992 en la base de datos
-    await dbHelper.insertCentroMedico(centro992);
+    await dbCRUD.insertCentroMedico(centro992);
     print("CENTRO 992 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 993
@@ -14899,7 +14899,7 @@ void main() async {
     );
 
     // Inserta centro 993 en la base de datos
-    await dbHelper.insertCentroMedico(centro993);
+    await dbCRUD.insertCentroMedico(centro993);
     print("CENTRO 993 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 994
@@ -14914,7 +14914,7 @@ void main() async {
     );
 
     // Inserta centro 994 en la base de datos
-    await dbHelper.insertCentroMedico(centro994);
+    await dbCRUD.insertCentroMedico(centro994);
     print("CENTRO 994 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 995
@@ -14929,7 +14929,7 @@ void main() async {
     );
 
     // Inserta centro 995 en la base de datos
-    await dbHelper.insertCentroMedico(centro995);
+    await dbCRUD.insertCentroMedico(centro995);
     print("CENTRO 995 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 996
@@ -14944,7 +14944,7 @@ void main() async {
     );
 
     // Inserta centro 996 en la base de datos
-    await dbHelper.insertCentroMedico(centro996);
+    await dbCRUD.insertCentroMedico(centro996);
     print("CENTRO 996 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 997
@@ -14959,7 +14959,7 @@ void main() async {
     );
 
     // Inserta centro 997 en la base de datos
-    await dbHelper.insertCentroMedico(centro997);
+    await dbCRUD.insertCentroMedico(centro997);
     print("CENTRO 997 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 998
@@ -14974,7 +14974,7 @@ void main() async {
     );
 
     // Inserta centro 998 en la base de datos
-    await dbHelper.insertCentroMedico(centro998);
+    await dbCRUD.insertCentroMedico(centro998);
     print("CENTRO 998 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 999
@@ -14989,7 +14989,7 @@ void main() async {
     );
 
     // Inserta centro 999 en la base de datos
-    await dbHelper.insertCentroMedico(centro999);
+    await dbCRUD.insertCentroMedico(centro999);
     print("CENTRO 999 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1000
@@ -15004,7 +15004,7 @@ void main() async {
     );
 
     // Inserta centro 1000 en la base de datos
-    await dbHelper.insertCentroMedico(centro1000);
+    await dbCRUD.insertCentroMedico(centro1000);
     print("CENTRO 1000 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1001
@@ -15019,7 +15019,7 @@ void main() async {
     );
 
     // Inserta centro 1001 en la base de datos
-    await dbHelper.insertCentroMedico(centro1001);
+    await dbCRUD.insertCentroMedico(centro1001);
     print("CENTRO 1001 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1002
@@ -15034,7 +15034,7 @@ void main() async {
     );
 
     // Inserta centro 1002 en la base de datos
-    await dbHelper.insertCentroMedico(centro1002);
+    await dbCRUD.insertCentroMedico(centro1002);
     print("CENTRO 1002 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1003
@@ -15049,7 +15049,7 @@ void main() async {
     );
 
     // Inserta centro 1003 en la base de datos
-    await dbHelper.insertCentroMedico(centro1003);
+    await dbCRUD.insertCentroMedico(centro1003);
     print("CENTRO 1003 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1004
@@ -15064,7 +15064,7 @@ void main() async {
     );
 
     // Inserta centro 1004 en la base de datos
-    await dbHelper.insertCentroMedico(centro1004);
+    await dbCRUD.insertCentroMedico(centro1004);
     print("CENTRO 1004 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1005
@@ -15079,7 +15079,7 @@ void main() async {
     );
 
     // Inserta centro 1005 en la base de datos
-    await dbHelper.insertCentroMedico(centro1005);
+    await dbCRUD.insertCentroMedico(centro1005);
     print("CENTRO 1005 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1006
@@ -15094,7 +15094,7 @@ void main() async {
     );
 
     // Inserta centro 1006 en la base de datos
-    await dbHelper.insertCentroMedico(centro1006);
+    await dbCRUD.insertCentroMedico(centro1006);
     print("CENTRO 1006 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1007
@@ -15109,7 +15109,7 @@ void main() async {
     );
 
     // Inserta centro 1007 en la base de datos
-    await dbHelper.insertCentroMedico(centro1007);
+    await dbCRUD.insertCentroMedico(centro1007);
     print("CENTRO 1007 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1008
@@ -15124,7 +15124,7 @@ void main() async {
     );
 
     // Inserta centro 1008 en la base de datos
-    await dbHelper.insertCentroMedico(centro1008);
+    await dbCRUD.insertCentroMedico(centro1008);
     print("CENTRO 1008 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1009
@@ -15139,7 +15139,7 @@ void main() async {
     );
 
     // Inserta centro 1009 en la base de datos
-    await dbHelper.insertCentroMedico(centro1009);
+    await dbCRUD.insertCentroMedico(centro1009);
     print("CENTRO 1009 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1010
@@ -15154,7 +15154,7 @@ void main() async {
     );
 
     // Inserta centro 1010 en la base de datos
-    await dbHelper.insertCentroMedico(centro1010);
+    await dbCRUD.insertCentroMedico(centro1010);
     print("CENTRO 1010 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1011
@@ -15169,7 +15169,7 @@ void main() async {
     );
 
     // Inserta centro 1011 en la base de datos
-    await dbHelper.insertCentroMedico(centro1011);
+    await dbCRUD.insertCentroMedico(centro1011);
     print("CENTRO 1011 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1012
@@ -15184,7 +15184,7 @@ void main() async {
     );
 
     // Inserta centro 1012 en la base de datos
-    await dbHelper.insertCentroMedico(centro1012);
+    await dbCRUD.insertCentroMedico(centro1012);
     print("CENTRO 1012 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1013
@@ -15199,7 +15199,7 @@ void main() async {
     );
 
     // Inserta centro 1013 en la base de datos
-    await dbHelper.insertCentroMedico(centro1013);
+    await dbCRUD.insertCentroMedico(centro1013);
     print("CENTRO 1013 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1014
@@ -15214,7 +15214,7 @@ void main() async {
     );
 
     // Inserta centro 1014 en la base de datos
-    await dbHelper.insertCentroMedico(centro1014);
+    await dbCRUD.insertCentroMedico(centro1014);
     print("CENTRO 1014 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1015
@@ -15229,7 +15229,7 @@ void main() async {
     );
 
     // Inserta centro 1015 en la base de datos
-    await dbHelper.insertCentroMedico(centro1015);
+    await dbCRUD.insertCentroMedico(centro1015);
     print("CENTRO 1015 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1016
@@ -15244,7 +15244,7 @@ void main() async {
     );
 
     // Inserta centro 1016 en la base de datos
-    await dbHelper.insertCentroMedico(centro1016);
+    await dbCRUD.insertCentroMedico(centro1016);
     print("CENTRO 1016 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1017
@@ -15259,7 +15259,7 @@ void main() async {
     );
 
     // Inserta centro 1017 en la base de datos
-    await dbHelper.insertCentroMedico(centro1017);
+    await dbCRUD.insertCentroMedico(centro1017);
     print("CENTRO 1017 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1018
@@ -15274,7 +15274,7 @@ void main() async {
     );
 
     // Inserta centro 1018 en la base de datos
-    await dbHelper.insertCentroMedico(centro1018);
+    await dbCRUD.insertCentroMedico(centro1018);
     print("CENTRO 1018 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1019
@@ -15289,7 +15289,7 @@ void main() async {
     );
 
     // Inserta centro 1019 en la base de datos
-    await dbHelper.insertCentroMedico(centro1019);
+    await dbCRUD.insertCentroMedico(centro1019);
     print("CENTRO 1019 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1020
@@ -15304,7 +15304,7 @@ void main() async {
     );
 
     // Inserta centro 1020 en la base de datos
-    await dbHelper.insertCentroMedico(centro1020);
+    await dbCRUD.insertCentroMedico(centro1020);
     print("CENTRO 1020 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1021
@@ -15319,7 +15319,7 @@ void main() async {
     );
 
     // Inserta centro 1021 en la base de datos
-    await dbHelper.insertCentroMedico(centro1021);
+    await dbCRUD.insertCentroMedico(centro1021);
     print("CENTRO 1021 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1022
@@ -15334,7 +15334,7 @@ void main() async {
     );
 
     // Inserta centro 1022 en la base de datos
-    await dbHelper.insertCentroMedico(centro1022);
+    await dbCRUD.insertCentroMedico(centro1022);
     print("CENTRO 1022 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1023
@@ -15349,7 +15349,7 @@ void main() async {
     );
 
     // Inserta centro 1023 en la base de datos
-    await dbHelper.insertCentroMedico(centro1023);
+    await dbCRUD.insertCentroMedico(centro1023);
     print("CENTRO 1023 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1024
@@ -15364,7 +15364,7 @@ void main() async {
     );
 
     // Inserta centro 1024 en la base de datos
-    await dbHelper.insertCentroMedico(centro1024);
+    await dbCRUD.insertCentroMedico(centro1024);
     print("CENTRO 1024 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1025
@@ -15379,7 +15379,7 @@ void main() async {
     );
 
     // Inserta centro 1025 en la base de datos
-    await dbHelper.insertCentroMedico(centro1025);
+    await dbCRUD.insertCentroMedico(centro1025);
     print("CENTRO 1025 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1026
@@ -15394,7 +15394,7 @@ void main() async {
     );
 
     // Inserta centro 1026 en la base de datos
-    await dbHelper.insertCentroMedico(centro1026);
+    await dbCRUD.insertCentroMedico(centro1026);
     print("CENTRO 1026 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1027
@@ -15409,7 +15409,7 @@ void main() async {
     );
 
     // Inserta centro 1027 en la base de datos
-    await dbHelper.insertCentroMedico(centro1027);
+    await dbCRUD.insertCentroMedico(centro1027);
     print("CENTRO 1027 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1028
@@ -15424,7 +15424,7 @@ void main() async {
     );
 
     // Inserta centro 1028 en la base de datos
-    await dbHelper.insertCentroMedico(centro1028);
+    await dbCRUD.insertCentroMedico(centro1028);
     print("CENTRO 1028 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1029
@@ -15439,7 +15439,7 @@ void main() async {
     );
 
     // Inserta centro 1029 en la base de datos
-    await dbHelper.insertCentroMedico(centro1029);
+    await dbCRUD.insertCentroMedico(centro1029);
     print("CENTRO 1029 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1030
@@ -15454,7 +15454,7 @@ void main() async {
     );
 
     // Inserta centro 1030 en la base de datos
-    await dbHelper.insertCentroMedico(centro1030);
+    await dbCRUD.insertCentroMedico(centro1030);
     print("CENTRO 1030 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1031
@@ -15469,7 +15469,7 @@ void main() async {
     );
 
     // Inserta centro 1031 en la base de datos
-    await dbHelper.insertCentroMedico(centro1031);
+    await dbCRUD.insertCentroMedico(centro1031);
     print("CENTRO 1031 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1032
@@ -15484,7 +15484,7 @@ void main() async {
     );
 
     // Inserta centro 1032 en la base de datos
-    await dbHelper.insertCentroMedico(centro1032);
+    await dbCRUD.insertCentroMedico(centro1032);
     print("CENTRO 1032 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1033
@@ -15499,7 +15499,7 @@ void main() async {
     );
 
     // Inserta centro 1033 en la base de datos
-    await dbHelper.insertCentroMedico(centro1033);
+    await dbCRUD.insertCentroMedico(centro1033);
     print("CENTRO 1033 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1034
@@ -15514,7 +15514,7 @@ void main() async {
     );
 
     // Inserta centro 1034 en la base de datos
-    await dbHelper.insertCentroMedico(centro1034);
+    await dbCRUD.insertCentroMedico(centro1034);
     print("CENTRO 1034 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1035
@@ -15529,7 +15529,7 @@ void main() async {
     );
 
     // Inserta centro 1035 en la base de datos
-    await dbHelper.insertCentroMedico(centro1035);
+    await dbCRUD.insertCentroMedico(centro1035);
     print("CENTRO 1035 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1036
@@ -15544,7 +15544,7 @@ void main() async {
     );
 
     // Inserta centro 1036 en la base de datos
-    await dbHelper.insertCentroMedico(centro1036);
+    await dbCRUD.insertCentroMedico(centro1036);
     print("CENTRO 1036 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1037
@@ -15559,7 +15559,7 @@ void main() async {
     );
 
     // Inserta centro 1037 en la base de datos
-    await dbHelper.insertCentroMedico(centro1037);
+    await dbCRUD.insertCentroMedico(centro1037);
     print("CENTRO 1037 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1038
@@ -15574,7 +15574,7 @@ void main() async {
     );
 
     // Inserta centro 1038 en la base de datos
-    await dbHelper.insertCentroMedico(centro1038);
+    await dbCRUD.insertCentroMedico(centro1038);
     print("CENTRO 1038 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1039
@@ -15589,7 +15589,7 @@ void main() async {
     );
 
     // Inserta centro 1039 en la base de datos
-    await dbHelper.insertCentroMedico(centro1039);
+    await dbCRUD.insertCentroMedico(centro1039);
     print("CENTRO 1039 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1040
@@ -15604,7 +15604,7 @@ void main() async {
     );
 
     // Inserta centro 1040 en la base de datos
-    await dbHelper.insertCentroMedico(centro1040);
+    await dbCRUD.insertCentroMedico(centro1040);
     print("CENTRO 1040 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1041
@@ -15619,7 +15619,7 @@ void main() async {
     );
 
     // Inserta centro 1041 en la base de datos
-    await dbHelper.insertCentroMedico(centro1041);
+    await dbCRUD.insertCentroMedico(centro1041);
     print("CENTRO 1041 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1042
@@ -15634,7 +15634,7 @@ void main() async {
     );
 
     // Inserta centro 1042 en la base de datos
-    await dbHelper.insertCentroMedico(centro1042);
+    await dbCRUD.insertCentroMedico(centro1042);
     print("CENTRO 1042 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1043
@@ -15649,7 +15649,7 @@ void main() async {
     );
 
     // Inserta centro 1043 en la base de datos
-    await dbHelper.insertCentroMedico(centro1043);
+    await dbCRUD.insertCentroMedico(centro1043);
     print("CENTRO 1043 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1044
@@ -15664,7 +15664,7 @@ void main() async {
     );
 
     // Inserta centro 1044 en la base de datos
-    await dbHelper.insertCentroMedico(centro1044);
+    await dbCRUD.insertCentroMedico(centro1044);
     print("CENTRO 1044 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1045
@@ -15679,7 +15679,7 @@ void main() async {
     );
 
     // Inserta centro 1045 en la base de datos
-    await dbHelper.insertCentroMedico(centro1045);
+    await dbCRUD.insertCentroMedico(centro1045);
     print("CENTRO 1045 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1046
@@ -15694,7 +15694,7 @@ void main() async {
     );
 
     // Inserta centro 1046 en la base de datos
-    await dbHelper.insertCentroMedico(centro1046);
+    await dbCRUD.insertCentroMedico(centro1046);
     print("CENTRO 1046 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1047
@@ -15709,7 +15709,7 @@ void main() async {
     );
 
     // Inserta centro 1047 en la base de datos
-    await dbHelper.insertCentroMedico(centro1047);
+    await dbCRUD.insertCentroMedico(centro1047);
     print("CENTRO 1047 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1048
@@ -15724,7 +15724,7 @@ void main() async {
     );
 
     // Inserta centro 1048 en la base de datos
-    await dbHelper.insertCentroMedico(centro1048);
+    await dbCRUD.insertCentroMedico(centro1048);
     print("CENTRO 1048 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1049
@@ -15739,7 +15739,7 @@ void main() async {
     );
 
     // Inserta centro 1049 en la base de datos
-    await dbHelper.insertCentroMedico(centro1049);
+    await dbCRUD.insertCentroMedico(centro1049);
     print("CENTRO 1049 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1050
@@ -15754,7 +15754,7 @@ void main() async {
     );
 
     // Inserta centro 1050 en la base de datos
-    await dbHelper.insertCentroMedico(centro1050);
+    await dbCRUD.insertCentroMedico(centro1050);
     print("CENTRO 1050 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1051
@@ -15769,7 +15769,7 @@ void main() async {
     );
 
     // Inserta centro 1051 en la base de datos
-    await dbHelper.insertCentroMedico(centro1051);
+    await dbCRUD.insertCentroMedico(centro1051);
     print("CENTRO 1051 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1052
@@ -15784,7 +15784,7 @@ void main() async {
     );
 
     // Inserta centro 1052 en la base de datos
-    await dbHelper.insertCentroMedico(centro1052);
+    await dbCRUD.insertCentroMedico(centro1052);
     print("CENTRO 1052 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1053
@@ -15799,7 +15799,7 @@ void main() async {
     );
 
     // Inserta centro 1053 en la base de datos
-    await dbHelper.insertCentroMedico(centro1053);
+    await dbCRUD.insertCentroMedico(centro1053);
     print("CENTRO 1053 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1054
@@ -15814,7 +15814,7 @@ void main() async {
     );
 
     // Inserta centro 1054 en la base de datos
-    await dbHelper.insertCentroMedico(centro1054);
+    await dbCRUD.insertCentroMedico(centro1054);
     print("CENTRO 1054 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1055
@@ -15829,7 +15829,7 @@ void main() async {
     );
 
     // Inserta centro 1055 en la base de datos
-    await dbHelper.insertCentroMedico(centro1055);
+    await dbCRUD.insertCentroMedico(centro1055);
     print("CENTRO 1055 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1056
@@ -15844,7 +15844,7 @@ void main() async {
     );
 
     // Inserta centro 1056 en la base de datos
-    await dbHelper.insertCentroMedico(centro1056);
+    await dbCRUD.insertCentroMedico(centro1056);
     print("CENTRO 1056 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1057
@@ -15859,7 +15859,7 @@ void main() async {
     );
 
     // Inserta centro 1057 en la base de datos
-    await dbHelper.insertCentroMedico(centro1057);
+    await dbCRUD.insertCentroMedico(centro1057);
     print("CENTRO 1057 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1058
@@ -15874,7 +15874,7 @@ void main() async {
     );
 
     // Inserta centro 1058 en la base de datos
-    await dbHelper.insertCentroMedico(centro1058);
+    await dbCRUD.insertCentroMedico(centro1058);
     print("CENTRO 1058 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1059
@@ -15889,7 +15889,7 @@ void main() async {
     );
 
     // Inserta centro 1059 en la base de datos
-    await dbHelper.insertCentroMedico(centro1059);
+    await dbCRUD.insertCentroMedico(centro1059);
     print("CENTRO 1059 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1060
@@ -15904,7 +15904,7 @@ void main() async {
     );
 
     // Inserta centro 1060 en la base de datos
-    await dbHelper.insertCentroMedico(centro1060);
+    await dbCRUD.insertCentroMedico(centro1060);
     print("CENTRO 1060 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1061
@@ -15919,7 +15919,7 @@ void main() async {
     );
 
     // Inserta centro 1061 en la base de datos
-    await dbHelper.insertCentroMedico(centro1061);
+    await dbCRUD.insertCentroMedico(centro1061);
     print("CENTRO 1061 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1062
@@ -15934,7 +15934,7 @@ void main() async {
     );
 
     // Inserta centro 1062 en la base de datos
-    await dbHelper.insertCentroMedico(centro1062);
+    await dbCRUD.insertCentroMedico(centro1062);
     print("CENTRO 1062 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1063
@@ -15949,7 +15949,7 @@ void main() async {
     );
 
     // Inserta centro 1063 en la base de datos
-    await dbHelper.insertCentroMedico(centro1063);
+    await dbCRUD.insertCentroMedico(centro1063);
     print("CENTRO 1063 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1064
@@ -15964,7 +15964,7 @@ void main() async {
     );
 
     // Inserta centro 1064 en la base de datos
-    await dbHelper.insertCentroMedico(centro1064);
+    await dbCRUD.insertCentroMedico(centro1064);
     print("CENTRO 1064 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1065
@@ -15979,7 +15979,7 @@ void main() async {
     );
 
     // Inserta centro 1065 en la base de datos
-    await dbHelper.insertCentroMedico(centro1065);
+    await dbCRUD.insertCentroMedico(centro1065);
     print("CENTRO 1065 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1066
@@ -15994,7 +15994,7 @@ void main() async {
     );
 
     // Inserta centro 1066 en la base de datos
-    await dbHelper.insertCentroMedico(centro1066);
+    await dbCRUD.insertCentroMedico(centro1066);
     print("CENTRO 1066 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1067
@@ -16009,7 +16009,7 @@ void main() async {
     );
 
     // Inserta centro 1067 en la base de datos
-    await dbHelper.insertCentroMedico(centro1067);
+    await dbCRUD.insertCentroMedico(centro1067);
     print("CENTRO 1067 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1068
@@ -16024,7 +16024,7 @@ void main() async {
     );
 
     // Inserta centro 1068 en la base de datos
-    await dbHelper.insertCentroMedico(centro1068);
+    await dbCRUD.insertCentroMedico(centro1068);
     print("CENTRO 1068 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1069
@@ -16039,7 +16039,7 @@ void main() async {
     );
 
     // Inserta centro 1069 en la base de datos
-    await dbHelper.insertCentroMedico(centro1069);
+    await dbCRUD.insertCentroMedico(centro1069);
     print("CENTRO 1069 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1070
@@ -16054,7 +16054,7 @@ void main() async {
     );
 
     // Inserta centro 1070 en la base de datos
-    await dbHelper.insertCentroMedico(centro1070);
+    await dbCRUD.insertCentroMedico(centro1070);
     print("CENTRO 1070 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1071
@@ -16069,7 +16069,7 @@ void main() async {
     );
 
     // Inserta centro 1071 en la base de datos
-    await dbHelper.insertCentroMedico(centro1071);
+    await dbCRUD.insertCentroMedico(centro1071);
     print("CENTRO 1071 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1072
@@ -16084,7 +16084,7 @@ void main() async {
     );
 
     // Inserta centro 1072 en la base de datos
-    await dbHelper.insertCentroMedico(centro1072);
+    await dbCRUD.insertCentroMedico(centro1072);
     print("CENTRO 1072 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1073
@@ -16099,7 +16099,7 @@ void main() async {
     );
 
     // Inserta centro 1073 en la base de datos
-    await dbHelper.insertCentroMedico(centro1073);
+    await dbCRUD.insertCentroMedico(centro1073);
     print("CENTRO 1073 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1074
@@ -16114,7 +16114,7 @@ void main() async {
     );
 
     // Inserta centro 1074 en la base de datos
-    await dbHelper.insertCentroMedico(centro1074);
+    await dbCRUD.insertCentroMedico(centro1074);
     print("CENTRO 1074 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1075
@@ -16129,7 +16129,7 @@ void main() async {
     );
 
     // Inserta centro 1075 en la base de datos
-    await dbHelper.insertCentroMedico(centro1075);
+    await dbCRUD.insertCentroMedico(centro1075);
     print("CENTRO 1075 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1076
@@ -16144,7 +16144,7 @@ void main() async {
     );
 
     // Inserta centro 1076 en la base de datos
-    await dbHelper.insertCentroMedico(centro1076);
+    await dbCRUD.insertCentroMedico(centro1076);
     print("CENTRO 1076 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1077
@@ -16159,7 +16159,7 @@ void main() async {
     );
 
     // Inserta centro 1077 en la base de datos
-    await dbHelper.insertCentroMedico(centro1077);
+    await dbCRUD.insertCentroMedico(centro1077);
     print("CENTRO 1077 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1078
@@ -16174,7 +16174,7 @@ void main() async {
     );
 
     // Inserta centro 1078 en la base de datos
-    await dbHelper.insertCentroMedico(centro1078);
+    await dbCRUD.insertCentroMedico(centro1078);
     print("CENTRO 1078 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1079
@@ -16189,7 +16189,7 @@ void main() async {
     );
 
     // Inserta centro 1079 en la base de datos
-    await dbHelper.insertCentroMedico(centro1079);
+    await dbCRUD.insertCentroMedico(centro1079);
     print("CENTRO 1079 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1080
@@ -16204,7 +16204,7 @@ void main() async {
     );
 
     // Inserta centro 1080 en la base de datos
-    await dbHelper.insertCentroMedico(centro1080);
+    await dbCRUD.insertCentroMedico(centro1080);
     print("CENTRO 1080 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1081
@@ -16219,7 +16219,7 @@ void main() async {
     );
 
     // Inserta centro 1081 en la base de datos
-    await dbHelper.insertCentroMedico(centro1081);
+    await dbCRUD.insertCentroMedico(centro1081);
     print("CENTRO 1081 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1082
@@ -16234,7 +16234,7 @@ void main() async {
     );
 
     // Inserta centro 1082 en la base de datos
-    await dbHelper.insertCentroMedico(centro1082);
+    await dbCRUD.insertCentroMedico(centro1082);
     print("CENTRO 1082 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1083
@@ -16249,7 +16249,7 @@ void main() async {
     );
 
     // Inserta centro 1083 en la base de datos
-    await dbHelper.insertCentroMedico(centro1083);
+    await dbCRUD.insertCentroMedico(centro1083);
     print("CENTRO 1083 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1084
@@ -16264,7 +16264,7 @@ void main() async {
     );
 
     // Inserta centro 1084 en la base de datos
-    await dbHelper.insertCentroMedico(centro1084);
+    await dbCRUD.insertCentroMedico(centro1084);
     print("CENTRO 1084 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1085
@@ -16279,7 +16279,7 @@ void main() async {
     );
 
     // Inserta centro 1085 en la base de datos
-    await dbHelper.insertCentroMedico(centro1085);
+    await dbCRUD.insertCentroMedico(centro1085);
     print("CENTRO 1085 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1086
@@ -16294,7 +16294,7 @@ void main() async {
     );
 
     // Inserta centro 1086 en la base de datos
-    await dbHelper.insertCentroMedico(centro1086);
+    await dbCRUD.insertCentroMedico(centro1086);
     print("CENTRO 1086 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1087
@@ -16309,7 +16309,7 @@ void main() async {
     );
 
     // Inserta centro 1087 en la base de datos
-    await dbHelper.insertCentroMedico(centro1087);
+    await dbCRUD.insertCentroMedico(centro1087);
     print("CENTRO 1087 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1088
@@ -16324,7 +16324,7 @@ void main() async {
     );
 
     // Inserta centro 1088 en la base de datos
-    await dbHelper.insertCentroMedico(centro1088);
+    await dbCRUD.insertCentroMedico(centro1088);
     print("CENTRO 1088 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1089
@@ -16339,7 +16339,7 @@ void main() async {
     );
 
     // Inserta centro 1089 en la base de datos
-    await dbHelper.insertCentroMedico(centro1089);
+    await dbCRUD.insertCentroMedico(centro1089);
     print("CENTRO 1089 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1090
@@ -16354,7 +16354,7 @@ void main() async {
     );
 
     // Inserta centro 1090 en la base de datos
-    await dbHelper.insertCentroMedico(centro1090);
+    await dbCRUD.insertCentroMedico(centro1090);
     print("CENTRO 1090 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1091
@@ -16369,7 +16369,7 @@ void main() async {
     );
 
     // Inserta centro 1091 en la base de datos
-    await dbHelper.insertCentroMedico(centro1091);
+    await dbCRUD.insertCentroMedico(centro1091);
     print("CENTRO 1091 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1092
@@ -16384,7 +16384,7 @@ void main() async {
     );
 
     // Inserta centro 1092 en la base de datos
-    await dbHelper.insertCentroMedico(centro1092);
+    await dbCRUD.insertCentroMedico(centro1092);
     print("CENTRO 1092 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1093
@@ -16399,7 +16399,7 @@ void main() async {
     );
 
     // Inserta centro 1093 en la base de datos
-    await dbHelper.insertCentroMedico(centro1093);
+    await dbCRUD.insertCentroMedico(centro1093);
     print("CENTRO 1093 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1094
@@ -16414,7 +16414,7 @@ void main() async {
     );
 
     // Inserta centro 1094 en la base de datos
-    await dbHelper.insertCentroMedico(centro1094);
+    await dbCRUD.insertCentroMedico(centro1094);
     print("CENTRO 1094 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1095
@@ -16429,7 +16429,7 @@ void main() async {
     );
 
     // Inserta centro 1095 en la base de datos
-    await dbHelper.insertCentroMedico(centro1095);
+    await dbCRUD.insertCentroMedico(centro1095);
     print("CENTRO 1095 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1096
@@ -16444,7 +16444,7 @@ void main() async {
     );
 
     // Inserta centro 1096 en la base de datos
-    await dbHelper.insertCentroMedico(centro1096);
+    await dbCRUD.insertCentroMedico(centro1096);
     print("CENTRO 1096 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1097
@@ -16459,7 +16459,7 @@ void main() async {
     );
 
     // Inserta centro 1097 en la base de datos
-    await dbHelper.insertCentroMedico(centro1097);
+    await dbCRUD.insertCentroMedico(centro1097);
     print("CENTRO 1097 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1098
@@ -16474,7 +16474,7 @@ void main() async {
     );
 
     // Inserta centro 1098 en la base de datos
-    await dbHelper.insertCentroMedico(centro1098);
+    await dbCRUD.insertCentroMedico(centro1098);
     print("CENTRO 1098 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1099
@@ -16489,7 +16489,7 @@ void main() async {
     );
 
     // Inserta centro 1099 en la base de datos
-    await dbHelper.insertCentroMedico(centro1099);
+    await dbCRUD.insertCentroMedico(centro1099);
     print("CENTRO 1099 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1100
@@ -16504,7 +16504,7 @@ void main() async {
     );
 
     // Inserta centro 1100 en la base de datos
-    await dbHelper.insertCentroMedico(centro1100);
+    await dbCRUD.insertCentroMedico(centro1100);
     print("CENTRO 1100 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1101
@@ -16519,7 +16519,7 @@ void main() async {
     );
 
     // Inserta centro 1101 en la base de datos
-    await dbHelper.insertCentroMedico(centro1101);
+    await dbCRUD.insertCentroMedico(centro1101);
     print("CENTRO 1101 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1102
@@ -16534,7 +16534,7 @@ void main() async {
     );
 
     // Inserta centro 1102 en la base de datos
-    await dbHelper.insertCentroMedico(centro1102);
+    await dbCRUD.insertCentroMedico(centro1102);
     print("CENTRO 1102 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1103
@@ -16549,7 +16549,7 @@ void main() async {
     );
 
     // Inserta centro 1103 en la base de datos
-    await dbHelper.insertCentroMedico(centro1103);
+    await dbCRUD.insertCentroMedico(centro1103);
     print("CENTRO 1103 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1104
@@ -16564,7 +16564,7 @@ void main() async {
     );
 
     // Inserta centro 1104 en la base de datos
-    await dbHelper.insertCentroMedico(centro1104);
+    await dbCRUD.insertCentroMedico(centro1104);
     print("CENTRO 1104 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1105
@@ -16579,7 +16579,7 @@ void main() async {
     );
 
     // Inserta centro 1105 en la base de datos
-    await dbHelper.insertCentroMedico(centro1105);
+    await dbCRUD.insertCentroMedico(centro1105);
     print("CENTRO 1105 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1106
@@ -16594,7 +16594,7 @@ void main() async {
     );
 
     // Inserta centro 1106 en la base de datos
-    await dbHelper.insertCentroMedico(centro1106);
+    await dbCRUD.insertCentroMedico(centro1106);
     print("CENTRO 1106 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1107
@@ -16609,7 +16609,7 @@ void main() async {
     );
 
     // Inserta centro 1107 en la base de datos
-    await dbHelper.insertCentroMedico(centro1107);
+    await dbCRUD.insertCentroMedico(centro1107);
     print("CENTRO 1107 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1108
@@ -16624,7 +16624,7 @@ void main() async {
     );
 
     // Inserta centro 1108 en la base de datos
-    await dbHelper.insertCentroMedico(centro1108);
+    await dbCRUD.insertCentroMedico(centro1108);
     print("CENTRO 1108 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1109
@@ -16639,7 +16639,7 @@ void main() async {
     );
 
     // Inserta centro 1109 en la base de datos
-    await dbHelper.insertCentroMedico(centro1109);
+    await dbCRUD.insertCentroMedico(centro1109);
     print("CENTRO 1109 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1110
@@ -16654,7 +16654,7 @@ void main() async {
     );
 
     // Inserta centro 1110 en la base de datos
-    await dbHelper.insertCentroMedico(centro1110);
+    await dbCRUD.insertCentroMedico(centro1110);
     print("CENTRO 1110 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1111
@@ -16669,7 +16669,7 @@ void main() async {
     );
 
     // Inserta centro 1111 en la base de datos
-    await dbHelper.insertCentroMedico(centro1111);
+    await dbCRUD.insertCentroMedico(centro1111);
     print("CENTRO 1111 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1112
@@ -16684,7 +16684,7 @@ void main() async {
     );
 
     // Inserta centro 1112 en la base de datos
-    await dbHelper.insertCentroMedico(centro1112);
+    await dbCRUD.insertCentroMedico(centro1112);
     print("CENTRO 1112 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1113
@@ -16699,7 +16699,7 @@ void main() async {
     );
 
     // Inserta centro 1113 en la base de datos
-    await dbHelper.insertCentroMedico(centro1113);
+    await dbCRUD.insertCentroMedico(centro1113);
     print("CENTRO 1113 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1114
@@ -16714,7 +16714,7 @@ void main() async {
     );
 
     // Inserta centro 1114 en la base de datos
-    await dbHelper.insertCentroMedico(centro1114);
+    await dbCRUD.insertCentroMedico(centro1114);
     print("CENTRO 1114 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1115
@@ -16729,7 +16729,7 @@ void main() async {
     );
 
     // Inserta centro 1115 en la base de datos
-    await dbHelper.insertCentroMedico(centro1115);
+    await dbCRUD.insertCentroMedico(centro1115);
     print("CENTRO 1115 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1116
@@ -16744,7 +16744,7 @@ void main() async {
     );
 
     // Inserta centro 1116 en la base de datos
-    await dbHelper.insertCentroMedico(centro1116);
+    await dbCRUD.insertCentroMedico(centro1116);
     print("CENTRO 1116 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1117
@@ -16759,7 +16759,7 @@ void main() async {
     );
 
     // Inserta centro 1117 en la base de datos
-    await dbHelper.insertCentroMedico(centro1117);
+    await dbCRUD.insertCentroMedico(centro1117);
     print("CENTRO 1117 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1118
@@ -16774,7 +16774,7 @@ void main() async {
     );
 
     // Inserta centro 1118 en la base de datos
-    await dbHelper.insertCentroMedico(centro1118);
+    await dbCRUD.insertCentroMedico(centro1118);
     print("CENTRO 1118 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1119
@@ -16789,7 +16789,7 @@ void main() async {
     );
 
     // Inserta centro 1119 en la base de datos
-    await dbHelper.insertCentroMedico(centro1119);
+    await dbCRUD.insertCentroMedico(centro1119);
     print("CENTRO 1119 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1120
@@ -16804,7 +16804,7 @@ void main() async {
     );
 
     // Inserta centro 1120 en la base de datos
-    await dbHelper.insertCentroMedico(centro1120);
+    await dbCRUD.insertCentroMedico(centro1120);
     print("CENTRO 1120 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1121
@@ -16819,7 +16819,7 @@ void main() async {
     );
 
     // Inserta centro 1121 en la base de datos
-    await dbHelper.insertCentroMedico(centro1121);
+    await dbCRUD.insertCentroMedico(centro1121);
     print("CENTRO 1121 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1122
@@ -16834,7 +16834,7 @@ void main() async {
     );
 
     // Inserta centro 1122 en la base de datos
-    await dbHelper.insertCentroMedico(centro1122);
+    await dbCRUD.insertCentroMedico(centro1122);
     print("CENTRO 1122 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1123
@@ -16849,7 +16849,7 @@ void main() async {
     );
 
     // Inserta centro 1123 en la base de datos
-    await dbHelper.insertCentroMedico(centro1123);
+    await dbCRUD.insertCentroMedico(centro1123);
     print("CENTRO 1123 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1124
@@ -16864,7 +16864,7 @@ void main() async {
     );
 
     // Inserta centro 1124 en la base de datos
-    await dbHelper.insertCentroMedico(centro1124);
+    await dbCRUD.insertCentroMedico(centro1124);
     print("CENTRO 1124 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1125
@@ -16879,7 +16879,7 @@ void main() async {
     );
 
     // Inserta centro 1125 en la base de datos
-    await dbHelper.insertCentroMedico(centro1125);
+    await dbCRUD.insertCentroMedico(centro1125);
     print("CENTRO 1125 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1126
@@ -16894,7 +16894,7 @@ void main() async {
     );
 
     // Inserta centro 1126 en la base de datos
-    await dbHelper.insertCentroMedico(centro1126);
+    await dbCRUD.insertCentroMedico(centro1126);
     print("CENTRO 1126 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1127
@@ -16909,7 +16909,7 @@ void main() async {
     );
 
     // Inserta centro 1127 en la base de datos
-    await dbHelper.insertCentroMedico(centro1127);
+    await dbCRUD.insertCentroMedico(centro1127);
     print("CENTRO 1127 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1128
@@ -16924,7 +16924,7 @@ void main() async {
     );
 
     // Inserta centro 1128 en la base de datos
-    await dbHelper.insertCentroMedico(centro1128);
+    await dbCRUD.insertCentroMedico(centro1128);
     print("CENTRO 1128 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1129
@@ -16939,7 +16939,7 @@ void main() async {
     );
 
     // Inserta centro 1129 en la base de datos
-    await dbHelper.insertCentroMedico(centro1129);
+    await dbCRUD.insertCentroMedico(centro1129);
     print("CENTRO 1129 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1130
@@ -16954,7 +16954,7 @@ void main() async {
     );
 
     // Inserta centro 1130 en la base de datos
-    await dbHelper.insertCentroMedico(centro1130);
+    await dbCRUD.insertCentroMedico(centro1130);
     print("CENTRO 1130 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1131
@@ -16969,7 +16969,7 @@ void main() async {
     );
 
     // Inserta centro 1131 en la base de datos
-    await dbHelper.insertCentroMedico(centro1131);
+    await dbCRUD.insertCentroMedico(centro1131);
     print("CENTRO 1131 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1132
@@ -16984,7 +16984,7 @@ void main() async {
     );
 
     // Inserta centro 1132 en la base de datos
-    await dbHelper.insertCentroMedico(centro1132);
+    await dbCRUD.insertCentroMedico(centro1132);
     print("CENTRO 1132 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1133
@@ -16999,7 +16999,7 @@ void main() async {
     );
 
     // Inserta centro 1133 en la base de datos
-    await dbHelper.insertCentroMedico(centro1133);
+    await dbCRUD.insertCentroMedico(centro1133);
     print("CENTRO 1133 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1134
@@ -17014,7 +17014,7 @@ void main() async {
     );
 
     // Inserta centro 1134 en la base de datos
-    await dbHelper.insertCentroMedico(centro1134);
+    await dbCRUD.insertCentroMedico(centro1134);
     print("CENTRO 1134 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1135
@@ -17029,7 +17029,7 @@ void main() async {
     );
 
     // Inserta centro 1135 en la base de datos
-    await dbHelper.insertCentroMedico(centro1135);
+    await dbCRUD.insertCentroMedico(centro1135);
     print("CENTRO 1135 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1136
@@ -17044,7 +17044,7 @@ void main() async {
     );
 
     // Inserta centro 1136 en la base de datos
-    await dbHelper.insertCentroMedico(centro1136);
+    await dbCRUD.insertCentroMedico(centro1136);
     print("CENTRO 1136 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1137
@@ -17059,7 +17059,7 @@ void main() async {
     );
 
     // Inserta centro 1137 en la base de datos
-    await dbHelper.insertCentroMedico(centro1137);
+    await dbCRUD.insertCentroMedico(centro1137);
     print("CENTRO 1137 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1138
@@ -17074,7 +17074,7 @@ void main() async {
     );
 
     // Inserta centro 1138 en la base de datos
-    await dbHelper.insertCentroMedico(centro1138);
+    await dbCRUD.insertCentroMedico(centro1138);
     print("CENTRO 1138 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1139
@@ -17089,7 +17089,7 @@ void main() async {
     );
 
     // Inserta centro 1139 en la base de datos
-    await dbHelper.insertCentroMedico(centro1139);
+    await dbCRUD.insertCentroMedico(centro1139);
     print("CENTRO 1139 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1140
@@ -17104,7 +17104,7 @@ void main() async {
     );
 
     // Inserta centro 1140 en la base de datos
-    await dbHelper.insertCentroMedico(centro1140);
+    await dbCRUD.insertCentroMedico(centro1140);
     print("CENTRO 1140 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1141
@@ -17119,7 +17119,7 @@ void main() async {
     );
 
     // Inserta centro 1141 en la base de datos
-    await dbHelper.insertCentroMedico(centro1141);
+    await dbCRUD.insertCentroMedico(centro1141);
     print("CENTRO 1141 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1142
@@ -17134,7 +17134,7 @@ void main() async {
     );
 
     // Inserta centro 1142 en la base de datos
-    await dbHelper.insertCentroMedico(centro1142);
+    await dbCRUD.insertCentroMedico(centro1142);
     print("CENTRO 1142 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1143
@@ -17149,7 +17149,7 @@ void main() async {
     );
 
     // Inserta centro 1143 en la base de datos
-    await dbHelper.insertCentroMedico(centro1143);
+    await dbCRUD.insertCentroMedico(centro1143);
     print("CENTRO 1143 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1144
@@ -17164,7 +17164,7 @@ void main() async {
     );
 
     // Inserta centro 1144 en la base de datos
-    await dbHelper.insertCentroMedico(centro1144);
+    await dbCRUD.insertCentroMedico(centro1144);
     print("CENTRO 1144 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1145
@@ -17179,7 +17179,7 @@ void main() async {
     );
 
     // Inserta centro 1145 en la base de datos
-    await dbHelper.insertCentroMedico(centro1145);
+    await dbCRUD.insertCentroMedico(centro1145);
     print("CENTRO 1145 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1146
@@ -17194,7 +17194,7 @@ void main() async {
     );
 
     // Inserta centro 1146 en la base de datos
-    await dbHelper.insertCentroMedico(centro1146);
+    await dbCRUD.insertCentroMedico(centro1146);
     print("CENTRO 1146 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1147
@@ -17209,7 +17209,7 @@ void main() async {
     );
 
     // Inserta centro 1147 en la base de datos
-    await dbHelper.insertCentroMedico(centro1147);
+    await dbCRUD.insertCentroMedico(centro1147);
     print("CENTRO 1147 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1148
@@ -17224,7 +17224,7 @@ void main() async {
     );
 
     // Inserta centro 1148 en la base de datos
-    await dbHelper.insertCentroMedico(centro1148);
+    await dbCRUD.insertCentroMedico(centro1148);
     print("CENTRO 1148 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1149
@@ -17239,7 +17239,7 @@ void main() async {
     );
 
     // Inserta centro 1149 en la base de datos
-    await dbHelper.insertCentroMedico(centro1149);
+    await dbCRUD.insertCentroMedico(centro1149);
     print("CENTRO 1149 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1150
@@ -17254,7 +17254,7 @@ void main() async {
     );
 
     // Inserta centro 1150 en la base de datos
-    await dbHelper.insertCentroMedico(centro1150);
+    await dbCRUD.insertCentroMedico(centro1150);
     print("CENTRO 1150 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1151
@@ -17269,7 +17269,7 @@ void main() async {
     );
 
     // Inserta centro 1151 en la base de datos
-    await dbHelper.insertCentroMedico(centro1151);
+    await dbCRUD.insertCentroMedico(centro1151);
     print("CENTRO 1151 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1152
@@ -17284,7 +17284,7 @@ void main() async {
     );
 
     // Inserta centro 1152 en la base de datos
-    await dbHelper.insertCentroMedico(centro1152);
+    await dbCRUD.insertCentroMedico(centro1152);
     print("CENTRO 1152 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1153
@@ -17299,7 +17299,7 @@ void main() async {
     );
 
     // Inserta centro 1153 en la base de datos
-    await dbHelper.insertCentroMedico(centro1153);
+    await dbCRUD.insertCentroMedico(centro1153);
     print("CENTRO 1153 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1154
@@ -17314,7 +17314,7 @@ void main() async {
     );
 
     // Inserta centro 1154 en la base de datos
-    await dbHelper.insertCentroMedico(centro1154);
+    await dbCRUD.insertCentroMedico(centro1154);
     print("CENTRO 1154 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1155
@@ -17329,7 +17329,7 @@ void main() async {
     );
 
     // Inserta centro 1155 en la base de datos
-    await dbHelper.insertCentroMedico(centro1155);
+    await dbCRUD.insertCentroMedico(centro1155);
     print("CENTRO 1155 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1156
@@ -17344,7 +17344,7 @@ void main() async {
     );
 
     // Inserta centro 1156 en la base de datos
-    await dbHelper.insertCentroMedico(centro1156);
+    await dbCRUD.insertCentroMedico(centro1156);
     print("CENTRO 1156 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1157
@@ -17359,7 +17359,7 @@ void main() async {
     );
 
     // Inserta centro 1157 en la base de datos
-    await dbHelper.insertCentroMedico(centro1157);
+    await dbCRUD.insertCentroMedico(centro1157);
     print("CENTRO 1157 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1158
@@ -17374,7 +17374,7 @@ void main() async {
     );
 
     // Inserta centro 1158 en la base de datos
-    await dbHelper.insertCentroMedico(centro1158);
+    await dbCRUD.insertCentroMedico(centro1158);
     print("CENTRO 1158 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1159
@@ -17389,7 +17389,7 @@ void main() async {
     );
 
     // Inserta centro 1159 en la base de datos
-    await dbHelper.insertCentroMedico(centro1159);
+    await dbCRUD.insertCentroMedico(centro1159);
     print("CENTRO 1159 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1160
@@ -17404,7 +17404,7 @@ void main() async {
     );
 
     // Inserta centro 1160 en la base de datos
-    await dbHelper.insertCentroMedico(centro1160);
+    await dbCRUD.insertCentroMedico(centro1160);
     print("CENTRO 1160 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1161
@@ -17419,7 +17419,7 @@ void main() async {
     );
 
     // Inserta centro 1161 en la base de datos
-    await dbHelper.insertCentroMedico(centro1161);
+    await dbCRUD.insertCentroMedico(centro1161);
     print("CENTRO 1161 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1162
@@ -17434,7 +17434,7 @@ void main() async {
     );
 
     // Inserta centro 1162 en la base de datos
-    await dbHelper.insertCentroMedico(centro1162);
+    await dbCRUD.insertCentroMedico(centro1162);
     print("CENTRO 1162 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1163
@@ -17449,7 +17449,7 @@ void main() async {
     );
 
     // Inserta centro 1163 en la base de datos
-    await dbHelper.insertCentroMedico(centro1163);
+    await dbCRUD.insertCentroMedico(centro1163);
     print("CENTRO 1163 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1164
@@ -17464,7 +17464,7 @@ void main() async {
     );
 
     // Inserta centro 1164 en la base de datos
-    await dbHelper.insertCentroMedico(centro1164);
+    await dbCRUD.insertCentroMedico(centro1164);
     print("CENTRO 1164 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1165
@@ -17479,7 +17479,7 @@ void main() async {
     );
 
     // Inserta centro 1165 en la base de datos
-    await dbHelper.insertCentroMedico(centro1165);
+    await dbCRUD.insertCentroMedico(centro1165);
     print("CENTRO 1165 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1166
@@ -17494,7 +17494,7 @@ void main() async {
     );
 
     // Inserta centro 1166 en la base de datos
-    await dbHelper.insertCentroMedico(centro1166);
+    await dbCRUD.insertCentroMedico(centro1166);
     print("CENTRO 1166 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1167
@@ -17509,7 +17509,7 @@ void main() async {
     );
 
     // Inserta centro 1167 en la base de datos
-    await dbHelper.insertCentroMedico(centro1167);
+    await dbCRUD.insertCentroMedico(centro1167);
     print("CENTRO 1167 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1168
@@ -17524,7 +17524,7 @@ void main() async {
     );
 
     // Inserta centro 1168 en la base de datos
-    await dbHelper.insertCentroMedico(centro1168);
+    await dbCRUD.insertCentroMedico(centro1168);
     print("CENTRO 1168 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1169
@@ -17539,7 +17539,7 @@ void main() async {
     );
 
     // Inserta centro 1169 en la base de datos
-    await dbHelper.insertCentroMedico(centro1169);
+    await dbCRUD.insertCentroMedico(centro1169);
     print("CENTRO 1169 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1170
@@ -17554,7 +17554,7 @@ void main() async {
     );
 
     // Inserta centro 1170 en la base de datos
-    await dbHelper.insertCentroMedico(centro1170);
+    await dbCRUD.insertCentroMedico(centro1170);
     print("CENTRO 1170 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1171
@@ -17569,7 +17569,7 @@ void main() async {
     );
 
     // Inserta centro 1171 en la base de datos
-    await dbHelper.insertCentroMedico(centro1171);
+    await dbCRUD.insertCentroMedico(centro1171);
     print("CENTRO 1171 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1172
@@ -17584,7 +17584,7 @@ void main() async {
     );
 
     // Inserta centro 1172 en la base de datos
-    await dbHelper.insertCentroMedico(centro1172);
+    await dbCRUD.insertCentroMedico(centro1172);
     print("CENTRO 1172 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1173
@@ -17599,7 +17599,7 @@ void main() async {
     );
 
     // Inserta centro 1173 en la base de datos
-    await dbHelper.insertCentroMedico(centro1173);
+    await dbCRUD.insertCentroMedico(centro1173);
     print("CENTRO 1173 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1174
@@ -17614,7 +17614,7 @@ void main() async {
     );
 
     // Inserta centro 1174 en la base de datos
-    await dbHelper.insertCentroMedico(centro1174);
+    await dbCRUD.insertCentroMedico(centro1174);
     print("CENTRO 1174 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1175
@@ -17629,7 +17629,7 @@ void main() async {
     );
 
     // Inserta centro 1175 en la base de datos
-    await dbHelper.insertCentroMedico(centro1175);
+    await dbCRUD.insertCentroMedico(centro1175);
     print("CENTRO 1175 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1176
@@ -17644,7 +17644,7 @@ void main() async {
     );
 
     // Inserta centro 1176 en la base de datos
-    await dbHelper.insertCentroMedico(centro1176);
+    await dbCRUD.insertCentroMedico(centro1176);
     print("CENTRO 1176 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1177
@@ -17659,7 +17659,7 @@ void main() async {
     );
 
     // Inserta centro 1177 en la base de datos
-    await dbHelper.insertCentroMedico(centro1177);
+    await dbCRUD.insertCentroMedico(centro1177);
     print("CENTRO 1177 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1178
@@ -17674,7 +17674,7 @@ void main() async {
     );
 
     // Inserta centro 1178 en la base de datos
-    await dbHelper.insertCentroMedico(centro1178);
+    await dbCRUD.insertCentroMedico(centro1178);
     print("CENTRO 1178 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1179
@@ -17689,7 +17689,7 @@ void main() async {
     );
 
     // Inserta centro 1179 en la base de datos
-    await dbHelper.insertCentroMedico(centro1179);
+    await dbCRUD.insertCentroMedico(centro1179);
     print("CENTRO 1179 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1180
@@ -17704,7 +17704,7 @@ void main() async {
     );
 
     // Inserta centro 1180 en la base de datos
-    await dbHelper.insertCentroMedico(centro1180);
+    await dbCRUD.insertCentroMedico(centro1180);
     print("CENTRO 1180 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1181
@@ -17719,7 +17719,7 @@ void main() async {
     );
 
     // Inserta centro 1181 en la base de datos
-    await dbHelper.insertCentroMedico(centro1181);
+    await dbCRUD.insertCentroMedico(centro1181);
     print("CENTRO 1181 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1182
@@ -17734,7 +17734,7 @@ void main() async {
     );
 
     // Inserta centro 1182 en la base de datos
-    await dbHelper.insertCentroMedico(centro1182);
+    await dbCRUD.insertCentroMedico(centro1182);
     print("CENTRO 1182 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1183
@@ -17749,7 +17749,7 @@ void main() async {
     );
 
     // Inserta centro 1183 en la base de datos
-    await dbHelper.insertCentroMedico(centro1183);
+    await dbCRUD.insertCentroMedico(centro1183);
     print("CENTRO 1183 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1184
@@ -17764,7 +17764,7 @@ void main() async {
     );
 
     // Inserta centro 1184 en la base de datos
-    await dbHelper.insertCentroMedico(centro1184);
+    await dbCRUD.insertCentroMedico(centro1184);
     print("CENTRO 1184 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1185
@@ -17779,7 +17779,7 @@ void main() async {
     );
 
     // Inserta centro 1185 en la base de datos
-    await dbHelper.insertCentroMedico(centro1185);
+    await dbCRUD.insertCentroMedico(centro1185);
     print("CENTRO 1185 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1186
@@ -17794,7 +17794,7 @@ void main() async {
     );
 
     // Inserta centro 1186 en la base de datos
-    await dbHelper.insertCentroMedico(centro1186);
+    await dbCRUD.insertCentroMedico(centro1186);
     print("CENTRO 1186 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1187
@@ -17809,7 +17809,7 @@ void main() async {
     );
 
     // Inserta centro 1187 en la base de datos
-    await dbHelper.insertCentroMedico(centro1187);
+    await dbCRUD.insertCentroMedico(centro1187);
     print("CENTRO 1187 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1188
@@ -17824,7 +17824,7 @@ void main() async {
     );
 
     // Inserta centro 1188 en la base de datos
-    await dbHelper.insertCentroMedico(centro1188);
+    await dbCRUD.insertCentroMedico(centro1188);
     print("CENTRO 1188 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1189
@@ -17839,7 +17839,7 @@ void main() async {
     );
 
     // Inserta centro 1189 en la base de datos
-    await dbHelper.insertCentroMedico(centro1189);
+    await dbCRUD.insertCentroMedico(centro1189);
     print("CENTRO 1189 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1190
@@ -17854,7 +17854,7 @@ void main() async {
     );
 
     // Inserta centro 1190 en la base de datos
-    await dbHelper.insertCentroMedico(centro1190);
+    await dbCRUD.insertCentroMedico(centro1190);
     print("CENTRO 1190 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1191
@@ -17869,7 +17869,7 @@ void main() async {
     );
 
     // Inserta centro 1191 en la base de datos
-    await dbHelper.insertCentroMedico(centro1191);
+    await dbCRUD.insertCentroMedico(centro1191);
     print("CENTRO 1191 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1192
@@ -17884,7 +17884,7 @@ void main() async {
     );
 
     // Inserta centro 1192 en la base de datos
-    await dbHelper.insertCentroMedico(centro1192);
+    await dbCRUD.insertCentroMedico(centro1192);
     print("CENTRO 1192 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1193
@@ -17899,7 +17899,7 @@ void main() async {
     );
 
     // Inserta centro 1193 en la base de datos
-    await dbHelper.insertCentroMedico(centro1193);
+    await dbCRUD.insertCentroMedico(centro1193);
     print("CENTRO 1193 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1194
@@ -17914,7 +17914,7 @@ void main() async {
     );
 
     // Inserta centro 1194 en la base de datos
-    await dbHelper.insertCentroMedico(centro1194);
+    await dbCRUD.insertCentroMedico(centro1194);
     print("CENTRO 1194 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1195
@@ -17929,7 +17929,7 @@ void main() async {
     );
 
     // Inserta centro 1195 en la base de datos
-    await dbHelper.insertCentroMedico(centro1195);
+    await dbCRUD.insertCentroMedico(centro1195);
     print("CENTRO 1195 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1196
@@ -17944,7 +17944,7 @@ void main() async {
     );
 
     // Inserta centro 1196 en la base de datos
-    await dbHelper.insertCentroMedico(centro1196);
+    await dbCRUD.insertCentroMedico(centro1196);
     print("CENTRO 1196 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1197
@@ -17959,7 +17959,7 @@ void main() async {
     );
 
     // Inserta centro 1197 en la base de datos
-    await dbHelper.insertCentroMedico(centro1197);
+    await dbCRUD.insertCentroMedico(centro1197);
     print("CENTRO 1197 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1198
@@ -17974,7 +17974,7 @@ void main() async {
     );
 
     // Inserta centro 1198 en la base de datos
-    await dbHelper.insertCentroMedico(centro1198);
+    await dbCRUD.insertCentroMedico(centro1198);
     print("CENTRO 1198 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1199
@@ -17989,7 +17989,7 @@ void main() async {
     );
 
     // Inserta centro 1199 en la base de datos
-    await dbHelper.insertCentroMedico(centro1199);
+    await dbCRUD.insertCentroMedico(centro1199);
     print("CENTRO 1199 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1200
@@ -18004,7 +18004,7 @@ void main() async {
     );
 
     // Inserta centro 1200 en la base de datos
-    await dbHelper.insertCentroMedico(centro1200);
+    await dbCRUD.insertCentroMedico(centro1200);
     print("CENTRO 1200 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1201
@@ -18019,7 +18019,7 @@ void main() async {
     );
 
     // Inserta centro 1201 en la base de datos
-    await dbHelper.insertCentroMedico(centro1201);
+    await dbCRUD.insertCentroMedico(centro1201);
     print("CENTRO 1201 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1202
@@ -18034,7 +18034,7 @@ void main() async {
     );
 
     // Inserta centro 1202 en la base de datos
-    await dbHelper.insertCentroMedico(centro1202);
+    await dbCRUD.insertCentroMedico(centro1202);
     print("CENTRO 1202 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1203
@@ -18049,7 +18049,7 @@ void main() async {
     );
 
     // Inserta centro 1203 en la base de datos
-    await dbHelper.insertCentroMedico(centro1203);
+    await dbCRUD.insertCentroMedico(centro1203);
     print("CENTRO 1203 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1204
@@ -18064,7 +18064,7 @@ void main() async {
     );
 
     // Inserta centro 1204 en la base de datos
-    await dbHelper.insertCentroMedico(centro1204);
+    await dbCRUD.insertCentroMedico(centro1204);
     print("CENTRO 1204 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1205
@@ -18079,7 +18079,7 @@ void main() async {
     );
 
     // Inserta centro 1205 en la base de datos
-    await dbHelper.insertCentroMedico(centro1205);
+    await dbCRUD.insertCentroMedico(centro1205);
     print("CENTRO 1205 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1206
@@ -18094,7 +18094,7 @@ void main() async {
     );
 
     // Inserta centro 1206 en la base de datos
-    await dbHelper.insertCentroMedico(centro1206);
+    await dbCRUD.insertCentroMedico(centro1206);
     print("CENTRO 1206 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1207
@@ -18109,7 +18109,7 @@ void main() async {
     );
 
     // Inserta centro 1207 en la base de datos
-    await dbHelper.insertCentroMedico(centro1207);
+    await dbCRUD.insertCentroMedico(centro1207);
     print("CENTRO 1207 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1208
@@ -18124,7 +18124,7 @@ void main() async {
     );
 
     // Inserta centro 1208 en la base de datos
-    await dbHelper.insertCentroMedico(centro1208);
+    await dbCRUD.insertCentroMedico(centro1208);
     print("CENTRO 1208 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1209
@@ -18139,7 +18139,7 @@ void main() async {
     );
 
     // Inserta centro 1209 en la base de datos
-    await dbHelper.insertCentroMedico(centro1209);
+    await dbCRUD.insertCentroMedico(centro1209);
     print("CENTRO 1209 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1210
@@ -18154,7 +18154,7 @@ void main() async {
     );
 
     // Inserta centro 1210 en la base de datos
-    await dbHelper.insertCentroMedico(centro1210);
+    await dbCRUD.insertCentroMedico(centro1210);
     print("CENTRO 1210 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1211
@@ -18169,7 +18169,7 @@ void main() async {
     );
 
     // Inserta centro 1211 en la base de datos
-    await dbHelper.insertCentroMedico(centro1211);
+    await dbCRUD.insertCentroMedico(centro1211);
     print("CENTRO 1211 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1212
@@ -18184,7 +18184,7 @@ void main() async {
     );
 
     // Inserta centro 1212 en la base de datos
-    await dbHelper.insertCentroMedico(centro1212);
+    await dbCRUD.insertCentroMedico(centro1212);
     print("CENTRO 1212 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1213
@@ -18199,7 +18199,7 @@ void main() async {
     );
 
     // Inserta centro 1213 en la base de datos
-    await dbHelper.insertCentroMedico(centro1213);
+    await dbCRUD.insertCentroMedico(centro1213);
     print("CENTRO 1213 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1214
@@ -18214,7 +18214,7 @@ void main() async {
     );
 
     // Inserta centro 1214 en la base de datos
-    await dbHelper.insertCentroMedico(centro1214);
+    await dbCRUD.insertCentroMedico(centro1214);
     print("CENTRO 1214 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1215
@@ -18229,7 +18229,7 @@ void main() async {
     );
 
     // Inserta centro 1215 en la base de datos
-    await dbHelper.insertCentroMedico(centro1215);
+    await dbCRUD.insertCentroMedico(centro1215);
     print("CENTRO 1215 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1216
@@ -18244,7 +18244,7 @@ void main() async {
     );
 
     // Inserta centro 1216 en la base de datos
-    await dbHelper.insertCentroMedico(centro1216);
+    await dbCRUD.insertCentroMedico(centro1216);
     print("CENTRO 1216 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1217
@@ -18259,7 +18259,7 @@ void main() async {
     );
 
     // Inserta centro 1217 en la base de datos
-    await dbHelper.insertCentroMedico(centro1217);
+    await dbCRUD.insertCentroMedico(centro1217);
     print("CENTRO 1217 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1218
@@ -18274,7 +18274,7 @@ void main() async {
     );
 
     // Inserta centro 1218 en la base de datos
-    await dbHelper.insertCentroMedico(centro1218);
+    await dbCRUD.insertCentroMedico(centro1218);
     print("CENTRO 1218 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1219
@@ -18289,7 +18289,7 @@ void main() async {
     );
 
     // Inserta centro 1219 en la base de datos
-    await dbHelper.insertCentroMedico(centro1219);
+    await dbCRUD.insertCentroMedico(centro1219);
     print("CENTRO 1219 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1220
@@ -18304,7 +18304,7 @@ void main() async {
     );
 
     // Inserta centro 1220 en la base de datos
-    await dbHelper.insertCentroMedico(centro1220);
+    await dbCRUD.insertCentroMedico(centro1220);
     print("CENTRO 1220 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1221
@@ -18319,7 +18319,7 @@ void main() async {
     );
 
     // Inserta centro 1221 en la base de datos
-    await dbHelper.insertCentroMedico(centro1221);
+    await dbCRUD.insertCentroMedico(centro1221);
     print("CENTRO 1221 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1222
@@ -18334,7 +18334,7 @@ void main() async {
     );
 
     // Inserta centro 1222 en la base de datos
-    await dbHelper.insertCentroMedico(centro1222);
+    await dbCRUD.insertCentroMedico(centro1222);
     print("CENTRO 1222 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1223
@@ -18349,7 +18349,7 @@ void main() async {
     );
 
     // Inserta centro 1223 en la base de datos
-    await dbHelper.insertCentroMedico(centro1223);
+    await dbCRUD.insertCentroMedico(centro1223);
     print("CENTRO 1223 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1224
@@ -18364,7 +18364,7 @@ void main() async {
     );
 
     // Inserta centro 1224 en la base de datos
-    await dbHelper.insertCentroMedico(centro1224);
+    await dbCRUD.insertCentroMedico(centro1224);
     print("CENTRO 1224 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1225
@@ -18379,7 +18379,7 @@ void main() async {
     );
 
     // Inserta centro 1225 en la base de datos
-    await dbHelper.insertCentroMedico(centro1225);
+    await dbCRUD.insertCentroMedico(centro1225);
     print("CENTRO 1225 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1226
@@ -18394,7 +18394,7 @@ void main() async {
     );
 
     // Inserta centro 1226 en la base de datos
-    await dbHelper.insertCentroMedico(centro1226);
+    await dbCRUD.insertCentroMedico(centro1226);
     print("CENTRO 1226 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1227
@@ -18409,7 +18409,7 @@ void main() async {
     );
 
     // Inserta centro 1227 en la base de datos
-    await dbHelper.insertCentroMedico(centro1227);
+    await dbCRUD.insertCentroMedico(centro1227);
     print("CENTRO 1227 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1228
@@ -18424,7 +18424,7 @@ void main() async {
     );
 
     // Inserta centro 1228 en la base de datos
-    await dbHelper.insertCentroMedico(centro1228);
+    await dbCRUD.insertCentroMedico(centro1228);
     print("CENTRO 1228 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1229
@@ -18439,7 +18439,7 @@ void main() async {
     );
 
     // Inserta centro 1229 en la base de datos
-    await dbHelper.insertCentroMedico(centro1229);
+    await dbCRUD.insertCentroMedico(centro1229);
     print("CENTRO 1229 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1230
@@ -18454,7 +18454,7 @@ void main() async {
     );
 
     // Inserta centro 1230 en la base de datos
-    await dbHelper.insertCentroMedico(centro1230);
+    await dbCRUD.insertCentroMedico(centro1230);
     print("CENTRO 1230 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1231
@@ -18469,7 +18469,7 @@ void main() async {
     );
 
     // Inserta centro 1231 en la base de datos
-    await dbHelper.insertCentroMedico(centro1231);
+    await dbCRUD.insertCentroMedico(centro1231);
     print("CENTRO 1231 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1232
@@ -18484,7 +18484,7 @@ void main() async {
     );
 
     // Inserta centro 1232 en la base de datos
-    await dbHelper.insertCentroMedico(centro1232);
+    await dbCRUD.insertCentroMedico(centro1232);
     print("CENTRO 1232 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1233
@@ -18499,7 +18499,7 @@ void main() async {
     );
 
     // Inserta centro 1233 en la base de datos
-    await dbHelper.insertCentroMedico(centro1233);
+    await dbCRUD.insertCentroMedico(centro1233);
     print("CENTRO 1233 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1234
@@ -18514,7 +18514,7 @@ void main() async {
     );
 
     // Inserta centro 1234 en la base de datos
-    await dbHelper.insertCentroMedico(centro1234);
+    await dbCRUD.insertCentroMedico(centro1234);
     print("CENTRO 1234 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1235
@@ -18529,7 +18529,7 @@ void main() async {
     );
 
     // Inserta centro 1235 en la base de datos
-    await dbHelper.insertCentroMedico(centro1235);
+    await dbCRUD.insertCentroMedico(centro1235);
     print("CENTRO 1235 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1236
@@ -18544,7 +18544,7 @@ void main() async {
     );
 
     // Inserta centro 1236 en la base de datos
-    await dbHelper.insertCentroMedico(centro1236);
+    await dbCRUD.insertCentroMedico(centro1236);
     print("CENTRO 1236 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1237
@@ -18559,7 +18559,7 @@ void main() async {
     );
 
     // Inserta centro 1237 en la base de datos
-    await dbHelper.insertCentroMedico(centro1237);
+    await dbCRUD.insertCentroMedico(centro1237);
     print("CENTRO 1237 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1238
@@ -18574,7 +18574,7 @@ void main() async {
     );
 
     // Inserta centro 1238 en la base de datos
-    await dbHelper.insertCentroMedico(centro1238);
+    await dbCRUD.insertCentroMedico(centro1238);
     print("CENTRO 1238 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1239
@@ -18589,7 +18589,7 @@ void main() async {
     );
 
     // Inserta centro 1239 en la base de datos
-    await dbHelper.insertCentroMedico(centro1239);
+    await dbCRUD.insertCentroMedico(centro1239);
     print("CENTRO 1239 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1240
@@ -18604,7 +18604,7 @@ void main() async {
     );
 
     // Inserta centro 1240 en la base de datos
-    await dbHelper.insertCentroMedico(centro1240);
+    await dbCRUD.insertCentroMedico(centro1240);
     print("CENTRO 1240 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1241
@@ -18619,7 +18619,7 @@ void main() async {
     );
 
     // Inserta centro 1241 en la base de datos
-    await dbHelper.insertCentroMedico(centro1241);
+    await dbCRUD.insertCentroMedico(centro1241);
     print("CENTRO 1241 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1242
@@ -18634,7 +18634,7 @@ void main() async {
     );
 
     // Inserta centro 1242 en la base de datos
-    await dbHelper.insertCentroMedico(centro1242);
+    await dbCRUD.insertCentroMedico(centro1242);
     print("CENTRO 1242 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1243
@@ -18649,7 +18649,7 @@ void main() async {
     );
 
     // Inserta centro 1243 en la base de datos
-    await dbHelper.insertCentroMedico(centro1243);
+    await dbCRUD.insertCentroMedico(centro1243);
     print("CENTRO 1243 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1244
@@ -18664,7 +18664,7 @@ void main() async {
     );
 
     // Inserta centro 1244 en la base de datos
-    await dbHelper.insertCentroMedico(centro1244);
+    await dbCRUD.insertCentroMedico(centro1244);
     print("CENTRO 1244 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1245
@@ -18679,7 +18679,7 @@ void main() async {
     );
 
     // Inserta centro 1245 en la base de datos
-    await dbHelper.insertCentroMedico(centro1245);
+    await dbCRUD.insertCentroMedico(centro1245);
     print("CENTRO 1245 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1246
@@ -18694,7 +18694,7 @@ void main() async {
     );
 
     // Inserta centro 1246 en la base de datos
-    await dbHelper.insertCentroMedico(centro1246);
+    await dbCRUD.insertCentroMedico(centro1246);
     print("CENTRO 1246 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1247
@@ -18709,7 +18709,7 @@ void main() async {
     );
 
     // Inserta centro 1247 en la base de datos
-    await dbHelper.insertCentroMedico(centro1247);
+    await dbCRUD.insertCentroMedico(centro1247);
     print("CENTRO 1247 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1248
@@ -18724,7 +18724,7 @@ void main() async {
     );
 
     // Inserta centro 1248 en la base de datos
-    await dbHelper.insertCentroMedico(centro1248);
+    await dbCRUD.insertCentroMedico(centro1248);
     print("CENTRO 1248 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1249
@@ -18739,7 +18739,7 @@ void main() async {
     );
 
     // Inserta centro 1249 en la base de datos
-    await dbHelper.insertCentroMedico(centro1249);
+    await dbCRUD.insertCentroMedico(centro1249);
     print("CENTRO 1249 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1250
@@ -18754,7 +18754,7 @@ void main() async {
     );
 
     // Inserta centro 1250 en la base de datos
-    await dbHelper.insertCentroMedico(centro1250);
+    await dbCRUD.insertCentroMedico(centro1250);
     print("CENTRO 1250 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1251
@@ -18769,7 +18769,7 @@ void main() async {
     );
 
     // Inserta centro 1251 en la base de datos
-    await dbHelper.insertCentroMedico(centro1251);
+    await dbCRUD.insertCentroMedico(centro1251);
     print("CENTRO 1251 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1252
@@ -18784,7 +18784,7 @@ void main() async {
     );
 
     // Inserta centro 1252 en la base de datos
-    await dbHelper.insertCentroMedico(centro1252);
+    await dbCRUD.insertCentroMedico(centro1252);
     print("CENTRO 1252 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1253
@@ -18799,7 +18799,7 @@ void main() async {
     );
 
     // Inserta centro 1253 en la base de datos
-    await dbHelper.insertCentroMedico(centro1253);
+    await dbCRUD.insertCentroMedico(centro1253);
     print("CENTRO 1253 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1254
@@ -18814,7 +18814,7 @@ void main() async {
     );
 
     // Inserta centro 1254 en la base de datos
-    await dbHelper.insertCentroMedico(centro1254);
+    await dbCRUD.insertCentroMedico(centro1254);
     print("CENTRO 1254 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1255
@@ -18829,7 +18829,7 @@ void main() async {
     );
 
     // Inserta centro 1255 en la base de datos
-    await dbHelper.insertCentroMedico(centro1255);
+    await dbCRUD.insertCentroMedico(centro1255);
     print("CENTRO 1255 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1256
@@ -18844,7 +18844,7 @@ void main() async {
     );
 
     // Inserta centro 1256 en la base de datos
-    await dbHelper.insertCentroMedico(centro1256);
+    await dbCRUD.insertCentroMedico(centro1256);
     print("CENTRO 1256 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1257
@@ -18859,7 +18859,7 @@ void main() async {
     );
 
     // Inserta centro 1257 en la base de datos
-    await dbHelper.insertCentroMedico(centro1257);
+    await dbCRUD.insertCentroMedico(centro1257);
     print("CENTRO 1257 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1258
@@ -18874,7 +18874,7 @@ void main() async {
     );
 
     // Inserta centro 1258 en la base de datos
-    await dbHelper.insertCentroMedico(centro1258);
+    await dbCRUD.insertCentroMedico(centro1258);
     print("CENTRO 1258 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1259
@@ -18889,7 +18889,7 @@ void main() async {
     );
 
     // Inserta centro 1259 en la base de datos
-    await dbHelper.insertCentroMedico(centro1259);
+    await dbCRUD.insertCentroMedico(centro1259);
     print("CENTRO 1259 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1260
@@ -18904,7 +18904,7 @@ void main() async {
     );
 
     // Inserta centro 1260 en la base de datos
-    await dbHelper.insertCentroMedico(centro1260);
+    await dbCRUD.insertCentroMedico(centro1260);
     print("CENTRO 1260 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1261
@@ -18919,7 +18919,7 @@ void main() async {
     );
 
     // Inserta centro 1261 en la base de datos
-    await dbHelper.insertCentroMedico(centro1261);
+    await dbCRUD.insertCentroMedico(centro1261);
     print("CENTRO 1261 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1262
@@ -18934,7 +18934,7 @@ void main() async {
     );
 
     // Inserta centro 1262 en la base de datos
-    await dbHelper.insertCentroMedico(centro1262);
+    await dbCRUD.insertCentroMedico(centro1262);
     print("CENTRO 1262 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1263
@@ -18949,7 +18949,7 @@ void main() async {
     );
 
     // Inserta centro 1263 en la base de datos
-    await dbHelper.insertCentroMedico(centro1263);
+    await dbCRUD.insertCentroMedico(centro1263);
     print("CENTRO 1263 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1264
@@ -18964,7 +18964,7 @@ void main() async {
     );
 
     // Inserta centro 1264 en la base de datos
-    await dbHelper.insertCentroMedico(centro1264);
+    await dbCRUD.insertCentroMedico(centro1264);
     print("CENTRO 1264 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1265
@@ -18979,7 +18979,7 @@ void main() async {
     );
 
     // Inserta centro 1265 en la base de datos
-    await dbHelper.insertCentroMedico(centro1265);
+    await dbCRUD.insertCentroMedico(centro1265);
     print("CENTRO 1265 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1266
@@ -18994,7 +18994,7 @@ void main() async {
     );
 
     // Inserta centro 1266 en la base de datos
-    await dbHelper.insertCentroMedico(centro1266);
+    await dbCRUD.insertCentroMedico(centro1266);
     print("CENTRO 1266 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1267
@@ -19009,7 +19009,7 @@ void main() async {
     );
 
     // Inserta centro 1267 en la base de datos
-    await dbHelper.insertCentroMedico(centro1267);
+    await dbCRUD.insertCentroMedico(centro1267);
     print("CENTRO 1267 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1268
@@ -19024,7 +19024,7 @@ void main() async {
     );
 
     // Inserta centro 1268 en la base de datos
-    await dbHelper.insertCentroMedico(centro1268);
+    await dbCRUD.insertCentroMedico(centro1268);
     print("CENTRO 1268 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1269
@@ -19039,7 +19039,7 @@ void main() async {
     );
 
     // Inserta centro 1269 en la base de datos
-    await dbHelper.insertCentroMedico(centro1269);
+    await dbCRUD.insertCentroMedico(centro1269);
     print("CENTRO 1269 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1270
@@ -19054,7 +19054,7 @@ void main() async {
     );
 
     // Inserta centro 1270 en la base de datos
-    await dbHelper.insertCentroMedico(centro1270);
+    await dbCRUD.insertCentroMedico(centro1270);
     print("CENTRO 1270 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1271
@@ -19069,7 +19069,7 @@ void main() async {
     );
 
     // Inserta centro 1271 en la base de datos
-    await dbHelper.insertCentroMedico(centro1271);
+    await dbCRUD.insertCentroMedico(centro1271);
     print("CENTRO 1271 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1272
@@ -19084,7 +19084,7 @@ void main() async {
     );
 
     // Inserta centro 1272 en la base de datos
-    await dbHelper.insertCentroMedico(centro1272);
+    await dbCRUD.insertCentroMedico(centro1272);
     print("CENTRO 1272 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1273
@@ -19099,7 +19099,7 @@ void main() async {
     );
 
     // Inserta centro 1273 en la base de datos
-    await dbHelper.insertCentroMedico(centro1273);
+    await dbCRUD.insertCentroMedico(centro1273);
     print("CENTRO 1273 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1274
@@ -19114,7 +19114,7 @@ void main() async {
     );
 
     // Inserta centro 1274 en la base de datos
-    await dbHelper.insertCentroMedico(centro1274);
+    await dbCRUD.insertCentroMedico(centro1274);
     print("CENTRO 1274 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1275
@@ -19129,7 +19129,7 @@ void main() async {
     );
 
     // Inserta centro 1275 en la base de datos
-    await dbHelper.insertCentroMedico(centro1275);
+    await dbCRUD.insertCentroMedico(centro1275);
     print("CENTRO 1275 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1276
@@ -19144,7 +19144,7 @@ void main() async {
     );
 
     // Inserta centro 1276 en la base de datos
-    await dbHelper.insertCentroMedico(centro1276);
+    await dbCRUD.insertCentroMedico(centro1276);
     print("CENTRO 1276 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1277
@@ -19159,7 +19159,7 @@ void main() async {
     );
 
     // Inserta centro 1277 en la base de datos
-    await dbHelper.insertCentroMedico(centro1277);
+    await dbCRUD.insertCentroMedico(centro1277);
     print("CENTRO 1277 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1278
@@ -19174,7 +19174,7 @@ void main() async {
     );
 
     // Inserta centro 1278 en la base de datos
-    await dbHelper.insertCentroMedico(centro1278);
+    await dbCRUD.insertCentroMedico(centro1278);
     print("CENTRO 1278 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1279
@@ -19189,7 +19189,7 @@ void main() async {
     );
 
     // Inserta centro 1279 en la base de datos
-    await dbHelper.insertCentroMedico(centro1279);
+    await dbCRUD.insertCentroMedico(centro1279);
     print("CENTRO 1279 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1280
@@ -19204,7 +19204,7 @@ void main() async {
     );
 
     // Inserta centro 1280 en la base de datos
-    await dbHelper.insertCentroMedico(centro1280);
+    await dbCRUD.insertCentroMedico(centro1280);
     print("CENTRO 1280 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1281
@@ -19219,7 +19219,7 @@ void main() async {
     );
 
     // Inserta centro 1281 en la base de datos
-    await dbHelper.insertCentroMedico(centro1281);
+    await dbCRUD.insertCentroMedico(centro1281);
     print("CENTRO 1281 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1282
@@ -19234,7 +19234,7 @@ void main() async {
     );
 
     // Inserta centro 1282 en la base de datos
-    await dbHelper.insertCentroMedico(centro1282);
+    await dbCRUD.insertCentroMedico(centro1282);
     print("CENTRO 1282 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1283
@@ -19249,7 +19249,7 @@ void main() async {
     );
 
     // Inserta centro 1283 en la base de datos
-    await dbHelper.insertCentroMedico(centro1283);
+    await dbCRUD.insertCentroMedico(centro1283);
     print("CENTRO 1283 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1284
@@ -19264,7 +19264,7 @@ void main() async {
     );
 
     // Inserta centro 1284 en la base de datos
-    await dbHelper.insertCentroMedico(centro1284);
+    await dbCRUD.insertCentroMedico(centro1284);
     print("CENTRO 1284 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1285
@@ -19279,7 +19279,7 @@ void main() async {
     );
 
     // Inserta centro 1285 en la base de datos
-    await dbHelper.insertCentroMedico(centro1285);
+    await dbCRUD.insertCentroMedico(centro1285);
     print("CENTRO 1285 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1286
@@ -19294,7 +19294,7 @@ void main() async {
     );
 
     // Inserta centro 1286 en la base de datos
-    await dbHelper.insertCentroMedico(centro1286);
+    await dbCRUD.insertCentroMedico(centro1286);
     print("CENTRO 1286 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1287
@@ -19309,7 +19309,7 @@ void main() async {
     );
 
     // Inserta centro 1287 en la base de datos
-    await dbHelper.insertCentroMedico(centro1287);
+    await dbCRUD.insertCentroMedico(centro1287);
     print("CENTRO 1287 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1288
@@ -19324,7 +19324,7 @@ void main() async {
     );
 
     // Inserta centro 1288 en la base de datos
-    await dbHelper.insertCentroMedico(centro1288);
+    await dbCRUD.insertCentroMedico(centro1288);
     print("CENTRO 1288 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1289
@@ -19339,7 +19339,7 @@ void main() async {
     );
 
     // Inserta centro 1289 en la base de datos
-    await dbHelper.insertCentroMedico(centro1289);
+    await dbCRUD.insertCentroMedico(centro1289);
     print("CENTRO 1289 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1290
@@ -19354,7 +19354,7 @@ void main() async {
     );
 
     // Inserta centro 1290 en la base de datos
-    await dbHelper.insertCentroMedico(centro1290);
+    await dbCRUD.insertCentroMedico(centro1290);
     print("CENTRO 1290 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1291
@@ -19369,7 +19369,7 @@ void main() async {
     );
 
     // Inserta centro 1291 en la base de datos
-    await dbHelper.insertCentroMedico(centro1291);
+    await dbCRUD.insertCentroMedico(centro1291);
     print("CENTRO 1291 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1292
@@ -19384,7 +19384,7 @@ void main() async {
     );
 
     // Inserta centro 1292 en la base de datos
-    await dbHelper.insertCentroMedico(centro1292);
+    await dbCRUD.insertCentroMedico(centro1292);
     print("CENTRO 1292 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1293
@@ -19399,7 +19399,7 @@ void main() async {
     );
 
     // Inserta centro 1293 en la base de datos
-    await dbHelper.insertCentroMedico(centro1293);
+    await dbCRUD.insertCentroMedico(centro1293);
     print("CENTRO 1293 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1294
@@ -19414,7 +19414,7 @@ void main() async {
     );
 
     // Inserta centro 1294 en la base de datos
-    await dbHelper.insertCentroMedico(centro1294);
+    await dbCRUD.insertCentroMedico(centro1294);
     print("CENTRO 1294 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1295
@@ -19429,7 +19429,7 @@ void main() async {
     );
 
     // Inserta centro 1295 en la base de datos
-    await dbHelper.insertCentroMedico(centro1295);
+    await dbCRUD.insertCentroMedico(centro1295);
     print("CENTRO 1295 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1296
@@ -19444,7 +19444,7 @@ void main() async {
     );
 
     // Inserta centro 1296 en la base de datos
-    await dbHelper.insertCentroMedico(centro1296);
+    await dbCRUD.insertCentroMedico(centro1296);
     print("CENTRO 1296 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1297
@@ -19459,7 +19459,7 @@ void main() async {
     );
 
     // Inserta centro 1297 en la base de datos
-    await dbHelper.insertCentroMedico(centro1297);
+    await dbCRUD.insertCentroMedico(centro1297);
     print("CENTRO 1297 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1298
@@ -19474,7 +19474,7 @@ void main() async {
     );
 
     // Inserta centro 1298 en la base de datos
-    await dbHelper.insertCentroMedico(centro1298);
+    await dbCRUD.insertCentroMedico(centro1298);
     print("CENTRO 1298 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1299
@@ -19489,7 +19489,7 @@ void main() async {
     );
 
     // Inserta centro 1299 en la base de datos
-    await dbHelper.insertCentroMedico(centro1299);
+    await dbCRUD.insertCentroMedico(centro1299);
     print("CENTRO 1299 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1300
@@ -19504,7 +19504,7 @@ void main() async {
     );
 
     // Inserta centro 1300 en la base de datos
-    await dbHelper.insertCentroMedico(centro1300);
+    await dbCRUD.insertCentroMedico(centro1300);
     print("CENTRO 1300 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1301
@@ -19519,7 +19519,7 @@ void main() async {
     );
 
     // Inserta centro 1301 en la base de datos
-    await dbHelper.insertCentroMedico(centro1301);
+    await dbCRUD.insertCentroMedico(centro1301);
     print("CENTRO 1301 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1302
@@ -19534,7 +19534,7 @@ void main() async {
     );
 
     // Inserta centro 1302 en la base de datos
-    await dbHelper.insertCentroMedico(centro1302);
+    await dbCRUD.insertCentroMedico(centro1302);
     print("CENTRO 1302 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1303
@@ -19549,7 +19549,7 @@ void main() async {
     );
 
     // Inserta centro 1303 en la base de datos
-    await dbHelper.insertCentroMedico(centro1303);
+    await dbCRUD.insertCentroMedico(centro1303);
     print("CENTRO 1303 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1304
@@ -19564,7 +19564,7 @@ void main() async {
     );
 
     // Inserta centro 1304 en la base de datos
-    await dbHelper.insertCentroMedico(centro1304);
+    await dbCRUD.insertCentroMedico(centro1304);
     print("CENTRO 1304 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1305
@@ -19579,7 +19579,7 @@ void main() async {
     );
 
     // Inserta centro 1305 en la base de datos
-    await dbHelper.insertCentroMedico(centro1305);
+    await dbCRUD.insertCentroMedico(centro1305);
     print("CENTRO 1305 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1306
@@ -19594,7 +19594,7 @@ void main() async {
     );
 
     // Inserta centro 1306 en la base de datos
-    await dbHelper.insertCentroMedico(centro1306);
+    await dbCRUD.insertCentroMedico(centro1306);
     print("CENTRO 1306 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1307
@@ -19609,7 +19609,7 @@ void main() async {
     );
 
     // Inserta centro 1307 en la base de datos
-    await dbHelper.insertCentroMedico(centro1307);
+    await dbCRUD.insertCentroMedico(centro1307);
     print("CENTRO 1307 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1308
@@ -19624,7 +19624,7 @@ void main() async {
     );
 
     // Inserta centro 1308 en la base de datos
-    await dbHelper.insertCentroMedico(centro1308);
+    await dbCRUD.insertCentroMedico(centro1308);
     print("CENTRO 1308 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1309
@@ -19639,7 +19639,7 @@ void main() async {
     );
 
     // Inserta centro 1309 en la base de datos
-    await dbHelper.insertCentroMedico(centro1309);
+    await dbCRUD.insertCentroMedico(centro1309);
     print("CENTRO 1309 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1310
@@ -19654,7 +19654,7 @@ void main() async {
     );
 
     // Inserta centro 1310 en la base de datos
-    await dbHelper.insertCentroMedico(centro1310);
+    await dbCRUD.insertCentroMedico(centro1310);
     print("CENTRO 1310 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1311
@@ -19669,7 +19669,7 @@ void main() async {
     );
 
     // Inserta centro 1311 en la base de datos
-    await dbHelper.insertCentroMedico(centro1311);
+    await dbCRUD.insertCentroMedico(centro1311);
     print("CENTRO 1311 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1312
@@ -19684,7 +19684,7 @@ void main() async {
     );
 
     // Inserta centro 1312 en la base de datos
-    await dbHelper.insertCentroMedico(centro1312);
+    await dbCRUD.insertCentroMedico(centro1312);
     print("CENTRO 1312 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1313
@@ -19699,7 +19699,7 @@ void main() async {
     );
 
     // Inserta centro 1313 en la base de datos
-    await dbHelper.insertCentroMedico(centro1313);
+    await dbCRUD.insertCentroMedico(centro1313);
     print("CENTRO 1313 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1314
@@ -19714,7 +19714,7 @@ void main() async {
     );
 
     // Inserta centro 1314 en la base de datos
-    await dbHelper.insertCentroMedico(centro1314);
+    await dbCRUD.insertCentroMedico(centro1314);
     print("CENTRO 1314 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1315
@@ -19729,7 +19729,7 @@ void main() async {
     );
 
     // Inserta centro 1315 en la base de datos
-    await dbHelper.insertCentroMedico(centro1315);
+    await dbCRUD.insertCentroMedico(centro1315);
     print("CENTRO 1315 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1316
@@ -19744,7 +19744,7 @@ void main() async {
     );
 
     // Inserta centro 1316 en la base de datos
-    await dbHelper.insertCentroMedico(centro1316);
+    await dbCRUD.insertCentroMedico(centro1316);
     print("CENTRO 1316 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1317
@@ -19759,7 +19759,7 @@ void main() async {
     );
 
     // Inserta centro 1317 en la base de datos
-    await dbHelper.insertCentroMedico(centro1317);
+    await dbCRUD.insertCentroMedico(centro1317);
     print("CENTRO 1317 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1318
@@ -19774,7 +19774,7 @@ void main() async {
     );
 
     // Inserta centro 1318 en la base de datos
-    await dbHelper.insertCentroMedico(centro1318);
+    await dbCRUD.insertCentroMedico(centro1318);
     print("CENTRO 1318 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1319
@@ -19789,7 +19789,7 @@ void main() async {
     );
 
     // Inserta centro 1319 en la base de datos
-    await dbHelper.insertCentroMedico(centro1319);
+    await dbCRUD.insertCentroMedico(centro1319);
     print("CENTRO 1319 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1320
@@ -19804,7 +19804,7 @@ void main() async {
     );
 
     // Inserta centro 1320 en la base de datos
-    await dbHelper.insertCentroMedico(centro1320);
+    await dbCRUD.insertCentroMedico(centro1320);
     print("CENTRO 1320 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1321
@@ -19819,7 +19819,7 @@ void main() async {
     );
 
     // Inserta centro 1321 en la base de datos
-    await dbHelper.insertCentroMedico(centro1321);
+    await dbCRUD.insertCentroMedico(centro1321);
     print("CENTRO 1321 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1322
@@ -19834,7 +19834,7 @@ void main() async {
     );
 
     // Inserta centro 1322 en la base de datos
-    await dbHelper.insertCentroMedico(centro1322);
+    await dbCRUD.insertCentroMedico(centro1322);
     print("CENTRO 1322 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1323
@@ -19849,7 +19849,7 @@ void main() async {
     );
 
     // Inserta centro 1323 en la base de datos
-    await dbHelper.insertCentroMedico(centro1323);
+    await dbCRUD.insertCentroMedico(centro1323);
     print("CENTRO 1323 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1324
@@ -19864,7 +19864,7 @@ void main() async {
     );
 
     // Inserta centro 1324 en la base de datos
-    await dbHelper.insertCentroMedico(centro1324);
+    await dbCRUD.insertCentroMedico(centro1324);
     print("CENTRO 1324 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1325
@@ -19879,7 +19879,7 @@ void main() async {
     );
 
     // Inserta centro 1325 en la base de datos
-    await dbHelper.insertCentroMedico(centro1325);
+    await dbCRUD.insertCentroMedico(centro1325);
     print("CENTRO 1325 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1326
@@ -19894,7 +19894,7 @@ void main() async {
     );
 
     // Inserta centro 1326 en la base de datos
-    await dbHelper.insertCentroMedico(centro1326);
+    await dbCRUD.insertCentroMedico(centro1326);
     print("CENTRO 1326 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1327
@@ -19909,7 +19909,7 @@ void main() async {
     );
 
     // Inserta centro 1327 en la base de datos
-    await dbHelper.insertCentroMedico(centro1327);
+    await dbCRUD.insertCentroMedico(centro1327);
     print("CENTRO 1327 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1328
@@ -19924,7 +19924,7 @@ void main() async {
     );
 
     // Inserta centro 1328 en la base de datos
-    await dbHelper.insertCentroMedico(centro1328);
+    await dbCRUD.insertCentroMedico(centro1328);
     print("CENTRO 1328 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1329
@@ -19939,7 +19939,7 @@ void main() async {
     );
 
     // Inserta centro 1329 en la base de datos
-    await dbHelper.insertCentroMedico(centro1329);
+    await dbCRUD.insertCentroMedico(centro1329);
     print("CENTRO 1329 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1330
@@ -19954,7 +19954,7 @@ void main() async {
     );
 
     // Inserta centro 1330 en la base de datos
-    await dbHelper.insertCentroMedico(centro1330);
+    await dbCRUD.insertCentroMedico(centro1330);
     print("CENTRO 1330 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1331
@@ -19969,7 +19969,7 @@ void main() async {
     );
 
     // Inserta centro 1331 en la base de datos
-    await dbHelper.insertCentroMedico(centro1331);
+    await dbCRUD.insertCentroMedico(centro1331);
     print("CENTRO 1331 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1332
@@ -19984,7 +19984,7 @@ void main() async {
     );
 
     // Inserta centro 1332 en la base de datos
-    await dbHelper.insertCentroMedico(centro1332);
+    await dbCRUD.insertCentroMedico(centro1332);
     print("CENTRO 1332 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1333
@@ -19999,7 +19999,7 @@ void main() async {
     );
 
     // Inserta centro 1333 en la base de datos
-    await dbHelper.insertCentroMedico(centro1333);
+    await dbCRUD.insertCentroMedico(centro1333);
     print("CENTRO 1333 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1334
@@ -20014,7 +20014,7 @@ void main() async {
     );
 
     // Inserta centro 1334 en la base de datos
-    await dbHelper.insertCentroMedico(centro1334);
+    await dbCRUD.insertCentroMedico(centro1334);
     print("CENTRO 1334 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1335
@@ -20029,7 +20029,7 @@ void main() async {
     );
 
     // Inserta centro 1335 en la base de datos
-    await dbHelper.insertCentroMedico(centro1335);
+    await dbCRUD.insertCentroMedico(centro1335);
     print("CENTRO 1335 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1336
@@ -20044,7 +20044,7 @@ void main() async {
     );
 
     // Inserta centro 1336 en la base de datos
-    await dbHelper.insertCentroMedico(centro1336);
+    await dbCRUD.insertCentroMedico(centro1336);
     print("CENTRO 1336 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1337
@@ -20059,7 +20059,7 @@ void main() async {
     );
 
     // Inserta centro 1337 en la base de datos
-    await dbHelper.insertCentroMedico(centro1337);
+    await dbCRUD.insertCentroMedico(centro1337);
     print("CENTRO 1337 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1338
@@ -20074,7 +20074,7 @@ void main() async {
     );
 
     // Inserta centro 1338 en la base de datos
-    await dbHelper.insertCentroMedico(centro1338);
+    await dbCRUD.insertCentroMedico(centro1338);
     print("CENTRO 1338 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1339
@@ -20089,7 +20089,7 @@ void main() async {
     );
 
     // Inserta centro 1339 en la base de datos
-    await dbHelper.insertCentroMedico(centro1339);
+    await dbCRUD.insertCentroMedico(centro1339);
     print("CENTRO 1339 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1340
@@ -20104,7 +20104,7 @@ void main() async {
     );
 
     // Inserta centro 1340 en la base de datos
-    await dbHelper.insertCentroMedico(centro1340);
+    await dbCRUD.insertCentroMedico(centro1340);
     print("CENTRO 1340 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1341
@@ -20119,7 +20119,7 @@ void main() async {
     );
 
     // Inserta centro 1341 en la base de datos
-    await dbHelper.insertCentroMedico(centro1341);
+    await dbCRUD.insertCentroMedico(centro1341);
     print("CENTRO 1341 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1342
@@ -20134,7 +20134,7 @@ void main() async {
     );
 
     // Inserta centro 1342 en la base de datos
-    await dbHelper.insertCentroMedico(centro1342);
+    await dbCRUD.insertCentroMedico(centro1342);
     print("CENTRO 1342 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1343
@@ -20149,7 +20149,7 @@ void main() async {
     );
 
     // Inserta centro 1343 en la base de datos
-    await dbHelper.insertCentroMedico(centro1343);
+    await dbCRUD.insertCentroMedico(centro1343);
     print("CENTRO 1343 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1344
@@ -20164,7 +20164,7 @@ void main() async {
     );
 
     // Inserta centro 1344 en la base de datos
-    await dbHelper.insertCentroMedico(centro1344);
+    await dbCRUD.insertCentroMedico(centro1344);
     print("CENTRO 1344 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1345
@@ -20179,7 +20179,7 @@ void main() async {
     );
 
     // Inserta centro 1345 en la base de datos
-    await dbHelper.insertCentroMedico(centro1345);
+    await dbCRUD.insertCentroMedico(centro1345);
     print("CENTRO 1345 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1346
@@ -20194,7 +20194,7 @@ void main() async {
     );
 
     // Inserta centro 1346 en la base de datos
-    await dbHelper.insertCentroMedico(centro1346);
+    await dbCRUD.insertCentroMedico(centro1346);
     print("CENTRO 1346 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1347
@@ -20209,7 +20209,7 @@ void main() async {
     );
 
     // Inserta centro 1347 en la base de datos
-    await dbHelper.insertCentroMedico(centro1347);
+    await dbCRUD.insertCentroMedico(centro1347);
     print("CENTRO 1347 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1348
@@ -20224,7 +20224,7 @@ void main() async {
     );
 
     // Inserta centro 1348 en la base de datos
-    await dbHelper.insertCentroMedico(centro1348);
+    await dbCRUD.insertCentroMedico(centro1348);
     print("CENTRO 1348 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1349
@@ -20239,7 +20239,7 @@ void main() async {
     );
 
     // Inserta centro 1349 en la base de datos
-    await dbHelper.insertCentroMedico(centro1349);
+    await dbCRUD.insertCentroMedico(centro1349);
     print("CENTRO 1349 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1350
@@ -20254,7 +20254,7 @@ void main() async {
     );
 
     // Inserta centro 1350 en la base de datos
-    await dbHelper.insertCentroMedico(centro1350);
+    await dbCRUD.insertCentroMedico(centro1350);
     print("CENTRO 1350 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1351
@@ -20269,7 +20269,7 @@ void main() async {
     );
 
     // Inserta centro 1351 en la base de datos
-    await dbHelper.insertCentroMedico(centro1351);
+    await dbCRUD.insertCentroMedico(centro1351);
     print("CENTRO 1351 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1352
@@ -20284,7 +20284,7 @@ void main() async {
     );
 
     // Inserta centro 1352 en la base de datos
-    await dbHelper.insertCentroMedico(centro1352);
+    await dbCRUD.insertCentroMedico(centro1352);
     print("CENTRO 1352 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1353
@@ -20299,7 +20299,7 @@ void main() async {
     );
 
     // Inserta centro 1353 en la base de datos
-    await dbHelper.insertCentroMedico(centro1353);
+    await dbCRUD.insertCentroMedico(centro1353);
     print("CENTRO 1353 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1354
@@ -20314,7 +20314,7 @@ void main() async {
     );
 
     // Inserta centro 1354 en la base de datos
-    await dbHelper.insertCentroMedico(centro1354);
+    await dbCRUD.insertCentroMedico(centro1354);
     print("CENTRO 1354 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1355
@@ -20329,7 +20329,7 @@ void main() async {
     );
 
     // Inserta centro 1355 en la base de datos
-    await dbHelper.insertCentroMedico(centro1355);
+    await dbCRUD.insertCentroMedico(centro1355);
     print("CENTRO 1355 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1356
@@ -20344,7 +20344,7 @@ void main() async {
     );
 
     // Inserta centro 1356 en la base de datos
-    await dbHelper.insertCentroMedico(centro1356);
+    await dbCRUD.insertCentroMedico(centro1356);
     print("CENTRO 1356 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1357
@@ -20359,7 +20359,7 @@ void main() async {
     );
 
     // Inserta centro 1357 en la base de datos
-    await dbHelper.insertCentroMedico(centro1357);
+    await dbCRUD.insertCentroMedico(centro1357);
     print("CENTRO 1357 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1358
@@ -20374,7 +20374,7 @@ void main() async {
     );
 
     // Inserta centro 1358 en la base de datos
-    await dbHelper.insertCentroMedico(centro1358);
+    await dbCRUD.insertCentroMedico(centro1358);
     print("CENTRO 1358 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1359
@@ -20389,7 +20389,7 @@ void main() async {
     );
 
     // Inserta centro 1359 en la base de datos
-    await dbHelper.insertCentroMedico(centro1359);
+    await dbCRUD.insertCentroMedico(centro1359);
     print("CENTRO 1359 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1360
@@ -20404,7 +20404,7 @@ void main() async {
     );
 
     // Inserta centro 1360 en la base de datos
-    await dbHelper.insertCentroMedico(centro1360);
+    await dbCRUD.insertCentroMedico(centro1360);
     print("CENTRO 1360 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1361
@@ -20419,7 +20419,7 @@ void main() async {
     );
 
     // Inserta centro 1361 en la base de datos
-    await dbHelper.insertCentroMedico(centro1361);
+    await dbCRUD.insertCentroMedico(centro1361);
     print("CENTRO 1361 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1362
@@ -20434,7 +20434,7 @@ void main() async {
     );
 
     // Inserta centro 1362 en la base de datos
-    await dbHelper.insertCentroMedico(centro1362);
+    await dbCRUD.insertCentroMedico(centro1362);
     print("CENTRO 1362 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1363
@@ -20449,7 +20449,7 @@ void main() async {
     );
 
     // Inserta centro 1363 en la base de datos
-    await dbHelper.insertCentroMedico(centro1363);
+    await dbCRUD.insertCentroMedico(centro1363);
     print("CENTRO 1363 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1364
@@ -20464,7 +20464,7 @@ void main() async {
     );
 
     // Inserta centro 1364 en la base de datos
-    await dbHelper.insertCentroMedico(centro1364);
+    await dbCRUD.insertCentroMedico(centro1364);
     print("CENTRO 1364 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1365
@@ -20479,7 +20479,7 @@ void main() async {
     );
 
     // Inserta centro 1365 en la base de datos
-    await dbHelper.insertCentroMedico(centro1365);
+    await dbCRUD.insertCentroMedico(centro1365);
     print("CENTRO 1365 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1366
@@ -20494,7 +20494,7 @@ void main() async {
     );
 
     // Inserta centro 1366 en la base de datos
-    await dbHelper.insertCentroMedico(centro1366);
+    await dbCRUD.insertCentroMedico(centro1366);
     print("CENTRO 1366 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1367
@@ -20509,7 +20509,7 @@ void main() async {
     );
 
     // Inserta centro 1367 en la base de datos
-    await dbHelper.insertCentroMedico(centro1367);
+    await dbCRUD.insertCentroMedico(centro1367);
     print("CENTRO 1367 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1368
@@ -20524,7 +20524,7 @@ void main() async {
     );
 
     // Inserta centro 1368 en la base de datos
-    await dbHelper.insertCentroMedico(centro1368);
+    await dbCRUD.insertCentroMedico(centro1368);
     print("CENTRO 1368 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1369
@@ -20539,7 +20539,7 @@ void main() async {
     );
 
     // Inserta centro 1369 en la base de datos
-    await dbHelper.insertCentroMedico(centro1369);
+    await dbCRUD.insertCentroMedico(centro1369);
     print("CENTRO 1369 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1370
@@ -20554,7 +20554,7 @@ void main() async {
     );
 
     // Inserta centro 1370 en la base de datos
-    await dbHelper.insertCentroMedico(centro1370);
+    await dbCRUD.insertCentroMedico(centro1370);
     print("CENTRO 1370 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1371
@@ -20569,7 +20569,7 @@ void main() async {
     );
 
     // Inserta centro 1371 en la base de datos
-    await dbHelper.insertCentroMedico(centro1371);
+    await dbCRUD.insertCentroMedico(centro1371);
     print("CENTRO 1371 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1372
@@ -20584,7 +20584,7 @@ void main() async {
     );
 
     // Inserta centro 1372 en la base de datos
-    await dbHelper.insertCentroMedico(centro1372);
+    await dbCRUD.insertCentroMedico(centro1372);
     print("CENTRO 1372 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1373
@@ -20599,7 +20599,7 @@ void main() async {
     );
 
     // Inserta centro 1373 en la base de datos
-    await dbHelper.insertCentroMedico(centro1373);
+    await dbCRUD.insertCentroMedico(centro1373);
     print("CENTRO 1373 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1374
@@ -20614,7 +20614,7 @@ void main() async {
     );
 
     // Inserta centro 1374 en la base de datos
-    await dbHelper.insertCentroMedico(centro1374);
+    await dbCRUD.insertCentroMedico(centro1374);
     print("CENTRO 1374 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1375
@@ -20629,7 +20629,7 @@ void main() async {
     );
 
     // Inserta centro 1375 en la base de datos
-    await dbHelper.insertCentroMedico(centro1375);
+    await dbCRUD.insertCentroMedico(centro1375);
     print("CENTRO 1375 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1376
@@ -20644,7 +20644,7 @@ void main() async {
     );
 
     // Inserta centro 1376 en la base de datos
-    await dbHelper.insertCentroMedico(centro1376);
+    await dbCRUD.insertCentroMedico(centro1376);
     print("CENTRO 1376 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1377
@@ -20659,7 +20659,7 @@ void main() async {
     );
 
     // Inserta centro 1377 en la base de datos
-    await dbHelper.insertCentroMedico(centro1377);
+    await dbCRUD.insertCentroMedico(centro1377);
     print("CENTRO 1377 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1378
@@ -20674,7 +20674,7 @@ void main() async {
     );
 
     // Inserta centro 1378 en la base de datos
-    await dbHelper.insertCentroMedico(centro1378);
+    await dbCRUD.insertCentroMedico(centro1378);
     print("CENTRO 1378 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1379
@@ -20689,7 +20689,7 @@ void main() async {
     );
 
     // Inserta centro 1379 en la base de datos
-    await dbHelper.insertCentroMedico(centro1379);
+    await dbCRUD.insertCentroMedico(centro1379);
     print("CENTRO 1379 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1380
@@ -20704,7 +20704,7 @@ void main() async {
     );
 
     // Inserta centro 1380 en la base de datos
-    await dbHelper.insertCentroMedico(centro1380);
+    await dbCRUD.insertCentroMedico(centro1380);
     print("CENTRO 1380 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1381
@@ -20719,7 +20719,7 @@ void main() async {
     );
 
     // Inserta centro 1381 en la base de datos
-    await dbHelper.insertCentroMedico(centro1381);
+    await dbCRUD.insertCentroMedico(centro1381);
     print("CENTRO 1381 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1382
@@ -20734,7 +20734,7 @@ void main() async {
     );
 
     // Inserta centro 1382 en la base de datos
-    await dbHelper.insertCentroMedico(centro1382);
+    await dbCRUD.insertCentroMedico(centro1382);
     print("CENTRO 1382 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1383
@@ -20749,7 +20749,7 @@ void main() async {
     );
 
     // Inserta centro 1383 en la base de datos
-    await dbHelper.insertCentroMedico(centro1383);
+    await dbCRUD.insertCentroMedico(centro1383);
     print("CENTRO 1383 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1384
@@ -20764,7 +20764,7 @@ void main() async {
     );
 
     // Inserta centro 1384 en la base de datos
-    await dbHelper.insertCentroMedico(centro1384);
+    await dbCRUD.insertCentroMedico(centro1384);
     print("CENTRO 1384 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1385
@@ -20779,7 +20779,7 @@ void main() async {
     );
 
     // Inserta centro 1385 en la base de datos
-    await dbHelper.insertCentroMedico(centro1385);
+    await dbCRUD.insertCentroMedico(centro1385);
     print("CENTRO 1385 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1386
@@ -20794,7 +20794,7 @@ void main() async {
     );
 
     // Inserta centro 1386 en la base de datos
-    await dbHelper.insertCentroMedico(centro1386);
+    await dbCRUD.insertCentroMedico(centro1386);
     print("CENTRO 1386 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1387
@@ -20809,7 +20809,7 @@ void main() async {
     );
 
     // Inserta centro 1387 en la base de datos
-    await dbHelper.insertCentroMedico(centro1387);
+    await dbCRUD.insertCentroMedico(centro1387);
     print("CENTRO 1387 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1388
@@ -20824,7 +20824,7 @@ void main() async {
     );
 
     // Inserta centro 1388 en la base de datos
-    await dbHelper.insertCentroMedico(centro1388);
+    await dbCRUD.insertCentroMedico(centro1388);
     print("CENTRO 1388 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1389
@@ -20839,7 +20839,7 @@ void main() async {
     );
 
     // Inserta centro 1389 en la base de datos
-    await dbHelper.insertCentroMedico(centro1389);
+    await dbCRUD.insertCentroMedico(centro1389);
     print("CENTRO 1389 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1390
@@ -20854,7 +20854,7 @@ void main() async {
     );
 
     // Inserta centro 1390 en la base de datos
-    await dbHelper.insertCentroMedico(centro1390);
+    await dbCRUD.insertCentroMedico(centro1390);
     print("CENTRO 1390 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1391
@@ -20869,7 +20869,7 @@ void main() async {
     );
 
     // Inserta centro 1391 en la base de datos
-    await dbHelper.insertCentroMedico(centro1391);
+    await dbCRUD.insertCentroMedico(centro1391);
     print("CENTRO 1391 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1392
@@ -20884,7 +20884,7 @@ void main() async {
     );
 
     // Inserta centro 1392 en la base de datos
-    await dbHelper.insertCentroMedico(centro1392);
+    await dbCRUD.insertCentroMedico(centro1392);
     print("CENTRO 1392 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1393
@@ -20899,7 +20899,7 @@ void main() async {
     );
 
     // Inserta centro 1393 en la base de datos
-    await dbHelper.insertCentroMedico(centro1393);
+    await dbCRUD.insertCentroMedico(centro1393);
     print("CENTRO 1393 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1394
@@ -20914,7 +20914,7 @@ void main() async {
     );
 
     // Inserta centro 1394 en la base de datos
-    await dbHelper.insertCentroMedico(centro1394);
+    await dbCRUD.insertCentroMedico(centro1394);
     print("CENTRO 1394 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1395
@@ -20929,7 +20929,7 @@ void main() async {
     );
 
     // Inserta centro 1395 en la base de datos
-    await dbHelper.insertCentroMedico(centro1395);
+    await dbCRUD.insertCentroMedico(centro1395);
     print("CENTRO 1395 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1396
@@ -20944,7 +20944,7 @@ void main() async {
     );
 
     // Inserta centro 1396 en la base de datos
-    await dbHelper.insertCentroMedico(centro1396);
+    await dbCRUD.insertCentroMedico(centro1396);
     print("CENTRO 1396 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1397
@@ -20959,7 +20959,7 @@ void main() async {
     );
 
     // Inserta centro 1397 en la base de datos
-    await dbHelper.insertCentroMedico(centro1397);
+    await dbCRUD.insertCentroMedico(centro1397);
     print("CENTRO 1397 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1398
@@ -20974,7 +20974,7 @@ void main() async {
     );
 
     // Inserta centro 1398 en la base de datos
-    await dbHelper.insertCentroMedico(centro1398);
+    await dbCRUD.insertCentroMedico(centro1398);
     print("CENTRO 1398 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1399
@@ -20989,7 +20989,7 @@ void main() async {
     );
 
     // Inserta centro 1399 en la base de datos
-    await dbHelper.insertCentroMedico(centro1399);
+    await dbCRUD.insertCentroMedico(centro1399);
     print("CENTRO 1399 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1400
@@ -21004,7 +21004,7 @@ void main() async {
     );
 
     // Inserta centro 1400 en la base de datos
-    await dbHelper.insertCentroMedico(centro1400);
+    await dbCRUD.insertCentroMedico(centro1400);
     print("CENTRO 1400 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1401
@@ -21019,7 +21019,7 @@ void main() async {
     );
 
     // Inserta centro 1401 en la base de datos
-    await dbHelper.insertCentroMedico(centro1401);
+    await dbCRUD.insertCentroMedico(centro1401);
     print("CENTRO 1401 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1402
@@ -21034,7 +21034,7 @@ void main() async {
     );
 
     // Inserta centro 1402 en la base de datos
-    await dbHelper.insertCentroMedico(centro1402);
+    await dbCRUD.insertCentroMedico(centro1402);
     print("CENTRO 1402 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1403
@@ -21049,7 +21049,7 @@ void main() async {
     );
 
     // Inserta centro 1403 en la base de datos
-    await dbHelper.insertCentroMedico(centro1403);
+    await dbCRUD.insertCentroMedico(centro1403);
     print("CENTRO 1403 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1404
@@ -21064,7 +21064,7 @@ void main() async {
     );
 
     // Inserta centro 1404 en la base de datos
-    await dbHelper.insertCentroMedico(centro1404);
+    await dbCRUD.insertCentroMedico(centro1404);
     print("CENTRO 1404 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1405
@@ -21079,7 +21079,7 @@ void main() async {
     );
 
     // Inserta centro 1405 en la base de datos
-    await dbHelper.insertCentroMedico(centro1405);
+    await dbCRUD.insertCentroMedico(centro1405);
     print("CENTRO 1405 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1406
@@ -21094,7 +21094,7 @@ void main() async {
     );
 
     // Inserta centro 1406 en la base de datos
-    await dbHelper.insertCentroMedico(centro1406);
+    await dbCRUD.insertCentroMedico(centro1406);
     print("CENTRO 1406 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1407
@@ -21109,7 +21109,7 @@ void main() async {
     );
 
     // Inserta centro 1407 en la base de datos
-    await dbHelper.insertCentroMedico(centro1407);
+    await dbCRUD.insertCentroMedico(centro1407);
     print("CENTRO 1407 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1408
@@ -21124,7 +21124,7 @@ void main() async {
     );
 
     // Inserta centro 1408 en la base de datos
-    await dbHelper.insertCentroMedico(centro1408);
+    await dbCRUD.insertCentroMedico(centro1408);
     print("CENTRO 1408 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1409
@@ -21139,7 +21139,7 @@ void main() async {
     );
 
     // Inserta centro 1409 en la base de datos
-    await dbHelper.insertCentroMedico(centro1409);
+    await dbCRUD.insertCentroMedico(centro1409);
     print("CENTRO 1409 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1410
@@ -21154,7 +21154,7 @@ void main() async {
     );
 
     // Inserta centro 1410 en la base de datos
-    await dbHelper.insertCentroMedico(centro1410);
+    await dbCRUD.insertCentroMedico(centro1410);
     print("CENTRO 1410 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1411
@@ -21169,7 +21169,7 @@ void main() async {
     );
 
     // Inserta centro 1411 en la base de datos
-    await dbHelper.insertCentroMedico(centro1411);
+    await dbCRUD.insertCentroMedico(centro1411);
     print("CENTRO 1411 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1412
@@ -21184,7 +21184,7 @@ void main() async {
     );
 
     // Inserta centro 1412 en la base de datos
-    await dbHelper.insertCentroMedico(centro1412);
+    await dbCRUD.insertCentroMedico(centro1412);
     print("CENTRO 1412 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1413
@@ -21199,7 +21199,7 @@ void main() async {
     );
 
     // Inserta centro 1413 en la base de datos
-    await dbHelper.insertCentroMedico(centro1413);
+    await dbCRUD.insertCentroMedico(centro1413);
     print("CENTRO 1413 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1414
@@ -21214,7 +21214,7 @@ void main() async {
     );
 
     // Inserta centro 1414 en la base de datos
-    await dbHelper.insertCentroMedico(centro1414);
+    await dbCRUD.insertCentroMedico(centro1414);
     print("CENTRO 1414 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1415
@@ -21229,7 +21229,7 @@ void main() async {
     );
 
     // Inserta centro 1415 en la base de datos
-    await dbHelper.insertCentroMedico(centro1415);
+    await dbCRUD.insertCentroMedico(centro1415);
     print("CENTRO 1415 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1416
@@ -21244,7 +21244,7 @@ void main() async {
     );
 
     // Inserta centro 1416 en la base de datos
-    await dbHelper.insertCentroMedico(centro1416);
+    await dbCRUD.insertCentroMedico(centro1416);
     print("CENTRO 1416 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1417
@@ -21259,7 +21259,7 @@ void main() async {
     );
 
     // Inserta centro 1417 en la base de datos
-    await dbHelper.insertCentroMedico(centro1417);
+    await dbCRUD.insertCentroMedico(centro1417);
     print("CENTRO 1417 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1418
@@ -21274,7 +21274,7 @@ void main() async {
     );
 
     // Inserta centro 1418 en la base de datos
-    await dbHelper.insertCentroMedico(centro1418);
+    await dbCRUD.insertCentroMedico(centro1418);
     print("CENTRO 1418 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1419
@@ -21289,7 +21289,7 @@ void main() async {
     );
 
     // Inserta centro 1419 en la base de datos
-    await dbHelper.insertCentroMedico(centro1419);
+    await dbCRUD.insertCentroMedico(centro1419);
     print("CENTRO 1419 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1420
@@ -21304,7 +21304,7 @@ void main() async {
     );
 
     // Inserta centro 1420 en la base de datos
-    await dbHelper.insertCentroMedico(centro1420);
+    await dbCRUD.insertCentroMedico(centro1420);
     print("CENTRO 1420 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1421
@@ -21319,7 +21319,7 @@ void main() async {
     );
 
     // Inserta centro 1421 en la base de datos
-    await dbHelper.insertCentroMedico(centro1421);
+    await dbCRUD.insertCentroMedico(centro1421);
     print("CENTRO 1421 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1422
@@ -21334,7 +21334,7 @@ void main() async {
     );
 
     // Inserta centro 1422 en la base de datos
-    await dbHelper.insertCentroMedico(centro1422);
+    await dbCRUD.insertCentroMedico(centro1422);
     print("CENTRO 1422 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1423
@@ -21349,7 +21349,7 @@ void main() async {
     );
 
     // Inserta centro 1423 en la base de datos
-    await dbHelper.insertCentroMedico(centro1423);
+    await dbCRUD.insertCentroMedico(centro1423);
     print("CENTRO 1423 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1424
@@ -21364,7 +21364,7 @@ void main() async {
     );
 
     // Inserta centro 1424 en la base de datos
-    await dbHelper.insertCentroMedico(centro1424);
+    await dbCRUD.insertCentroMedico(centro1424);
     print("CENTRO 1424 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1425
@@ -21379,7 +21379,7 @@ void main() async {
     );
 
     // Inserta centro 1425 en la base de datos
-    await dbHelper.insertCentroMedico(centro1425);
+    await dbCRUD.insertCentroMedico(centro1425);
     print("CENTRO 1425 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1426
@@ -21394,7 +21394,7 @@ void main() async {
     );
 
     // Inserta centro 1426 en la base de datos
-    await dbHelper.insertCentroMedico(centro1426);
+    await dbCRUD.insertCentroMedico(centro1426);
     print("CENTRO 1426 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1427
@@ -21409,7 +21409,7 @@ void main() async {
     );
 
     // Inserta centro 1427 en la base de datos
-    await dbHelper.insertCentroMedico(centro1427);
+    await dbCRUD.insertCentroMedico(centro1427);
     print("CENTRO 1427 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1428
@@ -21424,7 +21424,7 @@ void main() async {
     );
 
     // Inserta centro 1428 en la base de datos
-    await dbHelper.insertCentroMedico(centro1428);
+    await dbCRUD.insertCentroMedico(centro1428);
     print("CENTRO 1428 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1429
@@ -21439,7 +21439,7 @@ void main() async {
     );
 
     // Inserta centro 1429 en la base de datos
-    await dbHelper.insertCentroMedico(centro1429);
+    await dbCRUD.insertCentroMedico(centro1429);
     print("CENTRO 1429 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1430
@@ -21454,7 +21454,7 @@ void main() async {
     );
 
     // Inserta centro 1430 en la base de datos
-    await dbHelper.insertCentroMedico(centro1430);
+    await dbCRUD.insertCentroMedico(centro1430);
     print("CENTRO 1430 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1431
@@ -21469,7 +21469,7 @@ void main() async {
     );
 
     // Inserta centro 1431 en la base de datos
-    await dbHelper.insertCentroMedico(centro1431);
+    await dbCRUD.insertCentroMedico(centro1431);
     print("CENTRO 1431 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1432
@@ -21484,7 +21484,7 @@ void main() async {
     );
 
     // Inserta centro 1432 en la base de datos
-    await dbHelper.insertCentroMedico(centro1432);
+    await dbCRUD.insertCentroMedico(centro1432);
     print("CENTRO 1432 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1433
@@ -21499,7 +21499,7 @@ void main() async {
     );
 
     // Inserta centro 1433 en la base de datos
-    await dbHelper.insertCentroMedico(centro1433);
+    await dbCRUD.insertCentroMedico(centro1433);
     print("CENTRO 1433 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1434
@@ -21514,7 +21514,7 @@ void main() async {
     );
 
     // Inserta centro 1434 en la base de datos
-    await dbHelper.insertCentroMedico(centro1434);
+    await dbCRUD.insertCentroMedico(centro1434);
     print("CENTRO 1434 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1435
@@ -21529,7 +21529,7 @@ void main() async {
     );
 
     // Inserta centro 1435 en la base de datos
-    await dbHelper.insertCentroMedico(centro1435);
+    await dbCRUD.insertCentroMedico(centro1435);
     print("CENTRO 1435 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1436
@@ -21544,7 +21544,7 @@ void main() async {
     );
 
     // Inserta centro 1436 en la base de datos
-    await dbHelper.insertCentroMedico(centro1436);
+    await dbCRUD.insertCentroMedico(centro1436);
     print("CENTRO 1436 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1437
@@ -21559,7 +21559,7 @@ void main() async {
     );
 
     // Inserta centro 1437 en la base de datos
-    await dbHelper.insertCentroMedico(centro1437);
+    await dbCRUD.insertCentroMedico(centro1437);
     print("CENTRO 1437 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1438
@@ -21574,7 +21574,7 @@ void main() async {
     );
 
     // Inserta centro 1438 en la base de datos
-    await dbHelper.insertCentroMedico(centro1438);
+    await dbCRUD.insertCentroMedico(centro1438);
     print("CENTRO 1438 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1439
@@ -21589,7 +21589,7 @@ void main() async {
     );
 
     // Inserta centro 1439 en la base de datos
-    await dbHelper.insertCentroMedico(centro1439);
+    await dbCRUD.insertCentroMedico(centro1439);
     print("CENTRO 1439 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1440
@@ -21604,7 +21604,7 @@ void main() async {
     );
 
     // Inserta centro 1440 en la base de datos
-    await dbHelper.insertCentroMedico(centro1440);
+    await dbCRUD.insertCentroMedico(centro1440);
     print("CENTRO 1440 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1441
@@ -21619,7 +21619,7 @@ void main() async {
     );
 
     // Inserta centro 1441 en la base de datos
-    await dbHelper.insertCentroMedico(centro1441);
+    await dbCRUD.insertCentroMedico(centro1441);
     print("CENTRO 1441 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1442
@@ -21634,7 +21634,7 @@ void main() async {
     );
 
     // Inserta centro 1442 en la base de datos
-    await dbHelper.insertCentroMedico(centro1442);
+    await dbCRUD.insertCentroMedico(centro1442);
     print("CENTRO 1442 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1443
@@ -21649,7 +21649,7 @@ void main() async {
     );
 
     // Inserta centro 1443 en la base de datos
-    await dbHelper.insertCentroMedico(centro1443);
+    await dbCRUD.insertCentroMedico(centro1443);
     print("CENTRO 1443 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1444
@@ -21664,7 +21664,7 @@ void main() async {
     );
 
     // Inserta centro 1444 en la base de datos
-    await dbHelper.insertCentroMedico(centro1444);
+    await dbCRUD.insertCentroMedico(centro1444);
     print("CENTRO 1444 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1445
@@ -21679,7 +21679,7 @@ void main() async {
     );
 
     // Inserta centro 1445 en la base de datos
-    await dbHelper.insertCentroMedico(centro1445);
+    await dbCRUD.insertCentroMedico(centro1445);
     print("CENTRO 1445 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1446
@@ -21694,7 +21694,7 @@ void main() async {
     );
 
     // Inserta centro 1446 en la base de datos
-    await dbHelper.insertCentroMedico(centro1446);
+    await dbCRUD.insertCentroMedico(centro1446);
     print("CENTRO 1446 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1447
@@ -21709,7 +21709,7 @@ void main() async {
     );
 
     // Inserta centro 1447 en la base de datos
-    await dbHelper.insertCentroMedico(centro1447);
+    await dbCRUD.insertCentroMedico(centro1447);
     print("CENTRO 1447 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1448
@@ -21724,7 +21724,7 @@ void main() async {
     );
 
     // Inserta centro 1448 en la base de datos
-    await dbHelper.insertCentroMedico(centro1448);
+    await dbCRUD.insertCentroMedico(centro1448);
     print("CENTRO 1448 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1449
@@ -21739,7 +21739,7 @@ void main() async {
     );
 
     // Inserta centro 1449 en la base de datos
-    await dbHelper.insertCentroMedico(centro1449);
+    await dbCRUD.insertCentroMedico(centro1449);
     print("CENTRO 1449 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1450
@@ -21754,7 +21754,7 @@ void main() async {
     );
 
     // Inserta centro 1450 en la base de datos
-    await dbHelper.insertCentroMedico(centro1450);
+    await dbCRUD.insertCentroMedico(centro1450);
     print("CENTRO 1450 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1451
@@ -21769,7 +21769,7 @@ void main() async {
     );
 
     // Inserta centro 1451 en la base de datos
-    await dbHelper.insertCentroMedico(centro1451);
+    await dbCRUD.insertCentroMedico(centro1451);
     print("CENTRO 1451 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1452
@@ -21784,7 +21784,7 @@ void main() async {
     );
 
     // Inserta centro 1452 en la base de datos
-    await dbHelper.insertCentroMedico(centro1452);
+    await dbCRUD.insertCentroMedico(centro1452);
     print("CENTRO 1452 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1453
@@ -21799,7 +21799,7 @@ void main() async {
     );
 
     // Inserta centro 1453 en la base de datos
-    await dbHelper.insertCentroMedico(centro1453);
+    await dbCRUD.insertCentroMedico(centro1453);
     print("CENTRO 1453 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1454
@@ -21814,7 +21814,7 @@ void main() async {
     );
 
     // Inserta centro 1454 en la base de datos
-    await dbHelper.insertCentroMedico(centro1454);
+    await dbCRUD.insertCentroMedico(centro1454);
     print("CENTRO 1454 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1455
@@ -21829,7 +21829,7 @@ void main() async {
     );
 
     // Inserta centro 1455 en la base de datos
-    await dbHelper.insertCentroMedico(centro1455);
+    await dbCRUD.insertCentroMedico(centro1455);
     print("CENTRO 1455 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1456
@@ -21844,7 +21844,7 @@ void main() async {
     );
 
     // Inserta centro 1456 en la base de datos
-    await dbHelper.insertCentroMedico(centro1456);
+    await dbCRUD.insertCentroMedico(centro1456);
     print("CENTRO 1456 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1457
@@ -21859,7 +21859,7 @@ void main() async {
     );
 
     // Inserta centro 1457 en la base de datos
-    await dbHelper.insertCentroMedico(centro1457);
+    await dbCRUD.insertCentroMedico(centro1457);
     print("CENTRO 1457 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1458
@@ -21874,7 +21874,7 @@ void main() async {
     );
 
     // Inserta centro 1458 en la base de datos
-    await dbHelper.insertCentroMedico(centro1458);
+    await dbCRUD.insertCentroMedico(centro1458);
     print("CENTRO 1458 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1459
@@ -21889,7 +21889,7 @@ void main() async {
     );
 
     // Inserta centro 1459 en la base de datos
-    await dbHelper.insertCentroMedico(centro1459);
+    await dbCRUD.insertCentroMedico(centro1459);
     print("CENTRO 1459 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1460
@@ -21904,7 +21904,7 @@ void main() async {
     );
 
     // Inserta centro 1460 en la base de datos
-    await dbHelper.insertCentroMedico(centro1460);
+    await dbCRUD.insertCentroMedico(centro1460);
     print("CENTRO 1460 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1461
@@ -21919,7 +21919,7 @@ void main() async {
     );
 
     // Inserta centro 1461 en la base de datos
-    await dbHelper.insertCentroMedico(centro1461);
+    await dbCRUD.insertCentroMedico(centro1461);
     print("CENTRO 1461 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1462
@@ -21934,7 +21934,7 @@ void main() async {
     );
 
     // Inserta centro 1462 en la base de datos
-    await dbHelper.insertCentroMedico(centro1462);
+    await dbCRUD.insertCentroMedico(centro1462);
     print("CENTRO 1462 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1463
@@ -21949,7 +21949,7 @@ void main() async {
     );
 
     // Inserta centro 1463 en la base de datos
-    await dbHelper.insertCentroMedico(centro1463);
+    await dbCRUD.insertCentroMedico(centro1463);
     print("CENTRO 1463 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1464
@@ -21964,7 +21964,7 @@ void main() async {
     );
 
     // Inserta centro 1464 en la base de datos
-    await dbHelper.insertCentroMedico(centro1464);
+    await dbCRUD.insertCentroMedico(centro1464);
     print("CENTRO 1464 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1465
@@ -21979,7 +21979,7 @@ void main() async {
     );
 
     // Inserta centro 1465 en la base de datos
-    await dbHelper.insertCentroMedico(centro1465);
+    await dbCRUD.insertCentroMedico(centro1465);
     print("CENTRO 1465 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1466
@@ -21994,7 +21994,7 @@ void main() async {
     );
 
     // Inserta centro 1466 en la base de datos
-    await dbHelper.insertCentroMedico(centro1466);
+    await dbCRUD.insertCentroMedico(centro1466);
     print("CENTRO 1466 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1467
@@ -22009,7 +22009,7 @@ void main() async {
     );
 
     // Inserta centro 1467 en la base de datos
-    await dbHelper.insertCentroMedico(centro1467);
+    await dbCRUD.insertCentroMedico(centro1467);
     print("CENTRO 1467 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1468
@@ -22024,7 +22024,7 @@ void main() async {
     );
 
     // Inserta centro 1468 en la base de datos
-    await dbHelper.insertCentroMedico(centro1468);
+    await dbCRUD.insertCentroMedico(centro1468);
     print("CENTRO 1468 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1469
@@ -22039,7 +22039,7 @@ void main() async {
     );
 
     // Inserta centro 1469 en la base de datos
-    await dbHelper.insertCentroMedico(centro1469);
+    await dbCRUD.insertCentroMedico(centro1469);
     print("CENTRO 1469 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1470
@@ -22054,7 +22054,7 @@ void main() async {
     );
 
     // Inserta centro 1470 en la base de datos
-    await dbHelper.insertCentroMedico(centro1470);
+    await dbCRUD.insertCentroMedico(centro1470);
     print("CENTRO 1470 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1471
@@ -22069,7 +22069,7 @@ void main() async {
     );
 
     // Inserta centro 1471 en la base de datos
-    await dbHelper.insertCentroMedico(centro1471);
+    await dbCRUD.insertCentroMedico(centro1471);
     print("CENTRO 1471 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1472
@@ -22084,7 +22084,7 @@ void main() async {
     );
 
     // Inserta centro 1472 en la base de datos
-    await dbHelper.insertCentroMedico(centro1472);
+    await dbCRUD.insertCentroMedico(centro1472);
     print("CENTRO 1472 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1473
@@ -22099,7 +22099,7 @@ void main() async {
     );
 
     // Inserta centro 1473 en la base de datos
-    await dbHelper.insertCentroMedico(centro1473);
+    await dbCRUD.insertCentroMedico(centro1473);
     print("CENTRO 1473 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1474
@@ -22114,7 +22114,7 @@ void main() async {
     );
 
     // Inserta centro 1474 en la base de datos
-    await dbHelper.insertCentroMedico(centro1474);
+    await dbCRUD.insertCentroMedico(centro1474);
     print("CENTRO 1474 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1475
@@ -22129,7 +22129,7 @@ void main() async {
     );
 
     // Inserta centro 1475 en la base de datos
-    await dbHelper.insertCentroMedico(centro1475);
+    await dbCRUD.insertCentroMedico(centro1475);
     print("CENTRO 1475 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1476
@@ -22144,7 +22144,7 @@ void main() async {
     );
 
     // Inserta centro 1476 en la base de datos
-    await dbHelper.insertCentroMedico(centro1476);
+    await dbCRUD.insertCentroMedico(centro1476);
     print("CENTRO 1476 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1477
@@ -22159,7 +22159,7 @@ void main() async {
     );
 
     // Inserta centro 1477 en la base de datos
-    await dbHelper.insertCentroMedico(centro1477);
+    await dbCRUD.insertCentroMedico(centro1477);
     print("CENTRO 1477 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1478
@@ -22174,7 +22174,7 @@ void main() async {
     );
 
     // Inserta centro 1478 en la base de datos
-    await dbHelper.insertCentroMedico(centro1478);
+    await dbCRUD.insertCentroMedico(centro1478);
     print("CENTRO 1478 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1479
@@ -22189,7 +22189,7 @@ void main() async {
     );
 
     // Inserta centro 1479 en la base de datos
-    await dbHelper.insertCentroMedico(centro1479);
+    await dbCRUD.insertCentroMedico(centro1479);
     print("CENTRO 1479 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1480
@@ -22204,7 +22204,7 @@ void main() async {
     );
 
     // Inserta centro 1480 en la base de datos
-    await dbHelper.insertCentroMedico(centro1480);
+    await dbCRUD.insertCentroMedico(centro1480);
     print("CENTRO 1480 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1481
@@ -22219,7 +22219,7 @@ void main() async {
     );
 
     // Inserta centro 1481 en la base de datos
-    await dbHelper.insertCentroMedico(centro1481);
+    await dbCRUD.insertCentroMedico(centro1481);
     print("CENTRO 1481 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1482
@@ -22234,7 +22234,7 @@ void main() async {
     );
 
     // Inserta centro 1482 en la base de datos
-    await dbHelper.insertCentroMedico(centro1482);
+    await dbCRUD.insertCentroMedico(centro1482);
     print("CENTRO 1482 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1483
@@ -22249,7 +22249,7 @@ void main() async {
     );
 
     // Inserta centro 1483 en la base de datos
-    await dbHelper.insertCentroMedico(centro1483);
+    await dbCRUD.insertCentroMedico(centro1483);
     print("CENTRO 1483 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1484
@@ -22264,7 +22264,7 @@ void main() async {
     );
 
     // Inserta centro 1484 en la base de datos
-    await dbHelper.insertCentroMedico(centro1484);
+    await dbCRUD.insertCentroMedico(centro1484);
     print("CENTRO 1484 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1485
@@ -22279,7 +22279,7 @@ void main() async {
     );
 
     // Inserta centro 1485 en la base de datos
-    await dbHelper.insertCentroMedico(centro1485);
+    await dbCRUD.insertCentroMedico(centro1485);
     print("CENTRO 1485 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1486
@@ -22294,7 +22294,7 @@ void main() async {
     );
 
     // Inserta centro 1486 en la base de datos
-    await dbHelper.insertCentroMedico(centro1486);
+    await dbCRUD.insertCentroMedico(centro1486);
     print("CENTRO 1486 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1487
@@ -22309,7 +22309,7 @@ void main() async {
     );
 
     // Inserta centro 1487 en la base de datos
-    await dbHelper.insertCentroMedico(centro1487);
+    await dbCRUD.insertCentroMedico(centro1487);
     print("CENTRO 1487 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1488
@@ -22324,7 +22324,7 @@ void main() async {
     );
 
     // Inserta centro 1488 en la base de datos
-    await dbHelper.insertCentroMedico(centro1488);
+    await dbCRUD.insertCentroMedico(centro1488);
     print("CENTRO 1488 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1489
@@ -22339,7 +22339,7 @@ void main() async {
     );
 
     // Inserta centro 1489 en la base de datos
-    await dbHelper.insertCentroMedico(centro1489);
+    await dbCRUD.insertCentroMedico(centro1489);
     print("CENTRO 1489 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1490
@@ -22354,7 +22354,7 @@ void main() async {
     );
 
     // Inserta centro 1490 en la base de datos
-    await dbHelper.insertCentroMedico(centro1490);
+    await dbCRUD.insertCentroMedico(centro1490);
     print("CENTRO 1490 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1491
@@ -22369,7 +22369,7 @@ void main() async {
     );
 
     // Inserta centro 1491 en la base de datos
-    await dbHelper.insertCentroMedico(centro1491);
+    await dbCRUD.insertCentroMedico(centro1491);
     print("CENTRO 1491 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1492
@@ -22384,7 +22384,7 @@ void main() async {
     );
 
     // Inserta centro 1492 en la base de datos
-    await dbHelper.insertCentroMedico(centro1492);
+    await dbCRUD.insertCentroMedico(centro1492);
     print("CENTRO 1492 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1493
@@ -22399,7 +22399,7 @@ void main() async {
     );
 
     // Inserta centro 1493 en la base de datos
-    await dbHelper.insertCentroMedico(centro1493);
+    await dbCRUD.insertCentroMedico(centro1493);
     print("CENTRO 1493 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1494
@@ -22414,7 +22414,7 @@ void main() async {
     );
 
     // Inserta centro 1494 en la base de datos
-    await dbHelper.insertCentroMedico(centro1494);
+    await dbCRUD.insertCentroMedico(centro1494);
     print("CENTRO 1494 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1495
@@ -22429,7 +22429,7 @@ void main() async {
     );
 
     // Inserta centro 1495 en la base de datos
-    await dbHelper.insertCentroMedico(centro1495);
+    await dbCRUD.insertCentroMedico(centro1495);
     print("CENTRO 1495 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1496
@@ -22444,7 +22444,7 @@ void main() async {
     );
 
     // Inserta centro 1496 en la base de datos
-    await dbHelper.insertCentroMedico(centro1496);
+    await dbCRUD.insertCentroMedico(centro1496);
     print("CENTRO 1496 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1497
@@ -22459,7 +22459,7 @@ void main() async {
     );
 
     // Inserta centro 1497 en la base de datos
-    await dbHelper.insertCentroMedico(centro1497);
+    await dbCRUD.insertCentroMedico(centro1497);
     print("CENTRO 1497 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1498
@@ -22474,7 +22474,7 @@ void main() async {
     );
 
     // Inserta centro 1498 en la base de datos
-    await dbHelper.insertCentroMedico(centro1498);
+    await dbCRUD.insertCentroMedico(centro1498);
     print("CENTRO 1498 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1499
@@ -22489,7 +22489,7 @@ void main() async {
     );
 
     // Inserta centro 1499 en la base de datos
-    await dbHelper.insertCentroMedico(centro1499);
+    await dbCRUD.insertCentroMedico(centro1499);
     print("CENTRO 1499 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1500
@@ -22504,7 +22504,7 @@ void main() async {
     );
 
     // Inserta centro 1500 en la base de datos
-    await dbHelper.insertCentroMedico(centro1500);
+    await dbCRUD.insertCentroMedico(centro1500);
     print("CENTRO 1500 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1501
@@ -22519,7 +22519,7 @@ void main() async {
     );
 
     // Inserta centro 1501 en la base de datos
-    await dbHelper.insertCentroMedico(centro1501);
+    await dbCRUD.insertCentroMedico(centro1501);
     print("CENTRO 1501 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1502
@@ -22534,7 +22534,7 @@ void main() async {
     );
 
     // Inserta centro 1502 en la base de datos
-    await dbHelper.insertCentroMedico(centro1502);
+    await dbCRUD.insertCentroMedico(centro1502);
     print("CENTRO 1502 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1503
@@ -22549,7 +22549,7 @@ void main() async {
     );
 
     // Inserta centro 1503 en la base de datos
-    await dbHelper.insertCentroMedico(centro1503);
+    await dbCRUD.insertCentroMedico(centro1503);
     print("CENTRO 1503 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1504
@@ -22564,7 +22564,7 @@ void main() async {
     );
 
     // Inserta centro 1504 en la base de datos
-    await dbHelper.insertCentroMedico(centro1504);
+    await dbCRUD.insertCentroMedico(centro1504);
     print("CENTRO 1504 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1505
@@ -22579,7 +22579,7 @@ void main() async {
     );
 
     // Inserta centro 1505 en la base de datos
-    await dbHelper.insertCentroMedico(centro1505);
+    await dbCRUD.insertCentroMedico(centro1505);
     print("CENTRO 1505 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1506
@@ -22594,7 +22594,7 @@ void main() async {
     );
 
     // Inserta centro 1506 en la base de datos
-    await dbHelper.insertCentroMedico(centro1506);
+    await dbCRUD.insertCentroMedico(centro1506);
     print("CENTRO 1506 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1507
@@ -22609,7 +22609,7 @@ void main() async {
     );
 
     // Inserta centro 1507 en la base de datos
-    await dbHelper.insertCentroMedico(centro1507);
+    await dbCRUD.insertCentroMedico(centro1507);
     print("CENTRO 1507 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1508
@@ -22624,7 +22624,7 @@ void main() async {
     );
 
     // Inserta centro 1508 en la base de datos
-    await dbHelper.insertCentroMedico(centro1508);
+    await dbCRUD.insertCentroMedico(centro1508);
     print("CENTRO 1508 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1509
@@ -22639,7 +22639,7 @@ void main() async {
     );
 
     // Inserta centro 1509 en la base de datos
-    await dbHelper.insertCentroMedico(centro1509);
+    await dbCRUD.insertCentroMedico(centro1509);
     print("CENTRO 1509 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1510
@@ -22654,7 +22654,7 @@ void main() async {
     );
 
     // Inserta centro 1510 en la base de datos
-    await dbHelper.insertCentroMedico(centro1510);
+    await dbCRUD.insertCentroMedico(centro1510);
     print("CENTRO 1510 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1511
@@ -22669,7 +22669,7 @@ void main() async {
     );
 
     // Inserta centro 1511 en la base de datos
-    await dbHelper.insertCentroMedico(centro1511);
+    await dbCRUD.insertCentroMedico(centro1511);
     print("CENTRO 1511 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1512
@@ -22684,7 +22684,7 @@ void main() async {
     );
 
     // Inserta centro 1512 en la base de datos
-    await dbHelper.insertCentroMedico(centro1512);
+    await dbCRUD.insertCentroMedico(centro1512);
     print("CENTRO 1512 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1513
@@ -22699,7 +22699,7 @@ void main() async {
     );
 
     // Inserta centro 1513 en la base de datos
-    await dbHelper.insertCentroMedico(centro1513);
+    await dbCRUD.insertCentroMedico(centro1513);
     print("CENTRO 1513 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1514
@@ -22714,7 +22714,7 @@ void main() async {
     );
 
     // Inserta centro 1514 en la base de datos
-    await dbHelper.insertCentroMedico(centro1514);
+    await dbCRUD.insertCentroMedico(centro1514);
     print("CENTRO 1514 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1515
@@ -22729,7 +22729,7 @@ void main() async {
     );
 
     // Inserta centro 1515 en la base de datos
-    await dbHelper.insertCentroMedico(centro1515);
+    await dbCRUD.insertCentroMedico(centro1515);
     print("CENTRO 1515 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1516
@@ -22744,7 +22744,7 @@ void main() async {
     );
 
     // Inserta centro 1516 en la base de datos
-    await dbHelper.insertCentroMedico(centro1516);
+    await dbCRUD.insertCentroMedico(centro1516);
     print("CENTRO 1516 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1517
@@ -22759,7 +22759,7 @@ void main() async {
     );
 
     // Inserta centro 1517 en la base de datos
-    await dbHelper.insertCentroMedico(centro1517);
+    await dbCRUD.insertCentroMedico(centro1517);
     print("CENTRO 1517 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1518
@@ -22774,7 +22774,7 @@ void main() async {
     );
 
     // Inserta centro 1518 en la base de datos
-    await dbHelper.insertCentroMedico(centro1518);
+    await dbCRUD.insertCentroMedico(centro1518);
     print("CENTRO 1518 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1519
@@ -22789,7 +22789,7 @@ void main() async {
     );
 
     // Inserta centro 1519 en la base de datos
-    await dbHelper.insertCentroMedico(centro1519);
+    await dbCRUD.insertCentroMedico(centro1519);
     print("CENTRO 1519 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1520
@@ -22804,7 +22804,7 @@ void main() async {
     );
 
     // Inserta centro 1520 en la base de datos
-    await dbHelper.insertCentroMedico(centro1520);
+    await dbCRUD.insertCentroMedico(centro1520);
     print("CENTRO 1520 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1521
@@ -22819,7 +22819,7 @@ void main() async {
     );
 
     // Inserta centro 1521 en la base de datos
-    await dbHelper.insertCentroMedico(centro1521);
+    await dbCRUD.insertCentroMedico(centro1521);
     print("CENTRO 1521 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1522
@@ -22834,7 +22834,7 @@ void main() async {
     );
 
     // Inserta centro 1522 en la base de datos
-    await dbHelper.insertCentroMedico(centro1522);
+    await dbCRUD.insertCentroMedico(centro1522);
     print("CENTRO 1522 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1523
@@ -22849,7 +22849,7 @@ void main() async {
     );
 
     // Inserta centro 1523 en la base de datos
-    await dbHelper.insertCentroMedico(centro1523);
+    await dbCRUD.insertCentroMedico(centro1523);
     print("CENTRO 1523 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1524
@@ -22864,7 +22864,7 @@ void main() async {
     );
 
     // Inserta centro 1524 en la base de datos
-    await dbHelper.insertCentroMedico(centro1524);
+    await dbCRUD.insertCentroMedico(centro1524);
     print("CENTRO 1524 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1525
@@ -22879,7 +22879,7 @@ void main() async {
     );
 
     // Inserta centro 1525 en la base de datos
-    await dbHelper.insertCentroMedico(centro1525);
+    await dbCRUD.insertCentroMedico(centro1525);
     print("CENTRO 1525 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1526
@@ -22894,7 +22894,7 @@ void main() async {
     );
 
     // Inserta centro 1526 en la base de datos
-    await dbHelper.insertCentroMedico(centro1526);
+    await dbCRUD.insertCentroMedico(centro1526);
     print("CENTRO 1526 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1527
@@ -22909,7 +22909,7 @@ void main() async {
     );
 
     // Inserta centro 1527 en la base de datos
-    await dbHelper.insertCentroMedico(centro1527);
+    await dbCRUD.insertCentroMedico(centro1527);
     print("CENTRO 1527 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1528
@@ -22924,7 +22924,7 @@ void main() async {
     );
 
     // Inserta centro 1528 en la base de datos
-    await dbHelper.insertCentroMedico(centro1528);
+    await dbCRUD.insertCentroMedico(centro1528);
     print("CENTRO 1528 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1529
@@ -22939,7 +22939,7 @@ void main() async {
     );
 
     // Inserta centro 1529 en la base de datos
-    await dbHelper.insertCentroMedico(centro1529);
+    await dbCRUD.insertCentroMedico(centro1529);
     print("CENTRO 1529 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1530
@@ -22954,7 +22954,7 @@ void main() async {
     );
 
     // Inserta centro 1530 en la base de datos
-    await dbHelper.insertCentroMedico(centro1530);
+    await dbCRUD.insertCentroMedico(centro1530);
     print("CENTRO 1530 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1531
@@ -22969,7 +22969,7 @@ void main() async {
     );
 
     // Inserta centro 1531 en la base de datos
-    await dbHelper.insertCentroMedico(centro1531);
+    await dbCRUD.insertCentroMedico(centro1531);
     print("CENTRO 1531 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1532
@@ -22984,7 +22984,7 @@ void main() async {
     );
 
     // Inserta centro 1532 en la base de datos
-    await dbHelper.insertCentroMedico(centro1532);
+    await dbCRUD.insertCentroMedico(centro1532);
     print("CENTRO 1532 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1533
@@ -22999,7 +22999,7 @@ void main() async {
     );
 
     // Inserta centro 1533 en la base de datos
-    await dbHelper.insertCentroMedico(centro1533);
+    await dbCRUD.insertCentroMedico(centro1533);
     print("CENTRO 1533 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1534
@@ -23014,7 +23014,7 @@ void main() async {
     );
 
     // Inserta centro 1534 en la base de datos
-    await dbHelper.insertCentroMedico(centro1534);
+    await dbCRUD.insertCentroMedico(centro1534);
     print("CENTRO 1534 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1535
@@ -23029,7 +23029,7 @@ void main() async {
     );
 
     // Inserta centro 1535 en la base de datos
-    await dbHelper.insertCentroMedico(centro1535);
+    await dbCRUD.insertCentroMedico(centro1535);
     print("CENTRO 1535 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1536
@@ -23044,7 +23044,7 @@ void main() async {
     );
 
     // Inserta centro 1536 en la base de datos
-    await dbHelper.insertCentroMedico(centro1536);
+    await dbCRUD.insertCentroMedico(centro1536);
     print("CENTRO 1536 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1537
@@ -23059,7 +23059,7 @@ void main() async {
     );
 
     // Inserta centro 1537 en la base de datos
-    await dbHelper.insertCentroMedico(centro1537);
+    await dbCRUD.insertCentroMedico(centro1537);
     print("CENTRO 1537 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1538
@@ -23074,7 +23074,7 @@ void main() async {
     );
 
     // Inserta centro 1538 en la base de datos
-    await dbHelper.insertCentroMedico(centro1538);
+    await dbCRUD.insertCentroMedico(centro1538);
     print("CENTRO 1538 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1539
@@ -23089,7 +23089,7 @@ void main() async {
     );
 
     // Inserta centro 1539 en la base de datos
-    await dbHelper.insertCentroMedico(centro1539);
+    await dbCRUD.insertCentroMedico(centro1539);
     print("CENTRO 1539 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1540
@@ -23104,7 +23104,7 @@ void main() async {
     );
 
     // Inserta centro 1540 en la base de datos
-    await dbHelper.insertCentroMedico(centro1540);
+    await dbCRUD.insertCentroMedico(centro1540);
     print("CENTRO 1540 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1541
@@ -23119,7 +23119,7 @@ void main() async {
     );
 
     // Inserta centro 1541 en la base de datos
-    await dbHelper.insertCentroMedico(centro1541);
+    await dbCRUD.insertCentroMedico(centro1541);
     print("CENTRO 1541 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1542
@@ -23134,7 +23134,7 @@ void main() async {
     );
 
     // Inserta centro 1542 en la base de datos
-    await dbHelper.insertCentroMedico(centro1542);
+    await dbCRUD.insertCentroMedico(centro1542);
     print("CENTRO 1542 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1543
@@ -23149,7 +23149,7 @@ void main() async {
     );
 
     // Inserta centro 1543 en la base de datos
-    await dbHelper.insertCentroMedico(centro1543);
+    await dbCRUD.insertCentroMedico(centro1543);
     print("CENTRO 1543 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1544
@@ -23164,7 +23164,7 @@ void main() async {
     );
 
     // Inserta centro 1544 en la base de datos
-    await dbHelper.insertCentroMedico(centro1544);
+    await dbCRUD.insertCentroMedico(centro1544);
     print("CENTRO 1544 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1545
@@ -23179,7 +23179,7 @@ void main() async {
     );
 
     // Inserta centro 1545 en la base de datos
-    await dbHelper.insertCentroMedico(centro1545);
+    await dbCRUD.insertCentroMedico(centro1545);
     print("CENTRO 1545 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1546
@@ -23194,7 +23194,7 @@ void main() async {
     );
 
     // Inserta centro 1546 en la base de datos
-    await dbHelper.insertCentroMedico(centro1546);
+    await dbCRUD.insertCentroMedico(centro1546);
     print("CENTRO 1546 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1547
@@ -23209,7 +23209,7 @@ void main() async {
     );
 
     // Inserta centro 1547 en la base de datos
-    await dbHelper.insertCentroMedico(centro1547);
+    await dbCRUD.insertCentroMedico(centro1547);
     print("CENTRO 1547 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1548
@@ -23224,7 +23224,7 @@ void main() async {
     );
 
     // Inserta centro 1548 en la base de datos
-    await dbHelper.insertCentroMedico(centro1548);
+    await dbCRUD.insertCentroMedico(centro1548);
     print("CENTRO 1548 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1549
@@ -23239,7 +23239,7 @@ void main() async {
     );
 
     // Inserta centro 1549 en la base de datos
-    await dbHelper.insertCentroMedico(centro1549);
+    await dbCRUD.insertCentroMedico(centro1549);
     print("CENTRO 1549 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1550
@@ -23254,7 +23254,7 @@ void main() async {
     );
 
     // Inserta centro 1550 en la base de datos
-    await dbHelper.insertCentroMedico(centro1550);
+    await dbCRUD.insertCentroMedico(centro1550);
     print("CENTRO 1550 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1551
@@ -23269,7 +23269,7 @@ void main() async {
     );
 
     // Inserta centro 1551 en la base de datos
-    await dbHelper.insertCentroMedico(centro1551);
+    await dbCRUD.insertCentroMedico(centro1551);
     print("CENTRO 1551 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1552
@@ -23284,7 +23284,7 @@ void main() async {
     );
 
     // Inserta centro 1552 en la base de datos
-    await dbHelper.insertCentroMedico(centro1552);
+    await dbCRUD.insertCentroMedico(centro1552);
     print("CENTRO 1552 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1553
@@ -23299,7 +23299,7 @@ void main() async {
     );
 
     // Inserta centro 1553 en la base de datos
-    await dbHelper.insertCentroMedico(centro1553);
+    await dbCRUD.insertCentroMedico(centro1553);
     print("CENTRO 1553 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1554
@@ -23314,7 +23314,7 @@ void main() async {
     );
 
     // Inserta centro 1554 en la base de datos
-    await dbHelper.insertCentroMedico(centro1554);
+    await dbCRUD.insertCentroMedico(centro1554);
     print("CENTRO 1554 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1555
@@ -23329,7 +23329,7 @@ void main() async {
     );
 
     // Inserta centro 1555 en la base de datos
-    await dbHelper.insertCentroMedico(centro1555);
+    await dbCRUD.insertCentroMedico(centro1555);
     print("CENTRO 1555 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1556
@@ -23344,7 +23344,7 @@ void main() async {
     );
 
     // Inserta centro 1556 en la base de datos
-    await dbHelper.insertCentroMedico(centro1556);
+    await dbCRUD.insertCentroMedico(centro1556);
     print("CENTRO 1556 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1557
@@ -23359,7 +23359,7 @@ void main() async {
     );
 
     // Inserta centro 1557 en la base de datos
-    await dbHelper.insertCentroMedico(centro1557);
+    await dbCRUD.insertCentroMedico(centro1557);
     print("CENTRO 1557 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1558
@@ -23374,7 +23374,7 @@ void main() async {
     );
 
     // Inserta centro 1558 en la base de datos
-    await dbHelper.insertCentroMedico(centro1558);
+    await dbCRUD.insertCentroMedico(centro1558);
     print("CENTRO 1558 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1559
@@ -23389,7 +23389,7 @@ void main() async {
     );
 
     // Inserta centro 1559 en la base de datos
-    await dbHelper.insertCentroMedico(centro1559);
+    await dbCRUD.insertCentroMedico(centro1559);
     print("CENTRO 1559 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1560
@@ -23404,7 +23404,7 @@ void main() async {
     );
 
     // Inserta centro 1560 en la base de datos
-    await dbHelper.insertCentroMedico(centro1560);
+    await dbCRUD.insertCentroMedico(centro1560);
     print("CENTRO 1560 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1561
@@ -23419,7 +23419,7 @@ void main() async {
     );
 
     // Inserta centro 1561 en la base de datos
-    await dbHelper.insertCentroMedico(centro1561);
+    await dbCRUD.insertCentroMedico(centro1561);
     print("CENTRO 1561 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1562
@@ -23434,7 +23434,7 @@ void main() async {
     );
 
     // Inserta centro 1562 en la base de datos
-    await dbHelper.insertCentroMedico(centro1562);
+    await dbCRUD.insertCentroMedico(centro1562);
     print("CENTRO 1562 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1563
@@ -23449,7 +23449,7 @@ void main() async {
     );
 
     // Inserta centro 1563 en la base de datos
-    await dbHelper.insertCentroMedico(centro1563);
+    await dbCRUD.insertCentroMedico(centro1563);
     print("CENTRO 1563 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1564
@@ -23464,7 +23464,7 @@ void main() async {
     );
 
     // Inserta centro 1564 en la base de datos
-    await dbHelper.insertCentroMedico(centro1564);
+    await dbCRUD.insertCentroMedico(centro1564);
     print("CENTRO 1564 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1565
@@ -23479,7 +23479,7 @@ void main() async {
     );
 
     // Inserta centro 1565 en la base de datos
-    await dbHelper.insertCentroMedico(centro1565);
+    await dbCRUD.insertCentroMedico(centro1565);
     print("CENTRO 1565 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1566
@@ -23494,7 +23494,7 @@ void main() async {
     );
 
     // Inserta centro 1566 en la base de datos
-    await dbHelper.insertCentroMedico(centro1566);
+    await dbCRUD.insertCentroMedico(centro1566);
     print("CENTRO 1566 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1567
@@ -23509,7 +23509,7 @@ void main() async {
     );
 
     // Inserta centro 1567 en la base de datos
-    await dbHelper.insertCentroMedico(centro1567);
+    await dbCRUD.insertCentroMedico(centro1567);
     print("CENTRO 1567 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1568
@@ -23524,7 +23524,7 @@ void main() async {
     );
 
     // Inserta centro 1568 en la base de datos
-    await dbHelper.insertCentroMedico(centro1568);
+    await dbCRUD.insertCentroMedico(centro1568);
     print("CENTRO 1568 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1569
@@ -23539,7 +23539,7 @@ void main() async {
     );
 
     // Inserta centro 1569 en la base de datos
-    await dbHelper.insertCentroMedico(centro1569);
+    await dbCRUD.insertCentroMedico(centro1569);
     print("CENTRO 1569 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1570
@@ -23554,7 +23554,7 @@ void main() async {
     );
 
     // Inserta centro 1570 en la base de datos
-    await dbHelper.insertCentroMedico(centro1570);
+    await dbCRUD.insertCentroMedico(centro1570);
     print("CENTRO 1570 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1571
@@ -23569,7 +23569,7 @@ void main() async {
     );
 
     // Inserta centro 1571 en la base de datos
-    await dbHelper.insertCentroMedico(centro1571);
+    await dbCRUD.insertCentroMedico(centro1571);
     print("CENTRO 1571 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1572
@@ -23584,7 +23584,7 @@ void main() async {
     );
 
     // Inserta centro 1572 en la base de datos
-    await dbHelper.insertCentroMedico(centro1572);
+    await dbCRUD.insertCentroMedico(centro1572);
     print("CENTRO 1572 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1573
@@ -23599,7 +23599,7 @@ void main() async {
     );
 
     // Inserta centro 1573 en la base de datos
-    await dbHelper.insertCentroMedico(centro1573);
+    await dbCRUD.insertCentroMedico(centro1573);
     print("CENTRO 1573 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1574
@@ -23614,7 +23614,7 @@ void main() async {
     );
 
     // Inserta centro 1574 en la base de datos
-    await dbHelper.insertCentroMedico(centro1574);
+    await dbCRUD.insertCentroMedico(centro1574);
     print("CENTRO 1574 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1575
@@ -23629,7 +23629,7 @@ void main() async {
     );
 
     // Inserta centro 1575 en la base de datos
-    await dbHelper.insertCentroMedico(centro1575);
+    await dbCRUD.insertCentroMedico(centro1575);
     print("CENTRO 1575 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1576
@@ -23644,7 +23644,7 @@ void main() async {
     );
 
     // Inserta centro 1576 en la base de datos
-    await dbHelper.insertCentroMedico(centro1576);
+    await dbCRUD.insertCentroMedico(centro1576);
     print("CENTRO 1576 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1577
@@ -23659,7 +23659,7 @@ void main() async {
     );
 
     // Inserta centro 1577 en la base de datos
-    await dbHelper.insertCentroMedico(centro1577);
+    await dbCRUD.insertCentroMedico(centro1577);
     print("CENTRO 1577 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1578
@@ -23674,7 +23674,7 @@ void main() async {
     );
 
     // Inserta centro 1578 en la base de datos
-    await dbHelper.insertCentroMedico(centro1578);
+    await dbCRUD.insertCentroMedico(centro1578);
     print("CENTRO 1578 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1579
@@ -23689,7 +23689,7 @@ void main() async {
     );
 
     // Inserta centro 1579 en la base de datos
-    await dbHelper.insertCentroMedico(centro1579);
+    await dbCRUD.insertCentroMedico(centro1579);
     print("CENTRO 1579 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1580
@@ -23704,7 +23704,7 @@ void main() async {
     );
 
     // Inserta centro 1580 en la base de datos
-    await dbHelper.insertCentroMedico(centro1580);
+    await dbCRUD.insertCentroMedico(centro1580);
     print("CENTRO 1580 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1581
@@ -23719,7 +23719,7 @@ void main() async {
     );
 
     // Inserta centro 1581 en la base de datos
-    await dbHelper.insertCentroMedico(centro1581);
+    await dbCRUD.insertCentroMedico(centro1581);
     print("CENTRO 1581 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1582
@@ -23734,7 +23734,7 @@ void main() async {
     );
 
     // Inserta centro 1582 en la base de datos
-    await dbHelper.insertCentroMedico(centro1582);
+    await dbCRUD.insertCentroMedico(centro1582);
     print("CENTRO 1582 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1583
@@ -23749,7 +23749,7 @@ void main() async {
     );
 
     // Inserta centro 1583 en la base de datos
-    await dbHelper.insertCentroMedico(centro1583);
+    await dbCRUD.insertCentroMedico(centro1583);
     print("CENTRO 1583 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1584
@@ -23764,7 +23764,7 @@ void main() async {
     );
 
     // Inserta centro 1584 en la base de datos
-    await dbHelper.insertCentroMedico(centro1584);
+    await dbCRUD.insertCentroMedico(centro1584);
     print("CENTRO 1584 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1585
@@ -23779,7 +23779,7 @@ void main() async {
     );
 
     // Inserta centro 1585 en la base de datos
-    await dbHelper.insertCentroMedico(centro1585);
+    await dbCRUD.insertCentroMedico(centro1585);
     print("CENTRO 1585 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1586
@@ -23794,7 +23794,7 @@ void main() async {
     );
 
     // Inserta centro 1586 en la base de datos
-    await dbHelper.insertCentroMedico(centro1586);
+    await dbCRUD.insertCentroMedico(centro1586);
     print("CENTRO 1586 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1587
@@ -23809,7 +23809,7 @@ void main() async {
     );
 
     // Inserta centro 1587 en la base de datos
-    await dbHelper.insertCentroMedico(centro1587);
+    await dbCRUD.insertCentroMedico(centro1587);
     print("CENTRO 1587 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1588
@@ -23824,7 +23824,7 @@ void main() async {
     );
 
     // Inserta centro 1588 en la base de datos
-    await dbHelper.insertCentroMedico(centro1588);
+    await dbCRUD.insertCentroMedico(centro1588);
     print("CENTRO 1588 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1589
@@ -23839,7 +23839,7 @@ void main() async {
     );
 
     // Inserta centro 1589 en la base de datos
-    await dbHelper.insertCentroMedico(centro1589);
+    await dbCRUD.insertCentroMedico(centro1589);
     print("CENTRO 1589 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1590
@@ -23854,7 +23854,7 @@ void main() async {
     );
 
     // Inserta centro 1590 en la base de datos
-    await dbHelper.insertCentroMedico(centro1590);
+    await dbCRUD.insertCentroMedico(centro1590);
     print("CENTRO 1590 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1591
@@ -23869,7 +23869,7 @@ void main() async {
     );
 
     // Inserta centro 1591 en la base de datos
-    await dbHelper.insertCentroMedico(centro1591);
+    await dbCRUD.insertCentroMedico(centro1591);
     print("CENTRO 1591 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1592
@@ -23884,7 +23884,7 @@ void main() async {
     );
 
     // Inserta centro 1592 en la base de datos
-    await dbHelper.insertCentroMedico(centro1592);
+    await dbCRUD.insertCentroMedico(centro1592);
     print("CENTRO 1592 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1593
@@ -23899,7 +23899,7 @@ void main() async {
     );
 
     // Inserta centro 1593 en la base de datos
-    await dbHelper.insertCentroMedico(centro1593);
+    await dbCRUD.insertCentroMedico(centro1593);
     print("CENTRO 1593 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1594
@@ -23914,7 +23914,7 @@ void main() async {
     );
 
     // Inserta centro 1594 en la base de datos
-    await dbHelper.insertCentroMedico(centro1594);
+    await dbCRUD.insertCentroMedico(centro1594);
     print("CENTRO 1594 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1595
@@ -23929,7 +23929,7 @@ void main() async {
     );
 
     // Inserta centro 1595 en la base de datos
-    await dbHelper.insertCentroMedico(centro1595);
+    await dbCRUD.insertCentroMedico(centro1595);
     print("CENTRO 1595 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1596
@@ -23944,7 +23944,7 @@ void main() async {
     );
 
     // Inserta centro 1596 en la base de datos
-    await dbHelper.insertCentroMedico(centro1596);
+    await dbCRUD.insertCentroMedico(centro1596);
     print("CENTRO 1596 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1597
@@ -23959,7 +23959,7 @@ void main() async {
     );
 
     // Inserta centro 1597 en la base de datos
-    await dbHelper.insertCentroMedico(centro1597);
+    await dbCRUD.insertCentroMedico(centro1597);
     print("CENTRO 1597 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1598
@@ -23974,7 +23974,7 @@ void main() async {
     );
 
     // Inserta centro 1598 en la base de datos
-    await dbHelper.insertCentroMedico(centro1598);
+    await dbCRUD.insertCentroMedico(centro1598);
     print("CENTRO 1598 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1599
@@ -23989,7 +23989,7 @@ void main() async {
     );
 
     // Inserta centro 1599 en la base de datos
-    await dbHelper.insertCentroMedico(centro1599);
+    await dbCRUD.insertCentroMedico(centro1599);
     print("CENTRO 1599 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1600
@@ -24004,7 +24004,7 @@ void main() async {
     );
 
     // Inserta centro 1600 en la base de datos
-    await dbHelper.insertCentroMedico(centro1600);
+    await dbCRUD.insertCentroMedico(centro1600);
     print("CENTRO 1600 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1601
@@ -24019,7 +24019,7 @@ void main() async {
     );
 
     // Inserta centro 1601 en la base de datos
-    await dbHelper.insertCentroMedico(centro1601);
+    await dbCRUD.insertCentroMedico(centro1601);
     print("CENTRO 1601 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1602
@@ -24034,7 +24034,7 @@ void main() async {
     );
 
     // Inserta centro 1602 en la base de datos
-    await dbHelper.insertCentroMedico(centro1602);
+    await dbCRUD.insertCentroMedico(centro1602);
     print("CENTRO 1602 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1603
@@ -24049,7 +24049,7 @@ void main() async {
     );
 
     // Inserta centro 1603 en la base de datos
-    await dbHelper.insertCentroMedico(centro1603);
+    await dbCRUD.insertCentroMedico(centro1603);
     print("CENTRO 1603 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1604
@@ -24064,7 +24064,7 @@ void main() async {
     );
 
     // Inserta centro 1604 en la base de datos
-    await dbHelper.insertCentroMedico(centro1604);
+    await dbCRUD.insertCentroMedico(centro1604);
     print("CENTRO 1604 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1605
@@ -24079,7 +24079,7 @@ void main() async {
     );
 
     // Inserta centro 1605 en la base de datos
-    await dbHelper.insertCentroMedico(centro1605);
+    await dbCRUD.insertCentroMedico(centro1605);
     print("CENTRO 1605 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1606
@@ -24094,7 +24094,7 @@ void main() async {
     );
 
     // Inserta centro 1606 en la base de datos
-    await dbHelper.insertCentroMedico(centro1606);
+    await dbCRUD.insertCentroMedico(centro1606);
     print("CENTRO 1606 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1607
@@ -24109,7 +24109,7 @@ void main() async {
     );
 
     // Inserta centro 1607 en la base de datos
-    await dbHelper.insertCentroMedico(centro1607);
+    await dbCRUD.insertCentroMedico(centro1607);
     print("CENTRO 1607 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1608
@@ -24124,7 +24124,7 @@ void main() async {
     );
 
     // Inserta centro 1608 en la base de datos
-    await dbHelper.insertCentroMedico(centro1608);
+    await dbCRUD.insertCentroMedico(centro1608);
     print("CENTRO 1608 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1609
@@ -24139,7 +24139,7 @@ void main() async {
     );
 
     // Inserta centro 1609 en la base de datos
-    await dbHelper.insertCentroMedico(centro1609);
+    await dbCRUD.insertCentroMedico(centro1609);
     print("CENTRO 1609 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1610
@@ -24154,7 +24154,7 @@ void main() async {
     );
 
     // Inserta centro 1610 en la base de datos
-    await dbHelper.insertCentroMedico(centro1610);
+    await dbCRUD.insertCentroMedico(centro1610);
     print("CENTRO 1610 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1611
@@ -24169,7 +24169,7 @@ void main() async {
     );
 
     // Inserta centro 1611 en la base de datos
-    await dbHelper.insertCentroMedico(centro1611);
+    await dbCRUD.insertCentroMedico(centro1611);
     print("CENTRO 1611 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1612
@@ -24184,7 +24184,7 @@ void main() async {
     );
 
     // Inserta centro 1612 en la base de datos
-    await dbHelper.insertCentroMedico(centro1612);
+    await dbCRUD.insertCentroMedico(centro1612);
     print("CENTRO 1612 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1613
@@ -24199,7 +24199,7 @@ void main() async {
     );
 
     // Inserta centro 1613 en la base de datos
-    await dbHelper.insertCentroMedico(centro1613);
+    await dbCRUD.insertCentroMedico(centro1613);
     print("CENTRO 1613 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1614
@@ -24214,7 +24214,7 @@ void main() async {
     );
 
     // Inserta centro 1614 en la base de datos
-    await dbHelper.insertCentroMedico(centro1614);
+    await dbCRUD.insertCentroMedico(centro1614);
     print("CENTRO 1614 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1615
@@ -24229,7 +24229,7 @@ void main() async {
     );
 
     // Inserta centro 1615 en la base de datos
-    await dbHelper.insertCentroMedico(centro1615);
+    await dbCRUD.insertCentroMedico(centro1615);
     print("CENTRO 1615 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1616
@@ -24244,7 +24244,7 @@ void main() async {
     );
 
     // Inserta centro 1616 en la base de datos
-    await dbHelper.insertCentroMedico(centro1616);
+    await dbCRUD.insertCentroMedico(centro1616);
     print("CENTRO 1616 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1617
@@ -24259,7 +24259,7 @@ void main() async {
     );
 
     // Inserta centro 1617 en la base de datos
-    await dbHelper.insertCentroMedico(centro1617);
+    await dbCRUD.insertCentroMedico(centro1617);
     print("CENTRO 1617 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1618
@@ -24274,7 +24274,7 @@ void main() async {
     );
 
     // Inserta centro 1618 en la base de datos
-    await dbHelper.insertCentroMedico(centro1618);
+    await dbCRUD.insertCentroMedico(centro1618);
     print("CENTRO 1618 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1619
@@ -24289,7 +24289,7 @@ void main() async {
     );
 
     // Inserta centro 1619 en la base de datos
-    await dbHelper.insertCentroMedico(centro1619);
+    await dbCRUD.insertCentroMedico(centro1619);
     print("CENTRO 1619 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1620
@@ -24304,7 +24304,7 @@ void main() async {
     );
 
     // Inserta centro 1620 en la base de datos
-    await dbHelper.insertCentroMedico(centro1620);
+    await dbCRUD.insertCentroMedico(centro1620);
     print("CENTRO 1620 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1621
@@ -24319,7 +24319,7 @@ void main() async {
     );
 
     // Inserta centro 1621 en la base de datos
-    await dbHelper.insertCentroMedico(centro1621);
+    await dbCRUD.insertCentroMedico(centro1621);
     print("CENTRO 1621 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1622
@@ -24334,7 +24334,7 @@ void main() async {
     );
 
     // Inserta centro 1622 en la base de datos
-    await dbHelper.insertCentroMedico(centro1622);
+    await dbCRUD.insertCentroMedico(centro1622);
     print("CENTRO 1622 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1623
@@ -24349,7 +24349,7 @@ void main() async {
     );
 
     // Inserta centro 1623 en la base de datos
-    await dbHelper.insertCentroMedico(centro1623);
+    await dbCRUD.insertCentroMedico(centro1623);
     print("CENTRO 1623 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1624
@@ -24364,7 +24364,7 @@ void main() async {
     );
 
     // Inserta centro 1624 en la base de datos
-    await dbHelper.insertCentroMedico(centro1624);
+    await dbCRUD.insertCentroMedico(centro1624);
     print("CENTRO 1624 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1625
@@ -24379,7 +24379,7 @@ void main() async {
     );
 
     // Inserta centro 1625 en la base de datos
-    await dbHelper.insertCentroMedico(centro1625);
+    await dbCRUD.insertCentroMedico(centro1625);
     print("CENTRO 1625 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1626
@@ -24394,7 +24394,7 @@ void main() async {
     );
 
     // Inserta centro 1626 en la base de datos
-    await dbHelper.insertCentroMedico(centro1626);
+    await dbCRUD.insertCentroMedico(centro1626);
     print("CENTRO 1626 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1627
@@ -24409,7 +24409,7 @@ void main() async {
     );
 
     // Inserta centro 1627 en la base de datos
-    await dbHelper.insertCentroMedico(centro1627);
+    await dbCRUD.insertCentroMedico(centro1627);
     print("CENTRO 1627 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1628
@@ -24424,7 +24424,7 @@ void main() async {
     );
 
     // Inserta centro 1628 en la base de datos
-    await dbHelper.insertCentroMedico(centro1628);
+    await dbCRUD.insertCentroMedico(centro1628);
     print("CENTRO 1628 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1629
@@ -24439,7 +24439,7 @@ void main() async {
     );
 
     // Inserta centro 1629 en la base de datos
-    await dbHelper.insertCentroMedico(centro1629);
+    await dbCRUD.insertCentroMedico(centro1629);
     print("CENTRO 1629 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1630
@@ -24454,7 +24454,7 @@ void main() async {
     );
 
     // Inserta centro 1630 en la base de datos
-    await dbHelper.insertCentroMedico(centro1630);
+    await dbCRUD.insertCentroMedico(centro1630);
     print("CENTRO 1630 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1631
@@ -24469,7 +24469,7 @@ void main() async {
     );
 
     // Inserta centro 1631 en la base de datos
-    await dbHelper.insertCentroMedico(centro1631);
+    await dbCRUD.insertCentroMedico(centro1631);
     print("CENTRO 1631 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1632
@@ -24484,7 +24484,7 @@ void main() async {
     );
 
     // Inserta centro 1632 en la base de datos
-    await dbHelper.insertCentroMedico(centro1632);
+    await dbCRUD.insertCentroMedico(centro1632);
     print("CENTRO 1632 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1633
@@ -24499,7 +24499,7 @@ void main() async {
     );
 
     // Inserta centro 1633 en la base de datos
-    await dbHelper.insertCentroMedico(centro1633);
+    await dbCRUD.insertCentroMedico(centro1633);
     print("CENTRO 1633 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1634
@@ -24514,7 +24514,7 @@ void main() async {
     );
 
     // Inserta centro 1634 en la base de datos
-    await dbHelper.insertCentroMedico(centro1634);
+    await dbCRUD.insertCentroMedico(centro1634);
     print("CENTRO 1634 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1635
@@ -24529,7 +24529,7 @@ void main() async {
     );
 
     // Inserta centro 1635 en la base de datos
-    await dbHelper.insertCentroMedico(centro1635);
+    await dbCRUD.insertCentroMedico(centro1635);
     print("CENTRO 1635 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1636
@@ -24544,7 +24544,7 @@ void main() async {
     );
 
     // Inserta centro 1636 en la base de datos
-    await dbHelper.insertCentroMedico(centro1636);
+    await dbCRUD.insertCentroMedico(centro1636);
     print("CENTRO 1636 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1637
@@ -24559,7 +24559,7 @@ void main() async {
     );
 
     // Inserta centro 1637 en la base de datos
-    await dbHelper.insertCentroMedico(centro1637);
+    await dbCRUD.insertCentroMedico(centro1637);
     print("CENTRO 1637 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1638
@@ -24574,7 +24574,7 @@ void main() async {
     );
 
     // Inserta centro 1638 en la base de datos
-    await dbHelper.insertCentroMedico(centro1638);
+    await dbCRUD.insertCentroMedico(centro1638);
     print("CENTRO 1638 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1639
@@ -24589,7 +24589,7 @@ void main() async {
     );
 
     // Inserta centro 1639 en la base de datos
-    await dbHelper.insertCentroMedico(centro1639);
+    await dbCRUD.insertCentroMedico(centro1639);
     print("CENTRO 1639 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1640
@@ -24604,7 +24604,7 @@ void main() async {
     );
 
     // Inserta centro 1640 en la base de datos
-    await dbHelper.insertCentroMedico(centro1640);
+    await dbCRUD.insertCentroMedico(centro1640);
     print("CENTRO 1640 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1641
@@ -24619,7 +24619,7 @@ void main() async {
     );
 
     // Inserta centro 1641 en la base de datos
-    await dbHelper.insertCentroMedico(centro1641);
+    await dbCRUD.insertCentroMedico(centro1641);
     print("CENTRO 1641 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1642
@@ -24634,7 +24634,7 @@ void main() async {
     );
 
     // Inserta centro 1642 en la base de datos
-    await dbHelper.insertCentroMedico(centro1642);
+    await dbCRUD.insertCentroMedico(centro1642);
     print("CENTRO 1642 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1643
@@ -24649,7 +24649,7 @@ void main() async {
     );
 
     // Inserta centro 1643 en la base de datos
-    await dbHelper.insertCentroMedico(centro1643);
+    await dbCRUD.insertCentroMedico(centro1643);
     print("CENTRO 1643 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1644
@@ -24664,7 +24664,7 @@ void main() async {
     );
 
     // Inserta centro 1644 en la base de datos
-    await dbHelper.insertCentroMedico(centro1644);
+    await dbCRUD.insertCentroMedico(centro1644);
     print("CENTRO 1644 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1645
@@ -24679,7 +24679,7 @@ void main() async {
     );
 
     // Inserta centro 1645 en la base de datos
-    await dbHelper.insertCentroMedico(centro1645);
+    await dbCRUD.insertCentroMedico(centro1645);
     print("CENTRO 1645 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1646
@@ -24694,7 +24694,7 @@ void main() async {
     );
 
     // Inserta centro 1646 en la base de datos
-    await dbHelper.insertCentroMedico(centro1646);
+    await dbCRUD.insertCentroMedico(centro1646);
     print("CENTRO 1646 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1647
@@ -24709,7 +24709,7 @@ void main() async {
     );
 
     // Inserta centro 1647 en la base de datos
-    await dbHelper.insertCentroMedico(centro1647);
+    await dbCRUD.insertCentroMedico(centro1647);
     print("CENTRO 1647 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1648
@@ -24724,7 +24724,7 @@ void main() async {
     );
 
     // Inserta centro 1648 en la base de datos
-    await dbHelper.insertCentroMedico(centro1648);
+    await dbCRUD.insertCentroMedico(centro1648);
     print("CENTRO 1648 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1649
@@ -24739,7 +24739,7 @@ void main() async {
     );
 
     // Inserta centro 1649 en la base de datos
-    await dbHelper.insertCentroMedico(centro1649);
+    await dbCRUD.insertCentroMedico(centro1649);
     print("CENTRO 1649 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1650
@@ -24754,7 +24754,7 @@ void main() async {
     );
 
     // Inserta centro 1650 en la base de datos
-    await dbHelper.insertCentroMedico(centro1650);
+    await dbCRUD.insertCentroMedico(centro1650);
     print("CENTRO 1650 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1651
@@ -24769,7 +24769,7 @@ void main() async {
     );
 
     // Inserta centro 1651 en la base de datos
-    await dbHelper.insertCentroMedico(centro1651);
+    await dbCRUD.insertCentroMedico(centro1651);
     print("CENTRO 1651 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1652
@@ -24784,7 +24784,7 @@ void main() async {
     );
 
     // Inserta centro 1652 en la base de datos
-    await dbHelper.insertCentroMedico(centro1652);
+    await dbCRUD.insertCentroMedico(centro1652);
     print("CENTRO 1652 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1653
@@ -24799,7 +24799,7 @@ void main() async {
     );
 
     // Inserta centro 1653 en la base de datos
-    await dbHelper.insertCentroMedico(centro1653);
+    await dbCRUD.insertCentroMedico(centro1653);
     print("CENTRO 1653 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1654
@@ -24814,7 +24814,7 @@ void main() async {
     );
 
     // Inserta centro 1654 en la base de datos
-    await dbHelper.insertCentroMedico(centro1654);
+    await dbCRUD.insertCentroMedico(centro1654);
     print("CENTRO 1654 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1655
@@ -24829,7 +24829,7 @@ void main() async {
     );
 
     // Inserta centro 1655 en la base de datos
-    await dbHelper.insertCentroMedico(centro1655);
+    await dbCRUD.insertCentroMedico(centro1655);
     print("CENTRO 1655 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1656
@@ -24844,7 +24844,7 @@ void main() async {
     );
 
     // Inserta centro 1656 en la base de datos
-    await dbHelper.insertCentroMedico(centro1656);
+    await dbCRUD.insertCentroMedico(centro1656);
     print("CENTRO 1656 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1657
@@ -24859,7 +24859,7 @@ void main() async {
     );
 
     // Inserta centro 1657 en la base de datos
-    await dbHelper.insertCentroMedico(centro1657);
+    await dbCRUD.insertCentroMedico(centro1657);
     print("CENTRO 1657 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1658
@@ -24874,7 +24874,7 @@ void main() async {
     );
 
     // Inserta centro 1658 en la base de datos
-    await dbHelper.insertCentroMedico(centro1658);
+    await dbCRUD.insertCentroMedico(centro1658);
     print("CENTRO 1658 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1659
@@ -24889,7 +24889,7 @@ void main() async {
     );
 
     // Inserta centro 1659 en la base de datos
-    await dbHelper.insertCentroMedico(centro1659);
+    await dbCRUD.insertCentroMedico(centro1659);
     print("CENTRO 1659 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1660
@@ -24904,7 +24904,7 @@ void main() async {
     );
 
     // Inserta centro 1660 en la base de datos
-    await dbHelper.insertCentroMedico(centro1660);
+    await dbCRUD.insertCentroMedico(centro1660);
     print("CENTRO 1660 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1661
@@ -24919,7 +24919,7 @@ void main() async {
     );
 
     // Inserta centro 1661 en la base de datos
-    await dbHelper.insertCentroMedico(centro1661);
+    await dbCRUD.insertCentroMedico(centro1661);
     print("CENTRO 1661 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1662
@@ -24934,7 +24934,7 @@ void main() async {
     );
 
     // Inserta centro 1662 en la base de datos
-    await dbHelper.insertCentroMedico(centro1662);
+    await dbCRUD.insertCentroMedico(centro1662);
     print("CENTRO 1662 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1663
@@ -24949,7 +24949,7 @@ void main() async {
     );
 
     // Inserta centro 1663 en la base de datos
-    await dbHelper.insertCentroMedico(centro1663);
+    await dbCRUD.insertCentroMedico(centro1663);
     print("CENTRO 1663 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1664
@@ -24964,7 +24964,7 @@ void main() async {
     );
 
     // Inserta centro 1664 en la base de datos
-    await dbHelper.insertCentroMedico(centro1664);
+    await dbCRUD.insertCentroMedico(centro1664);
     print("CENTRO 1664 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1665
@@ -24979,7 +24979,7 @@ void main() async {
     );
 
     // Inserta centro 1665 en la base de datos
-    await dbHelper.insertCentroMedico(centro1665);
+    await dbCRUD.insertCentroMedico(centro1665);
     print("CENTRO 1665 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1666
@@ -24994,7 +24994,7 @@ void main() async {
     );
 
     // Inserta centro 1666 en la base de datos
-    await dbHelper.insertCentroMedico(centro1666);
+    await dbCRUD.insertCentroMedico(centro1666);
     print("CENTRO 1666 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1667
@@ -25009,7 +25009,7 @@ void main() async {
     );
 
     // Inserta centro 1667 en la base de datos
-    await dbHelper.insertCentroMedico(centro1667);
+    await dbCRUD.insertCentroMedico(centro1667);
     print("CENTRO 1667 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1668
@@ -25024,7 +25024,7 @@ void main() async {
     );
 
     // Inserta centro 1668 en la base de datos
-    await dbHelper.insertCentroMedico(centro1668);
+    await dbCRUD.insertCentroMedico(centro1668);
     print("CENTRO 1668 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1669
@@ -25039,7 +25039,7 @@ void main() async {
     );
 
     // Inserta centro 1669 en la base de datos
-    await dbHelper.insertCentroMedico(centro1669);
+    await dbCRUD.insertCentroMedico(centro1669);
     print("CENTRO 1669 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1670
@@ -25054,7 +25054,7 @@ void main() async {
     );
 
     // Inserta centro 1670 en la base de datos
-    await dbHelper.insertCentroMedico(centro1670);
+    await dbCRUD.insertCentroMedico(centro1670);
     print("CENTRO 1670 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1671
@@ -25069,7 +25069,7 @@ void main() async {
     );
 
     // Inserta centro 1671 en la base de datos
-    await dbHelper.insertCentroMedico(centro1671);
+    await dbCRUD.insertCentroMedico(centro1671);
     print("CENTRO 1671 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1672
@@ -25084,7 +25084,7 @@ void main() async {
     );
 
     // Inserta centro 1672 en la base de datos
-    await dbHelper.insertCentroMedico(centro1672);
+    await dbCRUD.insertCentroMedico(centro1672);
     print("CENTRO 1672 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1673
@@ -25099,7 +25099,7 @@ void main() async {
     );
 
     // Inserta centro 1673 en la base de datos
-    await dbHelper.insertCentroMedico(centro1673);
+    await dbCRUD.insertCentroMedico(centro1673);
     print("CENTRO 1673 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1674
@@ -25114,7 +25114,7 @@ void main() async {
     );
 
     // Inserta centro 1674 en la base de datos
-    await dbHelper.insertCentroMedico(centro1674);
+    await dbCRUD.insertCentroMedico(centro1674);
     print("CENTRO 1674 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1675
@@ -25129,7 +25129,7 @@ void main() async {
     );
 
     // Inserta centro 1675 en la base de datos
-    await dbHelper.insertCentroMedico(centro1675);
+    await dbCRUD.insertCentroMedico(centro1675);
     print("CENTRO 1675 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1676
@@ -25144,7 +25144,7 @@ void main() async {
     );
 
     // Inserta centro 1676 en la base de datos
-    await dbHelper.insertCentroMedico(centro1676);
+    await dbCRUD.insertCentroMedico(centro1676);
     print("CENTRO 1676 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1677
@@ -25159,7 +25159,7 @@ void main() async {
     );
 
     // Inserta centro 1677 en la base de datos
-    await dbHelper.insertCentroMedico(centro1677);
+    await dbCRUD.insertCentroMedico(centro1677);
     print("CENTRO 1677 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1678
@@ -25174,7 +25174,7 @@ void main() async {
     );
 
     // Inserta centro 1678 en la base de datos
-    await dbHelper.insertCentroMedico(centro1678);
+    await dbCRUD.insertCentroMedico(centro1678);
     print("CENTRO 1678 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1679
@@ -25189,7 +25189,7 @@ void main() async {
     );
 
     // Inserta centro 1679 en la base de datos
-    await dbHelper.insertCentroMedico(centro1679);
+    await dbCRUD.insertCentroMedico(centro1679);
     print("CENTRO 1679 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1680
@@ -25204,7 +25204,7 @@ void main() async {
     );
 
     // Inserta centro 1680 en la base de datos
-    await dbHelper.insertCentroMedico(centro1680);
+    await dbCRUD.insertCentroMedico(centro1680);
     print("CENTRO 1680 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1681
@@ -25219,7 +25219,7 @@ void main() async {
     );
 
     // Inserta centro 1681 en la base de datos
-    await dbHelper.insertCentroMedico(centro1681);
+    await dbCRUD.insertCentroMedico(centro1681);
     print("CENTRO 1681 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1682
@@ -25234,7 +25234,7 @@ void main() async {
     );
 
     // Inserta centro 1682 en la base de datos
-    await dbHelper.insertCentroMedico(centro1682);
+    await dbCRUD.insertCentroMedico(centro1682);
     print("CENTRO 1682 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1683
@@ -25249,7 +25249,7 @@ void main() async {
     );
 
     // Inserta centro 1683 en la base de datos
-    await dbHelper.insertCentroMedico(centro1683);
+    await dbCRUD.insertCentroMedico(centro1683);
     print("CENTRO 1683 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1684
@@ -25264,7 +25264,7 @@ void main() async {
     );
 
     // Inserta centro 1684 en la base de datos
-    await dbHelper.insertCentroMedico(centro1684);
+    await dbCRUD.insertCentroMedico(centro1684);
     print("CENTRO 1684 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1685
@@ -25279,7 +25279,7 @@ void main() async {
     );
 
     // Inserta centro 1685 en la base de datos
-    await dbHelper.insertCentroMedico(centro1685);
+    await dbCRUD.insertCentroMedico(centro1685);
     print("CENTRO 1685 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1686
@@ -25294,7 +25294,7 @@ void main() async {
     );
 
     // Inserta centro 1686 en la base de datos
-    await dbHelper.insertCentroMedico(centro1686);
+    await dbCRUD.insertCentroMedico(centro1686);
     print("CENTRO 1686 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1687
@@ -25309,7 +25309,7 @@ void main() async {
     );
 
     // Inserta centro 1687 en la base de datos
-    await dbHelper.insertCentroMedico(centro1687);
+    await dbCRUD.insertCentroMedico(centro1687);
     print("CENTRO 1687 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1688
@@ -25324,7 +25324,7 @@ void main() async {
     );
 
     // Inserta centro 1688 en la base de datos
-    await dbHelper.insertCentroMedico(centro1688);
+    await dbCRUD.insertCentroMedico(centro1688);
     print("CENTRO 1688 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1689
@@ -25339,7 +25339,7 @@ void main() async {
     );
 
     // Inserta centro 1689 en la base de datos
-    await dbHelper.insertCentroMedico(centro1689);
+    await dbCRUD.insertCentroMedico(centro1689);
     print("CENTRO 1689 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1690
@@ -25354,7 +25354,7 @@ void main() async {
     );
 
     // Inserta centro 1690 en la base de datos
-    await dbHelper.insertCentroMedico(centro1690);
+    await dbCRUD.insertCentroMedico(centro1690);
     print("CENTRO 1690 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1691
@@ -25369,7 +25369,7 @@ void main() async {
     );
 
     // Inserta centro 1691 en la base de datos
-    await dbHelper.insertCentroMedico(centro1691);
+    await dbCRUD.insertCentroMedico(centro1691);
     print("CENTRO 1691 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1692
@@ -25384,7 +25384,7 @@ void main() async {
     );
 
     // Inserta centro 1692 en la base de datos
-    await dbHelper.insertCentroMedico(centro1692);
+    await dbCRUD.insertCentroMedico(centro1692);
     print("CENTRO 1692 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1693
@@ -25399,7 +25399,7 @@ void main() async {
     );
 
     // Inserta centro 1693 en la base de datos
-    await dbHelper.insertCentroMedico(centro1693);
+    await dbCRUD.insertCentroMedico(centro1693);
     print("CENTRO 1693 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1694
@@ -25414,7 +25414,7 @@ void main() async {
     );
 
     // Inserta centro 1694 en la base de datos
-    await dbHelper.insertCentroMedico(centro1694);
+    await dbCRUD.insertCentroMedico(centro1694);
     print("CENTRO 1694 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1695
@@ -25429,7 +25429,7 @@ void main() async {
     );
 
     // Inserta centro 1695 en la base de datos
-    await dbHelper.insertCentroMedico(centro1695);
+    await dbCRUD.insertCentroMedico(centro1695);
     print("CENTRO 1695 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1696
@@ -25444,7 +25444,7 @@ void main() async {
     );
 
     // Inserta centro 1696 en la base de datos
-    await dbHelper.insertCentroMedico(centro1696);
+    await dbCRUD.insertCentroMedico(centro1696);
     print("CENTRO 1696 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1697
@@ -25459,7 +25459,7 @@ void main() async {
     );
 
     // Inserta centro 1697 en la base de datos
-    await dbHelper.insertCentroMedico(centro1697);
+    await dbCRUD.insertCentroMedico(centro1697);
     print("CENTRO 1697 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1698
@@ -25474,7 +25474,7 @@ void main() async {
     );
 
     // Inserta centro 1698 en la base de datos
-    await dbHelper.insertCentroMedico(centro1698);
+    await dbCRUD.insertCentroMedico(centro1698);
     print("CENTRO 1698 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1699
@@ -25489,7 +25489,7 @@ void main() async {
     );
 
     // Inserta centro 1699 en la base de datos
-    await dbHelper.insertCentroMedico(centro1699);
+    await dbCRUD.insertCentroMedico(centro1699);
     print("CENTRO 1699 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1700
@@ -25504,7 +25504,7 @@ void main() async {
     );
 
     // Inserta centro 1700 en la base de datos
-    await dbHelper.insertCentroMedico(centro1700);
+    await dbCRUD.insertCentroMedico(centro1700);
     print("CENTRO 1700 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1701
@@ -25519,7 +25519,7 @@ void main() async {
     );
 
     // Inserta centro 1701 en la base de datos
-    await dbHelper.insertCentroMedico(centro1701);
+    await dbCRUD.insertCentroMedico(centro1701);
     print("CENTRO 1701 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1702
@@ -25534,7 +25534,7 @@ void main() async {
     );
 
     // Inserta centro 1702 en la base de datos
-    await dbHelper.insertCentroMedico(centro1702);
+    await dbCRUD.insertCentroMedico(centro1702);
     print("CENTRO 1702 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1703
@@ -25549,7 +25549,7 @@ void main() async {
     );
 
     // Inserta centro 1703 en la base de datos
-    await dbHelper.insertCentroMedico(centro1703);
+    await dbCRUD.insertCentroMedico(centro1703);
     print("CENTRO 1703 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1704
@@ -25564,7 +25564,7 @@ void main() async {
     );
 
     // Inserta centro 1704 en la base de datos
-    await dbHelper.insertCentroMedico(centro1704);
+    await dbCRUD.insertCentroMedico(centro1704);
     print("CENTRO 1704 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1705
@@ -25579,7 +25579,7 @@ void main() async {
     );
 
     // Inserta centro 1705 en la base de datos
-    await dbHelper.insertCentroMedico(centro1705);
+    await dbCRUD.insertCentroMedico(centro1705);
     print("CENTRO 1705 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1706
@@ -25594,7 +25594,7 @@ void main() async {
     );
 
     // Inserta centro 1706 en la base de datos
-    await dbHelper.insertCentroMedico(centro1706);
+    await dbCRUD.insertCentroMedico(centro1706);
     print("CENTRO 1706 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1707
@@ -25609,7 +25609,7 @@ void main() async {
     );
 
     // Inserta centro 1707 en la base de datos
-    await dbHelper.insertCentroMedico(centro1707);
+    await dbCRUD.insertCentroMedico(centro1707);
     print("CENTRO 1707 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1708
@@ -25624,7 +25624,7 @@ void main() async {
     );
 
     // Inserta centro 1708 en la base de datos
-    await dbHelper.insertCentroMedico(centro1708);
+    await dbCRUD.insertCentroMedico(centro1708);
     print("CENTRO 1708 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1709
@@ -25639,7 +25639,7 @@ void main() async {
     );
 
     // Inserta centro 1709 en la base de datos
-    await dbHelper.insertCentroMedico(centro1709);
+    await dbCRUD.insertCentroMedico(centro1709);
     print("CENTRO 1709 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1710
@@ -25654,7 +25654,7 @@ void main() async {
     );
 
     // Inserta centro 1710 en la base de datos
-    await dbHelper.insertCentroMedico(centro1710);
+    await dbCRUD.insertCentroMedico(centro1710);
     print("CENTRO 1710 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1711
@@ -25669,7 +25669,7 @@ void main() async {
     );
 
     // Inserta centro 1711 en la base de datos
-    await dbHelper.insertCentroMedico(centro1711);
+    await dbCRUD.insertCentroMedico(centro1711);
     print("CENTRO 1711 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1712
@@ -25684,7 +25684,7 @@ void main() async {
     );
 
     // Inserta centro 1712 en la base de datos
-    await dbHelper.insertCentroMedico(centro1712);
+    await dbCRUD.insertCentroMedico(centro1712);
     print("CENTRO 1712 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1713
@@ -25699,7 +25699,7 @@ void main() async {
     );
 
     // Inserta centro 1713 en la base de datos
-    await dbHelper.insertCentroMedico(centro1713);
+    await dbCRUD.insertCentroMedico(centro1713);
     print("CENTRO 1713 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1714
@@ -25714,7 +25714,7 @@ void main() async {
     );
 
     // Inserta centro 1714 en la base de datos
-    await dbHelper.insertCentroMedico(centro1714);
+    await dbCRUD.insertCentroMedico(centro1714);
     print("CENTRO 1714 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1715
@@ -25729,7 +25729,7 @@ void main() async {
     );
 
     // Inserta centro 1715 en la base de datos
-    await dbHelper.insertCentroMedico(centro1715);
+    await dbCRUD.insertCentroMedico(centro1715);
     print("CENTRO 1715 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1716
@@ -25744,7 +25744,7 @@ void main() async {
     );
 
     // Inserta centro 1716 en la base de datos
-    await dbHelper.insertCentroMedico(centro1716);
+    await dbCRUD.insertCentroMedico(centro1716);
     print("CENTRO 1716 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1717
@@ -25759,7 +25759,7 @@ void main() async {
     );
 
     // Inserta centro 1717 en la base de datos
-    await dbHelper.insertCentroMedico(centro1717);
+    await dbCRUD.insertCentroMedico(centro1717);
     print("CENTRO 1717 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1718
@@ -25774,7 +25774,7 @@ void main() async {
     );
 
     // Inserta centro 1718 en la base de datos
-    await dbHelper.insertCentroMedico(centro1718);
+    await dbCRUD.insertCentroMedico(centro1718);
     print("CENTRO 1718 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1719
@@ -25789,7 +25789,7 @@ void main() async {
     );
 
     // Inserta centro 1719 en la base de datos
-    await dbHelper.insertCentroMedico(centro1719);
+    await dbCRUD.insertCentroMedico(centro1719);
     print("CENTRO 1719 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1720
@@ -25804,7 +25804,7 @@ void main() async {
     );
 
     // Inserta centro 1720 en la base de datos
-    await dbHelper.insertCentroMedico(centro1720);
+    await dbCRUD.insertCentroMedico(centro1720);
     print("CENTRO 1720 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1721
@@ -25819,7 +25819,7 @@ void main() async {
     );
 
     // Inserta centro 1721 en la base de datos
-    await dbHelper.insertCentroMedico(centro1721);
+    await dbCRUD.insertCentroMedico(centro1721);
     print("CENTRO 1721 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1722
@@ -25834,7 +25834,7 @@ void main() async {
     );
 
     // Inserta centro 1722 en la base de datos
-    await dbHelper.insertCentroMedico(centro1722);
+    await dbCRUD.insertCentroMedico(centro1722);
     print("CENTRO 1722 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1723
@@ -25849,7 +25849,7 @@ void main() async {
     );
 
     // Inserta centro 1723 en la base de datos
-    await dbHelper.insertCentroMedico(centro1723);
+    await dbCRUD.insertCentroMedico(centro1723);
     print("CENTRO 1723 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1724
@@ -25864,7 +25864,7 @@ void main() async {
     );
 
     // Inserta centro 1724 en la base de datos
-    await dbHelper.insertCentroMedico(centro1724);
+    await dbCRUD.insertCentroMedico(centro1724);
     print("CENTRO 1724 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1725
@@ -25879,7 +25879,7 @@ void main() async {
     );
 
     // Inserta centro 1725 en la base de datos
-    await dbHelper.insertCentroMedico(centro1725);
+    await dbCRUD.insertCentroMedico(centro1725);
     print("CENTRO 1725 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1726
@@ -25894,7 +25894,7 @@ void main() async {
     );
 
     // Inserta centro 1726 en la base de datos
-    await dbHelper.insertCentroMedico(centro1726);
+    await dbCRUD.insertCentroMedico(centro1726);
     print("CENTRO 1726 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1727
@@ -25909,7 +25909,7 @@ void main() async {
     );
 
     // Inserta centro 1727 en la base de datos
-    await dbHelper.insertCentroMedico(centro1727);
+    await dbCRUD.insertCentroMedico(centro1727);
     print("CENTRO 1727 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1728
@@ -25924,7 +25924,7 @@ void main() async {
     );
 
     // Inserta centro 1728 en la base de datos
-    await dbHelper.insertCentroMedico(centro1728);
+    await dbCRUD.insertCentroMedico(centro1728);
     print("CENTRO 1728 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1729
@@ -25939,7 +25939,7 @@ void main() async {
     );
 
     // Inserta centro 1729 en la base de datos
-    await dbHelper.insertCentroMedico(centro1729);
+    await dbCRUD.insertCentroMedico(centro1729);
     print("CENTRO 1729 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1730
@@ -25954,7 +25954,7 @@ void main() async {
     );
 
     // Inserta centro 1730 en la base de datos
-    await dbHelper.insertCentroMedico(centro1730);
+    await dbCRUD.insertCentroMedico(centro1730);
     print("CENTRO 1730 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1731
@@ -25969,7 +25969,7 @@ void main() async {
     );
 
     // Inserta centro 1731 en la base de datos
-    await dbHelper.insertCentroMedico(centro1731);
+    await dbCRUD.insertCentroMedico(centro1731);
     print("CENTRO 1731 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1732
@@ -25984,7 +25984,7 @@ void main() async {
     );
 
     // Inserta centro 1732 en la base de datos
-    await dbHelper.insertCentroMedico(centro1732);
+    await dbCRUD.insertCentroMedico(centro1732);
     print("CENTRO 1732 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1733
@@ -25999,7 +25999,7 @@ void main() async {
     );
 
     // Inserta centro 1733 en la base de datos
-    await dbHelper.insertCentroMedico(centro1733);
+    await dbCRUD.insertCentroMedico(centro1733);
     print("CENTRO 1733 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1734
@@ -26014,7 +26014,7 @@ void main() async {
     );
 
     // Inserta centro 1734 en la base de datos
-    await dbHelper.insertCentroMedico(centro1734);
+    await dbCRUD.insertCentroMedico(centro1734);
     print("CENTRO 1734 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1735
@@ -26029,7 +26029,7 @@ void main() async {
     );
 
     // Inserta centro 1735 en la base de datos
-    await dbHelper.insertCentroMedico(centro1735);
+    await dbCRUD.insertCentroMedico(centro1735);
     print("CENTRO 1735 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1736
@@ -26044,7 +26044,7 @@ void main() async {
     );
 
     // Inserta centro 1736 en la base de datos
-    await dbHelper.insertCentroMedico(centro1736);
+    await dbCRUD.insertCentroMedico(centro1736);
     print("CENTRO 1736 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1737
@@ -26059,7 +26059,7 @@ void main() async {
     );
 
     // Inserta centro 1737 en la base de datos
-    await dbHelper.insertCentroMedico(centro1737);
+    await dbCRUD.insertCentroMedico(centro1737);
     print("CENTRO 1737 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1738
@@ -26074,7 +26074,7 @@ void main() async {
     );
 
     // Inserta centro 1738 en la base de datos
-    await dbHelper.insertCentroMedico(centro1738);
+    await dbCRUD.insertCentroMedico(centro1738);
     print("CENTRO 1738 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1739
@@ -26089,7 +26089,7 @@ void main() async {
     );
 
     // Inserta centro 1739 en la base de datos
-    await dbHelper.insertCentroMedico(centro1739);
+    await dbCRUD.insertCentroMedico(centro1739);
     print("CENTRO 1739 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1740
@@ -26104,7 +26104,7 @@ void main() async {
     );
 
     // Inserta centro 1740 en la base de datos
-    await dbHelper.insertCentroMedico(centro1740);
+    await dbCRUD.insertCentroMedico(centro1740);
     print("CENTRO 1740 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1741
@@ -26119,7 +26119,7 @@ void main() async {
     );
 
     // Inserta centro 1741 en la base de datos
-    await dbHelper.insertCentroMedico(centro1741);
+    await dbCRUD.insertCentroMedico(centro1741);
     print("CENTRO 1741 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1742
@@ -26134,7 +26134,7 @@ void main() async {
     );
 
     // Inserta centro 1742 en la base de datos
-    await dbHelper.insertCentroMedico(centro1742);
+    await dbCRUD.insertCentroMedico(centro1742);
     print("CENTRO 1742 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1743
@@ -26149,7 +26149,7 @@ void main() async {
     );
 
     // Inserta centro 1743 en la base de datos
-    await dbHelper.insertCentroMedico(centro1743);
+    await dbCRUD.insertCentroMedico(centro1743);
     print("CENTRO 1743 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1744
@@ -26164,7 +26164,7 @@ void main() async {
     );
 
     // Inserta centro 1744 en la base de datos
-    await dbHelper.insertCentroMedico(centro1744);
+    await dbCRUD.insertCentroMedico(centro1744);
     print("CENTRO 1744 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1745
@@ -26179,7 +26179,7 @@ void main() async {
     );
 
     // Inserta centro 1745 en la base de datos
-    await dbHelper.insertCentroMedico(centro1745);
+    await dbCRUD.insertCentroMedico(centro1745);
     print("CENTRO 1745 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1746
@@ -26194,7 +26194,7 @@ void main() async {
     );
 
     // Inserta centro 1746 en la base de datos
-    await dbHelper.insertCentroMedico(centro1746);
+    await dbCRUD.insertCentroMedico(centro1746);
     print("CENTRO 1746 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1747
@@ -26209,7 +26209,7 @@ void main() async {
     );
 
     // Inserta centro 1747 en la base de datos
-    await dbHelper.insertCentroMedico(centro1747);
+    await dbCRUD.insertCentroMedico(centro1747);
     print("CENTRO 1747 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1748
@@ -26224,7 +26224,7 @@ void main() async {
     );
 
     // Inserta centro 1748 en la base de datos
-    await dbHelper.insertCentroMedico(centro1748);
+    await dbCRUD.insertCentroMedico(centro1748);
     print("CENTRO 1748 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1749
@@ -26239,7 +26239,7 @@ void main() async {
     );
 
     // Inserta centro 1749 en la base de datos
-    await dbHelper.insertCentroMedico(centro1749);
+    await dbCRUD.insertCentroMedico(centro1749);
     print("CENTRO 1749 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1750
@@ -26254,7 +26254,7 @@ void main() async {
     );
 
     // Inserta centro 1750 en la base de datos
-    await dbHelper.insertCentroMedico(centro1750);
+    await dbCRUD.insertCentroMedico(centro1750);
     print("CENTRO 1750 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1751
@@ -26269,7 +26269,7 @@ void main() async {
     );
 
     // Inserta centro 1751 en la base de datos
-    await dbHelper.insertCentroMedico(centro1751);
+    await dbCRUD.insertCentroMedico(centro1751);
     print("CENTRO 1751 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1752
@@ -26284,7 +26284,7 @@ void main() async {
     );
 
     // Inserta centro 1752 en la base de datos
-    await dbHelper.insertCentroMedico(centro1752);
+    await dbCRUD.insertCentroMedico(centro1752);
     print("CENTRO 1752 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1753
@@ -26299,7 +26299,7 @@ void main() async {
     );
 
     // Inserta centro 1753 en la base de datos
-    await dbHelper.insertCentroMedico(centro1753);
+    await dbCRUD.insertCentroMedico(centro1753);
     print("CENTRO 1753 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1754
@@ -26314,7 +26314,7 @@ void main() async {
     );
 
     // Inserta centro 1754 en la base de datos
-    await dbHelper.insertCentroMedico(centro1754);
+    await dbCRUD.insertCentroMedico(centro1754);
     print("CENTRO 1754 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1755
@@ -26329,7 +26329,7 @@ void main() async {
     );
 
     // Inserta centro 1755 en la base de datos
-    await dbHelper.insertCentroMedico(centro1755);
+    await dbCRUD.insertCentroMedico(centro1755);
     print("CENTRO 1755 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1756
@@ -26344,7 +26344,7 @@ void main() async {
     );
 
     // Inserta centro 1756 en la base de datos
-    await dbHelper.insertCentroMedico(centro1756);
+    await dbCRUD.insertCentroMedico(centro1756);
     print("CENTRO 1756 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1757
@@ -26359,7 +26359,7 @@ void main() async {
     );
 
     // Inserta centro 1757 en la base de datos
-    await dbHelper.insertCentroMedico(centro1757);
+    await dbCRUD.insertCentroMedico(centro1757);
     print("CENTRO 1757 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1758
@@ -26374,7 +26374,7 @@ void main() async {
     );
 
     // Inserta centro 1758 en la base de datos
-    await dbHelper.insertCentroMedico(centro1758);
+    await dbCRUD.insertCentroMedico(centro1758);
     print("CENTRO 1758 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1759
@@ -26389,7 +26389,7 @@ void main() async {
     );
 
     // Inserta centro 1759 en la base de datos
-    await dbHelper.insertCentroMedico(centro1759);
+    await dbCRUD.insertCentroMedico(centro1759);
     print("CENTRO 1759 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1760
@@ -26404,7 +26404,7 @@ void main() async {
     );
 
     // Inserta centro 1760 en la base de datos
-    await dbHelper.insertCentroMedico(centro1760);
+    await dbCRUD.insertCentroMedico(centro1760);
     print("CENTRO 1760 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1761
@@ -26419,7 +26419,7 @@ void main() async {
     );
 
     // Inserta centro 1761 en la base de datos
-    await dbHelper.insertCentroMedico(centro1761);
+    await dbCRUD.insertCentroMedico(centro1761);
     print("CENTRO 1761 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1762
@@ -26434,7 +26434,7 @@ void main() async {
     );
 
     // Inserta centro 1762 en la base de datos
-    await dbHelper.insertCentroMedico(centro1762);
+    await dbCRUD.insertCentroMedico(centro1762);
     print("CENTRO 1762 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1763
@@ -26449,7 +26449,7 @@ void main() async {
     );
 
     // Inserta centro 1763 en la base de datos
-    await dbHelper.insertCentroMedico(centro1763);
+    await dbCRUD.insertCentroMedico(centro1763);
     print("CENTRO 1763 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1764
@@ -26464,7 +26464,7 @@ void main() async {
     );
 
     // Inserta centro 1764 en la base de datos
-    await dbHelper.insertCentroMedico(centro1764);
+    await dbCRUD.insertCentroMedico(centro1764);
     print("CENTRO 1764 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1765
@@ -26479,7 +26479,7 @@ void main() async {
     );
 
     // Inserta centro 1765 en la base de datos
-    await dbHelper.insertCentroMedico(centro1765);
+    await dbCRUD.insertCentroMedico(centro1765);
     print("CENTRO 1765 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1766
@@ -26494,7 +26494,7 @@ void main() async {
     );
 
     // Inserta centro 1766 en la base de datos
-    await dbHelper.insertCentroMedico(centro1766);
+    await dbCRUD.insertCentroMedico(centro1766);
     print("CENTRO 1766 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1767
@@ -26509,7 +26509,7 @@ void main() async {
     );
 
     // Inserta centro 1767 en la base de datos
-    await dbHelper.insertCentroMedico(centro1767);
+    await dbCRUD.insertCentroMedico(centro1767);
     print("CENTRO 1767 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1768
@@ -26524,7 +26524,7 @@ void main() async {
     );
 
     // Inserta centro 1768 en la base de datos
-    await dbHelper.insertCentroMedico(centro1768);
+    await dbCRUD.insertCentroMedico(centro1768);
     print("CENTRO 1768 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1769
@@ -26539,7 +26539,7 @@ void main() async {
     );
 
     // Inserta centro 1769 en la base de datos
-    await dbHelper.insertCentroMedico(centro1769);
+    await dbCRUD.insertCentroMedico(centro1769);
     print("CENTRO 1769 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1770
@@ -26554,7 +26554,7 @@ void main() async {
     );
 
     // Inserta centro 1770 en la base de datos
-    await dbHelper.insertCentroMedico(centro1770);
+    await dbCRUD.insertCentroMedico(centro1770);
     print("CENTRO 1770 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1771
@@ -26569,7 +26569,7 @@ void main() async {
     );
 
     // Inserta centro 1771 en la base de datos
-    await dbHelper.insertCentroMedico(centro1771);
+    await dbCRUD.insertCentroMedico(centro1771);
     print("CENTRO 1771 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1772
@@ -26584,7 +26584,7 @@ void main() async {
     );
 
     // Inserta centro 1772 en la base de datos
-    await dbHelper.insertCentroMedico(centro1772);
+    await dbCRUD.insertCentroMedico(centro1772);
     print("CENTRO 1772 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1773
@@ -26599,7 +26599,7 @@ void main() async {
     );
 
     // Inserta centro 1773 en la base de datos
-    await dbHelper.insertCentroMedico(centro1773);
+    await dbCRUD.insertCentroMedico(centro1773);
     print("CENTRO 1773 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1774
@@ -26614,7 +26614,7 @@ void main() async {
     );
 
     // Inserta centro 1774 en la base de datos
-    await dbHelper.insertCentroMedico(centro1774);
+    await dbCRUD.insertCentroMedico(centro1774);
     print("CENTRO 1774 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1775
@@ -26629,7 +26629,7 @@ void main() async {
     );
 
     // Inserta centro 1775 en la base de datos
-    await dbHelper.insertCentroMedico(centro1775);
+    await dbCRUD.insertCentroMedico(centro1775);
     print("CENTRO 1775 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1776
@@ -26644,7 +26644,7 @@ void main() async {
     );
 
     // Inserta centro 1776 en la base de datos
-    await dbHelper.insertCentroMedico(centro1776);
+    await dbCRUD.insertCentroMedico(centro1776);
     print("CENTRO 1776 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1777
@@ -26659,7 +26659,7 @@ void main() async {
     );
 
     // Inserta centro 1777 en la base de datos
-    await dbHelper.insertCentroMedico(centro1777);
+    await dbCRUD.insertCentroMedico(centro1777);
     print("CENTRO 1777 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1778
@@ -26674,7 +26674,7 @@ void main() async {
     );
 
     // Inserta centro 1778 en la base de datos
-    await dbHelper.insertCentroMedico(centro1778);
+    await dbCRUD.insertCentroMedico(centro1778);
     print("CENTRO 1778 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1779
@@ -26689,7 +26689,7 @@ void main() async {
     );
 
     // Inserta centro 1779 en la base de datos
-    await dbHelper.insertCentroMedico(centro1779);
+    await dbCRUD.insertCentroMedico(centro1779);
     print("CENTRO 1779 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1780
@@ -26704,7 +26704,7 @@ void main() async {
     );
 
     // Inserta centro 1780 en la base de datos
-    await dbHelper.insertCentroMedico(centro1780);
+    await dbCRUD.insertCentroMedico(centro1780);
     print("CENTRO 1780 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1781
@@ -26719,7 +26719,7 @@ void main() async {
     );
 
     // Inserta centro 1781 en la base de datos
-    await dbHelper.insertCentroMedico(centro1781);
+    await dbCRUD.insertCentroMedico(centro1781);
     print("CENTRO 1781 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1782
@@ -26734,7 +26734,7 @@ void main() async {
     );
 
     // Inserta centro 1782 en la base de datos
-    await dbHelper.insertCentroMedico(centro1782);
+    await dbCRUD.insertCentroMedico(centro1782);
     print("CENTRO 1782 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1783
@@ -26749,7 +26749,7 @@ void main() async {
     );
 
     // Inserta centro 1783 en la base de datos
-    await dbHelper.insertCentroMedico(centro1783);
+    await dbCRUD.insertCentroMedico(centro1783);
     print("CENTRO 1783 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1784
@@ -26764,7 +26764,7 @@ void main() async {
     );
 
     // Inserta centro 1784 en la base de datos
-    await dbHelper.insertCentroMedico(centro1784);
+    await dbCRUD.insertCentroMedico(centro1784);
     print("CENTRO 1784 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1785
@@ -26779,7 +26779,7 @@ void main() async {
     );
 
     // Inserta centro 1785 en la base de datos
-    await dbHelper.insertCentroMedico(centro1785);
+    await dbCRUD.insertCentroMedico(centro1785);
     print("CENTRO 1785 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1786
@@ -26794,7 +26794,7 @@ void main() async {
     );
 
     // Inserta centro 1786 en la base de datos
-    await dbHelper.insertCentroMedico(centro1786);
+    await dbCRUD.insertCentroMedico(centro1786);
     print("CENTRO 1786 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1787
@@ -26809,7 +26809,7 @@ void main() async {
     );
 
     // Inserta centro 1787 en la base de datos
-    await dbHelper.insertCentroMedico(centro1787);
+    await dbCRUD.insertCentroMedico(centro1787);
     print("CENTRO 1787 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1788
@@ -26824,7 +26824,7 @@ void main() async {
     );
 
     // Inserta centro 1788 en la base de datos
-    await dbHelper.insertCentroMedico(centro1788);
+    await dbCRUD.insertCentroMedico(centro1788);
     print("CENTRO 1788 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1789
@@ -26839,7 +26839,7 @@ void main() async {
     );
 
     // Inserta centro 1789 en la base de datos
-    await dbHelper.insertCentroMedico(centro1789);
+    await dbCRUD.insertCentroMedico(centro1789);
     print("CENTRO 1789 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1790
@@ -26854,7 +26854,7 @@ void main() async {
     );
 
     // Inserta centro 1790 en la base de datos
-    await dbHelper.insertCentroMedico(centro1790);
+    await dbCRUD.insertCentroMedico(centro1790);
     print("CENTRO 1790 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1791
@@ -26869,7 +26869,7 @@ void main() async {
     );
 
     // Inserta centro 1791 en la base de datos
-    await dbHelper.insertCentroMedico(centro1791);
+    await dbCRUD.insertCentroMedico(centro1791);
     print("CENTRO 1791 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1792
@@ -26884,7 +26884,7 @@ void main() async {
     );
 
     // Inserta centro 1792 en la base de datos
-    await dbHelper.insertCentroMedico(centro1792);
+    await dbCRUD.insertCentroMedico(centro1792);
     print("CENTRO 1792 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1793
@@ -26899,7 +26899,7 @@ void main() async {
     );
 
     // Inserta centro 1793 en la base de datos
-    await dbHelper.insertCentroMedico(centro1793);
+    await dbCRUD.insertCentroMedico(centro1793);
     print("CENTRO 1793 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1794
@@ -26914,7 +26914,7 @@ void main() async {
     );
 
     // Inserta centro 1794 en la base de datos
-    await dbHelper.insertCentroMedico(centro1794);
+    await dbCRUD.insertCentroMedico(centro1794);
     print("CENTRO 1794 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1795
@@ -26929,7 +26929,7 @@ void main() async {
     );
 
     // Inserta centro 1795 en la base de datos
-    await dbHelper.insertCentroMedico(centro1795);
+    await dbCRUD.insertCentroMedico(centro1795);
     print("CENTRO 1795 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1796
@@ -26944,7 +26944,7 @@ void main() async {
     );
 
     // Inserta centro 1796 en la base de datos
-    await dbHelper.insertCentroMedico(centro1796);
+    await dbCRUD.insertCentroMedico(centro1796);
     print("CENTRO 1796 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1797
@@ -26959,7 +26959,7 @@ void main() async {
     );
 
     // Inserta centro 1797 en la base de datos
-    await dbHelper.insertCentroMedico(centro1797);
+    await dbCRUD.insertCentroMedico(centro1797);
     print("CENTRO 1797 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1798
@@ -26974,7 +26974,7 @@ void main() async {
     );
 
     // Inserta centro 1798 en la base de datos
-    await dbHelper.insertCentroMedico(centro1798);
+    await dbCRUD.insertCentroMedico(centro1798);
     print("CENTRO 1798 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1799
@@ -26989,7 +26989,7 @@ void main() async {
     );
 
     // Inserta centro 1799 en la base de datos
-    await dbHelper.insertCentroMedico(centro1799);
+    await dbCRUD.insertCentroMedico(centro1799);
     print("CENTRO 1799 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1800
@@ -27004,7 +27004,7 @@ void main() async {
     );
 
     // Inserta centro 1800 en la base de datos
-    await dbHelper.insertCentroMedico(centro1800);
+    await dbCRUD.insertCentroMedico(centro1800);
     print("CENTRO 1800 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1801
@@ -27019,7 +27019,7 @@ void main() async {
     );
 
     // Inserta centro 1801 en la base de datos
-    await dbHelper.insertCentroMedico(centro1801);
+    await dbCRUD.insertCentroMedico(centro1801);
     print("CENTRO 1801 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1802
@@ -27034,7 +27034,7 @@ void main() async {
     );
 
     // Inserta centro 1802 en la base de datos
-    await dbHelper.insertCentroMedico(centro1802);
+    await dbCRUD.insertCentroMedico(centro1802);
     print("CENTRO 1802 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1803
@@ -27049,7 +27049,7 @@ void main() async {
     );
 
     // Inserta centro 1803 en la base de datos
-    await dbHelper.insertCentroMedico(centro1803);
+    await dbCRUD.insertCentroMedico(centro1803);
     print("CENTRO 1803 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1804
@@ -27064,7 +27064,7 @@ void main() async {
     );
 
     // Inserta centro 1804 en la base de datos
-    await dbHelper.insertCentroMedico(centro1804);
+    await dbCRUD.insertCentroMedico(centro1804);
     print("CENTRO 1804 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1805
@@ -27079,7 +27079,7 @@ void main() async {
     );
 
     // Inserta centro 1805 en la base de datos
-    await dbHelper.insertCentroMedico(centro1805);
+    await dbCRUD.insertCentroMedico(centro1805);
     print("CENTRO 1805 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1806
@@ -27094,7 +27094,7 @@ void main() async {
     );
 
     // Inserta centro 1806 en la base de datos
-    await dbHelper.insertCentroMedico(centro1806);
+    await dbCRUD.insertCentroMedico(centro1806);
     print("CENTRO 1806 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1807
@@ -27109,7 +27109,7 @@ void main() async {
     );
 
     // Inserta centro 1807 en la base de datos
-    await dbHelper.insertCentroMedico(centro1807);
+    await dbCRUD.insertCentroMedico(centro1807);
     print("CENTRO 1807 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1808
@@ -27124,7 +27124,7 @@ void main() async {
     );
 
     // Inserta centro 1808 en la base de datos
-    await dbHelper.insertCentroMedico(centro1808);
+    await dbCRUD.insertCentroMedico(centro1808);
     print("CENTRO 1808 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1809
@@ -27139,7 +27139,7 @@ void main() async {
     );
 
     // Inserta centro 1809 en la base de datos
-    await dbHelper.insertCentroMedico(centro1809);
+    await dbCRUD.insertCentroMedico(centro1809);
     print("CENTRO 1809 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1810
@@ -27154,7 +27154,7 @@ void main() async {
     );
 
     // Inserta centro 1810 en la base de datos
-    await dbHelper.insertCentroMedico(centro1810);
+    await dbCRUD.insertCentroMedico(centro1810);
     print("CENTRO 1810 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1811
@@ -27169,7 +27169,7 @@ void main() async {
     );
 
     // Inserta centro 1811 en la base de datos
-    await dbHelper.insertCentroMedico(centro1811);
+    await dbCRUD.insertCentroMedico(centro1811);
     print("CENTRO 1811 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1812
@@ -27184,7 +27184,7 @@ void main() async {
     );
 
     // Inserta centro 1812 en la base de datos
-    await dbHelper.insertCentroMedico(centro1812);
+    await dbCRUD.insertCentroMedico(centro1812);
     print("CENTRO 1812 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1813
@@ -27199,7 +27199,7 @@ void main() async {
     );
 
     // Inserta centro 1813 en la base de datos
-    await dbHelper.insertCentroMedico(centro1813);
+    await dbCRUD.insertCentroMedico(centro1813);
     print("CENTRO 1813 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1814
@@ -27214,7 +27214,7 @@ void main() async {
     );
 
     // Inserta centro 1814 en la base de datos
-    await dbHelper.insertCentroMedico(centro1814);
+    await dbCRUD.insertCentroMedico(centro1814);
     print("CENTRO 1814 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1815
@@ -27229,7 +27229,7 @@ void main() async {
     );
 
     // Inserta centro 1815 en la base de datos
-    await dbHelper.insertCentroMedico(centro1815);
+    await dbCRUD.insertCentroMedico(centro1815);
     print("CENTRO 1815 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1816
@@ -27244,7 +27244,7 @@ void main() async {
     );
 
     // Inserta centro 1816 en la base de datos
-    await dbHelper.insertCentroMedico(centro1816);
+    await dbCRUD.insertCentroMedico(centro1816);
     print("CENTRO 1816 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1817
@@ -27259,7 +27259,7 @@ void main() async {
     );
 
     // Inserta centro 1817 en la base de datos
-    await dbHelper.insertCentroMedico(centro1817);
+    await dbCRUD.insertCentroMedico(centro1817);
     print("CENTRO 1817 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1818
@@ -27274,7 +27274,7 @@ void main() async {
     );
 
     // Inserta centro 1818 en la base de datos
-    await dbHelper.insertCentroMedico(centro1818);
+    await dbCRUD.insertCentroMedico(centro1818);
     print("CENTRO 1818 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1819
@@ -27289,7 +27289,7 @@ void main() async {
     );
 
     // Inserta centro 1819 en la base de datos
-    await dbHelper.insertCentroMedico(centro1819);
+    await dbCRUD.insertCentroMedico(centro1819);
     print("CENTRO 1819 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1820
@@ -27304,7 +27304,7 @@ void main() async {
     );
 
     // Inserta centro 1820 en la base de datos
-    await dbHelper.insertCentroMedico(centro1820);
+    await dbCRUD.insertCentroMedico(centro1820);
     print("CENTRO 1820 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1821
@@ -27319,7 +27319,7 @@ void main() async {
     );
 
     // Inserta centro 1821 en la base de datos
-    await dbHelper.insertCentroMedico(centro1821);
+    await dbCRUD.insertCentroMedico(centro1821);
     print("CENTRO 1821 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1822
@@ -27334,7 +27334,7 @@ void main() async {
     );
 
     // Inserta centro 1822 en la base de datos
-    await dbHelper.insertCentroMedico(centro1822);
+    await dbCRUD.insertCentroMedico(centro1822);
     print("CENTRO 1822 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1823
@@ -27349,7 +27349,7 @@ void main() async {
     );
 
     // Inserta centro 1823 en la base de datos
-    await dbHelper.insertCentroMedico(centro1823);
+    await dbCRUD.insertCentroMedico(centro1823);
     print("CENTRO 1823 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1824
@@ -27364,7 +27364,7 @@ void main() async {
     );
 
     // Inserta centro 1824 en la base de datos
-    await dbHelper.insertCentroMedico(centro1824);
+    await dbCRUD.insertCentroMedico(centro1824);
     print("CENTRO 1824 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1825
@@ -27379,7 +27379,7 @@ void main() async {
     );
 
     // Inserta centro 1825 en la base de datos
-    await dbHelper.insertCentroMedico(centro1825);
+    await dbCRUD.insertCentroMedico(centro1825);
     print("CENTRO 1825 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1826
@@ -27394,7 +27394,7 @@ void main() async {
     );
 
     // Inserta centro 1826 en la base de datos
-    await dbHelper.insertCentroMedico(centro1826);
+    await dbCRUD.insertCentroMedico(centro1826);
     print("CENTRO 1826 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1827
@@ -27409,7 +27409,7 @@ void main() async {
     );
 
     // Inserta centro 1827 en la base de datos
-    await dbHelper.insertCentroMedico(centro1827);
+    await dbCRUD.insertCentroMedico(centro1827);
     print("CENTRO 1827 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1828
@@ -27424,7 +27424,7 @@ void main() async {
     );
 
     // Inserta centro 1828 en la base de datos
-    await dbHelper.insertCentroMedico(centro1828);
+    await dbCRUD.insertCentroMedico(centro1828);
     print("CENTRO 1828 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1829
@@ -27439,7 +27439,7 @@ void main() async {
     );
 
     // Inserta centro 1829 en la base de datos
-    await dbHelper.insertCentroMedico(centro1829);
+    await dbCRUD.insertCentroMedico(centro1829);
     print("CENTRO 1829 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1830
@@ -27454,7 +27454,7 @@ void main() async {
     );
 
     // Inserta centro 1830 en la base de datos
-    await dbHelper.insertCentroMedico(centro1830);
+    await dbCRUD.insertCentroMedico(centro1830);
     print("CENTRO 1830 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1831
@@ -27469,7 +27469,7 @@ void main() async {
     );
 
     // Inserta centro 1831 en la base de datos
-    await dbHelper.insertCentroMedico(centro1831);
+    await dbCRUD.insertCentroMedico(centro1831);
     print("CENTRO 1831 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1832
@@ -27484,7 +27484,7 @@ void main() async {
     );
 
     // Inserta centro 1832 en la base de datos
-    await dbHelper.insertCentroMedico(centro1832);
+    await dbCRUD.insertCentroMedico(centro1832);
     print("CENTRO 1832 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1833
@@ -27499,7 +27499,7 @@ void main() async {
     );
 
     // Inserta centro 1833 en la base de datos
-    await dbHelper.insertCentroMedico(centro1833);
+    await dbCRUD.insertCentroMedico(centro1833);
     print("CENTRO 1833 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1834
@@ -27514,7 +27514,7 @@ void main() async {
     );
 
     // Inserta centro 1834 en la base de datos
-    await dbHelper.insertCentroMedico(centro1834);
+    await dbCRUD.insertCentroMedico(centro1834);
     print("CENTRO 1834 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1835
@@ -27529,7 +27529,7 @@ void main() async {
     );
 
     // Inserta centro 1835 en la base de datos
-    await dbHelper.insertCentroMedico(centro1835);
+    await dbCRUD.insertCentroMedico(centro1835);
     print("CENTRO 1835 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1836
@@ -27544,7 +27544,7 @@ void main() async {
     );
 
     // Inserta centro 1836 en la base de datos
-    await dbHelper.insertCentroMedico(centro1836);
+    await dbCRUD.insertCentroMedico(centro1836);
     print("CENTRO 1836 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1837
@@ -27559,7 +27559,7 @@ void main() async {
     );
 
     // Inserta centro 1837 en la base de datos
-    await dbHelper.insertCentroMedico(centro1837);
+    await dbCRUD.insertCentroMedico(centro1837);
     print("CENTRO 1837 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1838
@@ -27574,7 +27574,7 @@ void main() async {
     );
 
     // Inserta centro 1838 en la base de datos
-    await dbHelper.insertCentroMedico(centro1838);
+    await dbCRUD.insertCentroMedico(centro1838);
     print("CENTRO 1838 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1839
@@ -27589,7 +27589,7 @@ void main() async {
     );
 
     // Inserta centro 1839 en la base de datos
-    await dbHelper.insertCentroMedico(centro1839);
+    await dbCRUD.insertCentroMedico(centro1839);
     print("CENTRO 1839 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1840
@@ -27604,7 +27604,7 @@ void main() async {
     );
 
     // Inserta centro 1840 en la base de datos
-    await dbHelper.insertCentroMedico(centro1840);
+    await dbCRUD.insertCentroMedico(centro1840);
     print("CENTRO 1840 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1841
@@ -27619,7 +27619,7 @@ void main() async {
     );
 
     // Inserta centro 1841 en la base de datos
-    await dbHelper.insertCentroMedico(centro1841);
+    await dbCRUD.insertCentroMedico(centro1841);
     print("CENTRO 1841 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1842
@@ -27634,7 +27634,7 @@ void main() async {
     );
 
     // Inserta centro 1842 en la base de datos
-    await dbHelper.insertCentroMedico(centro1842);
+    await dbCRUD.insertCentroMedico(centro1842);
     print("CENTRO 1842 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1843
@@ -27649,7 +27649,7 @@ void main() async {
     );
 
     // Inserta centro 1843 en la base de datos
-    await dbHelper.insertCentroMedico(centro1843);
+    await dbCRUD.insertCentroMedico(centro1843);
     print("CENTRO 1843 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1844
@@ -27664,7 +27664,7 @@ void main() async {
     );
 
     // Inserta centro 1844 en la base de datos
-    await dbHelper.insertCentroMedico(centro1844);
+    await dbCRUD.insertCentroMedico(centro1844);
     print("CENTRO 1844 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1845
@@ -27679,7 +27679,7 @@ void main() async {
     );
 
     // Inserta centro 1845 en la base de datos
-    await dbHelper.insertCentroMedico(centro1845);
+    await dbCRUD.insertCentroMedico(centro1845);
     print("CENTRO 1845 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1846
@@ -27694,7 +27694,7 @@ void main() async {
     );
 
     // Inserta centro 1846 en la base de datos
-    await dbHelper.insertCentroMedico(centro1846);
+    await dbCRUD.insertCentroMedico(centro1846);
     print("CENTRO 1846 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1847
@@ -27709,7 +27709,7 @@ void main() async {
     );
 
     // Inserta centro 1847 en la base de datos
-    await dbHelper.insertCentroMedico(centro1847);
+    await dbCRUD.insertCentroMedico(centro1847);
     print("CENTRO 1847 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1848
@@ -27724,7 +27724,7 @@ void main() async {
     );
 
     // Inserta centro 1848 en la base de datos
-    await dbHelper.insertCentroMedico(centro1848);
+    await dbCRUD.insertCentroMedico(centro1848);
     print("CENTRO 1848 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1849
@@ -27739,7 +27739,7 @@ void main() async {
     );
 
     // Inserta centro 1849 en la base de datos
-    await dbHelper.insertCentroMedico(centro1849);
+    await dbCRUD.insertCentroMedico(centro1849);
     print("CENTRO 1849 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1850
@@ -27754,7 +27754,7 @@ void main() async {
     );
 
     // Inserta centro 1850 en la base de datos
-    await dbHelper.insertCentroMedico(centro1850);
+    await dbCRUD.insertCentroMedico(centro1850);
     print("CENTRO 1850 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1851
@@ -27769,7 +27769,7 @@ void main() async {
     );
 
     // Inserta centro 1851 en la base de datos
-    await dbHelper.insertCentroMedico(centro1851);
+    await dbCRUD.insertCentroMedico(centro1851);
     print("CENTRO 1851 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1852
@@ -27784,7 +27784,7 @@ void main() async {
     );
 
     // Inserta centro 1852 en la base de datos
-    await dbHelper.insertCentroMedico(centro1852);
+    await dbCRUD.insertCentroMedico(centro1852);
     print("CENTRO 1852 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1853
@@ -27799,7 +27799,7 @@ void main() async {
     );
 
     // Inserta centro 1853 en la base de datos
-    await dbHelper.insertCentroMedico(centro1853);
+    await dbCRUD.insertCentroMedico(centro1853);
     print("CENTRO 1853 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1854
@@ -27814,7 +27814,7 @@ void main() async {
     );
 
     // Inserta centro 1854 en la base de datos
-    await dbHelper.insertCentroMedico(centro1854);
+    await dbCRUD.insertCentroMedico(centro1854);
     print("CENTRO 1854 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1855
@@ -27829,7 +27829,7 @@ void main() async {
     );
 
     // Inserta centro 1855 en la base de datos
-    await dbHelper.insertCentroMedico(centro1855);
+    await dbCRUD.insertCentroMedico(centro1855);
     print("CENTRO 1855 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1856
@@ -27844,7 +27844,7 @@ void main() async {
     );
 
     // Inserta centro 1856 en la base de datos
-    await dbHelper.insertCentroMedico(centro1856);
+    await dbCRUD.insertCentroMedico(centro1856);
     print("CENTRO 1856 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1857
@@ -27859,7 +27859,7 @@ void main() async {
     );
 
     // Inserta centro 1857 en la base de datos
-    await dbHelper.insertCentroMedico(centro1857);
+    await dbCRUD.insertCentroMedico(centro1857);
     print("CENTRO 1857 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1858
@@ -27874,7 +27874,7 @@ void main() async {
     );
 
     // Inserta centro 1858 en la base de datos
-    await dbHelper.insertCentroMedico(centro1858);
+    await dbCRUD.insertCentroMedico(centro1858);
     print("CENTRO 1858 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1859
@@ -27889,7 +27889,7 @@ void main() async {
     );
 
     // Inserta centro 1859 en la base de datos
-    await dbHelper.insertCentroMedico(centro1859);
+    await dbCRUD.insertCentroMedico(centro1859);
     print("CENTRO 1859 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1860
@@ -27904,7 +27904,7 @@ void main() async {
     );
 
     // Inserta centro 1860 en la base de datos
-    await dbHelper.insertCentroMedico(centro1860);
+    await dbCRUD.insertCentroMedico(centro1860);
     print("CENTRO 1860 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1861
@@ -27919,7 +27919,7 @@ void main() async {
     );
 
     // Inserta centro 1861 en la base de datos
-    await dbHelper.insertCentroMedico(centro1861);
+    await dbCRUD.insertCentroMedico(centro1861);
     print("CENTRO 1861 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1862
@@ -27934,7 +27934,7 @@ void main() async {
     );
 
     // Inserta centro 1862 en la base de datos
-    await dbHelper.insertCentroMedico(centro1862);
+    await dbCRUD.insertCentroMedico(centro1862);
     print("CENTRO 1862 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1863
@@ -27949,7 +27949,7 @@ void main() async {
     );
 
     // Inserta centro 1863 en la base de datos
-    await dbHelper.insertCentroMedico(centro1863);
+    await dbCRUD.insertCentroMedico(centro1863);
     print("CENTRO 1863 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1864
@@ -27964,7 +27964,7 @@ void main() async {
     );
 
     // Inserta centro 1864 en la base de datos
-    await dbHelper.insertCentroMedico(centro1864);
+    await dbCRUD.insertCentroMedico(centro1864);
     print("CENTRO 1864 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1865
@@ -27979,7 +27979,7 @@ void main() async {
     );
 
     // Inserta centro 1865 en la base de datos
-    await dbHelper.insertCentroMedico(centro1865);
+    await dbCRUD.insertCentroMedico(centro1865);
     print("CENTRO 1865 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1866
@@ -27994,7 +27994,7 @@ void main() async {
     );
 
     // Inserta centro 1866 en la base de datos
-    await dbHelper.insertCentroMedico(centro1866);
+    await dbCRUD.insertCentroMedico(centro1866);
     print("CENTRO 1866 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1867
@@ -28009,7 +28009,7 @@ void main() async {
     );
 
     // Inserta centro 1867 en la base de datos
-    await dbHelper.insertCentroMedico(centro1867);
+    await dbCRUD.insertCentroMedico(centro1867);
     print("CENTRO 1867 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1868
@@ -28024,7 +28024,7 @@ void main() async {
     );
 
     // Inserta centro 1868 en la base de datos
-    await dbHelper.insertCentroMedico(centro1868);
+    await dbCRUD.insertCentroMedico(centro1868);
     print("CENTRO 1868 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1869
@@ -28039,7 +28039,7 @@ void main() async {
     );
 
     // Inserta centro 1869 en la base de datos
-    await dbHelper.insertCentroMedico(centro1869);
+    await dbCRUD.insertCentroMedico(centro1869);
     print("CENTRO 1869 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1870
@@ -28054,7 +28054,7 @@ void main() async {
     );
 
     // Inserta centro 1870 en la base de datos
-    await dbHelper.insertCentroMedico(centro1870);
+    await dbCRUD.insertCentroMedico(centro1870);
     print("CENTRO 1870 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1871
@@ -28069,7 +28069,7 @@ void main() async {
     );
 
     // Inserta centro 1871 en la base de datos
-    await dbHelper.insertCentroMedico(centro1871);
+    await dbCRUD.insertCentroMedico(centro1871);
     print("CENTRO 1871 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1872
@@ -28084,7 +28084,7 @@ void main() async {
     );
 
     // Inserta centro 1872 en la base de datos
-    await dbHelper.insertCentroMedico(centro1872);
+    await dbCRUD.insertCentroMedico(centro1872);
     print("CENTRO 1872 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1873
@@ -28099,7 +28099,7 @@ void main() async {
     );
 
     // Inserta centro 1873 en la base de datos
-    await dbHelper.insertCentroMedico(centro1873);
+    await dbCRUD.insertCentroMedico(centro1873);
     print("CENTRO 1873 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1874
@@ -28114,7 +28114,7 @@ void main() async {
     );
 
     // Inserta centro 1874 en la base de datos
-    await dbHelper.insertCentroMedico(centro1874);
+    await dbCRUD.insertCentroMedico(centro1874);
     print("CENTRO 1874 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1875
@@ -28129,7 +28129,7 @@ void main() async {
     );
 
     // Inserta centro 1875 en la base de datos
-    await dbHelper.insertCentroMedico(centro1875);
+    await dbCRUD.insertCentroMedico(centro1875);
     print("CENTRO 1875 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1876
@@ -28144,7 +28144,7 @@ void main() async {
     );
 
     // Inserta centro 1876 en la base de datos
-    await dbHelper.insertCentroMedico(centro1876);
+    await dbCRUD.insertCentroMedico(centro1876);
     print("CENTRO 1876 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1877
@@ -28159,7 +28159,7 @@ void main() async {
     );
 
     // Inserta centro 1877 en la base de datos
-    await dbHelper.insertCentroMedico(centro1877);
+    await dbCRUD.insertCentroMedico(centro1877);
     print("CENTRO 1877 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1878
@@ -28174,7 +28174,7 @@ void main() async {
     );
 
     // Inserta centro 1878 en la base de datos
-    await dbHelper.insertCentroMedico(centro1878);
+    await dbCRUD.insertCentroMedico(centro1878);
     print("CENTRO 1878 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1879
@@ -28189,7 +28189,7 @@ void main() async {
     );
 
     // Inserta centro 1879 en la base de datos
-    await dbHelper.insertCentroMedico(centro1879);
+    await dbCRUD.insertCentroMedico(centro1879);
     print("CENTRO 1879 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1880
@@ -28204,7 +28204,7 @@ void main() async {
     );
 
     // Inserta centro 1880 en la base de datos
-    await dbHelper.insertCentroMedico(centro1880);
+    await dbCRUD.insertCentroMedico(centro1880);
     print("CENTRO 1880 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1881
@@ -28219,7 +28219,7 @@ void main() async {
     );
 
     // Inserta centro 1881 en la base de datos
-    await dbHelper.insertCentroMedico(centro1881);
+    await dbCRUD.insertCentroMedico(centro1881);
     print("CENTRO 1881 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1882
@@ -28234,7 +28234,7 @@ void main() async {
     );
 
     // Inserta centro 1882 en la base de datos
-    await dbHelper.insertCentroMedico(centro1882);
+    await dbCRUD.insertCentroMedico(centro1882);
     print("CENTRO 1882 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1883
@@ -28249,7 +28249,7 @@ void main() async {
     );
 
     // Inserta centro 1883 en la base de datos
-    await dbHelper.insertCentroMedico(centro1883);
+    await dbCRUD.insertCentroMedico(centro1883);
     print("CENTRO 1883 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1884
@@ -28264,7 +28264,7 @@ void main() async {
     );
 
     // Inserta centro 1884 en la base de datos
-    await dbHelper.insertCentroMedico(centro1884);
+    await dbCRUD.insertCentroMedico(centro1884);
     print("CENTRO 1884 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1885
@@ -28279,7 +28279,7 @@ void main() async {
     );
 
     // Inserta centro 1885 en la base de datos
-    await dbHelper.insertCentroMedico(centro1885);
+    await dbCRUD.insertCentroMedico(centro1885);
     print("CENTRO 1885 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1886
@@ -28294,7 +28294,7 @@ void main() async {
     );
 
     // Inserta centro 1886 en la base de datos
-    await dbHelper.insertCentroMedico(centro1886);
+    await dbCRUD.insertCentroMedico(centro1886);
     print("CENTRO 1886 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1887
@@ -28309,7 +28309,7 @@ void main() async {
     );
 
     // Inserta centro 1887 en la base de datos
-    await dbHelper.insertCentroMedico(centro1887);
+    await dbCRUD.insertCentroMedico(centro1887);
     print("CENTRO 1887 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1888
@@ -28324,7 +28324,7 @@ void main() async {
     );
 
     // Inserta centro 1888 en la base de datos
-    await dbHelper.insertCentroMedico(centro1888);
+    await dbCRUD.insertCentroMedico(centro1888);
     print("CENTRO 1888 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1889
@@ -28339,7 +28339,7 @@ void main() async {
     );
 
     // Inserta centro 1889 en la base de datos
-    await dbHelper.insertCentroMedico(centro1889);
+    await dbCRUD.insertCentroMedico(centro1889);
     print("CENTRO 1889 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1890
@@ -28354,7 +28354,7 @@ void main() async {
     );
 
     // Inserta centro 1890 en la base de datos
-    await dbHelper.insertCentroMedico(centro1890);
+    await dbCRUD.insertCentroMedico(centro1890);
     print("CENTRO 1890 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1891
@@ -28369,7 +28369,7 @@ void main() async {
     );
 
     // Inserta centro 1891 en la base de datos
-    await dbHelper.insertCentroMedico(centro1891);
+    await dbCRUD.insertCentroMedico(centro1891);
     print("CENTRO 1891 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1892
@@ -28384,7 +28384,7 @@ void main() async {
     );
 
     // Inserta centro 1892 en la base de datos
-    await dbHelper.insertCentroMedico(centro1892);
+    await dbCRUD.insertCentroMedico(centro1892);
     print("CENTRO 1892 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1893
@@ -28399,7 +28399,7 @@ void main() async {
     );
 
     // Inserta centro 1893 en la base de datos
-    await dbHelper.insertCentroMedico(centro1893);
+    await dbCRUD.insertCentroMedico(centro1893);
     print("CENTRO 1893 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1894
@@ -28414,7 +28414,7 @@ void main() async {
     );
 
     // Inserta centro 1894 en la base de datos
-    await dbHelper.insertCentroMedico(centro1894);
+    await dbCRUD.insertCentroMedico(centro1894);
     print("CENTRO 1894 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1895
@@ -28429,7 +28429,7 @@ void main() async {
     );
 
     // Inserta centro 1895 en la base de datos
-    await dbHelper.insertCentroMedico(centro1895);
+    await dbCRUD.insertCentroMedico(centro1895);
     print("CENTRO 1895 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1896
@@ -28444,7 +28444,7 @@ void main() async {
     );
 
     // Inserta centro 1896 en la base de datos
-    await dbHelper.insertCentroMedico(centro1896);
+    await dbCRUD.insertCentroMedico(centro1896);
     print("CENTRO 1896 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1897
@@ -28459,7 +28459,7 @@ void main() async {
     );
 
     // Inserta centro 1897 en la base de datos
-    await dbHelper.insertCentroMedico(centro1897);
+    await dbCRUD.insertCentroMedico(centro1897);
     print("CENTRO 1897 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1898
@@ -28474,7 +28474,7 @@ void main() async {
     );
 
     // Inserta centro 1898 en la base de datos
-    await dbHelper.insertCentroMedico(centro1898);
+    await dbCRUD.insertCentroMedico(centro1898);
     print("CENTRO 1898 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1899
@@ -28489,7 +28489,7 @@ void main() async {
     );
 
     // Inserta centro 1899 en la base de datos
-    await dbHelper.insertCentroMedico(centro1899);
+    await dbCRUD.insertCentroMedico(centro1899);
     print("CENTRO 1899 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1900
@@ -28504,7 +28504,7 @@ void main() async {
     );
 
     // Inserta centro 1900 en la base de datos
-    await dbHelper.insertCentroMedico(centro1900);
+    await dbCRUD.insertCentroMedico(centro1900);
     print("CENTRO 1900 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1901
@@ -28519,7 +28519,7 @@ void main() async {
     );
 
     // Inserta centro 1901 en la base de datos
-    await dbHelper.insertCentroMedico(centro1901);
+    await dbCRUD.insertCentroMedico(centro1901);
     print("CENTRO 1901 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1902
@@ -28534,7 +28534,7 @@ void main() async {
     );
 
     // Inserta centro 1902 en la base de datos
-    await dbHelper.insertCentroMedico(centro1902);
+    await dbCRUD.insertCentroMedico(centro1902);
     print("CENTRO 1902 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1903
@@ -28549,7 +28549,7 @@ void main() async {
     );
 
     // Inserta centro 1903 en la base de datos
-    await dbHelper.insertCentroMedico(centro1903);
+    await dbCRUD.insertCentroMedico(centro1903);
     print("CENTRO 1903 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1904
@@ -28564,7 +28564,7 @@ void main() async {
     );
 
     // Inserta centro 1904 en la base de datos
-    await dbHelper.insertCentroMedico(centro1904);
+    await dbCRUD.insertCentroMedico(centro1904);
     print("CENTRO 1904 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1905
@@ -28579,7 +28579,7 @@ void main() async {
     );
 
     // Inserta centro 1905 en la base de datos
-    await dbHelper.insertCentroMedico(centro1905);
+    await dbCRUD.insertCentroMedico(centro1905);
     print("CENTRO 1905 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1906
@@ -28594,7 +28594,7 @@ void main() async {
     );
 
     // Inserta centro 1906 en la base de datos
-    await dbHelper.insertCentroMedico(centro1906);
+    await dbCRUD.insertCentroMedico(centro1906);
     print("CENTRO 1906 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1907
@@ -28609,7 +28609,7 @@ void main() async {
     );
 
     // Inserta centro 1907 en la base de datos
-    await dbHelper.insertCentroMedico(centro1907);
+    await dbCRUD.insertCentroMedico(centro1907);
     print("CENTRO 1907 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1908
@@ -28624,7 +28624,7 @@ void main() async {
     );
 
     // Inserta centro 1908 en la base de datos
-    await dbHelper.insertCentroMedico(centro1908);
+    await dbCRUD.insertCentroMedico(centro1908);
     print("CENTRO 1908 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1909
@@ -28639,7 +28639,7 @@ void main() async {
     );
 
     // Inserta centro 1909 en la base de datos
-    await dbHelper.insertCentroMedico(centro1909);
+    await dbCRUD.insertCentroMedico(centro1909);
     print("CENTRO 1909 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1910
@@ -28654,7 +28654,7 @@ void main() async {
     );
 
     // Inserta centro 1910 en la base de datos
-    await dbHelper.insertCentroMedico(centro1910);
+    await dbCRUD.insertCentroMedico(centro1910);
     print("CENTRO 1910 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1911
@@ -28669,7 +28669,7 @@ void main() async {
     );
 
     // Inserta centro 1911 en la base de datos
-    await dbHelper.insertCentroMedico(centro1911);
+    await dbCRUD.insertCentroMedico(centro1911);
     print("CENTRO 1911 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1912
@@ -28684,7 +28684,7 @@ void main() async {
     );
 
     // Inserta centro 1912 en la base de datos
-    await dbHelper.insertCentroMedico(centro1912);
+    await dbCRUD.insertCentroMedico(centro1912);
     print("CENTRO 1912 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1913
@@ -28699,7 +28699,7 @@ void main() async {
     );
 
     // Inserta centro 1913 en la base de datos
-    await dbHelper.insertCentroMedico(centro1913);
+    await dbCRUD.insertCentroMedico(centro1913);
     print("CENTRO 1913 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1914
@@ -28714,7 +28714,7 @@ void main() async {
     );
 
     // Inserta centro 1914 en la base de datos
-    await dbHelper.insertCentroMedico(centro1914);
+    await dbCRUD.insertCentroMedico(centro1914);
     print("CENTRO 1914 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1915
@@ -28729,7 +28729,7 @@ void main() async {
     );
 
     // Inserta centro 1915 en la base de datos
-    await dbHelper.insertCentroMedico(centro1915);
+    await dbCRUD.insertCentroMedico(centro1915);
     print("CENTRO 1915 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1916
@@ -28744,7 +28744,7 @@ void main() async {
     );
 
     // Inserta centro 1916 en la base de datos
-    await dbHelper.insertCentroMedico(centro1916);
+    await dbCRUD.insertCentroMedico(centro1916);
     print("CENTRO 1916 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1917
@@ -28759,7 +28759,7 @@ void main() async {
     );
 
     // Inserta centro 1917 en la base de datos
-    await dbHelper.insertCentroMedico(centro1917);
+    await dbCRUD.insertCentroMedico(centro1917);
     print("CENTRO 1917 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1918
@@ -28774,7 +28774,7 @@ void main() async {
     );
 
     // Inserta centro 1918 en la base de datos
-    await dbHelper.insertCentroMedico(centro1918);
+    await dbCRUD.insertCentroMedico(centro1918);
     print("CENTRO 1918 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1919
@@ -28789,7 +28789,7 @@ void main() async {
     );
 
     // Inserta centro 1919 en la base de datos
-    await dbHelper.insertCentroMedico(centro1919);
+    await dbCRUD.insertCentroMedico(centro1919);
     print("CENTRO 1919 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1920
@@ -28804,7 +28804,7 @@ void main() async {
     );
 
     // Inserta centro 1920 en la base de datos
-    await dbHelper.insertCentroMedico(centro1920);
+    await dbCRUD.insertCentroMedico(centro1920);
     print("CENTRO 1920 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1921
@@ -28819,7 +28819,7 @@ void main() async {
     );
 
     // Inserta centro 1921 en la base de datos
-    await dbHelper.insertCentroMedico(centro1921);
+    await dbCRUD.insertCentroMedico(centro1921);
     print("CENTRO 1921 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1922
@@ -28834,7 +28834,7 @@ void main() async {
     );
 
     // Inserta centro 1922 en la base de datos
-    await dbHelper.insertCentroMedico(centro1922);
+    await dbCRUD.insertCentroMedico(centro1922);
     print("CENTRO 1922 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1923
@@ -28849,7 +28849,7 @@ void main() async {
     );
 
     // Inserta centro 1923 en la base de datos
-    await dbHelper.insertCentroMedico(centro1923);
+    await dbCRUD.insertCentroMedico(centro1923);
     print("CENTRO 1923 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1924
@@ -28864,7 +28864,7 @@ void main() async {
     );
 
     // Inserta centro 1924 en la base de datos
-    await dbHelper.insertCentroMedico(centro1924);
+    await dbCRUD.insertCentroMedico(centro1924);
     print("CENTRO 1924 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1925
@@ -28879,7 +28879,7 @@ void main() async {
     );
 
     // Inserta centro 1925 en la base de datos
-    await dbHelper.insertCentroMedico(centro1925);
+    await dbCRUD.insertCentroMedico(centro1925);
     print("CENTRO 1925 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1926
@@ -28894,7 +28894,7 @@ void main() async {
     );
 
     // Inserta centro 1926 en la base de datos
-    await dbHelper.insertCentroMedico(centro1926);
+    await dbCRUD.insertCentroMedico(centro1926);
     print("CENTRO 1926 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1927
@@ -28909,7 +28909,7 @@ void main() async {
     );
 
     // Inserta centro 1927 en la base de datos
-    await dbHelper.insertCentroMedico(centro1927);
+    await dbCRUD.insertCentroMedico(centro1927);
     print("CENTRO 1927 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1928
@@ -28924,7 +28924,7 @@ void main() async {
     );
 
     // Inserta centro 1928 en la base de datos
-    await dbHelper.insertCentroMedico(centro1928);
+    await dbCRUD.insertCentroMedico(centro1928);
     print("CENTRO 1928 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1929
@@ -28939,7 +28939,7 @@ void main() async {
     );
 
     // Inserta centro 1929 en la base de datos
-    await dbHelper.insertCentroMedico(centro1929);
+    await dbCRUD.insertCentroMedico(centro1929);
     print("CENTRO 1929 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1930
@@ -28954,7 +28954,7 @@ void main() async {
     );
 
     // Inserta centro 1930 en la base de datos
-    await dbHelper.insertCentroMedico(centro1930);
+    await dbCRUD.insertCentroMedico(centro1930);
     print("CENTRO 1930 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1931
@@ -28969,7 +28969,7 @@ void main() async {
     );
 
     // Inserta centro 1931 en la base de datos
-    await dbHelper.insertCentroMedico(centro1931);
+    await dbCRUD.insertCentroMedico(centro1931);
     print("CENTRO 1931 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1932
@@ -28984,7 +28984,7 @@ void main() async {
     );
 
     // Inserta centro 1932 en la base de datos
-    await dbHelper.insertCentroMedico(centro1932);
+    await dbCRUD.insertCentroMedico(centro1932);
     print("CENTRO 1932 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1933
@@ -28999,7 +28999,7 @@ void main() async {
     );
 
     // Inserta centro 1933 en la base de datos
-    await dbHelper.insertCentroMedico(centro1933);
+    await dbCRUD.insertCentroMedico(centro1933);
     print("CENTRO 1933 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1934
@@ -29014,7 +29014,7 @@ void main() async {
     );
 
     // Inserta centro 1934 en la base de datos
-    await dbHelper.insertCentroMedico(centro1934);
+    await dbCRUD.insertCentroMedico(centro1934);
     print("CENTRO 1934 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1935
@@ -29029,7 +29029,7 @@ void main() async {
     );
 
     // Inserta centro 1935 en la base de datos
-    await dbHelper.insertCentroMedico(centro1935);
+    await dbCRUD.insertCentroMedico(centro1935);
     print("CENTRO 1935 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1936
@@ -29044,7 +29044,7 @@ void main() async {
     );
 
     // Inserta centro 1936 en la base de datos
-    await dbHelper.insertCentroMedico(centro1936);
+    await dbCRUD.insertCentroMedico(centro1936);
     print("CENTRO 1936 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1937
@@ -29059,7 +29059,7 @@ void main() async {
     );
 
     // Inserta centro 1937 en la base de datos
-    await dbHelper.insertCentroMedico(centro1937);
+    await dbCRUD.insertCentroMedico(centro1937);
     print("CENTRO 1937 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1938
@@ -29074,7 +29074,7 @@ void main() async {
     );
 
     // Inserta centro 1938 en la base de datos
-    await dbHelper.insertCentroMedico(centro1938);
+    await dbCRUD.insertCentroMedico(centro1938);
     print("CENTRO 1938 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1939
@@ -29089,7 +29089,7 @@ void main() async {
     );
 
     // Inserta centro 1939 en la base de datos
-    await dbHelper.insertCentroMedico(centro1939);
+    await dbCRUD.insertCentroMedico(centro1939);
     print("CENTRO 1939 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1940
@@ -29104,7 +29104,7 @@ void main() async {
     );
 
     // Inserta centro 1940 en la base de datos
-    await dbHelper.insertCentroMedico(centro1940);
+    await dbCRUD.insertCentroMedico(centro1940);
     print("CENTRO 1940 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1941
@@ -29119,7 +29119,7 @@ void main() async {
     );
 
     // Inserta centro 1941 en la base de datos
-    await dbHelper.insertCentroMedico(centro1941);
+    await dbCRUD.insertCentroMedico(centro1941);
     print("CENTRO 1941 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1942
@@ -29134,7 +29134,7 @@ void main() async {
     );
 
     // Inserta centro 1942 en la base de datos
-    await dbHelper.insertCentroMedico(centro1942);
+    await dbCRUD.insertCentroMedico(centro1942);
     print("CENTRO 1942 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1943
@@ -29149,7 +29149,7 @@ void main() async {
     );
 
     // Inserta centro 1943 en la base de datos
-    await dbHelper.insertCentroMedico(centro1943);
+    await dbCRUD.insertCentroMedico(centro1943);
     print("CENTRO 1943 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1944
@@ -29164,7 +29164,7 @@ void main() async {
     );
 
     // Inserta centro 1944 en la base de datos
-    await dbHelper.insertCentroMedico(centro1944);
+    await dbCRUD.insertCentroMedico(centro1944);
     print("CENTRO 1944 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1945
@@ -29179,7 +29179,7 @@ void main() async {
     );
 
     // Inserta centro 1945 en la base de datos
-    await dbHelper.insertCentroMedico(centro1945);
+    await dbCRUD.insertCentroMedico(centro1945);
     print("CENTRO 1945 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1946
@@ -29194,7 +29194,7 @@ void main() async {
     );
 
     // Inserta centro 1946 en la base de datos
-    await dbHelper.insertCentroMedico(centro1946);
+    await dbCRUD.insertCentroMedico(centro1946);
     print("CENTRO 1946 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1947
@@ -29209,7 +29209,7 @@ void main() async {
     );
 
     // Inserta centro 1947 en la base de datos
-    await dbHelper.insertCentroMedico(centro1947);
+    await dbCRUD.insertCentroMedico(centro1947);
     print("CENTRO 1947 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1948
@@ -29224,7 +29224,7 @@ void main() async {
     );
 
     // Inserta centro 1948 en la base de datos
-    await dbHelper.insertCentroMedico(centro1948);
+    await dbCRUD.insertCentroMedico(centro1948);
     print("CENTRO 1948 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1949
@@ -29239,7 +29239,7 @@ void main() async {
     );
 
     // Inserta centro 1949 en la base de datos
-    await dbHelper.insertCentroMedico(centro1949);
+    await dbCRUD.insertCentroMedico(centro1949);
     print("CENTRO 1949 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1950
@@ -29254,7 +29254,7 @@ void main() async {
     );
 
     // Inserta centro 1950 en la base de datos
-    await dbHelper.insertCentroMedico(centro1950);
+    await dbCRUD.insertCentroMedico(centro1950);
     print("CENTRO 1950 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1951
@@ -29269,7 +29269,7 @@ void main() async {
     );
 
     // Inserta centro 1951 en la base de datos
-    await dbHelper.insertCentroMedico(centro1951);
+    await dbCRUD.insertCentroMedico(centro1951);
     print("CENTRO 1951 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1952
@@ -29284,7 +29284,7 @@ void main() async {
     );
 
     // Inserta centro 1952 en la base de datos
-    await dbHelper.insertCentroMedico(centro1952);
+    await dbCRUD.insertCentroMedico(centro1952);
     print("CENTRO 1952 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1953
@@ -29299,7 +29299,7 @@ void main() async {
     );
 
     // Inserta centro 1953 en la base de datos
-    await dbHelper.insertCentroMedico(centro1953);
+    await dbCRUD.insertCentroMedico(centro1953);
     print("CENTRO 1953 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1954
@@ -29314,7 +29314,7 @@ void main() async {
     );
 
     // Inserta centro 1954 en la base de datos
-    await dbHelper.insertCentroMedico(centro1954);
+    await dbCRUD.insertCentroMedico(centro1954);
     print("CENTRO 1954 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1955
@@ -29329,7 +29329,7 @@ void main() async {
     );
 
     // Inserta centro 1955 en la base de datos
-    await dbHelper.insertCentroMedico(centro1955);
+    await dbCRUD.insertCentroMedico(centro1955);
     print("CENTRO 1955 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1956
@@ -29344,7 +29344,7 @@ void main() async {
     );
 
     // Inserta centro 1956 en la base de datos
-    await dbHelper.insertCentroMedico(centro1956);
+    await dbCRUD.insertCentroMedico(centro1956);
     print("CENTRO 1956 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1957
@@ -29359,7 +29359,7 @@ void main() async {
     );
 
     // Inserta centro 1957 en la base de datos
-    await dbHelper.insertCentroMedico(centro1957);
+    await dbCRUD.insertCentroMedico(centro1957);
     print("CENTRO 1957 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1958
@@ -29374,7 +29374,7 @@ void main() async {
     );
 
     // Inserta centro 1958 en la base de datos
-    await dbHelper.insertCentroMedico(centro1958);
+    await dbCRUD.insertCentroMedico(centro1958);
     print("CENTRO 1958 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1959
@@ -29389,7 +29389,7 @@ void main() async {
     );
 
     // Inserta centro 1959 en la base de datos
-    await dbHelper.insertCentroMedico(centro1959);
+    await dbCRUD.insertCentroMedico(centro1959);
     print("CENTRO 1959 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1960
@@ -29404,7 +29404,7 @@ void main() async {
     );
 
     // Inserta centro 1960 en la base de datos
-    await dbHelper.insertCentroMedico(centro1960);
+    await dbCRUD.insertCentroMedico(centro1960);
     print("CENTRO 1960 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1961
@@ -29419,7 +29419,7 @@ void main() async {
     );
 
     // Inserta centro 1961 en la base de datos
-    await dbHelper.insertCentroMedico(centro1961);
+    await dbCRUD.insertCentroMedico(centro1961);
     print("CENTRO 1961 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1962
@@ -29434,7 +29434,7 @@ void main() async {
     );
 
     // Inserta centro 1962 en la base de datos
-    await dbHelper.insertCentroMedico(centro1962);
+    await dbCRUD.insertCentroMedico(centro1962);
     print("CENTRO 1962 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1963
@@ -29449,7 +29449,7 @@ void main() async {
     );
 
     // Inserta centro 1963 en la base de datos
-    await dbHelper.insertCentroMedico(centro1963);
+    await dbCRUD.insertCentroMedico(centro1963);
     print("CENTRO 1963 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1964
@@ -29464,7 +29464,7 @@ void main() async {
     );
 
     // Inserta centro 1964 en la base de datos
-    await dbHelper.insertCentroMedico(centro1964);
+    await dbCRUD.insertCentroMedico(centro1964);
     print("CENTRO 1964 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1965
@@ -29479,7 +29479,7 @@ void main() async {
     );
 
     // Inserta centro 1965 en la base de datos
-    await dbHelper.insertCentroMedico(centro1965);
+    await dbCRUD.insertCentroMedico(centro1965);
     print("CENTRO 1965 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1966
@@ -29494,7 +29494,7 @@ void main() async {
     );
 
     // Inserta centro 1966 en la base de datos
-    await dbHelper.insertCentroMedico(centro1966);
+    await dbCRUD.insertCentroMedico(centro1966);
     print("CENTRO 1966 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1967
@@ -29509,7 +29509,7 @@ void main() async {
     );
 
     // Inserta centro 1967 en la base de datos
-    await dbHelper.insertCentroMedico(centro1967);
+    await dbCRUD.insertCentroMedico(centro1967);
     print("CENTRO 1967 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1968
@@ -29524,7 +29524,7 @@ void main() async {
     );
 
     // Inserta centro 1968 en la base de datos
-    await dbHelper.insertCentroMedico(centro1968);
+    await dbCRUD.insertCentroMedico(centro1968);
     print("CENTRO 1968 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1969
@@ -29539,7 +29539,7 @@ void main() async {
     );
 
     // Inserta centro 1969 en la base de datos
-    await dbHelper.insertCentroMedico(centro1969);
+    await dbCRUD.insertCentroMedico(centro1969);
     print("CENTRO 1969 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1970
@@ -29554,7 +29554,7 @@ void main() async {
     );
 
     // Inserta centro 1970 en la base de datos
-    await dbHelper.insertCentroMedico(centro1970);
+    await dbCRUD.insertCentroMedico(centro1970);
     print("CENTRO 1970 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1971
@@ -29569,7 +29569,7 @@ void main() async {
     );
 
     // Inserta centro 1971 en la base de datos
-    await dbHelper.insertCentroMedico(centro1971);
+    await dbCRUD.insertCentroMedico(centro1971);
     print("CENTRO 1971 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1972
@@ -29584,7 +29584,7 @@ void main() async {
     );
 
     // Inserta centro 1972 en la base de datos
-    await dbHelper.insertCentroMedico(centro1972);
+    await dbCRUD.insertCentroMedico(centro1972);
     print("CENTRO 1972 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1973
@@ -29599,7 +29599,7 @@ void main() async {
     );
 
     // Inserta centro 1973 en la base de datos
-    await dbHelper.insertCentroMedico(centro1973);
+    await dbCRUD.insertCentroMedico(centro1973);
     print("CENTRO 1973 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1974
@@ -29614,7 +29614,7 @@ void main() async {
     );
 
     // Inserta centro 1974 en la base de datos
-    await dbHelper.insertCentroMedico(centro1974);
+    await dbCRUD.insertCentroMedico(centro1974);
     print("CENTRO 1974 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1975
@@ -29629,7 +29629,7 @@ void main() async {
     );
 
     // Inserta centro 1975 en la base de datos
-    await dbHelper.insertCentroMedico(centro1975);
+    await dbCRUD.insertCentroMedico(centro1975);
     print("CENTRO 1975 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1976
@@ -29644,7 +29644,7 @@ void main() async {
     );
 
     // Inserta centro 1976 en la base de datos
-    await dbHelper.insertCentroMedico(centro1976);
+    await dbCRUD.insertCentroMedico(centro1976);
     print("CENTRO 1976 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1977
@@ -29659,7 +29659,7 @@ void main() async {
     );
 
     // Inserta centro 1977 en la base de datos
-    await dbHelper.insertCentroMedico(centro1977);
+    await dbCRUD.insertCentroMedico(centro1977);
     print("CENTRO 1977 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1978
@@ -29674,7 +29674,7 @@ void main() async {
     );
 
     // Inserta centro 1978 en la base de datos
-    await dbHelper.insertCentroMedico(centro1978);
+    await dbCRUD.insertCentroMedico(centro1978);
     print("CENTRO 1978 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1979
@@ -29689,7 +29689,7 @@ void main() async {
     );
 
     // Inserta centro 1979 en la base de datos
-    await dbHelper.insertCentroMedico(centro1979);
+    await dbCRUD.insertCentroMedico(centro1979);
     print("CENTRO 1979 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1980
@@ -29704,7 +29704,7 @@ void main() async {
     );
 
     // Inserta centro 1980 en la base de datos
-    await dbHelper.insertCentroMedico(centro1980);
+    await dbCRUD.insertCentroMedico(centro1980);
     print("CENTRO 1980 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1981
@@ -29719,7 +29719,7 @@ void main() async {
     );
 
     // Inserta centro 1981 en la base de datos
-    await dbHelper.insertCentroMedico(centro1981);
+    await dbCRUD.insertCentroMedico(centro1981);
     print("CENTRO 1981 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1982
@@ -29734,7 +29734,7 @@ void main() async {
     );
 
     // Inserta centro 1982 en la base de datos
-    await dbHelper.insertCentroMedico(centro1982);
+    await dbCRUD.insertCentroMedico(centro1982);
     print("CENTRO 1982 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1983
@@ -29749,7 +29749,7 @@ void main() async {
     );
 
     // Inserta centro 1983 en la base de datos
-    await dbHelper.insertCentroMedico(centro1983);
+    await dbCRUD.insertCentroMedico(centro1983);
     print("CENTRO 1983 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1984
@@ -29764,7 +29764,7 @@ void main() async {
     );
 
     // Inserta centro 1984 en la base de datos
-    await dbHelper.insertCentroMedico(centro1984);
+    await dbCRUD.insertCentroMedico(centro1984);
     print("CENTRO 1984 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1985
@@ -29779,7 +29779,7 @@ void main() async {
     );
 
     // Inserta centro 1985 en la base de datos
-    await dbHelper.insertCentroMedico(centro1985);
+    await dbCRUD.insertCentroMedico(centro1985);
     print("CENTRO 1985 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1986
@@ -29794,7 +29794,7 @@ void main() async {
     );
 
     // Inserta centro 1986 en la base de datos
-    await dbHelper.insertCentroMedico(centro1986);
+    await dbCRUD.insertCentroMedico(centro1986);
     print("CENTRO 1986 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1987
@@ -29809,7 +29809,7 @@ void main() async {
     );
 
     // Inserta centro 1987 en la base de datos
-    await dbHelper.insertCentroMedico(centro1987);
+    await dbCRUD.insertCentroMedico(centro1987);
     print("CENTRO 1987 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1988
@@ -29824,7 +29824,7 @@ void main() async {
     );
 
     // Inserta centro 1988 en la base de datos
-    await dbHelper.insertCentroMedico(centro1988);
+    await dbCRUD.insertCentroMedico(centro1988);
     print("CENTRO 1988 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1989
@@ -29839,7 +29839,7 @@ void main() async {
     );
 
     // Inserta centro 1989 en la base de datos
-    await dbHelper.insertCentroMedico(centro1989);
+    await dbCRUD.insertCentroMedico(centro1989);
     print("CENTRO 1989 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1990
@@ -29854,7 +29854,7 @@ void main() async {
     );
 
     // Inserta centro 1990 en la base de datos
-    await dbHelper.insertCentroMedico(centro1990);
+    await dbCRUD.insertCentroMedico(centro1990);
     print("CENTRO 1990 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1991
@@ -29869,7 +29869,7 @@ void main() async {
     );
 
     // Inserta centro 1991 en la base de datos
-    await dbHelper.insertCentroMedico(centro1991);
+    await dbCRUD.insertCentroMedico(centro1991);
     print("CENTRO 1991 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1992
@@ -29884,7 +29884,7 @@ void main() async {
     );
 
     // Inserta centro 1992 en la base de datos
-    await dbHelper.insertCentroMedico(centro1992);
+    await dbCRUD.insertCentroMedico(centro1992);
     print("CENTRO 1992 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1993
@@ -29899,7 +29899,7 @@ void main() async {
     );
 
     // Inserta centro 1993 en la base de datos
-    await dbHelper.insertCentroMedico(centro1993);
+    await dbCRUD.insertCentroMedico(centro1993);
     print("CENTRO 1993 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1994
@@ -29914,7 +29914,7 @@ void main() async {
     );
 
     // Inserta centro 1994 en la base de datos
-    await dbHelper.insertCentroMedico(centro1994);
+    await dbCRUD.insertCentroMedico(centro1994);
     print("CENTRO 1994 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1995
@@ -29929,7 +29929,7 @@ void main() async {
     );
 
     // Inserta centro 1995 en la base de datos
-    await dbHelper.insertCentroMedico(centro1995);
+    await dbCRUD.insertCentroMedico(centro1995);
     print("CENTRO 1995 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1996
@@ -29944,7 +29944,7 @@ void main() async {
     );
 
     // Inserta centro 1996 en la base de datos
-    await dbHelper.insertCentroMedico(centro1996);
+    await dbCRUD.insertCentroMedico(centro1996);
     print("CENTRO 1996 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1997
@@ -29959,7 +29959,7 @@ void main() async {
     );
 
     // Inserta centro 1997 en la base de datos
-    await dbHelper.insertCentroMedico(centro1997);
+    await dbCRUD.insertCentroMedico(centro1997);
     print("CENTRO 1997 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1998
@@ -29974,7 +29974,7 @@ void main() async {
     );
 
     // Inserta centro 1998 en la base de datos
-    await dbHelper.insertCentroMedico(centro1998);
+    await dbCRUD.insertCentroMedico(centro1998);
     print("CENTRO 1998 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 1999
@@ -29989,7 +29989,7 @@ void main() async {
     );
 
     // Inserta centro 1999 en la base de datos
-    await dbHelper.insertCentroMedico(centro1999);
+    await dbCRUD.insertCentroMedico(centro1999);
     print("CENTRO 1999 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2000
@@ -30004,7 +30004,7 @@ void main() async {
     );
 
     // Inserta centro 2000 en la base de datos
-    await dbHelper.insertCentroMedico(centro2000);
+    await dbCRUD.insertCentroMedico(centro2000);
     print("CENTRO 2000 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2001
@@ -30019,7 +30019,7 @@ void main() async {
     );
 
     // Inserta centro 2001 en la base de datos
-    await dbHelper.insertCentroMedico(centro2001);
+    await dbCRUD.insertCentroMedico(centro2001);
     print("CENTRO 2001 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2002
@@ -30034,7 +30034,7 @@ void main() async {
     );
 
     // Inserta centro 2002 en la base de datos
-    await dbHelper.insertCentroMedico(centro2002);
+    await dbCRUD.insertCentroMedico(centro2002);
     print("CENTRO 2002 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2003
@@ -30049,7 +30049,7 @@ void main() async {
     );
 
     // Inserta centro 2003 en la base de datos
-    await dbHelper.insertCentroMedico(centro2003);
+    await dbCRUD.insertCentroMedico(centro2003);
     print("CENTRO 2003 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2004
@@ -30064,7 +30064,7 @@ void main() async {
     );
 
     // Inserta centro 2004 en la base de datos
-    await dbHelper.insertCentroMedico(centro2004);
+    await dbCRUD.insertCentroMedico(centro2004);
     print("CENTRO 2004 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2005
@@ -30079,7 +30079,7 @@ void main() async {
     );
 
     // Inserta centro 2005 en la base de datos
-    await dbHelper.insertCentroMedico(centro2005);
+    await dbCRUD.insertCentroMedico(centro2005);
     print("CENTRO 2005 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2006
@@ -30094,7 +30094,7 @@ void main() async {
     );
 
     // Inserta centro 2006 en la base de datos
-    await dbHelper.insertCentroMedico(centro2006);
+    await dbCRUD.insertCentroMedico(centro2006);
     print("CENTRO 2006 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2007
@@ -30109,7 +30109,7 @@ void main() async {
     );
 
     // Inserta centro 2007 en la base de datos
-    await dbHelper.insertCentroMedico(centro2007);
+    await dbCRUD.insertCentroMedico(centro2007);
     print("CENTRO 2007 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2008
@@ -30124,7 +30124,7 @@ void main() async {
     );
 
     // Inserta centro 2008 en la base de datos
-    await dbHelper.insertCentroMedico(centro2008);
+    await dbCRUD.insertCentroMedico(centro2008);
     print("CENTRO 2008 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2009
@@ -30139,7 +30139,7 @@ void main() async {
     );
 
     // Inserta centro 2009 en la base de datos
-    await dbHelper.insertCentroMedico(centro2009);
+    await dbCRUD.insertCentroMedico(centro2009);
     print("CENTRO 2009 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2010
@@ -30154,7 +30154,7 @@ void main() async {
     );
 
     // Inserta centro 2010 en la base de datos
-    await dbHelper.insertCentroMedico(centro2010);
+    await dbCRUD.insertCentroMedico(centro2010);
     print("CENTRO 2010 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2011
@@ -30169,7 +30169,7 @@ void main() async {
     );
 
     // Inserta centro 2011 en la base de datos
-    await dbHelper.insertCentroMedico(centro2011);
+    await dbCRUD.insertCentroMedico(centro2011);
     print("CENTRO 2011 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2012
@@ -30184,7 +30184,7 @@ void main() async {
     );
 
     // Inserta centro 2012 en la base de datos
-    await dbHelper.insertCentroMedico(centro2012);
+    await dbCRUD.insertCentroMedico(centro2012);
     print("CENTRO 2012 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2013
@@ -30199,7 +30199,7 @@ void main() async {
     );
 
     // Inserta centro 2013 en la base de datos
-    await dbHelper.insertCentroMedico(centro2013);
+    await dbCRUD.insertCentroMedico(centro2013);
     print("CENTRO 2013 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2014
@@ -30214,7 +30214,7 @@ void main() async {
     );
 
     // Inserta centro 2014 en la base de datos
-    await dbHelper.insertCentroMedico(centro2014);
+    await dbCRUD.insertCentroMedico(centro2014);
     print("CENTRO 2014 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2015
@@ -30229,7 +30229,7 @@ void main() async {
     );
 
     // Inserta centro 2015 en la base de datos
-    await dbHelper.insertCentroMedico(centro2015);
+    await dbCRUD.insertCentroMedico(centro2015);
     print("CENTRO 2015 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2016
@@ -30244,7 +30244,7 @@ void main() async {
     );
 
     // Inserta centro 2016 en la base de datos
-    await dbHelper.insertCentroMedico(centro2016);
+    await dbCRUD.insertCentroMedico(centro2016);
     print("CENTRO 2016 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2017
@@ -30259,7 +30259,7 @@ void main() async {
     );
 
     // Inserta centro 2017 en la base de datos
-    await dbHelper.insertCentroMedico(centro2017);
+    await dbCRUD.insertCentroMedico(centro2017);
     print("CENTRO 2017 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2018
@@ -30274,7 +30274,7 @@ void main() async {
     );
 
     // Inserta centro 2018 en la base de datos
-    await dbHelper.insertCentroMedico(centro2018);
+    await dbCRUD.insertCentroMedico(centro2018);
     print("CENTRO 2018 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2019
@@ -30289,7 +30289,7 @@ void main() async {
     );
 
     // Inserta centro 2019 en la base de datos
-    await dbHelper.insertCentroMedico(centro2019);
+    await dbCRUD.insertCentroMedico(centro2019);
     print("CENTRO 2019 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2020
@@ -30304,7 +30304,7 @@ void main() async {
     );
 
     // Inserta centro 2020 en la base de datos
-    await dbHelper.insertCentroMedico(centro2020);
+    await dbCRUD.insertCentroMedico(centro2020);
     print("CENTRO 2020 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2021
@@ -30319,7 +30319,7 @@ void main() async {
     );
 
     // Inserta centro 2021 en la base de datos
-    await dbHelper.insertCentroMedico(centro2021);
+    await dbCRUD.insertCentroMedico(centro2021);
     print("CENTRO 2021 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2022
@@ -30334,7 +30334,7 @@ void main() async {
     );
 
     // Inserta centro 2022 en la base de datos
-    await dbHelper.insertCentroMedico(centro2022);
+    await dbCRUD.insertCentroMedico(centro2022);
     print("CENTRO 2022 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2023
@@ -30349,7 +30349,7 @@ void main() async {
     );
 
     // Inserta centro 2023 en la base de datos
-    await dbHelper.insertCentroMedico(centro2023);
+    await dbCRUD.insertCentroMedico(centro2023);
     print("CENTRO 2023 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2024
@@ -30364,7 +30364,7 @@ void main() async {
     );
 
     // Inserta centro 2024 en la base de datos
-    await dbHelper.insertCentroMedico(centro2024);
+    await dbCRUD.insertCentroMedico(centro2024);
     print("CENTRO 2024 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2025
@@ -30379,7 +30379,7 @@ void main() async {
     );
 
     // Inserta centro 2025 en la base de datos
-    await dbHelper.insertCentroMedico(centro2025);
+    await dbCRUD.insertCentroMedico(centro2025);
     print("CENTRO 2025 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2026
@@ -30394,7 +30394,7 @@ void main() async {
     );
 
     // Inserta centro 2026 en la base de datos
-    await dbHelper.insertCentroMedico(centro2026);
+    await dbCRUD.insertCentroMedico(centro2026);
     print("CENTRO 2026 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2027
@@ -30409,7 +30409,7 @@ void main() async {
     );
 
     // Inserta centro 2027 en la base de datos
-    await dbHelper.insertCentroMedico(centro2027);
+    await dbCRUD.insertCentroMedico(centro2027);
     print("CENTRO 2027 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2028
@@ -30424,7 +30424,7 @@ void main() async {
     );
 
     // Inserta centro 2028 en la base de datos
-    await dbHelper.insertCentroMedico(centro2028);
+    await dbCRUD.insertCentroMedico(centro2028);
     print("CENTRO 2028 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2029
@@ -30439,7 +30439,7 @@ void main() async {
     );
 
     // Inserta centro 2029 en la base de datos
-    await dbHelper.insertCentroMedico(centro2029);
+    await dbCRUD.insertCentroMedico(centro2029);
     print("CENTRO 2029 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2030
@@ -30454,7 +30454,7 @@ void main() async {
     );
 
     // Inserta centro 2030 en la base de datos
-    await dbHelper.insertCentroMedico(centro2030);
+    await dbCRUD.insertCentroMedico(centro2030);
     print("CENTRO 2030 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2031
@@ -30469,7 +30469,7 @@ void main() async {
     );
 
     // Inserta centro 2031 en la base de datos
-    await dbHelper.insertCentroMedico(centro2031);
+    await dbCRUD.insertCentroMedico(centro2031);
     print("CENTRO 2031 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2032
@@ -30484,7 +30484,7 @@ void main() async {
     );
 
     // Inserta centro 2032 en la base de datos
-    await dbHelper.insertCentroMedico(centro2032);
+    await dbCRUD.insertCentroMedico(centro2032);
     print("CENTRO 2032 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2033
@@ -30499,7 +30499,7 @@ void main() async {
     );
 
     // Inserta centro 2033 en la base de datos
-    await dbHelper.insertCentroMedico(centro2033);
+    await dbCRUD.insertCentroMedico(centro2033);
     print("CENTRO 2033 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2034
@@ -30514,7 +30514,7 @@ void main() async {
     );
 
     // Inserta centro 2034 en la base de datos
-    await dbHelper.insertCentroMedico(centro2034);
+    await dbCRUD.insertCentroMedico(centro2034);
     print("CENTRO 2034 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2035
@@ -30529,7 +30529,7 @@ void main() async {
     );
 
     // Inserta centro 2035 en la base de datos
-    await dbHelper.insertCentroMedico(centro2035);
+    await dbCRUD.insertCentroMedico(centro2035);
     print("CENTRO 2035 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2036
@@ -30544,7 +30544,7 @@ void main() async {
     );
 
     // Inserta centro 2036 en la base de datos
-    await dbHelper.insertCentroMedico(centro2036);
+    await dbCRUD.insertCentroMedico(centro2036);
     print("CENTRO 2036 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2037
@@ -30559,7 +30559,7 @@ void main() async {
     );
 
     // Inserta centro 2037 en la base de datos
-    await dbHelper.insertCentroMedico(centro2037);
+    await dbCRUD.insertCentroMedico(centro2037);
     print("CENTRO 2037 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2038
@@ -30574,7 +30574,7 @@ void main() async {
     );
 
     // Inserta centro 2038 en la base de datos
-    await dbHelper.insertCentroMedico(centro2038);
+    await dbCRUD.insertCentroMedico(centro2038);
     print("CENTRO 2038 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2039
@@ -30589,7 +30589,7 @@ void main() async {
     );
 
     // Inserta centro 2039 en la base de datos
-    await dbHelper.insertCentroMedico(centro2039);
+    await dbCRUD.insertCentroMedico(centro2039);
     print("CENTRO 2039 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2040
@@ -30604,7 +30604,7 @@ void main() async {
     );
 
     // Inserta centro 2040 en la base de datos
-    await dbHelper.insertCentroMedico(centro2040);
+    await dbCRUD.insertCentroMedico(centro2040);
     print("CENTRO 2040 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2041
@@ -30619,7 +30619,7 @@ void main() async {
     );
 
     // Inserta centro 2041 en la base de datos
-    await dbHelper.insertCentroMedico(centro2041);
+    await dbCRUD.insertCentroMedico(centro2041);
     print("CENTRO 2041 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2042
@@ -30634,7 +30634,7 @@ void main() async {
     );
 
     // Inserta centro 2042 en la base de datos
-    await dbHelper.insertCentroMedico(centro2042);
+    await dbCRUD.insertCentroMedico(centro2042);
     print("CENTRO 2042 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2043
@@ -30649,7 +30649,7 @@ void main() async {
     );
 
     // Inserta centro 2043 en la base de datos
-    await dbHelper.insertCentroMedico(centro2043);
+    await dbCRUD.insertCentroMedico(centro2043);
     print("CENTRO 2043 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2044
@@ -30664,7 +30664,7 @@ void main() async {
     );
 
     // Inserta centro 2044 en la base de datos
-    await dbHelper.insertCentroMedico(centro2044);
+    await dbCRUD.insertCentroMedico(centro2044);
     print("CENTRO 2044 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2045
@@ -30679,7 +30679,7 @@ void main() async {
     );
 
     // Inserta centro 2045 en la base de datos
-    await dbHelper.insertCentroMedico(centro2045);
+    await dbCRUD.insertCentroMedico(centro2045);
     print("CENTRO 2045 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2046
@@ -30694,7 +30694,7 @@ void main() async {
     );
 
     // Inserta centro 2046 en la base de datos
-    await dbHelper.insertCentroMedico(centro2046);
+    await dbCRUD.insertCentroMedico(centro2046);
     print("CENTRO 2046 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2047
@@ -30709,7 +30709,7 @@ void main() async {
     );
 
     // Inserta centro 2047 en la base de datos
-    await dbHelper.insertCentroMedico(centro2047);
+    await dbCRUD.insertCentroMedico(centro2047);
     print("CENTRO 2047 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2048
@@ -30724,7 +30724,7 @@ void main() async {
     );
 
     // Inserta centro 2048 en la base de datos
-    await dbHelper.insertCentroMedico(centro2048);
+    await dbCRUD.insertCentroMedico(centro2048);
     print("CENTRO 2048 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2049
@@ -30739,7 +30739,7 @@ void main() async {
     );
 
     // Inserta centro 2049 en la base de datos
-    await dbHelper.insertCentroMedico(centro2049);
+    await dbCRUD.insertCentroMedico(centro2049);
     print("CENTRO 2049 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2050
@@ -30754,7 +30754,7 @@ void main() async {
     );
 
     // Inserta centro 2050 en la base de datos
-    await dbHelper.insertCentroMedico(centro2050);
+    await dbCRUD.insertCentroMedico(centro2050);
     print("CENTRO 2050 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2051
@@ -30769,7 +30769,7 @@ void main() async {
     );
 
     // Inserta centro 2051 en la base de datos
-    await dbHelper.insertCentroMedico(centro2051);
+    await dbCRUD.insertCentroMedico(centro2051);
     print("CENTRO 2051 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2052
@@ -30784,7 +30784,7 @@ void main() async {
     );
 
     // Inserta centro 2052 en la base de datos
-    await dbHelper.insertCentroMedico(centro2052);
+    await dbCRUD.insertCentroMedico(centro2052);
     print("CENTRO 2052 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2053
@@ -30799,7 +30799,7 @@ void main() async {
     );
 
     // Inserta centro 2053 en la base de datos
-    await dbHelper.insertCentroMedico(centro2053);
+    await dbCRUD.insertCentroMedico(centro2053);
     print("CENTRO 2053 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2054
@@ -30814,7 +30814,7 @@ void main() async {
     );
 
     // Inserta centro 2054 en la base de datos
-    await dbHelper.insertCentroMedico(centro2054);
+    await dbCRUD.insertCentroMedico(centro2054);
     print("CENTRO 2054 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2055
@@ -30829,7 +30829,7 @@ void main() async {
     );
 
     // Inserta centro 2055 en la base de datos
-    await dbHelper.insertCentroMedico(centro2055);
+    await dbCRUD.insertCentroMedico(centro2055);
     print("CENTRO 2055 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2056
@@ -30844,7 +30844,7 @@ void main() async {
     );
 
     // Inserta centro 2056 en la base de datos
-    await dbHelper.insertCentroMedico(centro2056);
+    await dbCRUD.insertCentroMedico(centro2056);
     print("CENTRO 2056 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2057
@@ -30859,7 +30859,7 @@ void main() async {
     );
 
     // Inserta centro 2057 en la base de datos
-    await dbHelper.insertCentroMedico(centro2057);
+    await dbCRUD.insertCentroMedico(centro2057);
     print("CENTRO 2057 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2058
@@ -30874,7 +30874,7 @@ void main() async {
     );
 
     // Inserta centro 2058 en la base de datos
-    await dbHelper.insertCentroMedico(centro2058);
+    await dbCRUD.insertCentroMedico(centro2058);
     print("CENTRO 2058 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2059
@@ -30889,7 +30889,7 @@ void main() async {
     );
 
     // Inserta centro 2059 en la base de datos
-    await dbHelper.insertCentroMedico(centro2059);
+    await dbCRUD.insertCentroMedico(centro2059);
     print("CENTRO 2059 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2060
@@ -30904,7 +30904,7 @@ void main() async {
     );
 
     // Inserta centro 2060 en la base de datos
-    await dbHelper.insertCentroMedico(centro2060);
+    await dbCRUD.insertCentroMedico(centro2060);
     print("CENTRO 2060 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2061
@@ -30919,7 +30919,7 @@ void main() async {
     );
 
     // Inserta centro 2061 en la base de datos
-    await dbHelper.insertCentroMedico(centro2061);
+    await dbCRUD.insertCentroMedico(centro2061);
     print("CENTRO 2061 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2062
@@ -30934,7 +30934,7 @@ void main() async {
     );
 
     // Inserta centro 2062 en la base de datos
-    await dbHelper.insertCentroMedico(centro2062);
+    await dbCRUD.insertCentroMedico(centro2062);
     print("CENTRO 2062 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2063
@@ -30949,7 +30949,7 @@ void main() async {
     );
 
     // Inserta centro 2063 en la base de datos
-    await dbHelper.insertCentroMedico(centro2063);
+    await dbCRUD.insertCentroMedico(centro2063);
     print("CENTRO 2063 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2064
@@ -30964,7 +30964,7 @@ void main() async {
     );
 
     // Inserta centro 2064 en la base de datos
-    await dbHelper.insertCentroMedico(centro2064);
+    await dbCRUD.insertCentroMedico(centro2064);
     print("CENTRO 2064 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2065
@@ -30979,7 +30979,7 @@ void main() async {
     );
 
     // Inserta centro 2065 en la base de datos
-    await dbHelper.insertCentroMedico(centro2065);
+    await dbCRUD.insertCentroMedico(centro2065);
     print("CENTRO 2065 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2066
@@ -30994,7 +30994,7 @@ void main() async {
     );
 
     // Inserta centro 2066 en la base de datos
-    await dbHelper.insertCentroMedico(centro2066);
+    await dbCRUD.insertCentroMedico(centro2066);
     print("CENTRO 2066 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2067
@@ -31009,7 +31009,7 @@ void main() async {
     );
 
     // Inserta centro 2067 en la base de datos
-    await dbHelper.insertCentroMedico(centro2067);
+    await dbCRUD.insertCentroMedico(centro2067);
     print("CENTRO 2067 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2068
@@ -31024,7 +31024,7 @@ void main() async {
     );
 
     // Inserta centro 2068 en la base de datos
-    await dbHelper.insertCentroMedico(centro2068);
+    await dbCRUD.insertCentroMedico(centro2068);
     print("CENTRO 2068 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2069
@@ -31039,7 +31039,7 @@ void main() async {
     );
 
     // Inserta centro 2069 en la base de datos
-    await dbHelper.insertCentroMedico(centro2069);
+    await dbCRUD.insertCentroMedico(centro2069);
     print("CENTRO 2069 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2070
@@ -31054,7 +31054,7 @@ void main() async {
     );
 
     // Inserta centro 2070 en la base de datos
-    await dbHelper.insertCentroMedico(centro2070);
+    await dbCRUD.insertCentroMedico(centro2070);
     print("CENTRO 2070 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2071
@@ -31069,7 +31069,7 @@ void main() async {
     );
 
     // Inserta centro 2071 en la base de datos
-    await dbHelper.insertCentroMedico(centro2071);
+    await dbCRUD.insertCentroMedico(centro2071);
     print("CENTRO 2071 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2072
@@ -31084,7 +31084,7 @@ void main() async {
     );
 
     // Inserta centro 2072 en la base de datos
-    await dbHelper.insertCentroMedico(centro2072);
+    await dbCRUD.insertCentroMedico(centro2072);
     print("CENTRO 2072 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2073
@@ -31099,7 +31099,7 @@ void main() async {
     );
 
     // Inserta centro 2073 en la base de datos
-    await dbHelper.insertCentroMedico(centro2073);
+    await dbCRUD.insertCentroMedico(centro2073);
     print("CENTRO 2073 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2074
@@ -31114,7 +31114,7 @@ void main() async {
     );
 
     // Inserta centro 2074 en la base de datos
-    await dbHelper.insertCentroMedico(centro2074);
+    await dbCRUD.insertCentroMedico(centro2074);
     print("CENTRO 2074 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2075
@@ -31129,7 +31129,7 @@ void main() async {
     );
 
     // Inserta centro 2075 en la base de datos
-    await dbHelper.insertCentroMedico(centro2075);
+    await dbCRUD.insertCentroMedico(centro2075);
     print("CENTRO 2075 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2076
@@ -31144,7 +31144,7 @@ void main() async {
     );
 
     // Inserta centro 2076 en la base de datos
-    await dbHelper.insertCentroMedico(centro2076);
+    await dbCRUD.insertCentroMedico(centro2076);
     print("CENTRO 2076 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2077
@@ -31159,7 +31159,7 @@ void main() async {
     );
 
     // Inserta centro 2077 en la base de datos
-    await dbHelper.insertCentroMedico(centro2077);
+    await dbCRUD.insertCentroMedico(centro2077);
     print("CENTRO 2077 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2078
@@ -31174,7 +31174,7 @@ void main() async {
     );
 
     // Inserta centro 2078 en la base de datos
-    await dbHelper.insertCentroMedico(centro2078);
+    await dbCRUD.insertCentroMedico(centro2078);
     print("CENTRO 2078 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2079
@@ -31189,7 +31189,7 @@ void main() async {
     );
 
     // Inserta centro 2079 en la base de datos
-    await dbHelper.insertCentroMedico(centro2079);
+    await dbCRUD.insertCentroMedico(centro2079);
     print("CENTRO 2079 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2080
@@ -31204,7 +31204,7 @@ void main() async {
     );
 
     // Inserta centro 2080 en la base de datos
-    await dbHelper.insertCentroMedico(centro2080);
+    await dbCRUD.insertCentroMedico(centro2080);
     print("CENTRO 2080 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2081
@@ -31219,7 +31219,7 @@ void main() async {
     );
 
     // Inserta centro 2081 en la base de datos
-    await dbHelper.insertCentroMedico(centro2081);
+    await dbCRUD.insertCentroMedico(centro2081);
     print("CENTRO 2081 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2082
@@ -31234,7 +31234,7 @@ void main() async {
     );
 
     // Inserta centro 2082 en la base de datos
-    await dbHelper.insertCentroMedico(centro2082);
+    await dbCRUD.insertCentroMedico(centro2082);
     print("CENTRO 2082 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2083
@@ -31249,7 +31249,7 @@ void main() async {
     );
 
     // Inserta centro 2083 en la base de datos
-    await dbHelper.insertCentroMedico(centro2083);
+    await dbCRUD.insertCentroMedico(centro2083);
     print("CENTRO 2083 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2084
@@ -31264,7 +31264,7 @@ void main() async {
     );
 
     // Inserta centro 2084 en la base de datos
-    await dbHelper.insertCentroMedico(centro2084);
+    await dbCRUD.insertCentroMedico(centro2084);
     print("CENTRO 2084 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2085
@@ -31279,7 +31279,7 @@ void main() async {
     );
 
     // Inserta centro 2085 en la base de datos
-    await dbHelper.insertCentroMedico(centro2085);
+    await dbCRUD.insertCentroMedico(centro2085);
     print("CENTRO 2085 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2086
@@ -31294,7 +31294,7 @@ void main() async {
     );
 
     // Inserta centro 2086 en la base de datos
-    await dbHelper.insertCentroMedico(centro2086);
+    await dbCRUD.insertCentroMedico(centro2086);
     print("CENTRO 2086 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2087
@@ -31309,7 +31309,7 @@ void main() async {
     );
 
     // Inserta centro 2087 en la base de datos
-    await dbHelper.insertCentroMedico(centro2087);
+    await dbCRUD.insertCentroMedico(centro2087);
     print("CENTRO 2087 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2088
@@ -31324,7 +31324,7 @@ void main() async {
     );
 
     // Inserta centro 2088 en la base de datos
-    await dbHelper.insertCentroMedico(centro2088);
+    await dbCRUD.insertCentroMedico(centro2088);
     print("CENTRO 2088 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2089
@@ -31339,7 +31339,7 @@ void main() async {
     );
 
     // Inserta centro 2089 en la base de datos
-    await dbHelper.insertCentroMedico(centro2089);
+    await dbCRUD.insertCentroMedico(centro2089);
     print("CENTRO 2089 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2090
@@ -31354,7 +31354,7 @@ void main() async {
     );
 
     // Inserta centro 2090 en la base de datos
-    await dbHelper.insertCentroMedico(centro2090);
+    await dbCRUD.insertCentroMedico(centro2090);
     print("CENTRO 2090 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2091
@@ -31369,7 +31369,7 @@ void main() async {
     );
 
     // Inserta centro 2091 en la base de datos
-    await dbHelper.insertCentroMedico(centro2091);
+    await dbCRUD.insertCentroMedico(centro2091);
     print("CENTRO 2091 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2092
@@ -31384,7 +31384,7 @@ void main() async {
     );
 
     // Inserta centro 2092 en la base de datos
-    await dbHelper.insertCentroMedico(centro2092);
+    await dbCRUD.insertCentroMedico(centro2092);
     print("CENTRO 2092 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2093
@@ -31399,7 +31399,7 @@ void main() async {
     );
 
     // Inserta centro 2093 en la base de datos
-    await dbHelper.insertCentroMedico(centro2093);
+    await dbCRUD.insertCentroMedico(centro2093);
     print("CENTRO 2093 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2094
@@ -31414,7 +31414,7 @@ void main() async {
     );
 
     // Inserta centro 2094 en la base de datos
-    await dbHelper.insertCentroMedico(centro2094);
+    await dbCRUD.insertCentroMedico(centro2094);
     print("CENTRO 2094 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2095
@@ -31429,7 +31429,7 @@ void main() async {
     );
 
     // Inserta centro 2095 en la base de datos
-    await dbHelper.insertCentroMedico(centro2095);
+    await dbCRUD.insertCentroMedico(centro2095);
     print("CENTRO 2095 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2096
@@ -31444,7 +31444,7 @@ void main() async {
     );
 
     // Inserta centro 2096 en la base de datos
-    await dbHelper.insertCentroMedico(centro2096);
+    await dbCRUD.insertCentroMedico(centro2096);
     print("CENTRO 2096 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2097
@@ -31459,7 +31459,7 @@ void main() async {
     );
 
     // Inserta centro 2097 en la base de datos
-    await dbHelper.insertCentroMedico(centro2097);
+    await dbCRUD.insertCentroMedico(centro2097);
     print("CENTRO 2097 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2098
@@ -31474,7 +31474,7 @@ void main() async {
     );
 
     // Inserta centro 2098 en la base de datos
-    await dbHelper.insertCentroMedico(centro2098);
+    await dbCRUD.insertCentroMedico(centro2098);
     print("CENTRO 2098 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2099
@@ -31489,7 +31489,7 @@ void main() async {
     );
 
     // Inserta centro 2099 en la base de datos
-    await dbHelper.insertCentroMedico(centro2099);
+    await dbCRUD.insertCentroMedico(centro2099);
     print("CENTRO 2099 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2100
@@ -31504,7 +31504,7 @@ void main() async {
     );
 
     // Inserta centro 2100 en la base de datos
-    await dbHelper.insertCentroMedico(centro2100);
+    await dbCRUD.insertCentroMedico(centro2100);
     print("CENTRO 2100 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2101
@@ -31519,7 +31519,7 @@ void main() async {
     );
 
     // Inserta centro 2101 en la base de datos
-    await dbHelper.insertCentroMedico(centro2101);
+    await dbCRUD.insertCentroMedico(centro2101);
     print("CENTRO 2101 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2102
@@ -31534,7 +31534,7 @@ void main() async {
     );
 
     // Inserta centro 2102 en la base de datos
-    await dbHelper.insertCentroMedico(centro2102);
+    await dbCRUD.insertCentroMedico(centro2102);
     print("CENTRO 2102 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2103
@@ -31549,7 +31549,7 @@ void main() async {
     );
 
     // Inserta centro 2103 en la base de datos
-    await dbHelper.insertCentroMedico(centro2103);
+    await dbCRUD.insertCentroMedico(centro2103);
     print("CENTRO 2103 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2104
@@ -31564,7 +31564,7 @@ void main() async {
     );
 
     // Inserta centro 2104 en la base de datos
-    await dbHelper.insertCentroMedico(centro2104);
+    await dbCRUD.insertCentroMedico(centro2104);
     print("CENTRO 2104 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2105
@@ -31579,7 +31579,7 @@ void main() async {
     );
 
     // Inserta centro 2105 en la base de datos
-    await dbHelper.insertCentroMedico(centro2105);
+    await dbCRUD.insertCentroMedico(centro2105);
     print("CENTRO 2105 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2106
@@ -31594,7 +31594,7 @@ void main() async {
     );
 
     // Inserta centro 2106 en la base de datos
-    await dbHelper.insertCentroMedico(centro2106);
+    await dbCRUD.insertCentroMedico(centro2106);
     print("CENTRO 2106 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2107
@@ -31609,7 +31609,7 @@ void main() async {
     );
 
     // Inserta centro 2107 en la base de datos
-    await dbHelper.insertCentroMedico(centro2107);
+    await dbCRUD.insertCentroMedico(centro2107);
     print("CENTRO 2107 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2108
@@ -31624,7 +31624,7 @@ void main() async {
     );
 
     // Inserta centro 2108 en la base de datos
-    await dbHelper.insertCentroMedico(centro2108);
+    await dbCRUD.insertCentroMedico(centro2108);
     print("CENTRO 2108 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2109
@@ -31639,7 +31639,7 @@ void main() async {
     );
 
     // Inserta centro 2109 en la base de datos
-    await dbHelper.insertCentroMedico(centro2109);
+    await dbCRUD.insertCentroMedico(centro2109);
     print("CENTRO 2109 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2110
@@ -31654,7 +31654,7 @@ void main() async {
     );
 
     // Inserta centro 2110 en la base de datos
-    await dbHelper.insertCentroMedico(centro2110);
+    await dbCRUD.insertCentroMedico(centro2110);
     print("CENTRO 2110 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2111
@@ -31669,7 +31669,7 @@ void main() async {
     );
 
     // Inserta centro 2111 en la base de datos
-    await dbHelper.insertCentroMedico(centro2111);
+    await dbCRUD.insertCentroMedico(centro2111);
     print("CENTRO 2111 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2112
@@ -31684,7 +31684,7 @@ void main() async {
     );
 
     // Inserta centro 2112 en la base de datos
-    await dbHelper.insertCentroMedico(centro2112);
+    await dbCRUD.insertCentroMedico(centro2112);
     print("CENTRO 2112 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2113
@@ -31699,7 +31699,7 @@ void main() async {
     );
 
     // Inserta centro 2113 en la base de datos
-    await dbHelper.insertCentroMedico(centro2113);
+    await dbCRUD.insertCentroMedico(centro2113);
     print("CENTRO 2113 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2114
@@ -31714,7 +31714,7 @@ void main() async {
     );
 
     // Inserta centro 2114 en la base de datos
-    await dbHelper.insertCentroMedico(centro2114);
+    await dbCRUD.insertCentroMedico(centro2114);
     print("CENTRO 2114 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2115
@@ -31729,7 +31729,7 @@ void main() async {
     );
 
     // Inserta centro 2115 en la base de datos
-    await dbHelper.insertCentroMedico(centro2115);
+    await dbCRUD.insertCentroMedico(centro2115);
     print("CENTRO 2115 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2116
@@ -31744,7 +31744,7 @@ void main() async {
     );
 
     // Inserta centro 2116 en la base de datos
-    await dbHelper.insertCentroMedico(centro2116);
+    await dbCRUD.insertCentroMedico(centro2116);
     print("CENTRO 2116 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2117
@@ -31759,7 +31759,7 @@ void main() async {
     );
 
     // Inserta centro 2117 en la base de datos
-    await dbHelper.insertCentroMedico(centro2117);
+    await dbCRUD.insertCentroMedico(centro2117);
     print("CENTRO 2117 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2118
@@ -31774,7 +31774,7 @@ void main() async {
     );
 
     // Inserta centro 2118 en la base de datos
-    await dbHelper.insertCentroMedico(centro2118);
+    await dbCRUD.insertCentroMedico(centro2118);
     print("CENTRO 2118 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2119
@@ -31789,7 +31789,7 @@ void main() async {
     );
 
     // Inserta centro 2119 en la base de datos
-    await dbHelper.insertCentroMedico(centro2119);
+    await dbCRUD.insertCentroMedico(centro2119);
     print("CENTRO 2119 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2120
@@ -31804,7 +31804,7 @@ void main() async {
     );
 
     // Inserta centro 2120 en la base de datos
-    await dbHelper.insertCentroMedico(centro2120);
+    await dbCRUD.insertCentroMedico(centro2120);
     print("CENTRO 2120 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2121
@@ -31819,7 +31819,7 @@ void main() async {
     );
 
     // Inserta centro 2121 en la base de datos
-    await dbHelper.insertCentroMedico(centro2121);
+    await dbCRUD.insertCentroMedico(centro2121);
     print("CENTRO 2121 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2122
@@ -31834,7 +31834,7 @@ void main() async {
     );
 
     // Inserta centro 2122 en la base de datos
-    await dbHelper.insertCentroMedico(centro2122);
+    await dbCRUD.insertCentroMedico(centro2122);
     print("CENTRO 2122 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2123
@@ -31849,7 +31849,7 @@ void main() async {
     );
 
     // Inserta centro 2123 en la base de datos
-    await dbHelper.insertCentroMedico(centro2123);
+    await dbCRUD.insertCentroMedico(centro2123);
     print("CENTRO 2123 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2124
@@ -31864,7 +31864,7 @@ void main() async {
     );
 
     // Inserta centro 2124 en la base de datos
-    await dbHelper.insertCentroMedico(centro2124);
+    await dbCRUD.insertCentroMedico(centro2124);
     print("CENTRO 2124 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2125
@@ -31879,7 +31879,7 @@ void main() async {
     );
 
     // Inserta centro 2125 en la base de datos
-    await dbHelper.insertCentroMedico(centro2125);
+    await dbCRUD.insertCentroMedico(centro2125);
     print("CENTRO 2125 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2126
@@ -31894,7 +31894,7 @@ void main() async {
     );
 
     // Inserta centro 2126 en la base de datos
-    await dbHelper.insertCentroMedico(centro2126);
+    await dbCRUD.insertCentroMedico(centro2126);
     print("CENTRO 2126 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2127
@@ -31909,7 +31909,7 @@ void main() async {
     );
 
     // Inserta centro 2127 en la base de datos
-    await dbHelper.insertCentroMedico(centro2127);
+    await dbCRUD.insertCentroMedico(centro2127);
     print("CENTRO 2127 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2128
@@ -31924,7 +31924,7 @@ void main() async {
     );
 
     // Inserta centro 2128 en la base de datos
-    await dbHelper.insertCentroMedico(centro2128);
+    await dbCRUD.insertCentroMedico(centro2128);
     print("CENTRO 2128 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2129
@@ -31939,7 +31939,7 @@ void main() async {
     );
 
     // Inserta centro 2129 en la base de datos
-    await dbHelper.insertCentroMedico(centro2129);
+    await dbCRUD.insertCentroMedico(centro2129);
     print("CENTRO 2129 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2130
@@ -31954,7 +31954,7 @@ void main() async {
     );
 
     // Inserta centro 2130 en la base de datos
-    await dbHelper.insertCentroMedico(centro2130);
+    await dbCRUD.insertCentroMedico(centro2130);
     print("CENTRO 2130 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2131
@@ -31969,7 +31969,7 @@ void main() async {
     );
 
     // Inserta centro 2131 en la base de datos
-    await dbHelper.insertCentroMedico(centro2131);
+    await dbCRUD.insertCentroMedico(centro2131);
     print("CENTRO 2131 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2132
@@ -31984,7 +31984,7 @@ void main() async {
     );
 
     // Inserta centro 2132 en la base de datos
-    await dbHelper.insertCentroMedico(centro2132);
+    await dbCRUD.insertCentroMedico(centro2132);
     print("CENTRO 2132 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2133
@@ -31999,7 +31999,7 @@ void main() async {
     );
 
     // Inserta centro 2133 en la base de datos
-    await dbHelper.insertCentroMedico(centro2133);
+    await dbCRUD.insertCentroMedico(centro2133);
     print("CENTRO 2133 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2134
@@ -32014,7 +32014,7 @@ void main() async {
     );
 
     // Inserta centro 2134 en la base de datos
-    await dbHelper.insertCentroMedico(centro2134);
+    await dbCRUD.insertCentroMedico(centro2134);
     print("CENTRO 2134 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2135
@@ -32029,7 +32029,7 @@ void main() async {
     );
 
     // Inserta centro 2135 en la base de datos
-    await dbHelper.insertCentroMedico(centro2135);
+    await dbCRUD.insertCentroMedico(centro2135);
     print("CENTRO 2135 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2136
@@ -32044,7 +32044,7 @@ void main() async {
     );
 
     // Inserta centro 2136 en la base de datos
-    await dbHelper.insertCentroMedico(centro2136);
+    await dbCRUD.insertCentroMedico(centro2136);
     print("CENTRO 2136 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2137
@@ -32059,7 +32059,7 @@ void main() async {
     );
 
     // Inserta centro 2137 en la base de datos
-    await dbHelper.insertCentroMedico(centro2137);
+    await dbCRUD.insertCentroMedico(centro2137);
     print("CENTRO 2137 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2138
@@ -32074,7 +32074,7 @@ void main() async {
     );
 
     // Inserta centro 2138 en la base de datos
-    await dbHelper.insertCentroMedico(centro2138);
+    await dbCRUD.insertCentroMedico(centro2138);
     print("CENTRO 2138 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2139
@@ -32089,7 +32089,7 @@ void main() async {
     );
 
     // Inserta centro 2139 en la base de datos
-    await dbHelper.insertCentroMedico(centro2139);
+    await dbCRUD.insertCentroMedico(centro2139);
     print("CENTRO 2139 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2140
@@ -32104,7 +32104,7 @@ void main() async {
     );
 
     // Inserta centro 2140 en la base de datos
-    await dbHelper.insertCentroMedico(centro2140);
+    await dbCRUD.insertCentroMedico(centro2140);
     print("CENTRO 2140 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2141
@@ -32119,7 +32119,7 @@ void main() async {
     );
 
     // Inserta centro 2141 en la base de datos
-    await dbHelper.insertCentroMedico(centro2141);
+    await dbCRUD.insertCentroMedico(centro2141);
     print("CENTRO 2141 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2142
@@ -32134,7 +32134,7 @@ void main() async {
     );
 
     // Inserta centro 2142 en la base de datos
-    await dbHelper.insertCentroMedico(centro2142);
+    await dbCRUD.insertCentroMedico(centro2142);
     print("CENTRO 2142 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2143
@@ -32149,7 +32149,7 @@ void main() async {
     );
 
     // Inserta centro 2143 en la base de datos
-    await dbHelper.insertCentroMedico(centro2143);
+    await dbCRUD.insertCentroMedico(centro2143);
     print("CENTRO 2143 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2144
@@ -32164,7 +32164,7 @@ void main() async {
     );
 
     // Inserta centro 2144 en la base de datos
-    await dbHelper.insertCentroMedico(centro2144);
+    await dbCRUD.insertCentroMedico(centro2144);
     print("CENTRO 2144 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2145
@@ -32179,7 +32179,7 @@ void main() async {
     );
 
     // Inserta centro 2145 en la base de datos
-    await dbHelper.insertCentroMedico(centro2145);
+    await dbCRUD.insertCentroMedico(centro2145);
     print("CENTRO 2145 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2146
@@ -32194,7 +32194,7 @@ void main() async {
     );
 
     // Inserta centro 2146 en la base de datos
-    await dbHelper.insertCentroMedico(centro2146);
+    await dbCRUD.insertCentroMedico(centro2146);
     print("CENTRO 2146 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2147
@@ -32209,7 +32209,7 @@ void main() async {
     );
 
     // Inserta centro 2147 en la base de datos
-    await dbHelper.insertCentroMedico(centro2147);
+    await dbCRUD.insertCentroMedico(centro2147);
     print("CENTRO 2147 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2148
@@ -32224,7 +32224,7 @@ void main() async {
     );
 
     // Inserta centro 2148 en la base de datos
-    await dbHelper.insertCentroMedico(centro2148);
+    await dbCRUD.insertCentroMedico(centro2148);
     print("CENTRO 2148 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2149
@@ -32239,7 +32239,7 @@ void main() async {
     );
 
     // Inserta centro 2149 en la base de datos
-    await dbHelper.insertCentroMedico(centro2149);
+    await dbCRUD.insertCentroMedico(centro2149);
     print("CENTRO 2149 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2150
@@ -32254,7 +32254,7 @@ void main() async {
     );
 
     // Inserta centro 2150 en la base de datos
-    await dbHelper.insertCentroMedico(centro2150);
+    await dbCRUD.insertCentroMedico(centro2150);
     print("CENTRO 2150 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2151
@@ -32269,7 +32269,7 @@ void main() async {
     );
 
     // Inserta centro 2151 en la base de datos
-    await dbHelper.insertCentroMedico(centro2151);
+    await dbCRUD.insertCentroMedico(centro2151);
     print("CENTRO 2151 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2152
@@ -32284,7 +32284,7 @@ void main() async {
     );
 
     // Inserta centro 2152 en la base de datos
-    await dbHelper.insertCentroMedico(centro2152);
+    await dbCRUD.insertCentroMedico(centro2152);
     print("CENTRO 2152 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2153
@@ -32299,7 +32299,7 @@ void main() async {
     );
 
     // Inserta centro 2153 en la base de datos
-    await dbHelper.insertCentroMedico(centro2153);
+    await dbCRUD.insertCentroMedico(centro2153);
     print("CENTRO 2153 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2154
@@ -32314,7 +32314,7 @@ void main() async {
     );
 
     // Inserta centro 2154 en la base de datos
-    await dbHelper.insertCentroMedico(centro2154);
+    await dbCRUD.insertCentroMedico(centro2154);
     print("CENTRO 2154 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2155
@@ -32329,7 +32329,7 @@ void main() async {
     );
 
     // Inserta centro 2155 en la base de datos
-    await dbHelper.insertCentroMedico(centro2155);
+    await dbCRUD.insertCentroMedico(centro2155);
     print("CENTRO 2155 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2156
@@ -32344,7 +32344,7 @@ void main() async {
     );
 
     // Inserta centro 2156 en la base de datos
-    await dbHelper.insertCentroMedico(centro2156);
+    await dbCRUD.insertCentroMedico(centro2156);
     print("CENTRO 2156 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2157
@@ -32359,7 +32359,7 @@ void main() async {
     );
 
     // Inserta centro 2157 en la base de datos
-    await dbHelper.insertCentroMedico(centro2157);
+    await dbCRUD.insertCentroMedico(centro2157);
     print("CENTRO 2157 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2158
@@ -32374,7 +32374,7 @@ void main() async {
     );
 
     // Inserta centro 2158 en la base de datos
-    await dbHelper.insertCentroMedico(centro2158);
+    await dbCRUD.insertCentroMedico(centro2158);
     print("CENTRO 2158 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2159
@@ -32389,7 +32389,7 @@ void main() async {
     );
 
     // Inserta centro 2159 en la base de datos
-    await dbHelper.insertCentroMedico(centro2159);
+    await dbCRUD.insertCentroMedico(centro2159);
     print("CENTRO 2159 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2160
@@ -32404,7 +32404,7 @@ void main() async {
     );
 
     // Inserta centro 2160 en la base de datos
-    await dbHelper.insertCentroMedico(centro2160);
+    await dbCRUD.insertCentroMedico(centro2160);
     print("CENTRO 2160 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2161
@@ -32419,7 +32419,7 @@ void main() async {
     );
 
     // Inserta centro 2161 en la base de datos
-    await dbHelper.insertCentroMedico(centro2161);
+    await dbCRUD.insertCentroMedico(centro2161);
     print("CENTRO 2161 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2162
@@ -32434,7 +32434,7 @@ void main() async {
     );
 
     // Inserta centro 2162 en la base de datos
-    await dbHelper.insertCentroMedico(centro2162);
+    await dbCRUD.insertCentroMedico(centro2162);
     print("CENTRO 2162 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2163
@@ -32449,7 +32449,7 @@ void main() async {
     );
 
     // Inserta centro 2163 en la base de datos
-    await dbHelper.insertCentroMedico(centro2163);
+    await dbCRUD.insertCentroMedico(centro2163);
     print("CENTRO 2163 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2164
@@ -32464,7 +32464,7 @@ void main() async {
     );
 
     // Inserta centro 2164 en la base de datos
-    await dbHelper.insertCentroMedico(centro2164);
+    await dbCRUD.insertCentroMedico(centro2164);
     print("CENTRO 2164 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2165
@@ -32479,7 +32479,7 @@ void main() async {
     );
 
     // Inserta centro 2165 en la base de datos
-    await dbHelper.insertCentroMedico(centro2165);
+    await dbCRUD.insertCentroMedico(centro2165);
     print("CENTRO 2165 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2166
@@ -32494,7 +32494,7 @@ void main() async {
     );
 
     // Inserta centro 2166 en la base de datos
-    await dbHelper.insertCentroMedico(centro2166);
+    await dbCRUD.insertCentroMedico(centro2166);
     print("CENTRO 2166 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2167
@@ -32509,7 +32509,7 @@ void main() async {
     );
 
     // Inserta centro 2167 en la base de datos
-    await dbHelper.insertCentroMedico(centro2167);
+    await dbCRUD.insertCentroMedico(centro2167);
     print("CENTRO 2167 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2168
@@ -32524,7 +32524,7 @@ void main() async {
     );
 
     // Inserta centro 2168 en la base de datos
-    await dbHelper.insertCentroMedico(centro2168);
+    await dbCRUD.insertCentroMedico(centro2168);
     print("CENTRO 2168 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2169
@@ -32539,7 +32539,7 @@ void main() async {
     );
 
     // Inserta centro 2169 en la base de datos
-    await dbHelper.insertCentroMedico(centro2169);
+    await dbCRUD.insertCentroMedico(centro2169);
     print("CENTRO 2169 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2170
@@ -32554,7 +32554,7 @@ void main() async {
     );
 
     // Inserta centro 2170 en la base de datos
-    await dbHelper.insertCentroMedico(centro2170);
+    await dbCRUD.insertCentroMedico(centro2170);
     print("CENTRO 2170 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2171
@@ -32569,7 +32569,7 @@ void main() async {
     );
 
     // Inserta centro 2171 en la base de datos
-    await dbHelper.insertCentroMedico(centro2171);
+    await dbCRUD.insertCentroMedico(centro2171);
     print("CENTRO 2171 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2172
@@ -32584,7 +32584,7 @@ void main() async {
     );
 
     // Inserta centro 2172 en la base de datos
-    await dbHelper.insertCentroMedico(centro2172);
+    await dbCRUD.insertCentroMedico(centro2172);
     print("CENTRO 2172 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2173
@@ -32599,7 +32599,7 @@ void main() async {
     );
 
     // Inserta centro 2173 en la base de datos
-    await dbHelper.insertCentroMedico(centro2173);
+    await dbCRUD.insertCentroMedico(centro2173);
     print("CENTRO 2173 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2174
@@ -32614,7 +32614,7 @@ void main() async {
     );
 
     // Inserta centro 2174 en la base de datos
-    await dbHelper.insertCentroMedico(centro2174);
+    await dbCRUD.insertCentroMedico(centro2174);
     print("CENTRO 2174 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2175
@@ -32629,7 +32629,7 @@ void main() async {
     );
 
     // Inserta centro 2175 en la base de datos
-    await dbHelper.insertCentroMedico(centro2175);
+    await dbCRUD.insertCentroMedico(centro2175);
     print("CENTRO 2175 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2176
@@ -32644,7 +32644,7 @@ void main() async {
     );
 
     // Inserta centro 2176 en la base de datos
-    await dbHelper.insertCentroMedico(centro2176);
+    await dbCRUD.insertCentroMedico(centro2176);
     print("CENTRO 2176 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2177
@@ -32659,7 +32659,7 @@ void main() async {
     );
 
     // Inserta centro 2177 en la base de datos
-    await dbHelper.insertCentroMedico(centro2177);
+    await dbCRUD.insertCentroMedico(centro2177);
     print("CENTRO 2177 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2178
@@ -32674,7 +32674,7 @@ void main() async {
     );
 
     // Inserta centro 2178 en la base de datos
-    await dbHelper.insertCentroMedico(centro2178);
+    await dbCRUD.insertCentroMedico(centro2178);
     print("CENTRO 2178 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2179
@@ -32689,7 +32689,7 @@ void main() async {
     );
 
     // Inserta centro 2179 en la base de datos
-    await dbHelper.insertCentroMedico(centro2179);
+    await dbCRUD.insertCentroMedico(centro2179);
     print("CENTRO 2179 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2180
@@ -32704,7 +32704,7 @@ void main() async {
     );
 
     // Inserta centro 2180 en la base de datos
-    await dbHelper.insertCentroMedico(centro2180);
+    await dbCRUD.insertCentroMedico(centro2180);
     print("CENTRO 2180 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2181
@@ -32719,7 +32719,7 @@ void main() async {
     );
 
     // Inserta centro 2181 en la base de datos
-    await dbHelper.insertCentroMedico(centro2181);
+    await dbCRUD.insertCentroMedico(centro2181);
     print("CENTRO 2181 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2182
@@ -32734,7 +32734,7 @@ void main() async {
     );
 
     // Inserta centro 2182 en la base de datos
-    await dbHelper.insertCentroMedico(centro2182);
+    await dbCRUD.insertCentroMedico(centro2182);
     print("CENTRO 2182 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2183
@@ -32749,7 +32749,7 @@ void main() async {
     );
 
     // Inserta centro 2183 en la base de datos
-    await dbHelper.insertCentroMedico(centro2183);
+    await dbCRUD.insertCentroMedico(centro2183);
     print("CENTRO 2183 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2184
@@ -32764,7 +32764,7 @@ void main() async {
     );
 
     // Inserta centro 2184 en la base de datos
-    await dbHelper.insertCentroMedico(centro2184);
+    await dbCRUD.insertCentroMedico(centro2184);
     print("CENTRO 2184 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2185
@@ -32779,7 +32779,7 @@ void main() async {
     );
 
     // Inserta centro 2185 en la base de datos
-    await dbHelper.insertCentroMedico(centro2185);
+    await dbCRUD.insertCentroMedico(centro2185);
     print("CENTRO 2185 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2186
@@ -32794,7 +32794,7 @@ void main() async {
     );
 
     // Inserta centro 2186 en la base de datos
-    await dbHelper.insertCentroMedico(centro2186);
+    await dbCRUD.insertCentroMedico(centro2186);
     print("CENTRO 2186 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2187
@@ -32809,7 +32809,7 @@ void main() async {
     );
 
     // Inserta centro 2187 en la base de datos
-    await dbHelper.insertCentroMedico(centro2187);
+    await dbCRUD.insertCentroMedico(centro2187);
     print("CENTRO 2187 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2188
@@ -32824,7 +32824,7 @@ void main() async {
     );
 
     // Inserta centro 2188 en la base de datos
-    await dbHelper.insertCentroMedico(centro2188);
+    await dbCRUD.insertCentroMedico(centro2188);
     print("CENTRO 2188 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2189
@@ -32839,7 +32839,7 @@ void main() async {
     );
 
     // Inserta centro 2189 en la base de datos
-    await dbHelper.insertCentroMedico(centro2189);
+    await dbCRUD.insertCentroMedico(centro2189);
     print("CENTRO 2189 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2190
@@ -32854,7 +32854,7 @@ void main() async {
     );
 
     // Inserta centro 2190 en la base de datos
-    await dbHelper.insertCentroMedico(centro2190);
+    await dbCRUD.insertCentroMedico(centro2190);
     print("CENTRO 2190 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2191
@@ -32869,7 +32869,7 @@ void main() async {
     );
 
     // Inserta centro 2191 en la base de datos
-    await dbHelper.insertCentroMedico(centro2191);
+    await dbCRUD.insertCentroMedico(centro2191);
     print("CENTRO 2191 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2192
@@ -32884,7 +32884,7 @@ void main() async {
     );
 
     // Inserta centro 2192 en la base de datos
-    await dbHelper.insertCentroMedico(centro2192);
+    await dbCRUD.insertCentroMedico(centro2192);
     print("CENTRO 2192 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2193
@@ -32899,7 +32899,7 @@ void main() async {
     );
 
     // Inserta centro 2193 en la base de datos
-    await dbHelper.insertCentroMedico(centro2193);
+    await dbCRUD.insertCentroMedico(centro2193);
     print("CENTRO 2193 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2194
@@ -32914,7 +32914,7 @@ void main() async {
     );
 
     // Inserta centro 2194 en la base de datos
-    await dbHelper.insertCentroMedico(centro2194);
+    await dbCRUD.insertCentroMedico(centro2194);
     print("CENTRO 2194 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2195
@@ -32929,7 +32929,7 @@ void main() async {
     );
 
     // Inserta centro 2195 en la base de datos
-    await dbHelper.insertCentroMedico(centro2195);
+    await dbCRUD.insertCentroMedico(centro2195);
     print("CENTRO 2195 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2196
@@ -32944,7 +32944,7 @@ void main() async {
     );
 
     // Inserta centro 2196 en la base de datos
-    await dbHelper.insertCentroMedico(centro2196);
+    await dbCRUD.insertCentroMedico(centro2196);
     print("CENTRO 2196 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2197
@@ -32959,7 +32959,7 @@ void main() async {
     );
 
     // Inserta centro 2197 en la base de datos
-    await dbHelper.insertCentroMedico(centro2197);
+    await dbCRUD.insertCentroMedico(centro2197);
     print("CENTRO 2197 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2198
@@ -32974,7 +32974,7 @@ void main() async {
     );
 
     // Inserta centro 2198 en la base de datos
-    await dbHelper.insertCentroMedico(centro2198);
+    await dbCRUD.insertCentroMedico(centro2198);
     print("CENTRO 2198 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2199
@@ -32989,7 +32989,7 @@ void main() async {
     );
 
     // Inserta centro 2199 en la base de datos
-    await dbHelper.insertCentroMedico(centro2199);
+    await dbCRUD.insertCentroMedico(centro2199);
     print("CENTRO 2199 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2200
@@ -33004,7 +33004,7 @@ void main() async {
     );
 
     // Inserta centro 2200 en la base de datos
-    await dbHelper.insertCentroMedico(centro2200);
+    await dbCRUD.insertCentroMedico(centro2200);
     print("CENTRO 2200 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2201
@@ -33019,7 +33019,7 @@ void main() async {
     );
 
     // Inserta centro 2201 en la base de datos
-    await dbHelper.insertCentroMedico(centro2201);
+    await dbCRUD.insertCentroMedico(centro2201);
     print("CENTRO 2201 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2202
@@ -33034,7 +33034,7 @@ void main() async {
     );
 
     // Inserta centro 2202 en la base de datos
-    await dbHelper.insertCentroMedico(centro2202);
+    await dbCRUD.insertCentroMedico(centro2202);
     print("CENTRO 2202 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2203
@@ -33049,7 +33049,7 @@ void main() async {
     );
 
     // Inserta centro 2203 en la base de datos
-    await dbHelper.insertCentroMedico(centro2203);
+    await dbCRUD.insertCentroMedico(centro2203);
     print("CENTRO 2203 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2204
@@ -33064,7 +33064,7 @@ void main() async {
     );
 
     // Inserta centro 2204 en la base de datos
-    await dbHelper.insertCentroMedico(centro2204);
+    await dbCRUD.insertCentroMedico(centro2204);
     print("CENTRO 2204 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2205
@@ -33079,7 +33079,7 @@ void main() async {
     );
 
     // Inserta centro 2205 en la base de datos
-    await dbHelper.insertCentroMedico(centro2205);
+    await dbCRUD.insertCentroMedico(centro2205);
     print("CENTRO 2205 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2206
@@ -33094,7 +33094,7 @@ void main() async {
     );
 
     // Inserta centro 2206 en la base de datos
-    await dbHelper.insertCentroMedico(centro2206);
+    await dbCRUD.insertCentroMedico(centro2206);
     print("CENTRO 2206 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2207
@@ -33109,7 +33109,7 @@ void main() async {
     );
 
     // Inserta centro 2207 en la base de datos
-    await dbHelper.insertCentroMedico(centro2207);
+    await dbCRUD.insertCentroMedico(centro2207);
     print("CENTRO 2207 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2208
@@ -33124,7 +33124,7 @@ void main() async {
     );
 
     // Inserta centro 2208 en la base de datos
-    await dbHelper.insertCentroMedico(centro2208);
+    await dbCRUD.insertCentroMedico(centro2208);
     print("CENTRO 2208 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2209
@@ -33139,7 +33139,7 @@ void main() async {
     );
 
     // Inserta centro 2209 en la base de datos
-    await dbHelper.insertCentroMedico(centro2209);
+    await dbCRUD.insertCentroMedico(centro2209);
     print("CENTRO 2209 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2210
@@ -33154,7 +33154,7 @@ void main() async {
     );
 
     // Inserta centro 2210 en la base de datos
-    await dbHelper.insertCentroMedico(centro2210);
+    await dbCRUD.insertCentroMedico(centro2210);
     print("CENTRO 2210 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2211
@@ -33169,7 +33169,7 @@ void main() async {
     );
 
     // Inserta centro 2211 en la base de datos
-    await dbHelper.insertCentroMedico(centro2211);
+    await dbCRUD.insertCentroMedico(centro2211);
     print("CENTRO 2211 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2212
@@ -33184,7 +33184,7 @@ void main() async {
     );
 
     // Inserta centro 2212 en la base de datos
-    await dbHelper.insertCentroMedico(centro2212);
+    await dbCRUD.insertCentroMedico(centro2212);
     print("CENTRO 2212 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2213
@@ -33199,7 +33199,7 @@ void main() async {
     );
 
     // Inserta centro 2213 en la base de datos
-    await dbHelper.insertCentroMedico(centro2213);
+    await dbCRUD.insertCentroMedico(centro2213);
     print("CENTRO 2213 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2214
@@ -33214,7 +33214,7 @@ void main() async {
     );
 
     // Inserta centro 2214 en la base de datos
-    await dbHelper.insertCentroMedico(centro2214);
+    await dbCRUD.insertCentroMedico(centro2214);
     print("CENTRO 2214 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2215
@@ -33229,7 +33229,7 @@ void main() async {
     );
 
     // Inserta centro 2215 en la base de datos
-    await dbHelper.insertCentroMedico(centro2215);
+    await dbCRUD.insertCentroMedico(centro2215);
     print("CENTRO 2215 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2216
@@ -33244,7 +33244,7 @@ void main() async {
     );
 
     // Inserta centro 2216 en la base de datos
-    await dbHelper.insertCentroMedico(centro2216);
+    await dbCRUD.insertCentroMedico(centro2216);
     print("CENTRO 2216 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2217
@@ -33259,7 +33259,7 @@ void main() async {
     );
 
     // Inserta centro 2217 en la base de datos
-    await dbHelper.insertCentroMedico(centro2217);
+    await dbCRUD.insertCentroMedico(centro2217);
     print("CENTRO 2217 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2218
@@ -33274,7 +33274,7 @@ void main() async {
     );
 
     // Inserta centro 2218 en la base de datos
-    await dbHelper.insertCentroMedico(centro2218);
+    await dbCRUD.insertCentroMedico(centro2218);
     print("CENTRO 2218 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2219
@@ -33289,7 +33289,7 @@ void main() async {
     );
 
     // Inserta centro 2219 en la base de datos
-    await dbHelper.insertCentroMedico(centro2219);
+    await dbCRUD.insertCentroMedico(centro2219);
     print("CENTRO 2219 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2220
@@ -33304,7 +33304,7 @@ void main() async {
     );
 
     // Inserta centro 2220 en la base de datos
-    await dbHelper.insertCentroMedico(centro2220);
+    await dbCRUD.insertCentroMedico(centro2220);
     print("CENTRO 2220 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2221
@@ -33319,7 +33319,7 @@ void main() async {
     );
 
     // Inserta centro 2221 en la base de datos
-    await dbHelper.insertCentroMedico(centro2221);
+    await dbCRUD.insertCentroMedico(centro2221);
     print("CENTRO 2221 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2222
@@ -33334,7 +33334,7 @@ void main() async {
     );
 
     // Inserta centro 2222 en la base de datos
-    await dbHelper.insertCentroMedico(centro2222);
+    await dbCRUD.insertCentroMedico(centro2222);
     print("CENTRO 2222 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2223
@@ -33349,7 +33349,7 @@ void main() async {
     );
 
     // Inserta centro 2223 en la base de datos
-    await dbHelper.insertCentroMedico(centro2223);
+    await dbCRUD.insertCentroMedico(centro2223);
     print("CENTRO 2223 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2224
@@ -33364,7 +33364,7 @@ void main() async {
     );
 
     // Inserta centro 2224 en la base de datos
-    await dbHelper.insertCentroMedico(centro2224);
+    await dbCRUD.insertCentroMedico(centro2224);
     print("CENTRO 2224 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2225
@@ -33379,7 +33379,7 @@ void main() async {
     );
 
     // Inserta centro 2225 en la base de datos
-    await dbHelper.insertCentroMedico(centro2225);
+    await dbCRUD.insertCentroMedico(centro2225);
     print("CENTRO 2225 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2226
@@ -33394,7 +33394,7 @@ void main() async {
     );
 
     // Inserta centro 2226 en la base de datos
-    await dbHelper.insertCentroMedico(centro2226);
+    await dbCRUD.insertCentroMedico(centro2226);
     print("CENTRO 2226 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2227
@@ -33409,7 +33409,7 @@ void main() async {
     );
 
     // Inserta centro 2227 en la base de datos
-    await dbHelper.insertCentroMedico(centro2227);
+    await dbCRUD.insertCentroMedico(centro2227);
     print("CENTRO 2227 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2228
@@ -33424,7 +33424,7 @@ void main() async {
     );
 
     // Inserta centro 2228 en la base de datos
-    await dbHelper.insertCentroMedico(centro2228);
+    await dbCRUD.insertCentroMedico(centro2228);
     print("CENTRO 2228 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2229
@@ -33439,7 +33439,7 @@ void main() async {
     );
 
     // Inserta centro 2229 en la base de datos
-    await dbHelper.insertCentroMedico(centro2229);
+    await dbCRUD.insertCentroMedico(centro2229);
     print("CENTRO 2229 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2230
@@ -33454,7 +33454,7 @@ void main() async {
     );
 
     // Inserta centro 2230 en la base de datos
-    await dbHelper.insertCentroMedico(centro2230);
+    await dbCRUD.insertCentroMedico(centro2230);
     print("CENTRO 2230 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2231
@@ -33469,7 +33469,7 @@ void main() async {
     );
 
     // Inserta centro 2231 en la base de datos
-    await dbHelper.insertCentroMedico(centro2231);
+    await dbCRUD.insertCentroMedico(centro2231);
     print("CENTRO 2231 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2232
@@ -33484,7 +33484,7 @@ void main() async {
     );
 
     // Inserta centro 2232 en la base de datos
-    await dbHelper.insertCentroMedico(centro2232);
+    await dbCRUD.insertCentroMedico(centro2232);
     print("CENTRO 2232 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2233
@@ -33499,7 +33499,7 @@ void main() async {
     );
 
     // Inserta centro 2233 en la base de datos
-    await dbHelper.insertCentroMedico(centro2233);
+    await dbCRUD.insertCentroMedico(centro2233);
     print("CENTRO 2233 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2234
@@ -33514,7 +33514,7 @@ void main() async {
     );
 
     // Inserta centro 2234 en la base de datos
-    await dbHelper.insertCentroMedico(centro2234);
+    await dbCRUD.insertCentroMedico(centro2234);
     print("CENTRO 2234 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2235
@@ -33529,7 +33529,7 @@ void main() async {
     );
 
     // Inserta centro 2235 en la base de datos
-    await dbHelper.insertCentroMedico(centro2235);
+    await dbCRUD.insertCentroMedico(centro2235);
     print("CENTRO 2235 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2236
@@ -33544,7 +33544,7 @@ void main() async {
     );
 
     // Inserta centro 2236 en la base de datos
-    await dbHelper.insertCentroMedico(centro2236);
+    await dbCRUD.insertCentroMedico(centro2236);
     print("CENTRO 2236 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2237
@@ -33559,7 +33559,7 @@ void main() async {
     );
 
     // Inserta centro 2237 en la base de datos
-    await dbHelper.insertCentroMedico(centro2237);
+    await dbCRUD.insertCentroMedico(centro2237);
     print("CENTRO 2237 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2238
@@ -33574,7 +33574,7 @@ void main() async {
     );
 
     // Inserta centro 2238 en la base de datos
-    await dbHelper.insertCentroMedico(centro2238);
+    await dbCRUD.insertCentroMedico(centro2238);
     print("CENTRO 2238 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2239
@@ -33589,7 +33589,7 @@ void main() async {
     );
 
     // Inserta centro 2239 en la base de datos
-    await dbHelper.insertCentroMedico(centro2239);
+    await dbCRUD.insertCentroMedico(centro2239);
     print("CENTRO 2239 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2240
@@ -33604,7 +33604,7 @@ void main() async {
     );
 
     // Inserta centro 2240 en la base de datos
-    await dbHelper.insertCentroMedico(centro2240);
+    await dbCRUD.insertCentroMedico(centro2240);
     print("CENTRO 2240 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2241
@@ -33619,7 +33619,7 @@ void main() async {
     );
 
     // Inserta centro 2241 en la base de datos
-    await dbHelper.insertCentroMedico(centro2241);
+    await dbCRUD.insertCentroMedico(centro2241);
     print("CENTRO 2241 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2242
@@ -33634,7 +33634,7 @@ void main() async {
     );
 
     // Inserta centro 2242 en la base de datos
-    await dbHelper.insertCentroMedico(centro2242);
+    await dbCRUD.insertCentroMedico(centro2242);
     print("CENTRO 2242 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2243
@@ -33649,7 +33649,7 @@ void main() async {
     );
 
     // Inserta centro 2243 en la base de datos
-    await dbHelper.insertCentroMedico(centro2243);
+    await dbCRUD.insertCentroMedico(centro2243);
     print("CENTRO 2243 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2244
@@ -33664,7 +33664,7 @@ void main() async {
     );
 
     // Inserta centro 2244 en la base de datos
-    await dbHelper.insertCentroMedico(centro2244);
+    await dbCRUD.insertCentroMedico(centro2244);
     print("CENTRO 2244 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2245
@@ -33679,7 +33679,7 @@ void main() async {
     );
 
     // Inserta centro 2245 en la base de datos
-    await dbHelper.insertCentroMedico(centro2245);
+    await dbCRUD.insertCentroMedico(centro2245);
     print("CENTRO 2245 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2246
@@ -33694,7 +33694,7 @@ void main() async {
     );
 
     // Inserta centro 2246 en la base de datos
-    await dbHelper.insertCentroMedico(centro2246);
+    await dbCRUD.insertCentroMedico(centro2246);
     print("CENTRO 2246 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2247
@@ -33709,7 +33709,7 @@ void main() async {
     );
 
     // Inserta centro 2247 en la base de datos
-    await dbHelper.insertCentroMedico(centro2247);
+    await dbCRUD.insertCentroMedico(centro2247);
     print("CENTRO 2247 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2248
@@ -33724,7 +33724,7 @@ void main() async {
     );
 
     // Inserta centro 2248 en la base de datos
-    await dbHelper.insertCentroMedico(centro2248);
+    await dbCRUD.insertCentroMedico(centro2248);
     print("CENTRO 2248 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2249
@@ -33739,7 +33739,7 @@ void main() async {
     );
 
     // Inserta centro 2249 en la base de datos
-    await dbHelper.insertCentroMedico(centro2249);
+    await dbCRUD.insertCentroMedico(centro2249);
     print("CENTRO 2249 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2250
@@ -33754,7 +33754,7 @@ void main() async {
     );
 
     // Inserta centro 2250 en la base de datos
-    await dbHelper.insertCentroMedico(centro2250);
+    await dbCRUD.insertCentroMedico(centro2250);
     print("CENTRO 2250 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2251
@@ -33769,7 +33769,7 @@ void main() async {
     );
 
     // Inserta centro 2251 en la base de datos
-    await dbHelper.insertCentroMedico(centro2251);
+    await dbCRUD.insertCentroMedico(centro2251);
     print("CENTRO 2251 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2252
@@ -33784,7 +33784,7 @@ void main() async {
     );
 
     // Inserta centro 2252 en la base de datos
-    await dbHelper.insertCentroMedico(centro2252);
+    await dbCRUD.insertCentroMedico(centro2252);
     print("CENTRO 2252 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2253
@@ -33799,7 +33799,7 @@ void main() async {
     );
 
     // Inserta centro 2253 en la base de datos
-    await dbHelper.insertCentroMedico(centro2253);
+    await dbCRUD.insertCentroMedico(centro2253);
     print("CENTRO 2253 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2254
@@ -33814,7 +33814,7 @@ void main() async {
     );
 
     // Inserta centro 2254 en la base de datos
-    await dbHelper.insertCentroMedico(centro2254);
+    await dbCRUD.insertCentroMedico(centro2254);
     print("CENTRO 2254 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2255
@@ -33829,7 +33829,7 @@ void main() async {
     );
 
     // Inserta centro 2255 en la base de datos
-    await dbHelper.insertCentroMedico(centro2255);
+    await dbCRUD.insertCentroMedico(centro2255);
     print("CENTRO 2255 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2256
@@ -33844,7 +33844,7 @@ void main() async {
     );
 
     // Inserta centro 2256 en la base de datos
-    await dbHelper.insertCentroMedico(centro2256);
+    await dbCRUD.insertCentroMedico(centro2256);
     print("CENTRO 2256 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2257
@@ -33859,7 +33859,7 @@ void main() async {
     );
 
     // Inserta centro 2257 en la base de datos
-    await dbHelper.insertCentroMedico(centro2257);
+    await dbCRUD.insertCentroMedico(centro2257);
     print("CENTRO 2257 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2258
@@ -33874,7 +33874,7 @@ void main() async {
     );
 
     // Inserta centro 2258 en la base de datos
-    await dbHelper.insertCentroMedico(centro2258);
+    await dbCRUD.insertCentroMedico(centro2258);
     print("CENTRO 2258 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2259
@@ -33889,7 +33889,7 @@ void main() async {
     );
 
     // Inserta centro 2259 en la base de datos
-    await dbHelper.insertCentroMedico(centro2259);
+    await dbCRUD.insertCentroMedico(centro2259);
     print("CENTRO 2259 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2260
@@ -33904,7 +33904,7 @@ void main() async {
     );
 
     // Inserta centro 2260 en la base de datos
-    await dbHelper.insertCentroMedico(centro2260);
+    await dbCRUD.insertCentroMedico(centro2260);
     print("CENTRO 2260 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2261
@@ -33919,7 +33919,7 @@ void main() async {
     );
 
     // Inserta centro 2261 en la base de datos
-    await dbHelper.insertCentroMedico(centro2261);
+    await dbCRUD.insertCentroMedico(centro2261);
     print("CENTRO 2261 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2262
@@ -33934,7 +33934,7 @@ void main() async {
     );
 
     // Inserta centro 2262 en la base de datos
-    await dbHelper.insertCentroMedico(centro2262);
+    await dbCRUD.insertCentroMedico(centro2262);
     print("CENTRO 2262 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2263
@@ -33949,7 +33949,7 @@ void main() async {
     );
 
     // Inserta centro 2263 en la base de datos
-    await dbHelper.insertCentroMedico(centro2263);
+    await dbCRUD.insertCentroMedico(centro2263);
     print("CENTRO 2263 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2264
@@ -33964,7 +33964,7 @@ void main() async {
     );
 
     // Inserta centro 2264 en la base de datos
-    await dbHelper.insertCentroMedico(centro2264);
+    await dbCRUD.insertCentroMedico(centro2264);
     print("CENTRO 2264 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2265
@@ -33979,7 +33979,7 @@ void main() async {
     );
 
     // Inserta centro 2265 en la base de datos
-    await dbHelper.insertCentroMedico(centro2265);
+    await dbCRUD.insertCentroMedico(centro2265);
     print("CENTRO 2265 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2266
@@ -33994,7 +33994,7 @@ void main() async {
     );
 
     // Inserta centro 2266 en la base de datos
-    await dbHelper.insertCentroMedico(centro2266);
+    await dbCRUD.insertCentroMedico(centro2266);
     print("CENTRO 2266 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2267
@@ -34009,7 +34009,7 @@ void main() async {
     );
 
     // Inserta centro 2267 en la base de datos
-    await dbHelper.insertCentroMedico(centro2267);
+    await dbCRUD.insertCentroMedico(centro2267);
     print("CENTRO 2267 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2268
@@ -34024,7 +34024,7 @@ void main() async {
     );
 
     // Inserta centro 2268 en la base de datos
-    await dbHelper.insertCentroMedico(centro2268);
+    await dbCRUD.insertCentroMedico(centro2268);
     print("CENTRO 2268 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2269
@@ -34039,7 +34039,7 @@ void main() async {
     );
 
     // Inserta centro 2269 en la base de datos
-    await dbHelper.insertCentroMedico(centro2269);
+    await dbCRUD.insertCentroMedico(centro2269);
     print("CENTRO 2269 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2270
@@ -34054,7 +34054,7 @@ void main() async {
     );
 
     // Inserta centro 2270 en la base de datos
-    await dbHelper.insertCentroMedico(centro2270);
+    await dbCRUD.insertCentroMedico(centro2270);
     print("CENTRO 2270 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2271
@@ -34069,7 +34069,7 @@ void main() async {
     );
 
     // Inserta centro 2271 en la base de datos
-    await dbHelper.insertCentroMedico(centro2271);
+    await dbCRUD.insertCentroMedico(centro2271);
     print("CENTRO 2271 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2272
@@ -34084,7 +34084,7 @@ void main() async {
     );
 
     // Inserta centro 2272 en la base de datos
-    await dbHelper.insertCentroMedico(centro2272);
+    await dbCRUD.insertCentroMedico(centro2272);
     print("CENTRO 2272 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2273
@@ -34099,7 +34099,7 @@ void main() async {
     );
 
     // Inserta centro 2273 en la base de datos
-    await dbHelper.insertCentroMedico(centro2273);
+    await dbCRUD.insertCentroMedico(centro2273);
     print("CENTRO 2273 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2274
@@ -34114,7 +34114,7 @@ void main() async {
     );
 
     // Inserta centro 2274 en la base de datos
-    await dbHelper.insertCentroMedico(centro2274);
+    await dbCRUD.insertCentroMedico(centro2274);
     print("CENTRO 2274 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2275
@@ -34129,7 +34129,7 @@ void main() async {
     );
 
     // Inserta centro 2275 en la base de datos
-    await dbHelper.insertCentroMedico(centro2275);
+    await dbCRUD.insertCentroMedico(centro2275);
     print("CENTRO 2275 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2276
@@ -34144,7 +34144,7 @@ void main() async {
     );
 
     // Inserta centro 2276 en la base de datos
-    await dbHelper.insertCentroMedico(centro2276);
+    await dbCRUD.insertCentroMedico(centro2276);
     print("CENTRO 2276 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2277
@@ -34159,7 +34159,7 @@ void main() async {
     );
 
     // Inserta centro 2277 en la base de datos
-    await dbHelper.insertCentroMedico(centro2277);
+    await dbCRUD.insertCentroMedico(centro2277);
     print("CENTRO 2277 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2278
@@ -34174,7 +34174,7 @@ void main() async {
     );
 
     // Inserta centro 2278 en la base de datos
-    await dbHelper.insertCentroMedico(centro2278);
+    await dbCRUD.insertCentroMedico(centro2278);
     print("CENTRO 2278 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2279
@@ -34189,7 +34189,7 @@ void main() async {
     );
 
     // Inserta centro 2279 en la base de datos
-    await dbHelper.insertCentroMedico(centro2279);
+    await dbCRUD.insertCentroMedico(centro2279);
     print("CENTRO 2279 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2280
@@ -34204,7 +34204,7 @@ void main() async {
     );
 
     // Inserta centro 2280 en la base de datos
-    await dbHelper.insertCentroMedico(centro2280);
+    await dbCRUD.insertCentroMedico(centro2280);
     print("CENTRO 2280 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2281
@@ -34219,7 +34219,7 @@ void main() async {
     );
 
     // Inserta centro 2281 en la base de datos
-    await dbHelper.insertCentroMedico(centro2281);
+    await dbCRUD.insertCentroMedico(centro2281);
     print("CENTRO 2281 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2282
@@ -34234,7 +34234,7 @@ void main() async {
     );
 
     // Inserta centro 2282 en la base de datos
-    await dbHelper.insertCentroMedico(centro2282);
+    await dbCRUD.insertCentroMedico(centro2282);
     print("CENTRO 2282 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2283
@@ -34249,7 +34249,7 @@ void main() async {
     );
 
     // Inserta centro 2283 en la base de datos
-    await dbHelper.insertCentroMedico(centro2283);
+    await dbCRUD.insertCentroMedico(centro2283);
     print("CENTRO 2283 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2284
@@ -34264,7 +34264,7 @@ void main() async {
     );
 
     // Inserta centro 2284 en la base de datos
-    await dbHelper.insertCentroMedico(centro2284);
+    await dbCRUD.insertCentroMedico(centro2284);
     print("CENTRO 2284 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2285
@@ -34279,7 +34279,7 @@ void main() async {
     );
 
     // Inserta centro 2285 en la base de datos
-    await dbHelper.insertCentroMedico(centro2285);
+    await dbCRUD.insertCentroMedico(centro2285);
     print("CENTRO 2285 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2286
@@ -34294,7 +34294,7 @@ void main() async {
     );
 
     // Inserta centro 2286 en la base de datos
-    await dbHelper.insertCentroMedico(centro2286);
+    await dbCRUD.insertCentroMedico(centro2286);
     print("CENTRO 2286 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2287
@@ -34309,7 +34309,7 @@ void main() async {
     );
 
     // Inserta centro 2287 en la base de datos
-    await dbHelper.insertCentroMedico(centro2287);
+    await dbCRUD.insertCentroMedico(centro2287);
     print("CENTRO 2287 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2288
@@ -34324,7 +34324,7 @@ void main() async {
     );
 
     // Inserta centro 2288 en la base de datos
-    await dbHelper.insertCentroMedico(centro2288);
+    await dbCRUD.insertCentroMedico(centro2288);
     print("CENTRO 2288 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2289
@@ -34339,7 +34339,7 @@ void main() async {
     );
 
     // Inserta centro 2289 en la base de datos
-    await dbHelper.insertCentroMedico(centro2289);
+    await dbCRUD.insertCentroMedico(centro2289);
     print("CENTRO 2289 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2290
@@ -34354,7 +34354,7 @@ void main() async {
     );
 
     // Inserta centro 2290 en la base de datos
-    await dbHelper.insertCentroMedico(centro2290);
+    await dbCRUD.insertCentroMedico(centro2290);
     print("CENTRO 2290 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2291
@@ -34369,7 +34369,7 @@ void main() async {
     );
 
     // Inserta centro 2291 en la base de datos
-    await dbHelper.insertCentroMedico(centro2291);
+    await dbCRUD.insertCentroMedico(centro2291);
     print("CENTRO 2291 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2292
@@ -34384,7 +34384,7 @@ void main() async {
     );
 
     // Inserta centro 2292 en la base de datos
-    await dbHelper.insertCentroMedico(centro2292);
+    await dbCRUD.insertCentroMedico(centro2292);
     print("CENTRO 2292 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2293
@@ -34399,7 +34399,7 @@ void main() async {
     );
 
     // Inserta centro 2293 en la base de datos
-    await dbHelper.insertCentroMedico(centro2293);
+    await dbCRUD.insertCentroMedico(centro2293);
     print("CENTRO 2293 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2294
@@ -34414,7 +34414,7 @@ void main() async {
     );
 
     // Inserta centro 2294 en la base de datos
-    await dbHelper.insertCentroMedico(centro2294);
+    await dbCRUD.insertCentroMedico(centro2294);
     print("CENTRO 2294 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2295
@@ -34429,7 +34429,7 @@ void main() async {
     );
 
     // Inserta centro 2295 en la base de datos
-    await dbHelper.insertCentroMedico(centro2295);
+    await dbCRUD.insertCentroMedico(centro2295);
     print("CENTRO 2295 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2296
@@ -34444,7 +34444,7 @@ void main() async {
     );
 
     // Inserta centro 2296 en la base de datos
-    await dbHelper.insertCentroMedico(centro2296);
+    await dbCRUD.insertCentroMedico(centro2296);
     print("CENTRO 2296 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2297
@@ -34459,7 +34459,7 @@ void main() async {
     );
 
     // Inserta centro 2297 en la base de datos
-    await dbHelper.insertCentroMedico(centro2297);
+    await dbCRUD.insertCentroMedico(centro2297);
     print("CENTRO 2297 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2298
@@ -34474,7 +34474,7 @@ void main() async {
     );
 
     // Inserta centro 2298 en la base de datos
-    await dbHelper.insertCentroMedico(centro2298);
+    await dbCRUD.insertCentroMedico(centro2298);
     print("CENTRO 2298 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2299
@@ -34489,7 +34489,7 @@ void main() async {
     );
 
     // Inserta centro 2299 en la base de datos
-    await dbHelper.insertCentroMedico(centro2299);
+    await dbCRUD.insertCentroMedico(centro2299);
     print("CENTRO 2299 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2300
@@ -34504,7 +34504,7 @@ void main() async {
     );
 
     // Inserta centro 2300 en la base de datos
-    await dbHelper.insertCentroMedico(centro2300);
+    await dbCRUD.insertCentroMedico(centro2300);
     print("CENTRO 2300 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2301
@@ -34519,7 +34519,7 @@ void main() async {
     );
 
     // Inserta centro 2301 en la base de datos
-    await dbHelper.insertCentroMedico(centro2301);
+    await dbCRUD.insertCentroMedico(centro2301);
     print("CENTRO 2301 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2302
@@ -34534,7 +34534,7 @@ void main() async {
     );
 
     // Inserta centro 2302 en la base de datos
-    await dbHelper.insertCentroMedico(centro2302);
+    await dbCRUD.insertCentroMedico(centro2302);
     print("CENTRO 2302 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2303
@@ -34549,7 +34549,7 @@ void main() async {
     );
 
     // Inserta centro 2303 en la base de datos
-    await dbHelper.insertCentroMedico(centro2303);
+    await dbCRUD.insertCentroMedico(centro2303);
     print("CENTRO 2303 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2304
@@ -34564,7 +34564,7 @@ void main() async {
     );
 
     // Inserta centro 2304 en la base de datos
-    await dbHelper.insertCentroMedico(centro2304);
+    await dbCRUD.insertCentroMedico(centro2304);
     print("CENTRO 2304 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2305
@@ -34579,7 +34579,7 @@ void main() async {
     );
 
     // Inserta centro 2305 en la base de datos
-    await dbHelper.insertCentroMedico(centro2305);
+    await dbCRUD.insertCentroMedico(centro2305);
     print("CENTRO 2305 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2306
@@ -34594,7 +34594,7 @@ void main() async {
     );
 
     // Inserta centro 2306 en la base de datos
-    await dbHelper.insertCentroMedico(centro2306);
+    await dbCRUD.insertCentroMedico(centro2306);
     print("CENTRO 2306 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2307
@@ -34609,7 +34609,7 @@ void main() async {
     );
 
     // Inserta centro 2307 en la base de datos
-    await dbHelper.insertCentroMedico(centro2307);
+    await dbCRUD.insertCentroMedico(centro2307);
     print("CENTRO 2307 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2308
@@ -34624,7 +34624,7 @@ void main() async {
     );
 
     // Inserta centro 2308 en la base de datos
-    await dbHelper.insertCentroMedico(centro2308);
+    await dbCRUD.insertCentroMedico(centro2308);
     print("CENTRO 2308 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2309
@@ -34639,7 +34639,7 @@ void main() async {
     );
 
     // Inserta centro 2309 en la base de datos
-    await dbHelper.insertCentroMedico(centro2309);
+    await dbCRUD.insertCentroMedico(centro2309);
     print("CENTRO 2309 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2310
@@ -34654,7 +34654,7 @@ void main() async {
     );
 
     // Inserta centro 2310 en la base de datos
-    await dbHelper.insertCentroMedico(centro2310);
+    await dbCRUD.insertCentroMedico(centro2310);
     print("CENTRO 2310 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2311
@@ -34669,7 +34669,7 @@ void main() async {
     );
 
     // Inserta centro 2311 en la base de datos
-    await dbHelper.insertCentroMedico(centro2311);
+    await dbCRUD.insertCentroMedico(centro2311);
     print("CENTRO 2311 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2312
@@ -34684,7 +34684,7 @@ void main() async {
     );
 
     // Inserta centro 2312 en la base de datos
-    await dbHelper.insertCentroMedico(centro2312);
+    await dbCRUD.insertCentroMedico(centro2312);
     print("CENTRO 2312 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2313
@@ -34699,7 +34699,7 @@ void main() async {
     );
 
     // Inserta centro 2313 en la base de datos
-    await dbHelper.insertCentroMedico(centro2313);
+    await dbCRUD.insertCentroMedico(centro2313);
     print("CENTRO 2313 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2314
@@ -34714,7 +34714,7 @@ void main() async {
     );
 
     // Inserta centro 2314 en la base de datos
-    await dbHelper.insertCentroMedico(centro2314);
+    await dbCRUD.insertCentroMedico(centro2314);
     print("CENTRO 2314 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2315
@@ -34729,7 +34729,7 @@ void main() async {
     );
 
     // Inserta centro 2315 en la base de datos
-    await dbHelper.insertCentroMedico(centro2315);
+    await dbCRUD.insertCentroMedico(centro2315);
     print("CENTRO 2315 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2316
@@ -34744,7 +34744,7 @@ void main() async {
     );
 
     // Inserta centro 2316 en la base de datos
-    await dbHelper.insertCentroMedico(centro2316);
+    await dbCRUD.insertCentroMedico(centro2316);
     print("CENTRO 2316 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2317
@@ -34759,7 +34759,7 @@ void main() async {
     );
 
     // Inserta centro 2317 en la base de datos
-    await dbHelper.insertCentroMedico(centro2317);
+    await dbCRUD.insertCentroMedico(centro2317);
     print("CENTRO 2317 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2318
@@ -34774,7 +34774,7 @@ void main() async {
     );
 
     // Inserta centro 2318 en la base de datos
-    await dbHelper.insertCentroMedico(centro2318);
+    await dbCRUD.insertCentroMedico(centro2318);
     print("CENTRO 2318 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2319
@@ -34789,7 +34789,7 @@ void main() async {
     );
 
     // Inserta centro 2319 en la base de datos
-    await dbHelper.insertCentroMedico(centro2319);
+    await dbCRUD.insertCentroMedico(centro2319);
     print("CENTRO 2319 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2320
@@ -34804,7 +34804,7 @@ void main() async {
     );
 
     // Inserta centro 2320 en la base de datos
-    await dbHelper.insertCentroMedico(centro2320);
+    await dbCRUD.insertCentroMedico(centro2320);
     print("CENTRO 2320 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2321
@@ -34819,7 +34819,7 @@ void main() async {
     );
 
     // Inserta centro 2321 en la base de datos
-    await dbHelper.insertCentroMedico(centro2321);
+    await dbCRUD.insertCentroMedico(centro2321);
     print("CENTRO 2321 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2322
@@ -34834,7 +34834,7 @@ void main() async {
     );
 
     // Inserta centro 2322 en la base de datos
-    await dbHelper.insertCentroMedico(centro2322);
+    await dbCRUD.insertCentroMedico(centro2322);
     print("CENTRO 2322 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2323
@@ -34849,7 +34849,7 @@ void main() async {
     );
 
     // Inserta centro 2323 en la base de datos
-    await dbHelper.insertCentroMedico(centro2323);
+    await dbCRUD.insertCentroMedico(centro2323);
     print("CENTRO 2323 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2324
@@ -34864,7 +34864,7 @@ void main() async {
     );
 
     // Inserta centro 2324 en la base de datos
-    await dbHelper.insertCentroMedico(centro2324);
+    await dbCRUD.insertCentroMedico(centro2324);
     print("CENTRO 2324 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2325
@@ -34879,7 +34879,7 @@ void main() async {
     );
 
     // Inserta centro 2325 en la base de datos
-    await dbHelper.insertCentroMedico(centro2325);
+    await dbCRUD.insertCentroMedico(centro2325);
     print("CENTRO 2325 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2326
@@ -34894,7 +34894,7 @@ void main() async {
     );
 
     // Inserta centro 2326 en la base de datos
-    await dbHelper.insertCentroMedico(centro2326);
+    await dbCRUD.insertCentroMedico(centro2326);
     print("CENTRO 2326 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2327
@@ -34909,7 +34909,7 @@ void main() async {
     );
 
     // Inserta centro 2327 en la base de datos
-    await dbHelper.insertCentroMedico(centro2327);
+    await dbCRUD.insertCentroMedico(centro2327);
     print("CENTRO 2327 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2328
@@ -34924,7 +34924,7 @@ void main() async {
     );
 
     // Inserta centro 2328 en la base de datos
-    await dbHelper.insertCentroMedico(centro2328);
+    await dbCRUD.insertCentroMedico(centro2328);
     print("CENTRO 2328 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2329
@@ -34939,7 +34939,7 @@ void main() async {
     );
 
     // Inserta centro 2329 en la base de datos
-    await dbHelper.insertCentroMedico(centro2329);
+    await dbCRUD.insertCentroMedico(centro2329);
     print("CENTRO 2329 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2330
@@ -34954,7 +34954,7 @@ void main() async {
     );
 
     // Inserta centro 2330 en la base de datos
-    await dbHelper.insertCentroMedico(centro2330);
+    await dbCRUD.insertCentroMedico(centro2330);
     print("CENTRO 2330 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2331
@@ -34969,7 +34969,7 @@ void main() async {
     );
 
     // Inserta centro 2331 en la base de datos
-    await dbHelper.insertCentroMedico(centro2331);
+    await dbCRUD.insertCentroMedico(centro2331);
     print("CENTRO 2331 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2332
@@ -34984,7 +34984,7 @@ void main() async {
     );
 
     // Inserta centro 2332 en la base de datos
-    await dbHelper.insertCentroMedico(centro2332);
+    await dbCRUD.insertCentroMedico(centro2332);
     print("CENTRO 2332 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2333
@@ -34999,7 +34999,7 @@ void main() async {
     );
 
     // Inserta centro 2333 en la base de datos
-    await dbHelper.insertCentroMedico(centro2333);
+    await dbCRUD.insertCentroMedico(centro2333);
     print("CENTRO 2333 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2334
@@ -35014,7 +35014,7 @@ void main() async {
     );
 
     // Inserta centro 2334 en la base de datos
-    await dbHelper.insertCentroMedico(centro2334);
+    await dbCRUD.insertCentroMedico(centro2334);
     print("CENTRO 2334 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2335
@@ -35029,7 +35029,7 @@ void main() async {
     );
 
     // Inserta centro 2335 en la base de datos
-    await dbHelper.insertCentroMedico(centro2335);
+    await dbCRUD.insertCentroMedico(centro2335);
     print("CENTRO 2335 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2336
@@ -35044,7 +35044,7 @@ void main() async {
     );
 
     // Inserta centro 2336 en la base de datos
-    await dbHelper.insertCentroMedico(centro2336);
+    await dbCRUD.insertCentroMedico(centro2336);
     print("CENTRO 2336 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2337
@@ -35059,7 +35059,7 @@ void main() async {
     );
 
     // Inserta centro 2337 en la base de datos
-    await dbHelper.insertCentroMedico(centro2337);
+    await dbCRUD.insertCentroMedico(centro2337);
     print("CENTRO 2337 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2338
@@ -35074,7 +35074,7 @@ void main() async {
     );
 
     // Inserta centro 2338 en la base de datos
-    await dbHelper.insertCentroMedico(centro2338);
+    await dbCRUD.insertCentroMedico(centro2338);
     print("CENTRO 2338 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2339
@@ -35089,7 +35089,7 @@ void main() async {
     );
 
     // Inserta centro 2339 en la base de datos
-    await dbHelper.insertCentroMedico(centro2339);
+    await dbCRUD.insertCentroMedico(centro2339);
     print("CENTRO 2339 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2340
@@ -35104,7 +35104,7 @@ void main() async {
     );
 
     // Inserta centro 2340 en la base de datos
-    await dbHelper.insertCentroMedico(centro2340);
+    await dbCRUD.insertCentroMedico(centro2340);
     print("CENTRO 2340 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2341
@@ -35119,7 +35119,7 @@ void main() async {
     );
 
     // Inserta centro 2341 en la base de datos
-    await dbHelper.insertCentroMedico(centro2341);
+    await dbCRUD.insertCentroMedico(centro2341);
     print("CENTRO 2341 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2342
@@ -35134,7 +35134,7 @@ void main() async {
     );
 
     // Inserta centro 2342 en la base de datos
-    await dbHelper.insertCentroMedico(centro2342);
+    await dbCRUD.insertCentroMedico(centro2342);
     print("CENTRO 2342 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2343
@@ -35149,7 +35149,7 @@ void main() async {
     );
 
     // Inserta centro 2343 en la base de datos
-    await dbHelper.insertCentroMedico(centro2343);
+    await dbCRUD.insertCentroMedico(centro2343);
     print("CENTRO 2343 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2344
@@ -35164,7 +35164,7 @@ void main() async {
     );
 
     // Inserta centro 2344 en la base de datos
-    await dbHelper.insertCentroMedico(centro2344);
+    await dbCRUD.insertCentroMedico(centro2344);
     print("CENTRO 2344 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2345
@@ -35179,7 +35179,7 @@ void main() async {
     );
 
     // Inserta centro 2345 en la base de datos
-    await dbHelper.insertCentroMedico(centro2345);
+    await dbCRUD.insertCentroMedico(centro2345);
     print("CENTRO 2345 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2346
@@ -35194,7 +35194,7 @@ void main() async {
     );
 
     // Inserta centro 2346 en la base de datos
-    await dbHelper.insertCentroMedico(centro2346);
+    await dbCRUD.insertCentroMedico(centro2346);
     print("CENTRO 2346 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2347
@@ -35209,7 +35209,7 @@ void main() async {
     );
 
     // Inserta centro 2347 en la base de datos
-    await dbHelper.insertCentroMedico(centro2347);
+    await dbCRUD.insertCentroMedico(centro2347);
     print("CENTRO 2347 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2348
@@ -35224,7 +35224,7 @@ void main() async {
     );
 
     // Inserta centro 2348 en la base de datos
-    await dbHelper.insertCentroMedico(centro2348);
+    await dbCRUD.insertCentroMedico(centro2348);
     print("CENTRO 2348 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2349
@@ -35239,7 +35239,7 @@ void main() async {
     );
 
     // Inserta centro 2349 en la base de datos
-    await dbHelper.insertCentroMedico(centro2349);
+    await dbCRUD.insertCentroMedico(centro2349);
     print("CENTRO 2349 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2350
@@ -35254,7 +35254,7 @@ void main() async {
     );
 
     // Inserta centro 2350 en la base de datos
-    await dbHelper.insertCentroMedico(centro2350);
+    await dbCRUD.insertCentroMedico(centro2350);
     print("CENTRO 2350 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2351
@@ -35269,7 +35269,7 @@ void main() async {
     );
 
     // Inserta centro 2351 en la base de datos
-    await dbHelper.insertCentroMedico(centro2351);
+    await dbCRUD.insertCentroMedico(centro2351);
     print("CENTRO 2351 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2352
@@ -35284,7 +35284,7 @@ void main() async {
     );
 
     // Inserta centro 2352 en la base de datos
-    await dbHelper.insertCentroMedico(centro2352);
+    await dbCRUD.insertCentroMedico(centro2352);
     print("CENTRO 2352 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2353
@@ -35299,7 +35299,7 @@ void main() async {
     );
 
     // Inserta centro 2353 en la base de datos
-    await dbHelper.insertCentroMedico(centro2353);
+    await dbCRUD.insertCentroMedico(centro2353);
     print("CENTRO 2353 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2354
@@ -35314,7 +35314,7 @@ void main() async {
     );
 
     // Inserta centro 2354 en la base de datos
-    await dbHelper.insertCentroMedico(centro2354);
+    await dbCRUD.insertCentroMedico(centro2354);
     print("CENTRO 2354 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2355
@@ -35329,7 +35329,7 @@ void main() async {
     );
 
     // Inserta centro 2355 en la base de datos
-    await dbHelper.insertCentroMedico(centro2355);
+    await dbCRUD.insertCentroMedico(centro2355);
     print("CENTRO 2355 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2356
@@ -35344,7 +35344,7 @@ void main() async {
     );
 
     // Inserta centro 2356 en la base de datos
-    await dbHelper.insertCentroMedico(centro2356);
+    await dbCRUD.insertCentroMedico(centro2356);
     print("CENTRO 2356 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2357
@@ -35359,7 +35359,7 @@ void main() async {
     );
 
     // Inserta centro 2357 en la base de datos
-    await dbHelper.insertCentroMedico(centro2357);
+    await dbCRUD.insertCentroMedico(centro2357);
     print("CENTRO 2357 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2358
@@ -35374,7 +35374,7 @@ void main() async {
     );
 
     // Inserta centro 2358 en la base de datos
-    await dbHelper.insertCentroMedico(centro2358);
+    await dbCRUD.insertCentroMedico(centro2358);
     print("CENTRO 2358 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2359
@@ -35389,7 +35389,7 @@ void main() async {
     );
 
     // Inserta centro 2359 en la base de datos
-    await dbHelper.insertCentroMedico(centro2359);
+    await dbCRUD.insertCentroMedico(centro2359);
     print("CENTRO 2359 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2360
@@ -35404,7 +35404,7 @@ void main() async {
     );
 
     // Inserta centro 2360 en la base de datos
-    await dbHelper.insertCentroMedico(centro2360);
+    await dbCRUD.insertCentroMedico(centro2360);
     print("CENTRO 2360 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2361
@@ -35419,7 +35419,7 @@ void main() async {
     );
 
     // Inserta centro 2361 en la base de datos
-    await dbHelper.insertCentroMedico(centro2361);
+    await dbCRUD.insertCentroMedico(centro2361);
     print("CENTRO 2361 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2362
@@ -35434,7 +35434,7 @@ void main() async {
     );
 
     // Inserta centro 2362 en la base de datos
-    await dbHelper.insertCentroMedico(centro2362);
+    await dbCRUD.insertCentroMedico(centro2362);
     print("CENTRO 2362 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2363
@@ -35449,7 +35449,7 @@ void main() async {
     );
 
     // Inserta centro 2363 en la base de datos
-    await dbHelper.insertCentroMedico(centro2363);
+    await dbCRUD.insertCentroMedico(centro2363);
     print("CENTRO 2363 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2364
@@ -35464,7 +35464,7 @@ void main() async {
     );
 
     // Inserta centro 2364 en la base de datos
-    await dbHelper.insertCentroMedico(centro2364);
+    await dbCRUD.insertCentroMedico(centro2364);
     print("CENTRO 2364 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2365
@@ -35479,7 +35479,7 @@ void main() async {
     );
 
     // Inserta centro 2365 en la base de datos
-    await dbHelper.insertCentroMedico(centro2365);
+    await dbCRUD.insertCentroMedico(centro2365);
     print("CENTRO 2365 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2366
@@ -35494,7 +35494,7 @@ void main() async {
     );
 
     // Inserta centro 2366 en la base de datos
-    await dbHelper.insertCentroMedico(centro2366);
+    await dbCRUD.insertCentroMedico(centro2366);
     print("CENTRO 2366 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2367
@@ -35509,7 +35509,7 @@ void main() async {
     );
 
     // Inserta centro 2367 en la base de datos
-    await dbHelper.insertCentroMedico(centro2367);
+    await dbCRUD.insertCentroMedico(centro2367);
     print("CENTRO 2367 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2368
@@ -35524,7 +35524,7 @@ void main() async {
     );
 
     // Inserta centro 2368 en la base de datos
-    await dbHelper.insertCentroMedico(centro2368);
+    await dbCRUD.insertCentroMedico(centro2368);
     print("CENTRO 2368 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2369
@@ -35539,7 +35539,7 @@ void main() async {
     );
 
     // Inserta centro 2369 en la base de datos
-    await dbHelper.insertCentroMedico(centro2369);
+    await dbCRUD.insertCentroMedico(centro2369);
     print("CENTRO 2369 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2370
@@ -35554,7 +35554,7 @@ void main() async {
     );
 
     // Inserta centro 2370 en la base de datos
-    await dbHelper.insertCentroMedico(centro2370);
+    await dbCRUD.insertCentroMedico(centro2370);
     print("CENTRO 2370 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2371
@@ -35569,7 +35569,7 @@ void main() async {
     );
 
     // Inserta centro 2371 en la base de datos
-    await dbHelper.insertCentroMedico(centro2371);
+    await dbCRUD.insertCentroMedico(centro2371);
     print("CENTRO 2371 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2372
@@ -35584,7 +35584,7 @@ void main() async {
     );
 
     // Inserta centro 2372 en la base de datos
-    await dbHelper.insertCentroMedico(centro2372);
+    await dbCRUD.insertCentroMedico(centro2372);
     print("CENTRO 2372 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2373
@@ -35599,7 +35599,7 @@ void main() async {
     );
 
     // Inserta centro 2373 en la base de datos
-    await dbHelper.insertCentroMedico(centro2373);
+    await dbCRUD.insertCentroMedico(centro2373);
     print("CENTRO 2373 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2374
@@ -35614,7 +35614,7 @@ void main() async {
     );
 
     // Inserta centro 2374 en la base de datos
-    await dbHelper.insertCentroMedico(centro2374);
+    await dbCRUD.insertCentroMedico(centro2374);
     print("CENTRO 2374 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2375
@@ -35629,7 +35629,7 @@ void main() async {
     );
 
     // Inserta centro 2375 en la base de datos
-    await dbHelper.insertCentroMedico(centro2375);
+    await dbCRUD.insertCentroMedico(centro2375);
     print("CENTRO 2375 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2376
@@ -35644,7 +35644,7 @@ void main() async {
     );
 
     // Inserta centro 2376 en la base de datos
-    await dbHelper.insertCentroMedico(centro2376);
+    await dbCRUD.insertCentroMedico(centro2376);
     print("CENTRO 2376 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2377
@@ -35659,7 +35659,7 @@ void main() async {
     );
 
     // Inserta centro 2377 en la base de datos
-    await dbHelper.insertCentroMedico(centro2377);
+    await dbCRUD.insertCentroMedico(centro2377);
     print("CENTRO 2377 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2378
@@ -35674,7 +35674,7 @@ void main() async {
     );
 
     // Inserta centro 2378 en la base de datos
-    await dbHelper.insertCentroMedico(centro2378);
+    await dbCRUD.insertCentroMedico(centro2378);
     print("CENTRO 2378 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2379
@@ -35689,7 +35689,7 @@ void main() async {
     );
 
     // Inserta centro 2379 en la base de datos
-    await dbHelper.insertCentroMedico(centro2379);
+    await dbCRUD.insertCentroMedico(centro2379);
     print("CENTRO 2379 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2380
@@ -35704,7 +35704,7 @@ void main() async {
     );
 
     // Inserta centro 2380 en la base de datos
-    await dbHelper.insertCentroMedico(centro2380);
+    await dbCRUD.insertCentroMedico(centro2380);
     print("CENTRO 2380 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2381
@@ -35719,7 +35719,7 @@ void main() async {
     );
 
     // Inserta centro 2381 en la base de datos
-    await dbHelper.insertCentroMedico(centro2381);
+    await dbCRUD.insertCentroMedico(centro2381);
     print("CENTRO 2381 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2382
@@ -35734,7 +35734,7 @@ void main() async {
     );
 
     // Inserta centro 2382 en la base de datos
-    await dbHelper.insertCentroMedico(centro2382);
+    await dbCRUD.insertCentroMedico(centro2382);
     print("CENTRO 2382 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2383
@@ -35749,7 +35749,7 @@ void main() async {
     );
 
     // Inserta centro 2383 en la base de datos
-    await dbHelper.insertCentroMedico(centro2383);
+    await dbCRUD.insertCentroMedico(centro2383);
     print("CENTRO 2383 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2384
@@ -35764,7 +35764,7 @@ void main() async {
     );
 
     // Inserta centro 2384 en la base de datos
-    await dbHelper.insertCentroMedico(centro2384);
+    await dbCRUD.insertCentroMedico(centro2384);
     print("CENTRO 2384 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2385
@@ -35779,7 +35779,7 @@ void main() async {
     );
 
     // Inserta centro 2385 en la base de datos
-    await dbHelper.insertCentroMedico(centro2385);
+    await dbCRUD.insertCentroMedico(centro2385);
     print("CENTRO 2385 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2386
@@ -35794,7 +35794,7 @@ void main() async {
     );
 
     // Inserta centro 2386 en la base de datos
-    await dbHelper.insertCentroMedico(centro2386);
+    await dbCRUD.insertCentroMedico(centro2386);
     print("CENTRO 2386 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2387
@@ -35809,7 +35809,7 @@ void main() async {
     );
 
     // Inserta centro 2387 en la base de datos
-    await dbHelper.insertCentroMedico(centro2387);
+    await dbCRUD.insertCentroMedico(centro2387);
     print("CENTRO 2387 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2388
@@ -35824,7 +35824,7 @@ void main() async {
     );
 
     // Inserta centro 2388 en la base de datos
-    await dbHelper.insertCentroMedico(centro2388);
+    await dbCRUD.insertCentroMedico(centro2388);
     print("CENTRO 2388 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2389
@@ -35839,7 +35839,7 @@ void main() async {
     );
 
     // Inserta centro 2389 en la base de datos
-    await dbHelper.insertCentroMedico(centro2389);
+    await dbCRUD.insertCentroMedico(centro2389);
     print("CENTRO 2389 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2390
@@ -35854,7 +35854,7 @@ void main() async {
     );
 
     // Inserta centro 2390 en la base de datos
-    await dbHelper.insertCentroMedico(centro2390);
+    await dbCRUD.insertCentroMedico(centro2390);
     print("CENTRO 2390 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2391
@@ -35869,7 +35869,7 @@ void main() async {
     );
 
     // Inserta centro 2391 en la base de datos
-    await dbHelper.insertCentroMedico(centro2391);
+    await dbCRUD.insertCentroMedico(centro2391);
     print("CENTRO 2391 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2392
@@ -35884,7 +35884,7 @@ void main() async {
     );
 
     // Inserta centro 2392 en la base de datos
-    await dbHelper.insertCentroMedico(centro2392);
+    await dbCRUD.insertCentroMedico(centro2392);
     print("CENTRO 2392 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2393
@@ -35899,7 +35899,7 @@ void main() async {
     );
 
     // Inserta centro 2393 en la base de datos
-    await dbHelper.insertCentroMedico(centro2393);
+    await dbCRUD.insertCentroMedico(centro2393);
     print("CENTRO 2393 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2394
@@ -35914,7 +35914,7 @@ void main() async {
     );
 
     // Inserta centro 2394 en la base de datos
-    await dbHelper.insertCentroMedico(centro2394);
+    await dbCRUD.insertCentroMedico(centro2394);
     print("CENTRO 2394 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2395
@@ -35929,7 +35929,7 @@ void main() async {
     );
 
     // Inserta centro 2395 en la base de datos
-    await dbHelper.insertCentroMedico(centro2395);
+    await dbCRUD.insertCentroMedico(centro2395);
     print("CENTRO 2395 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2396
@@ -35944,7 +35944,7 @@ void main() async {
     );
 
     // Inserta centro 2396 en la base de datos
-    await dbHelper.insertCentroMedico(centro2396);
+    await dbCRUD.insertCentroMedico(centro2396);
     print("CENTRO 2396 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2397
@@ -35959,7 +35959,7 @@ void main() async {
     );
 
     // Inserta centro 2397 en la base de datos
-    await dbHelper.insertCentroMedico(centro2397);
+    await dbCRUD.insertCentroMedico(centro2397);
     print("CENTRO 2397 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2398
@@ -35974,7 +35974,7 @@ void main() async {
     );
 
     // Inserta centro 2398 en la base de datos
-    await dbHelper.insertCentroMedico(centro2398);
+    await dbCRUD.insertCentroMedico(centro2398);
     print("CENTRO 2398 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2399
@@ -35989,7 +35989,7 @@ void main() async {
     );
 
     // Inserta centro 2399 en la base de datos
-    await dbHelper.insertCentroMedico(centro2399);
+    await dbCRUD.insertCentroMedico(centro2399);
     print("CENTRO 2399 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2400
@@ -36004,7 +36004,7 @@ void main() async {
     );
 
     // Inserta centro 2400 en la base de datos
-    await dbHelper.insertCentroMedico(centro2400);
+    await dbCRUD.insertCentroMedico(centro2400);
     print("CENTRO 2400 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2401
@@ -36019,7 +36019,7 @@ void main() async {
     );
 
     // Inserta centro 2401 en la base de datos
-    await dbHelper.insertCentroMedico(centro2401);
+    await dbCRUD.insertCentroMedico(centro2401);
     print("CENTRO 2401 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2402
@@ -36034,7 +36034,7 @@ void main() async {
     );
 
     // Inserta centro 2402 en la base de datos
-    await dbHelper.insertCentroMedico(centro2402);
+    await dbCRUD.insertCentroMedico(centro2402);
     print("CENTRO 2402 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2403
@@ -36049,7 +36049,7 @@ void main() async {
     );
 
     // Inserta centro 2403 en la base de datos
-    await dbHelper.insertCentroMedico(centro2403);
+    await dbCRUD.insertCentroMedico(centro2403);
     print("CENTRO 2403 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2404
@@ -36064,7 +36064,7 @@ void main() async {
     );
 
     // Inserta centro 2404 en la base de datos
-    await dbHelper.insertCentroMedico(centro2404);
+    await dbCRUD.insertCentroMedico(centro2404);
     print("CENTRO 2404 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2405
@@ -36079,7 +36079,7 @@ void main() async {
     );
 
     // Inserta centro 2405 en la base de datos
-    await dbHelper.insertCentroMedico(centro2405);
+    await dbCRUD.insertCentroMedico(centro2405);
     print("CENTRO 2405 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2406
@@ -36094,7 +36094,7 @@ void main() async {
     );
 
     // Inserta centro 2406 en la base de datos
-    await dbHelper.insertCentroMedico(centro2406);
+    await dbCRUD.insertCentroMedico(centro2406);
     print("CENTRO 2406 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2407
@@ -36109,7 +36109,7 @@ void main() async {
     );
 
     // Inserta centro 2407 en la base de datos
-    await dbHelper.insertCentroMedico(centro2407);
+    await dbCRUD.insertCentroMedico(centro2407);
     print("CENTRO 2407 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2408
@@ -36124,7 +36124,7 @@ void main() async {
     );
 
     // Inserta centro 2408 en la base de datos
-    await dbHelper.insertCentroMedico(centro2408);
+    await dbCRUD.insertCentroMedico(centro2408);
     print("CENTRO 2408 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2409
@@ -36139,7 +36139,7 @@ void main() async {
     );
 
     // Inserta centro 2409 en la base de datos
-    await dbHelper.insertCentroMedico(centro2409);
+    await dbCRUD.insertCentroMedico(centro2409);
     print("CENTRO 2409 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2410
@@ -36154,7 +36154,7 @@ void main() async {
     );
 
     // Inserta centro 2410 en la base de datos
-    await dbHelper.insertCentroMedico(centro2410);
+    await dbCRUD.insertCentroMedico(centro2410);
     print("CENTRO 2410 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2411
@@ -36169,7 +36169,7 @@ void main() async {
     );
 
     // Inserta centro 2411 en la base de datos
-    await dbHelper.insertCentroMedico(centro2411);
+    await dbCRUD.insertCentroMedico(centro2411);
     print("CENTRO 2411 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2412
@@ -36184,7 +36184,7 @@ void main() async {
     );
 
     // Inserta centro 2412 en la base de datos
-    await dbHelper.insertCentroMedico(centro2412);
+    await dbCRUD.insertCentroMedico(centro2412);
     print("CENTRO 2412 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2413
@@ -36199,7 +36199,7 @@ void main() async {
     );
 
     // Inserta centro 2413 en la base de datos
-    await dbHelper.insertCentroMedico(centro2413);
+    await dbCRUD.insertCentroMedico(centro2413);
     print("CENTRO 2413 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2414
@@ -36214,7 +36214,7 @@ void main() async {
     );
 
     // Inserta centro 2414 en la base de datos
-    await dbHelper.insertCentroMedico(centro2414);
+    await dbCRUD.insertCentroMedico(centro2414);
     print("CENTRO 2414 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2415
@@ -36229,7 +36229,7 @@ void main() async {
     );
 
     // Inserta centro 2415 en la base de datos
-    await dbHelper.insertCentroMedico(centro2415);
+    await dbCRUD.insertCentroMedico(centro2415);
     print("CENTRO 2415 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2416
@@ -36244,7 +36244,7 @@ void main() async {
     );
 
     // Inserta centro 2416 en la base de datos
-    await dbHelper.insertCentroMedico(centro2416);
+    await dbCRUD.insertCentroMedico(centro2416);
     print("CENTRO 2416 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2417
@@ -36259,7 +36259,7 @@ void main() async {
     );
 
     // Inserta centro 2417 en la base de datos
-    await dbHelper.insertCentroMedico(centro2417);
+    await dbCRUD.insertCentroMedico(centro2417);
     print("CENTRO 2417 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2418
@@ -36274,7 +36274,7 @@ void main() async {
     );
 
     // Inserta centro 2418 en la base de datos
-    await dbHelper.insertCentroMedico(centro2418);
+    await dbCRUD.insertCentroMedico(centro2418);
     print("CENTRO 2418 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2419
@@ -36289,7 +36289,7 @@ void main() async {
     );
 
     // Inserta centro 2419 en la base de datos
-    await dbHelper.insertCentroMedico(centro2419);
+    await dbCRUD.insertCentroMedico(centro2419);
     print("CENTRO 2419 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2420
@@ -36304,7 +36304,7 @@ void main() async {
     );
 
     // Inserta centro 2420 en la base de datos
-    await dbHelper.insertCentroMedico(centro2420);
+    await dbCRUD.insertCentroMedico(centro2420);
     print("CENTRO 2420 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2421
@@ -36319,7 +36319,7 @@ void main() async {
     );
 
     // Inserta centro 2421 en la base de datos
-    await dbHelper.insertCentroMedico(centro2421);
+    await dbCRUD.insertCentroMedico(centro2421);
     print("CENTRO 2421 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2422
@@ -36334,7 +36334,7 @@ void main() async {
     );
 
     // Inserta centro 2422 en la base de datos
-    await dbHelper.insertCentroMedico(centro2422);
+    await dbCRUD.insertCentroMedico(centro2422);
     print("CENTRO 2422 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2423
@@ -36349,7 +36349,7 @@ void main() async {
     );
 
     // Inserta centro 2423 en la base de datos
-    await dbHelper.insertCentroMedico(centro2423);
+    await dbCRUD.insertCentroMedico(centro2423);
     print("CENTRO 2423 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2424
@@ -36364,7 +36364,7 @@ void main() async {
     );
 
     // Inserta centro 2424 en la base de datos
-    await dbHelper.insertCentroMedico(centro2424);
+    await dbCRUD.insertCentroMedico(centro2424);
     print("CENTRO 2424 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2425
@@ -36379,7 +36379,7 @@ void main() async {
     );
 
     // Inserta centro 2425 en la base de datos
-    await dbHelper.insertCentroMedico(centro2425);
+    await dbCRUD.insertCentroMedico(centro2425);
     print("CENTRO 2425 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2426
@@ -36394,7 +36394,7 @@ void main() async {
     );
 
     // Inserta centro 2426 en la base de datos
-    await dbHelper.insertCentroMedico(centro2426);
+    await dbCRUD.insertCentroMedico(centro2426);
     print("CENTRO 2426 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2427
@@ -36409,7 +36409,7 @@ void main() async {
     );
 
     // Inserta centro 2427 en la base de datos
-    await dbHelper.insertCentroMedico(centro2427);
+    await dbCRUD.insertCentroMedico(centro2427);
     print("CENTRO 2427 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2428
@@ -36424,7 +36424,7 @@ void main() async {
     );
 
     // Inserta centro 2428 en la base de datos
-    await dbHelper.insertCentroMedico(centro2428);
+    await dbCRUD.insertCentroMedico(centro2428);
     print("CENTRO 2428 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2429
@@ -36439,7 +36439,7 @@ void main() async {
     );
 
     // Inserta centro 2429 en la base de datos
-    await dbHelper.insertCentroMedico(centro2429);
+    await dbCRUD.insertCentroMedico(centro2429);
     print("CENTRO 2429 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2430
@@ -36454,7 +36454,7 @@ void main() async {
     );
 
     // Inserta centro 2430 en la base de datos
-    await dbHelper.insertCentroMedico(centro2430);
+    await dbCRUD.insertCentroMedico(centro2430);
     print("CENTRO 2430 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2431
@@ -36469,7 +36469,7 @@ void main() async {
     );
 
     // Inserta centro 2431 en la base de datos
-    await dbHelper.insertCentroMedico(centro2431);
+    await dbCRUD.insertCentroMedico(centro2431);
     print("CENTRO 2431 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2432
@@ -36484,7 +36484,7 @@ void main() async {
     );
 
     // Inserta centro 2432 en la base de datos
-    await dbHelper.insertCentroMedico(centro2432);
+    await dbCRUD.insertCentroMedico(centro2432);
     print("CENTRO 2432 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2433
@@ -36499,7 +36499,7 @@ void main() async {
     );
 
     // Inserta centro 2433 en la base de datos
-    await dbHelper.insertCentroMedico(centro2433);
+    await dbCRUD.insertCentroMedico(centro2433);
     print("CENTRO 2433 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2434
@@ -36514,7 +36514,7 @@ void main() async {
     );
 
     // Inserta centro 2434 en la base de datos
-    await dbHelper.insertCentroMedico(centro2434);
+    await dbCRUD.insertCentroMedico(centro2434);
     print("CENTRO 2434 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2435
@@ -36529,7 +36529,7 @@ void main() async {
     );
 
     // Inserta centro 2435 en la base de datos
-    await dbHelper.insertCentroMedico(centro2435);
+    await dbCRUD.insertCentroMedico(centro2435);
     print("CENTRO 2435 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2436
@@ -36544,7 +36544,7 @@ void main() async {
     );
 
     // Inserta centro 2436 en la base de datos
-    await dbHelper.insertCentroMedico(centro2436);
+    await dbCRUD.insertCentroMedico(centro2436);
     print("CENTRO 2436 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2437
@@ -36559,7 +36559,7 @@ void main() async {
     );
 
     // Inserta centro 2437 en la base de datos
-    await dbHelper.insertCentroMedico(centro2437);
+    await dbCRUD.insertCentroMedico(centro2437);
     print("CENTRO 2437 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2438
@@ -36574,7 +36574,7 @@ void main() async {
     );
 
     // Inserta centro 2438 en la base de datos
-    await dbHelper.insertCentroMedico(centro2438);
+    await dbCRUD.insertCentroMedico(centro2438);
     print("CENTRO 2438 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2439
@@ -36589,7 +36589,7 @@ void main() async {
     );
 
     // Inserta centro 2439 en la base de datos
-    await dbHelper.insertCentroMedico(centro2439);
+    await dbCRUD.insertCentroMedico(centro2439);
     print("CENTRO 2439 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2440
@@ -36604,7 +36604,7 @@ void main() async {
     );
 
     // Inserta centro 2440 en la base de datos
-    await dbHelper.insertCentroMedico(centro2440);
+    await dbCRUD.insertCentroMedico(centro2440);
     print("CENTRO 2440 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2441
@@ -36619,7 +36619,7 @@ void main() async {
     );
 
     // Inserta centro 2441 en la base de datos
-    await dbHelper.insertCentroMedico(centro2441);
+    await dbCRUD.insertCentroMedico(centro2441);
     print("CENTRO 2441 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2442
@@ -36634,7 +36634,7 @@ void main() async {
     );
 
     // Inserta centro 2442 en la base de datos
-    await dbHelper.insertCentroMedico(centro2442);
+    await dbCRUD.insertCentroMedico(centro2442);
     print("CENTRO 2442 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2443
@@ -36649,7 +36649,7 @@ void main() async {
     );
 
     // Inserta centro 2443 en la base de datos
-    await dbHelper.insertCentroMedico(centro2443);
+    await dbCRUD.insertCentroMedico(centro2443);
     print("CENTRO 2443 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2444
@@ -36664,7 +36664,7 @@ void main() async {
     );
 
     // Inserta centro 2444 en la base de datos
-    await dbHelper.insertCentroMedico(centro2444);
+    await dbCRUD.insertCentroMedico(centro2444);
     print("CENTRO 2444 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2445
@@ -36679,7 +36679,7 @@ void main() async {
     );
 
     // Inserta centro 2445 en la base de datos
-    await dbHelper.insertCentroMedico(centro2445);
+    await dbCRUD.insertCentroMedico(centro2445);
     print("CENTRO 2445 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2446
@@ -36694,7 +36694,7 @@ void main() async {
     );
 
     // Inserta centro 2446 en la base de datos
-    await dbHelper.insertCentroMedico(centro2446);
+    await dbCRUD.insertCentroMedico(centro2446);
     print("CENTRO 2446 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2447
@@ -36709,7 +36709,7 @@ void main() async {
     );
 
     // Inserta centro 2447 en la base de datos
-    await dbHelper.insertCentroMedico(centro2447);
+    await dbCRUD.insertCentroMedico(centro2447);
     print("CENTRO 2447 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2448
@@ -36724,7 +36724,7 @@ void main() async {
     );
 
     // Inserta centro 2448 en la base de datos
-    await dbHelper.insertCentroMedico(centro2448);
+    await dbCRUD.insertCentroMedico(centro2448);
     print("CENTRO 2448 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2449
@@ -36739,7 +36739,7 @@ void main() async {
     );
 
     // Inserta centro 2449 en la base de datos
-    await dbHelper.insertCentroMedico(centro2449);
+    await dbCRUD.insertCentroMedico(centro2449);
     print("CENTRO 2449 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2450
@@ -36754,7 +36754,7 @@ void main() async {
     );
 
     // Inserta centro 2450 en la base de datos
-    await dbHelper.insertCentroMedico(centro2450);
+    await dbCRUD.insertCentroMedico(centro2450);
     print("CENTRO 2450 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2451
@@ -36769,7 +36769,7 @@ void main() async {
     );
 
     // Inserta centro 2451 en la base de datos
-    await dbHelper.insertCentroMedico(centro2451);
+    await dbCRUD.insertCentroMedico(centro2451);
     print("CENTRO 2451 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2452
@@ -36784,7 +36784,7 @@ void main() async {
     );
 
     // Inserta centro 2452 en la base de datos
-    await dbHelper.insertCentroMedico(centro2452);
+    await dbCRUD.insertCentroMedico(centro2452);
     print("CENTRO 2452 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2453
@@ -36799,7 +36799,7 @@ void main() async {
     );
 
     // Inserta centro 2453 en la base de datos
-    await dbHelper.insertCentroMedico(centro2453);
+    await dbCRUD.insertCentroMedico(centro2453);
     print("CENTRO 2453 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2454
@@ -36814,7 +36814,7 @@ void main() async {
     );
 
     // Inserta centro 2454 en la base de datos
-    await dbHelper.insertCentroMedico(centro2454);
+    await dbCRUD.insertCentroMedico(centro2454);
     print("CENTRO 2454 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2455
@@ -36829,7 +36829,7 @@ void main() async {
     );
 
     // Inserta centro 2455 en la base de datos
-    await dbHelper.insertCentroMedico(centro2455);
+    await dbCRUD.insertCentroMedico(centro2455);
     print("CENTRO 2455 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2456
@@ -36844,7 +36844,7 @@ void main() async {
     );
 
     // Inserta centro 2456 en la base de datos
-    await dbHelper.insertCentroMedico(centro2456);
+    await dbCRUD.insertCentroMedico(centro2456);
     print("CENTRO 2456 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2457
@@ -36859,7 +36859,7 @@ void main() async {
     );
 
     // Inserta centro 2457 en la base de datos
-    await dbHelper.insertCentroMedico(centro2457);
+    await dbCRUD.insertCentroMedico(centro2457);
     print("CENTRO 2457 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2458
@@ -36874,7 +36874,7 @@ void main() async {
     );
 
     // Inserta centro 2458 en la base de datos
-    await dbHelper.insertCentroMedico(centro2458);
+    await dbCRUD.insertCentroMedico(centro2458);
     print("CENTRO 2458 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2459
@@ -36889,7 +36889,7 @@ void main() async {
     );
 
     // Inserta centro 2459 en la base de datos
-    await dbHelper.insertCentroMedico(centro2459);
+    await dbCRUD.insertCentroMedico(centro2459);
     print("CENTRO 2459 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2460
@@ -36904,7 +36904,7 @@ void main() async {
     );
 
     // Inserta centro 2460 en la base de datos
-    await dbHelper.insertCentroMedico(centro2460);
+    await dbCRUD.insertCentroMedico(centro2460);
     print("CENTRO 2460 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2461
@@ -36919,7 +36919,7 @@ void main() async {
     );
 
     // Inserta centro 2461 en la base de datos
-    await dbHelper.insertCentroMedico(centro2461);
+    await dbCRUD.insertCentroMedico(centro2461);
     print("CENTRO 2461 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2462
@@ -36934,7 +36934,7 @@ void main() async {
     );
 
     // Inserta centro 2462 en la base de datos
-    await dbHelper.insertCentroMedico(centro2462);
+    await dbCRUD.insertCentroMedico(centro2462);
     print("CENTRO 2462 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2463
@@ -36949,7 +36949,7 @@ void main() async {
     );
 
     // Inserta centro 2463 en la base de datos
-    await dbHelper.insertCentroMedico(centro2463);
+    await dbCRUD.insertCentroMedico(centro2463);
     print("CENTRO 2463 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2464
@@ -36964,7 +36964,7 @@ void main() async {
     );
 
     // Inserta centro 2464 en la base de datos
-    await dbHelper.insertCentroMedico(centro2464);
+    await dbCRUD.insertCentroMedico(centro2464);
     print("CENTRO 2464 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2465
@@ -36979,7 +36979,7 @@ void main() async {
     );
 
     // Inserta centro 2465 en la base de datos
-    await dbHelper.insertCentroMedico(centro2465);
+    await dbCRUD.insertCentroMedico(centro2465);
     print("CENTRO 2465 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2466
@@ -36994,7 +36994,7 @@ void main() async {
     );
 
     // Inserta centro 2466 en la base de datos
-    await dbHelper.insertCentroMedico(centro2466);
+    await dbCRUD.insertCentroMedico(centro2466);
     print("CENTRO 2466 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2467
@@ -37009,7 +37009,7 @@ void main() async {
     );
 
     // Inserta centro 2467 en la base de datos
-    await dbHelper.insertCentroMedico(centro2467);
+    await dbCRUD.insertCentroMedico(centro2467);
     print("CENTRO 2467 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2468
@@ -37024,7 +37024,7 @@ void main() async {
     );
 
     // Inserta centro 2468 en la base de datos
-    await dbHelper.insertCentroMedico(centro2468);
+    await dbCRUD.insertCentroMedico(centro2468);
     print("CENTRO 2468 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2469
@@ -37039,7 +37039,7 @@ void main() async {
     );
 
     // Inserta centro 2469 en la base de datos
-    await dbHelper.insertCentroMedico(centro2469);
+    await dbCRUD.insertCentroMedico(centro2469);
     print("CENTRO 2469 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2470
@@ -37054,7 +37054,7 @@ void main() async {
     );
 
     // Inserta centro 2470 en la base de datos
-    await dbHelper.insertCentroMedico(centro2470);
+    await dbCRUD.insertCentroMedico(centro2470);
     print("CENTRO 2470 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2471
@@ -37069,7 +37069,7 @@ void main() async {
     );
 
     // Inserta centro 2471 en la base de datos
-    await dbHelper.insertCentroMedico(centro2471);
+    await dbCRUD.insertCentroMedico(centro2471);
     print("CENTRO 2471 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2472
@@ -37084,7 +37084,7 @@ void main() async {
     );
 
     // Inserta centro 2472 en la base de datos
-    await dbHelper.insertCentroMedico(centro2472);
+    await dbCRUD.insertCentroMedico(centro2472);
     print("CENTRO 2472 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2473
@@ -37099,7 +37099,7 @@ void main() async {
     );
 
     // Inserta centro 2473 en la base de datos
-    await dbHelper.insertCentroMedico(centro2473);
+    await dbCRUD.insertCentroMedico(centro2473);
     print("CENTRO 2473 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2474
@@ -37114,7 +37114,7 @@ void main() async {
     );
 
     // Inserta centro 2474 en la base de datos
-    await dbHelper.insertCentroMedico(centro2474);
+    await dbCRUD.insertCentroMedico(centro2474);
     print("CENTRO 2474 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2475
@@ -37129,7 +37129,7 @@ void main() async {
     );
 
     // Inserta centro 2475 en la base de datos
-    await dbHelper.insertCentroMedico(centro2475);
+    await dbCRUD.insertCentroMedico(centro2475);
     print("CENTRO 2475 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2476
@@ -37144,7 +37144,7 @@ void main() async {
     );
 
     // Inserta centro 2476 en la base de datos
-    await dbHelper.insertCentroMedico(centro2476);
+    await dbCRUD.insertCentroMedico(centro2476);
     print("CENTRO 2476 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2477
@@ -37159,7 +37159,7 @@ void main() async {
     );
 
     // Inserta centro 2477 en la base de datos
-    await dbHelper.insertCentroMedico(centro2477);
+    await dbCRUD.insertCentroMedico(centro2477);
     print("CENTRO 2477 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2478
@@ -37174,7 +37174,7 @@ void main() async {
     );
 
     // Inserta centro 2478 en la base de datos
-    await dbHelper.insertCentroMedico(centro2478);
+    await dbCRUD.insertCentroMedico(centro2478);
     print("CENTRO 2478 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2479
@@ -37189,7 +37189,7 @@ void main() async {
     );
 
     // Inserta centro 2479 en la base de datos
-    await dbHelper.insertCentroMedico(centro2479);
+    await dbCRUD.insertCentroMedico(centro2479);
     print("CENTRO 2479 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2480
@@ -37204,7 +37204,7 @@ void main() async {
     );
 
     // Inserta centro 2480 en la base de datos
-    await dbHelper.insertCentroMedico(centro2480);
+    await dbCRUD.insertCentroMedico(centro2480);
     print("CENTRO 2480 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2481
@@ -37219,7 +37219,7 @@ void main() async {
     );
 
     // Inserta centro 2481 en la base de datos
-    await dbHelper.insertCentroMedico(centro2481);
+    await dbCRUD.insertCentroMedico(centro2481);
     print("CENTRO 2481 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2482
@@ -37234,7 +37234,7 @@ void main() async {
     );
 
     // Inserta centro 2482 en la base de datos
-    await dbHelper.insertCentroMedico(centro2482);
+    await dbCRUD.insertCentroMedico(centro2482);
     print("CENTRO 2482 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2483
@@ -37249,7 +37249,7 @@ void main() async {
     );
 
     // Inserta centro 2483 en la base de datos
-    await dbHelper.insertCentroMedico(centro2483);
+    await dbCRUD.insertCentroMedico(centro2483);
     print("CENTRO 2483 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2484
@@ -37264,7 +37264,7 @@ void main() async {
     );
 
     // Inserta centro 2484 en la base de datos
-    await dbHelper.insertCentroMedico(centro2484);
+    await dbCRUD.insertCentroMedico(centro2484);
     print("CENTRO 2484 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2485
@@ -37279,7 +37279,7 @@ void main() async {
     );
 
     // Inserta centro 2485 en la base de datos
-    await dbHelper.insertCentroMedico(centro2485);
+    await dbCRUD.insertCentroMedico(centro2485);
     print("CENTRO 2485 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2486
@@ -37294,7 +37294,7 @@ void main() async {
     );
 
     // Inserta centro 2486 en la base de datos
-    await dbHelper.insertCentroMedico(centro2486);
+    await dbCRUD.insertCentroMedico(centro2486);
     print("CENTRO 2486 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2487
@@ -37309,7 +37309,7 @@ void main() async {
     );
 
     // Inserta centro 2487 en la base de datos
-    await dbHelper.insertCentroMedico(centro2487);
+    await dbCRUD.insertCentroMedico(centro2487);
     print("CENTRO 2487 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2488
@@ -37324,7 +37324,7 @@ void main() async {
     );
 
     // Inserta centro 2488 en la base de datos
-    await dbHelper.insertCentroMedico(centro2488);
+    await dbCRUD.insertCentroMedico(centro2488);
     print("CENTRO 2488 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2489
@@ -37339,7 +37339,7 @@ void main() async {
     );
 
     // Inserta centro 2489 en la base de datos
-    await dbHelper.insertCentroMedico(centro2489);
+    await dbCRUD.insertCentroMedico(centro2489);
     print("CENTRO 2489 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2490
@@ -37354,7 +37354,7 @@ void main() async {
     );
 
     // Inserta centro 2490 en la base de datos
-    await dbHelper.insertCentroMedico(centro2490);
+    await dbCRUD.insertCentroMedico(centro2490);
     print("CENTRO 2490 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2491
@@ -37369,7 +37369,7 @@ void main() async {
     );
 
     // Inserta centro 2491 en la base de datos
-    await dbHelper.insertCentroMedico(centro2491);
+    await dbCRUD.insertCentroMedico(centro2491);
     print("CENTRO 2491 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2492
@@ -37384,7 +37384,7 @@ void main() async {
     );
 
     // Inserta centro 2492 en la base de datos
-    await dbHelper.insertCentroMedico(centro2492);
+    await dbCRUD.insertCentroMedico(centro2492);
     print("CENTRO 2492 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2493
@@ -37399,7 +37399,7 @@ void main() async {
     );
 
     // Inserta centro 2493 en la base de datos
-    await dbHelper.insertCentroMedico(centro2493);
+    await dbCRUD.insertCentroMedico(centro2493);
     print("CENTRO 2493 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2494
@@ -37414,7 +37414,7 @@ void main() async {
     );
 
     // Inserta centro 2494 en la base de datos
-    await dbHelper.insertCentroMedico(centro2494);
+    await dbCRUD.insertCentroMedico(centro2494);
     print("CENTRO 2494 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2495
@@ -37429,7 +37429,7 @@ void main() async {
     );
 
     // Inserta centro 2495 en la base de datos
-    await dbHelper.insertCentroMedico(centro2495);
+    await dbCRUD.insertCentroMedico(centro2495);
     print("CENTRO 2495 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2496
@@ -37444,7 +37444,7 @@ void main() async {
     );
 
     // Inserta centro 2496 en la base de datos
-    await dbHelper.insertCentroMedico(centro2496);
+    await dbCRUD.insertCentroMedico(centro2496);
     print("CENTRO 2496 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2497
@@ -37459,7 +37459,7 @@ void main() async {
     );
 
     // Inserta centro 2497 en la base de datos
-    await dbHelper.insertCentroMedico(centro2497);
+    await dbCRUD.insertCentroMedico(centro2497);
     print("CENTRO 2497 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2498
@@ -37474,7 +37474,7 @@ void main() async {
     );
 
     // Inserta centro 2498 en la base de datos
-    await dbHelper.insertCentroMedico(centro2498);
+    await dbCRUD.insertCentroMedico(centro2498);
     print("CENTRO 2498 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2499
@@ -37489,7 +37489,7 @@ void main() async {
     );
 
     // Inserta centro 2499 en la base de datos
-    await dbHelper.insertCentroMedico(centro2499);
+    await dbCRUD.insertCentroMedico(centro2499);
     print("CENTRO 2499 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2500
@@ -37504,7 +37504,7 @@ void main() async {
     );
 
     // Inserta centro 2500 en la base de datos
-    await dbHelper.insertCentroMedico(centro2500);
+    await dbCRUD.insertCentroMedico(centro2500);
     print("CENTRO 2500 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2501
@@ -37519,7 +37519,7 @@ void main() async {
     );
 
     // Inserta centro 2501 en la base de datos
-    await dbHelper.insertCentroMedico(centro2501);
+    await dbCRUD.insertCentroMedico(centro2501);
     print("CENTRO 2501 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2502
@@ -37534,7 +37534,7 @@ void main() async {
     );
 
     // Inserta centro 2502 en la base de datos
-    await dbHelper.insertCentroMedico(centro2502);
+    await dbCRUD.insertCentroMedico(centro2502);
     print("CENTRO 2502 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2503
@@ -37549,7 +37549,7 @@ void main() async {
     );
 
     // Inserta centro 2503 en la base de datos
-    await dbHelper.insertCentroMedico(centro2503);
+    await dbCRUD.insertCentroMedico(centro2503);
     print("CENTRO 2503 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2504
@@ -37564,7 +37564,7 @@ void main() async {
     );
 
     // Inserta centro 2504 en la base de datos
-    await dbHelper.insertCentroMedico(centro2504);
+    await dbCRUD.insertCentroMedico(centro2504);
     print("CENTRO 2504 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2505
@@ -37579,7 +37579,7 @@ void main() async {
     );
 
     // Inserta centro 2505 en la base de datos
-    await dbHelper.insertCentroMedico(centro2505);
+    await dbCRUD.insertCentroMedico(centro2505);
     print("CENTRO 2505 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2506
@@ -37594,7 +37594,7 @@ void main() async {
     );
 
     // Inserta centro 2506 en la base de datos
-    await dbHelper.insertCentroMedico(centro2506);
+    await dbCRUD.insertCentroMedico(centro2506);
     print("CENTRO 2506 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2507
@@ -37609,7 +37609,7 @@ void main() async {
     );
 
     // Inserta centro 2507 en la base de datos
-    await dbHelper.insertCentroMedico(centro2507);
+    await dbCRUD.insertCentroMedico(centro2507);
     print("CENTRO 2507 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2508
@@ -37624,7 +37624,7 @@ void main() async {
     );
 
     // Inserta centro 2508 en la base de datos
-    await dbHelper.insertCentroMedico(centro2508);
+    await dbCRUD.insertCentroMedico(centro2508);
     print("CENTRO 2508 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2509
@@ -37639,7 +37639,7 @@ void main() async {
     );
 
     // Inserta centro 2509 en la base de datos
-    await dbHelper.insertCentroMedico(centro2509);
+    await dbCRUD.insertCentroMedico(centro2509);
     print("CENTRO 2509 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2510
@@ -37654,7 +37654,7 @@ void main() async {
     );
 
     // Inserta centro 2510 en la base de datos
-    await dbHelper.insertCentroMedico(centro2510);
+    await dbCRUD.insertCentroMedico(centro2510);
     print("CENTRO 2510 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2511
@@ -37669,7 +37669,7 @@ void main() async {
     );
 
     // Inserta centro 2511 en la base de datos
-    await dbHelper.insertCentroMedico(centro2511);
+    await dbCRUD.insertCentroMedico(centro2511);
     print("CENTRO 2511 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2512
@@ -37684,7 +37684,7 @@ void main() async {
     );
 
     // Inserta centro 2512 en la base de datos
-    await dbHelper.insertCentroMedico(centro2512);
+    await dbCRUD.insertCentroMedico(centro2512);
     print("CENTRO 2512 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2513
@@ -37699,7 +37699,7 @@ void main() async {
     );
 
     // Inserta centro 2513 en la base de datos
-    await dbHelper.insertCentroMedico(centro2513);
+    await dbCRUD.insertCentroMedico(centro2513);
     print("CENTRO 2513 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2514
@@ -37714,7 +37714,7 @@ void main() async {
     );
 
     // Inserta centro 2514 en la base de datos
-    await dbHelper.insertCentroMedico(centro2514);
+    await dbCRUD.insertCentroMedico(centro2514);
     print("CENTRO 2514 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2515
@@ -37729,7 +37729,7 @@ void main() async {
     );
 
     // Inserta centro 2515 en la base de datos
-    await dbHelper.insertCentroMedico(centro2515);
+    await dbCRUD.insertCentroMedico(centro2515);
     print("CENTRO 2515 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2516
@@ -37744,7 +37744,7 @@ void main() async {
     );
 
     // Inserta centro 2516 en la base de datos
-    await dbHelper.insertCentroMedico(centro2516);
+    await dbCRUD.insertCentroMedico(centro2516);
     print("CENTRO 2516 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2517
@@ -37759,7 +37759,7 @@ void main() async {
     );
 
     // Inserta centro 2517 en la base de datos
-    await dbHelper.insertCentroMedico(centro2517);
+    await dbCRUD.insertCentroMedico(centro2517);
     print("CENTRO 2517 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2518
@@ -37774,7 +37774,7 @@ void main() async {
     );
 
     // Inserta centro 2518 en la base de datos
-    await dbHelper.insertCentroMedico(centro2518);
+    await dbCRUD.insertCentroMedico(centro2518);
     print("CENTRO 2518 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2519
@@ -37789,7 +37789,7 @@ void main() async {
     );
 
     // Inserta centro 2519 en la base de datos
-    await dbHelper.insertCentroMedico(centro2519);
+    await dbCRUD.insertCentroMedico(centro2519);
     print("CENTRO 2519 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2520
@@ -37804,7 +37804,7 @@ void main() async {
     );
 
     // Inserta centro 2520 en la base de datos
-    await dbHelper.insertCentroMedico(centro2520);
+    await dbCRUD.insertCentroMedico(centro2520);
     print("CENTRO 2520 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2521
@@ -37819,7 +37819,7 @@ void main() async {
     );
 
     // Inserta centro 2521 en la base de datos
-    await dbHelper.insertCentroMedico(centro2521);
+    await dbCRUD.insertCentroMedico(centro2521);
     print("CENTRO 2521 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2522
@@ -37834,7 +37834,7 @@ void main() async {
     );
 
     // Inserta centro 2522 en la base de datos
-    await dbHelper.insertCentroMedico(centro2522);
+    await dbCRUD.insertCentroMedico(centro2522);
     print("CENTRO 2522 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2523
@@ -37849,7 +37849,7 @@ void main() async {
     );
 
     // Inserta centro 2523 en la base de datos
-    await dbHelper.insertCentroMedico(centro2523);
+    await dbCRUD.insertCentroMedico(centro2523);
     print("CENTRO 2523 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2524
@@ -37864,7 +37864,7 @@ void main() async {
     );
 
     // Inserta centro 2524 en la base de datos
-    await dbHelper.insertCentroMedico(centro2524);
+    await dbCRUD.insertCentroMedico(centro2524);
     print("CENTRO 2524 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2525
@@ -37879,7 +37879,7 @@ void main() async {
     );
 
     // Inserta centro 2525 en la base de datos
-    await dbHelper.insertCentroMedico(centro2525);
+    await dbCRUD.insertCentroMedico(centro2525);
     print("CENTRO 2525 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2526
@@ -37894,7 +37894,7 @@ void main() async {
     );
 
     // Inserta centro 2526 en la base de datos
-    await dbHelper.insertCentroMedico(centro2526);
+    await dbCRUD.insertCentroMedico(centro2526);
     print("CENTRO 2526 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2527
@@ -37909,7 +37909,7 @@ void main() async {
     );
 
     // Inserta centro 2527 en la base de datos
-    await dbHelper.insertCentroMedico(centro2527);
+    await dbCRUD.insertCentroMedico(centro2527);
     print("CENTRO 2527 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2528
@@ -37924,7 +37924,7 @@ void main() async {
     );
 
     // Inserta centro 2528 en la base de datos
-    await dbHelper.insertCentroMedico(centro2528);
+    await dbCRUD.insertCentroMedico(centro2528);
     print("CENTRO 2528 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2529
@@ -37939,7 +37939,7 @@ void main() async {
     );
 
     // Inserta centro 2529 en la base de datos
-    await dbHelper.insertCentroMedico(centro2529);
+    await dbCRUD.insertCentroMedico(centro2529);
     print("CENTRO 2529 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2530
@@ -37954,7 +37954,7 @@ void main() async {
     );
 
     // Inserta centro 2530 en la base de datos
-    await dbHelper.insertCentroMedico(centro2530);
+    await dbCRUD.insertCentroMedico(centro2530);
     print("CENTRO 2530 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2531
@@ -37969,7 +37969,7 @@ void main() async {
     );
 
     // Inserta centro 2531 en la base de datos
-    await dbHelper.insertCentroMedico(centro2531);
+    await dbCRUD.insertCentroMedico(centro2531);
     print("CENTRO 2531 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2532
@@ -37984,7 +37984,7 @@ void main() async {
     );
 
     // Inserta centro 2532 en la base de datos
-    await dbHelper.insertCentroMedico(centro2532);
+    await dbCRUD.insertCentroMedico(centro2532);
     print("CENTRO 2532 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2533
@@ -37999,7 +37999,7 @@ void main() async {
     );
 
     // Inserta centro 2533 en la base de datos
-    await dbHelper.insertCentroMedico(centro2533);
+    await dbCRUD.insertCentroMedico(centro2533);
     print("CENTRO 2533 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2534
@@ -38014,7 +38014,7 @@ void main() async {
     );
 
     // Inserta centro 2534 en la base de datos
-    await dbHelper.insertCentroMedico(centro2534);
+    await dbCRUD.insertCentroMedico(centro2534);
     print("CENTRO 2534 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2535
@@ -38029,7 +38029,7 @@ void main() async {
     );
 
     // Inserta centro 2535 en la base de datos
-    await dbHelper.insertCentroMedico(centro2535);
+    await dbCRUD.insertCentroMedico(centro2535);
     print("CENTRO 2535 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2536
@@ -38044,7 +38044,7 @@ void main() async {
     );
 
     // Inserta centro 2536 en la base de datos
-    await dbHelper.insertCentroMedico(centro2536);
+    await dbCRUD.insertCentroMedico(centro2536);
     print("CENTRO 2536 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2537
@@ -38059,7 +38059,7 @@ void main() async {
     );
 
     // Inserta centro 2537 en la base de datos
-    await dbHelper.insertCentroMedico(centro2537);
+    await dbCRUD.insertCentroMedico(centro2537);
     print("CENTRO 2537 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2538
@@ -38074,7 +38074,7 @@ void main() async {
     );
 
     // Inserta centro 2538 en la base de datos
-    await dbHelper.insertCentroMedico(centro2538);
+    await dbCRUD.insertCentroMedico(centro2538);
     print("CENTRO 2538 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2539
@@ -38089,7 +38089,7 @@ void main() async {
     );
 
     // Inserta centro 2539 en la base de datos
-    await dbHelper.insertCentroMedico(centro2539);
+    await dbCRUD.insertCentroMedico(centro2539);
     print("CENTRO 2539 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2540
@@ -38104,7 +38104,7 @@ void main() async {
     );
 
     // Inserta centro 2540 en la base de datos
-    await dbHelper.insertCentroMedico(centro2540);
+    await dbCRUD.insertCentroMedico(centro2540);
     print("CENTRO 2540 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2541
@@ -38119,7 +38119,7 @@ void main() async {
     );
 
     // Inserta centro 2541 en la base de datos
-    await dbHelper.insertCentroMedico(centro2541);
+    await dbCRUD.insertCentroMedico(centro2541);
     print("CENTRO 2541 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2542
@@ -38134,7 +38134,7 @@ void main() async {
     );
 
     // Inserta centro 2542 en la base de datos
-    await dbHelper.insertCentroMedico(centro2542);
+    await dbCRUD.insertCentroMedico(centro2542);
     print("CENTRO 2542 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2543
@@ -38149,7 +38149,7 @@ void main() async {
     );
 
     // Inserta centro 2543 en la base de datos
-    await dbHelper.insertCentroMedico(centro2543);
+    await dbCRUD.insertCentroMedico(centro2543);
     print("CENTRO 2543 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2544
@@ -38164,7 +38164,7 @@ void main() async {
     );
 
     // Inserta centro 2544 en la base de datos
-    await dbHelper.insertCentroMedico(centro2544);
+    await dbCRUD.insertCentroMedico(centro2544);
     print("CENTRO 2544 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2545
@@ -38179,7 +38179,7 @@ void main() async {
     );
 
     // Inserta centro 2545 en la base de datos
-    await dbHelper.insertCentroMedico(centro2545);
+    await dbCRUD.insertCentroMedico(centro2545);
     print("CENTRO 2545 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2546
@@ -38194,7 +38194,7 @@ void main() async {
     );
 
     // Inserta centro 2546 en la base de datos
-    await dbHelper.insertCentroMedico(centro2546);
+    await dbCRUD.insertCentroMedico(centro2546);
     print("CENTRO 2546 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2547
@@ -38209,7 +38209,7 @@ void main() async {
     );
 
     // Inserta centro 2547 en la base de datos
-    await dbHelper.insertCentroMedico(centro2547);
+    await dbCRUD.insertCentroMedico(centro2547);
     print("CENTRO 2547 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2548
@@ -38224,7 +38224,7 @@ void main() async {
     );
 
     // Inserta centro 2548 en la base de datos
-    await dbHelper.insertCentroMedico(centro2548);
+    await dbCRUD.insertCentroMedico(centro2548);
     print("CENTRO 2548 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2549
@@ -38239,7 +38239,7 @@ void main() async {
     );
 
     // Inserta centro 2549 en la base de datos
-    await dbHelper.insertCentroMedico(centro2549);
+    await dbCRUD.insertCentroMedico(centro2549);
     print("CENTRO 2549 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2550
@@ -38254,7 +38254,7 @@ void main() async {
     );
 
     // Inserta centro 2550 en la base de datos
-    await dbHelper.insertCentroMedico(centro2550);
+    await dbCRUD.insertCentroMedico(centro2550);
     print("CENTRO 2550 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2551
@@ -38269,7 +38269,7 @@ void main() async {
     );
 
     // Inserta centro 2551 en la base de datos
-    await dbHelper.insertCentroMedico(centro2551);
+    await dbCRUD.insertCentroMedico(centro2551);
     print("CENTRO 2551 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2552
@@ -38284,7 +38284,7 @@ void main() async {
     );
 
     // Inserta centro 2552 en la base de datos
-    await dbHelper.insertCentroMedico(centro2552);
+    await dbCRUD.insertCentroMedico(centro2552);
     print("CENTRO 2552 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2553
@@ -38299,7 +38299,7 @@ void main() async {
     );
 
     // Inserta centro 2553 en la base de datos
-    await dbHelper.insertCentroMedico(centro2553);
+    await dbCRUD.insertCentroMedico(centro2553);
     print("CENTRO 2553 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2554
@@ -38314,7 +38314,7 @@ void main() async {
     );
 
     // Inserta centro 2554 en la base de datos
-    await dbHelper.insertCentroMedico(centro2554);
+    await dbCRUD.insertCentroMedico(centro2554);
     print("CENTRO 2554 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2555
@@ -38329,7 +38329,7 @@ void main() async {
     );
 
     // Inserta centro 2555 en la base de datos
-    await dbHelper.insertCentroMedico(centro2555);
+    await dbCRUD.insertCentroMedico(centro2555);
     print("CENTRO 2555 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2556
@@ -38344,7 +38344,7 @@ void main() async {
     );
 
     // Inserta centro 2556 en la base de datos
-    await dbHelper.insertCentroMedico(centro2556);
+    await dbCRUD.insertCentroMedico(centro2556);
     print("CENTRO 2556 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2557
@@ -38359,7 +38359,7 @@ void main() async {
     );
 
     // Inserta centro 2557 en la base de datos
-    await dbHelper.insertCentroMedico(centro2557);
+    await dbCRUD.insertCentroMedico(centro2557);
     print("CENTRO 2557 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2558
@@ -38374,7 +38374,7 @@ void main() async {
     );
 
     // Inserta centro 2558 en la base de datos
-    await dbHelper.insertCentroMedico(centro2558);
+    await dbCRUD.insertCentroMedico(centro2558);
     print("CENTRO 2558 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2559
@@ -38389,7 +38389,7 @@ void main() async {
     );
 
     // Inserta centro 2559 en la base de datos
-    await dbHelper.insertCentroMedico(centro2559);
+    await dbCRUD.insertCentroMedico(centro2559);
     print("CENTRO 2559 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2560
@@ -38404,7 +38404,7 @@ void main() async {
     );
 
     // Inserta centro 2560 en la base de datos
-    await dbHelper.insertCentroMedico(centro2560);
+    await dbCRUD.insertCentroMedico(centro2560);
     print("CENTRO 2560 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2561
@@ -38419,7 +38419,7 @@ void main() async {
     );
 
     // Inserta centro 2561 en la base de datos
-    await dbHelper.insertCentroMedico(centro2561);
+    await dbCRUD.insertCentroMedico(centro2561);
     print("CENTRO 2561 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2562
@@ -38434,7 +38434,7 @@ void main() async {
     );
 
     // Inserta centro 2562 en la base de datos
-    await dbHelper.insertCentroMedico(centro2562);
+    await dbCRUD.insertCentroMedico(centro2562);
     print("CENTRO 2562 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2563
@@ -38449,7 +38449,7 @@ void main() async {
     );
 
     // Inserta centro 2563 en la base de datos
-    await dbHelper.insertCentroMedico(centro2563);
+    await dbCRUD.insertCentroMedico(centro2563);
     print("CENTRO 2563 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2564
@@ -38464,7 +38464,7 @@ void main() async {
     );
 
     // Inserta centro 2564 en la base de datos
-    await dbHelper.insertCentroMedico(centro2564);
+    await dbCRUD.insertCentroMedico(centro2564);
     print("CENTRO 2564 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2565
@@ -38479,7 +38479,7 @@ void main() async {
     );
 
     // Inserta centro 2565 en la base de datos
-    await dbHelper.insertCentroMedico(centro2565);
+    await dbCRUD.insertCentroMedico(centro2565);
     print("CENTRO 2565 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2566
@@ -38494,7 +38494,7 @@ void main() async {
     );
 
     // Inserta centro 2566 en la base de datos
-    await dbHelper.insertCentroMedico(centro2566);
+    await dbCRUD.insertCentroMedico(centro2566);
     print("CENTRO 2566 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2567
@@ -38509,7 +38509,7 @@ void main() async {
     );
 
     // Inserta centro 2567 en la base de datos
-    await dbHelper.insertCentroMedico(centro2567);
+    await dbCRUD.insertCentroMedico(centro2567);
     print("CENTRO 2567 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2568
@@ -38524,7 +38524,7 @@ void main() async {
     );
 
     // Inserta centro 2568 en la base de datos
-    await dbHelper.insertCentroMedico(centro2568);
+    await dbCRUD.insertCentroMedico(centro2568);
     print("CENTRO 2568 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2569
@@ -38539,7 +38539,7 @@ void main() async {
     );
 
     // Inserta centro 2569 en la base de datos
-    await dbHelper.insertCentroMedico(centro2569);
+    await dbCRUD.insertCentroMedico(centro2569);
     print("CENTRO 2569 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2570
@@ -38554,7 +38554,7 @@ void main() async {
     );
 
     // Inserta centro 2570 en la base de datos
-    await dbHelper.insertCentroMedico(centro2570);
+    await dbCRUD.insertCentroMedico(centro2570);
     print("CENTRO 2570 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2571
@@ -38569,7 +38569,7 @@ void main() async {
     );
 
     // Inserta centro 2571 en la base de datos
-    await dbHelper.insertCentroMedico(centro2571);
+    await dbCRUD.insertCentroMedico(centro2571);
     print("CENTRO 2571 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2572
@@ -38584,7 +38584,7 @@ void main() async {
     );
 
     // Inserta centro 2572 en la base de datos
-    await dbHelper.insertCentroMedico(centro2572);
+    await dbCRUD.insertCentroMedico(centro2572);
     print("CENTRO 2572 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2573
@@ -38599,7 +38599,7 @@ void main() async {
     );
 
     // Inserta centro 2573 en la base de datos
-    await dbHelper.insertCentroMedico(centro2573);
+    await dbCRUD.insertCentroMedico(centro2573);
     print("CENTRO 2573 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2574
@@ -38614,7 +38614,7 @@ void main() async {
     );
 
     // Inserta centro 2574 en la base de datos
-    await dbHelper.insertCentroMedico(centro2574);
+    await dbCRUD.insertCentroMedico(centro2574);
     print("CENTRO 2574 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2575
@@ -38629,7 +38629,7 @@ void main() async {
     );
 
     // Inserta centro 2575 en la base de datos
-    await dbHelper.insertCentroMedico(centro2575);
+    await dbCRUD.insertCentroMedico(centro2575);
     print("CENTRO 2575 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2576
@@ -38644,7 +38644,7 @@ void main() async {
     );
 
     // Inserta centro 2576 en la base de datos
-    await dbHelper.insertCentroMedico(centro2576);
+    await dbCRUD.insertCentroMedico(centro2576);
     print("CENTRO 2576 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2577
@@ -38659,7 +38659,7 @@ void main() async {
     );
 
     // Inserta centro 2577 en la base de datos
-    await dbHelper.insertCentroMedico(centro2577);
+    await dbCRUD.insertCentroMedico(centro2577);
     print("CENTRO 2577 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2578
@@ -38674,7 +38674,7 @@ void main() async {
     );
 
     // Inserta centro 2578 en la base de datos
-    await dbHelper.insertCentroMedico(centro2578);
+    await dbCRUD.insertCentroMedico(centro2578);
     print("CENTRO 2578 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2579
@@ -38689,7 +38689,7 @@ void main() async {
     );
 
     // Inserta centro 2579 en la base de datos
-    await dbHelper.insertCentroMedico(centro2579);
+    await dbCRUD.insertCentroMedico(centro2579);
     print("CENTRO 2579 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2580
@@ -38704,7 +38704,7 @@ void main() async {
     );
 
     // Inserta centro 2580 en la base de datos
-    await dbHelper.insertCentroMedico(centro2580);
+    await dbCRUD.insertCentroMedico(centro2580);
     print("CENTRO 2580 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2581
@@ -38719,7 +38719,7 @@ void main() async {
     );
 
     // Inserta centro 2581 en la base de datos
-    await dbHelper.insertCentroMedico(centro2581);
+    await dbCRUD.insertCentroMedico(centro2581);
     print("CENTRO 2581 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2582
@@ -38734,7 +38734,7 @@ void main() async {
     );
 
     // Inserta centro 2582 en la base de datos
-    await dbHelper.insertCentroMedico(centro2582);
+    await dbCRUD.insertCentroMedico(centro2582);
     print("CENTRO 2582 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2583
@@ -38749,7 +38749,7 @@ void main() async {
     );
 
     // Inserta centro 2583 en la base de datos
-    await dbHelper.insertCentroMedico(centro2583);
+    await dbCRUD.insertCentroMedico(centro2583);
     print("CENTRO 2583 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2584
@@ -38764,7 +38764,7 @@ void main() async {
     );
 
     // Inserta centro 2584 en la base de datos
-    await dbHelper.insertCentroMedico(centro2584);
+    await dbCRUD.insertCentroMedico(centro2584);
     print("CENTRO 2584 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2585
@@ -38779,7 +38779,7 @@ void main() async {
     );
 
     // Inserta centro 2585 en la base de datos
-    await dbHelper.insertCentroMedico(centro2585);
+    await dbCRUD.insertCentroMedico(centro2585);
     print("CENTRO 2585 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2586
@@ -38794,7 +38794,7 @@ void main() async {
     );
 
     // Inserta centro 2586 en la base de datos
-    await dbHelper.insertCentroMedico(centro2586);
+    await dbCRUD.insertCentroMedico(centro2586);
     print("CENTRO 2586 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2587
@@ -38809,7 +38809,7 @@ void main() async {
     );
 
     // Inserta centro 2587 en la base de datos
-    await dbHelper.insertCentroMedico(centro2587);
+    await dbCRUD.insertCentroMedico(centro2587);
     print("CENTRO 2587 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2588
@@ -38824,7 +38824,7 @@ void main() async {
     );
 
     // Inserta centro 2588 en la base de datos
-    await dbHelper.insertCentroMedico(centro2588);
+    await dbCRUD.insertCentroMedico(centro2588);
     print("CENTRO 2588 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2589
@@ -38839,7 +38839,7 @@ void main() async {
     );
 
     // Inserta centro 2589 en la base de datos
-    await dbHelper.insertCentroMedico(centro2589);
+    await dbCRUD.insertCentroMedico(centro2589);
     print("CENTRO 2589 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2590
@@ -38854,7 +38854,7 @@ void main() async {
     );
 
     // Inserta centro 2590 en la base de datos
-    await dbHelper.insertCentroMedico(centro2590);
+    await dbCRUD.insertCentroMedico(centro2590);
     print("CENTRO 2590 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2591
@@ -38869,7 +38869,7 @@ void main() async {
     );
 
     // Inserta centro 2591 en la base de datos
-    await dbHelper.insertCentroMedico(centro2591);
+    await dbCRUD.insertCentroMedico(centro2591);
     print("CENTRO 2591 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2592
@@ -38884,7 +38884,7 @@ void main() async {
     );
 
     // Inserta centro 2592 en la base de datos
-    await dbHelper.insertCentroMedico(centro2592);
+    await dbCRUD.insertCentroMedico(centro2592);
     print("CENTRO 2592 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2593
@@ -38899,7 +38899,7 @@ void main() async {
     );
 
     // Inserta centro 2593 en la base de datos
-    await dbHelper.insertCentroMedico(centro2593);
+    await dbCRUD.insertCentroMedico(centro2593);
     print("CENTRO 2593 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2594
@@ -38914,7 +38914,7 @@ void main() async {
     );
 
     // Inserta centro 2594 en la base de datos
-    await dbHelper.insertCentroMedico(centro2594);
+    await dbCRUD.insertCentroMedico(centro2594);
     print("CENTRO 2594 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2595
@@ -38929,7 +38929,7 @@ void main() async {
     );
 
     // Inserta centro 2595 en la base de datos
-    await dbHelper.insertCentroMedico(centro2595);
+    await dbCRUD.insertCentroMedico(centro2595);
     print("CENTRO 2595 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2596
@@ -38944,7 +38944,7 @@ void main() async {
     );
 
     // Inserta centro 2596 en la base de datos
-    await dbHelper.insertCentroMedico(centro2596);
+    await dbCRUD.insertCentroMedico(centro2596);
     print("CENTRO 2596 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2597
@@ -38959,7 +38959,7 @@ void main() async {
     );
 
     // Inserta centro 2597 en la base de datos
-    await dbHelper.insertCentroMedico(centro2597);
+    await dbCRUD.insertCentroMedico(centro2597);
     print("CENTRO 2597 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2598
@@ -38974,7 +38974,7 @@ void main() async {
     );
 
     // Inserta centro 2598 en la base de datos
-    await dbHelper.insertCentroMedico(centro2598);
+    await dbCRUD.insertCentroMedico(centro2598);
     print("CENTRO 2598 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2599
@@ -38989,7 +38989,7 @@ void main() async {
     );
 
     // Inserta centro 2599 en la base de datos
-    await dbHelper.insertCentroMedico(centro2599);
+    await dbCRUD.insertCentroMedico(centro2599);
     print("CENTRO 2599 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2600
@@ -39004,7 +39004,7 @@ void main() async {
     );
 
     // Inserta centro 2600 en la base de datos
-    await dbHelper.insertCentroMedico(centro2600);
+    await dbCRUD.insertCentroMedico(centro2600);
     print("CENTRO 2600 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2601
@@ -39019,7 +39019,7 @@ void main() async {
     );
 
     // Inserta centro 2601 en la base de datos
-    await dbHelper.insertCentroMedico(centro2601);
+    await dbCRUD.insertCentroMedico(centro2601);
     print("CENTRO 2601 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2602
@@ -39034,7 +39034,7 @@ void main() async {
     );
 
     // Inserta centro 2602 en la base de datos
-    await dbHelper.insertCentroMedico(centro2602);
+    await dbCRUD.insertCentroMedico(centro2602);
     print("CENTRO 2602 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2603
@@ -39049,7 +39049,7 @@ void main() async {
     );
 
     // Inserta centro 2603 en la base de datos
-    await dbHelper.insertCentroMedico(centro2603);
+    await dbCRUD.insertCentroMedico(centro2603);
     print("CENTRO 2603 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2604
@@ -39064,7 +39064,7 @@ void main() async {
     );
 
     // Inserta centro 2604 en la base de datos
-    await dbHelper.insertCentroMedico(centro2604);
+    await dbCRUD.insertCentroMedico(centro2604);
     print("CENTRO 2604 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2605
@@ -39079,7 +39079,7 @@ void main() async {
     );
 
     // Inserta centro 2605 en la base de datos
-    await dbHelper.insertCentroMedico(centro2605);
+    await dbCRUD.insertCentroMedico(centro2605);
     print("CENTRO 2605 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2606
@@ -39094,7 +39094,7 @@ void main() async {
     );
 
     // Inserta centro 2606 en la base de datos
-    await dbHelper.insertCentroMedico(centro2606);
+    await dbCRUD.insertCentroMedico(centro2606);
     print("CENTRO 2606 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2607
@@ -39109,7 +39109,7 @@ void main() async {
     );
 
     // Inserta centro 2607 en la base de datos
-    await dbHelper.insertCentroMedico(centro2607);
+    await dbCRUD.insertCentroMedico(centro2607);
     print("CENTRO 2607 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2608
@@ -39124,7 +39124,7 @@ void main() async {
     );
 
     // Inserta centro 2608 en la base de datos
-    await dbHelper.insertCentroMedico(centro2608);
+    await dbCRUD.insertCentroMedico(centro2608);
     print("CENTRO 2608 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2609
@@ -39139,7 +39139,7 @@ void main() async {
     );
 
     // Inserta centro 2609 en la base de datos
-    await dbHelper.insertCentroMedico(centro2609);
+    await dbCRUD.insertCentroMedico(centro2609);
     print("CENTRO 2609 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2610
@@ -39154,7 +39154,7 @@ void main() async {
     );
 
     // Inserta centro 2610 en la base de datos
-    await dbHelper.insertCentroMedico(centro2610);
+    await dbCRUD.insertCentroMedico(centro2610);
     print("CENTRO 2610 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2611
@@ -39169,7 +39169,7 @@ void main() async {
     );
 
     // Inserta centro 2611 en la base de datos
-    await dbHelper.insertCentroMedico(centro2611);
+    await dbCRUD.insertCentroMedico(centro2611);
     print("CENTRO 2611 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2612
@@ -39184,7 +39184,7 @@ void main() async {
     );
 
     // Inserta centro 2612 en la base de datos
-    await dbHelper.insertCentroMedico(centro2612);
+    await dbCRUD.insertCentroMedico(centro2612);
     print("CENTRO 2612 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2613
@@ -39199,7 +39199,7 @@ void main() async {
     );
 
     // Inserta centro 2613 en la base de datos
-    await dbHelper.insertCentroMedico(centro2613);
+    await dbCRUD.insertCentroMedico(centro2613);
     print("CENTRO 2613 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2614
@@ -39214,7 +39214,7 @@ void main() async {
     );
 
     // Inserta centro 2614 en la base de datos
-    await dbHelper.insertCentroMedico(centro2614);
+    await dbCRUD.insertCentroMedico(centro2614);
     print("CENTRO 2614 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2615
@@ -39229,7 +39229,7 @@ void main() async {
     );
 
     // Inserta centro 2615 en la base de datos
-    await dbHelper.insertCentroMedico(centro2615);
+    await dbCRUD.insertCentroMedico(centro2615);
     print("CENTRO 2615 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2616
@@ -39244,7 +39244,7 @@ void main() async {
     );
 
     // Inserta centro 2616 en la base de datos
-    await dbHelper.insertCentroMedico(centro2616);
+    await dbCRUD.insertCentroMedico(centro2616);
     print("CENTRO 2616 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2617
@@ -39259,7 +39259,7 @@ void main() async {
     );
 
     // Inserta centro 2617 en la base de datos
-    await dbHelper.insertCentroMedico(centro2617);
+    await dbCRUD.insertCentroMedico(centro2617);
     print("CENTRO 2617 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2618
@@ -39274,7 +39274,7 @@ void main() async {
     );
 
     // Inserta centro 2618 en la base de datos
-    await dbHelper.insertCentroMedico(centro2618);
+    await dbCRUD.insertCentroMedico(centro2618);
     print("CENTRO 2618 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2619
@@ -39289,7 +39289,7 @@ void main() async {
     );
 
     // Inserta centro 2619 en la base de datos
-    await dbHelper.insertCentroMedico(centro2619);
+    await dbCRUD.insertCentroMedico(centro2619);
     print("CENTRO 2619 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2620
@@ -39304,7 +39304,7 @@ void main() async {
     );
 
     // Inserta centro 2620 en la base de datos
-    await dbHelper.insertCentroMedico(centro2620);
+    await dbCRUD.insertCentroMedico(centro2620);
     print("CENTRO 2620 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2621
@@ -39319,7 +39319,7 @@ void main() async {
     );
 
     // Inserta centro 2621 en la base de datos
-    await dbHelper.insertCentroMedico(centro2621);
+    await dbCRUD.insertCentroMedico(centro2621);
     print("CENTRO 2621 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2622
@@ -39334,7 +39334,7 @@ void main() async {
     );
 
     // Inserta centro 2622 en la base de datos
-    await dbHelper.insertCentroMedico(centro2622);
+    await dbCRUD.insertCentroMedico(centro2622);
     print("CENTRO 2622 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2623
@@ -39349,7 +39349,7 @@ void main() async {
     );
 
     // Inserta centro 2623 en la base de datos
-    await dbHelper.insertCentroMedico(centro2623);
+    await dbCRUD.insertCentroMedico(centro2623);
     print("CENTRO 2623 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2624
@@ -39364,7 +39364,7 @@ void main() async {
     );
 
     // Inserta centro 2624 en la base de datos
-    await dbHelper.insertCentroMedico(centro2624);
+    await dbCRUD.insertCentroMedico(centro2624);
     print("CENTRO 2624 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2625
@@ -39379,7 +39379,7 @@ void main() async {
     );
 
     // Inserta centro 2625 en la base de datos
-    await dbHelper.insertCentroMedico(centro2625);
+    await dbCRUD.insertCentroMedico(centro2625);
     print("CENTRO 2625 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2626
@@ -39394,7 +39394,7 @@ void main() async {
     );
 
     // Inserta centro 2626 en la base de datos
-    await dbHelper.insertCentroMedico(centro2626);
+    await dbCRUD.insertCentroMedico(centro2626);
     print("CENTRO 2626 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2627
@@ -39409,7 +39409,7 @@ void main() async {
     );
 
     // Inserta centro 2627 en la base de datos
-    await dbHelper.insertCentroMedico(centro2627);
+    await dbCRUD.insertCentroMedico(centro2627);
     print("CENTRO 2627 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2628
@@ -39424,7 +39424,7 @@ void main() async {
     );
 
     // Inserta centro 2628 en la base de datos
-    await dbHelper.insertCentroMedico(centro2628);
+    await dbCRUD.insertCentroMedico(centro2628);
     print("CENTRO 2628 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2629
@@ -39439,7 +39439,7 @@ void main() async {
     );
 
     // Inserta centro 2629 en la base de datos
-    await dbHelper.insertCentroMedico(centro2629);
+    await dbCRUD.insertCentroMedico(centro2629);
     print("CENTRO 2629 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2630
@@ -39454,7 +39454,7 @@ void main() async {
     );
 
     // Inserta centro 2630 en la base de datos
-    await dbHelper.insertCentroMedico(centro2630);
+    await dbCRUD.insertCentroMedico(centro2630);
     print("CENTRO 2630 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2631
@@ -39469,7 +39469,7 @@ void main() async {
     );
 
     // Inserta centro 2631 en la base de datos
-    await dbHelper.insertCentroMedico(centro2631);
+    await dbCRUD.insertCentroMedico(centro2631);
     print("CENTRO 2631 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2632
@@ -39484,7 +39484,7 @@ void main() async {
     );
 
     // Inserta centro 2632 en la base de datos
-    await dbHelper.insertCentroMedico(centro2632);
+    await dbCRUD.insertCentroMedico(centro2632);
     print("CENTRO 2632 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2633
@@ -39499,7 +39499,7 @@ void main() async {
     );
 
     // Inserta centro 2633 en la base de datos
-    await dbHelper.insertCentroMedico(centro2633);
+    await dbCRUD.insertCentroMedico(centro2633);
     print("CENTRO 2633 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2634
@@ -39514,7 +39514,7 @@ void main() async {
     );
 
     // Inserta centro 2634 en la base de datos
-    await dbHelper.insertCentroMedico(centro2634);
+    await dbCRUD.insertCentroMedico(centro2634);
     print("CENTRO 2634 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2635
@@ -39529,7 +39529,7 @@ void main() async {
     );
 
     // Inserta centro 2635 en la base de datos
-    await dbHelper.insertCentroMedico(centro2635);
+    await dbCRUD.insertCentroMedico(centro2635);
     print("CENTRO 2635 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2636
@@ -39544,7 +39544,7 @@ void main() async {
     );
 
     // Inserta centro 2636 en la base de datos
-    await dbHelper.insertCentroMedico(centro2636);
+    await dbCRUD.insertCentroMedico(centro2636);
     print("CENTRO 2636 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2637
@@ -39559,7 +39559,7 @@ void main() async {
     );
 
     // Inserta centro 2637 en la base de datos
-    await dbHelper.insertCentroMedico(centro2637);
+    await dbCRUD.insertCentroMedico(centro2637);
     print("CENTRO 2637 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2638
@@ -39574,7 +39574,7 @@ void main() async {
     );
 
     // Inserta centro 2638 en la base de datos
-    await dbHelper.insertCentroMedico(centro2638);
+    await dbCRUD.insertCentroMedico(centro2638);
     print("CENTRO 2638 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2639
@@ -39589,7 +39589,7 @@ void main() async {
     );
 
     // Inserta centro 2639 en la base de datos
-    await dbHelper.insertCentroMedico(centro2639);
+    await dbCRUD.insertCentroMedico(centro2639);
     print("CENTRO 2639 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2640
@@ -39604,7 +39604,7 @@ void main() async {
     );
 
     // Inserta centro 2640 en la base de datos
-    await dbHelper.insertCentroMedico(centro2640);
+    await dbCRUD.insertCentroMedico(centro2640);
     print("CENTRO 2640 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2641
@@ -39619,7 +39619,7 @@ void main() async {
     );
 
     // Inserta centro 2641 en la base de datos
-    await dbHelper.insertCentroMedico(centro2641);
+    await dbCRUD.insertCentroMedico(centro2641);
     print("CENTRO 2641 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2642
@@ -39634,7 +39634,7 @@ void main() async {
     );
 
     // Inserta centro 2642 en la base de datos
-    await dbHelper.insertCentroMedico(centro2642);
+    await dbCRUD.insertCentroMedico(centro2642);
     print("CENTRO 2642 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2643
@@ -39649,7 +39649,7 @@ void main() async {
     );
 
     // Inserta centro 2643 en la base de datos
-    await dbHelper.insertCentroMedico(centro2643);
+    await dbCRUD.insertCentroMedico(centro2643);
     print("CENTRO 2643 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2644
@@ -39664,7 +39664,7 @@ void main() async {
     );
 
     // Inserta centro 2644 en la base de datos
-    await dbHelper.insertCentroMedico(centro2644);
+    await dbCRUD.insertCentroMedico(centro2644);
     print("CENTRO 2644 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2645
@@ -39679,7 +39679,7 @@ void main() async {
     );
 
     // Inserta centro 2645 en la base de datos
-    await dbHelper.insertCentroMedico(centro2645);
+    await dbCRUD.insertCentroMedico(centro2645);
     print("CENTRO 2645 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2646
@@ -39694,7 +39694,7 @@ void main() async {
     );
 
     // Inserta centro 2646 en la base de datos
-    await dbHelper.insertCentroMedico(centro2646);
+    await dbCRUD.insertCentroMedico(centro2646);
     print("CENTRO 2646 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2647
@@ -39709,7 +39709,7 @@ void main() async {
     );
 
     // Inserta centro 2647 en la base de datos
-    await dbHelper.insertCentroMedico(centro2647);
+    await dbCRUD.insertCentroMedico(centro2647);
     print("CENTRO 2647 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2648
@@ -39724,7 +39724,7 @@ void main() async {
     );
 
     // Inserta centro 2648 en la base de datos
-    await dbHelper.insertCentroMedico(centro2648);
+    await dbCRUD.insertCentroMedico(centro2648);
     print("CENTRO 2648 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2649
@@ -39739,7 +39739,7 @@ void main() async {
     );
 
     // Inserta centro 2649 en la base de datos
-    await dbHelper.insertCentroMedico(centro2649);
+    await dbCRUD.insertCentroMedico(centro2649);
     print("CENTRO 2649 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2650
@@ -39754,7 +39754,7 @@ void main() async {
     );
 
     // Inserta centro 2650 en la base de datos
-    await dbHelper.insertCentroMedico(centro2650);
+    await dbCRUD.insertCentroMedico(centro2650);
     print("CENTRO 2650 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2651
@@ -39769,7 +39769,7 @@ void main() async {
     );
 
     // Inserta centro 2651 en la base de datos
-    await dbHelper.insertCentroMedico(centro2651);
+    await dbCRUD.insertCentroMedico(centro2651);
     print("CENTRO 2651 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2652
@@ -39784,7 +39784,7 @@ void main() async {
     );
 
     // Inserta centro 2652 en la base de datos
-    await dbHelper.insertCentroMedico(centro2652);
+    await dbCRUD.insertCentroMedico(centro2652);
     print("CENTRO 2652 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2653
@@ -39799,7 +39799,7 @@ void main() async {
     );
 
     // Inserta centro 2653 en la base de datos
-    await dbHelper.insertCentroMedico(centro2653);
+    await dbCRUD.insertCentroMedico(centro2653);
     print("CENTRO 2653 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2654
@@ -39814,7 +39814,7 @@ void main() async {
     );
 
     // Inserta centro 2654 en la base de datos
-    await dbHelper.insertCentroMedico(centro2654);
+    await dbCRUD.insertCentroMedico(centro2654);
     print("CENTRO 2654 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2655
@@ -39829,7 +39829,7 @@ void main() async {
     );
 
     // Inserta centro 2655 en la base de datos
-    await dbHelper.insertCentroMedico(centro2655);
+    await dbCRUD.insertCentroMedico(centro2655);
     print("CENTRO 2655 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2656
@@ -39844,7 +39844,7 @@ void main() async {
     );
 
     // Inserta centro 2656 en la base de datos
-    await dbHelper.insertCentroMedico(centro2656);
+    await dbCRUD.insertCentroMedico(centro2656);
     print("CENTRO 2656 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2657
@@ -39859,7 +39859,7 @@ void main() async {
     );
 
     // Inserta centro 2657 en la base de datos
-    await dbHelper.insertCentroMedico(centro2657);
+    await dbCRUD.insertCentroMedico(centro2657);
     print("CENTRO 2657 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2658
@@ -39874,7 +39874,7 @@ void main() async {
     );
 
     // Inserta centro 2658 en la base de datos
-    await dbHelper.insertCentroMedico(centro2658);
+    await dbCRUD.insertCentroMedico(centro2658);
     print("CENTRO 2658 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2659
@@ -39889,7 +39889,7 @@ void main() async {
     );
 
     // Inserta centro 2659 en la base de datos
-    await dbHelper.insertCentroMedico(centro2659);
+    await dbCRUD.insertCentroMedico(centro2659);
     print("CENTRO 2659 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2660
@@ -39904,7 +39904,7 @@ void main() async {
     );
 
     // Inserta centro 2660 en la base de datos
-    await dbHelper.insertCentroMedico(centro2660);
+    await dbCRUD.insertCentroMedico(centro2660);
     print("CENTRO 2660 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2661
@@ -39919,7 +39919,7 @@ void main() async {
     );
 
     // Inserta centro 2661 en la base de datos
-    await dbHelper.insertCentroMedico(centro2661);
+    await dbCRUD.insertCentroMedico(centro2661);
     print("CENTRO 2661 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2662
@@ -39934,7 +39934,7 @@ void main() async {
     );
 
     // Inserta centro 2662 en la base de datos
-    await dbHelper.insertCentroMedico(centro2662);
+    await dbCRUD.insertCentroMedico(centro2662);
     print("CENTRO 2662 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2663
@@ -39949,7 +39949,7 @@ void main() async {
     );
 
     // Inserta centro 2663 en la base de datos
-    await dbHelper.insertCentroMedico(centro2663);
+    await dbCRUD.insertCentroMedico(centro2663);
     print("CENTRO 2663 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2664
@@ -39964,7 +39964,7 @@ void main() async {
     );
 
     // Inserta centro 2664 en la base de datos
-    await dbHelper.insertCentroMedico(centro2664);
+    await dbCRUD.insertCentroMedico(centro2664);
     print("CENTRO 2664 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2665
@@ -39979,7 +39979,7 @@ void main() async {
     );
 
     // Inserta centro 2665 en la base de datos
-    await dbHelper.insertCentroMedico(centro2665);
+    await dbCRUD.insertCentroMedico(centro2665);
     print("CENTRO 2665 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2666
@@ -39994,7 +39994,7 @@ void main() async {
     );
 
     // Inserta centro 2666 en la base de datos
-    await dbHelper.insertCentroMedico(centro2666);
+    await dbCRUD.insertCentroMedico(centro2666);
     print("CENTRO 2666 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2667
@@ -40009,7 +40009,7 @@ void main() async {
     );
 
     // Inserta centro 2667 en la base de datos
-    await dbHelper.insertCentroMedico(centro2667);
+    await dbCRUD.insertCentroMedico(centro2667);
     print("CENTRO 2667 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2668
@@ -40024,7 +40024,7 @@ void main() async {
     );
 
     // Inserta centro 2668 en la base de datos
-    await dbHelper.insertCentroMedico(centro2668);
+    await dbCRUD.insertCentroMedico(centro2668);
     print("CENTRO 2668 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2669
@@ -40039,7 +40039,7 @@ void main() async {
     );
 
     // Inserta centro 2669 en la base de datos
-    await dbHelper.insertCentroMedico(centro2669);
+    await dbCRUD.insertCentroMedico(centro2669);
     print("CENTRO 2669 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2670
@@ -40054,7 +40054,7 @@ void main() async {
     );
 
     // Inserta centro 2670 en la base de datos
-    await dbHelper.insertCentroMedico(centro2670);
+    await dbCRUD.insertCentroMedico(centro2670);
     print("CENTRO 2670 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2671
@@ -40069,7 +40069,7 @@ void main() async {
     );
 
     // Inserta centro 2671 en la base de datos
-    await dbHelper.insertCentroMedico(centro2671);
+    await dbCRUD.insertCentroMedico(centro2671);
     print("CENTRO 2671 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2672
@@ -40084,7 +40084,7 @@ void main() async {
     );
 
     // Inserta centro 2672 en la base de datos
-    await dbHelper.insertCentroMedico(centro2672);
+    await dbCRUD.insertCentroMedico(centro2672);
     print("CENTRO 2672 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2673
@@ -40099,7 +40099,7 @@ void main() async {
     );
 
     // Inserta centro 2673 en la base de datos
-    await dbHelper.insertCentroMedico(centro2673);
+    await dbCRUD.insertCentroMedico(centro2673);
     print("CENTRO 2673 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2674
@@ -40114,7 +40114,7 @@ void main() async {
     );
 
     // Inserta centro 2674 en la base de datos
-    await dbHelper.insertCentroMedico(centro2674);
+    await dbCRUD.insertCentroMedico(centro2674);
     print("CENTRO 2674 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2675
@@ -40129,7 +40129,7 @@ void main() async {
     );
 
     // Inserta centro 2675 en la base de datos
-    await dbHelper.insertCentroMedico(centro2675);
+    await dbCRUD.insertCentroMedico(centro2675);
     print("CENTRO 2675 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2676
@@ -40144,7 +40144,7 @@ void main() async {
     );
 
     // Inserta centro 2676 en la base de datos
-    await dbHelper.insertCentroMedico(centro2676);
+    await dbCRUD.insertCentroMedico(centro2676);
     print("CENTRO 2676 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2677
@@ -40159,7 +40159,7 @@ void main() async {
     );
 
     // Inserta centro 2677 en la base de datos
-    await dbHelper.insertCentroMedico(centro2677);
+    await dbCRUD.insertCentroMedico(centro2677);
     print("CENTRO 2677 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2678
@@ -40174,7 +40174,7 @@ void main() async {
     );
 
     // Inserta centro 2678 en la base de datos
-    await dbHelper.insertCentroMedico(centro2678);
+    await dbCRUD.insertCentroMedico(centro2678);
     print("CENTRO 2678 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2679
@@ -40189,7 +40189,7 @@ void main() async {
     );
 
     // Inserta centro 2679 en la base de datos
-    await dbHelper.insertCentroMedico(centro2679);
+    await dbCRUD.insertCentroMedico(centro2679);
     print("CENTRO 2679 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2680
@@ -40204,7 +40204,7 @@ void main() async {
     );
 
     // Inserta centro 2680 en la base de datos
-    await dbHelper.insertCentroMedico(centro2680);
+    await dbCRUD.insertCentroMedico(centro2680);
     print("CENTRO 2680 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2681
@@ -40219,7 +40219,7 @@ void main() async {
     );
 
     // Inserta centro 2681 en la base de datos
-    await dbHelper.insertCentroMedico(centro2681);
+    await dbCRUD.insertCentroMedico(centro2681);
     print("CENTRO 2681 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2682
@@ -40234,7 +40234,7 @@ void main() async {
     );
 
     // Inserta centro 2682 en la base de datos
-    await dbHelper.insertCentroMedico(centro2682);
+    await dbCRUD.insertCentroMedico(centro2682);
     print("CENTRO 2682 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2683
@@ -40249,7 +40249,7 @@ void main() async {
     );
 
     // Inserta centro 2683 en la base de datos
-    await dbHelper.insertCentroMedico(centro2683);
+    await dbCRUD.insertCentroMedico(centro2683);
     print("CENTRO 2683 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2684
@@ -40264,7 +40264,7 @@ void main() async {
     );
 
     // Inserta centro 2684 en la base de datos
-    await dbHelper.insertCentroMedico(centro2684);
+    await dbCRUD.insertCentroMedico(centro2684);
     print("CENTRO 2684 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2685
@@ -40279,7 +40279,7 @@ void main() async {
     );
 
     // Inserta centro 2685 en la base de datos
-    await dbHelper.insertCentroMedico(centro2685);
+    await dbCRUD.insertCentroMedico(centro2685);
     print("CENTRO 2685 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2686
@@ -40294,7 +40294,7 @@ void main() async {
     );
 
     // Inserta centro 2686 en la base de datos
-    await dbHelper.insertCentroMedico(centro2686);
+    await dbCRUD.insertCentroMedico(centro2686);
     print("CENTRO 2686 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2687
@@ -40309,7 +40309,7 @@ void main() async {
     );
 
     // Inserta centro 2687 en la base de datos
-    await dbHelper.insertCentroMedico(centro2687);
+    await dbCRUD.insertCentroMedico(centro2687);
     print("CENTRO 2687 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2688
@@ -40324,7 +40324,7 @@ void main() async {
     );
 
     // Inserta centro 2688 en la base de datos
-    await dbHelper.insertCentroMedico(centro2688);
+    await dbCRUD.insertCentroMedico(centro2688);
     print("CENTRO 2688 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2689
@@ -40339,7 +40339,7 @@ void main() async {
     );
 
     // Inserta centro 2689 en la base de datos
-    await dbHelper.insertCentroMedico(centro2689);
+    await dbCRUD.insertCentroMedico(centro2689);
     print("CENTRO 2689 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2690
@@ -40354,7 +40354,7 @@ void main() async {
     );
 
     // Inserta centro 2690 en la base de datos
-    await dbHelper.insertCentroMedico(centro2690);
+    await dbCRUD.insertCentroMedico(centro2690);
     print("CENTRO 2690 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2691
@@ -40369,7 +40369,7 @@ void main() async {
     );
 
     // Inserta centro 2691 en la base de datos
-    await dbHelper.insertCentroMedico(centro2691);
+    await dbCRUD.insertCentroMedico(centro2691);
     print("CENTRO 2691 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2692
@@ -40384,7 +40384,7 @@ void main() async {
     );
 
     // Inserta centro 2692 en la base de datos
-    await dbHelper.insertCentroMedico(centro2692);
+    await dbCRUD.insertCentroMedico(centro2692);
     print("CENTRO 2692 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2693
@@ -40399,7 +40399,7 @@ void main() async {
     );
 
     // Inserta centro 2693 en la base de datos
-    await dbHelper.insertCentroMedico(centro2693);
+    await dbCRUD.insertCentroMedico(centro2693);
     print("CENTRO 2693 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2694
@@ -40414,7 +40414,7 @@ void main() async {
     );
 
     // Inserta centro 2694 en la base de datos
-    await dbHelper.insertCentroMedico(centro2694);
+    await dbCRUD.insertCentroMedico(centro2694);
     print("CENTRO 2694 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2695
@@ -40429,7 +40429,7 @@ void main() async {
     );
 
     // Inserta centro 2695 en la base de datos
-    await dbHelper.insertCentroMedico(centro2695);
+    await dbCRUD.insertCentroMedico(centro2695);
     print("CENTRO 2695 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2696
@@ -40444,7 +40444,7 @@ void main() async {
     );
 
     // Inserta centro 2696 en la base de datos
-    await dbHelper.insertCentroMedico(centro2696);
+    await dbCRUD.insertCentroMedico(centro2696);
     print("CENTRO 2696 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2697
@@ -40459,7 +40459,7 @@ void main() async {
     );
 
     // Inserta centro 2697 en la base de datos
-    await dbHelper.insertCentroMedico(centro2697);
+    await dbCRUD.insertCentroMedico(centro2697);
     print("CENTRO 2697 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2698
@@ -40474,7 +40474,7 @@ void main() async {
     );
 
     // Inserta centro 2698 en la base de datos
-    await dbHelper.insertCentroMedico(centro2698);
+    await dbCRUD.insertCentroMedico(centro2698);
     print("CENTRO 2698 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2699
@@ -40489,7 +40489,7 @@ void main() async {
     );
 
     // Inserta centro 2699 en la base de datos
-    await dbHelper.insertCentroMedico(centro2699);
+    await dbCRUD.insertCentroMedico(centro2699);
     print("CENTRO 2699 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2700
@@ -40504,7 +40504,7 @@ void main() async {
     );
 
     // Inserta centro 2700 en la base de datos
-    await dbHelper.insertCentroMedico(centro2700);
+    await dbCRUD.insertCentroMedico(centro2700);
     print("CENTRO 2700 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2701
@@ -40519,7 +40519,7 @@ void main() async {
     );
 
     // Inserta centro 2701 en la base de datos
-    await dbHelper.insertCentroMedico(centro2701);
+    await dbCRUD.insertCentroMedico(centro2701);
     print("CENTRO 2701 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2702
@@ -40534,7 +40534,7 @@ void main() async {
     );
 
     // Inserta centro 2702 en la base de datos
-    await dbHelper.insertCentroMedico(centro2702);
+    await dbCRUD.insertCentroMedico(centro2702);
     print("CENTRO 2702 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2703
@@ -40549,7 +40549,7 @@ void main() async {
     );
 
     // Inserta centro 2703 en la base de datos
-    await dbHelper.insertCentroMedico(centro2703);
+    await dbCRUD.insertCentroMedico(centro2703);
     print("CENTRO 2703 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2704
@@ -40564,7 +40564,7 @@ void main() async {
     );
 
     // Inserta centro 2704 en la base de datos
-    await dbHelper.insertCentroMedico(centro2704);
+    await dbCRUD.insertCentroMedico(centro2704);
     print("CENTRO 2704 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2705
@@ -40579,7 +40579,7 @@ void main() async {
     );
 
     // Inserta centro 2705 en la base de datos
-    await dbHelper.insertCentroMedico(centro2705);
+    await dbCRUD.insertCentroMedico(centro2705);
     print("CENTRO 2705 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2706
@@ -40594,7 +40594,7 @@ void main() async {
     );
 
     // Inserta centro 2706 en la base de datos
-    await dbHelper.insertCentroMedico(centro2706);
+    await dbCRUD.insertCentroMedico(centro2706);
     print("CENTRO 2706 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2707
@@ -40609,7 +40609,7 @@ void main() async {
     );
 
     // Inserta centro 2707 en la base de datos
-    await dbHelper.insertCentroMedico(centro2707);
+    await dbCRUD.insertCentroMedico(centro2707);
     print("CENTRO 2707 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2708
@@ -40624,7 +40624,7 @@ void main() async {
     );
 
     // Inserta centro 2708 en la base de datos
-    await dbHelper.insertCentroMedico(centro2708);
+    await dbCRUD.insertCentroMedico(centro2708);
     print("CENTRO 2708 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2709
@@ -40639,7 +40639,7 @@ void main() async {
     );
 
     // Inserta centro 2709 en la base de datos
-    await dbHelper.insertCentroMedico(centro2709);
+    await dbCRUD.insertCentroMedico(centro2709);
     print("CENTRO 2709 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2710
@@ -40654,7 +40654,7 @@ void main() async {
     );
 
     // Inserta centro 2710 en la base de datos
-    await dbHelper.insertCentroMedico(centro2710);
+    await dbCRUD.insertCentroMedico(centro2710);
     print("CENTRO 2710 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2711
@@ -40669,7 +40669,7 @@ void main() async {
     );
 
     // Inserta centro 2711 en la base de datos
-    await dbHelper.insertCentroMedico(centro2711);
+    await dbCRUD.insertCentroMedico(centro2711);
     print("CENTRO 2711 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2712
@@ -40684,7 +40684,7 @@ void main() async {
     );
 
     // Inserta centro 2712 en la base de datos
-    await dbHelper.insertCentroMedico(centro2712);
+    await dbCRUD.insertCentroMedico(centro2712);
     print("CENTRO 2712 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2713
@@ -40699,7 +40699,7 @@ void main() async {
     );
 
     // Inserta centro 2713 en la base de datos
-    await dbHelper.insertCentroMedico(centro2713);
+    await dbCRUD.insertCentroMedico(centro2713);
     print("CENTRO 2713 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2714
@@ -40714,7 +40714,7 @@ void main() async {
     );
 
     // Inserta centro 2714 en la base de datos
-    await dbHelper.insertCentroMedico(centro2714);
+    await dbCRUD.insertCentroMedico(centro2714);
     print("CENTRO 2714 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2715
@@ -40729,7 +40729,7 @@ void main() async {
     );
 
     // Inserta centro 2715 en la base de datos
-    await dbHelper.insertCentroMedico(centro2715);
+    await dbCRUD.insertCentroMedico(centro2715);
     print("CENTRO 2715 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2716
@@ -40744,7 +40744,7 @@ void main() async {
     );
 
     // Inserta centro 2716 en la base de datos
-    await dbHelper.insertCentroMedico(centro2716);
+    await dbCRUD.insertCentroMedico(centro2716);
     print("CENTRO 2716 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2717
@@ -40759,7 +40759,7 @@ void main() async {
     );
 
     // Inserta centro 2717 en la base de datos
-    await dbHelper.insertCentroMedico(centro2717);
+    await dbCRUD.insertCentroMedico(centro2717);
     print("CENTRO 2717 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2718
@@ -40774,7 +40774,7 @@ void main() async {
     );
 
     // Inserta centro 2718 en la base de datos
-    await dbHelper.insertCentroMedico(centro2718);
+    await dbCRUD.insertCentroMedico(centro2718);
     print("CENTRO 2718 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2719
@@ -40789,7 +40789,7 @@ void main() async {
     );
 
     // Inserta centro 2719 en la base de datos
-    await dbHelper.insertCentroMedico(centro2719);
+    await dbCRUD.insertCentroMedico(centro2719);
     print("CENTRO 2719 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2720
@@ -40804,7 +40804,7 @@ void main() async {
     );
 
     // Inserta centro 2720 en la base de datos
-    await dbHelper.insertCentroMedico(centro2720);
+    await dbCRUD.insertCentroMedico(centro2720);
     print("CENTRO 2720 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2721
@@ -40819,7 +40819,7 @@ void main() async {
     );
 
     // Inserta centro 2721 en la base de datos
-    await dbHelper.insertCentroMedico(centro2721);
+    await dbCRUD.insertCentroMedico(centro2721);
     print("CENTRO 2721 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2722
@@ -40834,7 +40834,7 @@ void main() async {
     );
 
     // Inserta centro 2722 en la base de datos
-    await dbHelper.insertCentroMedico(centro2722);
+    await dbCRUD.insertCentroMedico(centro2722);
     print("CENTRO 2722 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2723
@@ -40849,7 +40849,7 @@ void main() async {
     );
 
     // Inserta centro 2723 en la base de datos
-    await dbHelper.insertCentroMedico(centro2723);
+    await dbCRUD.insertCentroMedico(centro2723);
     print("CENTRO 2723 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2724
@@ -40864,7 +40864,7 @@ void main() async {
     );
 
     // Inserta centro 2724 en la base de datos
-    await dbHelper.insertCentroMedico(centro2724);
+    await dbCRUD.insertCentroMedico(centro2724);
     print("CENTRO 2724 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2725
@@ -40879,7 +40879,7 @@ void main() async {
     );
 
     // Inserta centro 2725 en la base de datos
-    await dbHelper.insertCentroMedico(centro2725);
+    await dbCRUD.insertCentroMedico(centro2725);
     print("CENTRO 2725 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2726
@@ -40894,7 +40894,7 @@ void main() async {
     );
 
     // Inserta centro 2726 en la base de datos
-    await dbHelper.insertCentroMedico(centro2726);
+    await dbCRUD.insertCentroMedico(centro2726);
     print("CENTRO 2726 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2727
@@ -40909,7 +40909,7 @@ void main() async {
     );
 
     // Inserta centro 2727 en la base de datos
-    await dbHelper.insertCentroMedico(centro2727);
+    await dbCRUD.insertCentroMedico(centro2727);
     print("CENTRO 2727 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2728
@@ -40924,7 +40924,7 @@ void main() async {
     );
 
     // Inserta centro 2728 en la base de datos
-    await dbHelper.insertCentroMedico(centro2728);
+    await dbCRUD.insertCentroMedico(centro2728);
     print("CENTRO 2728 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2729
@@ -40939,7 +40939,7 @@ void main() async {
     );
 
     // Inserta centro 2729 en la base de datos
-    await dbHelper.insertCentroMedico(centro2729);
+    await dbCRUD.insertCentroMedico(centro2729);
     print("CENTRO 2729 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2730
@@ -40954,7 +40954,7 @@ void main() async {
     );
 
     // Inserta centro 2730 en la base de datos
-    await dbHelper.insertCentroMedico(centro2730);
+    await dbCRUD.insertCentroMedico(centro2730);
     print("CENTRO 2730 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2731
@@ -40969,7 +40969,7 @@ void main() async {
     );
 
     // Inserta centro 2731 en la base de datos
-    await dbHelper.insertCentroMedico(centro2731);
+    await dbCRUD.insertCentroMedico(centro2731);
     print("CENTRO 2731 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2732
@@ -40984,7 +40984,7 @@ void main() async {
     );
 
     // Inserta centro 2732 en la base de datos
-    await dbHelper.insertCentroMedico(centro2732);
+    await dbCRUD.insertCentroMedico(centro2732);
     print("CENTRO 2732 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2733
@@ -40999,7 +40999,7 @@ void main() async {
     );
 
     // Inserta centro 2733 en la base de datos
-    await dbHelper.insertCentroMedico(centro2733);
+    await dbCRUD.insertCentroMedico(centro2733);
     print("CENTRO 2733 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2734
@@ -41014,7 +41014,7 @@ void main() async {
     );
 
     // Inserta centro 2734 en la base de datos
-    await dbHelper.insertCentroMedico(centro2734);
+    await dbCRUD.insertCentroMedico(centro2734);
     print("CENTRO 2734 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2735
@@ -41029,7 +41029,7 @@ void main() async {
     );
 
     // Inserta centro 2735 en la base de datos
-    await dbHelper.insertCentroMedico(centro2735);
+    await dbCRUD.insertCentroMedico(centro2735);
     print("CENTRO 2735 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2736
@@ -41044,7 +41044,7 @@ void main() async {
     );
 
     // Inserta centro 2736 en la base de datos
-    await dbHelper.insertCentroMedico(centro2736);
+    await dbCRUD.insertCentroMedico(centro2736);
     print("CENTRO 2736 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2737
@@ -41059,7 +41059,7 @@ void main() async {
     );
 
     // Inserta centro 2737 en la base de datos
-    await dbHelper.insertCentroMedico(centro2737);
+    await dbCRUD.insertCentroMedico(centro2737);
     print("CENTRO 2737 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2738
@@ -41074,7 +41074,7 @@ void main() async {
     );
 
     // Inserta centro 2738 en la base de datos
-    await dbHelper.insertCentroMedico(centro2738);
+    await dbCRUD.insertCentroMedico(centro2738);
     print("CENTRO 2738 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2739
@@ -41089,7 +41089,7 @@ void main() async {
     );
 
     // Inserta centro 2739 en la base de datos
-    await dbHelper.insertCentroMedico(centro2739);
+    await dbCRUD.insertCentroMedico(centro2739);
     print("CENTRO 2739 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2740
@@ -41104,7 +41104,7 @@ void main() async {
     );
 
     // Inserta centro 2740 en la base de datos
-    await dbHelper.insertCentroMedico(centro2740);
+    await dbCRUD.insertCentroMedico(centro2740);
     print("CENTRO 2740 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2741
@@ -41119,7 +41119,7 @@ void main() async {
     );
 
     // Inserta centro 2741 en la base de datos
-    await dbHelper.insertCentroMedico(centro2741);
+    await dbCRUD.insertCentroMedico(centro2741);
     print("CENTRO 2741 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2742
@@ -41134,7 +41134,7 @@ void main() async {
     );
 
     // Inserta centro 2742 en la base de datos
-    await dbHelper.insertCentroMedico(centro2742);
+    await dbCRUD.insertCentroMedico(centro2742);
     print("CENTRO 2742 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2743
@@ -41149,7 +41149,7 @@ void main() async {
     );
 
     // Inserta centro 2743 en la base de datos
-    await dbHelper.insertCentroMedico(centro2743);
+    await dbCRUD.insertCentroMedico(centro2743);
     print("CENTRO 2743 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2744
@@ -41164,7 +41164,7 @@ void main() async {
     );
 
     // Inserta centro 2744 en la base de datos
-    await dbHelper.insertCentroMedico(centro2744);
+    await dbCRUD.insertCentroMedico(centro2744);
     print("CENTRO 2744 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2745
@@ -41179,7 +41179,7 @@ void main() async {
     );
 
     // Inserta centro 2745 en la base de datos
-    await dbHelper.insertCentroMedico(centro2745);
+    await dbCRUD.insertCentroMedico(centro2745);
     print("CENTRO 2745 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2746
@@ -41194,7 +41194,7 @@ void main() async {
     );
 
     // Inserta centro 2746 en la base de datos
-    await dbHelper.insertCentroMedico(centro2746);
+    await dbCRUD.insertCentroMedico(centro2746);
     print("CENTRO 2746 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2747
@@ -41209,7 +41209,7 @@ void main() async {
     );
 
     // Inserta centro 2747 en la base de datos
-    await dbHelper.insertCentroMedico(centro2747);
+    await dbCRUD.insertCentroMedico(centro2747);
     print("CENTRO 2747 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2748
@@ -41224,7 +41224,7 @@ void main() async {
     );
 
     // Inserta centro 2748 en la base de datos
-    await dbHelper.insertCentroMedico(centro2748);
+    await dbCRUD.insertCentroMedico(centro2748);
     print("CENTRO 2748 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2749
@@ -41239,7 +41239,7 @@ void main() async {
     );
 
     // Inserta centro 2749 en la base de datos
-    await dbHelper.insertCentroMedico(centro2749);
+    await dbCRUD.insertCentroMedico(centro2749);
     print("CENTRO 2749 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2750
@@ -41254,7 +41254,7 @@ void main() async {
     );
 
     // Inserta centro 2750 en la base de datos
-    await dbHelper.insertCentroMedico(centro2750);
+    await dbCRUD.insertCentroMedico(centro2750);
     print("CENTRO 2750 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2751
@@ -41269,7 +41269,7 @@ void main() async {
     );
 
     // Inserta centro 2751 en la base de datos
-    await dbHelper.insertCentroMedico(centro2751);
+    await dbCRUD.insertCentroMedico(centro2751);
     print("CENTRO 2751 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2752
@@ -41284,7 +41284,7 @@ void main() async {
     );
 
     // Inserta centro 2752 en la base de datos
-    await dbHelper.insertCentroMedico(centro2752);
+    await dbCRUD.insertCentroMedico(centro2752);
     print("CENTRO 2752 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2753
@@ -41299,7 +41299,7 @@ void main() async {
     );
 
     // Inserta centro 2753 en la base de datos
-    await dbHelper.insertCentroMedico(centro2753);
+    await dbCRUD.insertCentroMedico(centro2753);
     print("CENTRO 2753 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2754
@@ -41314,7 +41314,7 @@ void main() async {
     );
 
     // Inserta centro 2754 en la base de datos
-    await dbHelper.insertCentroMedico(centro2754);
+    await dbCRUD.insertCentroMedico(centro2754);
     print("CENTRO 2754 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2755
@@ -41329,7 +41329,7 @@ void main() async {
     );
 
     // Inserta centro 2755 en la base de datos
-    await dbHelper.insertCentroMedico(centro2755);
+    await dbCRUD.insertCentroMedico(centro2755);
     print("CENTRO 2755 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2756
@@ -41344,7 +41344,7 @@ void main() async {
     );
 
     // Inserta centro 2756 en la base de datos
-    await dbHelper.insertCentroMedico(centro2756);
+    await dbCRUD.insertCentroMedico(centro2756);
     print("CENTRO 2756 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2757
@@ -41359,7 +41359,7 @@ void main() async {
     );
 
     // Inserta centro 2757 en la base de datos
-    await dbHelper.insertCentroMedico(centro2757);
+    await dbCRUD.insertCentroMedico(centro2757);
     print("CENTRO 2757 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2758
@@ -41374,7 +41374,7 @@ void main() async {
     );
 
     // Inserta centro 2758 en la base de datos
-    await dbHelper.insertCentroMedico(centro2758);
+    await dbCRUD.insertCentroMedico(centro2758);
     print("CENTRO 2758 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2759
@@ -41389,7 +41389,7 @@ void main() async {
     );
 
     // Inserta centro 2759 en la base de datos
-    await dbHelper.insertCentroMedico(centro2759);
+    await dbCRUD.insertCentroMedico(centro2759);
     print("CENTRO 2759 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2760
@@ -41404,7 +41404,7 @@ void main() async {
     );
 
     // Inserta centro 2760 en la base de datos
-    await dbHelper.insertCentroMedico(centro2760);
+    await dbCRUD.insertCentroMedico(centro2760);
     print("CENTRO 2760 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2761
@@ -41419,7 +41419,7 @@ void main() async {
     );
 
     // Inserta centro 2761 en la base de datos
-    await dbHelper.insertCentroMedico(centro2761);
+    await dbCRUD.insertCentroMedico(centro2761);
     print("CENTRO 2761 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2762
@@ -41434,7 +41434,7 @@ void main() async {
     );
 
     // Inserta centro 2762 en la base de datos
-    await dbHelper.insertCentroMedico(centro2762);
+    await dbCRUD.insertCentroMedico(centro2762);
     print("CENTRO 2762 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2763
@@ -41449,7 +41449,7 @@ void main() async {
     );
 
     // Inserta centro 2763 en la base de datos
-    await dbHelper.insertCentroMedico(centro2763);
+    await dbCRUD.insertCentroMedico(centro2763);
     print("CENTRO 2763 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2764
@@ -41464,7 +41464,7 @@ void main() async {
     );
 
     // Inserta centro 2764 en la base de datos
-    await dbHelper.insertCentroMedico(centro2764);
+    await dbCRUD.insertCentroMedico(centro2764);
     print("CENTRO 2764 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2765
@@ -41479,7 +41479,7 @@ void main() async {
     );
 
     // Inserta centro 2765 en la base de datos
-    await dbHelper.insertCentroMedico(centro2765);
+    await dbCRUD.insertCentroMedico(centro2765);
     print("CENTRO 2765 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2766
@@ -41494,7 +41494,7 @@ void main() async {
     );
 
     // Inserta centro 2766 en la base de datos
-    await dbHelper.insertCentroMedico(centro2766);
+    await dbCRUD.insertCentroMedico(centro2766);
     print("CENTRO 2766 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2767
@@ -41509,7 +41509,7 @@ void main() async {
     );
 
     // Inserta centro 2767 en la base de datos
-    await dbHelper.insertCentroMedico(centro2767);
+    await dbCRUD.insertCentroMedico(centro2767);
     print("CENTRO 2767 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2768
@@ -41524,7 +41524,7 @@ void main() async {
     );
 
     // Inserta centro 2768 en la base de datos
-    await dbHelper.insertCentroMedico(centro2768);
+    await dbCRUD.insertCentroMedico(centro2768);
     print("CENTRO 2768 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2769
@@ -41539,7 +41539,7 @@ void main() async {
     );
 
     // Inserta centro 2769 en la base de datos
-    await dbHelper.insertCentroMedico(centro2769);
+    await dbCRUD.insertCentroMedico(centro2769);
     print("CENTRO 2769 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2770
@@ -41554,7 +41554,7 @@ void main() async {
     );
 
     // Inserta centro 2770 en la base de datos
-    await dbHelper.insertCentroMedico(centro2770);
+    await dbCRUD.insertCentroMedico(centro2770);
     print("CENTRO 2770 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2771
@@ -41569,7 +41569,7 @@ void main() async {
     );
 
     // Inserta centro 2771 en la base de datos
-    await dbHelper.insertCentroMedico(centro2771);
+    await dbCRUD.insertCentroMedico(centro2771);
     print("CENTRO 2771 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2772
@@ -41584,7 +41584,7 @@ void main() async {
     );
 
     // Inserta centro 2772 en la base de datos
-    await dbHelper.insertCentroMedico(centro2772);
+    await dbCRUD.insertCentroMedico(centro2772);
     print("CENTRO 2772 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2773
@@ -41599,7 +41599,7 @@ void main() async {
     );
 
     // Inserta centro 2773 en la base de datos
-    await dbHelper.insertCentroMedico(centro2773);
+    await dbCRUD.insertCentroMedico(centro2773);
     print("CENTRO 2773 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2774
@@ -41614,7 +41614,7 @@ void main() async {
     );
 
     // Inserta centro 2774 en la base de datos
-    await dbHelper.insertCentroMedico(centro2774);
+    await dbCRUD.insertCentroMedico(centro2774);
     print("CENTRO 2774 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2775
@@ -41629,7 +41629,7 @@ void main() async {
     );
 
     // Inserta centro 2775 en la base de datos
-    await dbHelper.insertCentroMedico(centro2775);
+    await dbCRUD.insertCentroMedico(centro2775);
     print("CENTRO 2775 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2776
@@ -41644,7 +41644,7 @@ void main() async {
     );
 
     // Inserta centro 2776 en la base de datos
-    await dbHelper.insertCentroMedico(centro2776);
+    await dbCRUD.insertCentroMedico(centro2776);
     print("CENTRO 2776 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2777
@@ -41659,7 +41659,7 @@ void main() async {
     );
 
     // Inserta centro 2777 en la base de datos
-    await dbHelper.insertCentroMedico(centro2777);
+    await dbCRUD.insertCentroMedico(centro2777);
     print("CENTRO 2777 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2778
@@ -41674,7 +41674,7 @@ void main() async {
     );
 
     // Inserta centro 2778 en la base de datos
-    await dbHelper.insertCentroMedico(centro2778);
+    await dbCRUD.insertCentroMedico(centro2778);
     print("CENTRO 2778 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2779
@@ -41689,7 +41689,7 @@ void main() async {
     );
 
     // Inserta centro 2779 en la base de datos
-    await dbHelper.insertCentroMedico(centro2779);
+    await dbCRUD.insertCentroMedico(centro2779);
     print("CENTRO 2779 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2780
@@ -41704,7 +41704,7 @@ void main() async {
     );
 
     // Inserta centro 2780 en la base de datos
-    await dbHelper.insertCentroMedico(centro2780);
+    await dbCRUD.insertCentroMedico(centro2780);
     print("CENTRO 2780 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2781
@@ -41719,7 +41719,7 @@ void main() async {
     );
 
     // Inserta centro 2781 en la base de datos
-    await dbHelper.insertCentroMedico(centro2781);
+    await dbCRUD.insertCentroMedico(centro2781);
     print("CENTRO 2781 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2782
@@ -41734,7 +41734,7 @@ void main() async {
     );
 
     // Inserta centro 2782 en la base de datos
-    await dbHelper.insertCentroMedico(centro2782);
+    await dbCRUD.insertCentroMedico(centro2782);
     print("CENTRO 2782 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2783
@@ -41749,7 +41749,7 @@ void main() async {
     );
 
     // Inserta centro 2783 en la base de datos
-    await dbHelper.insertCentroMedico(centro2783);
+    await dbCRUD.insertCentroMedico(centro2783);
     print("CENTRO 2783 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2784
@@ -41764,7 +41764,7 @@ void main() async {
     );
 
     // Inserta centro 2784 en la base de datos
-    await dbHelper.insertCentroMedico(centro2784);
+    await dbCRUD.insertCentroMedico(centro2784);
     print("CENTRO 2784 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2785
@@ -41779,7 +41779,7 @@ void main() async {
     );
 
     // Inserta centro 2785 en la base de datos
-    await dbHelper.insertCentroMedico(centro2785);
+    await dbCRUD.insertCentroMedico(centro2785);
     print("CENTRO 2785 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2786
@@ -41794,7 +41794,7 @@ void main() async {
     );
 
     // Inserta centro 2786 en la base de datos
-    await dbHelper.insertCentroMedico(centro2786);
+    await dbCRUD.insertCentroMedico(centro2786);
     print("CENTRO 2786 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2787
@@ -41809,7 +41809,7 @@ void main() async {
     );
 
     // Inserta centro 2787 en la base de datos
-    await dbHelper.insertCentroMedico(centro2787);
+    await dbCRUD.insertCentroMedico(centro2787);
     print("CENTRO 2787 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2788
@@ -41824,7 +41824,7 @@ void main() async {
     );
 
     // Inserta centro 2788 en la base de datos
-    await dbHelper.insertCentroMedico(centro2788);
+    await dbCRUD.insertCentroMedico(centro2788);
     print("CENTRO 2788 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2789
@@ -41839,7 +41839,7 @@ void main() async {
     );
 
     // Inserta centro 2789 en la base de datos
-    await dbHelper.insertCentroMedico(centro2789);
+    await dbCRUD.insertCentroMedico(centro2789);
     print("CENTRO 2789 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2790
@@ -41854,7 +41854,7 @@ void main() async {
     );
 
     // Inserta centro 2790 en la base de datos
-    await dbHelper.insertCentroMedico(centro2790);
+    await dbCRUD.insertCentroMedico(centro2790);
     print("CENTRO 2790 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2791
@@ -41869,7 +41869,7 @@ void main() async {
     );
 
     // Inserta centro 2791 en la base de datos
-    await dbHelper.insertCentroMedico(centro2791);
+    await dbCRUD.insertCentroMedico(centro2791);
     print("CENTRO 2791 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2792
@@ -41884,7 +41884,7 @@ void main() async {
     );
 
     // Inserta centro 2792 en la base de datos
-    await dbHelper.insertCentroMedico(centro2792);
+    await dbCRUD.insertCentroMedico(centro2792);
     print("CENTRO 2792 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2793
@@ -41899,7 +41899,7 @@ void main() async {
     );
 
     // Inserta centro 2793 en la base de datos
-    await dbHelper.insertCentroMedico(centro2793);
+    await dbCRUD.insertCentroMedico(centro2793);
     print("CENTRO 2793 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2794
@@ -41914,7 +41914,7 @@ void main() async {
     );
 
     // Inserta centro 2794 en la base de datos
-    await dbHelper.insertCentroMedico(centro2794);
+    await dbCRUD.insertCentroMedico(centro2794);
     print("CENTRO 2794 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2795
@@ -41929,7 +41929,7 @@ void main() async {
     );
 
     // Inserta centro 2795 en la base de datos
-    await dbHelper.insertCentroMedico(centro2795);
+    await dbCRUD.insertCentroMedico(centro2795);
     print("CENTRO 2795 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2796
@@ -41944,7 +41944,7 @@ void main() async {
     );
 
     // Inserta centro 2796 en la base de datos
-    await dbHelper.insertCentroMedico(centro2796);
+    await dbCRUD.insertCentroMedico(centro2796);
     print("CENTRO 2796 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2797
@@ -41959,7 +41959,7 @@ void main() async {
     );
 
     // Inserta centro 2797 en la base de datos
-    await dbHelper.insertCentroMedico(centro2797);
+    await dbCRUD.insertCentroMedico(centro2797);
     print("CENTRO 2797 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2798
@@ -41974,7 +41974,7 @@ void main() async {
     );
 
     // Inserta centro 2798 en la base de datos
-    await dbHelper.insertCentroMedico(centro2798);
+    await dbCRUD.insertCentroMedico(centro2798);
     print("CENTRO 2798 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2799
@@ -41989,7 +41989,7 @@ void main() async {
     );
 
     // Inserta centro 2799 en la base de datos
-    await dbHelper.insertCentroMedico(centro2799);
+    await dbCRUD.insertCentroMedico(centro2799);
     print("CENTRO 2799 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2800
@@ -42004,7 +42004,7 @@ void main() async {
     );
 
     // Inserta centro 2800 en la base de datos
-    await dbHelper.insertCentroMedico(centro2800);
+    await dbCRUD.insertCentroMedico(centro2800);
     print("CENTRO 2800 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2801
@@ -42019,7 +42019,7 @@ void main() async {
     );
 
     // Inserta centro 2801 en la base de datos
-    await dbHelper.insertCentroMedico(centro2801);
+    await dbCRUD.insertCentroMedico(centro2801);
     print("CENTRO 2801 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2802
@@ -42034,7 +42034,7 @@ void main() async {
     );
 
     // Inserta centro 2802 en la base de datos
-    await dbHelper.insertCentroMedico(centro2802);
+    await dbCRUD.insertCentroMedico(centro2802);
     print("CENTRO 2802 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2803
@@ -42049,7 +42049,7 @@ void main() async {
     );
 
     // Inserta centro 2803 en la base de datos
-    await dbHelper.insertCentroMedico(centro2803);
+    await dbCRUD.insertCentroMedico(centro2803);
     print("CENTRO 2803 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2804
@@ -42064,7 +42064,7 @@ void main() async {
     );
 
     // Inserta centro 2804 en la base de datos
-    await dbHelper.insertCentroMedico(centro2804);
+    await dbCRUD.insertCentroMedico(centro2804);
     print("CENTRO 2804 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2805
@@ -42079,7 +42079,7 @@ void main() async {
     );
 
     // Inserta centro 2805 en la base de datos
-    await dbHelper.insertCentroMedico(centro2805);
+    await dbCRUD.insertCentroMedico(centro2805);
     print("CENTRO 2805 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2806
@@ -42094,7 +42094,7 @@ void main() async {
     );
 
     // Inserta centro 2806 en la base de datos
-    await dbHelper.insertCentroMedico(centro2806);
+    await dbCRUD.insertCentroMedico(centro2806);
     print("CENTRO 2806 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2807
@@ -42109,7 +42109,7 @@ void main() async {
     );
 
     // Inserta centro 2807 en la base de datos
-    await dbHelper.insertCentroMedico(centro2807);
+    await dbCRUD.insertCentroMedico(centro2807);
     print("CENTRO 2807 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2808
@@ -42124,7 +42124,7 @@ void main() async {
     );
 
     // Inserta centro 2808 en la base de datos
-    await dbHelper.insertCentroMedico(centro2808);
+    await dbCRUD.insertCentroMedico(centro2808);
     print("CENTRO 2808 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2809
@@ -42139,7 +42139,7 @@ void main() async {
     );
 
     // Inserta centro 2809 en la base de datos
-    await dbHelper.insertCentroMedico(centro2809);
+    await dbCRUD.insertCentroMedico(centro2809);
     print("CENTRO 2809 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2810
@@ -42154,7 +42154,7 @@ void main() async {
     );
 
     // Inserta centro 2810 en la base de datos
-    await dbHelper.insertCentroMedico(centro2810);
+    await dbCRUD.insertCentroMedico(centro2810);
     print("CENTRO 2810 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2811
@@ -42169,7 +42169,7 @@ void main() async {
     );
 
     // Inserta centro 2811 en la base de datos
-    await dbHelper.insertCentroMedico(centro2811);
+    await dbCRUD.insertCentroMedico(centro2811);
     print("CENTRO 2811 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2812
@@ -42184,7 +42184,7 @@ void main() async {
     );
 
     // Inserta centro 2812 en la base de datos
-    await dbHelper.insertCentroMedico(centro2812);
+    await dbCRUD.insertCentroMedico(centro2812);
     print("CENTRO 2812 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2813
@@ -42199,7 +42199,7 @@ void main() async {
     );
 
     // Inserta centro 2813 en la base de datos
-    await dbHelper.insertCentroMedico(centro2813);
+    await dbCRUD.insertCentroMedico(centro2813);
     print("CENTRO 2813 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2814
@@ -42214,7 +42214,7 @@ void main() async {
     );
 
     // Inserta centro 2814 en la base de datos
-    await dbHelper.insertCentroMedico(centro2814);
+    await dbCRUD.insertCentroMedico(centro2814);
     print("CENTRO 2814 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2815
@@ -42229,7 +42229,7 @@ void main() async {
     );
 
     // Inserta centro 2815 en la base de datos
-    await dbHelper.insertCentroMedico(centro2815);
+    await dbCRUD.insertCentroMedico(centro2815);
     print("CENTRO 2815 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2816
@@ -42244,7 +42244,7 @@ void main() async {
     );
 
     // Inserta centro 2816 en la base de datos
-    await dbHelper.insertCentroMedico(centro2816);
+    await dbCRUD.insertCentroMedico(centro2816);
     print("CENTRO 2816 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2817
@@ -42259,7 +42259,7 @@ void main() async {
     );
 
     // Inserta centro 2817 en la base de datos
-    await dbHelper.insertCentroMedico(centro2817);
+    await dbCRUD.insertCentroMedico(centro2817);
     print("CENTRO 2817 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2818
@@ -42274,7 +42274,7 @@ void main() async {
     );
 
     // Inserta centro 2818 en la base de datos
-    await dbHelper.insertCentroMedico(centro2818);
+    await dbCRUD.insertCentroMedico(centro2818);
     print("CENTRO 2818 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2819
@@ -42289,7 +42289,7 @@ void main() async {
     );
 
     // Inserta centro 2819 en la base de datos
-    await dbHelper.insertCentroMedico(centro2819);
+    await dbCRUD.insertCentroMedico(centro2819);
     print("CENTRO 2819 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2820
@@ -42304,7 +42304,7 @@ void main() async {
     );
 
     // Inserta centro 2820 en la base de datos
-    await dbHelper.insertCentroMedico(centro2820);
+    await dbCRUD.insertCentroMedico(centro2820);
     print("CENTRO 2820 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2821
@@ -42319,7 +42319,7 @@ void main() async {
     );
 
     // Inserta centro 2821 en la base de datos
-    await dbHelper.insertCentroMedico(centro2821);
+    await dbCRUD.insertCentroMedico(centro2821);
     print("CENTRO 2821 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2822
@@ -42334,7 +42334,7 @@ void main() async {
     );
 
     // Inserta centro 2822 en la base de datos
-    await dbHelper.insertCentroMedico(centro2822);
+    await dbCRUD.insertCentroMedico(centro2822);
     print("CENTRO 2822 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2823
@@ -42349,7 +42349,7 @@ void main() async {
     );
 
     // Inserta centro 2823 en la base de datos
-    await dbHelper.insertCentroMedico(centro2823);
+    await dbCRUD.insertCentroMedico(centro2823);
     print("CENTRO 2823 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2824
@@ -42364,7 +42364,7 @@ void main() async {
     );
 
     // Inserta centro 2824 en la base de datos
-    await dbHelper.insertCentroMedico(centro2824);
+    await dbCRUD.insertCentroMedico(centro2824);
     print("CENTRO 2824 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2825
@@ -42379,7 +42379,7 @@ void main() async {
     );
 
     // Inserta centro 2825 en la base de datos
-    await dbHelper.insertCentroMedico(centro2825);
+    await dbCRUD.insertCentroMedico(centro2825);
     print("CENTRO 2825 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2826
@@ -42394,7 +42394,7 @@ void main() async {
     );
 
     // Inserta centro 2826 en la base de datos
-    await dbHelper.insertCentroMedico(centro2826);
+    await dbCRUD.insertCentroMedico(centro2826);
     print("CENTRO 2826 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2827
@@ -42409,7 +42409,7 @@ void main() async {
     );
 
     // Inserta centro 2827 en la base de datos
-    await dbHelper.insertCentroMedico(centro2827);
+    await dbCRUD.insertCentroMedico(centro2827);
     print("CENTRO 2827 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2828
@@ -42424,7 +42424,7 @@ void main() async {
     );
 
     // Inserta centro 2828 en la base de datos
-    await dbHelper.insertCentroMedico(centro2828);
+    await dbCRUD.insertCentroMedico(centro2828);
     print("CENTRO 2828 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2829
@@ -42439,7 +42439,7 @@ void main() async {
     );
 
     // Inserta centro 2829 en la base de datos
-    await dbHelper.insertCentroMedico(centro2829);
+    await dbCRUD.insertCentroMedico(centro2829);
     print("CENTRO 2829 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2830
@@ -42454,7 +42454,7 @@ void main() async {
     );
 
     // Inserta centro 2830 en la base de datos
-    await dbHelper.insertCentroMedico(centro2830);
+    await dbCRUD.insertCentroMedico(centro2830);
     print("CENTRO 2830 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2831
@@ -42469,7 +42469,7 @@ void main() async {
     );
 
     // Inserta centro 2831 en la base de datos
-    await dbHelper.insertCentroMedico(centro2831);
+    await dbCRUD.insertCentroMedico(centro2831);
     print("CENTRO 2831 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2832
@@ -42484,7 +42484,7 @@ void main() async {
     );
 
     // Inserta centro 2832 en la base de datos
-    await dbHelper.insertCentroMedico(centro2832);
+    await dbCRUD.insertCentroMedico(centro2832);
     print("CENTRO 2832 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2833
@@ -42499,7 +42499,7 @@ void main() async {
     );
 
     // Inserta centro 2833 en la base de datos
-    await dbHelper.insertCentroMedico(centro2833);
+    await dbCRUD.insertCentroMedico(centro2833);
     print("CENTRO 2833 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2834
@@ -42514,7 +42514,7 @@ void main() async {
     );
 
     // Inserta centro 2834 en la base de datos
-    await dbHelper.insertCentroMedico(centro2834);
+    await dbCRUD.insertCentroMedico(centro2834);
     print("CENTRO 2834 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2835
@@ -42529,7 +42529,7 @@ void main() async {
     );
 
     // Inserta centro 2835 en la base de datos
-    await dbHelper.insertCentroMedico(centro2835);
+    await dbCRUD.insertCentroMedico(centro2835);
     print("CENTRO 2835 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2836
@@ -42544,7 +42544,7 @@ void main() async {
     );
 
     // Inserta centro 2836 en la base de datos
-    await dbHelper.insertCentroMedico(centro2836);
+    await dbCRUD.insertCentroMedico(centro2836);
     print("CENTRO 2836 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2837
@@ -42559,7 +42559,7 @@ void main() async {
     );
 
     // Inserta centro 2837 en la base de datos
-    await dbHelper.insertCentroMedico(centro2837);
+    await dbCRUD.insertCentroMedico(centro2837);
     print("CENTRO 2837 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2838
@@ -42574,7 +42574,7 @@ void main() async {
     );
 
     // Inserta centro 2838 en la base de datos
-    await dbHelper.insertCentroMedico(centro2838);
+    await dbCRUD.insertCentroMedico(centro2838);
     print("CENTRO 2838 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2839
@@ -42589,7 +42589,7 @@ void main() async {
     );
 
     // Inserta centro 2839 en la base de datos
-    await dbHelper.insertCentroMedico(centro2839);
+    await dbCRUD.insertCentroMedico(centro2839);
     print("CENTRO 2839 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2840
@@ -42604,7 +42604,7 @@ void main() async {
     );
 
     // Inserta centro 2840 en la base de datos
-    await dbHelper.insertCentroMedico(centro2840);
+    await dbCRUD.insertCentroMedico(centro2840);
     print("CENTRO 2840 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2841
@@ -42619,7 +42619,7 @@ void main() async {
     );
 
     // Inserta centro 2841 en la base de datos
-    await dbHelper.insertCentroMedico(centro2841);
+    await dbCRUD.insertCentroMedico(centro2841);
     print("CENTRO 2841 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2842
@@ -42634,7 +42634,7 @@ void main() async {
     );
 
     // Inserta centro 2842 en la base de datos
-    await dbHelper.insertCentroMedico(centro2842);
+    await dbCRUD.insertCentroMedico(centro2842);
     print("CENTRO 2842 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2843
@@ -42649,7 +42649,7 @@ void main() async {
     );
 
     // Inserta centro 2843 en la base de datos
-    await dbHelper.insertCentroMedico(centro2843);
+    await dbCRUD.insertCentroMedico(centro2843);
     print("CENTRO 2843 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2844
@@ -42664,7 +42664,7 @@ void main() async {
     );
 
     // Inserta centro 2844 en la base de datos
-    await dbHelper.insertCentroMedico(centro2844);
+    await dbCRUD.insertCentroMedico(centro2844);
     print("CENTRO 2844 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2845
@@ -42679,7 +42679,7 @@ void main() async {
     );
 
     // Inserta centro 2845 en la base de datos
-    await dbHelper.insertCentroMedico(centro2845);
+    await dbCRUD.insertCentroMedico(centro2845);
     print("CENTRO 2845 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2846
@@ -42694,7 +42694,7 @@ void main() async {
     );
 
     // Inserta centro 2846 en la base de datos
-    await dbHelper.insertCentroMedico(centro2846);
+    await dbCRUD.insertCentroMedico(centro2846);
     print("CENTRO 2846 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2847
@@ -42709,7 +42709,7 @@ void main() async {
     );
 
     // Inserta centro 2847 en la base de datos
-    await dbHelper.insertCentroMedico(centro2847);
+    await dbCRUD.insertCentroMedico(centro2847);
     print("CENTRO 2847 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2848
@@ -42724,7 +42724,7 @@ void main() async {
     );
 
     // Inserta centro 2848 en la base de datos
-    await dbHelper.insertCentroMedico(centro2848);
+    await dbCRUD.insertCentroMedico(centro2848);
     print("CENTRO 2848 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2849
@@ -42739,7 +42739,7 @@ void main() async {
     );
 
     // Inserta centro 2849 en la base de datos
-    await dbHelper.insertCentroMedico(centro2849);
+    await dbCRUD.insertCentroMedico(centro2849);
     print("CENTRO 2849 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2850
@@ -42754,7 +42754,7 @@ void main() async {
     );
 
     // Inserta centro 2850 en la base de datos
-    await dbHelper.insertCentroMedico(centro2850);
+    await dbCRUD.insertCentroMedico(centro2850);
     print("CENTRO 2850 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2851
@@ -42769,7 +42769,7 @@ void main() async {
     );
 
     // Inserta centro 2851 en la base de datos
-    await dbHelper.insertCentroMedico(centro2851);
+    await dbCRUD.insertCentroMedico(centro2851);
     print("CENTRO 2851 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2852
@@ -42784,7 +42784,7 @@ void main() async {
     );
 
     // Inserta centro 2852 en la base de datos
-    await dbHelper.insertCentroMedico(centro2852);
+    await dbCRUD.insertCentroMedico(centro2852);
     print("CENTRO 2852 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2853
@@ -42799,7 +42799,7 @@ void main() async {
     );
 
     // Inserta centro 2853 en la base de datos
-    await dbHelper.insertCentroMedico(centro2853);
+    await dbCRUD.insertCentroMedico(centro2853);
     print("CENTRO 2853 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2854
@@ -42814,7 +42814,7 @@ void main() async {
     );
 
     // Inserta centro 2854 en la base de datos
-    await dbHelper.insertCentroMedico(centro2854);
+    await dbCRUD.insertCentroMedico(centro2854);
     print("CENTRO 2854 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2855
@@ -42829,7 +42829,7 @@ void main() async {
     );
 
     // Inserta centro 2855 en la base de datos
-    await dbHelper.insertCentroMedico(centro2855);
+    await dbCRUD.insertCentroMedico(centro2855);
     print("CENTRO 2855 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2856
@@ -42844,7 +42844,7 @@ void main() async {
     );
 
     // Inserta centro 2856 en la base de datos
-    await dbHelper.insertCentroMedico(centro2856);
+    await dbCRUD.insertCentroMedico(centro2856);
     print("CENTRO 2856 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2857
@@ -42859,7 +42859,7 @@ void main() async {
     );
 
     // Inserta centro 2857 en la base de datos
-    await dbHelper.insertCentroMedico(centro2857);
+    await dbCRUD.insertCentroMedico(centro2857);
     print("CENTRO 2857 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2858
@@ -42874,7 +42874,7 @@ void main() async {
     );
 
     // Inserta centro 2858 en la base de datos
-    await dbHelper.insertCentroMedico(centro2858);
+    await dbCRUD.insertCentroMedico(centro2858);
     print("CENTRO 2858 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2859
@@ -42889,7 +42889,7 @@ void main() async {
     );
 
     // Inserta centro 2859 en la base de datos
-    await dbHelper.insertCentroMedico(centro2859);
+    await dbCRUD.insertCentroMedico(centro2859);
     print("CENTRO 2859 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2860
@@ -42904,7 +42904,7 @@ void main() async {
     );
 
     // Inserta centro 2860 en la base de datos
-    await dbHelper.insertCentroMedico(centro2860);
+    await dbCRUD.insertCentroMedico(centro2860);
     print("CENTRO 2860 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2861
@@ -42919,7 +42919,7 @@ void main() async {
     );
 
     // Inserta centro 2861 en la base de datos
-    await dbHelper.insertCentroMedico(centro2861);
+    await dbCRUD.insertCentroMedico(centro2861);
     print("CENTRO 2861 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2862
@@ -42934,7 +42934,7 @@ void main() async {
     );
 
     // Inserta centro 2862 en la base de datos
-    await dbHelper.insertCentroMedico(centro2862);
+    await dbCRUD.insertCentroMedico(centro2862);
     print("CENTRO 2862 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2863
@@ -42949,7 +42949,7 @@ void main() async {
     );
 
     // Inserta centro 2863 en la base de datos
-    await dbHelper.insertCentroMedico(centro2863);
+    await dbCRUD.insertCentroMedico(centro2863);
     print("CENTRO 2863 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2864
@@ -42964,7 +42964,7 @@ void main() async {
     );
 
     // Inserta centro 2864 en la base de datos
-    await dbHelper.insertCentroMedico(centro2864);
+    await dbCRUD.insertCentroMedico(centro2864);
     print("CENTRO 2864 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2865
@@ -42979,7 +42979,7 @@ void main() async {
     );
 
     // Inserta centro 2865 en la base de datos
-    await dbHelper.insertCentroMedico(centro2865);
+    await dbCRUD.insertCentroMedico(centro2865);
     print("CENTRO 2865 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2866
@@ -42994,7 +42994,7 @@ void main() async {
     );
 
     // Inserta centro 2866 en la base de datos
-    await dbHelper.insertCentroMedico(centro2866);
+    await dbCRUD.insertCentroMedico(centro2866);
     print("CENTRO 2866 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2867
@@ -43009,7 +43009,7 @@ void main() async {
     );
 
     // Inserta centro 2867 en la base de datos
-    await dbHelper.insertCentroMedico(centro2867);
+    await dbCRUD.insertCentroMedico(centro2867);
     print("CENTRO 2867 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2868
@@ -43024,7 +43024,7 @@ void main() async {
     );
 
     // Inserta centro 2868 en la base de datos
-    await dbHelper.insertCentroMedico(centro2868);
+    await dbCRUD.insertCentroMedico(centro2868);
     print("CENTRO 2868 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2869
@@ -43039,7 +43039,7 @@ void main() async {
     );
 
     // Inserta centro 2869 en la base de datos
-    await dbHelper.insertCentroMedico(centro2869);
+    await dbCRUD.insertCentroMedico(centro2869);
     print("CENTRO 2869 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2870
@@ -43054,7 +43054,7 @@ void main() async {
     );
 
     // Inserta centro 2870 en la base de datos
-    await dbHelper.insertCentroMedico(centro2870);
+    await dbCRUD.insertCentroMedico(centro2870);
     print("CENTRO 2870 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2871
@@ -43069,7 +43069,7 @@ void main() async {
     );
 
     // Inserta centro 2871 en la base de datos
-    await dbHelper.insertCentroMedico(centro2871);
+    await dbCRUD.insertCentroMedico(centro2871);
     print("CENTRO 2871 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2872
@@ -43084,7 +43084,7 @@ void main() async {
     );
 
     // Inserta centro 2872 en la base de datos
-    await dbHelper.insertCentroMedico(centro2872);
+    await dbCRUD.insertCentroMedico(centro2872);
     print("CENTRO 2872 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2873
@@ -43099,7 +43099,7 @@ void main() async {
     );
 
     // Inserta centro 2873 en la base de datos
-    await dbHelper.insertCentroMedico(centro2873);
+    await dbCRUD.insertCentroMedico(centro2873);
     print("CENTRO 2873 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2874
@@ -43114,7 +43114,7 @@ void main() async {
     );
 
     // Inserta centro 2874 en la base de datos
-    await dbHelper.insertCentroMedico(centro2874);
+    await dbCRUD.insertCentroMedico(centro2874);
     print("CENTRO 2874 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2875
@@ -43129,7 +43129,7 @@ void main() async {
     );
 
     // Inserta centro 2875 en la base de datos
-    await dbHelper.insertCentroMedico(centro2875);
+    await dbCRUD.insertCentroMedico(centro2875);
     print("CENTRO 2875 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2876
@@ -43144,7 +43144,7 @@ void main() async {
     );
 
     // Inserta centro 2876 en la base de datos
-    await dbHelper.insertCentroMedico(centro2876);
+    await dbCRUD.insertCentroMedico(centro2876);
     print("CENTRO 2876 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2877
@@ -43159,7 +43159,7 @@ void main() async {
     );
 
     // Inserta centro 2877 en la base de datos
-    await dbHelper.insertCentroMedico(centro2877);
+    await dbCRUD.insertCentroMedico(centro2877);
     print("CENTRO 2877 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2878
@@ -43174,7 +43174,7 @@ void main() async {
     );
 
     // Inserta centro 2878 en la base de datos
-    await dbHelper.insertCentroMedico(centro2878);
+    await dbCRUD.insertCentroMedico(centro2878);
     print("CENTRO 2878 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2879
@@ -43189,7 +43189,7 @@ void main() async {
     );
 
     // Inserta centro 2879 en la base de datos
-    await dbHelper.insertCentroMedico(centro2879);
+    await dbCRUD.insertCentroMedico(centro2879);
     print("CENTRO 2879 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2880
@@ -43204,7 +43204,7 @@ void main() async {
     );
 
     // Inserta centro 2880 en la base de datos
-    await dbHelper.insertCentroMedico(centro2880);
+    await dbCRUD.insertCentroMedico(centro2880);
     print("CENTRO 2880 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2881
@@ -43219,7 +43219,7 @@ void main() async {
     );
 
     // Inserta centro 2881 en la base de datos
-    await dbHelper.insertCentroMedico(centro2881);
+    await dbCRUD.insertCentroMedico(centro2881);
     print("CENTRO 2881 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2882
@@ -43234,7 +43234,7 @@ void main() async {
     );
 
     // Inserta centro 2882 en la base de datos
-    await dbHelper.insertCentroMedico(centro2882);
+    await dbCRUD.insertCentroMedico(centro2882);
     print("CENTRO 2882 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2883
@@ -43249,7 +43249,7 @@ void main() async {
     );
 
     // Inserta centro 2883 en la base de datos
-    await dbHelper.insertCentroMedico(centro2883);
+    await dbCRUD.insertCentroMedico(centro2883);
     print("CENTRO 2883 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2884
@@ -43264,7 +43264,7 @@ void main() async {
     );
 
     // Inserta centro 2884 en la base de datos
-    await dbHelper.insertCentroMedico(centro2884);
+    await dbCRUD.insertCentroMedico(centro2884);
     print("CENTRO 2884 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2885
@@ -43279,7 +43279,7 @@ void main() async {
     );
 
     // Inserta centro 2885 en la base de datos
-    await dbHelper.insertCentroMedico(centro2885);
+    await dbCRUD.insertCentroMedico(centro2885);
     print("CENTRO 2885 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2886
@@ -43294,7 +43294,7 @@ void main() async {
     );
 
     // Inserta centro 2886 en la base de datos
-    await dbHelper.insertCentroMedico(centro2886);
+    await dbCRUD.insertCentroMedico(centro2886);
     print("CENTRO 2886 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2887
@@ -43309,7 +43309,7 @@ void main() async {
     );
 
     // Inserta centro 2887 en la base de datos
-    await dbHelper.insertCentroMedico(centro2887);
+    await dbCRUD.insertCentroMedico(centro2887);
     print("CENTRO 2887 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2888
@@ -43324,7 +43324,7 @@ void main() async {
     );
 
     // Inserta centro 2888 en la base de datos
-    await dbHelper.insertCentroMedico(centro2888);
+    await dbCRUD.insertCentroMedico(centro2888);
     print("CENTRO 2888 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2889
@@ -43339,7 +43339,7 @@ void main() async {
     );
 
     // Inserta centro 2889 en la base de datos
-    await dbHelper.insertCentroMedico(centro2889);
+    await dbCRUD.insertCentroMedico(centro2889);
     print("CENTRO 2889 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2890
@@ -43354,7 +43354,7 @@ void main() async {
     );
 
     // Inserta centro 2890 en la base de datos
-    await dbHelper.insertCentroMedico(centro2890);
+    await dbCRUD.insertCentroMedico(centro2890);
     print("CENTRO 2890 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2891
@@ -43369,7 +43369,7 @@ void main() async {
     );
 
     // Inserta centro 2891 en la base de datos
-    await dbHelper.insertCentroMedico(centro2891);
+    await dbCRUD.insertCentroMedico(centro2891);
     print("CENTRO 2891 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2892
@@ -43384,7 +43384,7 @@ void main() async {
     );
 
     // Inserta centro 2892 en la base de datos
-    await dbHelper.insertCentroMedico(centro2892);
+    await dbCRUD.insertCentroMedico(centro2892);
     print("CENTRO 2892 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2893
@@ -43399,7 +43399,7 @@ void main() async {
     );
 
     // Inserta centro 2893 en la base de datos
-    await dbHelper.insertCentroMedico(centro2893);
+    await dbCRUD.insertCentroMedico(centro2893);
     print("CENTRO 2893 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2894
@@ -43414,7 +43414,7 @@ void main() async {
     );
 
     // Inserta centro 2894 en la base de datos
-    await dbHelper.insertCentroMedico(centro2894);
+    await dbCRUD.insertCentroMedico(centro2894);
     print("CENTRO 2894 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2895
@@ -43429,7 +43429,7 @@ void main() async {
     );
 
     // Inserta centro 2895 en la base de datos
-    await dbHelper.insertCentroMedico(centro2895);
+    await dbCRUD.insertCentroMedico(centro2895);
     print("CENTRO 2895 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2896
@@ -43444,7 +43444,7 @@ void main() async {
     );
 
     // Inserta centro 2896 en la base de datos
-    await dbHelper.insertCentroMedico(centro2896);
+    await dbCRUD.insertCentroMedico(centro2896);
     print("CENTRO 2896 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2897
@@ -43459,7 +43459,7 @@ void main() async {
     );
 
     // Inserta centro 2897 en la base de datos
-    await dbHelper.insertCentroMedico(centro2897);
+    await dbCRUD.insertCentroMedico(centro2897);
     print("CENTRO 2897 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2898
@@ -43474,7 +43474,7 @@ void main() async {
     );
 
     // Inserta centro 2898 en la base de datos
-    await dbHelper.insertCentroMedico(centro2898);
+    await dbCRUD.insertCentroMedico(centro2898);
     print("CENTRO 2898 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2899
@@ -43489,7 +43489,7 @@ void main() async {
     );
 
     // Inserta centro 2899 en la base de datos
-    await dbHelper.insertCentroMedico(centro2899);
+    await dbCRUD.insertCentroMedico(centro2899);
     print("CENTRO 2899 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2900
@@ -43504,7 +43504,7 @@ void main() async {
     );
 
     // Inserta centro 2900 en la base de datos
-    await dbHelper.insertCentroMedico(centro2900);
+    await dbCRUD.insertCentroMedico(centro2900);
     print("CENTRO 2900 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2901
@@ -43519,7 +43519,7 @@ void main() async {
     );
 
     // Inserta centro 2901 en la base de datos
-    await dbHelper.insertCentroMedico(centro2901);
+    await dbCRUD.insertCentroMedico(centro2901);
     print("CENTRO 2901 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2902
@@ -43534,7 +43534,7 @@ void main() async {
     );
 
     // Inserta centro 2902 en la base de datos
-    await dbHelper.insertCentroMedico(centro2902);
+    await dbCRUD.insertCentroMedico(centro2902);
     print("CENTRO 2902 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2903
@@ -43549,7 +43549,7 @@ void main() async {
     );
 
     // Inserta centro 2903 en la base de datos
-    await dbHelper.insertCentroMedico(centro2903);
+    await dbCRUD.insertCentroMedico(centro2903);
     print("CENTRO 2903 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2904
@@ -43564,7 +43564,7 @@ void main() async {
     );
 
     // Inserta centro 2904 en la base de datos
-    await dbHelper.insertCentroMedico(centro2904);
+    await dbCRUD.insertCentroMedico(centro2904);
     print("CENTRO 2904 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2905
@@ -43579,7 +43579,7 @@ void main() async {
     );
 
     // Inserta centro 2905 en la base de datos
-    await dbHelper.insertCentroMedico(centro2905);
+    await dbCRUD.insertCentroMedico(centro2905);
     print("CENTRO 2905 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2906
@@ -43594,7 +43594,7 @@ void main() async {
     );
 
     // Inserta centro 2906 en la base de datos
-    await dbHelper.insertCentroMedico(centro2906);
+    await dbCRUD.insertCentroMedico(centro2906);
     print("CENTRO 2906 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2907
@@ -43609,7 +43609,7 @@ void main() async {
     );
 
     // Inserta centro 2907 en la base de datos
-    await dbHelper.insertCentroMedico(centro2907);
+    await dbCRUD.insertCentroMedico(centro2907);
     print("CENTRO 2907 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2908
@@ -43624,7 +43624,7 @@ void main() async {
     );
 
     // Inserta centro 2908 en la base de datos
-    await dbHelper.insertCentroMedico(centro2908);
+    await dbCRUD.insertCentroMedico(centro2908);
     print("CENTRO 2908 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2909
@@ -43639,7 +43639,7 @@ void main() async {
     );
 
     // Inserta centro 2909 en la base de datos
-    await dbHelper.insertCentroMedico(centro2909);
+    await dbCRUD.insertCentroMedico(centro2909);
     print("CENTRO 2909 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2910
@@ -43654,7 +43654,7 @@ void main() async {
     );
 
     // Inserta centro 2910 en la base de datos
-    await dbHelper.insertCentroMedico(centro2910);
+    await dbCRUD.insertCentroMedico(centro2910);
     print("CENTRO 2910 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2911
@@ -43669,7 +43669,7 @@ void main() async {
     );
 
     // Inserta centro 2911 en la base de datos
-    await dbHelper.insertCentroMedico(centro2911);
+    await dbCRUD.insertCentroMedico(centro2911);
     print("CENTRO 2911 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2912
@@ -43684,7 +43684,7 @@ void main() async {
     );
 
     // Inserta centro 2912 en la base de datos
-    await dbHelper.insertCentroMedico(centro2912);
+    await dbCRUD.insertCentroMedico(centro2912);
     print("CENTRO 2912 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2913
@@ -43699,7 +43699,7 @@ void main() async {
     );
 
     // Inserta centro 2913 en la base de datos
-    await dbHelper.insertCentroMedico(centro2913);
+    await dbCRUD.insertCentroMedico(centro2913);
     print("CENTRO 2913 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2914
@@ -43714,7 +43714,7 @@ void main() async {
     );
 
     // Inserta centro 2914 en la base de datos
-    await dbHelper.insertCentroMedico(centro2914);
+    await dbCRUD.insertCentroMedico(centro2914);
     print("CENTRO 2914 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2915
@@ -43729,7 +43729,7 @@ void main() async {
     );
 
     // Inserta centro 2915 en la base de datos
-    await dbHelper.insertCentroMedico(centro2915);
+    await dbCRUD.insertCentroMedico(centro2915);
     print("CENTRO 2915 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2916
@@ -43744,7 +43744,7 @@ void main() async {
     );
 
     // Inserta centro 2916 en la base de datos
-    await dbHelper.insertCentroMedico(centro2916);
+    await dbCRUD.insertCentroMedico(centro2916);
     print("CENTRO 2916 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2917
@@ -43759,7 +43759,7 @@ void main() async {
     );
 
     // Inserta centro 2917 en la base de datos
-    await dbHelper.insertCentroMedico(centro2917);
+    await dbCRUD.insertCentroMedico(centro2917);
     print("CENTRO 2917 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2918
@@ -43774,7 +43774,7 @@ void main() async {
     );
 
     // Inserta centro 2918 en la base de datos
-    await dbHelper.insertCentroMedico(centro2918);
+    await dbCRUD.insertCentroMedico(centro2918);
     print("CENTRO 2918 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2919
@@ -43789,7 +43789,7 @@ void main() async {
     );
 
     // Inserta centro 2919 en la base de datos
-    await dbHelper.insertCentroMedico(centro2919);
+    await dbCRUD.insertCentroMedico(centro2919);
     print("CENTRO 2919 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2920
@@ -43804,7 +43804,7 @@ void main() async {
     );
 
     // Inserta centro 2920 en la base de datos
-    await dbHelper.insertCentroMedico(centro2920);
+    await dbCRUD.insertCentroMedico(centro2920);
     print("CENTRO 2920 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2921
@@ -43819,7 +43819,7 @@ void main() async {
     );
 
     // Inserta centro 2921 en la base de datos
-    await dbHelper.insertCentroMedico(centro2921);
+    await dbCRUD.insertCentroMedico(centro2921);
     print("CENTRO 2921 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2922
@@ -43834,7 +43834,7 @@ void main() async {
     );
 
     // Inserta centro 2922 en la base de datos
-    await dbHelper.insertCentroMedico(centro2922);
+    await dbCRUD.insertCentroMedico(centro2922);
     print("CENTRO 2922 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2923
@@ -43849,7 +43849,7 @@ void main() async {
     );
 
     // Inserta centro 2923 en la base de datos
-    await dbHelper.insertCentroMedico(centro2923);
+    await dbCRUD.insertCentroMedico(centro2923);
     print("CENTRO 2923 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2924
@@ -43864,7 +43864,7 @@ void main() async {
     );
 
     // Inserta centro 2924 en la base de datos
-    await dbHelper.insertCentroMedico(centro2924);
+    await dbCRUD.insertCentroMedico(centro2924);
     print("CENTRO 2924 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2925
@@ -43879,7 +43879,7 @@ void main() async {
     );
 
     // Inserta centro 2925 en la base de datos
-    await dbHelper.insertCentroMedico(centro2925);
+    await dbCRUD.insertCentroMedico(centro2925);
     print("CENTRO 2925 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2926
@@ -43894,7 +43894,7 @@ void main() async {
     );
 
     // Inserta centro 2926 en la base de datos
-    await dbHelper.insertCentroMedico(centro2926);
+    await dbCRUD.insertCentroMedico(centro2926);
     print("CENTRO 2926 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2927
@@ -43909,7 +43909,7 @@ void main() async {
     );
 
     // Inserta centro 2927 en la base de datos
-    await dbHelper.insertCentroMedico(centro2927);
+    await dbCRUD.insertCentroMedico(centro2927);
     print("CENTRO 2927 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2928
@@ -43924,7 +43924,7 @@ void main() async {
     );
 
     // Inserta centro 2928 en la base de datos
-    await dbHelper.insertCentroMedico(centro2928);
+    await dbCRUD.insertCentroMedico(centro2928);
     print("CENTRO 2928 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2929
@@ -43939,7 +43939,7 @@ void main() async {
     );
 
     // Inserta centro 2929 en la base de datos
-    await dbHelper.insertCentroMedico(centro2929);
+    await dbCRUD.insertCentroMedico(centro2929);
     print("CENTRO 2929 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2930
@@ -43954,7 +43954,7 @@ void main() async {
     );
 
     // Inserta centro 2930 en la base de datos
-    await dbHelper.insertCentroMedico(centro2930);
+    await dbCRUD.insertCentroMedico(centro2930);
     print("CENTRO 2930 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2931
@@ -43969,7 +43969,7 @@ void main() async {
     );
 
     // Inserta centro 2931 en la base de datos
-    await dbHelper.insertCentroMedico(centro2931);
+    await dbCRUD.insertCentroMedico(centro2931);
     print("CENTRO 2931 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2932
@@ -43984,7 +43984,7 @@ void main() async {
     );
 
     // Inserta centro 2932 en la base de datos
-    await dbHelper.insertCentroMedico(centro2932);
+    await dbCRUD.insertCentroMedico(centro2932);
     print("CENTRO 2932 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2933
@@ -43999,7 +43999,7 @@ void main() async {
     );
 
     // Inserta centro 2933 en la base de datos
-    await dbHelper.insertCentroMedico(centro2933);
+    await dbCRUD.insertCentroMedico(centro2933);
     print("CENTRO 2933 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2934
@@ -44014,7 +44014,7 @@ void main() async {
     );
 
     // Inserta centro 2934 en la base de datos
-    await dbHelper.insertCentroMedico(centro2934);
+    await dbCRUD.insertCentroMedico(centro2934);
     print("CENTRO 2934 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2935
@@ -44029,7 +44029,7 @@ void main() async {
     );
 
     // Inserta centro 2935 en la base de datos
-    await dbHelper.insertCentroMedico(centro2935);
+    await dbCRUD.insertCentroMedico(centro2935);
     print("CENTRO 2935 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2936
@@ -44044,7 +44044,7 @@ void main() async {
     );
 
     // Inserta centro 2936 en la base de datos
-    await dbHelper.insertCentroMedico(centro2936);
+    await dbCRUD.insertCentroMedico(centro2936);
     print("CENTRO 2936 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2937
@@ -44059,7 +44059,7 @@ void main() async {
     );
 
     // Inserta centro 2937 en la base de datos
-    await dbHelper.insertCentroMedico(centro2937);
+    await dbCRUD.insertCentroMedico(centro2937);
     print("CENTRO 2937 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2938
@@ -44074,7 +44074,7 @@ void main() async {
     );
 
     // Inserta centro 2938 en la base de datos
-    await dbHelper.insertCentroMedico(centro2938);
+    await dbCRUD.insertCentroMedico(centro2938);
     print("CENTRO 2938 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2939
@@ -44089,7 +44089,7 @@ void main() async {
     );
 
     // Inserta centro 2939 en la base de datos
-    await dbHelper.insertCentroMedico(centro2939);
+    await dbCRUD.insertCentroMedico(centro2939);
     print("CENTRO 2939 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2940
@@ -44104,7 +44104,7 @@ void main() async {
     );
 
     // Inserta centro 2940 en la base de datos
-    await dbHelper.insertCentroMedico(centro2940);
+    await dbCRUD.insertCentroMedico(centro2940);
     print("CENTRO 2940 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2941
@@ -44119,7 +44119,7 @@ void main() async {
     );
 
     // Inserta centro 2941 en la base de datos
-    await dbHelper.insertCentroMedico(centro2941);
+    await dbCRUD.insertCentroMedico(centro2941);
     print("CENTRO 2941 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2942
@@ -44134,7 +44134,7 @@ void main() async {
     );
 
     // Inserta centro 2942 en la base de datos
-    await dbHelper.insertCentroMedico(centro2942);
+    await dbCRUD.insertCentroMedico(centro2942);
     print("CENTRO 2942 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2943
@@ -44149,7 +44149,7 @@ void main() async {
     );
 
     // Inserta centro 2943 en la base de datos
-    await dbHelper.insertCentroMedico(centro2943);
+    await dbCRUD.insertCentroMedico(centro2943);
     print("CENTRO 2943 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2944
@@ -44164,7 +44164,7 @@ void main() async {
     );
 
     // Inserta centro 2944 en la base de datos
-    await dbHelper.insertCentroMedico(centro2944);
+    await dbCRUD.insertCentroMedico(centro2944);
     print("CENTRO 2944 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2945
@@ -44179,7 +44179,7 @@ void main() async {
     );
 
     // Inserta centro 2945 en la base de datos
-    await dbHelper.insertCentroMedico(centro2945);
+    await dbCRUD.insertCentroMedico(centro2945);
     print("CENTRO 2945 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2946
@@ -44194,7 +44194,7 @@ void main() async {
     );
 
     // Inserta centro 2946 en la base de datos
-    await dbHelper.insertCentroMedico(centro2946);
+    await dbCRUD.insertCentroMedico(centro2946);
     print("CENTRO 2946 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2947
@@ -44209,7 +44209,7 @@ void main() async {
     );
 
     // Inserta centro 2947 en la base de datos
-    await dbHelper.insertCentroMedico(centro2947);
+    await dbCRUD.insertCentroMedico(centro2947);
     print("CENTRO 2947 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2948
@@ -44224,7 +44224,7 @@ void main() async {
     );
 
     // Inserta centro 2948 en la base de datos
-    await dbHelper.insertCentroMedico(centro2948);
+    await dbCRUD.insertCentroMedico(centro2948);
     print("CENTRO 2948 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2949
@@ -44239,7 +44239,7 @@ void main() async {
     );
 
     // Inserta centro 2949 en la base de datos
-    await dbHelper.insertCentroMedico(centro2949);
+    await dbCRUD.insertCentroMedico(centro2949);
     print("CENTRO 2949 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2950
@@ -44254,7 +44254,7 @@ void main() async {
     );
 
     // Inserta centro 2950 en la base de datos
-    await dbHelper.insertCentroMedico(centro2950);
+    await dbCRUD.insertCentroMedico(centro2950);
     print("CENTRO 2950 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2951
@@ -44269,7 +44269,7 @@ void main() async {
     );
 
     // Inserta centro 2951 en la base de datos
-    await dbHelper.insertCentroMedico(centro2951);
+    await dbCRUD.insertCentroMedico(centro2951);
     print("CENTRO 2951 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2952
@@ -44284,7 +44284,7 @@ void main() async {
     );
 
     // Inserta centro 2952 en la base de datos
-    await dbHelper.insertCentroMedico(centro2952);
+    await dbCRUD.insertCentroMedico(centro2952);
     print("CENTRO 2952 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2953
@@ -44299,7 +44299,7 @@ void main() async {
     );
 
     // Inserta centro 2953 en la base de datos
-    await dbHelper.insertCentroMedico(centro2953);
+    await dbCRUD.insertCentroMedico(centro2953);
     print("CENTRO 2953 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2954
@@ -44314,7 +44314,7 @@ void main() async {
     );
 
     // Inserta centro 2954 en la base de datos
-    await dbHelper.insertCentroMedico(centro2954);
+    await dbCRUD.insertCentroMedico(centro2954);
     print("CENTRO 2954 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2955
@@ -44329,7 +44329,7 @@ void main() async {
     );
 
     // Inserta centro 2955 en la base de datos
-    await dbHelper.insertCentroMedico(centro2955);
+    await dbCRUD.insertCentroMedico(centro2955);
     print("CENTRO 2955 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2956
@@ -44344,7 +44344,7 @@ void main() async {
     );
 
     // Inserta centro 2956 en la base de datos
-    await dbHelper.insertCentroMedico(centro2956);
+    await dbCRUD.insertCentroMedico(centro2956);
     print("CENTRO 2956 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2957
@@ -44359,7 +44359,7 @@ void main() async {
     );
 
     // Inserta centro 2957 en la base de datos
-    await dbHelper.insertCentroMedico(centro2957);
+    await dbCRUD.insertCentroMedico(centro2957);
     print("CENTRO 2957 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2958
@@ -44374,7 +44374,7 @@ void main() async {
     );
 
     // Inserta centro 2958 en la base de datos
-    await dbHelper.insertCentroMedico(centro2958);
+    await dbCRUD.insertCentroMedico(centro2958);
     print("CENTRO 2958 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2959
@@ -44389,7 +44389,7 @@ void main() async {
     );
 
     // Inserta centro 2959 en la base de datos
-    await dbHelper.insertCentroMedico(centro2959);
+    await dbCRUD.insertCentroMedico(centro2959);
     print("CENTRO 2959 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2960
@@ -44404,7 +44404,7 @@ void main() async {
     );
 
     // Inserta centro 2960 en la base de datos
-    await dbHelper.insertCentroMedico(centro2960);
+    await dbCRUD.insertCentroMedico(centro2960);
     print("CENTRO 2960 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2961
@@ -44419,7 +44419,7 @@ void main() async {
     );
 
     // Inserta centro 2961 en la base de datos
-    await dbHelper.insertCentroMedico(centro2961);
+    await dbCRUD.insertCentroMedico(centro2961);
     print("CENTRO 2961 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2962
@@ -44434,7 +44434,7 @@ void main() async {
     );
 
     // Inserta centro 2962 en la base de datos
-    await dbHelper.insertCentroMedico(centro2962);
+    await dbCRUD.insertCentroMedico(centro2962);
     print("CENTRO 2962 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2963
@@ -44449,7 +44449,7 @@ void main() async {
     );
 
     // Inserta centro 2963 en la base de datos
-    await dbHelper.insertCentroMedico(centro2963);
+    await dbCRUD.insertCentroMedico(centro2963);
     print("CENTRO 2963 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2964
@@ -44464,7 +44464,7 @@ void main() async {
     );
 
     // Inserta centro 2964 en la base de datos
-    await dbHelper.insertCentroMedico(centro2964);
+    await dbCRUD.insertCentroMedico(centro2964);
     print("CENTRO 2964 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2965
@@ -44479,7 +44479,7 @@ void main() async {
     );
 
     // Inserta centro 2965 en la base de datos
-    await dbHelper.insertCentroMedico(centro2965);
+    await dbCRUD.insertCentroMedico(centro2965);
     print("CENTRO 2965 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2966
@@ -44494,7 +44494,7 @@ void main() async {
     );
 
     // Inserta centro 2966 en la base de datos
-    await dbHelper.insertCentroMedico(centro2966);
+    await dbCRUD.insertCentroMedico(centro2966);
     print("CENTRO 2966 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2967
@@ -44509,7 +44509,7 @@ void main() async {
     );
 
     // Inserta centro 2967 en la base de datos
-    await dbHelper.insertCentroMedico(centro2967);
+    await dbCRUD.insertCentroMedico(centro2967);
     print("CENTRO 2967 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2968
@@ -44524,7 +44524,7 @@ void main() async {
     );
 
     // Inserta centro 2968 en la base de datos
-    await dbHelper.insertCentroMedico(centro2968);
+    await dbCRUD.insertCentroMedico(centro2968);
     print("CENTRO 2968 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2969
@@ -44539,7 +44539,7 @@ void main() async {
     );
 
     // Inserta centro 2969 en la base de datos
-    await dbHelper.insertCentroMedico(centro2969);
+    await dbCRUD.insertCentroMedico(centro2969);
     print("CENTRO 2969 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2970
@@ -44554,7 +44554,7 @@ void main() async {
     );
 
     // Inserta centro 2970 en la base de datos
-    await dbHelper.insertCentroMedico(centro2970);
+    await dbCRUD.insertCentroMedico(centro2970);
     print("CENTRO 2970 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2971
@@ -44569,7 +44569,7 @@ void main() async {
     );
 
     // Inserta centro 2971 en la base de datos
-    await dbHelper.insertCentroMedico(centro2971);
+    await dbCRUD.insertCentroMedico(centro2971);
     print("CENTRO 2971 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2972
@@ -44584,7 +44584,7 @@ void main() async {
     );
 
     // Inserta centro 2972 en la base de datos
-    await dbHelper.insertCentroMedico(centro2972);
+    await dbCRUD.insertCentroMedico(centro2972);
     print("CENTRO 2972 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2973
@@ -44599,7 +44599,7 @@ void main() async {
     );
 
     // Inserta centro 2973 en la base de datos
-    await dbHelper.insertCentroMedico(centro2973);
+    await dbCRUD.insertCentroMedico(centro2973);
     print("CENTRO 2973 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2974
@@ -44614,7 +44614,7 @@ void main() async {
     );
 
     // Inserta centro 2974 en la base de datos
-    await dbHelper.insertCentroMedico(centro2974);
+    await dbCRUD.insertCentroMedico(centro2974);
     print("CENTRO 2974 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2975
@@ -44629,7 +44629,7 @@ void main() async {
     );
 
     // Inserta centro 2975 en la base de datos
-    await dbHelper.insertCentroMedico(centro2975);
+    await dbCRUD.insertCentroMedico(centro2975);
     print("CENTRO 2975 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2976
@@ -44644,7 +44644,7 @@ void main() async {
     );
 
     // Inserta centro 2976 en la base de datos
-    await dbHelper.insertCentroMedico(centro2976);
+    await dbCRUD.insertCentroMedico(centro2976);
     print("CENTRO 2976 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2977
@@ -44659,7 +44659,7 @@ void main() async {
     );
 
     // Inserta centro 2977 en la base de datos
-    await dbHelper.insertCentroMedico(centro2977);
+    await dbCRUD.insertCentroMedico(centro2977);
     print("CENTRO 2977 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2978
@@ -44674,7 +44674,7 @@ void main() async {
     );
 
     // Inserta centro 2978 en la base de datos
-    await dbHelper.insertCentroMedico(centro2978);
+    await dbCRUD.insertCentroMedico(centro2978);
     print("CENTRO 2978 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2979
@@ -44689,7 +44689,7 @@ void main() async {
     );
 
     // Inserta centro 2979 en la base de datos
-    await dbHelper.insertCentroMedico(centro2979);
+    await dbCRUD.insertCentroMedico(centro2979);
     print("CENTRO 2979 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2980
@@ -44704,7 +44704,7 @@ void main() async {
     );
 
     // Inserta centro 2980 en la base de datos
-    await dbHelper.insertCentroMedico(centro2980);
+    await dbCRUD.insertCentroMedico(centro2980);
     print("CENTRO 2980 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2981
@@ -44719,7 +44719,7 @@ void main() async {
     );
 
     // Inserta centro 2981 en la base de datos
-    await dbHelper.insertCentroMedico(centro2981);
+    await dbCRUD.insertCentroMedico(centro2981);
     print("CENTRO 2981 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2982
@@ -44734,7 +44734,7 @@ void main() async {
     );
 
     // Inserta centro 2982 en la base de datos
-    await dbHelper.insertCentroMedico(centro2982);
+    await dbCRUD.insertCentroMedico(centro2982);
     print("CENTRO 2982 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2983
@@ -44749,7 +44749,7 @@ void main() async {
     );
 
     // Inserta centro 2983 en la base de datos
-    await dbHelper.insertCentroMedico(centro2983);
+    await dbCRUD.insertCentroMedico(centro2983);
     print("CENTRO 2983 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2984
@@ -44764,7 +44764,7 @@ void main() async {
     );
 
     // Inserta centro 2984 en la base de datos
-    await dbHelper.insertCentroMedico(centro2984);
+    await dbCRUD.insertCentroMedico(centro2984);
     print("CENTRO 2984 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2985
@@ -44779,7 +44779,7 @@ void main() async {
     );
 
     // Inserta centro 2985 en la base de datos
-    await dbHelper.insertCentroMedico(centro2985);
+    await dbCRUD.insertCentroMedico(centro2985);
     print("CENTRO 2985 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2986
@@ -44794,7 +44794,7 @@ void main() async {
     );
 
     // Inserta centro 2986 en la base de datos
-    await dbHelper.insertCentroMedico(centro2986);
+    await dbCRUD.insertCentroMedico(centro2986);
     print("CENTRO 2986 INSERTADO CORRECTAMENTE");
 
     // Crea instancia del centro médico con id 2987
@@ -44809,7 +44809,7 @@ void main() async {
     );
 
     // Inserta centro 2987 en la base de datos
-    await dbHelper.insertCentroMedico(centro2987);
+    await dbCRUD.insertCentroMedico(centro2987);
     print("CENTRO 2987 INSERTADO CORRECTAMENTE");
 
     print('TODOS LOS DATOS HAN SIDO INSERTADOS CORRECTAMENTE');

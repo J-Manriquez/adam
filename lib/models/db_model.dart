@@ -1,3 +1,4 @@
+// ADAM/models/db_model.dart
 // 1 -----------------------------------------------------------------------------
 class Usuario {
   final String rut; // RUT del usuario

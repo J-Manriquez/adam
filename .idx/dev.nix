@@ -8,6 +8,7 @@
     pkgs.nodePackages.firebase-tools
     pkgs.jdk17
     pkgs.unzip
+    pkgs.gedit
   ];
   # Sets environment variables in the workspace
   env = {};

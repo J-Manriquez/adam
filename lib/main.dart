@@ -9,6 +9,9 @@ import 'screens/settings_screen.dart'; // Importamos la pantalla de configuracio
 import 'utils/custom_logger.dart';
 import 'database/db_adam.dart'; // Importa DatabaseHelper
 import 'package:ADAM/database/initialization/centros_medicos_init.dart';
+import 'screens/informative_screen.dart'; // Nueva pantalla informativa
+import 'screens/insert_userdata_screen.dart';   // Nueva pantalla para el formulario de datos
+import 'package:ADAM/database/metodos/usuario_metodos.dart';
 
 void main() async {
   // Nos aseguramos de que los widgets se inicialicen correctamente
@@ -17,7 +20,10 @@ void main() async {
   // Inicializamos el logger si es necesario (opcional)
   CustomLogger().logInfo('Inicializando la aplicación...');
 
-   try {
+  // Inicializamos el modelo UsuarioCRUD
+  final usuarioCRUD = UsuarioCRUD();
+
+  try {
     // Inicializamos la base de datos antes de lanzar la app
     await DatabaseHelper().database;
     CustomLogger().logInfo('Base de datos inicializada correctamente.');
@@ -30,6 +36,11 @@ void main() async {
     CustomLogger().logError('Error al inicializar la base de datos: $e');
   }
 
+
+  // Comprobar si los datos del usuario existen
+  bool userDataExists = await usuarioCRUD.checkIfUserDataExists(); // Implementa esta función
+
+
   // Después de la inicialización, lanzamos la aplicación
   runApp(
     MultiProvider(
@@ -40,7 +51,7 @@ void main() async {
             create: (context) =>
                 FontSizeModel()), // Proveedor de tamaños de fuente
       ],
-      child: MyApp(),
+      child: MyApp(initialRoute: userDataExists ? '/home' : '/userDataEntry'), // Modificado aquí
     ),
   );
 }
@@ -59,19 +70,23 @@ void insertCentrosMedicosInBackground() {
 }
 
 class MyApp extends StatelessWidget {
-  // Instancia del logger
-  final CustomLogger customLogger = CustomLogger();
+  final String initialRoute;
+
+  MyApp({Key? key, required this.initialRoute}) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false, // Oculta el banner de depuración
-      title: 'ADAM', // Define el título de la aplicación
-      theme: ThemeData(
-        primarySwatch:
-            Colors.blue, // Establece el tema principal de la app (colores)
-      ),
-      home: MainScreen(customLogger: customLogger), // Pasar customLogger
+      debugShowCheckedModeBanner: false,
+      title: 'ADAM',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      initialRoute: initialRoute, // Establece la ruta inicial
+      routes: {
+        '/info': (context) => const InfoScreen(),
+        '/userDataEntry': (context) => const UserDataEntryScreen(),
+        '/home': (context) => MainScreen(customLogger: CustomLogger()), // Cambia a MainScreen
+      },
     );
   }
 }

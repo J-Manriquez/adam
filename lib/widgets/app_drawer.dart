@@ -7,15 +7,13 @@ class AppDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final AuthService _authService = AuthService();
-    
+
     return Drawer(
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
           DrawerHeader(
-            decoration: BoxDecoration(
-              color: Colors.blue,
-            ),
+            decoration: BoxDecoration(color: Colors.blue),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.end,
@@ -23,11 +21,7 @@ class AppDrawer extends StatelessWidget {
                 CircleAvatar(
                   backgroundColor: Colors.white,
                   radius: 30,
-                  child: Icon(
-                    Icons.person,
-                    size: 40,
-                    color: Colors.blue,
-                  ),
+                  child: Icon(Icons.person, size: 40, color: Colors.blue),
                 ),
                 SizedBox(height: 10),
                 Text(
@@ -40,10 +34,7 @@ class AppDrawer extends StatelessWidget {
                 ),
                 Text(
                   _authService.currentUser?.email ?? '',
-                  style: TextStyle(
-                    color: Colors.white70,
-                    fontSize: 14,
-                  ),
+                  style: TextStyle(color: Colors.white70, fontSize: 14),
                 ),
               ],
             ),
@@ -54,6 +45,24 @@ class AppDrawer extends StatelessWidget {
             onTap: () {
               Navigator.pop(context); // Cierra el drawer
               Navigator.pushNamed(context, '/personal-data');
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.medication),
+            title: Text('Mis Medicamentos'),
+            onTap: () {
+              Navigator.pop(context); // Cierra el drawer
+              Navigator.pushNamed(context, '/medications');
+            },
+          ),
+          ListTile(
+            leading: const Icon(
+              Icons.healing_outlined,
+            ), // O un icono más apropiado
+            title: const Text('Mis Síntomas'),
+            onTap: () {
+              Navigator.pop(context); // Cerrar el drawer
+              Navigator.pushNamed(context, '/symptoms');
             },
           ),
           Divider(),

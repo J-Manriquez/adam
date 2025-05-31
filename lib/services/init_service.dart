@@ -10,6 +10,8 @@ import '../models/health_data.dart';
 import '../models/medical_data.dart';
 import '../models/lifestyle_data.dart';
 import '../models/emergency_contact_data.dart';
+import '../models/medication_data.dart';
+import '../models/symptom_data.dart'; // Importar el nuevo modelo
 
 import 'sync_service.dart';
 
@@ -44,6 +46,8 @@ class InitService {
     Hive.registerAdapter(MedicalDataAdapter());
     Hive.registerAdapter(LifestyleDataAdapter());
     Hive.registerAdapter(EmergencyContactDataAdapter());
+    Hive.registerAdapter(MedicationDataAdapter());
+    Hive.registerAdapter(SymptomDataAdapter()); // Registrar el nuevo adaptador
     
     // Abrir cajas
     await Hive.openBox<UserModel>('users');
@@ -53,6 +57,7 @@ class InitService {
     await Hive.openBox<MedicalData>('medical_data');
     await Hive.openBox<LifestyleData>('lifestyle_data');
     await Hive.openBox<EmergencyContactData>('emergency_contact_data');
+    await Hive.openBox<MedicationData>('medication_data'); // Añadir caja
     
     // Intentar sincronizar usuarios pendientes
     try {

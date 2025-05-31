@@ -2,8 +2,10 @@ import 'package:adam/screens/forms/health_form_screen.dart';
 import 'package:adam/screens/forms/identification_form_screen.dart';
 import 'package:adam/screens/forms/medical_form_screen.dart';
 import 'package:adam/screens/forms/lifestyle_form_screen.dart';
+import 'package:adam/screens/forms/medication_form_screen.dart'; // Añadir importación
 import 'package:adam/screens/inicio/login_screen.dart';
 import 'package:adam/screens/inicio/recover_password_screen.dart';
+import 'package:adam/screens/medications_screen.dart'; // Añadir importación
 import 'package:adam/screens/notification_screen.dart';
 import 'package:adam/screens/personal_data_screen.dart';
 import 'package:adam/screens/views/health_view_screen.dart';
@@ -17,6 +19,8 @@ import 'screens/inicio/welcome_screen.dart';
 import 'screens/inicio/register_screen.dart';
 import 'screens/home_screen.dart';
 import 'services/auth_service.dart';
+import 'screens/forms/symptom_form_screen.dart'; // Importar pantalla de formulario de síntomas
+import 'screens/symptoms_screen.dart'; // Importar pantalla de síntomas
 
 void main() async {
   // Inicializar servicios
@@ -57,6 +61,17 @@ class MainApp extends StatelessWidget {
         '/health-view': (context) => const HealthViewScreen(),
         '/medical-view': (context) => const MedicalViewScreen(),
         '/lifestyle-view': (context) => const LifestyleViewScreen(),
+        // Nuevas rutas para medicamentos
+        '/medications': (context) => const MedicationsScreen(),
+        '/medication-form': (context) {
+          final medicationId = ModalRoute.of(context)?.settings.arguments as String?;
+          return MedicationFormScreen(medicationId: medicationId);
+        },
+        '/symptoms': (context) => const SymptomsScreen(), // Nueva ruta
+        '/symptom-form': (context) { // Nueva ruta
+          final symptomId = ModalRoute.of(context)?.settings.arguments as String?;
+          return SymptomFormScreen(symptomId: symptomId);
+        },
       },
     );
   }

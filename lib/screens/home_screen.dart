@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../models/user_model.dart';
 import '../services/auth_service.dart';
 import '../services/form_data_service.dart';
+import '../widgets/app_drawer.dart'; // Importamos el drawer
+import 'notification_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -15,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final AuthService _authService = AuthService();
   final FormDataService _formDataService = FormDataService();
   bool _showNotifications = true;
-  List<_PendingNotification> _pendingNotifications = [];
+  List<PendingNotification> _pendingNotifications = [];
 
   @override
   void initState() {
@@ -26,27 +28,53 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void _checkPendingNotifications() {
-    final List<_PendingNotification> notifications = [];
+    final List<PendingNotification> notifications = [];
+    
+    // Verificar datos de identificación
     if (_formDataService.getIdentificationData() == null) {
-      notifications.add(_PendingNotification(
+      notifications.add(PendingNotification(
         mensaje: 'Faltan tus datos de identificación',
         onTap: () {
           Navigator.of(context).pushNamed('/identification-form');
         },
       ));
     }
+    
+    // Verificar datos de salud
     if (_formDataService.getHealthData() == null) {
-      notifications.add(_PendingNotification(
+      notifications.add(PendingNotification(
         mensaje: 'Faltan tus datos de salud',
         onTap: () {
           Navigator.of(context).pushNamed('/health-form');
         },
       ));
     }
+    
+    // Verificar datos médicos
+    if (_formDataService.getMedicalData() == null) {
+      notifications.add(PendingNotification(
+        mensaje: 'Faltan tus datos médicos',
+        onTap: () {
+          Navigator.of(context).pushNamed('/medical-form');
+        },
+      ));
+    }
+    
+    // Verificar datos de estilo de vida
+    if (_formDataService.getLifestyleData() == null) {
+      notifications.add(PendingNotification(
+        mensaje: 'Faltan tus datos de estilo de vida',
+        onTap: () {
+          Navigator.of(context).pushNamed('/lifestyle-form');
+        },
+      ));
+    }
+    
     setState(() {
       _pendingNotifications = notifications;
       _showNotifications = notifications.isNotEmpty;
     });
+    
     if (_showNotifications) {
       _showPendingNotificationsModal();
     }
@@ -128,17 +156,44 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: const Text('Inicio'),
         actions: [
-          IconButton(
-            icon: const Icon(Icons.logout),
-            onPressed: () async {
-              await _authService.signOut();
-              if (context.mounted) {
-                Navigator.pushReplacementNamed(context, '/');
-              }
-            },
+          // Icono de notificaciones con indicador
+          Stack(
+            alignment: Alignment.center,
+            children: [
+              IconButton(
+                icon: const Icon(Icons.notifications),
+                onPressed: () {
+                  Navigator.of(context).pushNamed('/notifications');
+                },
+              ),
+              if (_pendingNotifications.isNotEmpty)
+                Positioned(
+                  top: 8,
+                  right: 8,
+                  child: Container(
+                    padding: const EdgeInsets.all(2),
+                    decoration: BoxDecoration(
+                      color: Colors.red,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    constraints: const BoxConstraints(
+                      minWidth: 16,
+                      minHeight: 16,
+                    ),
+                    child: Text(
+                      _pendingNotifications.length.toString(),
+                      style: const TextStyle(color: Colors.white, fontSize: 10),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                ),
+            ],
           ),
+          // Eliminamos el botón de cerrar sesión del AppBar
         ],
       ),
+      // Agregamos el drawer
+      drawer: const AppDrawer(),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(24.0),
@@ -160,10 +215,4 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
-}
-
-class _PendingNotification {
-  final String mensaje;
-  final VoidCallback onTap;
-  _PendingNotification({required this.mensaje, required this.onTap});
 }

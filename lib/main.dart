@@ -4,6 +4,12 @@ import 'package:adam/screens/forms/medical_form_screen.dart';
 import 'package:adam/screens/forms/lifestyle_form_screen.dart';
 import 'package:adam/screens/inicio/login_screen.dart';
 import 'package:adam/screens/inicio/recover_password_screen.dart';
+import 'package:adam/screens/notification_screen.dart';
+import 'package:adam/screens/personal_data_screen.dart';
+import 'package:adam/screens/views/health_view_screen.dart';
+import 'package:adam/screens/views/identification_view_screen.dart';
+import 'package:adam/screens/views/lifestyle_view_screen.dart';
+import 'package:adam/screens/views/medical_view_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'services/init_service.dart';
@@ -44,6 +50,13 @@ class MainApp extends StatelessWidget {
         '/identification-form': (context) => const IdentificationFormScreen(),
         '/medical-form': (context) => const MedicalFormScreen(),
         '/lifestyle-form': (context) => const LifestyleFormScreen(),
+        '/notifications': (context) => const NotificationScreen(),
+        // Nuevas rutas para las pantallas de visualización
+        '/personal-data': (context) => const PersonalDataScreen(),
+        '/identification-view': (context) => const IdentificationViewScreen(),
+        '/health-view': (context) => const HealthViewScreen(),
+        '/medical-view': (context) => const MedicalViewScreen(),
+        '/lifestyle-view': (context) => const LifestyleViewScreen(),
       },
     );
   }
